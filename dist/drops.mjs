@@ -1,5 +1,5 @@
-export const categories=['全部','武器','盔甲部件','法器'];
-export const itemsForRegion=(items,region,category='全部')=>items.filter(item=>(category==='全部'||item.category===category)&&item.drops.some(drop=>drop['区域']===region));
+export const categories=['全部','武器','盔甲部件'];
+export const itemsForRegion=(items,region,category='全部')=>items.filter(item=>item.rarity==='独特'&&(category==='全部'||item.category===category)&&item.drops.some(drop=>drop['区域']===region));
 
 export function setupDrops(){
  const dialog=document.getElementById('drops-dialog'),title=document.getElementById('drops-title'),grid=document.getElementById('drops-grid'),status=document.getElementById('drops-status'),tabs=document.getElementById('drops-tabs');
@@ -9,7 +9,7 @@ export function setupDrops(){
  async function render(){
   const target=region,selected=category;grid.replaceChildren();status.textContent='正在读取掉落物品…';
   try{const data=await load();if(region!==target||category!==selected||!dialog.open)return;
-   const items=itemsForRegion(data.items,region,category);status.textContent=items.length?`${items.length} 件物品`:'该分类暂无收录物品';
+   const items=itemsForRegion(data.items,region,category);status.textContent=items.length?`${items.length} 件独特物品`:'该地区暂无收录的独特物品';
    const fragment=document.createDocumentFragment();
    for(const item of items){
     const card=el('article','drop-item'),picture=el('div','drop-picture'),img=el('img');img.src=item.image;img.alt=item.name;img.loading='lazy';img.width=88;img.height=88;
