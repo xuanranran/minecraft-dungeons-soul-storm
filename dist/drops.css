@@ -49,16 +49,10 @@
 .drop-detail-panel .drop-effect-card{background:var(--surface-alt)}
 .drop-extra .drop-enchantment-card{display:grid;grid-template-columns:48px minmax(0,1fr);align-items:start;gap:10px;padding:10px;margin:8px 0;border:1px solid var(--line);border-radius:8px;background:var(--surface-alt);line-height:1.6}
 .drop-enchantment-card .drop-list-icon{width:48px;height:48px;border:1px solid #a65316;border-radius:5px;padding:2px;background:radial-gradient(#492713,#111)}
-.drop-enchantment-copy{min-width:0;min-height:48px;display:flex;flex-direction:column;justify-content:space-between;gap:3px;overflow-wrap:anywhere}.drop-enchantment-copy strong{display:block;font-size:13px;margin:0}.drop-enchantment-copy p{color:var(--muted);font-size:12px;line-height:1.6;margin:0}
-.drop-extra .drop-enchantment-card.has-description{grid-template-columns:64px minmax(0,1fr)}
-.has-description .drop-list-icon{width:64px;height:64px;align-self:center}
-.has-description .drop-enchantment-copy{min-height:64px;justify-content:center;align-self:center}
+.drop-enchantment-copy{min-width:0;min-height:48px;display:flex;flex-direction:column;justify-content:space-between;gap:2px;overflow-wrap:anywhere}.drop-enchantment-copy strong{display:block;font-size:12px;margin:0}.drop-enchantment-copy p{color:var(--muted);font-size:11px;line-height:1.5;margin:0}
+.has-description .drop-list-icon{align-self:center}
+.has-description .drop-enchantment-copy{justify-content:center;align-self:center}
 .drop-enchantment-trigger{grid-column:1/-1;font-size:12px;line-height:1.6;color:var(--muted);margin:0}
-.drop-use-effects .drop-enchantment-card.has-description{grid-template-columns:48px minmax(0,1fr)}
-.drop-use-effects .drop-list-icon{width:48px;height:48px}
-.drop-use-effects .drop-enchantment-copy{min-height:48px;gap:2px}
-.drop-use-effects .drop-enchantment-copy strong{font-size:12px}
-.drop-use-effects .drop-enchantment-copy p{font-size:11px;line-height:1.5}
 .drop-details .drop-levels{grid-column:1/-1;grid-template-columns:40px minmax(0,1fr);gap:0 10px;margin:0;border-top:1px solid var(--line)}
 .drop-levels dt,.drop-levels dd{padding:8px 0;border-bottom:1px solid var(--line)}
 .drop-levels dt{display:flex;align-items:center;color:var(--blue)}.drop-levels dt:last-of-type,.drop-levels dd:last-of-type{border-bottom:0;padding-bottom:0}
