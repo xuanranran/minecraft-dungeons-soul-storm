@@ -1,4 +1,4 @@
-import {setupDrops} from './drops.mjs?v=categories-only1';
+import {setupDrops} from './drops.mjs?v=effecticons1';
 import {setupAlarm} from './alarm.mjs?v=m4r1';
 import {SyncedClock} from './clock.mjs?v=pages1';
 import {createRotation} from './schedule.mjs?v=dark1';

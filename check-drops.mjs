@@ -7,6 +7,7 @@ assert.equal(data.items.length,272);
 assert.ok(!JSON.stringify(data).includes('https://'));
 assert.equal(new Set(data.items.map(i=>i.id)).size,272);
 for(const i of data.items){assert.ok(fs.existsSync(new URL(`./dist/${i.image}`,import.meta.url)));assert.ok(i.drops.length)}
+for(const i of data.items)for(const effect of i.fixed_effects){assert.ok(effect.image?.startsWith('./images/effects/'));assert.ok(fs.existsSync(new URL(`./dist/${effect.image}`,import.meta.url)));}
 const regions=[...new Set(data.items.flatMap(i=>i.drops.map(d=>d['区域'])))];
 for(const region of regions){const all=itemsForRegion(data.items,region);assert.ok(all.every(i=>i.rarity==='独特'||i.category==='法器'));const combined=['武器','盔甲部件','法器'].flatMap(c=>itemsForRegion(data.items,region,c));assert.equal(all.length,combined.length);assert.deepEqual(new Set(all.map(i=>i.id)),new Set(combined.map(i=>i.id)));assert.deepEqual(new Set(all.map(i=>i.id)),new Set(data.items.filter(i=>(i.rarity==='独特'||i.category==='法器')&&i.drops.some(d=>d['区域']===region)).map(i=>i.id)))}
 assert.equal(itemsForRegion(data.items,'不存在的地区').length,0);
