@@ -43,8 +43,8 @@ export function setupDrops(){
      for(const row of table.rows){const entry=el('div','drop-entry'),fields=Object.entries(row).filter(([key])=>!['image','description','levels','effect_levels','ungraded_effect'].includes(key)),levelData=row.effect_levels??row.levels;
       let copy=entry;
       if(row.image){entry.classList.add('drop-enchantment-card');const icon=el('img','drop-list-icon');icon.src=row.image;icon.alt='';icon.width=48;icon.height=48;icon.loading='lazy';icon.addEventListener('error',()=>{icon.hidden=true},{once:true});copy=el('div','drop-enchantment-copy');copy.append(el('strong','',fields[0][1]));entry.append(icon,copy);fields.shift();}
-      if(row.description)copy.append(el('p','',row.description));
-      for(const [key,value] of fields){if(row.levels&&/级效果/.test(key)||row.effect_levels&&['I','II','III','独特'].includes(key))continue;copy.append(el('p','',`${key}：${value}`));}
+      if(row.description){entry.classList.add('has-description');copy.append(el('p','',row.description));}
+      for(const [key,value] of fields){if(row.levels&&/级效果/.test(key)||row.effect_levels&&['I','II','III','独特'].includes(key))continue;if(row.image&&key==='触发条件')entry.append(el('p','drop-enchantment-trigger',`${key}：${value}`));else copy.append(el('p','',`${key}：${value}`));}
       if(levelData){entry.classList.add('has-levels');const levels=el('dl','drop-levels'),third=levelData.find(level=>level.level==='III');for(const level of levelData){const text=level.level==='独特'&&third&&level.effect.trim()===third.effect.trim()?'和 III 级一样的效果':level.effect;levels.append(el('dt','',/^(I|II|III)$/.test(level.level)?`${level.level} 级`:level.level),el('dd','',text));}if(!levelData.length)levels.append(el('dt','','效果'),el('dd','',row.ungraded_effect||'暂无分级数据'));entry.append(levels);}
       section.append(entry);
      }panel.append(section);
