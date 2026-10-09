@@ -15,7 +15,7 @@ export function setupDrops(){
  const dialog=document.getElementById('drops-dialog'),title=document.getElementById('drops-title'),grid=document.getElementById('drops-grid'),status=document.getElementById('drops-status'),tabs=document.getElementById('drops-tabs');
  let dataPromise,region='',category='近战武器',opener;
  const el=(tag,className,text)=>{const e=document.createElement(tag);if(className)e.className=className;if(text!=null)e.textContent=text;return e};
- const load=()=>dataPromise??=(fetch('./equipment.json?v=listicons1').then(r=>{if(!r.ok)throw Error('无法读取装备数据');return r.json()}).catch(e=>{dataPromise=null;throw e}));
+ const load=()=>dataPromise??=(fetch('./equipment.json?v=enchantlevels1').then(r=>{if(!r.ok)throw Error('无法读取装备数据');return r.json()}).catch(e=>{dataPromise=null;throw e}));
  async function render(){
   const target=region,selected=category;grid.replaceChildren();status.textContent='正在读取掉落物品…';
   try{const data=await load();if(region!==target||category!==selected||!dialog.open)return;
@@ -32,15 +32,17 @@ export function setupDrops(){
     const details=el('details','drop-details'),summary=el('summary','','参数与效果'),panel=el('div','drop-detail-panel');details.append(summary,panel);const dl=el('dl');
     for(const [key,value] of displayedParameters(item)){dl.append(el('dt','',key),el('dd','',value))}panel.append(dl);
     for(const effect of item.fixed_effects){
-     const box=el('div','drop-effect-card'),icon=el('img','drop-effect-icon');icon.src=effect.image;icon.alt='';icon.width=36;icon.height=36;icon.loading='lazy';icon.addEventListener('error',()=>{icon.hidden=true},{once:true});
+     const box=el('div','drop-effect-card'),icon=el('img','drop-effect-icon');icon.src=effect.image;icon.alt='';icon.width=48;icon.height=48;icon.loading='lazy';icon.addEventListener('error',()=>{icon.hidden=true},{once:true});
      const text=el('div','drop-effect-copy');text.append(el('strong','',effect.name),el('p','',effect.effect));box.append(icon,text);panel.append(box);
     }
     for(const table of item.tables??[]){if(table.columns.includes('区域')||table.title==='属性 / 数值')continue;
      const section=el('details','drop-extra'),heading=el('summary','',table.title.replace(item.name,''));section.append(heading);
-     for(const row of table.rows){const entry=el('div','drop-entry'),fields=Object.entries(row).filter(([key])=>key!=='image');
+     for(const row of table.rows){const entry=el('div','drop-entry'),fields=Object.entries(row).filter(([key])=>!['image','levels','ungraded_effect'].includes(key));
       let copy=entry;
-      if(row.image){entry.classList.add('drop-enchantment-card');const icon=el('img','drop-list-icon');icon.src=row.image;icon.alt='';icon.width=36;icon.height=36;icon.loading='lazy';icon.addEventListener('error',()=>{icon.hidden=true},{once:true});copy=el('div','drop-enchantment-copy');copy.append(el('strong','',fields[0][1]));entry.append(icon,copy);fields.shift();}
-      for(const [key,value] of fields)copy.append(el('p','',`${key}：${value}`));section.append(entry);
+      if(row.image){entry.classList.add('drop-enchantment-card');const icon=el('img','drop-list-icon');icon.src=row.image;icon.alt='';icon.width=48;icon.height=48;icon.loading='lazy';icon.addEventListener('error',()=>{icon.hidden=true},{once:true});copy=el('div','drop-enchantment-copy');copy.append(el('strong','',fields[0][1]));entry.append(icon,copy);fields.shift();}
+      for(const [key,value] of fields){if(row.levels&&/级效果/.test(key))continue;copy.append(el('p','',`${key}：${value}`));}
+      if(row.levels){entry.classList.add('has-levels');const levels=el('dl','drop-levels');for(const level of row.levels)levels.append(el('dt','',`${level.level} 级`),el('dd','',level.effect));if(!row.levels.length)levels.append(el('dt','','效果'),el('dd','',row.ungraded_effect||'暂无分级数据'));entry.append(levels);}
+      section.append(entry);
      }panel.append(section);
     }
     const locations=el('details','drop-extra');locations.append(el('summary','','掉落地区'));for(const place of item.drops){const line=el('p','drop-location');setRegionText(line,place['区域']);locations.append(line)}panel.append(locations);

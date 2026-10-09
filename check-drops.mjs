@@ -31,4 +31,9 @@ assert.equal(data.items.filter(i=>i.rarity==='独特').length,116);
 assert.deepEqual(categories,['近战武器','远程武器','盔甲部件','法器']);
 for(const region of regions){const melee=itemsForRegion(data.items,region,'近战武器'),ranged=itemsForRegion(data.items,region,'远程武器');assert.ok(melee.every(i=>i.weapon_kind==='近战'));assert.ok(ranged.every(i=>i.weapon_kind==='远程'));assert.equal(melee.length+ranged.length,itemsForRegion(data.items,region,'武器').length);}
 for(const item of data.items){const entries=displayedParameters(item);assert.ok(!entries.some(([key])=>key==='DPS排名'));if(item.parameters.DPS)assert.equal(entries.find(([key])=>key==='DPS')[1],item.parameters.DPS);}
-console.log(`Drop catalogue: 272 images, ${regions.length} regions and all category filters passed.`);
+const levelRows=data.items.flatMap(i=>i.tables.flatMap(t=>t.rows)).filter(r=>r.levels);
+assert.ok(levelRows.length>3000);
+for(const row of levelRows){if(row.levels.length){assert.deepEqual(row.levels.map(l=>l.level),['I','II','III']);assert.ok(row.levels.every(l=>typeof l.effect==='string'&&l.effect.length>0));}else assert.ok(row.ungraded_effect);}
+const alchemy=levelRows.find(r=>r.image?.includes('ancient-alchemy'));
+assert.deepEqual(alchemy.levels.map(l=>l.effect.match(/\d+/)?.[0]),['30','45','60']);
+console.log(`Drop catalogue: 272 images, ${regions.length} regions and all category filters passed; ${levelRows.length} enchantment rows verified.`);
