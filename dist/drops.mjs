@@ -29,20 +29,21 @@ export function setupDrops(){
     const info=el('div','drop-info');info.append(el('h3','',item.name),el('p','drop-kind',[displayedCategory(item),item.overview['部位'],displayedRarity(item)].filter(Boolean).join(' · ')));
     if(item.description)info.append(el('p','drop-description',item.description));
     const drop=item.drops.find(d=>d['区域']===region);if(drop['物品掉落占比'])info.append(el('p','drop-weight',`物品池占比 ${drop['物品掉落占比']}`));
-    const details=el('details','drop-details'),summary=el('summary','','参数与效果');details.append(summary);const dl=el('dl');
-    for(const [key,value] of displayedParameters(item)){dl.append(el('dt','',key),el('dd','',value))}details.append(dl);
+    const details=el('details','drop-details'),summary=el('summary','','参数与效果'),panel=el('div','drop-detail-panel');details.append(summary,panel);const dl=el('dl');
+    for(const [key,value] of displayedParameters(item)){dl.append(el('dt','',key),el('dd','',value))}panel.append(dl);
     for(const effect of item.fixed_effects){
      const box=el('div','drop-effect-card'),icon=el('img','drop-effect-icon');icon.src=effect.image;icon.alt='';icon.width=36;icon.height=36;icon.loading='lazy';icon.addEventListener('error',()=>{icon.hidden=true},{once:true});
-     const text=el('div','drop-effect-copy');text.append(el('strong','',effect.name),el('p','',effect.effect));box.append(icon,text);details.append(box);
+     const text=el('div','drop-effect-copy');text.append(el('strong','',effect.name),el('p','',effect.effect));box.append(icon,text);panel.append(box);
     }
     for(const table of item.tables??[]){if(table.columns.includes('区域')||table.title==='属性 / 数值')continue;
      const section=el('details','drop-extra'),heading=el('summary','',table.title.replace(item.name,''));section.append(heading);
      for(const row of table.rows){const entry=el('div','drop-entry'),fields=Object.entries(row).filter(([key])=>key!=='image');
-      if(row.image){const header=el('div','drop-entry-heading'),icon=el('img','drop-list-icon');icon.src=row.image;icon.alt='';icon.width=28;icon.height=28;icon.loading='lazy';icon.addEventListener('error',()=>{icon.hidden=true},{once:true});header.append(icon,el('strong','',fields[0][1]));entry.append(header);fields.shift();}
-      for(const [key,value] of fields)entry.append(el('p','',`${key}：${value}`));section.append(entry);
-     }details.append(section);
+      let copy=entry;
+      if(row.image){entry.classList.add('drop-enchantment-card');const icon=el('img','drop-list-icon');icon.src=row.image;icon.alt='';icon.width=36;icon.height=36;icon.loading='lazy';icon.addEventListener('error',()=>{icon.hidden=true},{once:true});copy=el('div','drop-enchantment-copy');copy.append(el('strong','',fields[0][1]));entry.append(icon,copy);fields.shift();}
+      for(const [key,value] of fields)copy.append(el('p','',`${key}：${value}`));section.append(entry);
+     }panel.append(section);
     }
-    const locations=el('details','drop-extra');locations.append(el('summary','','掉落地区'));for(const place of item.drops){const line=el('p','drop-location');setRegionText(line,place['区域']);locations.append(line)}details.append(locations);
+    const locations=el('details','drop-extra');locations.append(el('summary','','掉落地区'));for(const place of item.drops){const line=el('p','drop-location');setRegionText(line,place['区域']);locations.append(line)}panel.append(locations);
     card.append(picture,info,details);fragment.append(card);
    }grid.replaceChildren(fragment);
   }catch{if(region===target&&category===selected){status.replaceChildren(el('span','','掉落数据加载失败，'),el('button','drops-retry','重试'));status.querySelector('button').addEventListener('click',render)}}
