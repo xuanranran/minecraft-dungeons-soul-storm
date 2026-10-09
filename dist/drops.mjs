@@ -7,7 +7,7 @@ export function setupDrops(){
  const dialog=document.getElementById('drops-dialog'),title=document.getElementById('drops-title'),grid=document.getElementById('drops-grid'),status=document.getElementById('drops-status'),tabs=document.getElementById('drops-tabs');
  let dataPromise,region='',category='武器',opener;
  const el=(tag,className,text)=>{const e=document.createElement(tag);if(className)e.className=className;if(text!=null)e.textContent=text;return e};
- const load=()=>dataPromise??=(fetch('./equipment.json?v=effecticons1').then(r=>{if(!r.ok)throw Error('无法读取装备数据');return r.json()}).catch(e=>{dataPromise=null;throw e}));
+ const load=()=>dataPromise??=(fetch('./equipment.json?v=descriptions1').then(r=>{if(!r.ok)throw Error('无法读取装备数据');return r.json()}).catch(e=>{dataPromise=null;throw e}));
  async function render(){
   const target=region,selected=category;grid.replaceChildren();status.textContent='正在读取掉落物品…';
   try{const data=await load();if(region!==target||category!==selected||!dialog.open)return;
@@ -19,6 +19,7 @@ export function setupDrops(){
     card.classList.toggle('special',displayedRarity(item)==='特殊');
     img.addEventListener('error',()=>{picture.replaceChildren(el('span','meta','图片暂不可用'))},{once:true});picture.append(img);
     const info=el('div','drop-info');info.append(el('h3','',item.name),el('p','drop-kind',[item.category,item.weapon_kind,item.overview['部位'],displayedRarity(item)].filter(Boolean).join(' · ')));
+    if(item.description)info.append(el('p','drop-description',item.description));
     const drop=item.drops.find(d=>d['区域']===region);if(drop['物品掉落占比'])info.append(el('p','drop-weight',`物品池占比 ${drop['物品掉落占比']}`));
     const details=el('details','drop-details'),summary=el('summary','','参数与效果');details.append(summary);const dl=el('dl');
     for(const [key,value] of Object.entries(item.parameters)){dl.append(el('dt','',key),el('dd','',value))}details.append(dl);
