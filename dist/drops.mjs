@@ -13,6 +13,7 @@ export function setupDrops(){
    const fragment=document.createDocumentFragment();
    for(const item of items){
     const card=el('article','drop-item'),picture=el('div','drop-picture'),img=el('img');img.src=item.image;img.alt=item.name;img.loading='lazy';img.width=88;img.height=88;
+    card.classList.toggle('unique',item.rarity==='独特');
     img.addEventListener('error',()=>{picture.replaceChildren(el('span','meta','图片暂不可用'))},{once:true});picture.append(img);
     const info=el('div','drop-info');info.append(el('h3','',item.name),el('p','drop-kind',[item.category,item.weapon_kind,item.overview['部位'],item.rarity==='独特'?'独特':null].filter(Boolean).join(' · ')));
     const drop=item.drops.find(d=>d['区域']===region);if(drop['物品掉落占比'])info.append(el('p','drop-weight',`物品池占比 ${drop['物品掉落占比']}`));
