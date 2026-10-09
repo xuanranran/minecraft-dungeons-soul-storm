@@ -34,6 +34,10 @@ for(const item of data.items){const entries=displayedParameters(item);assert.ok(
 const levelRows=data.items.flatMap(i=>i.tables.flatMap(t=>t.rows)).filter(r=>r.levels);
 assert.ok(levelRows.length>3000);
 for(const row of levelRows){if(row.levels.length){assert.deepEqual(row.levels.map(l=>l.level),['I','II','III']);assert.ok(row.levels.every(l=>typeof l.effect==='string'&&l.effect.length>0));}else assert.ok(row.ungraded_effect);}
+assert.equal(new Set(levelRows.map(row=>row.image)).size,34);
+for(const row of levelRows)assert.ok(row.description?.length>5);
+const amplifier=levelRows.find(row=>row.image.endsWith('enchantments-artifact-amplifier.webp'));
+assert.equal(amplifier.description,'使用法器时会获得“驭器”状态，缩短法器冷却时间，同时提高法器伤害和灵魂收集量。');
 const alchemy=levelRows.find(r=>r.image?.includes('ancient-alchemy'));
 assert.deepEqual(alchemy.levels.map(l=>l.effect.match(/\d+/)?.[0]),['30','45','60']);
 const rollRows=data.items.flatMap(i=>i.tables.flatMap(t=>t.rows)).filter(r=>r.effect_levels);
