@@ -1,6 +1,11 @@
 export const categories=['近战武器','远程武器','盔甲部件','法器'];
 export const displayedCategory=item=>item.category==='武器'?`${item.weapon_kind}武器`:item.category;
-export const displayedParameters=item=>Object.entries(item.parameters).filter(([key])=>key!=='DPS排名');
+export const displayedParameters=item=>{
+ const entries=Object.entries(item.parameters).filter(([key])=>key!=='DPS排名');
+ if(item.category!=='武器')return entries;
+ const weight=item.overview?.['重量']||item.parameters['重量']||'—';
+ return [['重量',weight],...entries.filter(([key])=>key!=='重量')];
+};
 // Base records can roll ordinary or special; display the special variant for every category.
 export const displayedRarity=item=>item.rarity==='独特'?'独特':['普通/非独特','非独特','特殊'].includes(item.rarity)?'特殊':'普通';
 export const itemsForRegion=(items,region,category='全部')=>items.filter(item=>(displayedRarity(item)==='独特'||item.category==='法器'&&displayedRarity(item)==='特殊')&&(category==='全部'||item.category===category||displayedCategory(item)===category)&&item.drops.some(drop=>drop['区域']===region));
