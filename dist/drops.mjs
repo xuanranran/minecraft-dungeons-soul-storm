@@ -1,7 +1,7 @@
 export const categories=['全部','武器','盔甲部件','法器'];
-// The source groups base artifact records as ordinary/non-unique; show their special variant.
-export const displayedRarity=item=>item.rarity==='独特'?'独特':item.category==='法器'&&['普通/非独特','非独特','特殊'].includes(item.rarity)?'特殊':'普通';
-export const itemsForRegion=(items,region,category='全部')=>items.filter(item=>(displayedRarity(item)==='独特'||item.category==='法器'&&displayedRarity(item)==='特殊')&&(category==='全部'||item.category===category)&&item.drops.some(drop=>drop['区域']===region));
+// Base records can roll ordinary or special; display the special variant for every category.
+export const displayedRarity=item=>item.rarity==='独特'?'独特':['普通/非独特','非独特','特殊'].includes(item.rarity)?'特殊':'普通';
+export const itemsForRegion=(items,region,category='全部')=>items.filter(item=>displayedRarity(item)!=='普通'&&(category==='全部'||item.category===category)&&item.drops.some(drop=>drop['区域']===region));
 
 export function setupDrops(){
  const dialog=document.getElementById('drops-dialog'),title=document.getElementById('drops-title'),grid=document.getElementById('drops-grid'),status=document.getElementById('drops-status'),tabs=document.getElementById('drops-tabs');
