@@ -36,4 +36,11 @@ assert.ok(levelRows.length>3000);
 for(const row of levelRows){if(row.levels.length){assert.deepEqual(row.levels.map(l=>l.level),['I','II','III']);assert.ok(row.levels.every(l=>typeof l.effect==='string'&&l.effect.length>0));}else assert.ok(row.ungraded_effect);}
 const alchemy=levelRows.find(r=>r.image?.includes('ancient-alchemy'));
 assert.deepEqual(alchemy.levels.map(l=>l.effect.match(/\d+/)?.[0]),['30','45','60']);
+const rollRows=data.items.flatMap(i=>i.tables.flatMap(t=>t.rows)).filter(r=>r.effect_levels);
+assert.equal(rollRows.length,1437);
+for(const row of rollRows){assert.ok(['I','II','III'].every(level=>row.effect_levels.some(l=>l.level===level)));assert.ok(row.effect_levels.every(l=>l.value&&l.effect));}
+const ally=sample.tables.flatMap(t=>t.rows).find(r=>r.image?.endsWith('effects-ally.webp'));
+assert.deepEqual(ally.effect_levels.map(l=>l.value),['15%','30%','50%','70%']);
+assert.deepEqual(ally.effect_levels.map(l=>l.level),['I','II','III','独特']);
+assert.ok(ally.effect_levels.every(l=>l.effect.includes('正面状态持续时间延长')));
 console.log(`Drop catalogue: 272 images, ${regions.length} regions and all category filters passed; ${levelRows.length} enchantment rows verified.`);

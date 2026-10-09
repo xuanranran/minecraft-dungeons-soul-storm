@@ -18,7 +18,7 @@ export function setupDrops(){
  const mobile=matchMedia('(max-width:600px)');
  const layoutCards=()=>{const cards=[...grid.querySelectorAll('.drop-item')].sort((a,b)=>Number(a.style.order)-Number(b.style.order));if(mobile.matches){grid.replaceChildren(...cards);return}const columns=[el('div','drops-column'),el('div','drops-column')];cards.forEach((card,index)=>columns[index%2].append(card));grid.replaceChildren(...columns)};
  mobile.addEventListener('change',layoutCards);
- const load=()=>dataPromise??=(fetch('./equipment.json?v=enchantlevels1').then(r=>{if(!r.ok)throw Error('无法读取装备数据');return r.json()}).catch(e=>{dataPromise=null;throw e}));
+ const load=()=>dataPromise??=(fetch('./equipment.json?v=rolleffects1').then(r=>{if(!r.ok)throw Error('无法读取装备数据');return r.json()}).catch(e=>{dataPromise=null;throw e}));
  async function render(){
   const target=region,selected=category;grid.replaceChildren();status.textContent='正在读取掉落物品…';
   try{const data=await load();if(region!==target||category!==selected||!dialog.open)return;
@@ -40,11 +40,11 @@ export function setupDrops(){
     }
     for(const table of item.tables??[]){if(table.columns.includes('区域')||table.title==='属性 / 数值')continue;
      const section=el('details','drop-extra'),heading=el('summary','',table.title.replace(item.name,''));section.append(heading);
-     for(const row of table.rows){const entry=el('div','drop-entry'),fields=Object.entries(row).filter(([key])=>!['image','levels','ungraded_effect'].includes(key));
+     for(const row of table.rows){const entry=el('div','drop-entry'),fields=Object.entries(row).filter(([key])=>!['image','levels','effect_levels','ungraded_effect'].includes(key)),levelData=row.effect_levels??row.levels;
       let copy=entry;
       if(row.image){entry.classList.add('drop-enchantment-card');const icon=el('img','drop-list-icon');icon.src=row.image;icon.alt='';icon.width=48;icon.height=48;icon.loading='lazy';icon.addEventListener('error',()=>{icon.hidden=true},{once:true});copy=el('div','drop-enchantment-copy');copy.append(el('strong','',fields[0][1]));entry.append(icon,copy);fields.shift();}
-      for(const [key,value] of fields){if(row.levels&&/级效果/.test(key))continue;copy.append(el('p','',`${key}：${value}`));}
-      if(row.levels){entry.classList.add('has-levels');const levels=el('dl','drop-levels');for(const level of row.levels)levels.append(el('dt','',`${level.level} 级`),el('dd','',level.effect));if(!row.levels.length)levels.append(el('dt','','效果'),el('dd','',row.ungraded_effect||'暂无分级数据'));entry.append(levels);}
+      for(const [key,value] of fields){if(row.levels&&/级效果/.test(key)||row.effect_levels&&['I','II','III','独特'].includes(key))continue;copy.append(el('p','',`${key}：${value}`));}
+      if(levelData){entry.classList.add('has-levels');const levels=el('dl','drop-levels');for(const level of levelData)levels.append(el('dt','',/^(I|II|III)$/.test(level.level)?`${level.level} 级`:level.level),el('dd','',level.effect));if(!levelData.length)levels.append(el('dt','','效果'),el('dd','',row.ungraded_effect||'暂无分级数据'));entry.append(levels);}
       section.append(entry);
      }panel.append(section);
     }
