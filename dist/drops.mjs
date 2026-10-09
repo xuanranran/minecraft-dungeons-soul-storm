@@ -2,7 +2,7 @@ import {setRegionText} from './region-icons.mjs?v=listicons1';
 export const categories=['近战武器','远程武器','盔甲部件','法器'];
 export const displayedCategory=item=>item.category==='武器'?`${item.weapon_kind}武器`:item.category;
 export const displayedTables=item=>(item.tables??[])
- .filter(table=>item.category!=='法器'||!table.title.includes('附魔'))
+ .map(table=>item.category==='法器'&&table.title==='附魔 / III级效果'?{...table,title:'使用附魔效果'}:table)
  .map(table=>table.title.includes('可用附魔')?{...table,rows:table.rows.filter(row=>(row.levels?.length??0)>1)}:table)
  .filter(table=>table.rows.length>0);
 export const displayedParameters=item=>{

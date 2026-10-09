@@ -34,7 +34,10 @@ for(const item of data.items){const entries=displayedParameters(item);assert.ok(
 const levelRows=data.items.flatMap(i=>i.tables.flatMap(t=>t.rows)).filter(r=>r.levels);
 for(const item of data.items){
  const tables=displayedTables(item);
- if(item.category==='法器')assert.ok(tables.every(t=>!t.title.includes('附魔')));
+ if(item.category==='法器'){
+  assert.ok(!tables.some(t=>t.title==='附魔 / III级效果'));
+  assert.deepEqual(tables.find(t=>t.title==='使用附魔效果')?.rows,item.tables.find(t=>t.title==='附魔 / III级效果')?.rows);
+ }
  for(const table of tables.filter(t=>t.title.includes('可用附魔'))){
   assert.ok(table.rows.every(r=>r.levels.length>1));
   assert.deepEqual(table.rows,item.tables.find(t=>t.title===table.title).rows.filter(r=>r.levels.length>1));

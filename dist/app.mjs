@@ -1,4 +1,4 @@
-import {setupDrops} from './drops.mjs?v=enchantfilter1';
+import {setupDrops} from './drops.mjs?v=artifactuse1';
 import {setRegionText} from './region-icons.mjs?v=listicons1';
 import {setupAlarm} from './alarm.mjs?v=m4r1';
 import {SyncedClock} from './clock.mjs?v=pages1';
