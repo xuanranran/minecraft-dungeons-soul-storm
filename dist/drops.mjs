@@ -1,3 +1,4 @@
+import {setRegionText} from './region-icons.mjs?v=listicons1';
 export const categories=['近战武器','远程武器','盔甲部件','法器'];
 export const displayedCategory=item=>item.category==='武器'?`${item.weapon_kind}武器`:item.category;
 export const displayedParameters=item=>{
@@ -14,7 +15,7 @@ export function setupDrops(){
  const dialog=document.getElementById('drops-dialog'),title=document.getElementById('drops-title'),grid=document.getElementById('drops-grid'),status=document.getElementById('drops-status'),tabs=document.getElementById('drops-tabs');
  let dataPromise,region='',category='近战武器',opener;
  const el=(tag,className,text)=>{const e=document.createElement(tag);if(className)e.className=className;if(text!=null)e.textContent=text;return e};
- const load=()=>dataPromise??=(fetch('./equipment.json?v=descriptions1').then(r=>{if(!r.ok)throw Error('无法读取装备数据');return r.json()}).catch(e=>{dataPromise=null;throw e}));
+ const load=()=>dataPromise??=(fetch('./equipment.json?v=listicons1').then(r=>{if(!r.ok)throw Error('无法读取装备数据');return r.json()}).catch(e=>{dataPromise=null;throw e}));
  async function render(){
   const target=region,selected=category;grid.replaceChildren();status.textContent='正在读取掉落物品…';
   try{const data=await load();if(region!==target||category!==selected||!dialog.open)return;
@@ -36,13 +37,17 @@ export function setupDrops(){
     }
     for(const table of item.tables??[]){if(table.columns.includes('区域')||table.title==='属性 / 数值')continue;
      const section=el('details','drop-extra'),heading=el('summary','',table.title.replace(item.name,''));section.append(heading);
-     for(const row of table.rows){const entry=el('div','drop-entry');for(const [key,value] of Object.entries(row)){entry.append(el('p','',`${key}：${value}`))}section.append(entry)}details.append(section);
+     for(const row of table.rows){const entry=el('div','drop-entry'),fields=Object.entries(row).filter(([key])=>key!=='image');
+      if(row.image){const header=el('div','drop-entry-heading'),icon=el('img','drop-list-icon');icon.src=row.image;icon.alt='';icon.width=28;icon.height=28;icon.loading='lazy';icon.addEventListener('error',()=>{icon.hidden=true},{once:true});header.append(icon,el('strong','',fields[0][1]));entry.append(header);fields.shift();}
+      for(const [key,value] of fields)entry.append(el('p','',`${key}：${value}`));section.append(entry);
+     }details.append(section);
     }
+    const locations=el('details','drop-extra');locations.append(el('summary','','掉落地区'));for(const place of item.drops){const line=el('p','drop-location');setRegionText(line,place['区域']);locations.append(line)}details.append(locations);
     info.append(details);card.append(picture,info);fragment.append(card);
    }grid.replaceChildren(fragment);
   }catch{if(region===target&&category===selected){status.replaceChildren(el('span','','掉落数据加载失败，'),el('button','drops-retry','重试'));status.querySelector('button').addEventListener('click',render)}}
  }
- function open(name,button){region=name;category='近战武器';opener=button;title.textContent=`${name} · 地区掉落`;for(const t of tabs.children)t.setAttribute('aria-pressed',String(t.dataset.category===category));if(!dialog.open){dialog.showModal();document.body.classList.add('drops-open')}render();}
+ function open(name,button){region=name;category='近战武器';opener=button;setRegionText(title,name,`${name} · 地区掉落`);for(const t of tabs.children)t.setAttribute('aria-pressed',String(t.dataset.category===category));if(!dialog.open){dialog.showModal();document.body.classList.add('drops-open')}render();}
  for(const name of categories){const button=el('button','drops-tab',name);button.type='button';button.dataset.category=name;button.setAttribute('aria-pressed',String(name==='近战武器'));button.addEventListener('click',()=>{category=name;for(const t of tabs.children)t.setAttribute('aria-pressed',String(t===button));render()});tabs.append(button)}
  document.addEventListener('click',e=>{const button=e.target.closest('[data-drop-region]');if(button)open(button.dataset.dropRegion,button)});
  document.getElementById('drops-close').addEventListener('click',()=>dialog.close());
