@@ -1,0 +1,8 @@
+Mojangles-style Minecraft Classic web font
+Source: https://classic.minecraft.net/assets/fonts/minecraftfont.woff
+Downloaded 2026-10-07. No CJK glyphs; Chinese uses the system fallback.
+
+Ark Pixel 12px proportional Simplified Chinese fallback
+Source: https://ark-pixel-font.takwolf.com/ark-pixel-12px-proportional-zh_hans.otf.woff2
+Project: https://github.com/TakWolf/ark-pixel-font
+License: SIL Open Font License 1.1, included at dist/fonts/ARK-LICENSE-OFL.txt

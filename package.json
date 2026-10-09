@@ -1,0 +1,11 @@
+{
+  "name": "minecraft-dungeons-soul-storm",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node check.mjs && node check-clock.mjs && node --check dist/app.mjs && node --check dist/alarm.mjs && node --check dist/theme-init.js",
+    "start": "python -m http.server 8080 --directory dist"
+  }
+}
+
