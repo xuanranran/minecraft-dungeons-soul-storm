@@ -15,13 +15,16 @@ export function setupDrops(){
  const dialog=document.getElementById('drops-dialog'),title=document.getElementById('drops-title'),grid=document.getElementById('drops-grid'),status=document.getElementById('drops-status'),tabs=document.getElementById('drops-tabs');
  let dataPromise,region='',category='近战武器',opener;
  const el=(tag,className,text)=>{const e=document.createElement(tag);if(className)e.className=className;if(text!=null)e.textContent=text;return e};
+ const mobile=matchMedia('(max-width:600px)');
+ const layoutCards=()=>{const cards=[...grid.querySelectorAll('.drop-item')].sort((a,b)=>Number(a.style.order)-Number(b.style.order));if(mobile.matches){grid.replaceChildren(...cards);return}const columns=[el('div','drops-column'),el('div','drops-column')];cards.forEach((card,index)=>columns[index%2].append(card));grid.replaceChildren(...columns)};
+ mobile.addEventListener('change',layoutCards);
  const load=()=>dataPromise??=(fetch('./equipment.json?v=enchantlevels1').then(r=>{if(!r.ok)throw Error('无法读取装备数据');return r.json()}).catch(e=>{dataPromise=null;throw e}));
  async function render(){
   const target=region,selected=category;grid.replaceChildren();status.textContent='正在读取掉落物品…';
   try{const data=await load();if(region!==target||category!==selected||!dialog.open)return;
    const items=itemsForRegion(data.items,region,category);status.textContent=items.length?`${items.length} 件物品`:'该地区暂无符合条件的物品';
    const fragment=document.createDocumentFragment();
-   for(const item of items){
+   for(const [index,item] of items.entries()){
     const card=el('article','drop-item'),picture=el('div','drop-picture'),img=el('img');img.src=item.image;img.alt=item.name;img.loading='lazy';img.width=88;img.height=88;
     card.classList.toggle('unique',item.rarity==='独特');
     card.classList.toggle('special',displayedRarity(item)==='特殊');
@@ -46,8 +49,8 @@ export function setupDrops(){
      }panel.append(section);
     }
     const locations=el('details','drop-extra');locations.append(el('summary','','掉落地区'));for(const place of item.drops){const line=el('p','drop-location');setRegionText(line,place['区域']);locations.append(line)}panel.append(locations);
-    card.append(picture,info,details);fragment.append(card);
-   }grid.replaceChildren(fragment);
+    card.style.order=index;card.append(picture,info,details);fragment.append(card);
+   }grid.replaceChildren(fragment);layoutCards();
   }catch{if(region===target&&category===selected){status.replaceChildren(el('span','','掉落数据加载失败，'),el('button','drops-retry','重试'));status.querySelector('button').addEventListener('click',render)}}
  }
  function open(name,button){region=name;category='近战武器';opener=button;setRegionText(title,name,`${name} · 地区掉落`);for(const t of tabs.children)t.setAttribute('aria-pressed',String(t.dataset.category===category));if(!dialog.open){dialog.showModal();document.body.classList.add('drops-open')}render();}

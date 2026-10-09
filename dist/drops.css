@@ -4,7 +4,7 @@
 .schedule-drop{padding:3px 0;min-height:30px;color:inherit;background:transparent;border:0;font-size:inherit;line-height:inherit;text-underline-offset:4px}
 .schedule-drop:hover{background:transparent;text-decoration:underline;color:var(--blue)}
 .drops-open{overflow:hidden}
-.drops-dialog{width:min(880px,calc(100% - 28px));max-width:none;max-height:calc(100dvh - 40px);padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--surface);color:var(--text);overflow:auto;overscroll-behavior:contain}
+.drops-dialog{width:min(880px,calc(100% - 28px));max-width:none;max-height:calc(100dvh - 40px);top:20px;bottom:auto;margin:0 auto;padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--surface);color:var(--text);overflow:auto;overscroll-behavior:contain;overflow-anchor:none}
 .drops-dialog::backdrop{background:rgb(0 0 0 / .68)}
 .drops-header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}
 .drops-header h2{font-size:20px;margin:0;line-height:1.5}
@@ -16,6 +16,7 @@
 .drops-tab:hover{background:var(--anchor-bg);color:var(--text)}
 .drops-status,.drops-note{font-size:12px;color:var(--muted);line-height:1.6;margin:10px 0}
 .drops-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:10px}
+.drops-column{display:flex;flex-direction:column;gap:10px;min-width:0}
 .drop-item{display:grid;grid-template-columns:88px minmax(0,1fr);gap:10px 12px;align-items:start;align-content:start;padding:14px;border:1px solid var(--line);background:var(--surface-alt);border-radius:10px;min-width:0}
 .drop-picture{display:grid;place-items:center;width:88px;min-width:88px;height:88px;background:var(--surface);border-radius:8px}
 .drop-picture img{width:88px;height:88px;object-fit:contain;image-rendering:pixelated}
@@ -52,4 +53,4 @@
 .drop-levels dt,.drop-levels dd{padding:8px 0;border-bottom:1px solid var(--line)}
 .drop-levels dt{color:var(--blue)}.drop-levels dt:last-of-type,.drop-levels dd:last-of-type{border-bottom:0;padding-bottom:0}
 @media(max-width:600px){.drop-detail-panel{padding:10px}.drop-extra .drop-enchantment-card{padding:9px;gap:8px}}
-@media(max-width:600px){.drops-dialog{padding:14px;max-height:calc(100dvh - 24px);width:calc(100% - 20px);border-radius:12px}.drops-grid{grid-template-columns:minmax(0,1fr)}.drops-header h2{font-size:17px}.drop-item{padding:12px}.drop-trigger{min-height:36px}.drops-tab{min-height:40px}}
+@media(max-width:600px){.drops-dialog{padding:14px;top:12px;max-height:calc(100dvh - 24px);width:calc(100% - 20px);border-radius:12px}.drops-grid{grid-template-columns:minmax(0,1fr)}.drops-column{display:contents}.drops-header h2{font-size:17px}.drop-item{padding:12px}.drop-trigger{min-height:36px}.drops-tab{min-height:40px}}
