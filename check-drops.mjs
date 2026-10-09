@@ -55,6 +55,20 @@ const amplifier=levelRows.find(row=>row.image.endsWith('enchantments-artifact-am
 assert.equal(amplifier.description,'使用法器时会获得“驭器”状态，缩短法器冷却时间，同时提高法器伤害和灵魂收集量。');
 const alchemy=levelRows.find(r=>r.image?.includes('ancient-alchemy'));
 assert.deepEqual(alchemy.levels.map(l=>l.effect.match(/\d+/)?.[0]),['30','45','60']);
+for(const row of levelRows){
+ if(row.image.endsWith('enchantments-gravity-pulse.webp')){
+  assert.deepEqual(row.levels.map(l=>l.effect.match(/\d+/)?.[0]),['4','8','10']);
+  assert.equal(row['III级效果'],row.levels[2].effect);
+ }
+ if(row.image.endsWith('enchantments-tumbleshot.webp')){
+  assert.deepEqual(row.levels.map(l=>l.effect.match(/\d+/g)),[['1','110'],['1','120'],['2','130']]);
+  assert.equal(row['III级效果'],row.levels[2].effect);
+ }
+ if(row.image.endsWith('enchantments-cow-stampede.webp')){
+  assert.equal(row['触发条件'],'全速冲刺后撞击敌人');
+  assert.equal(new Set(row.levels.map(l=>l.effect)).size,1);
+ }
+}
 const rollRows=data.items.flatMap(i=>i.tables.flatMap(t=>t.rows)).filter(r=>r.effect_levels);
 assert.equal(data.items.flatMap(i=>i.tables.filter(t=>!t.source_item).flatMap(t=>t.rows)).filter(r=>r.effect_levels).length,1437);
 for(const item of data.items.filter(i=>i.rarity==='独特'&&['武器','盔甲部件'].includes(i.category))){
