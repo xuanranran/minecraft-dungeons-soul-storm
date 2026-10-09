@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {itemsForRegion,displayedRarity} from './dist/drops.mjs';
+import {itemsForRegion,displayedRarity,displayedParameters,categories} from './dist/drops.mjs';
 const data=JSON.parse(fs.readFileSync(new URL('./dist/equipment.json',import.meta.url)));
 const rotation=JSON.parse(fs.readFileSync(new URL('./dist/rotation.json',import.meta.url)));
 assert.equal(data.items.length,272);
@@ -24,4 +24,7 @@ assert.equal(uniqueGauntlets.parameters['基础武器'],gauntlets.name);
 for(const drop of gauntlets.drops){const weapons=itemsForRegion(data.items,drop['区域'],'武器');assert.ok(weapons.some(i=>i.id===uniqueGauntlets.id));assert.ok(!weapons.some(i=>i.id===gauntlets.id));}
 assert.ok(itemsForRegion(data.items,'吟唱者草甸','武器').some(i=>i.id==='awesomeaxe'));
 assert.equal(data.items.filter(i=>i.rarity==='独特').length,116);
+assert.deepEqual(categories,['近战武器','远程武器','盔甲部件','法器']);
+for(const region of regions){const melee=itemsForRegion(data.items,region,'近战武器'),ranged=itemsForRegion(data.items,region,'远程武器');assert.ok(melee.every(i=>i.weapon_kind==='近战'));assert.ok(ranged.every(i=>i.weapon_kind==='远程'));assert.equal(melee.length+ranged.length,itemsForRegion(data.items,region,'武器').length);}
+for(const item of data.items){const entries=displayedParameters(item);assert.ok(!entries.some(([key])=>key==='DPS排名'));if(item.parameters.DPS)assert.equal(entries.find(([key])=>key==='DPS')[1],item.parameters.DPS);}
 console.log(`Drop catalogue: 272 images, ${regions.length} regions and all category filters passed.`);

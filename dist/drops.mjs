@@ -1,11 +1,13 @@
-export const categories=['武器','盔甲部件','法器'];
+export const categories=['近战武器','远程武器','盔甲部件','法器'];
+export const displayedCategory=item=>item.category==='武器'?`${item.weapon_kind}武器`:item.category;
+export const displayedParameters=item=>Object.entries(item.parameters).filter(([key])=>key!=='DPS排名');
 // Base records can roll ordinary or special; display the special variant for every category.
 export const displayedRarity=item=>item.rarity==='独特'?'独特':['普通/非独特','非独特','特殊'].includes(item.rarity)?'特殊':'普通';
-export const itemsForRegion=(items,region,category='全部')=>items.filter(item=>(displayedRarity(item)==='独特'||item.category==='法器'&&displayedRarity(item)==='特殊')&&(category==='全部'||item.category===category)&&item.drops.some(drop=>drop['区域']===region));
+export const itemsForRegion=(items,region,category='全部')=>items.filter(item=>(displayedRarity(item)==='独特'||item.category==='法器'&&displayedRarity(item)==='特殊')&&(category==='全部'||item.category===category||displayedCategory(item)===category)&&item.drops.some(drop=>drop['区域']===region));
 
 export function setupDrops(){
  const dialog=document.getElementById('drops-dialog'),title=document.getElementById('drops-title'),grid=document.getElementById('drops-grid'),status=document.getElementById('drops-status'),tabs=document.getElementById('drops-tabs');
- let dataPromise,region='',category='武器',opener;
+ let dataPromise,region='',category='近战武器',opener;
  const el=(tag,className,text)=>{const e=document.createElement(tag);if(className)e.className=className;if(text!=null)e.textContent=text;return e};
  const load=()=>dataPromise??=(fetch('./equipment.json?v=descriptions1').then(r=>{if(!r.ok)throw Error('无法读取装备数据');return r.json()}).catch(e=>{dataPromise=null;throw e}));
  async function render(){
@@ -18,11 +20,11 @@ export function setupDrops(){
     card.classList.toggle('unique',item.rarity==='独特');
     card.classList.toggle('special',displayedRarity(item)==='特殊');
     img.addEventListener('error',()=>{picture.replaceChildren(el('span','meta','图片暂不可用'))},{once:true});picture.append(img);
-    const info=el('div','drop-info');info.append(el('h3','',item.name),el('p','drop-kind',[item.category,item.weapon_kind,item.overview['部位'],displayedRarity(item)].filter(Boolean).join(' · ')));
+    const info=el('div','drop-info');info.append(el('h3','',item.name),el('p','drop-kind',[displayedCategory(item),item.overview['部位'],displayedRarity(item)].filter(Boolean).join(' · ')));
     if(item.description)info.append(el('p','drop-description',item.description));
     const drop=item.drops.find(d=>d['区域']===region);if(drop['物品掉落占比'])info.append(el('p','drop-weight',`物品池占比 ${drop['物品掉落占比']}`));
     const details=el('details','drop-details'),summary=el('summary','','参数与效果');details.append(summary);const dl=el('dl');
-    for(const [key,value] of Object.entries(item.parameters)){dl.append(el('dt','',key),el('dd','',value))}details.append(dl);
+    for(const [key,value] of displayedParameters(item)){dl.append(el('dt','',key),el('dd','',value))}details.append(dl);
     for(const effect of item.fixed_effects){
      const box=el('div','drop-effect-card'),icon=el('img','drop-effect-icon');icon.src=effect.image;icon.alt='';icon.width=36;icon.height=36;icon.loading='lazy';icon.addEventListener('error',()=>{icon.hidden=true},{once:true});
      const text=el('div','drop-effect-copy');text.append(el('strong','',effect.name),el('p','',effect.effect));box.append(icon,text);details.append(box);
@@ -35,8 +37,8 @@ export function setupDrops(){
    }grid.replaceChildren(fragment);
   }catch{if(region===target&&category===selected){status.replaceChildren(el('span','','掉落数据加载失败，'),el('button','drops-retry','重试'));status.querySelector('button').addEventListener('click',render)}}
  }
- function open(name,button){region=name;category='武器';opener=button;title.textContent=`${name} · 地区掉落`;for(const t of tabs.children)t.setAttribute('aria-pressed',String(t.dataset.category===category));if(!dialog.open){dialog.showModal();document.body.classList.add('drops-open')}render();}
- for(const name of categories){const button=el('button','drops-tab',name);button.type='button';button.dataset.category=name;button.setAttribute('aria-pressed',String(name==='武器'));button.addEventListener('click',()=>{category=name;for(const t of tabs.children)t.setAttribute('aria-pressed',String(t===button));render()});tabs.append(button)}
+ function open(name,button){region=name;category='近战武器';opener=button;title.textContent=`${name} · 地区掉落`;for(const t of tabs.children)t.setAttribute('aria-pressed',String(t.dataset.category===category));if(!dialog.open){dialog.showModal();document.body.classList.add('drops-open')}render();}
+ for(const name of categories){const button=el('button','drops-tab',name);button.type='button';button.dataset.category=name;button.setAttribute('aria-pressed',String(name==='近战武器'));button.addEventListener('click',()=>{category=name;for(const t of tabs.children)t.setAttribute('aria-pressed',String(t===button));render()});tabs.append(button)}
  document.addEventListener('click',e=>{const button=e.target.closest('[data-drop-region]');if(button)open(button.dataset.dropRegion,button)});
  document.getElementById('drops-close').addEventListener('click',()=>dialog.close());
  dialog.addEventListener('click',e=>{if(e.target===dialog){const box=dialog.getBoundingClientRect();if(e.clientX<box.left||e.clientX>box.right||e.clientY<box.top||e.clientY>box.bottom)dialog.close()}});
