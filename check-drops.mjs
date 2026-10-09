@@ -37,7 +37,14 @@ for(const row of levelRows){if(row.levels.length){assert.deepEqual(row.levels.ma
 const alchemy=levelRows.find(r=>r.image?.includes('ancient-alchemy'));
 assert.deepEqual(alchemy.levels.map(l=>l.effect.match(/\d+/)?.[0]),['30','45','60']);
 const rollRows=data.items.flatMap(i=>i.tables.flatMap(t=>t.rows)).filter(r=>r.effect_levels);
-assert.equal(rollRows.length,1437);
+assert.equal(data.items.flatMap(i=>i.tables.filter(t=>!t.source_item).flatMap(t=>t.rows)).filter(r=>r.effect_levels).length,1437);
+for(const item of data.items.filter(i=>i.rarity==='独特'&&['武器','盔甲部件'].includes(i.category))){
+ const pools=item.tables.filter(t=>t.title.includes('可能出现'));
+ assert.equal(pools.length,1);
+ const base=data.items.find(i=>i.category===item.category&&i.name===(item.parameters['基础武器']||item.parameters['基础部件']));
+ assert.equal(pools[0].source_item,base.name);
+ assert.deepEqual(pools[0].rows,base.tables.find(t=>t.title.includes('可能出现')).rows);
+}
 for(const row of rollRows){assert.ok(['I','II','III'].every(level=>row.effect_levels.some(l=>l.level===level)));assert.ok(row.effect_levels.every(l=>l.value&&l.effect));}
 const ally=sample.tables.flatMap(t=>t.rows).find(r=>r.image?.endsWith('effects-ally.webp'));
 assert.deepEqual(ally.effect_levels.map(l=>l.value),['15%','30%','50%','70%']);
