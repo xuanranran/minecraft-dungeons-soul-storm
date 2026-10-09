@@ -1,11 +1,11 @@
-export const categories=['全部','武器','盔甲部件','法器'];
+export const categories=['武器','盔甲部件','法器'];
 // Base records can roll ordinary or special; display the special variant for every category.
 export const displayedRarity=item=>item.rarity==='独特'?'独特':['普通/非独特','非独特','特殊'].includes(item.rarity)?'特殊':'普通';
 export const itemsForRegion=(items,region,category='全部')=>items.filter(item=>(displayedRarity(item)==='独特'||item.category==='法器'&&displayedRarity(item)==='特殊')&&(category==='全部'||item.category===category)&&item.drops.some(drop=>drop['区域']===region));
 
 export function setupDrops(){
  const dialog=document.getElementById('drops-dialog'),title=document.getElementById('drops-title'),grid=document.getElementById('drops-grid'),status=document.getElementById('drops-status'),tabs=document.getElementById('drops-tabs');
- let dataPromise,region='',category='全部',opener;
+ let dataPromise,region='',category='武器',opener;
  const el=(tag,className,text)=>{const e=document.createElement(tag);if(className)e.className=className;if(text!=null)e.textContent=text;return e};
  const load=()=>dataPromise??=(fetch('./equipment.json?v=drops1').then(r=>{if(!r.ok)throw Error('无法读取装备数据');return r.json()}).catch(e=>{dataPromise=null;throw e}));
  async function render(){
@@ -31,8 +31,8 @@ export function setupDrops(){
    }grid.replaceChildren(fragment);
   }catch{if(region===target&&category===selected){status.replaceChildren(el('span','','掉落数据加载失败，'),el('button','drops-retry','重试'));status.querySelector('button').addEventListener('click',render)}}
  }
- function open(name,button){region=name;category='全部';opener=button;title.textContent=`${name} · 地区掉落`;for(const t of tabs.children)t.setAttribute('aria-pressed',String(t.dataset.category===category));if(!dialog.open){dialog.showModal();document.body.classList.add('drops-open')}render();}
- for(const name of categories){const button=el('button','drops-tab',name);button.type='button';button.dataset.category=name;button.setAttribute('aria-pressed',String(name==='全部'));button.addEventListener('click',()=>{category=name;for(const t of tabs.children)t.setAttribute('aria-pressed',String(t===button));render()});tabs.append(button)}
+ function open(name,button){region=name;category='武器';opener=button;title.textContent=`${name} · 地区掉落`;for(const t of tabs.children)t.setAttribute('aria-pressed',String(t.dataset.category===category));if(!dialog.open){dialog.showModal();document.body.classList.add('drops-open')}render();}
+ for(const name of categories){const button=el('button','drops-tab',name);button.type='button';button.dataset.category=name;button.setAttribute('aria-pressed',String(name==='武器'));button.addEventListener('click',()=>{category=name;for(const t of tabs.children)t.setAttribute('aria-pressed',String(t===button));render()});tabs.append(button)}
  document.addEventListener('click',e=>{const button=e.target.closest('[data-drop-region]');if(button)open(button.dataset.dropRegion,button)});
  document.getElementById('drops-close').addEventListener('click',()=>dialog.close());
  dialog.addEventListener('click',e=>{if(e.target===dialog){const box=dialog.getBoundingClientRect();if(e.clientX<box.left||e.clientX>box.right||e.clientY<box.top||e.clientY>box.bottom)dialog.close()}});
