@@ -43,7 +43,7 @@ export function setupDrops(){
      }details.append(section);
     }
     const locations=el('details','drop-extra');locations.append(el('summary','','掉落地区'));for(const place of item.drops){const line=el('p','drop-location');setRegionText(line,place['区域']);locations.append(line)}details.append(locations);
-    info.append(details);card.append(picture,info);fragment.append(card);
+    card.append(picture,info,details);fragment.append(card);
    }grid.replaceChildren(fragment);
   }catch{if(region===target&&category===selected){status.replaceChildren(el('span','','掉落数据加载失败，'),el('button','drops-retry','重试'));status.querySelector('button').addEventListener('click',render)}}
  }
