@@ -26,7 +26,7 @@
 .drop-item.unique .drop-kind{color:#d85454}.drop-item.special .drop-kind{color:#2485d5}
 .drop-info{min-width:0;min-height:88px;display:flex;flex-direction:column;justify-content:flex-start;gap:2px}.drop-info h3{font-size:16px;margin:0;line-height:1.5}
 .drop-kind,.drop-weight{font-size:12px;color:var(--muted);line-height:1.6}
-.drop-description{display:flex;align-items:center;min-height:3.4em;font-size:12px;line-height:1.7;color:var(--muted);font-style:italic;margin:0;overflow-wrap:anywhere}
+.drop-description{font-size:12px;line-height:1.7;color:var(--muted);font-style:italic;margin:0;overflow-wrap:anywhere}
 .drop-details{grid-column:1/-1;min-width:0;background:transparent;border:0;border-radius:0;margin:0}
 .drop-details summary{padding:0;font-size:12px;color:var(--blue)}
 .drop-detail-panel{margin-top:9px;padding:12px;border:1px solid var(--line);border-radius:9px;background:var(--surface);box-shadow:0 2px 6px #00000008;min-width:0}
