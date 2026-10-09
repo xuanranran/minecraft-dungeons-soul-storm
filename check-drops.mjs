@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {itemsForRegion,displayedRarity,displayedParameters,categories} from './dist/drops.mjs';
+import {itemsForRegion,displayedRarity,displayedParameters,displayedTables,categories} from './dist/drops.mjs';
 import {regionImages} from './dist/region-icons.mjs';
 const data=JSON.parse(fs.readFileSync(new URL('./dist/equipment.json',import.meta.url)));
 const rotation=JSON.parse(fs.readFileSync(new URL('./dist/rotation.json',import.meta.url)));
@@ -32,6 +32,18 @@ assert.deepEqual(categories,['近战武器','远程武器','盔甲部件','法�
 for(const region of regions){const melee=itemsForRegion(data.items,region,'近战武器'),ranged=itemsForRegion(data.items,region,'远程武器');assert.ok(melee.every(i=>i.weapon_kind==='近战'));assert.ok(ranged.every(i=>i.weapon_kind==='远程'));assert.equal(melee.length+ranged.length,itemsForRegion(data.items,region,'武器').length);}
 for(const item of data.items){const entries=displayedParameters(item);assert.ok(!entries.some(([key])=>key==='DPS排名'));if(item.parameters.DPS)assert.equal(entries.find(([key])=>key==='DPS')[1],item.parameters.DPS);}
 const levelRows=data.items.flatMap(i=>i.tables.flatMap(t=>t.rows)).filter(r=>r.levels);
+for(const item of data.items){
+ const tables=displayedTables(item);
+ if(item.category==='法器')assert.ok(tables.every(t=>!t.title.includes('附魔')));
+ for(const table of tables.filter(t=>t.title.includes('可用附魔'))){
+  assert.ok(table.rows.every(r=>r.levels.length>1));
+  assert.deepEqual(table.rows,item.tables.find(t=>t.title===table.title).rows.filter(r=>r.levels.length>1));
+ }
+ assert.deepEqual(tables.filter(t=>t.title.includes('可能出现')),item.tables.filter(t=>t.title.includes('可能出现')));
+}
+const gauntletBooks=displayedTables(uniqueGauntlets).find(t=>t.title.includes('可用附魔'));
+assert.ok(!gauntletBooks.rows.some(r=>r.image.endsWith('primed-enchantment.webp')||r.image.endsWith('ichor-blast.webp')));
+assert.ok(uniqueGauntlets.fixed_effects.some(e=>e.name==='霜电附魔'));
 assert.ok(levelRows.length>3000);
 for(const row of levelRows){if(row.levels.length){assert.deepEqual(row.levels.map(l=>l.level),['I','II','III']);assert.ok(row.levels.every(l=>typeof l.effect==='string'&&l.effect.length>0));}else assert.ok(row.ungraded_effect);}
 assert.equal(new Set(levelRows.map(row=>row.image)).size,34);

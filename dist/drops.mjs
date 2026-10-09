@@ -1,6 +1,10 @@
 import {setRegionText} from './region-icons.mjs?v=listicons1';
 export const categories=['近战武器','远程武器','盔甲部件','法器'];
 export const displayedCategory=item=>item.category==='武器'?`${item.weapon_kind}武器`:item.category;
+export const displayedTables=item=>(item.tables??[])
+ .filter(table=>item.category!=='法器'||!table.title.includes('附魔'))
+ .map(table=>table.title.includes('可用附魔')?{...table,rows:table.rows.filter(row=>(row.levels?.length??0)>1)}:table)
+ .filter(table=>table.rows.length>0);
 export const displayedParameters=item=>{
  const entries=Object.entries(item.parameters).filter(([key])=>key!=='DPS排名').map(([key,value])=>[key,key==='每秒终结击'?value.replace(/\s*·\s*同级.*$/u,''):value]);
  if(item.category!=='武器')return entries;
@@ -38,7 +42,7 @@ export function setupDrops(){
      const box=el('div','drop-effect-card'),icon=el('img','drop-effect-icon');icon.src=effect.image;icon.alt='';icon.width=48;icon.height=48;icon.loading='lazy';icon.addEventListener('error',()=>{icon.hidden=true},{once:true});
      const text=el('div','drop-effect-copy');text.append(el('strong','',effect.name),el('p','',effect.effect));box.append(icon,text);panel.append(box);
     }
-    for(const table of item.tables??[]){if(table.columns.includes('区域')||table.title==='属性 / 数值')continue;
+    for(const table of displayedTables(item)){if(table.columns.includes('区域')||table.title==='属性 / 数值')continue;
      const section=el('details','drop-extra'),heading=el('summary','',table.title.replace(item.name,''));section.append(heading);
      for(const row of table.rows){const entry=el('div','drop-entry'),fields=Object.entries(row).filter(([key])=>!['image','description','levels','effect_levels','ungraded_effect'].includes(key)),levelData=row.effect_levels??row.levels;
       let copy=entry;
