@@ -1,5 +1,7 @@
-export const categories=['全部','武器','盔甲部件'];
-export const itemsForRegion=(items,region,category='全部')=>items.filter(item=>item.rarity==='独特'&&(category==='全部'||item.category===category)&&item.drops.some(drop=>drop['区域']===region));
+export const categories=['全部','武器','盔甲部件','法器'];
+// The source groups base artifact records as ordinary/non-unique; show their special variant.
+export const displayedRarity=item=>item.rarity==='独特'?'独特':item.category==='法器'&&['普通/非独特','非独特','特殊'].includes(item.rarity)?'特殊':'普通';
+export const itemsForRegion=(items,region,category='全部')=>items.filter(item=>(displayedRarity(item)==='独特'||item.category==='法器'&&displayedRarity(item)==='特殊')&&(category==='全部'||item.category===category)&&item.drops.some(drop=>drop['区域']===region));
 
 export function setupDrops(){
  const dialog=document.getElementById('drops-dialog'),title=document.getElementById('drops-title'),grid=document.getElementById('drops-grid'),status=document.getElementById('drops-status'),tabs=document.getElementById('drops-tabs');
@@ -9,13 +11,14 @@ export function setupDrops(){
  async function render(){
   const target=region,selected=category;grid.replaceChildren();status.textContent='正在读取掉落物品…';
   try{const data=await load();if(region!==target||category!==selected||!dialog.open)return;
-   const items=itemsForRegion(data.items,region,category);status.textContent=items.length?`${items.length} 件独特物品`:'该地区暂无收录的独特物品';
+   const items=itemsForRegion(data.items,region,category);status.textContent=items.length?`${items.length} 件物品`:'该地区暂无符合条件的物品';
    const fragment=document.createDocumentFragment();
    for(const item of items){
     const card=el('article','drop-item'),picture=el('div','drop-picture'),img=el('img');img.src=item.image;img.alt=item.name;img.loading='lazy';img.width=88;img.height=88;
     card.classList.toggle('unique',item.rarity==='独特');
+    card.classList.toggle('special',displayedRarity(item)==='特殊');
     img.addEventListener('error',()=>{picture.replaceChildren(el('span','meta','图片暂不可用'))},{once:true});picture.append(img);
-    const info=el('div','drop-info');info.append(el('h3','',item.name),el('p','drop-kind',[item.category,item.weapon_kind,item.overview['部位'],item.rarity==='独特'?'独特':null].filter(Boolean).join(' · ')));
+    const info=el('div','drop-info');info.append(el('h3','',item.name),el('p','drop-kind',[item.category,item.weapon_kind,item.overview['部位'],displayedRarity(item)].filter(Boolean).join(' · ')));
     const drop=item.drops.find(d=>d['区域']===region);if(drop['物品掉落占比'])info.append(el('p','drop-weight',`物品池占比 ${drop['物品掉落占比']}`));
     const details=el('details','drop-details'),summary=el('summary','','参数与效果');details.append(summary);const dl=el('dl');
     for(const [key,value] of Object.entries(item.parameters)){dl.append(el('dt','',key),el('dd','',value))}details.append(dl);
