@@ -31,7 +31,7 @@ export function setupDrops(){
     img.addEventListener('error',()=>{picture.replaceChildren(el('span','meta','图片暂不可用'))},{once:true});picture.append(img);
     const info=el('div','drop-info');info.append(el('h3','',item.name),el('p','drop-kind',[displayedCategory(item),item.overview['部位'],displayedRarity(item)].filter(Boolean).join(' · ')));
     if(item.description)info.append(el('p','drop-description',item.description));
-    const drop=item.drops.find(d=>d['区域']===region);if(drop['物品掉落占比'])info.append(el('p','drop-weight',`物品池占比 ${drop['物品掉落占比']}`));
+    const drop=item.drops.find(d=>d['区域']===region);if(item.category!=='法器'&&drop['物品掉落占比'])info.append(el('p','drop-weight',`物品池占比 ${drop['物品掉落占比']}`));
     const details=el('details','drop-details'),summary=el('summary','','参数与效果'),panel=el('div','drop-detail-panel');details.append(summary,panel);const dl=el('dl');
     for(const [key,value] of displayedParameters(item)){dl.append(el('dt','',key),el('dd','',value))}panel.append(dl);
     for(const effect of item.fixed_effects){
