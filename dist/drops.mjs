@@ -2,7 +2,7 @@ import {setRegionText} from './region-icons.mjs?v=listicons1';
 export const categories=['近战武器','远程武器','盔甲部件','法器'];
 export const displayedCategory=item=>item.category==='武器'?`${item.weapon_kind}武器`:item.category;
 export const displayedParameters=item=>{
- const entries=Object.entries(item.parameters).filter(([key])=>key!=='DPS排名');
+ const entries=Object.entries(item.parameters).filter(([key])=>key!=='DPS排名').map(([key,value])=>[key,key==='每秒终结击'?value.replace(/\s*·\s*同级.*$/u,''):value]);
  if(item.category!=='武器')return entries;
  const weight=item.overview?.['重量']||item.parameters['重量']||'—';
  return [['重量',weight],...entries.filter(([key])=>key!=='重量')];
