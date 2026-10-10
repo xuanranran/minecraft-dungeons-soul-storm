@@ -1,0 +1,120 @@
+{
+  "widget": "W_Tooltip",
+  "colors": {
+    "header": "#457482",
+    "header-edge": "#0096C1",
+    "header-shine": "#BCC0C1",
+    "panel": "#172230",
+    "panel-shine": "#3A434F",
+    "unique": "#F68F45",
+    "level-top": "#D082FF",
+    "level-bottom": "#BC76E1"
+  },
+  "sources": [
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Widget/Tooltip/Modules/MI_UI_ToolTipModule_Equipped.json",
+      "sha256": "ca20c400a298cc96be65b4cfa09ae08cc49bb110722525da9182d39538382666"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Widget/Panel/TooltipContentPanel/M_UI_Tooltip_Border.json",
+      "sha256": "a1b862eb3c504096be747b177fb2f77b129e23c96ed72388f3d1e2de0f49568d"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Widget/Tooltip/Modules/MI_RarityUnique_BG.json",
+      "sha256": "c5c55af8af4933de762029d125050f9b61a3cc518ef099ef6b27fccf4e875031"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Widget/Tooltip/Modules/Components/M_EnchantLevelIndicator.json",
+      "sha256": "77a7faf7addfcf4370afe50a477661b0cbea4930a72b763b6285e00233f9d4e6"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Widget/Tooltip/W_Tooltip.json",
+      "sha256": "ebb32f84b24e6d9b58d0e3fb7534717e04121f420acb3eb2800bcf36f3801d24"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Widget/Panel/W_TooltipContentPanel.json",
+      "sha256": "683040d19ba2125af34965846a0516f3c4da822047a92b91971938cd37d087ff"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Widget/Tooltip/Modules/W_TooltipModule_Equipped.json",
+      "sha256": "fc0690074ac5d21e5b7008774f1a1971ee93c08d8f892b653818272b506aceaa"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Widget/Tooltip/Modules/W_TooltipModule_Enchantment.json",
+      "sha256": "2029dc2c9c246469dbfed7b9f4cd5793f90927391c47d68002989de8ca36176f"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Widget/Tooltip/Modules/Components/W_TooltipModule_EffectEntry.json",
+      "sha256": "e8a5df3173eeb59751e7b5d3d83cefa7ea7d22d51db14e954639431c2b69882f"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Widget/Tooltip/Modules/W_TooltipModule_Rarity.json",
+      "sha256": "2ffddb5913b2fa54bf68a42da7cafec3475cef31a4d9202f8d9b321edfe1a71c"
+    },
+    {
+      "source": "ui-complete/Dungeons/Content/Fonts/NewFive.json",
+      "sha256": "1c9bf2a52e9db2a99ffae95fb6d14aeb25b590e25412ca6949812a563fe4299a"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Widget/Panel/W_TooltipContentPanel.json",
+      "sha256": "683040d19ba2125af34965846a0516f3c4da822047a92b91971938cd37d087ff"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Typography/TextStyles/Style_Body_Text.json",
+      "sha256": "4ee5391606807a419525896b752bf22e4fffba4a201833dfe467fd97481036eb"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Typography/TextStyles/Style_Header4_Text.json",
+      "sha256": "c5a459f2b377c510539e5a3879c77af299aded37a40e5d149fc88934ac6ee268"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Typography/TextStyles/Style_SectionHeader1_Text.json",
+      "sha256": "75f17b4acf076ac08f64e1dd636138a802b32cbcf5b8649f73974cc9fac12a52"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Typography/TextStyles/Custom_Variants/Style_EnchantmentLevelIndicator.json",
+      "sha256": "93b85501342ea1c85706369bbf94a3b21ece3c10462afe1b1de743c3a565294c"
+    },
+    {
+      "source": "textures/Dungeons/Plugins/OreUI/Content/UI/Textures/UI_FX/T_UI_Enchant_Icon_Mask.png",
+      "file": "images/native-tooltip/enchant-mask.png",
+      "sha256": "84c1740e7e50631bec9e655e1ace57c041559e73f655e68be38ea722ef3695ab"
+    },
+    {
+      "source": "textures/Dungeons/Plugins/OreUI/Content/UI/Widget/Tooltip/Modules/T_UI_Icon_Timer.png",
+      "file": "images/native-tooltip/timer.png",
+      "sha256": "600535b7815bbf74da1b4c23f33d52e26f719a5fe0772095950921b13a353bc0"
+    },
+    {
+      "source": "textures/Dungeons/Plugins/OreUI/Content/UI/Widget/Tooltip/Modules/T_UI_Icon_Soul_Cost.png",
+      "file": "images/native-tooltip/soul-cost.png",
+      "sha256": "24c873bd76495fa5b19b2725afa9c35a0e372e8a1b679c63326cdc9eb941aebf"
+    },
+    {
+      "source": "textures/Dungeons/Plugins/OreUI/Content/UI/Icons/Currency/T_UI_Icon_EnchantmentSwirl.png",
+      "file": "images/native-tooltip/enchantment-swirl.png",
+      "sha256": "df3f822e655c6ffe3124b759941c471e02c8e28a6c22f3d16675772106150e07"
+    },
+    {
+      "source": "organized/fonts/Dungeons/Content/Fonts/MinecraftFive.otf",
+      "file": "fonts/native-five.woff2",
+      "source_sha256": "348733afb824ec88d2e222f2073a68bd69f7bf3dcb8df189c0a705e46292e66d",
+      "sha256": "3d92c7fdfb9bb56effbecb21af634aea8051bbc449ef0120d3b278f77b3e8fa9"
+    },
+    {
+      "source": "organized/fonts/Dungeons/Content/Spicewood/Fonts/Spicewood/Font_Spicewood_TenV2_Regular.otf",
+      "file": "fonts/native-ten.woff2",
+      "source_sha256": "1dd0c122794d0ac5c504e853143e078bd295f24b3a0d6ddd23dba2ca70b6e815",
+      "sha256": "7a6af4d78a3f194953045ab865ca223c463c93d0a9aa494ecf003896a1ee6a91"
+    }
+  ],
+  "adaptation": {
+    "nativeContentInset": 80.0,
+    "webContentInset": 40.0,
+    "scale": 0.5,
+    "nativeModuleSpacing": 32,
+    "webModuleSpacing": 16,
+    "rendering": "CSS equivalents for cooked Unreal materials, with original icon textures and Five/Ten fonts.",
+    "equipmentValues": "Catalogue/build values only; no invented player level or item power."
+  }
+}

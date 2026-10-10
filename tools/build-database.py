@@ -32,7 +32,7 @@ labels.update({'Positive status':'正面状态','Negative status':'负面状态'
 def native_match(category,text):
  # Identical English names can refer to a mob and an unrelated status.
  # Resolve names and descriptions through the same category-specific entry.
- groups={'enemies':['DT_Mob'],'bosses':['DT_Mob'],'locations':['DT_AreaDefinition'],'cosmetics':['DT_ItemDefinitionCape','DT_ItemDefinitionPet'],'effects':['EffectDefinition','DT_StatusDefinition'],'enchantments':['Enchant'],'armor-sets':['ArmorSet']}
+ groups={'enemies':['DT_Mob'],'bosses':['DT_Mob'],'locations':['DT_AreaDefinition'],'cosmetics':['DT_ItemDefinitionCape','DT_ItemDefinitionPet'],'effects':['EffectDefinition','DT_StatusDefinition'],'statuses':['DT_StatusDefinition'],'enchantments':['Enchant'],'armor-sets':['ArmorSet']}
  entries=native_entries.get(norm(text),[])
  if category in groups:entries=[entry for entry in entries if any(group in entry[2] for group in groups[category])]
  return entries[-1] if entries else None
@@ -88,6 +88,7 @@ for item in catalogue:
  if item['unique']:categories['unique'].append({**record,'categoryKey':'unique'})
 
 enchants={e['slug']:e for e in rules['enchants']};effects={e['slug']:(tag,e) for tag,e in rules['effects'].items()}
+aliases={}
 for category in ['enemies','enchantments','effects','locations','cosmetics','quests','upcoming']:
  for row in read(SOURCE/(category+'.json'))['rows']:
   slug=row['href'].split('/')[-1].split('#')[-1];record={'id':slug,'slug':slug,'name':tr(row['name'],category),'english':row['name'],'kind':'enemy' if category=='enemies' else category.rstrip('s'),'categoryKey':category,'dbKind':'reference','image':assets.get(row['image'],''),'description':'','parameters':[[tr(k),tr(v)] for k,v in row['values'] if v],'tables':[],'related':[],'source':'https://www.dungeons.tools'+row['href'],'subtype':tr(row['sub'])}
@@ -118,7 +119,15 @@ for category in ['enemies','enchantments','effects','locations','cosmetics','que
     record['tiers']=tiers;record['description']=tiers[0]['text'] if tiers else ''
     record['related']=[{'category':kind_categories[i['kind']],'id':i['slug'],'name':i['name']} for i in catalogue if any(t in loadouts[i['slug']]['pool'] for t in [entry['tag'] for entry in entries]) or any(e['effect']==tag for e in loadouts[i['slug']]['fixed'])]
   if category=='upcoming':record['subtype']='文件预留';record['description']=next((tr(v) for k,v in row['values'] if k=='IN-GAME TEXT'),'')
-  record['parameters']=list(dict(record['parameters']).items());categories[category].append(record)
+  if category=='enchantments' and slug not in enchants:
+   # The reference page combines collectible books with positive/negative
+   # statuses. Only native book definitions belong in the book catalogue.
+   assert row['sub'] in ['Positive status','Negative status'],slug
+   record.update(categoryKey='statuses',kind='effect')
+   aliases['enchantments:'+slug]={'category':'statuses','id':slug}
+  record['parameters']=list(dict(record['parameters']).items());categories[record['categoryKey']].append(record)
+
+assert {r['id'] for r in categories['enchantments']}==set(enchants)
 
 categories['bosses']=[{**e,'categoryKey':'bosses'} for e in categories['enemies'] if e['subtype']=='首领']
 seen=set()
@@ -146,15 +155,18 @@ for records in categories.values():
   for link in record.get('related',[]):
    if link['id'] in all_records and link['category']=='artifacts':
     link['category'],link['name']=all_records[link['id']]
-names={'weapons':'武器','armor':'盔甲','armor-sets':'盔甲套装','artifacts':'法器','talismans':'护身符','enchantments':'附魔','effects':'装备效果','unique':'独特物品','enemies':'生物','bosses':'首领','locations':'地点','quests':'任务','cosmetics':'装饰','upcoming':'预留内容'}
-index={'version':1,'captured_at':'2026-10-10','categories':[],'search':[]}
+names={'weapons':'武器','armor':'盔甲','armor-sets':'盔甲套装','artifacts':'法器','talismans':'护身符','enchantments':'附魔书','effects':'装备效果','statuses':'状态','unique':'独特物品','enemies':'生物','bosses':'首领','locations':'地点','quests':'任务','cosmetics':'装饰','upcoming':'预留内容'}
+index={'version':1,'captured_at':'2026-10-10','categories':[],'search':[],'aliases':aliases}
 for category,label in names.items():
  records=categories[category]
  for record in records:
   record['detail']='./data/database/items/'+category+'-'+record['id']+'.json?v=modern1';write(OUT/'items'/(category+'-'+record['id']+'.json'),record)
  lightweight=[{k:v for k,v in r.items() if k not in ['tables','tiers','related','objectives']} for r in records]
  write(OUT/(category+'.json'),{'items':lightweight})
- index['categories'].append({'id':category,'name':label,'count':len(records),'image':next((r['image'] for r in records if r['image']),''),'description':'未实装的文件预留定义' if category=='upcoming' else '基础参数、详细机制与相关资料'})
+ index['categories'].append({'id':category,'name':label,'count':len(records),'image':'./images/native-tooltip/enchantment-swirl.png' if category=='enchantments' else next((r['image'] for r in records if r['image']),''),'description':'未实装的文件预留定义' if category=='upcoming' else '基础参数、详细机制与相关资料'})
  index['search'] += [{k:r[k] for k in ['id','name','english','image','categoryKey','kind','unique','subtype','iconKind','description'] if k in r} for r in records]
+for old,alias in aliases.items():
+ record=next(r for r in categories[alias['category']] if r['id']==alias['id'])
+ write(OUT/'items'/(old.replace(':','-')+'.json'),record)
 write(OUT/'index.json',index);write(SOURCE/'native-translations.json',provenance)
 print('Database:',', '.join(k+' '+str(len(v)) for k,v in categories.items()))

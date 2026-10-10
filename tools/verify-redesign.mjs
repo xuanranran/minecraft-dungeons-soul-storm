@@ -62,6 +62,7 @@ try{
   await dialog.getByRole('button',{name:'关闭窗口'}).click();
   await page.goto(new URL('storm/',base).href);await ready('storm');await page.locator('#current-drops').click();await page.locator('#drops-dialog .drop-item').first().waitFor();
   const cards=await page.locator('#drops-dialog .drop-item').evaluateAll(nodes=>nodes.map(n=>n.getBoundingClientRect().height));
+  assert.equal(await page.locator('#drops-dialog .drop-item').evaluateAll(nodes=>nodes.every(n=>{const c=n.getBoundingClientRect(),p=n.querySelector('.drop-picture').getBoundingClientRect(),i=n.querySelector('.drop-info').getBoundingClientRect();return Math.abs((p.top+p.bottom)-(c.top+c.bottom))<2&&Math.abs((i.top+i.bottom)-(c.top+c.bottom))<2;})),true,'drop image and text must share the card vertical center');
   assert.ok(cards.every(h=>Math.abs(h-cards[0])<1&&h<140));
   await snapshot('drops');
   assert.deepEqual(errors,[]);await page.close();console.log(width+': black canvas, visible progress, compact planner, table comparison, detail tabs and consistent drop cards passed.');

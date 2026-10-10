@@ -5,6 +5,7 @@ and leaves existing content-hashed assets available to already-open clients.
 """
 import datetime
 import io
+import json
 import os
 import posixpath
 import shlex
@@ -18,6 +19,7 @@ root = Path(__file__).resolve().parents[1]
 build = (root / 'dist').resolve()
 if build.parent != root or not (build / 'routes.json').is_file():
     raise RuntimeError('Build and validate the static site before deploying')
+route_count = len(json.loads((build / 'routes.json').read_text(encoding='utf-8')))
 stamp = datetime.datetime.now().strftime('%Y%m%d-%H%M%S')
 remote = '/opt/map-rotation'
 backup = remote + '/backup-jamstack-' + stamp
@@ -63,6 +65,6 @@ try:
                 _, stdout, stderr = client.exec_command(command, timeout=60)
                 if stdout.channel.recv_exit_status():
                     raise RuntimeError(stderr.read().decode())
-    print('LAN deployed: 895 static routes; previous entries archived at ' + backup)
+    print(f'LAN deployed: {route_count} static routes; previous entries archived at ' + backup)
 finally:
     client.close()

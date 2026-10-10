@@ -1,0 +1,99 @@
+@import './game-tooltip-tokens.css';
+@font-face{font-family:'Dungeons Five';src:url('/fonts/native-five.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Dungeons Ten';src:url('/fonts/native-ten.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+
+/* Native slate units use a single DPI scale. Material geometry is expressed in
+   CSS; art and fonts are the unchanged extracted files (see the manifest).
+   The outer item render stays outside the independently scrolling content. */
+.equipment-tooltip.native-game-tooltip{
+ --game-ui-scale:.5;--tip-inset:calc(var(--game-native-inset)*var(--game-ui-scale));
+ --tip-gap:calc(32px*var(--game-ui-scale));
+ position:fixed;margin:0;inset:auto;padding:0;border:0;border-radius:0;overflow:visible;
+ background:transparent;color:#eee;isolation:isolate;pointer-events:auto;
+ box-shadow:0 8px 24px #000b;
+ font:600 calc(var(--game-native-body)*var(--game-ui-scale))/1.2 'Dungeons Sixteen',sans-serif;
+ text-shadow:0 calc(4px*var(--game-ui-scale)) #0008;
+}
+.equipment-tooltip.native-game-tooltip::before{
+ content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;
+ background:linear-gradient(#0009,#0009),var(--game-tip-panel);
+ border:2px solid var(--game-tip-panel-shine);box-shadow:inset 0 0 0 1px #000;
+ clip-path:polygon(0 4px,4px 4px,4px 0,calc(100% - 4px) 0,calc(100% - 4px) 4px,100% 4px,100% calc(100% - 4px),calc(100% - 4px) calc(100% - 4px),calc(100% - 4px) 100%,4px 100%,4px calc(100% - 4px),0 calc(100% - 4px));
+}
+.native-game-tooltip .equipment-tip-scroll{max-height:inherit;overflow:auto;overscroll-behavior:contain;padding:0 0 var(--tip-inset);scrollbar-width:thin;scrollbar-color:#65747d #08131b}
+.native-game-tooltip .equipment-tip-strip{
+ position:sticky;top:0;z-index:2;display:flex;justify-content:center;align-items:center;
+ gap:calc(32px*var(--game-ui-scale));min-height:0;margin:0;
+ padding:calc(10px*var(--game-ui-scale)) calc(20px*var(--game-ui-scale));
+ background:var(--game-tip-header);color:#edf5f7;border-top:2px solid var(--game-tip-header-shine);border-bottom:2px solid var(--game-tip-header-edge);
+ font-size:calc(var(--game-native-body)*var(--game-ui-scale));line-height:1.2;
+}
+.native-game-tooltip .equipment-tip-strip::before,.native-game-tooltip .equipment-tip-strip::after{content:'';flex:1;height:5px;border-bottom:2px solid #b4d4dd70;background:linear-gradient(#b4d4dd70,#b4d4dd70) right/5px 5px no-repeat}
+.native-game-tooltip .equipment-tip-strip::after{transform:scaleX(-1)}
+.native-game-tooltip .equipment-tip-strip[hidden]{display:none}
+.native-game-tooltip .equipment-tip-top{position:static;min-height:0;margin:0;padding:var(--tip-inset) calc(288px*var(--game-ui-scale)) 0 var(--tip-inset)}
+.native-game-tooltip>.equipment-tip-render{
+ position:absolute;top:calc(-48px*var(--game-ui-scale));right:calc(-48px*var(--game-ui-scale));
+ width:calc(256px*var(--game-ui-scale));height:calc(256px*var(--game-ui-scale));
+ z-index:3;object-fit:contain;image-rendering:pixelated;pointer-events:none;
+ filter:drop-shadow(0 3px 0 #0006);
+}
+.native-game-tooltip .equipment-tip-scroll[data-equipped=true]+.equipment-tip-render{top:calc(24px*var(--game-ui-scale))}
+.native-game-tooltip .equipment-tip-kind{display:none}
+.native-game-tooltip .equipment-tip-kind-row{display:flex;justify-content:flex-end;min-height:0;gap:0;margin-bottom:calc(20px*var(--game-ui-scale))}
+.native-game-tooltip .equipment-tip-rarity{
+ padding:calc(8px*var(--game-ui-scale)) calc(32px*var(--game-ui-scale)) calc(20px*var(--game-ui-scale));
+ border-radius:0;font-size:calc(30px*var(--game-ui-scale));line-height:1;color:#17100d;
+ background:linear-gradient(#fff3,transparent 55%,#0003),#b49d89;border:1px solid #fff4;
+ box-shadow:inset 0 1px #fff5,inset 0 -2px #0004;text-shadow:none;
+}
+.native-game-tooltip .equipment-tip-rarity[data-rarity=unique]{background:linear-gradient(#fff3,transparent 55%,#0003),var(--game-tip-unique)}
+.native-game-tooltip .equipment-tip-rarity[data-rarity=special]{background:linear-gradient(#fff3,transparent 55%,#0003),#2ca2fe}
+.native-game-tooltip .equipment-tip-rarity[data-rarity=rare]{background:linear-gradient(#fff3,transparent 55%,#0003),#65ed55}
+.native-game-tooltip .equipment-tip-name{font:400 calc(var(--game-native-title)*var(--game-ui-scale))/1.2 'Dungeons Ten','Dungeons Sixteen',sans-serif;color:#fff;margin:0 0 var(--tip-gap);overflow-wrap:anywhere}
+.native-game-tooltip .equipment-tip-stat{display:flex;align-items:center;gap:calc(12px*var(--game-ui-scale));margin-top:calc(8px*var(--game-ui-scale));font-size:inherit;line-height:1.2;color:#d5dbe0}
+.native-game-tooltip .equipment-tip-stat b{color:#fff;font-weight:600;font-variant-numeric:tabular-nums}
+.native-game-tooltip .equipment-tip-stat-icon{width:calc(40px*var(--game-ui-scale));height:calc(40px*var(--game-ui-scale));object-fit:contain;image-rendering:pixelated}
+.native-game-tooltip .equipment-tip-stat-icon[data-metric=soul-cost]{width:calc(60px*var(--game-ui-scale));height:calc(60px*var(--game-ui-scale))}
+.native-game-tooltip [data-kind=artifact] .equipment-tip-stats{display:flex;justify-content:space-between;gap:var(--tip-gap);margin-right:calc(-208px*var(--game-ui-scale));flex-wrap:wrap}
+.native-game-tooltip .equipment-tip-description{margin:calc(40px*var(--game-ui-scale)) var(--tip-inset) 0;color:#adb8c2;font-size:inherit;line-height:1.2}
+.native-game-tooltip .equipment-tip-enchant{margin:var(--tip-gap) var(--tip-inset) 0}
+.native-game-tooltip .equipment-tip-enchant-label{
+ position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:calc(14px*var(--game-ui-scale));
+ width:max-content;max-width:100%;margin:0 auto calc(-8px*var(--game-ui-scale));padding:0 calc(16px*var(--game-ui-scale));
+ color:var(--game-tip-level-top);background:#111322;font-size:calc(30px*var(--game-ui-scale));line-height:1.2;
+}
+.native-game-tooltip .equipment-tip-enchant-label::before{content:'';width:calc(32px*var(--game-ui-scale));height:calc(32px*var(--game-ui-scale));flex:none;background:currentColor;mask:url('/images/native-tooltip/enchant-mask.png') center/contain no-repeat;mask-mode:luminance}
+.native-game-tooltip .equipment-tip-enchant-box{
+ display:grid;grid-template-columns:calc(84px*var(--game-ui-scale)) minmax(0,1fr);
+ gap:calc(32px*var(--game-ui-scale));align-items:center;padding:calc(24px*var(--game-ui-scale)) calc(32px*var(--game-ui-scale));
+ background:linear-gradient(#241b36,#1b162b);border-radius:0;
+ clip-path:polygon(0 4px,4px 4px,4px 0,calc(100% - 4px) 0,calc(100% - 4px) 4px,100% 4px,100% calc(100% - 4px),calc(100% - 4px) calc(100% - 4px),calc(100% - 4px) 100%,4px 100%,4px calc(100% - 4px),0 calc(100% - 4px));
+}
+.native-game-tooltip .equipment-tip-enchant-box strong{font-size:inherit;font-weight:600;color:#fff;line-height:1.2}
+.native-game-tooltip .equipment-tip-enchant-box p{margin:0;color:#b7aec6;font-size:inherit;line-height:1.2}
+.native-game-tooltip .equipment-tip-enchant-icon{position:relative;width:calc(84px*var(--game-ui-scale));height:calc(84px*var(--game-ui-scale));background:#312740;display:grid;place-items:center}
+.native-game-tooltip .equipment-tip-enchant-icon img{width:100%;height:100%;object-fit:contain;image-rendering:pixelated}
+.native-game-tooltip .equipment-tip-tier{width:calc(84px*var(--game-ui-scale));height:calc(84px*var(--game-ui-scale));font:400 calc(var(--game-native-grade)*var(--game-ui-scale))/1.1 'Dungeons Five','Dungeons Sixteen',sans-serif;color:#fff;text-shadow:0 1px #59335e}
+.native-game-tooltip .equipment-tip-tier::before{inset:calc(14px*var(--game-ui-scale));background:linear-gradient(135deg,var(--game-tip-level-top),var(--game-tip-level-bottom));box-shadow:inset 0 1px #fff3}
+.native-game-tooltip .equipment-tip-enchant-icon .equipment-tip-tier{position:absolute;right:calc(-20px*var(--game-ui-scale));top:calc(-28px*var(--game-ui-scale));width:calc(56px*var(--game-ui-scale));height:calc(56px*var(--game-ui-scale))}
+.native-game-tooltip .equipment-tip-enchant-icon .equipment-tip-tier::before{inset:calc(8px*var(--game-ui-scale))}
+.native-game-tooltip .is-unenchanted .equipment-tip-enchant-box{background:#20303a;color:#a9b6bf}
+.native-game-tooltip .equipment-tip-unenchanted-icon{width:calc(64px*var(--game-ui-scale));height:calc(64px*var(--game-ui-scale));justify-self:center;background:currentColor;mask:url('/images/native-tooltip/enchant-mask.png') center/contain no-repeat;mask-mode:luminance}
+.native-game-tooltip .equipment-tip-effects{display:grid;gap:var(--tip-gap);margin:var(--tip-gap) var(--tip-inset) 0}
+.native-game-tooltip .equipment-tip-effects-heading{font-size:calc(var(--game-native-section)*var(--game-ui-scale));line-height:1.2;color:#adb8c2;margin:0}
+.native-game-tooltip .equipment-tip-effect{display:grid;grid-template-columns:calc(64px*var(--game-ui-scale)) minmax(0,1fr);gap:calc(50px*var(--game-ui-scale));align-items:center;font-size:inherit;line-height:1.2;color:#eee}
+.native-game-tooltip .equipment-tip-effect>img{width:calc(64px*var(--game-ui-scale));height:calc(64px*var(--game-ui-scale));object-fit:contain;image-rendering:pixelated;box-shadow:0 2px #000a}
+.native-game-tooltip .equipment-tip-effect-symbol{display:grid;place-items:center;width:calc(64px*var(--game-ui-scale));height:calc(64px*var(--game-ui-scale));color:#95baca}
+.native-game-tooltip .equipment-tip-tiers{gap:var(--tip-gap)}
+.native-game-tooltip .equipment-tip-tiers .equipment-tip-effect{grid-template-columns:calc(84px*var(--game-ui-scale)) minmax(0,1fr);gap:calc(32px*var(--game-ui-scale))}
+.native-game-tooltip .equipment-tip-scroll:is([data-kind=enchantment],[data-kind=effect]) .equipment-tip-kind-row{display:none}
+.native-game-tooltip .equipment-tip-scroll:is([data-kind=enchantment],[data-kind=effect]) .equipment-tip-top{padding-top:var(--tip-inset);padding-bottom:calc(32px*var(--game-ui-scale))}
+.native-game-tooltip .equipment-tip-scroll:is([data-kind=enchantment],[data-kind=effect]) .equipment-tip-name{margin:0}
+.native-game-tooltip .equipment-tip-scroll:is([data-kind=enchantment],[data-kind=effect]) .equipment-tip-description{margin-top:var(--tip-gap)}
+.native-game-tooltip>.equipment-tip-render.native-book{background:transparent}
+.native-game-tooltip>.equipment-tip-render.native-book .native-indicator{left:50%;top:45.3125%;width:62.5%;height:62.5%;transform:translate(-50%,-50%)}
+.native-game-tooltip>.equipment-tip-render.native-book .native-enchantment img{transform:scale(1.589937)}
+.native-game-tooltip>.equipment-tip-render:not(.native-book)>.native-indicator{width:100%;height:100%}
+.native-game-tooltip .equipment-tip-loading{padding:var(--tip-inset);color:#adb8c2}
+.native-game-tooltip .equipment-tip-rarity.equipment-tip-talisman-level{font:400 calc(30px*var(--game-ui-scale))/1.2 'Dungeons Five',sans-serif;color:#f6bc0f;background:transparent;border:0;box-shadow:none;padding:0}

@@ -4,7 +4,8 @@ import {resolve,dirname,relative} from 'node:path';
 const root=resolve(import.meta.dirname,'..'),out=resolve(root,'dist'),read=path=>readFile(resolve(out,path),'utf8');
 const routes=JSON.parse(await read('routes.json'));
 const maps=JSON.parse(await read('data/maps/index.json'));
-assert.equal(routes.length,895+maps.dimensions.length);assert.equal(new Set(routes.map(r=>r.path)).size,routes.length);
+const database=JSON.parse(await read('data/database/index.json'));
+assert.equal(routes.length,7+maps.dimensions.length+database.categories.reduce((n,c)=>n+1+c.count,0)+Object.keys(database.aliases||{}).length);assert.equal(new Set(routes.map(r=>r.path)).size,routes.length);
 for(const route of routes){
  const html=await read(route.path.slice(1)+'index.html'),base=html.match(/<base href="([^"]+)"/)[1];
  const url=new URL('https://example.test/project'+route.path),baseURL=new URL(base,url);

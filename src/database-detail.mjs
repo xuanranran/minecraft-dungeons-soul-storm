@@ -4,14 +4,16 @@ import {displayedParameters,displayedTables} from './drops.mjs';
 import {renderEquipmentDetails,renderParameterTable,renderFixedEffects} from './equipment-details.mjs';
 import {loadDatabaseRecord,findDatabaseRecord} from './database-data.mjs';
 import {navigationGuard} from './core/navigation.mjs';
+import {bindEquipmentTooltip} from './equipment-tooltip.mjs';
 
-const kindCategory={melee:'weapons',ranged:'weapons',armor:'armor',artifact:'artifacts',talisman:'talismans'},categoryNames={weapons:'武器',armor:'盔甲','armor-sets':'盔甲套装',artifacts:'法器',talismans:'护身符',enchantments:'附魔',effects:'装备效果',unique:'独特物品',enemies:'生物',bosses:'首领',locations:'地点',quests:'任务',cosmetics:'装饰',upcoming:'文件预留'};
+const kindCategory={melee:'weapons',ranged:'weapons',armor:'armor',artifact:'artifacts',talisman:'talismans'},categoryNames={weapons:'武器',armor:'盔甲','armor-sets':'盔甲套装',artifacts:'法器',talismans:'护身符',enchantments:'附魔书',effects:'装备效果',statuses:'状态',unique:'独特物品',enemies:'生物',bosses:'首领',locations:'地点',quests:'任务',cosmetics:'装饰',upcoming:'文件预留'};
 const resources=()=>Promise.all([import('./explorer.css'),import('./drops.css'),import('./ui/styles/native-equipment.css')]).then(()=>import('./database.css')).then(()=>import('./ui/styles/details.css'));
 export function databasePicture(item){
  const picture=el('span','database-picture'),image=el('img');image.src=item.image||'';image.alt='';image.loading='lazy';image.width=64;image.height=64;
  if(!item.image){picture.classList.add('is-empty');picture.textContent='◇';return picture;}
  if(kindCategory[item.kind]){picture.classList.add('tool-item-picture');picture.dataset.kind=item.kind;picture.style.setProperty('--equipment-color',item.unique?'#ff7e2f':item.kind==='artifact'?'#2ca2fe':'#b49d89');if(item.kind!=='talisman')picture.append(el('span','native-square-mark'));}
  if(item.categoryKey==='enchantments'&&item.iconKind!=='effect'){picture.classList.add('native-book');const diamond=el('span','native-indicator native-enchantment');diamond.append(image);picture.append(diamond);}else picture.append(image);
+ if(kindCategory[item.kind]||['enchantment','effect'].includes(item.kind))bindEquipmentTooltip(picture,{...item,slug:item.slug||item.id});
  image.addEventListener('error',()=>{image.hidden=true;picture.classList.add('is-empty');},{once:true});return picture;
 }
 function nativeIcon(entry,className,book=false){const frame=el('span','native-indicator native-'+(entry.native_icon_kind==='enchantment'?'enchantment':'effect')),icon=el('img',className),slot=book?el('span','native-book'):frame;icon.src=entry.image;icon.alt='';icon.loading='lazy';frame.append(icon);if(book)slot.append(frame);return slot;}
