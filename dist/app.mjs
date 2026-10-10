@@ -1,4 +1,4 @@
-import {setupDrops} from './drops.mjs?v=measuredenchants12';
+import {setupDrops} from './drops.mjs?v=useenchantbooks13';
 import {setRegionText} from './region-icons.mjs?v=listicons1';
 import {setupAlarm} from './alarm.mjs?v=m4r1';
 import {SyncedClock} from './clock.mjs?v=pages1';
