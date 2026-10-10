@@ -1,0 +1,1 @@
+Map point captures from https://www.dungeons.tools/2/map, /2/map/the-sift and /2/map/camp on 2026-10-10. Only factual point data is retained; website components and page code are not copied. Native map textures and Chinese names are extracted locally. Generator groups use the nearest native area label; all seven totals match the reference rotation (7, 8, 8, 8, 8, 8, 5).

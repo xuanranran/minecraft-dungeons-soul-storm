@@ -1,11 +1,14 @@
-# 我的世界地下城 2 灵魂风暴状态
+# 我的世界地下城 2 地图与灵魂风暴
 
-查看灵魂风暴的当前地区、开启状态、倒计时和地区轮换时段。
+查看原生地图中的地点与风暴生成器，以及灵魂风暴的当前地区、开启状态、倒计时和地区轮换时段。
 
 **在线访问：https://xuanranran.github.io/minecraft-dungeons-soul-storm/**
 
 ## 功能
 
+- “地图”和“灵魂风暴”两个入口；地图包含主世界、汐浮与营地。
+- 地图包含 14 类、共 1,617 个地点，支持中文或英文搜索、拖动缩放、分类筛选、位置直达链接和本地已找到记录。
+- 灵魂风暴下方列出七个轮换地区和 52 个生成器候选位置，点击地区可定位地图；当前状态也提供“地图位置”入口。
 - 每 40 分钟开启一场、持续 20 分钟，跨日期连续轮换。
 - 查看全部地区或指定地区未来 24 小时、48 小时及 7 天的时段。
 - 点击当前地区旁的“查看掉落”或时间表地区名称，查看本地物品图片、参数、固定效果、可用附魔及各级效果；可按武器、盔甲部件、法器筛选。
@@ -47,3 +50,11 @@ GitHub Pages 通过 `.github/workflows/pages.yml` 发布 `dist/`，推送到 `ma
 ## 字体与音频
 
 字体来源见 `font-source.txt`。方舟像素字体使用 SIL Open Font License 1.1，许可证在 `dist/fonts/ARK-LICENSE-OFL.txt`。雷达铃声由项目使用者提供，第三方字体和音频不属于项目原创素材。
+
+## 地图资料与复现
+
+地图原图来自本地游戏 `E:\Steam Game\steamapps\common\Minecraft Dungeons II`，包括主世界 64 块、汐浮 49 块、营地 9 块 1024×1024 BeautyRender 原纹理。网页最高缩放级别保留原像素，较低级别用最近邻方式生成概览，以无损 WebP 储存；没有从参考网站复制组件代码。
+
+地点坐标采集自 [dungeons.tools](https://www.dungeons.tools/2/map)，事实数据保存在 `sources/dungeons-tools/`。原生中英文 `All.locres` 通过相同 namespace/key 匹配地点和任务名；“候选位置”“其他入口”、宝箱分类等网站辅助说明使用中文界面文案。生成器分组按原生区域标签最近距离计算，七组数量与参考轮换完全一致：7、8、8、8、8、8、5。候选位置不表示当前每一个点都已生成。
+
+`tools/build-maps.py` 从同级 `minecraft-dungeons-native-assets/exports/` 的解包文件重建地图，`native-map-images.json` 记录原始资源路径和 SHA-256，`check-maps.mjs` 检查全部坐标、分类、点位、地图分块和资源校验值。`npm test` 包含地图数据检查。Leaflet 1.9.4 随站点本地分发，其许可证保存在 `dist/vendor/leaflet/LICENSE`；地图底图及点位无需连接第三方服务即可使用。

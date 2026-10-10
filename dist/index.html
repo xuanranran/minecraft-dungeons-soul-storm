@@ -2,21 +2,57 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>我的世界地下城 2 灵魂风暴状态</title><meta name="description" content="查看地图当前开启状态、实时倒计时和各地区的连续轮换时间。北京时间，跨日期不重置。">
+<title>我的世界地下城 2 地图与灵魂风暴</title><meta name="description" content="原生主世界、汐浮与营地地图，搜索地牢、矿车站、宝箱和风暴生成器；查询灵魂风暴实时轮换与地区掉落。">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231757d3'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='white' stroke-width='2'/%3E%3Cpath d='M16 9v7l5 3' fill='none' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
 <meta name="color-scheme" content="light dark">
 <script src="./theme-init.js?v=fontpersist2"></script>
 <link rel="stylesheet" href="./styles.css?v=drops1">
 <link rel="stylesheet" href="./drops.css?v=useenchantbooks13">
+<link rel="stylesheet" href="./vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="./maps.css?v=maps1">
+<script defer src="./vendor/leaflet/leaflet.js"></script>
 </head>
 <body><main>
-<header><div><h1>我的世界地下城 2 灵魂风暴状态</h1><p class="meta">每 40 分钟一场 · 持续 20 分钟</p></div><div class="header-tools"><div class="clock">北京时间<br><time id="clock">—</time><br><span id="sync-status" class="sync-status">校时中</span> <a class="time-reference" href="https://time.is/Beijing" target="_blank" rel="noopener noreferrer">time.is 对照</a></div><div class="theme-control"><label for="theme">外观</label><select id="theme"><option value="auto">跟随系统</option><option value="light">浅色</option><option value="dark">暗色</option></select></div><div class="theme-control font-control"><label for="font-choice">字体</label><select id="font-choice"><option value="default">系统字体</option><option value="mojangles">Mojangles</option></select></div></div></header>
-<section class="card status-card" id="status-card" aria-labelledby="current-heading"><div class="status-top"><h2 id="current-heading">当前状态</h2><span class="phase" id="phase">正在计算</span></div><div class="status-main"><div class="status-info"><div class="status-name-row"><div class="status-name" id="current-name">—</div><button type="button" class="drop-trigger" id="current-drops" aria-haspopup="dialog">查看掉落</button></div><p class="period" id="current-period">—</p></div><div class="status-counter"><p class="timer-label" id="countdown-label">—</p><div class="timer" id="countdown" role="timer" aria-live="off">—</div></div></div><div class="progress" aria-hidden="true"><span id="progress"></span></div><p class="next" id="next">—</p></section>
+<header><div><h1>我的世界地下城 2</h1><p class="meta">地图 · 灵魂风暴 · 地区掉落</p></div><div class="header-tools"><div class="clock">北京时间<br><time id="clock">—</time><br><span id="sync-status" class="sync-status">校时中</span> <a class="time-reference" href="https://time.is/Beijing" target="_blank" rel="noopener noreferrer">time.is 对照</a></div><div class="theme-control"><label for="theme">外观</label><select id="theme"><option value="auto">跟随系统</option><option value="light">浅色</option><option value="dark">暗色</option></select></div><div class="theme-control font-control"><label for="font-choice">字体</label><select id="font-choice"><option value="default">系统字体</option><option value="mojangles">Mojangles</option></select></div></div></header>
+
+<nav id="page-tabs" class="page-tabs" role="tablist" aria-label="网站选项">
+<button type="button" id="map-tab" class="page-tab" role="tab" data-page-tab="map" aria-controls="map-panel" aria-selected="true">地图</button>
+<button type="button" id="storm-tab" class="page-tab" role="tab" data-page-tab="storm" aria-controls="storm-panel" aria-selected="false" tabindex="-1">灵魂风暴</button>
+</nav>
+<section id="map-panel" role="tabpanel" aria-labelledby="map-tab">
+<div class="map-shell">
+<aside class="map-sidebar" aria-label="地图筛选">
+<div id="map-world-tabs" class="map-world-tabs" role="group" aria-label="地图区域"></div>
+<label class="map-search-label" for="map-search">搜索地点<input id="map-search" type="search" placeholder="矿车站、任务、宝箱…" autocomplete="off"></label>
+<div id="map-search-results" class="map-search-results" hidden></div>
+<details id="map-filter-details" class="map-filter-details" open><summary>地点分类 <span id="map-filter-caption"></span></summary><div id="map-categories" class="map-categories" role="group" aria-label="地点分类"></div></details>
+<div class="map-sidebar-actions"><button type="button" id="map-show-all">全部显示</button><button type="button" id="map-hide-all">全部隐藏</button></div>
+<div class="map-found-options"><label class="map-found-check"><input id="map-hide-found" type="checkbox">隐藏已找到</label><button type="button" id="map-reset-found" class="secondary">重置记录</button></div>
+<p id="map-found-total" class="meta">记录保存在当前浏览器</p>
+</aside>
+<div class="map-stage">
+<div class="map-toolbar"><span id="map-count">正在读取地点…</span><button type="button" id="map-fit">查看全图</button></div>
+<div id="world-map" class="world-map" role="region" aria-label="可拖动和缩放的游戏地图"></div>
+<div id="map-loading" class="map-loading" role="status">正在载入原生地图…</div>
+<div id="map-focus" class="map-focus" hidden><span id="map-focus-name"></span><button type="button" id="map-clear-focus">查看全部地点</button></div>
+</div></div>
+<div class="map-status-line"><p id="map-status" role="status"></p><button type="button" id="map-retry" hidden>重新载入</button></div>
+<p class="map-source-note">地图底图与图标来自游戏原生资源；游戏地点名称使用原生简体中文翻译。地点坐标参考 <a href="https://www.dungeons.tools/2/map" target="_blank" rel="noopener noreferrer">dungeons.tools 地图</a>。已找到的记录保存在当前浏览器。</p>
+</section>
+<section id="storm-panel" role="tabpanel" aria-labelledby="storm-tab" hidden>
+<section class="card status-card" id="status-card" aria-labelledby="current-heading"><div class="status-top"><h2 id="current-heading">当前状态</h2><span class="phase" id="phase">正在计算</span></div><div class="status-main"><div class="status-info"><div class="status-name-row"><div class="status-name" id="current-name">—</div><button type="button" class="drop-trigger" id="current-drops" aria-haspopup="dialog">查看掉落</button><button type="button" class="drop-trigger" id="current-map" data-map-storm="">地图位置</button></div><p class="period" id="current-period">—</p></div><div class="status-counter"><p class="timer-label" id="countdown-label">—</p><div class="timer" id="countdown" role="timer" aria-live="off">—</div></div></div><div class="progress" aria-hidden="true"><span id="progress"></span></div><p class="next" id="next">—</p></section>
 <section class="card query-card" aria-labelledby="query-heading"><h2 id="query-heading">地区时间查询</h2><div class="controls"><div><label for="region">查看地区</label><select id="region"><option value="-1">全部地区</option></select></div><div><label for="horizon">查询范围</label><select id="horizon"><option value="24">未来 24 小时</option><option value="48">未来 48 小时</option><option value="168">未来 7 天</option></select></div></div><div class="region-result" id="region-result" hidden><div><p class="region-name" id="region-state">—</p><p class="period" id="region-period">—</p></div><div><p class="timer-label" id="region-label">—</p><p class="region-timer" id="region-countdown" role="timer" aria-live="off">—</p></div></div><div class="table-head"><span id="table-title">开启时段</span></div><div class="table-wrap"><table><thead><tr><th scope="col">日期</th><th scope="col">开启时段</th><th scope="col">地区</th></tr></thead><tbody id="schedule"></tbody></table></div></section>
 <details class="calibration-panel"><summary>校准轮换起点<span class="summary-note">北京时间</span></summary><form class="calibration" id="calibration"><div class="saved-anchor"><span class="saved-label">当前起点</span><strong id="saved-anchor">2026-10-06 12:00 · 安眠丘陵</strong></div><p class="calibration-hint">填写一场已知的开启记录，后续时段会连续推算。</p><div class="calibration-fields"><div><label for="anchor-date">开启日期</label><input type="date" id="anchor-date" required value="2026-10-06" min="2000-01-01" max="2099-12-31"></div><div><label for="anchor-time">开启时间</label><input type="time" id="anchor-time" required value="12:00" step="60"></div><div class="calibration-region"><label for="anchor-region">所在地区</label><select id="anchor-region"></select></div></div><div class="calibration-actions"><button type="submit">保存校准</button><span id="save-message" role="status"></span></div></form></details>
 <details class="calibration-panel alarm-panel"><summary>地区闹钟<span class="summary-note">仅当前浏览器</span></summary><div class="alarm-body"><form id="alarm-form"><div class="controls"><div><label for="alarm-region">提醒地区</label><select id="alarm-region"></select></div><div><label for="alarm-minutes">提前（分钟）</label><input id="alarm-minutes" type="number" min="0" max="120" step="1" value="5" required></div></div><label class="alarm-check"><input id="alarm-sound" type="checkbox" checked>声音提醒</label><div class="alarm-actions"><button type="submit">保存并启用</button><button id="alarm-test" type="button" class="secondary">测试闹钟</button><button id="alarm-disable" type="button" class="secondary">停用</button></div></form><p id="alarm-status" class="alarm-status" role="status">未启用</p><p id="alarm-message" class="meta" role="status"></p><p class="meta">配置保存在当前浏览器，换浏览器或清除网站数据后需重新设置。请保持网页打开；后台休眠或锁屏可能延迟提醒。0 分钟表示开启时提醒。</p><p class="meta">雷达铃声，持续循环，点击“停止闹钟”结束。</p><p id="alarm-audio-hint" class="meta" hidden>点击页面或“测试闹钟”后，浏览器才能播放声音。</p></div></details>
 <div id="alarm-alert" class="alarm-alert" role="alert" hidden><p id="alarm-alert-text"></p><button id="alarm-stop" type="button">停止闹钟</button></div>
+
+<section class="card storm-rotation" aria-labelledby="storm-rotation-heading">
+<h2 id="storm-rotation-heading">轮换地区与生成器位置</h2>
+<ol id="storm-rotation-list" class="storm-rotation-list"></ol>
+<p id="storm-rotation-status" class="storm-rotation-note" role="status">正在读取生成器位置…</p>
+</section>
 <footer><span id="anchor-info"></span><br>同一地区每 4 小时 40 分钟开启一次 · 每 7 天回到相同时间表</footer>
+</section>
 </main>
 <dialog id="drops-dialog" class="drops-dialog" aria-labelledby="drops-title">
 <div class="drops-header"><h2 id="drops-title">地区掉落</h2><button type="button" id="drops-close" class="drops-close" aria-label="关闭掉落窗口">×</button></div>
@@ -27,5 +63,5 @@
 </dialog>
 
 
-<script type="module" src="./app.mjs?v=useenchantbooks13"></script>
+<script type="module" src="./app.mjs?v=maps1"></script>
 </body></html>
