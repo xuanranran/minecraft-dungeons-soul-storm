@@ -33,6 +33,7 @@ body:has(.database-dialog[open]){overflow:hidden}
 @media(max-width:760px){.database-dialog .database-level-table th{width:38px}}
 .database-item-description{font-size:13px;line-height:1.8;color:var(--muted);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.database-item-copy{gap:7px}.database-item{min-height:112px}.database-item-english,.database-item-meta,.database-item-stats,.tool-build-original:empty{display:none}
 /* Only parameters and combo breakdown use tables; other detail sections retain cards. */
+.database-dialog.explorer-dialog .explorer-close{display:grid;place-items:center;width:40px;height:40px;min-height:40px;flex:none;padding:0;border-radius:10px;color:var(--muted);background:transparent;border-color:transparent}.database-dialog.explorer-dialog .explorer-close:hover{color:var(--text);background:var(--surface-alt);border-color:var(--line)}.database-dialog .explorer-close svg{display:block;pointer-events:none}.database-dialog .explorer-dialog-header h2{min-width:0;overflow-wrap:anywhere}
 .database-dialog .database-fixed-effects{padding:0;border:0;margin-bottom:18px}
 .database-dialog .database-fixed-effects .drop-effect-card{align-items:center;margin:0 0 10px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface-alt)}
 .database-dialog .database-fixed-effects .native-indicator{width:36px;height:36px;flex:none}

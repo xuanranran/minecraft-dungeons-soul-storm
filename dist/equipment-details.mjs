@@ -11,11 +11,11 @@ export function renderFixedEffects(effects,{el,nativeIcon}){
 export function renderEquipmentDetails({item,panel,el,nativeIcon,displayedParameters,displayedTables}){
  panel.append(renderParameterTable(displayedParameters(item),el));
  for(const table of displayedTables(item)){
-  if(table.columns.includes('区域')||table.title==='属性 / 数值')continue;
-  const combo=table.title.includes('连招拆解'),enchantment=table.title.includes('附魔'),section=el('section','database-detail-section');section.dataset.detailSection=combo?'parameters':enchantment?'enchantments':'effects';
-  const title=combo?'连招拆解':table.title.replace(item.name,'');if(combo||enchantment)section.append(el('h3','',title));
-  const wrap=combo?el('div','database-table-wrap'):null,node=combo?el('table','database-combo-table'):null,head=combo?el('thead'):null,headers=combo?el('tr'):null,body=combo?el('tbody'):null;
-  if(combo){for(const column of table.columns){const th=el('th','',column);th.scope='col';headers.append(th);}for(const values of table.rows){const row=el('tr');for(const column of table.columns)row.append(el('td','',translateAttack(values[column]||'—')));body.append(row);}}
+  if(table.columns.includes('区域')||table.columns.includes('属性')&&table.columns.includes('数值'))continue;
+  const combo=table.title.includes('连招拆解'),enchantment=table.columns.includes('附魔'),numeric=!enchantment&&!table.columns.includes('效果'),section=el('section','database-detail-section');section.dataset.detailSection=numeric?'parameters':enchantment?'enchantments':'effects';
+  const title=combo?'连招拆解':table.title.replace(item.name,'');if(numeric)section.append(el('h3','',title));
+  const wrap=numeric?el('div','database-table-wrap'):null,node=numeric?el('table',combo?'database-combo-table':'database-extra-parameter-table'):null,head=numeric?el('thead'):null,headers=numeric?el('tr'):null,body=numeric?el('tbody'):null;
+  if(numeric){for(const column of table.columns){const th=el('th','',column);th.scope='col';headers.append(th);}for(const values of table.rows){const row=el('tr');for(const column of table.columns)row.append(el('td','',translateAttack(values[column]||'—')));body.append(row);}}
   else{
    for(const values of table.rows){const row=el('div','drop-enchantment-card database-effect-card'),name=el('div','database-effect-heading'),copy=el('div','drop-effect-copy'),label=values[enchantment?'附魔':'效果']||Object.values(values)[0],link=el('button','database-related-name',label);link.type='button';link.dataset.databaseName=label;link.dataset.databaseCategory=enchantment?'enchantments':'effects';if(values.image)row.append(nativeIcon(values,'drop-list-icon',enchantment));name.append(link);copy.append(name);
     if(enchantment){if(values.description)copy.append(el('p','database-row-description',values.description));if(values['类别'])copy.append(el('span','database-row-meta','类别：'+values['类别']));if(values['触发条件'])copy.append(el('p','database-row-meta','触发条件：'+values['触发条件']));}
@@ -24,7 +24,7 @@ export function renderEquipmentDetails({item,panel,el,nativeIcon,displayedParame
     if(tiers?.length){const levels=el('dl','drop-levels');for(const level of tiers){const dt=el('dt');dt.append(/^(I|II|III)$/.test(level.level)?el('span','native-level-badge',level.level):el('span','',level.level));levels.append(dt,el('dd','',level.effect));}row.append(copy,levels);}else{copy.append(el('p','',values.ungraded_effect||values['III级效果']||values['效果']||'暂无分级数据'));row.append(copy);}section.append(row);
    }
   }
-  if(combo){head.append(headers);node.append(head,body);wrap.append(node);section.append(wrap);}panel.append(section);
+  if(numeric){head.append(headers);node.append(head,body);wrap.append(node);section.append(wrap);}panel.append(section);
  }
- const locations=el('section','database-detail-section');locations.dataset.detailSection='locations';locations.append(el('h3','','获取位置'));const list=el('div','database-location-list');for(const place of item.drops){const link=el('button','drop-location database-related-name');link.type='button';link.dataset.databaseName=place['区域'];link.dataset.databaseCategory='locations';setRegionText(link,place['区域']);list.append(link);}locations.append(list);panel.append(locations);
+ const locations=el('section','database-detail-section');locations.dataset.detailSection='locations';const list=el('div','database-location-list');for(const place of item.drops){const link=el('button','drop-location database-related-name');link.type='button';link.dataset.databaseName=place['区域'];link.dataset.databaseCategory='locations';setRegionText(link,place['区域']);list.append(link);}locations.append(list);panel.append(locations);
 }
