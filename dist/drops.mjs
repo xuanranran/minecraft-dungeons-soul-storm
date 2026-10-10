@@ -23,7 +23,7 @@ export function setupDrops(){
  const mobile=matchMedia('(max-width:600px)');
  const layoutCards=()=>{const cards=[...grid.querySelectorAll('.drop-item')].sort((a,b)=>Number(a.style.order)-Number(b.style.order));if(mobile.matches){grid.replaceChildren(...cards);return}const columns=[el('div','drops-column'),el('div','drops-column')];cards.forEach((card,index)=>columns[index%2].append(card));grid.replaceChildren(...columns)};
  mobile.addEventListener('change',layoutCards);
- const load=()=>dataPromise??=(fetch('./equipment.json?v=smalleffects5').then(r=>{if(!r.ok)throw Error('无法读取装备数据');return r.json()}).catch(e=>{dataPromise=null;throw e}));
+ const load=()=>dataPromise??=(fetch('./equipment.json?v=effectalign6').then(r=>{if(!r.ok)throw Error('无法读取装备数据');return r.json()}).catch(e=>{dataPromise=null;throw e}));
  async function render(){
   const target=region,selected=category;grid.replaceChildren();status.textContent='正在读取掉落物品…';
   try{const data=await load();if(region!==target||category!==selected||!dialog.open)return;

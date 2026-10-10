@@ -73,7 +73,8 @@
 .native-level-badge::after{content:"";position:absolute;inset:0 0 4px;z-index:-1;background:linear-gradient(135deg,#d082ff,#bc76e1 60%,#8e43be);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
 .drop-possible-effects .drop-enchantment-card{grid-template-columns:32px minmax(0,1fr);gap:8px}
 .drop-possible-effects .native-indicator{width:32px;height:32px}
-.drop-possible-effects .drop-enchantment-copy{min-height:32px;justify-content:center}
+.drop-possible-effects .drop-enchantment-copy{min-height:32px;justify-content:space-between;gap:0}
+.drop-possible-effects .drop-enchantment-copy strong,.drop-possible-effects .drop-enchantment-copy p{line-height:1.2}
 .drop-possible-effects .drop-levels{grid-template-columns:30px minmax(0,1fr);column-gap:8px}
 .drop-possible-effects .native-level-badge{width:22px;height:26px;font-size:10px}
 @media(max-width:600px){.drop-detail-panel{padding:10px}.drop-extra .drop-enchantment-card{padding:9px;gap:8px}}
