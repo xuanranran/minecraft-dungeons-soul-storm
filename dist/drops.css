@@ -26,6 +26,7 @@
 .drop-picture::before{content:"";position:absolute;inset:1px;z-index:0;background:radial-gradient(ellipse at 10% 12%,color-mix(in srgb,var(--equipment-color,#aaa) 28%,transparent),transparent 62%);pointer-events:none}
 .drop-picture::after{content:"";position:absolute;inset:0;z-index:3;background:var(--equipment-color,#aaa);mask:url('./images/equipment-backgrounds/inventory-rarity-frame.svg') center/100% 100% no-repeat;pointer-events:none}
 .native-soul-mark{position:absolute;left:calc(100% * 5 / 36);top:calc(100% * 5 / 36);width:calc(100% * 2 / 9);height:calc(100% * 2 / 9);z-index:1;background:var(--equipment-color,#aaa);mask:url('./images/equipment-backgrounds/T_UI_SlotRarity_Markers_Soul-b.svg?v=soulcenter8') center/100% 100% no-repeat;image-rendering:pixelated;pointer-events:none}
+.drop-item.artifact .native-soul-mark{mask-image:url('./images/equipment-backgrounds/T_UI_SlotRarity_Markers_Soul-g.svg?v=artifactsouls10')}
 .drop-item.unique .drop-kind{color:#d85454}.drop-item.special .drop-kind{color:#2485d5}
 .drop-info{min-width:0;min-height:88px;display:flex;flex-direction:column;justify-content:flex-start;gap:2px}.drop-info h3{font-size:16px;margin:0;line-height:1.5}
 .drop-kind,.drop-weight{font-size:12px;color:var(--muted);line-height:1.6}

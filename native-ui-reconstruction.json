@@ -23,7 +23,7 @@
       "StateStormItem": 1,
       "special": "#2CA2FE",
       "unique": "#FF0000",
-      "mask": "Blue channel of T_UI_SlotRarity_Markers_Soul: three skull marks at the upper-left",
+      "mask": "Native T_UI_SlotRarity_Markers_Soul: blue channel for the three weapon/armor souls; green channel for the five artifact souls. Native PNG bytes and per-glyph opacity retained.",
       "frame": "Thin red/blue item frame only; neutral inventory-slot background removed at user request",
       "removed": "Inventory equipment-slot gray outer frame, whole-slot crack masks and orange tint",
       "image_box_to_frame_ratio": "74/88 (84.1%); native transparent padding and item proportions preserved",

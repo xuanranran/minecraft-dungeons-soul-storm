@@ -23,7 +23,7 @@ export function setupDrops(){
  const mobile=matchMedia('(max-width:600px)');
  const layoutCards=()=>{const cards=[...grid.querySelectorAll('.drop-item')].sort((a,b)=>Number(a.style.order)-Number(b.style.order));if(mobile.matches){grid.replaceChildren(...cards);return}const columns=[el('div','drops-column'),el('div','drops-column')];cards.forEach((card,index)=>columns[index%2].append(card));grid.replaceChildren(...columns)};
  mobile.addEventListener('change',layoutCards);
- const load=()=>dataPromise??=(fetch('./equipment.json?v=soulreduce9').then(r=>{if(!r.ok)throw Error('无法读取装备数据');return r.json()}).catch(e=>{dataPromise=null;throw e}));
+ const load=()=>dataPromise??=(fetch('./equipment.json?v=artifactsouls10').then(r=>{if(!r.ok)throw Error('无法读取装备数据');return r.json()}).catch(e=>{dataPromise=null;throw e}));
  async function render(){
   const target=region,selected=category;grid.replaceChildren();status.textContent='正在读取掉落物品…';
   try{const data=await load();if(region!==target||category!==selected||!dialog.open)return;
@@ -32,6 +32,7 @@ export function setupDrops(){
    for(const [index,item] of items.entries()){
     const card=el('article','drop-item'),picture=el('div','drop-picture'),img=el('img');img.src=item.image;img.alt=item.name;img.loading='lazy';img.width=88;img.height=88;
     card.classList.toggle('unique',item.rarity==='独特');
+    card.classList.toggle('artifact',item.category==='法器');
     card.classList.toggle('special',displayedRarity(item)==='特殊');
     picture.classList.add('native-storm-slot');const soul=el('span','native-soul-mark');soul.setAttribute('aria-hidden','true');picture.append(soul);
     img.addEventListener('error',()=>{picture.replaceChildren(el('span','meta','图片暂不可用'))},{once:true});picture.append(img);
