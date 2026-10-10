@@ -47,8 +47,10 @@
 .native-enchantment{clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
 .native-enchantment img{transform:scale(1.23)}
 .native-effect{box-shadow:0 0 0 1px #07090b}
-.native-book{display:grid;place-items:center;flex:none;width:48px;height:48px;background:url('./images/equipment-backgrounds/T_UI_Enchantment_Book_Slot.png') center/100% 100% no-repeat}
-.native-book .native-indicator{width:28px;height:28px}
+.native-book{position:relative;isolation:isolate;display:block;flex:none;width:48px;height:48px}
+.native-book::after{content:"";position:absolute;inset:0;z-index:1;background:url('./images/equipment-backgrounds/T_UI_Enchantment_Book_Slot.png') center/100% 100% no-repeat;image-rendering:pixelated;pointer-events:none}
+.native-book .native-indicator{position:absolute;left:50%;top:45.3125%;width:62.5%;height:62.5%;transform:translate(-50%,-50%)}
+.native-book .native-enchantment img{transform:scale(1.589937)}
 .native-book[hidden]{display:none}
 .drop-effect-copy{min-width:0;min-height:48px;display:flex;flex-direction:column;justify-content:center;gap:2px;overflow-wrap:anywhere}.drop-effect-copy strong{display:block;font-size:13px;margin:0}.drop-effect-copy p{color:var(--muted);margin:0}
 .region-icon{display:inline-block;width:22px;height:22px;object-fit:contain;image-rendering:pixelated;vertical-align:middle;margin-right:6px;flex:none;border-radius:4px}
@@ -66,17 +68,17 @@
 .has-description .native-indicator,.has-description .native-book{align-self:center}
 .has-description .drop-enchantment-copy{justify-content:center;align-self:center}
 .drop-enchantment-trigger{grid-column:1/-1;font-size:12px;line-height:1.6;color:var(--muted);margin:0}
-.drop-details .drop-levels{grid-column:1/-1;grid-template-columns:40px minmax(0,1fr);gap:0 10px;margin:0;border-top:1px solid var(--line)}
+.drop-details .drop-levels{grid-column:1/-1;grid-template-columns:30px minmax(0,1fr);gap:0 6px;margin:0;border-top:1px solid var(--line)}
 .drop-levels dt,.drop-levels dd{padding:8px 0;border-bottom:1px solid var(--line)}
 .drop-levels dt{display:flex;align-items:center;color:var(--blue)}.drop-levels dt:last-of-type,.drop-levels dd:last-of-type{border-bottom:0;padding-bottom:0}
-.native-level-badge{position:relative;isolation:isolate;display:grid;place-items:center;width:30px;height:34px;flex:none;color:#fff;font:bold 12px/1 Georgia,serif;text-shadow:1px 1px #241132,-1px -1px #241132}
-.native-level-badge::before{content:"";position:absolute;inset:2px 0 0;z-index:-2;background:#442159;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
-.native-level-badge::after{content:"";position:absolute;inset:0 0 4px;z-index:-1;background:linear-gradient(135deg,#d082ff,#bc76e1 60%,#8e43be);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+.native-level-badge{position:relative;isolation:isolate;display:grid;place-items:center;width:var(--level-size,30px);height:calc(var(--level-size,30px) * 66 / 62);padding-bottom:calc(var(--level-size,30px) * 4 / 62);flex:none;color:#fff;font:bold calc(var(--level-size,30px) * .4)/1 Georgia,serif;text-shadow:1px 1px #241132,-1px -1px #241132}
+.native-level-badge::before{content:"";position:absolute;inset:calc(var(--level-size,30px) * 4 / 62) 0 0;z-index:-2;background:#442159;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+.native-level-badge::after{content:"";position:absolute;inset:0 0 calc(var(--level-size,30px) * 4 / 62);z-index:-1;background:linear-gradient(135deg,#d082ff,#bc76e1 60%,#8e43be);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
 .drop-possible-effects .drop-enchantment-card{grid-template-columns:32px minmax(0,1fr);gap:8px}
 .drop-possible-effects .native-indicator{width:32px;height:32px}
 .drop-possible-effects .drop-enchantment-copy{min-height:32px;justify-content:space-between;gap:0}
 .drop-possible-effects .drop-enchantment-copy strong,.drop-possible-effects .drop-enchantment-copy p{line-height:1.2}
-.drop-possible-effects .drop-levels{grid-template-columns:30px minmax(0,1fr);column-gap:8px}
-.drop-possible-effects .native-level-badge{width:22px;height:26px;font-size:10px}
+.drop-possible-effects .drop-levels{grid-template-columns:22px minmax(0,1fr);column-gap:4px}
+.drop-possible-effects .native-level-badge{--level-size:22px}
 @media(max-width:600px){.drop-detail-panel{padding:10px}.drop-extra .drop-enchantment-card{padding:9px;gap:8px}}
 @media(max-width:600px){.drops-dialog{padding:14px;top:12px;max-height:calc(100dvh - 24px);width:calc(100% - 20px);border-radius:12px}.drops-grid{grid-template-columns:minmax(0,1fr)}.drops-column{display:contents}.drops-header h2{font-size:17px}.drop-item{padding:12px}.drop-trigger{min-height:36px}.drops-tab{min-height:40px}}

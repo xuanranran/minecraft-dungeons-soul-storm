@@ -1,0 +1,32 @@
+{
+  "reference": "User supplied enchantment collection screenshot, 3840 x 2160",
+  "normalized_reference_size": [
+    2048,
+    1152
+  ],
+  "book": {
+    "method": "Opaque native book pixels matched at integer nearest-neighbor scale",
+    "texture_box_size": 159,
+    "texture_box_origin": [
+      1212,
+      148
+    ],
+    "normalized_match_error": 0.0063475864,
+    "native_texture_size": 256,
+    "native_opening_center": [
+      128,
+      116
+    ],
+    "icon_texture_box_size": 158,
+    "icon_matching_note": "Central diamond pixels matched; approximate due to screenshot filtering and material rendering",
+    "icon_normalized_match_error": 0.0533530973
+  },
+  "level_badge": {
+    "method": "Purple connected component bounds on three level indicators; lower edge estimated from screenshot",
+    "visible_width": 62,
+    "visible_height": 66,
+    "effect_text_left": 870,
+    "badge_left": 796,
+    "text_gap": 12
+  }
+}

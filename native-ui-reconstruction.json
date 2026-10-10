@@ -32,14 +32,18 @@
     },
     "book": {
       "native_texture": "T_UI_Enchantment_Book_Slot",
-      "icon_to_book_ratio": "28/48",
-      "reference": "Enchantment collection screenshot"
+      "icon_to_book_ratio": "Native icon texture box 158/159 (99.37%) of the full book texture box, clipped inside a 62.5% diamond viewport",
+      "reference": "User supplied 3840 x 2160 enchantment collection screenshot; measurements normalized to 2048 x 1152",
+      "icon_position": "50% horizontally and 45.3125% vertically, matching the native transparent opening; original book texture renders above the icon"
     },
     "level_indicator": {
       "material": "M_EnchantLevelIndicator",
       "top_color": "#D082FF",
       "bottom_color": "#BC76E1",
-      "rendering": "Purple diamond with a dark lower edge, Roman level centered"
+      "rendering": "Purple diamond with a dark lower edge, Roman level centered",
+      "face_ratio": "Square diamond face, 62 px wide; 4 px lower edge in the normalized screenshot; total height 66/62 of width",
+      "position": "Roman numeral centered on the face; badge vertically centered beside each effect paragraph; text gap 12/62 of badge width",
+      "web_sizes": "30 px wide for enchantments and 22 px for possible effects; identical proportional geometry"
     }
   },
   "limitations": [
