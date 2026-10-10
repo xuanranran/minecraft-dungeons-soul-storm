@@ -10,6 +10,9 @@ await mkdir('artifacts/game-tooltip',{recursive:true});
 try{
  for(const width of [390,320,844]){
   const page=await browser.newPage({viewport:{width,height:width===844?390:844},isMobile:true,hasTouch:true,colorScheme:'dark'}),errors=[];
+  // crypto.randomUUID is absent on the LAN HTTP origin. UI identifiers must
+  // remain usable there, not only on localhost/HTTPS.
+  await page.addInitScript(()=>Object.defineProperty(crypto,'randomUUID',{value:undefined}));
   page.on('pageerror',e=>errors.push(e.message));
   const tip=page.locator('#native-equipment-tooltip:popover-open'),ready=name=>page.locator('#'+name+'-panel[aria-busy=false]').waitFor();
   const tap=async target=>{await target.tap();await tip.locator('.equipment-tip-name').waitFor();await page.evaluate(()=>document.fonts.ready);const source=await target.boundingBox(),preview=await tip.boundingBox();assert.ok(preview.y>=source.y+source.height+31||preview.y+preview.height<=source.y-31,'touch preview must be above/below the clicked card');};

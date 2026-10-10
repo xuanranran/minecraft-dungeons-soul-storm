@@ -3,6 +3,7 @@ import {loadCatalogue,loadRules,loadLoadouts} from './explorer-data.mjs';
 import {context,decodeBuild,effectTotals,slots} from './explorer-model.mjs';
 import {el,button,itemPicture,modal,inspect,copyLink} from './explorer-ui.mjs';
 import {createEquipmentCard} from './equipment-tooltip.mjs';
+let detailSequence=0;
 
 function section(title,cls=''){const box=el('section','build-detail-section '+cls);box.append(el('h3','build-detail-strip',title));const body=el('div','build-detail-section-body');box.append(body);return {box,body};}
 function publishedDate(text){const match=String(text||'').match(/^(\d+) ([A-Za-z]+) (\d{4})$/),months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];return match?match[3]+'年'+(months.indexOf(match[2])+1)+'月'+match[1]+'日':text;}
@@ -30,7 +31,7 @@ export async function showBuildDetail(build,title,introduction){
   inventory.append(controls);const sidebar=el('div','build-detail-sidebar'),about=section('关于这套配装');
   const metadata=el('dl','build-detail-metadata');for(const [label,value] of [['风格',build.tags.join(' · ')],['版本',build.patch],['作者',build.author],['发布',publishedDate(build.published)]])if(value)metadata.append(el('dt','',label),el('dd','',value));
   about.body.append(metadata);sidebar.append(about.box);overview.append(inventory,sidebar);content.append(overview);
-  const tabs=el('div','build-detail-tabs'),panes=[],tabPrefix='build-'+crypto.randomUUID();tabs.setAttribute('role','tablist');tabs.setAttribute('aria-label','配装详情');content.append(tabs);
+  const tabs=el('div','build-detail-tabs'),panes=[],tabPrefix='build-'+(++detailSequence);tabs.setAttribute('role','tablist');tabs.setAttribute('aria-label','配装详情');content.append(tabs);
   function addPane(label,pane){const index=panes.length,tab=button(label,()=>activate(index),'build-detail-tab');tab.setAttribute('role','tab');tab.id=tabPrefix+'-tab-'+index;pane.id=tabPrefix+'-pane-'+index;tab.setAttribute('aria-controls',pane.id);pane.setAttribute('role','tabpanel');pane.setAttribute('aria-labelledby',tab.id);panes.push({tab,pane});tabs.append(tab);content.append(pane);activate(Math.max(0,panes.findIndex(({tab})=>tab.getAttribute("aria-selected")==="true")));}
   function activate(index){panes.forEach(({tab,pane},n)=>{pane.hidden=n!==index;tab.setAttribute('aria-selected',String(n===index));tab.tabIndex=n===index?0:-1;});}
   tabs.addEventListener('keydown',e=>{const index=panes.findIndex(({tab})=>tab===document.activeElement);if(index<0)return;let next;if(e.key==='ArrowRight')next=(index+1)%panes.length;else if(e.key==='ArrowLeft')next=(index+panes.length-1)%panes.length;else if(e.key==='Home')next=0;else if(e.key==='End')next=panes.length-1;else return;e.preventDefault();activate(next);panes[next].tab.focus();});
