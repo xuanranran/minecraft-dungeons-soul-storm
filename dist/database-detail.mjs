@@ -1,12 +1,12 @@
-import {el,button,modal,copyLink,notify} from './explorer-ui.mjs?v=layoutrefine2';
+import {el,button,modal,copyLink,notify} from './explorer-ui.mjs?v=effectscompact1';
 import {loadStyle} from './resources.mjs?v=layout2';
 import {loadEquipmentItem} from './equipment-data.mjs?v=layout2';
-import {displayedParameters,displayedTables} from './drops.mjs?v=layoutrefine2';
-import {renderEquipmentDetails,renderParameterTable,renderFixedEffects} from './equipment-details.mjs?v=layoutrefine2';
+import {displayedParameters,displayedTables} from './drops.mjs?v=effectscompact1';
+import {renderEquipmentDetails,renderParameterTable,renderFixedEffects} from './equipment-details.mjs?v=effectscompact1';
 import {loadDatabaseRecord,findDatabaseRecord} from './database-data.mjs?v=copy1';
 
 const kindCategory={melee:'weapons',ranged:'weapons',armor:'armor',artifact:'artifacts',talisman:'talismans'},categoryNames={weapons:'武器',armor:'盔甲','armor-sets':'盔甲套装',artifacts:'法器',talismans:'护身符',enchantments:'附魔',effects:'装备效果',unique:'独特物品',enemies:'生物',bosses:'首领',locations:'地点',quests:'任务',cosmetics:'装饰',upcoming:'文件预留'};
-const resources=()=>Promise.all([loadStyle('./explorer.css?v=db1'),loadStyle('./drops.css?v=db1'),loadStyle('./explorer-game.css?v=tools2')]).then(()=>loadStyle('./database.css?v=layoutrefine2'));
+const resources=()=>Promise.all([loadStyle('./explorer.css?v=db1'),loadStyle('./drops.css?v=db1'),loadStyle('./explorer-game.css?v=tools2')]).then(()=>loadStyle('./database.css?v=effectscompact1'));
 export function databasePicture(item){
  const picture=el('span','database-picture'),image=el('img');image.src=item.image||'';image.alt='';image.loading='lazy';image.width=64;image.height=64;
  if(!item.image){picture.classList.add('is-empty');picture.textContent='◇';return picture;}
@@ -30,7 +30,7 @@ export async function showDatabaseItem(input){
   const tabs=el('div','database-detail-tabs'),panel=el('div','drop-detail-panel database-detail-content');tabs.setAttribute('role','tablist');tabs.setAttribute('aria-label','详情分类');box.body.append(tabs,panel);
   const equipmentURL=record.detailURL||(!record.dbKind?input.detailURL:null);
   if(equipmentURL){const full=await loadEquipmentItem({id:record.id||record.slug,detail:equipmentURL});if(!box.dialog.open)return;if(full.fixed_effects?.length)box.body.insertBefore(renderFixedEffects(full.fixed_effects,{el,nativeIcon}),tabs);renderEquipmentDetails({item:full,panel,el,nativeIcon,displayedParameters,displayedTables});for(const details of panel.querySelectorAll('details'))details.open=true;}
-  else{if(record.parameters?.length)panel.append(parameterGrid(record.parameters));if(record.tiers?.length)panel.append(tierSection(record));for(const table of record.tables||[])panel.append(tableSection(table));}
+  else{if(record.kind!=='effect'&&record.parameters?.length)panel.append(parameterGrid(record.parameters));if(record.tiers?.length)panel.append(tierSection(record));if(record.kind!=='effect')for(const table of record.tables||[])panel.append(tableSection(table));}
   if(record.objectives?.length){const section=detailSection('任务目标','objectives'),list=el('ol','database-objectives');for(const objective of record.objectives){const li=el('li','',objective.text);if(objective.map){const link=button('地图位置',async()=>{try{const reference=new URL(objective.map,'https://www.dungeons.tools'),query=new URLSearchParams(reference.hash.slice(1)),marker=query.get('m'),position=query.get('p'),dimension=reference.pathname.includes('the-sift')?'sift':reference.pathname.includes('/camp')?'camp':'overworld';const route=new URLSearchParams({map:dimension});if(position)route.set('position',position);if(marker)route.set('marker',marker);for(const dialog of [...document.querySelectorAll('dialog[open]')].reverse())dialog.close();location.hash=route.toString();}catch{notify('地图位置读取失败，请重试。');}},'database-map-link');li.append(link);}list.append(li);}section.append(list);panel.append(section);}
   if(record.categoryKey==='armor-sets'&&record.related?.length){const section=detailSection('套装部件','parameters'),list=el('div','database-location-list');for(const part of record.related){const link=button(part.name,()=>showRelated('armor',part.id),'drop-location');list.append(link);}section.append(list);panel.append(section);}
   box.body.addEventListener('click',event=>{const target=event.target.closest('[data-database-name]');if(target)showRelated(target.dataset.databaseCategory,target.dataset.databaseName);});
@@ -38,7 +38,7 @@ export async function showDatabaseItem(input){
   function activate(key){for(const node of panel.querySelectorAll('[data-detail-section]'))node.hidden=node.dataset.detailSection!==key;for(const tab of tabs.children){const selected=tab.dataset.section===key;tab.setAttribute('aria-selected',String(selected));tab.tabIndex=selected?0:-1;}}
   for(const [key,name] of available){const b=button(name,()=>activate(key),'database-detail-tab');b.dataset.section=key;b.setAttribute('role','tab');tabs.append(b);}
   tabs.addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;event.preventDefault();const all=[...tabs.children],i=all.indexOf(document.activeElement),index=event.key==='Home'?0:event.key==='End'?all.length-1:(i+(event.key==='ArrowRight'?1:-1)+all.length)%all.length;all[index]?.click();all[index]?.focus();});
-  if(available.length)activate(available[0][0]);else panel.append(el('p','meta','此条目暂未提供完整参数。'));
+  if(available.length)activate(available[0][0]);else if(record.kind!=='effect')panel.append(el('p','meta','此条目暂未提供完整参数。'));if(record.kind==='effect')tabs.hidden=true;
   const footer=el('div','database-detail-footer');footer.append(el('span','meta',record.categoryKey==='upcoming'?'游戏文件预留定义，未作为已实装条目统计。':'游戏基础数据 · 中文优先使用原生文本'));const id=record.id||record.slug;if(category&&id)footer.append(button('复制详情链接',()=>copyLink(new URLSearchParams({database:'',category,item:id}).toString()),'database-share'));box.body.append(footer);
  }
  try{await render();}catch{if(box.dialog.open){box.body.replaceChildren(el('p','','详情加载失败，请检查网络后重试。'),button('重新载入',()=>render().catch(()=>notify('详情暂时无法读取，请稍后重试。'))));}}return box;

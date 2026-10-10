@@ -28,7 +28,7 @@ export function picker(){const box=modal('选择装备','tool-picker'),search=in
  function render(){const q=search.value.trim().toLowerCase(),list=items.filter(i=>[i.name,i.english,i.set,i.archetype].join(' ').toLowerCase().includes(q));status.textContent=list.length+' 件可选物品';grid.replaceChildren(...list.map(item=>{const b=button('',()=>{choose(item);box.close();});b.classList.add('tool-picker-option');b.append(itemSummary(item));return b;}));}
  search.addEventListener('input',render);return {open(title,list,onChoose){box.title.textContent=title;items=list;choose=onChoose;search.value='';render();box.open();search.focus();}};
 }
-export async function inspect(item){try{const {showDatabaseItem}=await import('./database-detail.mjs?v=layoutrefine2');await showDatabaseItem(item);}catch{notify('物品详情加载失败，请重试。');}}
+export async function inspect(item){try{const {showDatabaseItem}=await import('./database-detail.mjs?v=effectscompact1');await showDatabaseItem(item);}catch{notify('物品详情加载失败，请重试。');}}
 export function notify(text){showNotice(text);}
 export async function copyLink(hash){const url=new URL(location.href);url.hash=hash;try{await navigator.clipboard.writeText(url.href);notify('链接已复制');}catch{const box=modal('分享链接'),text=input('text','',url.href);text.readOnly=true;box.body.append(text,el('p','meta','选中链接后复制，可在其他设备打开。'));box.open();text.select();box.dialog.addEventListener('close',()=>box.dialog.remove(),{once:true});}}
 export function download(name,value){const blob=new Blob([JSON.stringify(value,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=el('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}

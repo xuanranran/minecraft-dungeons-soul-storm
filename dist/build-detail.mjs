@@ -1,6 +1,6 @@
 import {loadCatalogue,loadRules,loadLoadouts} from './explorer-data.mjs?v=tools2';
 import {context,decodeBuild,effectTotals,slots} from './explorer-model.mjs?v=tools2';
-import {el,button,itemPicture,modal,inspect,copyLink} from './explorer-ui.mjs?v=layoutrefine2';
+import {el,button,itemPicture,modal,inspect,copyLink} from './explorer-ui.mjs?v=effectscompact1';
 import {createEquipmentCard} from './equipment-tooltip.mjs?v=tools2';
 
 function section(title,cls=''){const box=el('section','build-detail-section '+cls);box.append(el('h3','build-detail-strip',title));const body=el('div','build-detail-section-body');box.append(body);return {box,body};}

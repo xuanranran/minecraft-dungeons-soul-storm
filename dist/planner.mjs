@@ -1,6 +1,6 @@
 import {loadCatalogue,loadRules,loadLoadouts,readSaved,save} from './explorer-data.mjs?v=tools2';
 import {context,slots,compatible,normalizeBuild,decodeBuild,encodeBuild,effectTotals,rarities} from './explorer-model.mjs?v=tools2';
-import {el,heading,button,field,input,select,itemPicture,itemSummary,modal,inspect,notify,copyLink,download,importFile,safeSave} from './explorer-ui.mjs?v=layoutrefine2';
+import {el,heading,button,field,input,select,itemPicture,itemSummary,modal,inspect,notify,copyLink,download,importFile,safeSave} from './explorer-ui.mjs?v=effectscompact1';
 export async function setupPlanner(){
  const [catalogue,rules,loadouts]=await Promise.all([loadCatalogue(),loadRules(),loadLoadouts()]),ctx=context(catalogue,rules,loadouts),panel=document.getElementById('planner-panel');panel.replaceChildren();panel.classList.add('tool-page');
  heading(panel,'BUILD PLANNER','配装规划','组合 12 个装备部位，选择随机效果与附魔，查看整套配装的效果。');

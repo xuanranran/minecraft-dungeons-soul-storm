@@ -1,6 +1,6 @@
-import {el,button,input,heading,select} from './explorer-ui.mjs?v=layoutrefine2';
+import {el,button,input,heading,select} from './explorer-ui.mjs?v=effectscompact1';
 import {loadDatabaseIndex,loadDatabaseCategory} from './database-data.mjs?v=copy1';
-import {showDatabaseItem,databasePicture} from './database-detail.mjs?v=layoutrefine2';
+import {showDatabaseItem,databasePicture} from './database-detail.mjs?v=effectscompact1';
 
 export function setupDatabase(){
  const panel=document.getElementById('database-panel');panel.replaceChildren();heading(panel,'GAME DATABASE','数据库','查询装备与世界资料，点击条目查看完整参数与关联信息。');
