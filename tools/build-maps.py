@@ -109,6 +109,15 @@ for english, count in zip(rotation_names, expected):
     assert len(ids) == count, (english, len(ids), count)
     rotation.append({'name': name, 'english': english, 'dimension': dimension['id'], 'generators': ids, 'count': len(ids)})
 (OUT / 'maps.json').write_text(json.dumps({'version': 1, 'sources': {'points': 'https://www.dungeons.tools/2/map', 'textures': 'Local Minecraft Dungeons II native BeautyRender exports', 'translations': 'Native en/All.locres and zh-Hans/All.locres, matched by namespace and key'}, 'dimensions': dimensions, 'rotation': rotation}, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+# Load only the selected world's points in the browser.
+complete = json.loads((OUT / 'maps.json').read_text(encoding='utf-8'))
+data_dir = OUT / 'data/maps'
+data_dir.mkdir(parents=True, exist_ok=True)
+index = {**complete, 'dimensions': []}
+for dimension in dimensions:
+    (data_dir / (dimension['id'] + '.json')).write_text(json.dumps(dimension['markers'], ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+    index['dimensions'].append({**{key: value for key, value in dimension.items() if key != 'markers'}, 'count': len(dimension['markers']), 'data': './data/maps/' + dimension['id'] + '.json?v=layout2'})
+(data_dir / 'index.json').write_text(json.dumps(index, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
 for tile in (OUT / 'images/map').rglob('*.webp'):
     manifest.append({'file': tile.relative_to(OUT).as_posix(), 'sha256': hashlib.sha256(tile.read_bytes()).hexdigest(), 'format': 'lossless WebP; native pixels retained at maximum zoom'})
 (ROOT / 'native-map-images.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf-8')

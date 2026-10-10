@@ -1,4 +1,5 @@
 import {setRegionText} from './region-icons.mjs?v=listicons1';
+import {loadEquipmentIndex,loadEquipmentItem} from './equipment-data.mjs?v=layout2';
 export const categories=['近战武器','远程武器','盔甲部件','法器'];
 export const displayedCategory=item=>item.category==='武器'?`${item.weapon_kind}武器`:item.category;
 export const displayedTables=item=>(item.tables??[])
@@ -17,13 +18,13 @@ export const itemsForRegion=(items,region,category='全部')=>items.filter(item=
 
 export function setupDrops(){
  const dialog=document.getElementById('drops-dialog'),title=document.getElementById('drops-title'),grid=document.getElementById('drops-grid'),status=document.getElementById('drops-status'),tabs=document.getElementById('drops-tabs');
- let dataPromise,region='',category='近战武器',opener;
+ let region='',category='近战武器',opener;
  const el=(tag,className,text)=>{const e=document.createElement(tag);if(className)e.className=className;if(text!=null)e.textContent=text;return e};
  const nativeIcon=(entry,className,book=false)=>{const frame=el('span',`native-indicator native-${entry.native_icon_kind==='enchantment'?'enchantment':'effect'}`),icon=el('img',className),slot=book?el('span','native-book'):frame;icon.src=entry.image;icon.alt='';icon.width=48;icon.height=48;icon.loading='lazy';icon.addEventListener('error',()=>{slot.hidden=true},{once:true});frame.append(icon);if(book)slot.append(frame);return slot};
  const mobile=matchMedia('(max-width:600px)');
  const layoutCards=()=>{const cards=[...grid.querySelectorAll('.drop-item')].sort((a,b)=>Number(a.style.order)-Number(b.style.order));if(mobile.matches){grid.replaceChildren(...cards);return}const columns=[el('div','drops-column'),el('div','drops-column')];cards.forEach((card,index)=>columns[index%2].append(card));grid.replaceChildren(...columns)};
  mobile.addEventListener('change',layoutCards);
- const load=()=>dataPromise??=(fetch('./equipment.json?v=useenchantbooks13').then(r=>{if(!r.ok)throw Error('无法读取装备数据');return r.json()}).catch(e=>{dataPromise=null;throw e}));
+ const load=loadEquipmentIndex;
  async function render(){
   const target=region,selected=category;grid.replaceChildren();status.textContent='正在读取掉落物品…';
   try{const data=await load();if(region!==target||category!==selected||!dialog.open)return;
@@ -39,35 +40,23 @@ export function setupDrops(){
     const info=el('div','drop-info');info.append(el('h3','',item.name),el('p','drop-kind',[displayedCategory(item),item.overview['部位'],displayedRarity(item)].filter(Boolean).join(' · ')));
     if(item.description)info.append(el('p','drop-description',item.description));
     const drop=item.drops.find(d=>d['区域']===region);if(item.category!=='法器'&&drop['物品掉落占比'])info.append(el('p','drop-weight',`物品池占比 ${drop['物品掉落占比']}`));
-    const details=el('details','drop-details'),summary=el('summary','','参数与效果'),panel=el('div','drop-detail-panel');details.append(summary,panel);const dl=el('dl');
-    for(const [key,value] of displayedParameters(item)){dl.append(el('dt','',key),el('dd','',value))}panel.append(dl);
-    for(const effect of item.fixed_effects){
-     const box=el('div','drop-effect-card'),icon=nativeIcon(effect,'drop-effect-icon');
-     const text=el('div','drop-effect-copy');text.append(el('strong','',effect.name),el('p','',effect.effect));box.append(icon,text);panel.append(box);
-    }
-    for(const table of displayedTables(item)){if(table.columns.includes('区域')||table.title==='属性 / 数值')continue;
-     const section=el('details','drop-extra'),heading=el('summary','',table.title.replace(item.name,''));section.append(heading);
-     if(table.title==='使用附魔效果')section.classList.add('drop-use-effects');
-     if(table.title.includes('可能出现'))section.classList.add('drop-possible-effects');
-     for(const row of table.rows){const entry=el('div','drop-entry'),fields=Object.entries(row).filter(([key])=>!['image','native_icon_kind','description','levels','effect_levels','ungraded_effect'].includes(key)),levelData=row.effect_levels?.filter(level=>level.level!=='独特'||level.effect.trim()!==row.effect_levels.find(tier=>tier.level==='III')?.effect.trim())??row.levels;
-      let copy=entry;
-      if(row.image){entry.classList.add('drop-enchantment-card');const icon=nativeIcon(row,'drop-list-icon',table.title.includes('可用附魔')||table.title==='使用附魔效果');copy=el('div','drop-enchantment-copy');copy.append(el('strong','',fields[0][1]));entry.append(icon,copy);fields.shift();}
-      if(row.description){entry.classList.add('has-description');copy.append(el('p','',row.description));}
-      for(const [key,value] of fields){if(row.levels&&/级效果/.test(key)||row.effect_levels&&['I','II','III','独特'].includes(key))continue;if(row.image&&key==='触发条件')entry.append(el('p','drop-enchantment-trigger',`${key}：${value}`));else copy.append(el('p','',`${key}：${value}`));}
-      if(levelData){entry.classList.add('has-levels');const levels=el('dl','drop-levels'),third=levelData.find(level=>level.level==='III');for(const level of levelData){const text=level.level==='独特'&&third&&level.effect.trim()===third.effect.trim()?'和 III 级一样的效果':level.effect,label=el('dt');if(/^(I|II|III)$/.test(level.level)){label.setAttribute('aria-label',`${level.level} 级`);label.append(el('span','native-level-badge',level.level));}else label.textContent=level.level;levels.append(label,el('dd','',text));}if(!levelData.length)levels.append(el('dt','','效果'),el('dd','',row.ungraded_effect||'暂无分级数据'));entry.append(levels);}
-      section.append(entry);
-     }panel.append(section);
-    }
-    const locations=el('details','drop-extra');locations.append(el('summary','','掉落地区'));for(const place of item.drops){const line=el('p','drop-location');setRegionText(line,place['区域']);locations.append(line)}panel.append(locations);
+    const details=el('details','drop-details'),summary=el('summary','','参数与效果'),panel=el('div','drop-detail-panel');details.append(summary,panel);
+    let detailState='idle';
+    details.addEventListener('toggle',async()=>{
+     if(!details.open||detailState==='loaded'||detailState==='loading')return;
+     detailState='loading';panel.textContent='正在载入参数与效果…';
+     try{const [module,full]=await Promise.all([import('./equipment-details.mjs?v=layout2'),loadEquipmentItem(item)]);panel.replaceChildren();module.renderEquipmentDetails({item:full,panel,el,nativeIcon,displayedParameters,displayedTables});detailState='loaded';}
+     catch{detailState='idle';panel.textContent='详情加载失败，请收起后重新展开。';}
+    });
     card.style.order=index;card.append(picture,info,details);fragment.append(card);
    }grid.replaceChildren(fragment);layoutCards();
   }catch{if(region===target&&category===selected){status.replaceChildren(el('span','','掉落数据加载失败，'),el('button','drops-retry','重试'));status.querySelector('button').addEventListener('click',render)}}
  }
  function open(name,button){region=name;category='近战武器';opener=button;setRegionText(title,name,`${name} · 地区掉落`);for(const t of tabs.children)t.setAttribute('aria-pressed',String(t.dataset.category===category));if(!dialog.open){dialog.showModal();document.body.classList.add('drops-open')}render();}
  for(const name of categories){const button=el('button','drops-tab',name);button.type='button';button.dataset.category=name;button.setAttribute('aria-pressed',String(name==='近战武器'));button.addEventListener('click',()=>{category=name;for(const t of tabs.children)t.setAttribute('aria-pressed',String(t===button));render()});tabs.append(button)}
- document.addEventListener('click',e=>{const button=e.target.closest('[data-drop-region]');if(button)open(button.dataset.dropRegion,button)});
+
  document.getElementById('drops-close').addEventListener('click',()=>dialog.close());
  dialog.addEventListener('click',e=>{if(e.target===dialog){const box=dialog.getBoundingClientRect();if(e.clientX<box.left||e.clientX>box.right||e.clientY<box.top||e.clientY>box.bottom)dialog.close()}});
  dialog.addEventListener('close',()=>{document.body.classList.remove('drops-open');if(opener?.isConnected)opener.focus()});
- return {setCurrentRegion(name){const button=document.getElementById('current-drops');button.dataset.dropRegion=name;button.setAttribute('aria-label',`查看${name}掉落物品`)}};
+ return {open,setCurrentRegion(name){const button=document.getElementById('current-drops');button.dataset.dropRegion=name;button.setAttribute('aria-label',`查看${name}掉落物品`)}};
 }
