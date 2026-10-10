@@ -1,0 +1,478 @@
+{
+  "checked_at": "2026-10-10",
+  "source": "https://www.dungeonsdb.com/enchantments",
+  "enchantments": {
+    "ancient-alchemy": {
+      "tiers": [
+        [
+          "30"
+        ],
+        [
+          "45"
+        ],
+        [
+          "60"
+        ]
+      ],
+      "unique": null
+    },
+    "artifact-amplifier": {
+      "tiers": [
+        [
+          "6"
+        ],
+        [
+          "7.5"
+        ],
+        [
+          "9"
+        ]
+      ],
+      "unique": null
+    },
+    "barrier-brew": {
+      "tiers": [
+        [
+          "2"
+        ],
+        [
+          "4"
+        ],
+        [
+          "6"
+        ]
+      ],
+      "unique": null
+    },
+    "bottomless-brew": {
+      "tiers": [
+        [
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "unique": null
+    },
+    "buddy-brew": {
+      "tiers": [
+        [
+          "2"
+        ],
+        [
+          "4"
+        ],
+        [
+          "6"
+        ]
+      ],
+      "unique": null
+    },
+    "chain-reaction": {
+      "tiers": [
+        [
+          "20%",
+          "4"
+        ],
+        [
+          "30%",
+          "6"
+        ],
+        [
+          "40%",
+          "8"
+        ]
+      ],
+      "unique": null
+    },
+    "cow-stampede": {
+      "tiers": [
+        [],
+        [],
+        []
+      ],
+      "unique": []
+    },
+    "crash-landing": {
+      "tiers": [
+        [
+          "5%",
+          "125%"
+        ],
+        [
+          "5%",
+          "175%"
+        ],
+        [
+          "5%",
+          "200%"
+        ]
+      ],
+      "unique": null
+    },
+    "critical-quiver": {
+      "tiers": [
+        [
+          "1"
+        ],
+        [
+          "3"
+        ],
+        [
+          "5"
+        ]
+      ],
+      "unique": null
+    },
+    "dynamo": {
+      "tiers": [
+        [
+          "20%"
+        ],
+        [
+          "30%"
+        ],
+        [
+          "40%"
+        ]
+      ],
+      "unique": [
+        "50%"
+      ]
+    },
+    "ender-mines": {
+      "tiers": [
+        [
+          "2"
+        ],
+        [
+          "3"
+        ],
+        [
+          "4"
+        ]
+      ],
+      "unique": null
+    },
+    "ender-quiver": {
+      "tiers": [
+        [
+          "2"
+        ],
+        [
+          "3"
+        ],
+        [
+          "4"
+        ]
+      ],
+      "unique": null
+    },
+    "fire-aspect": {
+      "tiers": [
+        [
+          "35%"
+        ],
+        [
+          "45%"
+        ],
+        [
+          "50%"
+        ]
+      ],
+      "unique": [
+        "80%"
+      ]
+    },
+    "frost-crescent": {
+      "tiers": [
+        [
+          "10%"
+        ],
+        [
+          "15%"
+        ],
+        [
+          "20%"
+        ]
+      ],
+      "unique": null
+    },
+    "gravity-pulse": {
+      "tiers": [
+        [
+          "4"
+        ],
+        [
+          "8"
+        ],
+        [
+          "10"
+        ]
+      ],
+      "unique": null
+    },
+    "healing-smite": {
+      "tiers": [
+        [
+          "20%"
+        ],
+        [
+          "35%"
+        ],
+        [
+          "50%"
+        ]
+      ],
+      "unique": null
+    },
+    "health-synergy": {
+      "tiers": [
+        [
+          "15%"
+        ],
+        [
+          "25%"
+        ],
+        [
+          "35%"
+        ]
+      ],
+      "unique": null
+    },
+    "lightning-surge": {
+      "tiers": [
+        [
+          "60%"
+        ],
+        [
+          "75%"
+        ],
+        [
+          "90%"
+        ]
+      ],
+      "unique": null
+    },
+    "piercing": {
+      "tiers": [
+        [
+          "1"
+        ],
+        [
+          "3"
+        ],
+        [
+          "5"
+        ]
+      ],
+      "unique": [
+        "10"
+      ]
+    },
+    "poison-fog": {
+      "tiers": [
+        [
+          "10%"
+        ],
+        [
+          "20%"
+        ],
+        [
+          "30%"
+        ]
+      ],
+      "unique": null
+    },
+    "power-amplifier": {
+      "tiers": [
+        [
+          "20%"
+        ],
+        [
+          "30%"
+        ],
+        [
+          "40%"
+        ]
+      ],
+      "unique": null
+    },
+    "ricochet": {
+      "tiers": [
+        [
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "unique": [
+        "10"
+      ]
+    },
+    "shadowcloak": {
+      "tiers": [
+        [
+          "15%"
+        ],
+        [
+          "20%"
+        ],
+        [
+          "35%"
+        ]
+      ],
+      "unique": null
+    },
+    "shielding-smite": {
+      "tiers": [
+        [
+          "10%"
+        ],
+        [
+          "20%"
+        ],
+        [
+          "40%"
+        ]
+      ],
+      "unique": [
+        "60%"
+      ]
+    },
+    "shockwave": {
+      "tiers": [
+        [
+          "20%",
+          "125%"
+        ],
+        [
+          "35%",
+          "150%"
+        ],
+        [
+          "50%",
+          "175%"
+        ]
+      ],
+      "unique": [
+        "20%",
+        "200%"
+      ]
+    },
+    "somersault": {
+      "tiers": [
+        [
+          "1"
+        ],
+        [
+          "2"
+        ],
+        [
+          "3"
+        ]
+      ],
+      "unique": null
+    },
+    "soul-blast": {
+      "tiers": [
+        [
+          "50%"
+        ],
+        [
+          "60%"
+        ],
+        [
+          "75%"
+        ]
+      ],
+      "unique": null
+    },
+    "springload": {
+      "tiers": [
+        [
+          "4"
+        ],
+        [
+          "5"
+        ],
+        [
+          "6"
+        ]
+      ],
+      "unique": null
+    },
+    "swirling": {
+      "tiers": [
+        [
+          "50%"
+        ],
+        [
+          "75%"
+        ],
+        [
+          "100%"
+        ]
+      ],
+      "unique": [
+        "60%"
+      ]
+    },
+    "tempo-theft": {
+      "tiers": [
+        [
+          "30%"
+        ],
+        [
+          "40%"
+        ],
+        [
+          "50%"
+        ]
+      ],
+      "unique": null
+    },
+    "thundering": {
+      "tiers": [
+        [
+          "25%",
+          "15%"
+        ],
+        [
+          "33%",
+          "30%"
+        ],
+        [
+          "50%",
+          "50%"
+        ]
+      ],
+      "unique": null
+    },
+    "tumbleshot": {
+      "tiers": [
+        [
+          "1",
+          "110%"
+        ],
+        [
+          "1",
+          "120%"
+        ],
+        [
+          "2",
+          "130%"
+        ]
+      ],
+      "unique": null
+    }
+  }
+}

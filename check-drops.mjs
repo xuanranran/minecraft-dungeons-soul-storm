@@ -32,6 +32,20 @@ assert.deepEqual(categories,['近战武器','远程武器','盔甲部件','法�
 for(const region of regions){const melee=itemsForRegion(data.items,region,'近战武器'),ranged=itemsForRegion(data.items,region,'远程武器');assert.ok(melee.every(i=>i.weapon_kind==='近战'));assert.ok(ranged.every(i=>i.weapon_kind==='远程'));assert.equal(melee.length+ranged.length,itemsForRegion(data.items,region,'武器').length);}
 for(const item of data.items){const entries=displayedParameters(item);assert.ok(!entries.some(([key])=>key==='DPS排名'));if(item.parameters.DPS)assert.equal(entries.find(([key])=>key==='DPS')[1],item.parameters.DPS);}
 const levelRows=data.items.flatMap(i=>i.tables.flatMap(t=>t.rows)).filter(r=>r.levels);
+const enchantmentReference=JSON.parse(fs.readFileSync(new URL('./enchantment-reference.json',import.meta.url))).enchantments;
+const effectNumbers=text=>text.match(/\d+(?:\.\d+)?%?/g)??[];
+const enchantmentSlug=image=>image?.split('enchantments-')[1]?.replace('.webp','');
+assert.equal(Object.keys(enchantmentReference).length,32);
+for(const row of levelRows){
+ const reference=enchantmentReference[enchantmentSlug(row.image)];
+ if(!reference)continue;
+ assert.deepEqual(row.levels.map(level=>effectNumbers(level.effect)),reference.tiers,row.image);
+ assert.equal(row['III级效果'],row.levels[2].effect);
+}
+for(const item of data.items)for(const effect of item.fixed_effects){
+ const reference=enchantmentReference[enchantmentSlug(effect.image)];
+ if(reference?.unique)assert.deepEqual(effectNumbers(effect.effect),reference.unique,`${item.id}: ${effect.name}`);
+}
 for(const item of data.items){
  const tables=displayedTables(item);
  if(item.category==='法器'){
