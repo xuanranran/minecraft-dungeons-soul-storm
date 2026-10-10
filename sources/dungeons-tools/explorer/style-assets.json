@@ -1,0 +1,17 @@
+[
+  {
+    "file": "dist/fonts/mcd2-ten.woff2",
+    "source": "https://www.dungeons.tools/fonts/d2/mcd2-ten.woff2",
+    "sha256": "5e757cb55ce37ebc62427394f4a352aed0040932cf96a8c0d7123d1d4cf4af40"
+  },
+  {
+    "file": "dist/fonts/mcd2-sixteen.woff2",
+    "source": "https://www.dungeons.tools/fonts/d2/mcd2-sixteen.woff2",
+    "sha256": "c331aa7ebd9ad2a040f94850e3be70c29e5eb104d98a698b0be7d696ec9a1524"
+  },
+  {
+    "file": "dist/images/explorer-ui/noise.png",
+    "source": "https://www.dungeons.tools/images/d2/ui/noise.png",
+    "sha256": "3ef30e87d4bd45d93a22c64a77573c041e92bc74979452e84a3a14d3cee1e802"
+  }
+]

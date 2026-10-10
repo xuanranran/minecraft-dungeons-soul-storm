@@ -6,16 +6,22 @@ import {loadMapIndex} from './map-data.mjs?v=layout2';
 setupPreferences();
 const $=id=>document.getElementById(id),clock=new SyncedClock();
 let mapController,stormController,lastWorld='overworld',routeTicket=0;
+const toolNames=['collection','planner','builds','compare'];
+const toolControllers=Object.fromEntries(toolNames.map(name=>[name,retryable(async()=>{
+ const [module]=await Promise.all([import('./'+name+'.mjs?v=tools1'),loadStyle('./explorer.css?v=tools1'),loadStyle('./drops.css?v=fonts1'),...(name==='collection'?[]:[loadStyle('./'+name+'.css?v=tools1')])]);
+ await loadStyle('./explorer-game.css?v=tools1');
+ return module['setup'+name[0].toUpperCase()+name.slice(1)]();
+})]));
 const getMaps=retryable(async()=>{
- const [module]=await Promise.all([import('./maps.mjs?v=stormlink1'),loadStyle('./maps.css?v=popup1'),loadStyle('./vendor/leaflet/leaflet.css'),loadScript('./vendor/leaflet/leaflet.js'),loadMapIndex()]);
+ const [module]=await Promise.all([import('./maps.mjs?v=stormlink1'),loadStyle('./maps.css?v=fonts1'),loadStyle('./vendor/leaflet/leaflet.css'),loadScript('./vendor/leaflet/leaflet.js'),loadMapIndex()]);
  mapController=await module.setupMaps();return mapController;
 });
 const getStorm=retryable(async()=>{
- const [module]=await Promise.all([import('./storm.mjs?v=stormlink1'),loadStyle('./storm.css?v=stormlink1')]);
+ const [module]=await Promise.all([import('./storm.mjs?v=stormlink1'),loadStyle('./storm.css?v=fonts1')]);
  stormController=await module.setupStorm({clock});return stormController;
 });
 const getDrops=retryable(async()=>{
- const [module]=await Promise.all([import('./drops.mjs?v=layout2'),loadStyle('./drops.css?v=layout2')]);
+ const [module]=await Promise.all([import('./drops.mjs?v=layout2'),loadStyle('./drops.css?v=fonts1')]);
  return module.setupDrops();
 });
 
@@ -35,30 +41,32 @@ tick();syncTime();setInterval(()=>{if(!document.hidden||stormController)tick();}
 document.addEventListener('visibilitychange',()=>{if(!document.hidden){tick();syncTime();}});
 
 async function route(){
- const ticket=++routeTicket,params=new URLSearchParams(location.hash.slice(1)),view=params.has('storm')?'storm':'map';
+ const ticket=++routeTicket,params=new URLSearchParams(location.hash.slice(1)),view=toolNames.find(name=>params.has(name))||(params.has('storm')?'storm':'map');
  let focusRegionQuery=false;
  const switched=document.documentElement.dataset.view&&document.documentElement.dataset.view!==view;
- document.documentElement.dataset.view=view;$('map-panel').hidden=view!=='map';$('storm-panel').hidden=view!=='storm';
- if(view==='storm')mapController?.hide();
+ document.documentElement.dataset.view=view;for(const name of ['map','storm',...toolNames])$(name+'-panel').hidden=view!==name;
+ if(view!=='map')mapController?.hide();
  for(const tab of document.querySelectorAll('[data-page-tab]')){const active=tab.dataset.pageTab===view;tab.setAttribute('aria-selected',String(active));tab.tabIndex=active?0:-1;}
  if(switched)window.scrollTo({top:0,behavior:'instant'});
  const panel=$(view+'-panel');panel.setAttribute('aria-busy','true');
  try{
   if(view==='map'){$('map-loading').hidden=false;const controller=await getMaps();if(ticket!==routeTicket)return;await controller.show(params);lastWorld=controller.worldId;}
-  else{const controller=await getStorm();if(ticket!==routeTicket)return;focusRegionQuery=controller.show(params.get('region'));}
+  else if(view==='storm'){const controller=await getStorm();if(ticket!==routeTicket)return;focusRegionQuery=controller.show(params.get('region'));}
+  else{const controller=await toolControllers[view]();if(ticket!==routeTicket)return;controller.show(params);}
  }catch(error){
   if(ticket!==routeTicket)return;
   if(view==='map'){$('map-status').textContent=error.message;$('map-retry').hidden=false;$('map-loading').hidden=true;}
-  else{$('storm-loading').textContent='加载失败，请点击重试。';$('storm-loading').hidden=false;}
+  else if(view==='storm'){$('storm-loading').textContent='加载失败，请点击重试。';$('storm-loading').hidden=false;}
+  else{panel.replaceChildren();const retry=document.createElement('button');retry.textContent='加载失败，点击重试';retry.addEventListener('click',route);panel.append(retry);}
   showNotice('内容加载失败，请检查网络后重试。');console.error(error);
  }finally{if(ticket===routeTicket)panel.setAttribute('aria-busy','false');}
  if(ticket===routeTicket&&focusRegionQuery){$('query-heading').focus({preventScroll:true});$('query-heading').closest('section').scrollIntoView({block:'start',behavior:'instant'});}
 }
 window.addEventListener('hashchange',route);
-for(const tab of document.querySelectorAll('[data-page-tab]'))tab.addEventListener('click',()=>{const hash=tab.dataset.pageTab==='storm'?'storm':new URLSearchParams({map:lastWorld}).toString();if(location.hash==='#'+hash)route();else location.hash=hash;});
+for(const tab of document.querySelectorAll('[data-page-tab]'))tab.addEventListener('click',()=>{const hash=tab.dataset.pageTab==='map'?new URLSearchParams({map:lastWorld}).toString():tab.dataset.pageTab;if(location.hash==='#'+hash)route();else location.hash=hash;});
 $('page-tabs').addEventListener('keydown',e=>{
  if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;
- e.preventDefault();const tabs=[...document.querySelectorAll('[data-page-tab]')],index=tabs.indexOf(document.activeElement),target=e.key==='Home'?0:e.key==='End'?1:1-Math.max(index,0);tabs[target].focus();tabs[target].click();
+ e.preventDefault();const tabs=[...document.querySelectorAll('[data-page-tab]')],index=tabs.indexOf(document.activeElement),target=e.key==='Home'?0:e.key==='End'?tabs.length-1:(Math.max(index,0)+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;tabs[target].focus();tabs[target].click();
 });
 $('map-retry').addEventListener('click',()=>{mapController?.redraw();$('map-retry').hidden=true;route();});
 $('storm-loading').addEventListener('click',route);

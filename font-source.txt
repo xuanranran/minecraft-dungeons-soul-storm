@@ -6,3 +6,10 @@ Ark Pixel 12px proportional Simplified Chinese fallback
 Source: https://ark-pixel-font.takwolf.com/ark-pixel-12px-proportional-zh_hans.otf.woff2
 Project: https://github.com/TakWolf/ark-pixel-font
 License: SIL Open Font License 1.1, included at dist/fonts/ARK-LICENSE-OFL.txt
+
+Dungeons II game-style Latin fonts (four equipment tools)
+Source: https://www.dungeons.tools/fonts/d2/mcd2-ten.woff2
+Source: https://www.dungeons.tools/fonts/d2/mcd2-sixteen.woff2
+Downloaded 2026-10-10; source URLs and hashes are recorded in
+sources/dungeons-tools/explorer/style-assets.json.
+Chinese glyphs use the Ark Pixel fallback. These are third-party game assets.

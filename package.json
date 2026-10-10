@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node check.mjs && node check-clock.mjs && node check-drops.mjs && node check-maps.mjs && node check-web-data.mjs && node --check dist/maps.mjs && node --check dist/app.mjs && node --check dist/drops.mjs && node --check dist/alarm.mjs && node --check dist/theme-init.js",
+    "test": "node check.mjs && node check-clock.mjs && node check-drops.mjs && node check-maps.mjs && node check-web-data.mjs && node --check dist/maps.mjs && node --check dist/app.mjs && node --check dist/drops.mjs && node --check dist/alarm.mjs && node --check dist/theme-init.js && node check-explorer.mjs && node --check dist/collection.mjs && node --check dist/planner.mjs && node --check dist/builds.mjs && node --check dist/compare.mjs && node --check dist/equipment-tooltip.mjs",
     "build:data": "node tools/build-web-data.mjs",
     "start": "python -m http.server 8080 --directory dist"
   }
