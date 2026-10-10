@@ -1,0 +1,80 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "42"
+    ],
+    [
+      "Top hit",
+      "12"
+    ],
+    [
+      "Poise",
+      "28"
+    ],
+    [
+      "Souls",
+      "8"
+    ],
+    [
+      "Speed",
+      "300"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Light attack",
+          "12",
+          "none",
+          "Fire",
+          "0.5 sec"
+        ]
+      ]
+    },
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "DAMAGE",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Base (unused)",
+          "42",
+          "12",
+          "28",
+          "8"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Blast damage",
+      "+50%"
+    ],
+    [
+      "Fire damage",
+      "-25%"
+    ],
+    [
+      "Frost damage",
+      "+25%"
+    ]
+  ],
+  "links": [],
+  "source": "https://www.dungeons.tools/2/enemies/charred"
+}

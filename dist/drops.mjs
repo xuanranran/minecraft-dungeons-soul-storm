@@ -40,15 +40,8 @@ export function setupDrops(){
     const info=el('div','drop-info');info.append(el('h3','',item.name),el('p','drop-kind',[displayedCategory(item),item.overview['部位'],displayedRarity(item)].filter(Boolean).join(' · ')));
     if(item.description)info.append(el('p','drop-description',item.description));
     const drop=item.drops.find(d=>d['区域']===region);if(item.category!=='法器'&&drop['物品掉落占比'])info.append(el('p','drop-weight',`物品池占比 ${drop['物品掉落占比']}`));
-    const details=el('details','drop-details'),summary=el('summary','','参数与效果'),panel=el('div','drop-detail-panel');details.append(summary,panel);
-    let detailState='idle';
-    details.addEventListener('toggle',async()=>{
-     if(!details.open||detailState==='loaded'||detailState==='loading')return;
-     detailState='loading';panel.textContent='正在载入参数与效果…';
-     try{const [module,full]=await Promise.all([import('./equipment-details.mjs?v=layout2'),loadEquipmentItem(item)]);panel.replaceChildren();module.renderEquipmentDetails({item:full,panel,el,nativeIcon,displayedParameters,displayedTables});detailState='loaded';}
-     catch{detailState='idle';panel.textContent='详情加载失败，请收起后重新展开。';}
-    });
-    card.style.order=index;card.append(picture,info,details);fragment.append(card);
+    const openItem=async()=>{try{const {inspect}=await import('./explorer-ui.mjs?v=db1');inspect({...item,slug:item.id,kind:item.category==='法器'?'artifact':item.category==='盔甲部件'?'armor':item.weapon_kind==='远程'?'ranged':'melee',unique:item.rarity==='独特',detailURL:item.detail});}catch{status.textContent='详情加载失败，请重试。';}};
+    card.tabIndex=0;card.setAttribute('role','button');card.setAttribute('aria-label','查看'+item.name+'数据库详情');card.addEventListener('click',openItem);card.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();openItem();}});card.style.order=index;card.append(picture,info);fragment.append(card);
    }grid.replaceChildren(fragment);layoutCards();
   }catch{if(region===target&&category===selected){status.replaceChildren(el('span','','掉落数据加载失败，'),el('button','drops-retry','重试'));status.querySelector('button').addEventListener('click',render)}}
  }

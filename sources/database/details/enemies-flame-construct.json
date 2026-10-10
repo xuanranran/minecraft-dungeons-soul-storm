@@ -1,0 +1,73 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "80"
+    ],
+    [
+      "Top hit",
+      "25"
+    ],
+    [
+      "Poise",
+      "80"
+    ],
+    [
+      "Souls",
+      "4"
+    ],
+    [
+      "Speed",
+      "350"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Fire burst",
+          "25",
+          "15",
+          "Physical",
+          "5 sec"
+        ],
+        [
+          "Flamethrower",
+          "3",
+          "none",
+          "Physical",
+          "4 sec"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Fire damage",
+      "-50%"
+    ],
+    [
+      "Frost damage",
+      "+100%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "The Deep Dark",
+      "href": "/2/locations/the-deep-dark"
+    },
+    {
+      "name": "Deep Dark dungeons",
+      "href": "/2/locations/deep-dark-dungeons"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/flame-construct"
+}

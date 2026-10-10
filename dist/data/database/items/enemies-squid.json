@@ -1,0 +1,1 @@
+{"id":"squid","slug":"squid","name":"鱿鱼","english":"Squid","kind":"enemy","categoryKey":"enemies","dbKind":"reference","image":"./images/database/renders-thumb-squid.png","description":"","parameters":[["速度","130"]],"tables":[],"related":[],"source":"https://www.dungeons.tools/2/enemies/squid","subtype":"被动生物","detail":"./data/database/items/enemies-squid.json?v=db1"}

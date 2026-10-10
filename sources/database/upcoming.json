@@ -1,0 +1,975 @@
+{
+  "source": "https://www.dungeons.tools/2/upcoming",
+  "captured_at": "2026-10-10",
+  "rows": [
+    {
+      "name": "Souldancer Hood",
+      "sub": "",
+      "href": "/2/upcoming#entry-0",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Armor"
+        ],
+        [
+          "IN-GAME TEXT",
+          "Hood with a tattered veil that sways in the breeze whenever danger is close."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Souldancer Leggings",
+      "sub": "",
+      "href": "/2/upcoming#entry-1",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Armor"
+        ],
+        [
+          "IN-GAME TEXT",
+          "A pair of stretchy leggings for dancing with the enemy."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Souldancer Robe",
+      "sub": "",
+      "href": "/2/upcoming#entry-2",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Armor"
+        ],
+        [
+          "IN-GAME TEXT",
+          "When you dance with death, the souls of the Sift dance with you."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Souldancer Shoes",
+      "sub": "",
+      "href": "/2/upcoming#entry-3",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Armor"
+        ],
+        [
+          "IN-GAME TEXT",
+          "A pair of dancing shoes for moving to music only you can hear."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Soulwhisperer Breeches",
+      "sub": "",
+      "href": "/2/upcoming#entry-4",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Armor"
+        ],
+        [
+          "IN-GAME TEXT",
+          "An eerie pair of breeches infused with ichor. whispers, you..."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Soulwhisperer Cloak",
+      "sub": "",
+      "href": "/2/upcoming#entry-5",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Armor"
+        ],
+        [
+          "IN-GAME TEXT",
+          "A haunting cloak coated with ichor. hear the..."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Soulwhisperer Sandals",
+      "sub": "",
+      "href": "/2/upcoming#entry-6",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Armor"
+        ],
+        [
+          "IN-GAME TEXT",
+          "A mysterious pair of sandals greased with ichor. aren't listening."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Soulwhisperer Veil",
+      "sub": "",
+      "href": "/2/upcoming#entry-7",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Armor"
+        ],
+        [
+          "IN-GAME TEXT",
+          "An elusive veil weaved with ichor. If you can't..."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Bucket of Axolotl",
+      "sub": "",
+      "href": "/2/upcoming#entry-8",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Artifact"
+        ],
+        [
+          "IN-GAME TEXT",
+          "Your axolotl friend will attack anyone who tries to harm you. Deadly AND adorable!"
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Decoy Dummy",
+      "sub": "",
+      "href": "/2/upcoming#entry-9",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Artifact"
+        ],
+        [
+          "IN-GAME TEXT",
+          "Draws the attention of enemies as you escape or ambush. The dummy has its own pool of health, but none of your charisma."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Toxic Cane",
+      "sub": "",
+      "href": "/2/upcoming#entry-10",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Artifact"
+        ],
+        [
+          "IN-GAME TEXT",
+          "Hold this Toxic Cane to charge it up with souls, then release the soul powered poison gas on your enemies."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Leeching",
+      "sub": "",
+      "href": "/2/upcoming#entry-11",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Effect"
+        ],
+        [
+          "IN-GAME TEXT",
+          "No description yet"
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Successive Hits",
+      "sub": "",
+      "href": "/2/upcoming#entry-12",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Effect"
+        ],
+        [
+          "IN-GAME TEXT",
+          "No description yet"
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Taunter",
+      "sub": "",
+      "href": "/2/upcoming#entry-13",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Effect"
+        ],
+        [
+          "IN-GAME TEXT",
+          "No description yet"
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Halberd",
+      "sub": "",
+      "href": "/2/upcoming#entry-14",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Melee weapon"
+        ],
+        [
+          "IN-GAME TEXT",
+          "For enemies just out of range and itches in hard-to-reach places."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Lance",
+      "sub": "",
+      "href": "/2/upcoming#entry-15",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Melee weapon"
+        ],
+        [
+          "IN-GAME TEXT",
+          "Always points to your true north, in a world without cardinal directions."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Leech Blade",
+      "sub": "",
+      "href": "/2/upcoming#entry-16",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Melee weapon"
+        ],
+        [
+          "IN-GAME TEXT",
+          "A blade that not only takes life but steals it."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Needle Blade",
+      "sub": "",
+      "href": "/2/upcoming#entry-17",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Melee weapon"
+        ],
+        [
+          "IN-GAME TEXT",
+          "A blade as thin as a needle, but as sharp as a... as a needle."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Safekeeper",
+      "sub": "",
+      "href": "/2/upcoming#entry-18",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Melee weapon"
+        ],
+        [
+          "IN-GAME TEXT",
+          "An enchanted halberd with the power to conjure shields around all who need protection."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Shimmer Cane",
+      "sub": "",
+      "href": "/2/upcoming#entry-19",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Melee weapon"
+        ],
+        [
+          "IN-GAME TEXT",
+          "A beautiful iridescent fighting cane that always hits its target."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Short Staff",
+      "sub": "",
+      "href": "/2/upcoming#entry-20",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Melee weapon"
+        ],
+        [
+          "IN-GAME TEXT",
+          "A lighter quarterstaff for swift takedowns in close quarters."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Sift Socks",
+      "sub": "",
+      "href": "/2/upcoming#entry-21",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Melee weapon"
+        ],
+        [
+          "IN-GAME TEXT",
+          "A comfy pair of socks made from Sift materials, for kicking the wits out of Illagers."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Song of the Sift",
+      "sub": "",
+      "href": "/2/upcoming#entry-22",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Melee weapon"
+        ],
+        [
+          "IN-GAME TEXT",
+          "A lance that grants a true defender of the Sift with unstoppable powers."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Wit Wraps",
+      "sub": "",
+      "href": "/2/upcoming#entry-23",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Melee weapon"
+        ],
+        [
+          "IN-GAME TEXT",
+          "Foot wraps from a forgotten art of defense, knitted for kicking the wits out of Illagers."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Taunted",
+      "sub": "",
+      "href": "/2/upcoming#entry-24",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Status"
+        ],
+        [
+          "IN-GAME TEXT",
+          "Targeting the taunter."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Fang of Sifter",
+      "sub": "",
+      "href": "/2/upcoming#entry-25",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Talisman"
+        ],
+        [
+          "IN-GAME TEXT",
+          "No description yet"
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Fragment of Soul Construct",
+      "sub": "",
+      "href": "/2/upcoming#entry-26",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Talisman"
+        ],
+        [
+          "IN-GAME TEXT",
+          "No description yet"
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Plume of Monarch",
+      "sub": "",
+      "href": "/2/upcoming#entry-27",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Talisman"
+        ],
+        [
+          "IN-GAME TEXT",
+          "No description yet"
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Diamond Boots",
+      "sub": "",
+      "href": "/2/upcoming#entry-28",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Armor"
+        ],
+        [
+          "IN-GAME TEXT",
+          "A pair of classic diamond boots so hard you can block attacks with your feet."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Diamond Chestplate",
+      "sub": "",
+      "href": "/2/upcoming#entry-29",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Armor"
+        ],
+        [
+          "IN-GAME TEXT",
+          "A classic diamond chestplate for the warrior with a hard punch and a sharp blade."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Diamond Helmet",
+      "sub": "",
+      "href": "/2/upcoming#entry-30",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Armor"
+        ],
+        [
+          "IN-GAME TEXT",
+          "A classic diamond helmet for the fighter with a head for both maiming and mining."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Diamond Leggings",
+      "sub": "",
+      "href": "/2/upcoming#entry-31",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Armor"
+        ],
+        [
+          "IN-GAME TEXT",
+          "A pair of classic diamond leggings that will mold you from a diamond in the rough into a shining jewel."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Mercenary Boots",
+      "sub": "",
+      "href": "/2/upcoming#entry-32",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Armor"
+        ],
+        [
+          "IN-GAME TEXT",
+          "For some good, old-fashioned dungeon running and mercenary mischief."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Mercenary Chestplate",
+      "sub": "",
+      "href": "/2/upcoming#entry-33",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Armor"
+        ],
+        [
+          "IN-GAME TEXT",
+          "Protects your heart from anyone trying to get too close."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Mercenary Helmet",
+      "sub": "",
+      "href": "/2/upcoming#entry-34",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Armor"
+        ],
+        [
+          "IN-GAME TEXT",
+          "Weighs less than the heavy burden of saving the world."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Mercenary Shinguards",
+      "sub": "",
+      "href": "/2/upcoming#entry-35",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Armor"
+        ],
+        [
+          "IN-GAME TEXT",
+          "A mercenary bends the knee to no one. And in these shinguards, it's literally impossible."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Annoying Honker",
+      "sub": "",
+      "href": "/2/upcoming#entry-36",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Artifact"
+        ],
+        [
+          "IN-GAME TEXT",
+          "The sound of this honking horn is so annoying that your enemies will start fighting each other instead."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Cake Cannon",
+      "sub": "",
+      "href": "/2/upcoming#entry-37",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Artifact"
+        ],
+        [
+          "IN-GAME TEXT",
+          "Shoots a deviously delicious projectile that splits into multiple slices for additional cake-splosive damage. Happy birthday, suckers!"
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Spinblade",
+      "sub": "",
+      "href": "/2/upcoming#entry-38",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Artifact"
+        ],
+        [
+          "IN-GAME TEXT",
+          "Spins across the battlefield, slicing enemies in its path. Also, a fun fidget toy while waiting for quest givers to finish talking."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Critical Rampage",
+      "sub": "",
+      "href": "/2/upcoming#entry-39",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Enchantment"
+        ],
+        [
+          "IN-GAME TEXT",
+          "No description yet"
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Mage's Familiar",
+      "sub": "",
+      "href": "/2/upcoming#entry-40",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Enchantment"
+        ],
+        [
+          "IN-GAME TEXT",
+          "No description yet"
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Power Potion",
+      "sub": "",
+      "href": "/2/upcoming#entry-41",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Enchantment"
+        ],
+        [
+          "IN-GAME TEXT",
+          "No description yet"
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Critical Rampage",
+      "sub": "",
+      "href": "/2/upcoming#entry-42",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Enchantment book"
+        ],
+        [
+          "IN-GAME TEXT",
+          "An enchantment that improves critical aim for each critical hit made in a row."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Mage's Familiar",
+      "sub": "",
+      "href": "/2/upcoming#entry-43",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Enchantment book"
+        ],
+        [
+          "IN-GAME TEXT",
+          "An enchantment that grants companions explosive magical powers."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Power Potion",
+      "sub": "",
+      "href": "/2/upcoming#entry-44",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Enchantment book"
+        ],
+        [
+          "IN-GAME TEXT",
+          "An enchantment that grants health potions the ability to increase attack power."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Club",
+      "sub": "",
+      "href": "/2/upcoming#entry-45",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Melee weapon"
+        ],
+        [
+          "IN-GAME TEXT",
+          "A simple wooden club for beating some sense into your enemies."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Dynamite Sticks",
+      "sub": "",
+      "href": "/2/upcoming#entry-46",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Melee weapon"
+        ],
+        [
+          "IN-GAME TEXT",
+          "A pair of snazzy red fighting sticks with burning fuses on the... You might have made a big mistake."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Fighting Sticks",
+      "sub": "",
+      "href": "/2/upcoming#entry-47",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Melee weapon"
+        ],
+        [
+          "IN-GAME TEXT",
+          "You'll go far if you stick with these."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Leftover Lunch",
+      "sub": "",
+      "href": "/2/upcoming#entry-48",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Melee weapon"
+        ],
+        [
+          "IN-GAME TEXT",
+          "For the warrior who likes a snack in between fights, and who doesn't mind sharing with their pets."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Shadethrower",
+      "sub": "",
+      "href": "/2/upcoming#entry-49",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Melee weapon"
+        ],
+        [
+          "IN-GAME TEXT",
+          "A nimble blade that throws shade at anyone who stands beneath it."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Shortsword",
+      "sub": "",
+      "href": "/2/upcoming#entry-50",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Melee weapon"
+        ],
+        [
+          "IN-GAME TEXT",
+          "When you need the strength of a sword but the swiftness of a dagger."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Sidethorn",
+      "sub": "",
+      "href": "/2/upcoming#entry-51",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Melee weapon"
+        ],
+        [
+          "IN-GAME TEXT",
+          "A brawler's blade that is a thorn in the side of all enemies."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "The Point of No Return",
+      "sub": "",
+      "href": "/2/upcoming#entry-52",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Melee weapon"
+        ],
+        [
+          "IN-GAME TEXT",
+          "When you're backed into a corner, this sword will grant you extra strength."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Tornado Blade",
+      "sub": "",
+      "href": "/2/upcoming#entry-53",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Melee weapon"
+        ],
+        [
+          "IN-GAME TEXT",
+          "There's a storm coming. You are the eye of the tornado."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Twinblade",
+      "sub": "",
+      "href": "/2/upcoming#entry-54",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Melee weapon"
+        ],
+        [
+          "IN-GAME TEXT",
+          "What could be better than a sword? Two swords stuck together of course!"
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Arblast",
+      "sub": "",
+      "href": "/2/upcoming#entry-55",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Ranged weapon"
+        ],
+        [
+          "IN-GAME TEXT",
+          "A giant crossbow that needs to be set up before it blasts arrows at an accelerating rate."
+        ]
+      ],
+      "tip": null
+    },
+    {
+      "name": "Frenzied",
+      "sub": "",
+      "href": "/2/upcoming#entry-56",
+      "image": "",
+      "values": [
+        [
+          "TYPE",
+          "Status"
+        ],
+        [
+          "IN-GAME TEXT",
+          "Attacking allies and dealing more damage."
+        ]
+      ],
+      "tip": null
+    }
+  ]
+}

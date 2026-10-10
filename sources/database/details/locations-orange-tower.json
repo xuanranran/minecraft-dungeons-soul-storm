@@ -1,0 +1,115 @@
+{
+  "parameters": [
+    [
+      "Region",
+      "Rainy Plains"
+    ],
+    [
+      "Entrances",
+      "1"
+    ],
+    [
+      "Fancy chests",
+      "3"
+    ],
+    [
+      "Wooden chests",
+      "1"
+    ],
+    [
+      "Pots",
+      "19"
+    ]
+  ],
+  "objectives": [],
+  "tables": [],
+  "resistances": [
+    [
+      "Creeper",
+      "54%"
+    ],
+    [
+      "Charged Creeper",
+      "21%"
+    ],
+    [
+      "Zombie",
+      "9%"
+    ],
+    [
+      "Skeleton",
+      "4%"
+    ],
+    [
+      "Baby Zombie",
+      "3%"
+    ],
+    [
+      "Vanguard",
+      "3%"
+    ],
+    [
+      "Spider",
+      "3%"
+    ],
+    [
+      "Chicken Jockey",
+      "2%"
+    ],
+    [
+      "Spider Jockey",
+      "2%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "Soul Corrupted Baby Zombie",
+      "href": "/2/enemies/soul-corrupted-baby-zombie"
+    },
+    {
+      "name": "Soul Corrupted Cave Spider",
+      "href": "/2/enemies/soul-corrupted-cave-spider"
+    },
+    {
+      "name": "Soul Corrupted Chicken Jockey",
+      "href": "/2/enemies/soul-corrupted-chicken-jockey"
+    },
+    {
+      "name": "Soul Corrupted Creeper",
+      "href": "/2/enemies/soul-corrupted-creeper"
+    },
+    {
+      "name": "Soul Corrupted Husk",
+      "href": "/2/enemies/soul-corrupted-husk"
+    },
+    {
+      "name": "Soul Corrupted Skeleton",
+      "href": "/2/enemies/soul-corrupted-skeleton"
+    },
+    {
+      "name": "Soul Corrupted Slime",
+      "href": "/2/enemies/soul-corrupted-slime"
+    },
+    {
+      "name": "Soul Corrupted Spider",
+      "href": "/2/enemies/soul-corrupted-spider"
+    },
+    {
+      "name": "Soul Corrupted Spider Jockey",
+      "href": "/2/enemies/soul-corrupted-spider-jockey"
+    },
+    {
+      "name": "Soul Corrupted Vanguard",
+      "href": "/2/enemies/soul-corrupted-vanguard"
+    },
+    {
+      "name": "Soul Corrupted Zombie",
+      "href": "/2/enemies/soul-corrupted-zombie"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/orange-tower"
+}

@@ -1,0 +1,66 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "166"
+    ],
+    [
+      "Top hit",
+      "5"
+    ],
+    [
+      "Poise",
+      "166"
+    ],
+    [
+      "Souls",
+      "50"
+    ],
+    [
+      "Speed",
+      "350"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Swipe",
+          "5",
+          "none",
+          "Physical",
+          ""
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Blast damage",
+      "+50%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    },
+    {
+      "name": "Sift rifts",
+      "href": "/2/locations/sift-rifts"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/soul-corrupted-sprout"
+}

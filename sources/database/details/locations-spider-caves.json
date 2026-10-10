@@ -1,0 +1,120 @@
+{
+  "parameters": [
+    [
+      "Region",
+      "Howling Woods"
+    ],
+    [
+      "Entrances",
+      "4"
+    ],
+    [
+      "Fancy chests",
+      "11"
+    ],
+    [
+      "Wooden chests",
+      "3"
+    ],
+    [
+      "Pots",
+      "26"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Opens once you finish \"Speak to the Forager\" in Corruption in the Woods",
+      "map": "/2/map#p=3884,3996"
+    }
+  ],
+  "tables": [],
+  "resistances": [
+    [
+      "Spider",
+      "37%"
+    ],
+    [
+      "Slime",
+      "35%"
+    ],
+    [
+      "Cave Spider",
+      "12%"
+    ],
+    [
+      "Spider Jockey",
+      "7%"
+    ],
+    [
+      "Zombie",
+      "3%"
+    ],
+    [
+      "Skeleton",
+      "2%"
+    ],
+    [
+      "Mucked",
+      "1%"
+    ],
+    [
+      "Baby Zombie",
+      "1%"
+    ],
+    [
+      "Vanguard",
+      "1%"
+    ],
+    [
+      "Chicken Jockey",
+      "1%"
+    ],
+    [
+      "Bogged",
+      "<1%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Corruption in the Woods",
+      "href": "/2/quests/corruption-in-the-woods"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3884,3996"
+    },
+    {
+      "name": "Enchanter",
+      "href": "/2/enemies/enchanter"
+    },
+    {
+      "name": "Geomancer",
+      "href": "/2/enemies/geomancer"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Royal Guard",
+      "href": "/2/enemies/royal-guard"
+    },
+    {
+      "name": "Soul Corrupted Spider",
+      "href": "/2/enemies/soul-corrupted-spider"
+    },
+    {
+      "name": "Soul Corrupted Spider Jockey",
+      "href": "/2/enemies/soul-corrupted-spider-jockey"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/spider-caves"
+}

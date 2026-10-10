@@ -1,0 +1,195 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Howling Woods"
+    ],
+    [
+      "Level",
+      "17"
+    ],
+    [
+      "Comes after",
+      "Down into the Deep Dark"
+    ],
+    [
+      "Opens",
+      "The Trembling Golem, The Sneezing Golem and Wading Rainy Plains"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "1,100"
+    ],
+    [
+      "Emeralds",
+      "8 to 144, 40 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Return to Brave Haven",
+      "map": "/2/map#p=435,4419"
+    },
+    {
+      "text": "Find the Cartographer",
+      "map": "/2/map#p=348,4418"
+    },
+    {
+      "text": "Catch up with the Blacksmith",
+      "map": "/2/map#p=4552,4424"
+    },
+    {
+      "text": "Speak to the Blacksmith",
+      "map": "/2/map#p=4555,4390"
+    },
+    {
+      "text": "Recover the stolen axes any order",
+      "map": ""
+    },
+    {
+      "text": "Ambush",
+      "map": ""
+    },
+    {
+      "text": "Ambush",
+      "map": ""
+    },
+    {
+      "text": "Return to the Blacksmith",
+      "map": "/2/map#p=4539,4424"
+    },
+    {
+      "text": "Speak to the Blacksmith",
+      "map": "/2/map#p=4555,4390"
+    },
+    {
+      "text": "Give the axes to the woodcutters any order",
+      "map": ""
+    },
+    {
+      "text": "Defend the woodcutters restarts if you quit",
+      "map": ""
+    },
+    {
+      "text": "Speak to the Blacksmith",
+      "map": "/2/map#p=4555,4390"
+    },
+    {
+      "text": "Lead the Blacksmith to Woodcutter's Outpost",
+      "map": ""
+    },
+    {
+      "text": "Speak to the Blacksmith",
+      "map": "/2/map#p=5115,4398"
+    },
+    {
+      "text": "Return to Brave Haven",
+      "map": "/2/map#p=461,4260"
+    },
+    {
+      "text": "Find the Blacksmith's stall",
+      "map": "/2/map#p=333,4270"
+    },
+    {
+      "text": "Speak to the Blacksmith",
+      "map": "/2/map#p=358,4286"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Down into the Deep Dark",
+      "href": "/2/quests/down-into-the-deep-dark"
+    },
+    {
+      "name": "The Trembling Golem",
+      "href": "/2/quests/the-trembling-golem"
+    },
+    {
+      "name": "The Sneezing Golem",
+      "href": "/2/quests/the-sneezing-golem"
+    },
+    {
+      "name": "Wading Rainy Plains",
+      "href": "/2/quests/wading-rainy-plains"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=435,4419"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=348,4418"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4552,4424"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4555,4390"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4539,4424"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4555,4390"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4555,4390"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5115,4398"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=461,4260"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=333,4270"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=358,4286"
+    },
+    {
+      "name": "Phantom Boots",
+      "href": "/2/armor/phantom-boots"
+    },
+    {
+      "name": "Phantom Chestplate",
+      "href": "/2/armor/phantom-chestplate"
+    },
+    {
+      "name": "Phantom Helmet",
+      "href": "/2/armor/phantom-helmet"
+    },
+    {
+      "name": "Phantom Pants",
+      "href": "/2/armor/phantom-pants"
+    },
+    {
+      "name": "Fist of Iron",
+      "href": "/2/artifacts/fist-of-iron"
+    },
+    {
+      "name": "Twig of Dark Oak",
+      "href": "/2/artifacts/twig-of-dark-oak"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/the-missing-note-blocks"
+}

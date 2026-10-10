@@ -1,0 +1,45 @@
+{
+  "parameters": [],
+  "objectives": [],
+  "tables": [],
+  "resistances": [
+    [
+      "Zombie",
+      "28%"
+    ],
+    [
+      "Vindicator",
+      "20%"
+    ],
+    [
+      "Skeleton",
+      "14%"
+    ],
+    [
+      "Pillager",
+      "14%"
+    ],
+    [
+      "Baby Zombie",
+      "8%"
+    ],
+    [
+      "Vanguard",
+      "8%"
+    ],
+    [
+      "Spider",
+      "8%"
+    ],
+    [
+      "Zombie",
+      "67%"
+    ],
+    [
+      "Skeleton",
+      "33%"
+    ]
+  ],
+  "links": [],
+  "source": "https://www.dungeons.tools/2/locations/squid-coast"
+}

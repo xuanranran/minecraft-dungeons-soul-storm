@@ -1,0 +1,122 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "8"
+    ],
+    [
+      "Top hit",
+      "6"
+    ],
+    [
+      "Poise",
+      "28"
+    ],
+    [
+      "Souls",
+      "4"
+    ],
+    [
+      "Speed",
+      "300"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Light attack",
+          "6",
+          "none",
+          "Physical",
+          "0.5 sec"
+        ]
+      ]
+    },
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "DAMAGE",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Base",
+          "8",
+          "6",
+          "28",
+          "4"
+        ],
+        [
+          "Soul imbalance",
+          "12",
+          "6",
+          "28",
+          "4"
+        ],
+        [
+          "Variant I",
+          "36",
+          "8",
+          "70",
+          "8"
+        ],
+        [
+          "Variant II",
+          "52",
+          "10",
+          "80",
+          "12"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Blast damage",
+      "+50%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    },
+    {
+      "name": "The Deep Dark",
+      "href": "/2/locations/the-deep-dark"
+    },
+    {
+      "name": "Deep Dark dungeons",
+      "href": "/2/locations/deep-dark-dungeons"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "Squid Coast",
+      "href": "/2/locations/squid-coast"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/zombie"
+}

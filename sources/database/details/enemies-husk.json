@@ -1,0 +1,77 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "42"
+    ],
+    [
+      "Top hit",
+      "14"
+    ],
+    [
+      "Poise",
+      "100"
+    ],
+    [
+      "Souls",
+      "8"
+    ],
+    [
+      "Speed",
+      "175"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Light attack",
+          "14",
+          "none",
+          "Physical",
+          "0.5 sec"
+        ]
+      ]
+    },
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "DAMAGE",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Base",
+          "42",
+          "14",
+          "100",
+          "8"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Blast damage",
+      "+50%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/husk"
+}

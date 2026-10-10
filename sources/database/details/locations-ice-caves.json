@@ -1,0 +1,140 @@
+{
+  "parameters": [
+    [
+      "Region",
+      "Frozen Highlands"
+    ],
+    [
+      "Entrances",
+      "6"
+    ],
+    [
+      "Fancy chests",
+      "16"
+    ],
+    [
+      "Wooden chests",
+      "1"
+    ],
+    [
+      "Pots",
+      "58"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Opens once you finish \"Unlock the gate\" in Gone Fishing",
+      "map": "/2/map#p=7680,5056"
+    }
+  ],
+  "tables": [],
+  "resistances": [
+    [
+      "Skeleton",
+      "38%"
+    ],
+    [
+      "Vanguard",
+      "17%"
+    ],
+    [
+      "Pillager",
+      "14%"
+    ],
+    [
+      "Spider",
+      "12%"
+    ],
+    [
+      "Vindicator",
+      "5%"
+    ],
+    [
+      "Zombie",
+      "3%"
+    ],
+    [
+      "Ravager",
+      "2%"
+    ],
+    [
+      "Geomancer",
+      "2%"
+    ],
+    [
+      "Royal Guard",
+      "2%"
+    ],
+    [
+      "Creeper",
+      "2%"
+    ],
+    [
+      "Frozen",
+      "1%"
+    ],
+    [
+      "Husk",
+      "1%"
+    ],
+    [
+      "Stray",
+      "1%"
+    ],
+    [
+      "Charged Creeper",
+      "<1%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Gone Fishing",
+      "href": "/2/quests/gone-fishing"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=7680,5056"
+    },
+    {
+      "name": "Baby Zombie",
+      "href": "/2/enemies/baby-zombie"
+    },
+    {
+      "name": "Cave Spider",
+      "href": "/2/enemies/cave-spider"
+    },
+    {
+      "name": "Enchanter",
+      "href": "/2/enemies/enchanter"
+    },
+    {
+      "name": "Slime",
+      "href": "/2/enemies/slime"
+    },
+    {
+      "name": "Soul Corrupted Baby Zombie",
+      "href": "/2/enemies/soul-corrupted-baby-zombie"
+    },
+    {
+      "name": "Soul Corrupted Creeper",
+      "href": "/2/enemies/soul-corrupted-creeper"
+    },
+    {
+      "name": "Soul Corrupted Slime",
+      "href": "/2/enemies/soul-corrupted-slime"
+    },
+    {
+      "name": "Soul Corrupted Spider",
+      "href": "/2/enemies/soul-corrupted-spider"
+    },
+    {
+      "name": "Soul Corrupted Vanguard",
+      "href": "/2/enemies/soul-corrupted-vanguard"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/ice-caves"
+}

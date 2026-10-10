@@ -1,0 +1,229 @@
+{
+  "source": "https://www.dungeons.tools/2/bosses",
+  "captured_at": "2026-10-10",
+  "rows": [
+    {
+      "name": "Soul Corrupted Witch",
+      "sub": "",
+      "href": "/2/enemies/soul-corrupted-witch",
+      "image": "/images/d2/renders/thumb/witch.png",
+      "values": [],
+      "tip": {
+        "n": "Soul Corrupted Witch",
+        "k": "Boss",
+        "i": "/images/d2/renders/thumb/witch.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "1,200 health",
+          "Poison potion: 3 damage",
+          "Weak to blast",
+          "Story quest: Corruption in the Woods"
+        ]
+      }
+    },
+    {
+      "name": "Twisted Warden",
+      "sub": "",
+      "href": "/2/enemies/twisted-warden",
+      "image": "/images/d2/renders/thumb/twisted-warden.png",
+      "values": [],
+      "tip": {
+        "n": "Twisted Warden",
+        "k": "Boss",
+        "i": "/images/d2/renders/thumb/twisted-warden.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "1,750 health",
+          "Initial swipe: 18 damage",
+          "Story quest: Down into the Deep Dark"
+        ]
+      }
+    },
+    {
+      "name": "The Prime Enchanter",
+      "sub": "",
+      "href": "/2/enemies/the-prime-enchanter",
+      "image": "/images/d2/renders/thumb/the-prime-enchanter.png",
+      "values": [],
+      "tip": {
+        "n": "The Prime Enchanter",
+        "k": "Boss",
+        "i": "/images/d2/renders/thumb/the-prime-enchanter.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "1,500 health",
+          "Lightning slam: 35 damage",
+          "Story quest: Hiking Frozen Highlands"
+        ]
+      }
+    },
+    {
+      "name": "Copper Monstrosity",
+      "sub": "",
+      "href": "/2/enemies/copper-monstrosity",
+      "image": "/images/d2/renders/thumb/copper-monstrosity.png",
+      "values": [],
+      "tip": {
+        "n": "Copper Monstrosity",
+        "k": "Boss",
+        "i": "/images/d2/renders/thumb/copper-monstrosity.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "2,400 health",
+          "Thunderbolt: 30 damage",
+          "Weak to poison",
+          "Story quest: Wading Rainy Plains"
+        ]
+      }
+    },
+    {
+      "name": "Sculk Monstrosity",
+      "sub": "",
+      "href": "/2/enemies/sculk-monstrosity",
+      "image": "/images/d2/renders/thumb/sculk-monstrosity.png",
+      "values": [],
+      "tip": {
+        "n": "Sculk Monstrosity",
+        "k": "Boss",
+        "i": "/images/d2/renders/thumb/sculk-monstrosity.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "2,000 health",
+          "Sculk projectile: 20 damage",
+          "Weak to fire",
+          "Story quest: A Monstrosity in the Meadow"
+        ]
+      }
+    },
+    {
+      "name": "Monarch",
+      "sub": "",
+      "href": "/2/enemies/monarch",
+      "image": "/images/d2/renders/thumb/monarch.png",
+      "values": [],
+      "tip": {
+        "n": "Monarch",
+        "k": "Boss",
+        "i": "/images/d2/renders/thumb/monarch.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "1,400 health",
+          "First aerial combo: 6 damage",
+          "Story quest: Wrath of the Sculkers"
+        ]
+      }
+    },
+    {
+      "name": "Redstone Monstrosity",
+      "sub": "",
+      "href": "/2/enemies/redstone-monstrosity",
+      "image": "/images/d2/renders/thumb/redstone-monstrosity.png",
+      "values": [],
+      "tip": {
+        "n": "Redstone Monstrosity",
+        "k": "Boss",
+        "i": "/images/d2/renders/thumb/redstone-monstrosity.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "2,400 health",
+          "Left swing: 15 damage",
+          "Weak to frost",
+          "Story quest: The Final Souldown"
+        ]
+      }
+    },
+    {
+      "name": "The Supreme Evoker",
+      "sub": "",
+      "href": "/2/enemies/the-supreme-evoker",
+      "image": "/images/d2/renders/thumb/the-supreme-evoker.png",
+      "values": [],
+      "tip": {
+        "n": "The Supreme Evoker",
+        "k": "Boss",
+        "i": "/images/d2/renders/thumb/the-supreme-evoker.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "1,000 health",
+          "Enchanted projectiles: 8 damage",
+          "Story quest: The Final Souldown"
+        ]
+      }
+    },
+    {
+      "name": "Monstrous Opus",
+      "sub": "",
+      "href": "/2/enemies/monstrous-opus",
+      "image": "/images/d2/renders/thumb/monstrous-opus.png",
+      "values": [],
+      "tip": {
+        "n": "Monstrous Opus",
+        "k": "Boss",
+        "i": "/images/d2/renders/thumb/monstrous-opus.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "2,000 health",
+          "Headbutt: 12 damage",
+          "Story quest: The Final Souldown"
+        ]
+      }
+    },
+    {
+      "name": "Monarch Echo",
+      "sub": "",
+      "href": "/2/enemies/monarch-echo",
+      "image": "/images/d2/renders/thumb/monarch-echo.png",
+      "values": [],
+      "tip": {
+        "n": "Monarch Echo",
+        "k": "Boss",
+        "i": "/images/d2/renders/thumb/monarch-echo.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "300 health",
+          "First aerial combo: 6 damage"
+        ]
+      }
+    },
+    {
+      "name": "Mosstrosity",
+      "sub": "",
+      "href": "/2/enemies/mosstrosity",
+      "image": "/images/d2/renders/thumb/mosstrosity.png",
+      "values": [],
+      "tip": {
+        "n": "Mosstrosity",
+        "k": "Boss",
+        "i": "/images/d2/renders/thumb/mosstrosity.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "2,400 health",
+          "Left swing: 20 damage",
+          "Weak to lightning"
+        ]
+      }
+    }
+  ]
+}

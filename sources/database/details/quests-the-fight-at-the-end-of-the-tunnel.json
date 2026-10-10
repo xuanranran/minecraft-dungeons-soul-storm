@@ -1,0 +1,167 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Frozen Highlands"
+    ],
+    [
+      "Level",
+      "33"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "Hiking Frozen Highlands"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "2,750"
+    ],
+    [
+      "Emeralds",
+      "12 to 216, 75 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Defeat the illagers: Vindicator and Pillager restarts if you quit",
+      "map": "/2/map#p=6569,3996"
+    },
+    {
+      "text": "Speak to the Miner",
+      "map": "/2/map#p=6656,3957"
+    },
+    {
+      "text": "Climb the mountainside",
+      "map": "/2/map#p=7108,3061"
+    },
+    {
+      "text": "Rescue the villagers any order",
+      "map": ""
+    },
+    {
+      "text": "Return to the fortress",
+      "map": "/2/map#p=7091,3983"
+    },
+    {
+      "text": "Enter the fortress",
+      "map": "/2/map#p=7091,3983"
+    },
+    {
+      "text": "Check on the rescued miners",
+      "map": ""
+    },
+    {
+      "text": "Find the door to the passageway",
+      "map": ""
+    },
+    {
+      "text": "Find the secret passageway",
+      "map": "/2/map#p=2947,7788"
+    },
+    {
+      "text": "Navigate the secret passageway",
+      "map": "/2/map#p=7242,4055"
+    },
+    {
+      "text": "Find the illager troops",
+      "map": "/2/map#p=7695,4378"
+    },
+    {
+      "text": "Defeat the illager troops",
+      "map": ""
+    },
+    {
+      "text": "Return to the miners",
+      "map": ""
+    },
+    {
+      "text": "Speak to the Miner",
+      "map": ""
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map#m=quest-DEa1_S13_A"
+    },
+    {
+      "name": "Hiking Frozen Highlands",
+      "href": "/2/quests/hiking-frozen-highlands"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=6569,3996"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=6656,3957"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=7108,3061"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=7091,3983"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=7091,3983"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2947,7788"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=7242,4055"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=7695,4378"
+    },
+    {
+      "name": "Pickaxe",
+      "href": "/2/weapons/pickaxe"
+    },
+    {
+      "name": "Steel Wool Boots",
+      "href": "/2/armor/steel-wool-boots"
+    },
+    {
+      "name": "Steel Wool Sweater",
+      "href": "/2/armor/steel-wool-sweater"
+    },
+    {
+      "name": "Steel Wool Cap",
+      "href": "/2/armor/steel-wool-cap"
+    },
+    {
+      "name": "Steel Wool Leggings",
+      "href": "/2/armor/steel-wool-leggings"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/the-fight-at-the-end-of-the-tunnel"
+}

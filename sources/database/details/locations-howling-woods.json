@@ -1,0 +1,507 @@
+{
+  "parameters": [
+    [
+      "Minecart stations",
+      "4"
+    ],
+    [
+      "Dungeon entrances",
+      "12"
+    ],
+    [
+      "Rift entrances",
+      "12"
+    ],
+    [
+      "Minecart station",
+      "Deep Dark Entrance"
+    ],
+    [
+      "Minecart station",
+      "Hidden Grove"
+    ],
+    [
+      "Minecart station",
+      "Little Howl Hamlet"
+    ],
+    [
+      "Minecart station",
+      "Woodcutter's Outpost"
+    ],
+    [
+      "Blacksmith",
+      "Outpost by Woodcutter's Outpost station"
+    ],
+    [
+      "Enchantsmith",
+      "Outpost by Woodcutter's Outpost station"
+    ],
+    [
+      "Town Merchant",
+      "Outpost by Little Howl Hamlet station"
+    ],
+    [
+      "Blacksmith",
+      "Outpost by Little Howl Hamlet station"
+    ],
+    [
+      "Enchantsmith",
+      "Outpost by Little Howl Hamlet station"
+    ],
+    [
+      "Town Merchant",
+      "Outpost by Woodcutter's Outpost station"
+    ]
+  ],
+  "objectives": [],
+  "tables": [],
+  "resistances": [
+    [
+      "Spider",
+      "43%"
+    ],
+    [
+      "Slime",
+      "11%"
+    ],
+    [
+      "Zombie",
+      "9%"
+    ],
+    [
+      "Skeleton",
+      "7%"
+    ],
+    [
+      "Vindicator",
+      "5%"
+    ],
+    [
+      "Mucked",
+      "5%"
+    ],
+    [
+      "Baby Zombie",
+      "4%"
+    ],
+    [
+      "Vanguard",
+      "4%"
+    ],
+    [
+      "Pillager",
+      "4%"
+    ],
+    [
+      "Chicken Jockey",
+      "3%"
+    ],
+    [
+      "Spider Jockey",
+      "3%"
+    ],
+    [
+      "Enchanter",
+      "1%"
+    ],
+    [
+      "Ravager",
+      "<1%"
+    ],
+    [
+      "Geomancer",
+      "<1%"
+    ],
+    [
+      "Royal Guard",
+      "<1%"
+    ],
+    [
+      "Bogged",
+      "<1%"
+    ],
+    [
+      "Vindicator",
+      "22%"
+    ],
+    [
+      "Zombie",
+      "16%"
+    ],
+    [
+      "Pillager",
+      "16%"
+    ],
+    [
+      "Slime",
+      "13%"
+    ],
+    [
+      "Mucked",
+      "8%"
+    ],
+    [
+      "Creeper",
+      "6%"
+    ],
+    [
+      "Enchanter",
+      "4%"
+    ],
+    [
+      "Spider",
+      "4%"
+    ],
+    [
+      "Skeleton",
+      "2%"
+    ],
+    [
+      "Ravager",
+      "2%"
+    ],
+    [
+      "Geomancer",
+      "1%"
+    ],
+    [
+      "Royal Guard",
+      "1%"
+    ],
+    [
+      "Baby Zombie",
+      "1%"
+    ],
+    [
+      "Vanguard",
+      "1%"
+    ],
+    [
+      "Chicken Jockey",
+      "1%"
+    ],
+    [
+      "Spider Jockey",
+      "1%"
+    ],
+    [
+      "Charged Creeper",
+      "1%"
+    ],
+    [
+      "Bogged",
+      "<1%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "12",
+      "href": "/2/locations/deep-dark-dungeons"
+    },
+    {
+      "name": "12",
+      "href": "/2/locations/sift-rifts"
+    },
+    {
+      "name": "Enderman",
+      "href": "/2/enemies/enderman"
+    },
+    {
+      "name": "Witch",
+      "href": "/2/enemies/witch"
+    },
+    {
+      "name": "Soul Corrupted Enderman",
+      "href": "/2/enemies/soul-corrupted-enderman"
+    },
+    {
+      "name": "Soul Corrupted Witch",
+      "href": "/2/enemies/soul-corrupted-witch"
+    },
+    {
+      "name": "Evoker",
+      "href": "/2/enemies/evoker"
+    },
+    {
+      "name": "Cow",
+      "href": "/2/enemies/cow"
+    },
+    {
+      "name": "Chicken",
+      "href": "/2/enemies/chicken"
+    },
+    {
+      "name": "Key Golem",
+      "href": "/2/enemies/key-golem"
+    },
+    {
+      "name": "Frog",
+      "href": "/2/enemies/frog"
+    },
+    {
+      "name": "Fox",
+      "href": "/2/enemies/fox"
+    },
+    {
+      "name": "Cave Spider",
+      "href": "/2/enemies/cave-spider"
+    },
+    {
+      "name": "Creeper",
+      "href": "/2/enemies/creeper"
+    },
+    {
+      "name": "Evoker",
+      "href": "/2/enemies/evoker"
+    },
+    {
+      "name": "Soul Corrupted Enchanter",
+      "href": "/2/enemies/soul-corrupted-enchanter"
+    },
+    {
+      "name": "Soul Corrupted Evoker",
+      "href": "/2/enemies/soul-corrupted-evoker"
+    },
+    {
+      "name": "Soul Corrupted Geomancer",
+      "href": "/2/enemies/soul-corrupted-geomancer"
+    },
+    {
+      "name": "Soul Corrupted Pillager",
+      "href": "/2/enemies/soul-corrupted-pillager"
+    },
+    {
+      "name": "Soul Corrupted Ravager",
+      "href": "/2/enemies/soul-corrupted-ravager"
+    },
+    {
+      "name": "Soul Corrupted Royal Guard",
+      "href": "/2/enemies/soul-corrupted-royal-guard"
+    },
+    {
+      "name": "Soul Corrupted Spider",
+      "href": "/2/enemies/soul-corrupted-spider"
+    },
+    {
+      "name": "Soul Corrupted Spider Jockey",
+      "href": "/2/enemies/soul-corrupted-spider-jockey"
+    },
+    {
+      "name": "Soul Corrupted Vindicator",
+      "href": "/2/enemies/soul-corrupted-vindicator"
+    },
+    {
+      "name": "Soul Corrupted Zombie",
+      "href": "/2/enemies/soul-corrupted-zombie"
+    },
+    {
+      "name": "Deep Dark Entrance",
+      "href": "/2/map#m=station-3681-3742"
+    },
+    {
+      "name": "Hidden Grove",
+      "href": "/2/map#m=station-4274-3748"
+    },
+    {
+      "name": "Little Howl Hamlet",
+      "href": "/2/map#m=station-4024-4433"
+    },
+    {
+      "name": "Woodcutter's Outpost",
+      "href": "/2/map#m=station-5146-4382"
+    },
+    {
+      "name": "Outpost by Woodcutter's Outpost station",
+      "href": "/2/map#m=trader-5068-4301"
+    },
+    {
+      "name": "Outpost by Woodcutter's Outpost station",
+      "href": "/2/map#m=trader-5022-4328"
+    },
+    {
+      "name": "Outpost by Little Howl Hamlet station",
+      "href": "/2/map#m=trader-3905-4369"
+    },
+    {
+      "name": "Outpost by Little Howl Hamlet station",
+      "href": "/2/map#m=trader-3946-4490"
+    },
+    {
+      "name": "Outpost by Little Howl Hamlet station",
+      "href": "/2/map#m=trader-4029-4513"
+    },
+    {
+      "name": "Outpost by Woodcutter's Outpost station",
+      "href": "/2/map#m=trader-5140-4290"
+    },
+    {
+      "name": "Winter Staff",
+      "href": "/2/artifacts/winter-staff"
+    },
+    {
+      "name": "Corrupted Seeds",
+      "href": "/2/artifacts/corrupted-seeds"
+    },
+    {
+      "name": "Death Cap Mushroom",
+      "href": "/2/artifacts/death-cap-mushroom"
+    },
+    {
+      "name": "Turtle Master's Mandolin",
+      "href": "/2/artifacts/turtle-masters-mandolin"
+    },
+    {
+      "name": "Venomous Quiver",
+      "href": "/2/artifacts/venomous-quiver"
+    },
+    {
+      "name": "Pouch of Thunder",
+      "href": "/2/artifacts/pouch-of-thunder"
+    },
+    {
+      "name": "Ender Fog",
+      "href": "/2/artifacts/ender-fog"
+    },
+    {
+      "name": "Totem of Shielding",
+      "href": "/2/artifacts/totem-of-shielding"
+    },
+    {
+      "name": "Witch Brew",
+      "href": "/2/artifacts/witch-brew"
+    },
+    {
+      "name": "Axe",
+      "href": "/2/weapons/axe"
+    },
+    {
+      "name": "Battlestaff",
+      "href": "/2/weapons/battlestaff"
+    },
+    {
+      "name": "Wolf Claws",
+      "href": "/2/weapons/wolf-claws"
+    },
+    {
+      "name": "Riftslasher",
+      "href": "/2/weapons/riftslasher"
+    },
+    {
+      "name": "Twilight Dagger",
+      "href": "/2/weapons/twilight-dagger"
+    },
+    {
+      "name": "Double Daggers",
+      "href": "/2/weapons/double-daggers"
+    },
+    {
+      "name": "Disciple Wraps",
+      "href": "/2/armor/disciple-wraps"
+    },
+    {
+      "name": "Disciple Robe",
+      "href": "/2/armor/disciple-robe"
+    },
+    {
+      "name": "Disciple mask",
+      "href": "/2/armor/disciple-mask"
+    },
+    {
+      "name": "Disciple Leggings",
+      "href": "/2/armor/disciple-leggings"
+    },
+    {
+      "name": "Glaive",
+      "href": "/2/weapons/glaive"
+    },
+    {
+      "name": "Greatbow",
+      "href": "/2/weapons/greatbow"
+    },
+    {
+      "name": "Heavy Crossbow",
+      "href": "/2/weapons/heavy-crossbow"
+    },
+    {
+      "name": "Longbow",
+      "href": "/2/weapons/longbow"
+    },
+    {
+      "name": "Tidal Sickle",
+      "href": "/2/weapons/tidal-sickle"
+    },
+    {
+      "name": "Mushroom Boots",
+      "href": "/2/armor/mushroom-boots"
+    },
+    {
+      "name": "Mushroom Robe",
+      "href": "/2/armor/mushroom-robe"
+    },
+    {
+      "name": "Mushroom Cap",
+      "href": "/2/armor/mushroom-cap"
+    },
+    {
+      "name": "Mushroom Leggings",
+      "href": "/2/armor/mushroom-leggings"
+    },
+    {
+      "name": "Phantom Boots",
+      "href": "/2/armor/phantom-boots"
+    },
+    {
+      "name": "Phantom Chestplate",
+      "href": "/2/armor/phantom-chestplate"
+    },
+    {
+      "name": "Phantom Helmet",
+      "href": "/2/armor/phantom-helmet"
+    },
+    {
+      "name": "Phantom Pants",
+      "href": "/2/armor/phantom-pants"
+    },
+    {
+      "name": "Pickaxe",
+      "href": "/2/weapons/pickaxe"
+    },
+    {
+      "name": "Rapid Crossbow",
+      "href": "/2/weapons/rapid-crossbow"
+    },
+    {
+      "name": "Sabre",
+      "href": "/2/weapons/sabre"
+    },
+    {
+      "name": "Scatter Crossbow",
+      "href": "/2/weapons/scatter-crossbow"
+    },
+    {
+      "name": "Short Spear",
+      "href": "/2/weapons/short-spear"
+    },
+    {
+      "name": "Shovel",
+      "href": "/2/weapons/shovel"
+    },
+    {
+      "name": "Wolfpack Boots",
+      "href": "/2/armor/wolfpack-boots"
+    },
+    {
+      "name": "Wolfpack Jacket",
+      "href": "/2/armor/wolfpack-jacket"
+    },
+    {
+      "name": "Wolfpack Hood",
+      "href": "/2/armor/wolfpack-hood"
+    },
+    {
+      "name": "Wolfpack Leggings",
+      "href": "/2/armor/wolfpack-leggings"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/howling-woods"
+}

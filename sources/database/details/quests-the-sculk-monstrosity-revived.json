@@ -1,0 +1,99 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Singer's Meadow"
+    ],
+    [
+      "Level",
+      "36"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "A Monstrosity in the Meadow"
+    ],
+    [
+      "Repeatable",
+      "Yes"
+    ],
+    [
+      "XP",
+      "1,100 the first time, 1,000 after that"
+    ],
+    [
+      "Emeralds",
+      "8 to 144, 40 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Enter the arena",
+      "map": "/2/map/the-sift#p=1925,5504"
+    },
+    {
+      "text": "Defeat the Sculk Monstrosity",
+      "map": ""
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map/the-sift#m=quest-CA09_BR"
+    },
+    {
+      "name": "A Monstrosity in the Meadow",
+      "href": "/2/quests/a-monstrosity-in-the-meadow"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=1925,5504"
+    },
+    {
+      "name": "Sculk Monstrosity",
+      "href": "/2/enemies/sculk-monstrosity"
+    },
+    {
+      "name": "Phantom Wing",
+      "href": "/2/weapons/phantom-wing"
+    },
+    {
+      "name": "Sculker's Bane",
+      "href": "/2/weapons/sculkers-bane"
+    },
+    {
+      "name": "Echo Ocarina",
+      "href": "/2/artifacts/echo-ocarina"
+    },
+    {
+      "name": "Fighter's Flute",
+      "href": "/2/artifacts/fighters-flute"
+    },
+    {
+      "name": "Turtle Master's Mandolin",
+      "href": "/2/artifacts/turtle-masters-mandolin"
+    },
+    {
+      "name": "Humbling Horn",
+      "href": "/2/artifacts/humbling-horn"
+    },
+    {
+      "name": "Soul Harvester",
+      "href": "/2/artifacts/soul-harvester"
+    },
+    {
+      "name": "Warrior Drums",
+      "href": "/2/artifacts/warrior-drums"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/the-sculk-monstrosity-revived"
+}

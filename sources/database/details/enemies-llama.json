@@ -1,0 +1,45 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "135"
+    ],
+    [
+      "Top hit",
+      "6"
+    ],
+    [
+      "Speed",
+      "300"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Ranged attack",
+          "6",
+          "none",
+          "Physical",
+          "0.2 sec"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "TNT damage",
+      "-50%"
+    ]
+  ],
+  "links": [],
+  "source": "https://www.dungeons.tools/2/enemies/llama"
+}

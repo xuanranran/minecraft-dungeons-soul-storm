@@ -1,0 +1,125 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "133"
+    ],
+    [
+      "Top hit",
+      "11"
+    ],
+    [
+      "Poise",
+      "133"
+    ],
+    [
+      "Souls",
+      "50"
+    ],
+    [
+      "Speed",
+      "200"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Where you fight it",
+      "columns": [
+        "WHEN",
+        "QUEST",
+        "WHERE"
+      ],
+      "rows": [
+        [
+          "Ambush arena",
+          "No quest needed",
+          "Frozen Highlands"
+        ]
+      ]
+    },
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Light attack",
+          "11",
+          "none",
+          "Physical",
+          "0.5 sec"
+        ]
+      ]
+    },
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "DAMAGE",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Large",
+          "133",
+          "11",
+          "133",
+          "50"
+        ],
+        [
+          "Medium",
+          "83",
+          "8",
+          "83",
+          "50"
+        ],
+        [
+          "Small",
+          "66",
+          "4",
+          "66",
+          "50"
+        ],
+        [
+          "Witch's slime (unused)",
+          "26",
+          "5",
+          "10,000",
+          "50"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Blast damage",
+      "+20%"
+    ],
+    [
+      "Melee damage",
+      "+30%"
+    ],
+    [
+      "Elemental damage",
+      "-35%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/soul-corrupted-slime"
+}

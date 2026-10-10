@@ -1,0 +1,119 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Frozen Highlands"
+    ],
+    [
+      "Level",
+      "33"
+    ],
+    [
+      "Given by",
+      "A quest giver"
+    ],
+    [
+      "Comes after",
+      "Hiking Frozen Highlands"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "2,750"
+    ],
+    [
+      "Emeralds",
+      "12 to 216, 75 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Head to Archie's Ruins",
+      "map": "/2/map#p=6493,3282"
+    },
+    {
+      "text": "Read the runes",
+      "map": ""
+    },
+    {
+      "text": "Defeat the illager ambush",
+      "map": ""
+    },
+    {
+      "text": "Investigate the dropped paper",
+      "map": "/2/map#p=6341,3251"
+    },
+    {
+      "text": "Search the Enchanter's Library",
+      "map": ""
+    },
+    {
+      "text": "Ambush",
+      "map": ""
+    },
+    {
+      "text": "Search the Evoker's Library",
+      "map": ""
+    },
+    {
+      "text": "Ambush",
+      "map": ""
+    },
+    {
+      "text": "Search the Illusioner's Library",
+      "map": ""
+    },
+    {
+      "text": "Return to Archie's Ruins",
+      "map": "/2/map#p=6339,3252"
+    },
+    {
+      "text": "Read the runes",
+      "map": ""
+    },
+    {
+      "text": "Defeat the Sculk Monstrosity",
+      "map": ""
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Hiking Frozen Highlands",
+      "href": "/2/quests/hiking-frozen-highlands"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=6493,3282"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=6341,3251"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=6339,3252"
+    },
+    {
+      "name": "Sculk Monstrosity",
+      "href": "/2/enemies/sculk-monstrosity"
+    },
+    {
+      "name": "Soul Blast",
+      "href": "/2/enchantments/soul-blast"
+    },
+    {
+      "name": "Sculk Badge",
+      "href": "/2/artifacts/sculk-badge"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/illager-intelligence"
+}

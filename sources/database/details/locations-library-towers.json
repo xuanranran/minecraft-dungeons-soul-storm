@@ -1,0 +1,51 @@
+{
+  "parameters": [
+    [
+      "Region",
+      "Frozen Highlands"
+    ],
+    [
+      "Entrances",
+      "2"
+    ],
+    [
+      "Fancy chests",
+      "1"
+    ],
+    [
+      "Pots",
+      "6"
+    ]
+  ],
+  "objectives": [],
+  "tables": [],
+  "resistances": [
+    [
+      "Pillager",
+      "50%"
+    ],
+    [
+      "Royal Guard",
+      "22%"
+    ],
+    [
+      "Vindicator",
+      "17%"
+    ],
+    [
+      "Ravager",
+      "6%"
+    ],
+    [
+      "Geomancer",
+      "5%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/library-towers"
+}

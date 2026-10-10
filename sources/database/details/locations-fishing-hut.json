@@ -1,0 +1,90 @@
+{
+  "parameters": [
+    [
+      "Region",
+      "Frozen Highlands"
+    ],
+    [
+      "Entrances",
+      "4"
+    ],
+    [
+      "Fancy chests",
+      "2"
+    ],
+    [
+      "Wooden chests",
+      "3"
+    ],
+    [
+      "Pots",
+      "14"
+    ]
+  ],
+  "objectives": [],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Enchanter",
+      "href": "/2/enemies/enchanter"
+    },
+    {
+      "name": "Evoker",
+      "href": "/2/enemies/evoker"
+    },
+    {
+      "name": "Geomancer",
+      "href": "/2/enemies/geomancer"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Ravager",
+      "href": "/2/enemies/ravager"
+    },
+    {
+      "name": "Royal Guard",
+      "href": "/2/enemies/royal-guard"
+    },
+    {
+      "name": "Soul Corrupted Enchanter",
+      "href": "/2/enemies/soul-corrupted-enchanter"
+    },
+    {
+      "name": "Soul Corrupted Evoker",
+      "href": "/2/enemies/soul-corrupted-evoker"
+    },
+    {
+      "name": "Soul Corrupted Geomancer",
+      "href": "/2/enemies/soul-corrupted-geomancer"
+    },
+    {
+      "name": "Soul Corrupted Pillager",
+      "href": "/2/enemies/soul-corrupted-pillager"
+    },
+    {
+      "name": "Soul Corrupted Ravager",
+      "href": "/2/enemies/soul-corrupted-ravager"
+    },
+    {
+      "name": "Soul Corrupted Royal Guard",
+      "href": "/2/enemies/soul-corrupted-royal-guard"
+    },
+    {
+      "name": "Soul Corrupted Vindicator",
+      "href": "/2/enemies/soul-corrupted-vindicator"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/fishing-hut"
+}

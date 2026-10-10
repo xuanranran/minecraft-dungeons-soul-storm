@@ -1,0 +1,45 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "50"
+    ],
+    [
+      "Top hit",
+      "3"
+    ],
+    [
+      "Speed",
+      "400"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Damage ripple",
+          "3",
+          "1",
+          "Physical",
+          "0.75 sec"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "TNT damage",
+      "-50%"
+    ]
+  ],
+  "links": [],
+  "source": "https://www.dungeons.tools/2/enemies/wobble"
+}

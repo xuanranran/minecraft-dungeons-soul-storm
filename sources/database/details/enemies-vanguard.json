@@ -1,0 +1,100 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "72"
+    ],
+    [
+      "Top hit",
+      "15"
+    ],
+    [
+      "Poise",
+      "100"
+    ],
+    [
+      "Souls",
+      "8"
+    ],
+    [
+      "Speed",
+      "385"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Spear thrust (shield up)",
+          "10",
+          "none",
+          "Physical",
+          "0.5 sec"
+        ],
+        [
+          "Spear combo (shield broken), hit 2",
+          "12",
+          "none",
+          "Physical",
+          "0.5 sec"
+        ],
+        [
+          "Spear combo (shield broken), hit 3",
+          "15",
+          "none",
+          "Physical",
+          ""
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Lightning damage",
+      "+50%"
+    ],
+    [
+      "Melee damage",
+      "-20%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    },
+    {
+      "name": "The Deep Dark",
+      "href": "/2/locations/the-deep-dark"
+    },
+    {
+      "name": "Deep Dark dungeons",
+      "href": "/2/locations/deep-dark-dungeons"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "Squid Coast",
+      "href": "/2/locations/squid-coast"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/vanguard"
+}

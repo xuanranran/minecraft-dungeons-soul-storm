@@ -1,0 +1,140 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "140"
+    ],
+    [
+      "Top hit",
+      "11"
+    ],
+    [
+      "Poise",
+      "210"
+    ],
+    [
+      "Souls",
+      "14"
+    ],
+    [
+      "Speed",
+      "350"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Bite",
+          "11 ×2",
+          "none",
+          "Physical",
+          ""
+        ],
+        [
+          "Charge",
+          "8",
+          "none",
+          "Physical",
+          "3 sec"
+        ],
+        [
+          "Charge follow-up",
+          "11",
+          "none",
+          "Physical",
+          ""
+        ],
+        [
+          "Scream",
+          "1",
+          "none",
+          "Physical",
+          ""
+        ],
+        [
+          "Ranged attack (with rider)",
+          "8",
+          "none",
+          "Physical",
+          ""
+        ]
+      ]
+    },
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "DAMAGE",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Base",
+          "140",
+          "11",
+          "210",
+          "14"
+        ],
+        [
+          "With rider",
+          "175",
+          "8",
+          "220",
+          "14"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Ranged damage",
+      "-15%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    },
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "Humbler Huskland",
+      "href": "/2/locations/humbler-huskland"
+    },
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    },
+    {
+      "name": "Sift rifts",
+      "href": "/2/locations/sift-rifts"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/ravager"
+}

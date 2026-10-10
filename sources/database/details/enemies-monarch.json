@@ -1,0 +1,154 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "1,400"
+    ],
+    [
+      "Top hit",
+      "18"
+    ],
+    [
+      "Poise",
+      "600"
+    ],
+    [
+      "Souls",
+      "30"
+    ],
+    [
+      "Speed",
+      "450"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Where you fight it",
+      "columns": [
+        "WHEN",
+        "QUEST",
+        "WHERE"
+      ],
+      "rows": [
+        [
+          "Story quest",
+          "Wrath of the Sculkers",
+          "Ravines"
+        ],
+        [
+          "Dungeon boss room",
+          "End of the procedural dungeon",
+          "Ravines"
+        ]
+      ]
+    },
+    {
+      "title": "Moves",
+      "columns": [
+        "MOVE",
+        "WHAT IT DOES",
+        "DAMAGE",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "Melee sweep",
+          "Partway through a one-second windup it drops a ring of soul shards, then swings in a narrow 30-degree arc with heavy knockback, and under 80% health a finished sweep leads straight into Calamity. Sidestep it rather than backing away, since the swing reaches farther than its other melee attacks.",
+          "18",
+          ""
+        ],
+        [
+          "Dash strike",
+          "It winds up for about a second, then charges along a line locked in when the charge starts, dropping soul shards behind it. Sidestep once it commits instead of running ahead of it.",
+          "15",
+          ""
+        ],
+        [
+          "Post dash melee attack",
+          "As the dash strike ends it follows up with a slash covering a 70-degree cone in front of it. Wait for that swing before you close in.",
+          "18",
+          ""
+        ],
+        [
+          "First aerial attack combo",
+          "Calamity opens with a leap that scatters a ring of soul shards: a circle marks the landing spot, it drops there 0.8 seconds later and chains five slashes. It can't be staggered during the sequence, so get out of the circle rather than trying to interrupt it.",
+          "6",
+          ""
+        ],
+        [
+          "Calamity dash",
+          "The second step of Calamity is a charge with a shorter windup than its normal dash strike, about 0.7 seconds. Dodge sideways as soon as the landing slashes end.",
+          "10",
+          ""
+        ],
+        [
+          "Post dash attack",
+          "The Calamity dash ends in a slash that covers the whole half circle in front of it but doesn't reach far. Backing off clears it more reliably than circling around it.",
+          "10",
+          ""
+        ],
+        [
+          "Second aerial attack combo",
+          "Calamity closes with another leap that drops soul shards along its path, a heel stomp on a marked landing circle and three more slashes, and it's stagger-immune throughout. Its hits launch you straight up.",
+          "9",
+          ""
+        ],
+        [
+          "Shard circle",
+          "The melee sweep and the opening leap of Calamity each leave a ring of eight soul shards, at most once every 8 seconds. The shards can't be targeted, and about five seconds later each fires a homing bolt that breaks on terrain, so get a wall or rock between you and the ring before they go off.",
+          "4",
+          ""
+        ],
+        [
+          "Soul shard trail",
+          "Dash strikes and the second aerial combo drop up to five shards along the Monarch's path. They fire on the same delay as the ring, so a dash that misses you still sends a volley your way about five seconds later.",
+          "4",
+          ""
+        ],
+        [
+          "Summon scavengers",
+          "A roar calls 2 to 3 Stalkers and 1 to 2 Scavengers in at the arena's spawn points, with no more than 4 Stalkers and 3 Scavengers alive at once. It comes back on a 25-second cooldown, so clear the adds between roars.",
+          "",
+          ""
+        ],
+        [
+          "Summon clone",
+          "At 65% health or lower it summons a Monarch Echo where it stands, then moves into a dash strike. Only one echo can be out at a time, the summon has a 110-second cooldown, and the echo dies when the Monarch does.",
+          "",
+          ""
+        ],
+        [
+          "Life leech",
+          "Passive: every melee hit it lands, dashes and aerial combos included, gives back 80% of the damage dealt as health. Soul shard bolts are ranged and don't heal it.",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Soul damage",
+      "-50%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Stalker",
+      "href": "/2/enemies/stalker"
+    },
+    {
+      "name": "Scavenger",
+      "href": "/2/enemies/scavenger"
+    },
+    {
+      "name": "Monarch Echo",
+      "href": "/2/enemies/monarch-echo"
+    },
+    {
+      "name": "Ravines",
+      "href": "/2/locations/ravines"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/monarch"
+}

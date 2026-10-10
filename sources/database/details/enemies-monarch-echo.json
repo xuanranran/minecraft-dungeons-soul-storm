@@ -1,0 +1,102 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "300"
+    ],
+    [
+      "Top hit",
+      "18"
+    ],
+    [
+      "Poise",
+      "380"
+    ],
+    [
+      "Souls",
+      "50"
+    ],
+    [
+      "Speed",
+      "450"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "First aerial combo",
+          "6",
+          "none",
+          "Physical",
+          ""
+        ],
+        [
+          "Calamity dash",
+          "10",
+          "none",
+          "Physical",
+          "5 sec"
+        ],
+        [
+          "Calamity dash strike",
+          "10",
+          "none",
+          "Physical",
+          "1 sec"
+        ],
+        [
+          "Second aerial combo",
+          "9",
+          "none",
+          "Physical",
+          ""
+        ],
+        [
+          "Shard circle",
+          "4",
+          "none",
+          "Physical",
+          ""
+        ],
+        [
+          "Charge",
+          "15",
+          "none",
+          "Physical",
+          "4 sec"
+        ],
+        [
+          "Post-dash strike",
+          "18",
+          "none",
+          "Physical",
+          ""
+        ],
+        [
+          "Sweep",
+          "18",
+          "none",
+          "Physical",
+          "3 sec"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Soul damage",
+      "-50%"
+    ]
+  ],
+  "links": [],
+  "source": "https://www.dungeons.tools/2/enemies/monarch-echo"
+}

@@ -1,0 +1,79 @@
+{
+  "parameters": [
+    [
+      "Level",
+      "33"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "Hiking Frozen Highlands"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "550"
+    ],
+    [
+      "Emeralds",
+      "5 to 90, 15 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Track down the illagers",
+      "map": "/2/map#p=5631,3072"
+    },
+    {
+      "text": "Defeat the illagers",
+      "map": ""
+    },
+    {
+      "text": "Pick up the soul block",
+      "map": "/2/map#p=5655,3108"
+    },
+    {
+      "text": "Return to the Echo Golem",
+      "map": "/2/map#p=6129,3171"
+    },
+    {
+      "text": "Place the soul block",
+      "map": "/2/map#p=6153,3151"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "on the map",
+      "href": "/2/map#m=quest-CT_S02_A"
+    },
+    {
+      "name": "Hiking Frozen Highlands",
+      "href": "/2/quests/hiking-frozen-highlands"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5631,3072"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5655,3108"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=6129,3171"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=6153,3151"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/the-freezing-golem"
+}

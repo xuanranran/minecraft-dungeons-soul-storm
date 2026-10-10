@@ -1,0 +1,495 @@
+{
+  "parameters": [
+    [
+      "Minecart stations",
+      "6"
+    ],
+    [
+      "Dungeon entrances",
+      "11"
+    ],
+    [
+      "Rift entrances",
+      "16"
+    ],
+    [
+      "Minecart station",
+      "Archie's Ruins"
+    ],
+    [
+      "Minecart station",
+      "Fortress Backgate"
+    ],
+    [
+      "Minecart station",
+      "Frozen Fortress"
+    ],
+    [
+      "Minecart station",
+      "Frozen Shipyard"
+    ],
+    [
+      "Minecart station",
+      "Highland Cliffs"
+    ],
+    [
+      "Minecart station",
+      "Ice Caves"
+    ],
+    [
+      "Blacksmith",
+      "Outpost by Frozen Fortress station"
+    ],
+    [
+      "Enchantsmith",
+      "Outpost by Frozen Fortress station"
+    ],
+    [
+      "Town Merchant",
+      "Outpost by Frozen Fortress station"
+    ]
+  ],
+  "objectives": [],
+  "tables": [],
+  "resistances": [
+    [
+      "Vindicator",
+      "22%"
+    ],
+    [
+      "Pillager",
+      "15%"
+    ],
+    [
+      "Zombie",
+      "10%"
+    ],
+    [
+      "Creeper",
+      "9%"
+    ],
+    [
+      "Skeleton",
+      "8%"
+    ],
+    [
+      "Baby Zombie",
+      "5%"
+    ],
+    [
+      "Vanguard",
+      "5%"
+    ],
+    [
+      "Spider",
+      "5%"
+    ],
+    [
+      "Enchanter",
+      "4%"
+    ],
+    [
+      "Frozen",
+      "4%"
+    ],
+    [
+      "Chicken Jockey",
+      "3%"
+    ],
+    [
+      "Spider Jockey",
+      "3%"
+    ],
+    [
+      "Husk",
+      "3%"
+    ],
+    [
+      "Ravager",
+      "2%"
+    ],
+    [
+      "Geomancer",
+      "1%"
+    ],
+    [
+      "Royal Guard",
+      "1%"
+    ],
+    [
+      "Stray",
+      "<1%"
+    ],
+    [
+      "Skeleton",
+      "23%"
+    ],
+    [
+      "Royal Guard",
+      "16%"
+    ],
+    [
+      "Pillager",
+      "16%"
+    ],
+    [
+      "Vindicator",
+      "15%"
+    ],
+    [
+      "Spider",
+      "10%"
+    ],
+    [
+      "Creeper",
+      "8%"
+    ],
+    [
+      "Ravager",
+      "4%"
+    ],
+    [
+      "Vanguard",
+      "4%"
+    ],
+    [
+      "Geomancer",
+      "3%"
+    ],
+    [
+      "Zombie",
+      "1%"
+    ],
+    [
+      "Stray",
+      "1%"
+    ],
+    [
+      "Charged Creeper",
+      "<1%"
+    ],
+    [
+      "Frozen",
+      "<1%"
+    ],
+    [
+      "Husk",
+      "<1%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "11",
+      "href": "/2/locations/deep-dark-dungeons"
+    },
+    {
+      "name": "16",
+      "href": "/2/locations/sift-rifts"
+    },
+    {
+      "name": "Witch",
+      "href": "/2/enemies/witch"
+    },
+    {
+      "name": "Enderman",
+      "href": "/2/enemies/enderman"
+    },
+    {
+      "name": "Evoker",
+      "href": "/2/enemies/evoker"
+    },
+    {
+      "name": "Soul Corrupted Witch",
+      "href": "/2/enemies/soul-corrupted-witch"
+    },
+    {
+      "name": "Soul Corrupted Enderman",
+      "href": "/2/enemies/soul-corrupted-enderman"
+    },
+    {
+      "name": "Soul Corrupted Evoker",
+      "href": "/2/enemies/soul-corrupted-evoker"
+    },
+    {
+      "name": "Fox",
+      "href": "/2/enemies/fox"
+    },
+    {
+      "name": "Goat",
+      "href": "/2/enemies/goat"
+    },
+    {
+      "name": "Arctic Fox",
+      "href": "/2/enemies/arctic-fox"
+    },
+    {
+      "name": "Cave Spider",
+      "href": "/2/enemies/cave-spider"
+    },
+    {
+      "name": "Evoker",
+      "href": "/2/enemies/evoker"
+    },
+    {
+      "name": "Slime",
+      "href": "/2/enemies/slime"
+    },
+    {
+      "name": "Soul Corrupted Baby Zombie",
+      "href": "/2/enemies/soul-corrupted-baby-zombie"
+    },
+    {
+      "name": "Soul Corrupted Creeper",
+      "href": "/2/enemies/soul-corrupted-creeper"
+    },
+    {
+      "name": "Soul Corrupted Enchanter",
+      "href": "/2/enemies/soul-corrupted-enchanter"
+    },
+    {
+      "name": "Soul Corrupted Evoker",
+      "href": "/2/enemies/soul-corrupted-evoker"
+    },
+    {
+      "name": "Soul Corrupted Geomancer",
+      "href": "/2/enemies/soul-corrupted-geomancer"
+    },
+    {
+      "name": "Soul Corrupted Pillager",
+      "href": "/2/enemies/soul-corrupted-pillager"
+    },
+    {
+      "name": "Soul Corrupted Ravager",
+      "href": "/2/enemies/soul-corrupted-ravager"
+    },
+    {
+      "name": "Soul Corrupted Royal Guard",
+      "href": "/2/enemies/soul-corrupted-royal-guard"
+    },
+    {
+      "name": "Soul Corrupted Skeleton",
+      "href": "/2/enemies/soul-corrupted-skeleton"
+    },
+    {
+      "name": "Soul Corrupted Slime",
+      "href": "/2/enemies/soul-corrupted-slime"
+    },
+    {
+      "name": "Soul Corrupted Spider",
+      "href": "/2/enemies/soul-corrupted-spider"
+    },
+    {
+      "name": "Soul Corrupted Vanguard",
+      "href": "/2/enemies/soul-corrupted-vanguard"
+    },
+    {
+      "name": "Soul Corrupted Vindicator",
+      "href": "/2/enemies/soul-corrupted-vindicator"
+    },
+    {
+      "name": "Soul Corrupted Zombie",
+      "href": "/2/enemies/soul-corrupted-zombie"
+    },
+    {
+      "name": "Warden",
+      "href": "/2/enemies/warden"
+    },
+    {
+      "name": "Archie's Ruins",
+      "href": "/2/map#m=station-6117-3139"
+    },
+    {
+      "name": "Fortress Backgate",
+      "href": "/2/map#m=station-6983-4413"
+    },
+    {
+      "name": "Frozen Fortress",
+      "href": "/2/map#m=station-6666-3906"
+    },
+    {
+      "name": "Frozen Shipyard",
+      "href": "/2/map#m=station-5893-4863"
+    },
+    {
+      "name": "Highland Cliffs",
+      "href": "/2/map#m=station-7644-3373"
+    },
+    {
+      "name": "Ice Caves",
+      "href": "/2/map#m=station-7565-5104"
+    },
+    {
+      "name": "Outpost by Frozen Fortress station",
+      "href": "/2/map#m=trader-6868-4038"
+    },
+    {
+      "name": "Outpost by Frozen Fortress station",
+      "href": "/2/map#m=trader-6868-3885"
+    },
+    {
+      "name": "Outpost by Frozen Fortress station",
+      "href": "/2/map#m=trader-6918-4064"
+    },
+    {
+      "name": "Echo Ocarina",
+      "href": "/2/artifacts/echo-ocarina"
+    },
+    {
+      "name": "Fighter's Flute",
+      "href": "/2/artifacts/fighters-flute"
+    },
+    {
+      "name": "Freezing Quiver",
+      "href": "/2/artifacts/freezing-quiver"
+    },
+    {
+      "name": "Lightning Rod",
+      "href": "/2/artifacts/lightning-rod"
+    },
+    {
+      "name": "Fighting Fungus",
+      "href": "/2/artifacts/fighting-fungus"
+    },
+    {
+      "name": "Blight Bangle",
+      "href": "/2/artifacts/blight-bangle"
+    },
+    {
+      "name": "Humbling Horn",
+      "href": "/2/artifacts/humbling-horn"
+    },
+    {
+      "name": "Warding Chimes",
+      "href": "/2/artifacts/warding-chimes"
+    },
+    {
+      "name": "Battlestaff",
+      "href": "/2/weapons/battlestaff"
+    },
+    {
+      "name": "Wolf Claws",
+      "href": "/2/weapons/wolf-claws"
+    },
+    {
+      "name": "Claymore",
+      "href": "/2/weapons/claymore"
+    },
+    {
+      "name": "Sorcerer Boots",
+      "href": "/2/armor/sorcerer-boots"
+    },
+    {
+      "name": "Sorcerer Robe",
+      "href": "/2/armor/sorcerer-robe"
+    },
+    {
+      "name": "Sorcerer Hat",
+      "href": "/2/armor/sorcerer-hat"
+    },
+    {
+      "name": "Sorcerer Leggings",
+      "href": "/2/armor/sorcerer-leggings"
+    },
+    {
+      "name": "Steel Wool Boots",
+      "href": "/2/armor/steel-wool-boots"
+    },
+    {
+      "name": "Steel Wool Sweater",
+      "href": "/2/armor/steel-wool-sweater"
+    },
+    {
+      "name": "Steel Wool Cap",
+      "href": "/2/armor/steel-wool-cap"
+    },
+    {
+      "name": "Steel Wool Leggings",
+      "href": "/2/armor/steel-wool-leggings"
+    },
+    {
+      "name": "Gauntlets",
+      "href": "/2/weapons/gauntlets"
+    },
+    {
+      "name": "Glaive",
+      "href": "/2/weapons/glaive"
+    },
+    {
+      "name": "Longbow",
+      "href": "/2/weapons/longbow"
+    },
+    {
+      "name": "Mace",
+      "href": "/2/weapons/mace"
+    },
+    {
+      "name": "Tidal Sickle",
+      "href": "/2/weapons/tidal-sickle"
+    },
+    {
+      "name": "Powerbow",
+      "href": "/2/weapons/powerbow"
+    },
+    {
+      "name": "Rapid Crossbow",
+      "href": "/2/weapons/rapid-crossbow"
+    },
+    {
+      "name": "Rapier",
+      "href": "/2/weapons/rapier"
+    },
+    {
+      "name": "Sabre",
+      "href": "/2/weapons/sabre"
+    },
+    {
+      "name": "Sculker Boots",
+      "href": "/2/armor/sculker-boots"
+    },
+    {
+      "name": "Sculker Robe",
+      "href": "/2/armor/sculker-robe"
+    },
+    {
+      "name": "Sculker Mask",
+      "href": "/2/armor/sculker-mask"
+    },
+    {
+      "name": "Sculker Slacks",
+      "href": "/2/armor/sculker-slacks"
+    },
+    {
+      "name": "Short Spear",
+      "href": "/2/weapons/short-spear"
+    },
+    {
+      "name": "Shortbow",
+      "href": "/2/weapons/shortbow"
+    },
+    {
+      "name": "Double Sickles",
+      "href": "/2/weapons/double-sickles"
+    },
+    {
+      "name": "Nomad Boots",
+      "href": "/2/armor/nomad-boots"
+    },
+    {
+      "name": "Nomad Chestplate",
+      "href": "/2/armor/nomad-chestplate"
+    },
+    {
+      "name": "Nomad Hood",
+      "href": "/2/armor/nomad-hood"
+    },
+    {
+      "name": "Nomad Leggings",
+      "href": "/2/armor/nomad-leggings"
+    },
+    {
+      "name": "War Hammer",
+      "href": "/2/weapons/war-hammer"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/frozen-highlands"
+}

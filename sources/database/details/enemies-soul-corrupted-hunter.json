@@ -1,0 +1,103 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "300"
+    ],
+    [
+      "Top hit",
+      "40"
+    ],
+    [
+      "Poise",
+      "300"
+    ],
+    [
+      "Souls",
+      "50"
+    ],
+    [
+      "Speed",
+      "600"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Where you fight it",
+      "columns": [
+        "WHEN",
+        "QUEST",
+        "WHERE"
+      ],
+      "rows": [
+        [
+          "Dungeon room, possible",
+          "Inside the procedural dungeon",
+          "Ravines"
+        ]
+      ]
+    },
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Soul stomp",
+          "5",
+          "none",
+          "Physical",
+          ""
+        ],
+        [
+          "Slam",
+          "40",
+          "none",
+          "Physical",
+          ""
+        ],
+        [
+          "Lasso pull",
+          "5",
+          "none",
+          "Physical",
+          "5 sec"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Blast damage",
+      "-20%"
+    ],
+    [
+      "Lightning damage",
+      "+50%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "Humbler Huskland",
+      "href": "/2/locations/humbler-huskland"
+    },
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    },
+    {
+      "name": "Ravines",
+      "href": "/2/locations/ravines"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/soul-corrupted-hunter"
+}

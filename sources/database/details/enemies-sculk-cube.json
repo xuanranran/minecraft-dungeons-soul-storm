@@ -1,0 +1,64 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "15"
+    ],
+    [
+      "Top hit",
+      "7"
+    ],
+    [
+      "Poise",
+      "50"
+    ],
+    [
+      "Souls",
+      "20"
+    ],
+    [
+      "Speed",
+      "430"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Light attack",
+          "7",
+          "none",
+          "Physical",
+          "0.5 sec"
+        ],
+        [
+          "Death burst",
+          "5",
+          "5",
+          "Physical",
+          ""
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Fire damage",
+      "+50%"
+    ],
+    [
+      "Soul damage",
+      "-35%"
+    ]
+  ],
+  "links": [],
+  "source": "https://www.dungeons.tools/2/enemies/sculk-cube"
+}

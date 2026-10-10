@@ -1,0 +1,115 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Lullaby Hills"
+    ],
+    [
+      "Level",
+      "45"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "The Final Souldown"
+    ],
+    [
+      "Repeatable",
+      "Yes"
+    ],
+    [
+      "XP",
+      "1,100 the first time, 1,000 after that"
+    ],
+    [
+      "Emeralds",
+      "8 to 144, 40 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Enter the Arena",
+      "map": "/2/map/the-sift#p=5338,5624"
+    },
+    {
+      "text": "Defeat the Redstone Monstrosity",
+      "map": ""
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map/the-sift#m=quest-CA10_BR_B"
+    },
+    {
+      "name": "The Final Souldown",
+      "href": "/2/quests/the-final-souldown"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=5338,5624"
+    },
+    {
+      "name": "Redstone Monstrosity",
+      "href": "/2/enemies/redstone-monstrosity"
+    },
+    {
+      "name": "Creeper Candle",
+      "href": "/2/artifacts/creeper-candle"
+    },
+    {
+      "name": "Blaze Bangle",
+      "href": "/2/artifacts/blaze-bangle"
+    },
+    {
+      "name": "Firework Arrow",
+      "href": "/2/artifacts/firework-arrow"
+    },
+    {
+      "name": "Flaming Quiver",
+      "href": "/2/artifacts/flaming-quiver"
+    },
+    {
+      "name": "Cinder Scepter",
+      "href": "/2/artifacts/cinder-scepter"
+    },
+    {
+      "name": "Redstone Mine Launcher",
+      "href": "/2/artifacts/redstone-mine-launcher"
+    },
+    {
+      "name": "Pouch of Ember",
+      "href": "/2/artifacts/pouch-of-ember"
+    },
+    {
+      "name": "Redstone Wrecker",
+      "href": "/2/weapons/redstone-wrecker"
+    },
+    {
+      "name": "Monstrosity Stompers",
+      "href": "/2/armor/monstrosity-stompers"
+    },
+    {
+      "name": "Monstrosity Armor",
+      "href": "/2/armor/monstrosity-armor"
+    },
+    {
+      "name": "Monstrosity Horns",
+      "href": "/2/armor/monstrosity-horns"
+    },
+    {
+      "name": "Monstrosity Greaves",
+      "href": "/2/armor/monstrosity-greaves"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/the-redstone-monstrosity-revived"
+}

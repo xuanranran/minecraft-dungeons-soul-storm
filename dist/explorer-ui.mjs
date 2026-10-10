@@ -28,17 +28,7 @@ export function picker(){const box=modal('选择装备','tool-picker'),search=in
  function render(){const q=search.value.trim().toLowerCase(),list=items.filter(i=>[i.name,i.english,i.set,i.archetype].join(' ').toLowerCase().includes(q));status.textContent=list.length+' 件可选物品';grid.replaceChildren(...list.map(item=>{const b=button('',()=>{choose(item);box.close();});b.classList.add('tool-picker-option');b.append(itemSummary(item));return b;}));}
  search.addEventListener('input',render);return {open(title,list,onChoose){box.title.textContent=title;items=list;choose=onChoose;search.value='';render();box.open();search.focus();}};
 }
-let details;
-export async function inspect(item){
- details??=modal('物品详情');const target=item.slug;details.title.textContent=item.name;details.body.replaceChildren(itemSummary(item),el('p','tool-description',item.description||(item.detailURL?'正在读取物品详情…':'')));details.open();details.dialog.dataset.item=target;
- if(item.detailURL){try{const [{renderEquipmentDetails},{displayedParameters,displayedTables},r]=await Promise.all([import('./equipment-details.mjs?v=layout2'),import('./drops.mjs?v=layout2'),fetch(item.detailURL)]);if(!r.ok)throw Error();const full=await r.json();if(details.dialog.dataset.item!==target)return;
-  details.body.replaceChildren(itemSummary(item),el('p','tool-description',item.description||''));const panel=el('div','drop-detail-panel');details.body.append(panel);
-  const nativeIcon=(entry,cls,book)=>{const frame=el('span',book?'native-book':'native-indicator native-'+(entry.native_icon_kind==='enchantment'?'enchantment':'effect')),img=el('img',cls);img.src=entry.image;img.alt='';img.loading='lazy';if(book){const d=el('span','native-indicator native-enchantment');d.append(img);frame.append(d);}else frame.append(img);return frame;};
-  renderEquipmentDetails({item:full,panel,el,nativeIcon,displayedParameters,displayedTables});
- }catch{if(details.dialog.dataset.item===target)details.body.append(el('p','meta','详细参数读取失败，请关闭后重试。'));}}
- else {details.body.append(el('p','meta',item.sources.map(s=>s.name).join(' · ')));if(item.kind==='talisman')try{const m=await import('./explorer-data.mjs?v=tools2'),loadouts=await m.loadLoadouts();if(details.dialog.dataset.item!==target)return;for(const level of loadouts[item.slug].levels){const row=el('section','tool-talisman-detail'),info=el('div');info.append(el('h3','',['I','II','III'][Number(level.level)-1]+' 级'));for(const effect of level.effects)info.append(el('p','tool-description',effect.text));if(!level.effects.length)info.append(el('p','tool-description',item.description));row.append(itemPicture({...item,levels:loadouts[item.slug].levels},{level:Number(level.level)}),info);details.body.append(row);}}catch{if(details.dialog.dataset.item===target)details.body.append(el('p','meta','护身符等级读取失败，请关闭后重试。'));}}
-
-}
+export async function inspect(item){try{const {showDatabaseItem}=await import('./database-detail.mjs?v=db1');await showDatabaseItem(item);}catch{notify('物品详情加载失败，请重试。');}}
 export function notify(text){showNotice(text);}
 export async function copyLink(hash){const url=new URL(location.href);url.hash=hash;try{await navigator.clipboard.writeText(url.href);notify('链接已复制');}catch{const box=modal('分享链接'),text=input('text','',url.href);text.readOnly=true;box.body.append(text,el('p','meta','选中链接后复制，可在其他设备打开。'));box.open();text.select();box.dialog.addEventListener('close',()=>box.dialog.remove(),{once:true});}}
 export function download(name,value){const blob=new Blob([JSON.stringify(value,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=el('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}

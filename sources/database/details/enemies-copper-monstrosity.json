@@ -1,0 +1,186 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "2,400"
+    ],
+    [
+      "Top hit",
+      "30"
+    ],
+    [
+      "Poise",
+      "1,200"
+    ],
+    [
+      "Souls",
+      "200"
+    ],
+    [
+      "Speed",
+      "400"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Where you fight it",
+      "columns": [
+        "WHEN",
+        "QUEST",
+        "WHERE"
+      ],
+      "rows": [
+        [
+          "Story quest",
+          "Wading Rainy Plains",
+          "Rainy Plains"
+        ],
+        [
+          "Side quest",
+          "Breaking Camps",
+          "Humbler Huskland"
+        ],
+        [
+          "Rematch",
+          "The Copper Monstrosity Revived",
+          "Rainy Plains"
+        ],
+        [
+          "Soul Storm, possible",
+          "20 minute storms every 40 minutes",
+          "Howling Woods, Singer's Meadow, Rainy Plains, Humbler Huskland, Lullaby Hills, Frozen Highlands, Honeycomb Fields"
+        ]
+      ]
+    },
+    {
+      "title": "Moves",
+      "columns": [
+        "MOVE",
+        "WHAT IT DOES",
+        "DAMAGE",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "Bite",
+          "Lunges in for two bites about a second apart (the second one hits for 18) and re-aims at you between them, so one dodge won't clear both. It only bites at close range and can go again 3 seconds later.",
+          "15",
+          ""
+        ],
+        [
+          "Charge",
+          "Its answer to you keeping your distance: after a short wind-up it runs at you for up to 4 seconds and hits with heavy knockback. It can only turn 20 degrees a second mid-charge, so sidestep late instead of running.",
+          "25",
+          ""
+        ],
+        [
+          "Horn ram",
+          "Ends a charge with a horn ram into a narrow cone in front of it, and also uses the ram on its own at mid range. A shockwave slam follows straight after when that's off cooldown, so be ready for the rings.",
+          "30",
+          "Soul"
+        ],
+        [
+          "Shockwave slam",
+          "Marks ten strike points in a ring around itself, then ten more in a wider ring. Each one flashes for 1.75 seconds before a short ripple of lightning spreads from it and applies Zapped, and the ripples can be jumped or rolled through.",
+          "8",
+          ""
+        ],
+        [
+          "Thunderbolt",
+          "Winds up for about a second and a half, then fires three bolts across a 45-degree spread in front of it. The bolts don't home, so step sideways out of the spread rather than backing away along it.",
+          "30",
+          "Lightning"
+        ],
+        [
+          "Lightning strike",
+          "Each thunderbolt drops a strike marker along its path five times a second, and every marker blows up 2 seconds later and applies Zapped. The path stays dangerous after the bolt has passed, so don't cut back across it.",
+          "15",
+          ""
+        ],
+        [
+          "Cube summon",
+          "Calls 6 to 8 Copper Cubes into the arena after a 2-second wind-up, with never more than 16 alive at once. It often comes right after a thunderbolt volley.",
+          "",
+          ""
+        ],
+        [
+          "Static charge",
+          "Builds from the moment it spawns, with visible charge-up stages at 16 and 18 seconds. At 20 seconds it bursts, applying Zapped and a light shove to anyone close, then it moves at double speed with 50% faster melee for 10 seconds; the burst reaches about as far as its bite, so back off at the second stage.",
+          "0",
+          ""
+        ]
+      ]
+    },
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "DAMAGE",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Base",
+          "2,400",
+          "30",
+          "1,200",
+          "200"
+        ],
+        [
+          "Soul Storm",
+          "700",
+          "30",
+          "700",
+          "200"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Poison damage",
+      "+50%"
+    ],
+    [
+      "Lightning damage",
+      "-35%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Copper Cube",
+      "href": "/2/enemies/copper-cube"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "Humbler Huskland",
+      "href": "/2/locations/humbler-huskland"
+    },
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    },
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/copper-monstrosity"
+}

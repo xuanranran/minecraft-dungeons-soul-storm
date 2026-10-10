@@ -1,0 +1,81 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "266"
+    ],
+    [
+      "Top hit",
+      "5"
+    ],
+    [
+      "Poise",
+      "266"
+    ],
+    [
+      "Souls",
+      "50"
+    ],
+    [
+      "Speed",
+      "600"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Boomerang explosion",
+          "5",
+          "2",
+          "Soul",
+          ""
+        ],
+        [
+          "Boomerang explosion (lingering)",
+          "1% max health",
+          "none",
+          "Physical",
+          ""
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Fire damage",
+      "+50%"
+    ],
+    [
+      "Ranged damage",
+      "-20%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "Humbler Huskland",
+      "href": "/2/locations/humbler-huskland"
+    },
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    },
+    {
+      "name": "Ravines",
+      "href": "/2/locations/ravines"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/soul-corrupted-scavenger"
+}

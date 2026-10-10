@@ -1,0 +1,85 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "32"
+    ],
+    [
+      "Top hit",
+      "15"
+    ],
+    [
+      "Poise",
+      "60"
+    ],
+    [
+      "Souls",
+      "4"
+    ],
+    [
+      "Speed",
+      "820"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Ranged attack",
+          "8 ×2",
+          "none",
+          "Physical",
+          "3 sec"
+        ],
+        [
+          "Light attack",
+          "15",
+          "none",
+          "Physical",
+          "1 sec"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Blast damage",
+      "+50%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    },
+    {
+      "name": "The Deep Dark",
+      "href": "/2/locations/the-deep-dark"
+    },
+    {
+      "name": "Deep Dark dungeons",
+      "href": "/2/locations/deep-dark-dungeons"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/spider-jockey"
+}

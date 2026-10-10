@@ -1,0 +1,1382 @@
+[
+  {
+    "remote": "/images/d2/renders/thumb/baby-zombie.png",
+    "local": "./images/database/renders-thumb-baby-zombie.png",
+    "sha256": "644450ea2f4bdf35d04f14287aa6c80ed5db34c6370783595807d878a0f56530"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/baby-chicken.png",
+    "local": "./images/database/renders-thumb-baby-chicken.png",
+    "sha256": "89358e5409d029431dff5fe92f399761a91b9b2d46e246f9f5575a89bd72eb2f"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/bee.png",
+    "local": "./images/database/renders-thumb-bee.png",
+    "sha256": "81ffc2f8f2f05e95b0bbce24e63b9b92d0fc850135675bc83f251fe8dd838eb1"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/baby-wolf.png",
+    "local": "./images/database/renders-thumb-baby-wolf.png",
+    "sha256": "1e9e3a7d64c576a95329a7746fe22e46f744f25e85f89b0f611cfaf96c3ffee7"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/arctic-fox.png",
+    "local": "./images/database/renders-thumb-arctic-fox.png",
+    "sha256": "ba22c8cf141d2a875d7abb5c9ee5fe1ae47cc15ebcf200834e68bf5bddd21e69"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/baby-pig.png",
+    "local": "./images/database/renders-thumb-baby-pig.png",
+    "sha256": "54350c2f9a44aeae29f5bec26ea5ce26f9f6414878ba438a6ff58c391453e7ba"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/bloombud.png",
+    "local": "./images/database/renders-thumb-bloombud.png",
+    "sha256": "19c017fd6c88048913fbf13623998210f1d8a5dbdc7a65eb7f5c7a421acd5fb6"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/blub.png",
+    "local": "./images/database/renders-thumb-blub.png",
+    "sha256": "d888e32de327883b96c62f9925eacb88f75a330b2d5842d743e4b2a4704c2df5"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/bogged.png",
+    "local": "./images/database/renders-thumb-bogged.png",
+    "sha256": "b3046c8c9067868bbafe98c0779c11b5c3456cab1dbd0031a110e5d82447e433"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/ocelot.png",
+    "local": "./images/database/renders-thumb-ocelot.png",
+    "sha256": "6f25ab2fb6cf2f76433c12465d45a0ff4315c01a10815074574d8a45817a9be9"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/charged-creeper.png",
+    "local": "./images/database/renders-thumb-charged-creeper.png",
+    "sha256": "7e298e374da2813cad53ab27a9cdd9eaf2215cc2492a79dae72f859124d53dcd"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/chicken-jockey.png",
+    "local": "./images/database/renders-thumb-chicken-jockey.png",
+    "sha256": "c017ec3ad2bdf88c4f5a738c4c9f3f8e28dda7b4bbcaa5db78713d51bfccee32"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/cave-spider.png",
+    "local": "./images/database/renders-thumb-cave-spider.png",
+    "sha256": "85e97a4e893f4154aa56fafd4da993117b1e2b2000dec3b2bebee19f76bd9fce"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/chicken.png",
+    "local": "./images/database/renders-thumb-chicken.png",
+    "sha256": "140cb5298fb2d8c840a07ca1f4d43c41c337ca352414beed185e04581f1696b0"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/copper-cube.png",
+    "local": "./images/database/renders-thumb-copper-cube.png",
+    "sha256": "31c31cc777e641be9901e40796ee4bcd81de7b48eab6172d2dc6898158129302"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/charred.png",
+    "local": "./images/database/renders-thumb-charred.png",
+    "sha256": "710cd5e793f5cce56edebfd26f7ea8399931081e966016e58147452ea4212921"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/creeper.png",
+    "local": "./images/database/renders-thumb-creeper.png",
+    "sha256": "7e298e374da2813cad53ab27a9cdd9eaf2215cc2492a79dae72f859124d53dcd"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/cow.png",
+    "local": "./images/database/renders-thumb-cow.png",
+    "sha256": "1bc94884a3c3d8d3c3d43dc6680e2018d91524cba98890dea0177d5b235f7527"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/dartback.png",
+    "local": "./images/database/renders-thumb-dartback.png",
+    "sha256": "8c77f36365e64920ef09237ee07784e4e1accf8ac26f98327eb9f45743b912e8"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/enchanter.png",
+    "local": "./images/database/renders-thumb-enchanter.png",
+    "sha256": "eb926f13d0fe77535ff2334afd81ea1ee42e16092958067969a812be47c33041"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/copper-monstrosity.png",
+    "local": "./images/database/renders-thumb-copper-monstrosity.png",
+    "sha256": "d634923f478ce0d98fa1f23d61c8a82c31af658d0ba15c6241eeba4f71aad47c"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/echo-golem.png",
+    "local": "./images/database/renders-thumb-echo-golem.png",
+    "sha256": "07bcb0803aa352069535a2fe54bd027b5f27d5fc8f428d43340b7ee405c364ec"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/evoker.png",
+    "local": "./images/database/renders-thumb-evoker.png",
+    "sha256": "a7de5ee5bf1325a6a6fe998a60295cfad7239cfa65c79558b471a27f4864905e"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/excavator.png",
+    "local": "./images/database/renders-thumb-excavator.png",
+    "sha256": "eca22ea804af95e1d9b4861ed1d3656b06c74a2c800e759d02396724c2575aaf"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/flame-construct.png",
+    "local": "./images/database/renders-thumb-flame-construct.png",
+    "sha256": "1771db045ef1d0d4e25806657326a90db48dc7b4a86265a523e5b09808a698f2"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/enderman.png",
+    "local": "./images/database/renders-thumb-enderman.png",
+    "sha256": "70b97b441937d1b5644f9d6254ec72687179678cb7a4745e61fc19b1130e436b"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/fox.png",
+    "local": "./images/database/renders-thumb-fox.png",
+    "sha256": "984e5f414935fc2d1a1be8ce03d3835d9f923c3a1776959a4cc6cc877cb13c26"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/frog.png",
+    "local": "./images/database/renders-thumb-frog.png",
+    "sha256": "d7f1293471d9ea2052cca107155df89945d4cd04f365b27da7da46ab7454af0e"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/frozen.png",
+    "local": "./images/database/renders-thumb-frozen.png",
+    "sha256": "2a0055d1eef27490ac263dfa411a8a47ab71d5468d7e45ae7d8fc226f56aab13"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/fusefly.png",
+    "local": "./images/database/renders-thumb-fusefly.png",
+    "sha256": "ed25ef6e3e02ac816064f343e7462857ebc7b9e96f84860d999ba53936022fef"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/geomancer.png",
+    "local": "./images/database/renders-thumb-geomancer.png",
+    "sha256": "c332051801f54f465175591eb4590c27e39a2c74204aa8e28d79a176879abf2f"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/goat.png",
+    "local": "./images/database/renders-thumb-goat.png",
+    "sha256": "21de284e085bebb54f3c552d199efa9dd71f44a1873bba010fd747c3aba0c50c"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/hunter.png",
+    "local": "./images/database/renders-thumb-hunter.png",
+    "sha256": "59ba655524d52b08569b0fbb181c0422c578a8d11ca57741d2fb6b30d4af7ed3"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/hurler.png",
+    "local": "./images/database/renders-thumb-hurler.png",
+    "sha256": "a3cc864abc997547d21a1ed66e22dbd3be398b5c89931daef4b451176955a946"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/iron-golem.png",
+    "local": "./images/database/renders-thumb-iron-golem.png",
+    "sha256": "d805fc26c3dfd4552bdefb2b50efb28b6724a07075ecd1b9851eb2d0f7402a48"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/llama.png",
+    "local": "./images/database/renders-thumb-llama.png",
+    "sha256": "a8b82f839431e9c22c599b677127aaa3d23a39d42c1df2ec6612ca219b87dcf6"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/key-golem.png",
+    "local": "./images/database/renders-thumb-key-golem.png",
+    "sha256": "ff2137b26bac5ec144f65f072db0eb6dfd8467268991c23938b010f60c7de6f5"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/husk.png",
+    "local": "./images/database/renders-thumb-husk.png",
+    "sha256": "1f9ee4184ae9a147b834832d9ae1cca78ee17cc32b6557d0c5ce9a39e5212a1b"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/lootkin.png",
+    "local": "./images/database/renders-thumb-lootkin.png",
+    "sha256": "ef3f2ce4f3e2f38a25027e787cb97b303f4ae4875367ffd20429dbc2903b0e21"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/harmonizer.png",
+    "local": "./images/database/renders-thumb-harmonizer.png",
+    "sha256": "b030eeb5d54d485d49600979d13437f951df369934b7082c00c0069ab4a1e3db"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/monarch.png",
+    "local": "./images/database/renders-thumb-monarch.png",
+    "sha256": "fd9843bfea215bec3a87d837fed6b5c85ed0ee3c4bd85f001a3dc19a94d89e67"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/moss-cube.png",
+    "local": "./images/database/renders-thumb-moss-cube.png",
+    "sha256": "687ea4a9d8299c26717fd4fd9463edf025457a5dfbf6165e42f2a6ed71b0cf66"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/monarch-echo.png",
+    "local": "./images/database/renders-thumb-monarch-echo.png",
+    "sha256": "fd9843bfea215bec3a87d837fed6b5c85ed0ee3c4bd85f001a3dc19a94d89e67"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/mosstrosity.png",
+    "local": "./images/database/renders-thumb-mosstrosity.png",
+    "sha256": "c98b410dc1aa5cddde9df49651bce2f8a1101b437317484520585271a14b946c"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/nuzzle.png",
+    "local": "./images/database/renders-thumb-nuzzle.png",
+    "sha256": "46bc09e50c1e5c465ffe81e85e7aab0809b6e1d1f1140be8b3f133bec83f7f4f"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/mucked.png",
+    "local": "./images/database/renders-thumb-mucked.png",
+    "sha256": "4c4fe9ef7e218064bdc63fc37dfe259b588c36c7db5bb1bbf9c5f7c45df27b76"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/pig.png",
+    "local": "./images/database/renders-thumb-pig.png",
+    "sha256": "6cdc3477ac6ebc69d4fb7e179645d07e84e358d08c0652de988a5ab503f268d3"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/nester.png",
+    "local": "./images/database/renders-thumb-nester.png",
+    "sha256": "88b4d708834f274717c0f051078b6751c8cbab2fcd4c7a14ad1e20aa564210cf"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/pigeon.png",
+    "local": "./images/database/renders-thumb-pigeon.png",
+    "sha256": "7f2ba7479fc20f701d6a05be53a035c3966d18c25e69f4b348e6310832274260"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/monstrous-opus.png",
+    "local": "./images/database/renders-thumb-monstrous-opus.png",
+    "sha256": "f4236455566af8930647f9f9a7998dd2aa24e63ca9473496989e54b8698a5d32"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/piggy-bank.png",
+    "local": "./images/database/renders-thumb-piggy-bank.png",
+    "sha256": "14adaa2434c3f00f8ecaa97fd6f6980086a368b0d5bc0760900cef61d0660a21"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/pollinator.png",
+    "local": "./images/database/renders-thumb-pollinator.png",
+    "sha256": "3f0dab20b7ca2af113200a9ab8d36defed4f1862495865f1f87d7b27177eb530"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/prickle.png",
+    "local": "./images/database/renders-thumb-prickle.png",
+    "sha256": "5f8855b8125d005bde5998e275d53bbb88bb02597370fafb82140f42c74c47ed"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/rabbit.png",
+    "local": "./images/database/renders-thumb-rabbit.png",
+    "sha256": "794196aba620abf9094115035d812ee4a2c128c92397e66efe42ac6955a6d5d8"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/pillager.png",
+    "local": "./images/database/renders-thumb-pillager.png",
+    "sha256": "8131f6bc3ba3e82b35b2b189b03543a51eeeed1a0c55ec6b906b33ff4f4c6f45"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/redstone-cube.png",
+    "local": "./images/database/renders-thumb-redstone-cube.png",
+    "sha256": "93f0b25d47d89bb30fefe8ca1b7be2601378edbe9003f7a09d04542cebbb3e9d"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/roamroot.png",
+    "local": "./images/database/renders-thumb-roamroot.png",
+    "sha256": "5efd5d32caf1ba175bb4d9144b5858f394c2724f7935742dd13d7c1f0305cd04"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/ravager.png",
+    "local": "./images/database/renders-thumb-ravager.png",
+    "sha256": "127b711e30c6d3cde50fb652b623b0caedcf23cf242f80c2f1f0898fb5751487"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/royal-guard.png",
+    "local": "./images/database/renders-thumb-royal-guard.png",
+    "sha256": "b8c4dec7d66a5a88d2d2bc89872c6d20da35dcea306878114e5348725021d2ea"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/salmon.png",
+    "local": "./images/database/renders-thumb-salmon.png",
+    "sha256": "ec731a84ea94f484abed6b58f7fa45169bcff0864d0cd51cf1533ac7ef151804"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/redstone-monstrosity.png",
+    "local": "./images/database/renders-thumb-redstone-monstrosity.png",
+    "sha256": "5cf72c1e704c2c21f099351c12c490cf92f502c3a3217e71e9181432d047fc71"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/scavenger.png",
+    "local": "./images/database/renders-thumb-scavenger.png",
+    "sha256": "7044e9c482b2a12e243e719de5b0360bf7b8e7e33d27e7a4b0d400bf155210ab"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/scorched.png",
+    "local": "./images/database/renders-thumb-scorched.png",
+    "sha256": "75f8ce2964dd54cc8999cb7536bf76fa9d6e2773318760d09eab7a091eae5486"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/sculk-monstrosity.png",
+    "local": "./images/database/renders-thumb-sculk-monstrosity.png",
+    "sha256": "4facb6a560101b484cf619ebe7ce9e6120539f4119789864986bc7f0c830f5cb"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/sentinel.png",
+    "local": "./images/database/renders-thumb-sentinel.png",
+    "sha256": "c046df61588a8630a7bc215bb88ab2c94233be6bc8dafd40910db76b5d1a839c"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/sculk-cube.png",
+    "local": "./images/database/renders-thumb-sculk-cube.png",
+    "sha256": "52480aff1abc6438bff299306bfc4327bc64bfd1dbec255865311ae1ead6920b"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/sheep.png",
+    "local": "./images/database/renders-thumb-sheep.png",
+    "sha256": "3c646a87b279bd74a19787a50e71f93d627dd1544d64af4f8ae1b1d456993e22"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/skeleton.png",
+    "local": "./images/database/renders-thumb-skeleton.png",
+    "sha256": "1a842eff088e5b53d922bfac0c585885e78e97af3bc592b4554f5b03088b4ecd"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/singer.png",
+    "local": "./images/database/renders-thumb-singer.png",
+    "sha256": "5e4d7efb089a77ccd0887110a41c08f670d08af7cd261f8ac4b8a38178186b27"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/slabber.png",
+    "local": "./images/database/renders-thumb-slabber.png",
+    "sha256": "acfe4670306ee4b76db110339aef22c72c66ae139c1f8d678433518191597069"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/soul-corrupted-baby-zombie.png",
+    "local": "./images/database/renders-thumb-soul-corrupted-baby-zombie.png",
+    "sha256": "644450ea2f4bdf35d04f14287aa6c80ed5db34c6370783595807d878a0f56530"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/slime.png",
+    "local": "./images/database/renders-thumb-slime.png",
+    "sha256": "5810d2a0f3a13e7eac5075b9d8bb0c66725498c9f32c7c1813add276001cc245"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/seedling.png",
+    "local": "./images/database/renders-thumb-seedling.png",
+    "sha256": "1ceca9087286521c648326e80b952d3ce37a402201bc261656a47b41a74d3b94"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/soul-corrupted-bloombud.png",
+    "local": "./images/database/renders-thumb-soul-corrupted-bloombud.png",
+    "sha256": "19c017fd6c88048913fbf13623998210f1d8a5dbdc7a65eb7f5c7a421acd5fb6"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/soul-corrupted-chicken-jockey.png",
+    "local": "./images/database/renders-thumb-soul-corrupted-chicken-jockey.png",
+    "sha256": "c017ec3ad2bdf88c4f5a738c4c9f3f8e28dda7b4bbcaa5db78713d51bfccee32"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/soul-corrupted-enchanter.png",
+    "local": "./images/database/renders-thumb-soul-corrupted-enchanter.png",
+    "sha256": "eb926f13d0fe77535ff2334afd81ea1ee42e16092958067969a812be47c33041"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/soul-corrupted-dartback.png",
+    "local": "./images/database/renders-thumb-soul-corrupted-dartback.png",
+    "sha256": "8c77f36365e64920ef09237ee07784e4e1accf8ac26f98327eb9f45743b912e8"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/soul-corrupted-enderman.png",
+    "local": "./images/database/renders-thumb-soul-corrupted-enderman.png",
+    "sha256": "70b97b441937d1b5644f9d6254ec72687179678cb7a4745e61fc19b1130e436b"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/soul-corrupted-excavator.png",
+    "local": "./images/database/renders-thumb-soul-corrupted-excavator.png",
+    "sha256": "eca22ea804af95e1d9b4861ed1d3656b06c74a2c800e759d02396724c2575aaf"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/soul-corrupted-flame-construct.png",
+    "local": "./images/database/renders-thumb-soul-corrupted-flame-construct.png",
+    "sha256": "1771db045ef1d0d4e25806657326a90db48dc7b4a86265a523e5b09808a698f2"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/soul-corrupted-fusefly.png",
+    "local": "./images/database/renders-thumb-soul-corrupted-fusefly.png",
+    "sha256": "ed25ef6e3e02ac816064f343e7462857ebc7b9e96f84860d999ba53936022fef"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/soul-corrupted-geomancer.png",
+    "local": "./images/database/renders-thumb-soul-corrupted-geomancer.png",
+    "sha256": "c332051801f54f465175591eb4590c27e39a2c74204aa8e28d79a176879abf2f"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/soul-corrupted-seedling.png",
+    "local": "./images/database/renders-thumb-soul-corrupted-seedling.png",
+    "sha256": "1ceca9087286521c648326e80b952d3ce37a402201bc261656a47b41a74d3b94"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/soul-corrupted-ravager.png",
+    "local": "./images/database/renders-thumb-soul-corrupted-ravager.png",
+    "sha256": "127b711e30c6d3cde50fb652b623b0caedcf23cf242f80c2f1f0898fb5751487"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/soul-corrupted-spider.png",
+    "local": "./images/database/renders-thumb-soul-corrupted-spider.png",
+    "sha256": "4aba9483a0236a649965cbe2408aa9e0b1a48936fbb24de6c2f95b2d4240fe83"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/soul-corrupted-hurler.png",
+    "local": "./images/database/renders-thumb-soul-corrupted-hurler.png",
+    "sha256": "a3cc864abc997547d21a1ed66e22dbd3be398b5c89931daef4b451176955a946"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/soul-corrupted-sentinel.png",
+    "local": "./images/database/renders-thumb-soul-corrupted-sentinel.png",
+    "sha256": "c046df61588a8630a7bc215bb88ab2c94233be6bc8dafd40910db76b5d1a839c"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/soul-corrupted-spider-jockey.png",
+    "local": "./images/database/renders-thumb-soul-corrupted-spider-jockey.png",
+    "sha256": "f16c58803076a75bdae30e7184d560d02a3ce193234ea6fc31ba711fbf025377"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/sprout.png",
+    "local": "./images/database/renders-thumb-sprout.png",
+    "sha256": "f6c028c719908896f49964f895ccef78b55aa0ef632e7de9cca6b20cf3c19c4e"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/soul-corrupted-roamroot.png",
+    "local": "./images/database/renders-thumb-soul-corrupted-roamroot.png",
+    "sha256": "5efd5d32caf1ba175bb4d9144b5858f394c2724f7935742dd13d7c1f0305cd04"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/stalker.png",
+    "local": "./images/database/renders-thumb-stalker.png",
+    "sha256": "856548f51720f60f69cf43b9df120721e9f242f807553a7f18dd3ed8874d98e1"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/warden.png",
+    "local": "./images/database/renders-thumb-warden.png",
+    "sha256": "3e515f59b6320c0a656c47def677074e71727afe989ac58638b2090fe5085795"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/witch.png",
+    "local": "./images/database/renders-thumb-witch.png",
+    "sha256": "713af5bd093b2b5f055488e997bfbff3b5d26f56858593c65d623f449137355b"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/soul-corrupted-vindicator.png",
+    "local": "./images/database/renders-thumb-soul-corrupted-vindicator.png",
+    "sha256": "6b3e95f8e59716e2d4d758e7fcc251882886956dadb0ade93cf251230be78379"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/trapper.png",
+    "local": "./images/database/renders-thumb-trapper.png",
+    "sha256": "e613f85379b76679b939ee99742d06ae9655d42205526bebef67802d4a970f77"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/soul-corrupted-vex.png",
+    "local": "./images/database/renders-thumb-soul-corrupted-vex.png",
+    "sha256": "0fd5a0e5464edfd2fd638c2b0a5590a34786484afed81e2fdf20d9fc55c48d99"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/spider.png",
+    "local": "./images/database/renders-thumb-spider.png",
+    "sha256": "4aba9483a0236a649965cbe2408aa9e0b1a48936fbb24de6c2f95b2d4240fe83"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/stray.png",
+    "local": "./images/database/renders-thumb-stray.png",
+    "sha256": "711ebc1248c4c6b9a40298757844dd6874bb4c0d9f5996bd53e97453cc0b5f0b"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/spider-jockey.png",
+    "local": "./images/database/renders-thumb-spider-jockey.png",
+    "sha256": "f16c58803076a75bdae30e7184d560d02a3ce193234ea6fc31ba711fbf025377"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/soul-corrupted-zombie.png",
+    "local": "./images/database/renders-thumb-soul-corrupted-zombie.png",
+    "sha256": "447445181f33c8cb0b1a0b265f7f93a25bc275ff40fb602233bc4a1cb65b6e88"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/squid.png",
+    "local": "./images/database/renders-thumb-squid.png",
+    "sha256": "96a765fcd66b6c41fca811a1416c6ff160d7613535c0f86eaf33d8134f473105"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/soul-corrupted-vanguard.png",
+    "local": "./images/database/renders-thumb-soul-corrupted-vanguard.png",
+    "sha256": "a445e6ad7909798ada65b765b626412fa424c1724c91c60521a26027dd0f20fd"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/the-prime-enchanter.png",
+    "local": "./images/database/renders-thumb-the-prime-enchanter.png",
+    "sha256": "58db28dc377d647f47f9be95f44bfb7cde998bd27a0634a5adc64ce2bf8cf37e"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/the-supreme-evoker.png",
+    "local": "./images/database/renders-thumb-the-supreme-evoker.png",
+    "sha256": "c1ebda0a070576c10390844e24704d363a6c57fa6f515a5679f03049226185fc"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/tuner.png",
+    "local": "./images/database/renders-thumb-tuner.png",
+    "sha256": "b048173a314b6fc1b87a1d6faee0d00fd5a98c5e40c3980158113b53901dad40"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/twisted-warden.png",
+    "local": "./images/database/renders-thumb-twisted-warden.png",
+    "sha256": "1c601419369ead2ef121c9bf31fda9dcfb814b3152a240cd0b814ef14df422ac"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/vanguard.png",
+    "local": "./images/database/renders-thumb-vanguard.png",
+    "sha256": "a445e6ad7909798ada65b765b626412fa424c1724c91c60521a26027dd0f20fd"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/vindicator.png",
+    "local": "./images/database/renders-thumb-vindicator.png",
+    "sha256": "6b3e95f8e59716e2d4d758e7fcc251882886956dadb0ade93cf251230be78379"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/wisp.png",
+    "local": "./images/database/renders-thumb-wisp.png",
+    "sha256": "08237034522513e077c3a80e6aa99ea3055c5b0e1fb1c246ba955759dc02da49"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/wobble.png",
+    "local": "./images/database/renders-thumb-wobble.png",
+    "sha256": "0edc71a6dee7f3e403f395f84bc3e6c8435216f095c5f16bb060a31ff129d0e9"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/ancient-alchemy.png",
+    "local": "./images/database/icons-enchantments-ancient-alchemy.png",
+    "sha256": "0892b404151f926473d8f092aa8902a9a63840986ab72ef844d2ec5a3dd61c57"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/zombie.png",
+    "local": "./images/database/renders-thumb-zombie.png",
+    "sha256": "447445181f33c8cb0b1a0b265f7f93a25bc275ff40fb602233bc4a1cb65b6e88"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/wolf-2.png",
+    "local": "./images/database/renders-thumb-wolf-2.png",
+    "sha256": "f78f2e6b77d5d1001bee3c6e2b042d0d44d81d1fdd1c19d35aea8211eb6115a1"
+  },
+  {
+    "remote": "/images/d2/renders/thumb/vex.png",
+    "local": "./images/database/renders-thumb-vex.png",
+    "sha256": "0fd5a0e5464edfd2fd638c2b0a5590a34786484afed81e2fdf20d9fc55c48d99"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/artifact-amplifier.png",
+    "local": "./images/database/icons-enchantments-artifact-amplifier.png",
+    "sha256": "157aa97c3d5d7f20e0ed8c16d7ade1b01eead1f6b475bbac0c4e600e499d51db"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/artificing.png",
+    "local": "./images/database/icons-statuses-artificing.png",
+    "sha256": "cf8b70c8c2d40122f5a9c1ebc8e47fa0309a48c7a0dabd33ef3f6b23802d42e8"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/barrier-brew.png",
+    "local": "./images/database/icons-enchantments-barrier-brew.png",
+    "sha256": "6177d42b15ca41a2d3f5234bff28b204317e8c02daeb2882aac0e5d20cc8f9dd"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/blaze-bangle.png",
+    "local": "./images/database/icons-statuses-blaze-bangle.png",
+    "sha256": "4e20c78e7baa344b83fb9f896a9c61451fc44eafbdde87d62a1bceb614aa405b"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/blight-bangle.png",
+    "local": "./images/database/icons-statuses-blight-bangle.png",
+    "sha256": "a6f7bc5bebb7f0198c9e0a3391482e864ef6e782aebb5ec5811de37f99131360"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/bottomless-brew.png",
+    "local": "./images/database/icons-enchantments-bottomless-brew.png",
+    "sha256": "42db1861fac1d1fd82d9cf6a5961ee3af335b442b151746905467a3b2eae0a9a"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/blizzard-bangle.png",
+    "local": "./images/database/icons-statuses-blizzard-bangle.png",
+    "sha256": "cb808c986dbf3d9e525cc5089dc62dd62456eaf22d99a8b7fe72b8cdf2e88561"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/burned.png",
+    "local": "./images/database/icons-statuses-burned.png",
+    "sha256": "1d549354a1f6e11de69788b67f66b015520ff8718d3fc9365ef5bb6eb0c197b9"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/chain-reaction.png",
+    "local": "./images/database/icons-enchantments-chain-reaction.png",
+    "sha256": "f53ec20f01af1a74baf7d09a89c9a651f771181ef52e08567c8915ed0e943f7d"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/chained.png",
+    "local": "./images/database/icons-statuses-chained.png",
+    "sha256": "7d2e6dc7acfaeb9b8da13e17e9e9dff4e5a0c9a3ece231409a525182f77e28f8"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/cow-stampede.png",
+    "local": "./images/database/icons-enchantments-cow-stampede.png",
+    "sha256": "889736c8c991608e44b27179b1a48eaa8158c7274f60c49b751f7c4195350744"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/critical-precision.png",
+    "local": "./images/database/icons-statuses-critical-precision.png",
+    "sha256": "86fa2c4ab7c16c459e34afa4f27bffc7e6d495d06467fcee100ec65f19cafd35"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/critical-quiver.png",
+    "local": "./images/database/icons-enchantments-critical-quiver.png",
+    "sha256": "7076a9f2991cdc7208aa46c97c6123358ebdc8d5650b19dc342c77a234041f4f"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/critical-strength.png",
+    "local": "./images/database/icons-statuses-critical-strength.png",
+    "sha256": "9ff306501b030ae8f117a6e6871fb679339e7fdcd2b4fdde22a6970f8437fae8"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/deathcap-mushroom.png",
+    "local": "./images/database/icons-statuses-deathcap-mushroom.png",
+    "sha256": "5826f6053df3e0cd83618c21c54f83e8019e70c2f4220b42d28783e0791ffb65"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/deflection.png",
+    "local": "./images/database/icons-statuses-deflection.png",
+    "sha256": "724a5a9e9404590ef5aa2b8a23af57c81ae7ace5d6cbd480115210e9cbd77dfa"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/buddy-brew.png",
+    "local": "./images/database/icons-enchantments-buddy-brew.png",
+    "sha256": "69c4497c70dba8270e08f10f0f6fe27637315b89d301d3ca7fd714526f3595fa"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/dynamo.png",
+    "local": "./images/database/icons-enchantments-dynamo.png",
+    "sha256": "6c518c70417519f858c7f749289f7642749eda6c171e078e48072d57166e993f"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/electric-bangle.png",
+    "local": "./images/database/icons-statuses-electric-bangle.png",
+    "sha256": "ea4c940aa1b657d3b4f8a684323d782554b79eed8ef4dd15aad377c54a9d84e9"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/crash-landing.png",
+    "local": "./images/database/icons-enchantments-crash-landing.png",
+    "sha256": "b1ccdc51d06c9c4b565d18148e2c3665df859a8bc34c0256a310b681aad1bcda"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/ender-mines.png",
+    "local": "./images/database/icons-enchantments-ender-mines.png",
+    "sha256": "68645c7d3e472e3388620612e67478804e559171b53fe53c2fd787d4907e97f4"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/ender-quiver.png",
+    "local": "./images/database/icons-enchantments-ender-quiver.png",
+    "sha256": "3fc5bd92e22d87680f7e7daf67a5ce6dc6b4139d4c2cab6fdfc14f11e9f19475"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/fire-aspect.png",
+    "local": "./images/database/icons-enchantments-fire-aspect.png",
+    "sha256": "2b3e2d005a6e04ae08fdf85073d681436d318900d547aa0a82bdf58090633efb"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/flurrying.png",
+    "local": "./images/database/icons-statuses-flurrying.png",
+    "sha256": "f1fdfce8ffa3ce67f36079310a1d6e4b2c7d757bc6901605ab0c8a78c952dab1"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/fortifying.png",
+    "local": "./images/database/icons-statuses-fortifying.png",
+    "sha256": "4d34de82f0c521d713bbc1087324cc2042a31d0d5fa8376bd03ddb4da2f95fbf"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/frost-crescent.png",
+    "local": "./images/database/icons-enchantments-frost-crescent.png",
+    "sha256": "43ea6318fb2a7f06b7f12d43cec39094eeafa468b208a4f6b6b7f03ce7775f4d"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/frozen.png",
+    "local": "./images/database/icons-statuses-frozen.png",
+    "sha256": "3330993052d91c9dbac5f7a49c248c9f3dc36f41b90a6bc01edf02c385182994"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/gravity-pulse.png",
+    "local": "./images/database/icons-enchantments-gravity-pulse.png",
+    "sha256": "aa1a240321904cf59008c7c7b3789904f6f870cef237fa3d5b7cc7fcbe039ca5"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/health-synergy.png",
+    "local": "./images/database/icons-enchantments-health-synergy.png",
+    "sha256": "110b9544925e4baddb766d392fd324c8f3f5a70566e833ed54d3f85e11890a1b"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/hurrying.png",
+    "local": "./images/database/icons-statuses-hurrying.png",
+    "sha256": "2beaba425a60057b8274332c438d50032a7166feb267b4282653838ebcba6fae"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/invulnerable.png",
+    "local": "./images/database/icons-statuses-invulnerable.png",
+    "sha256": "989dcdd127d694782c0757c7e80fe23ec2ee3cd3ba4853a318ec3a326c1cc48e"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/honeyed.png",
+    "local": "./images/database/icons-statuses-honeyed.png",
+    "sha256": "44eb434c850a908ed53aaa657f5a9ab4c34f973800a2ea0588b1f25822769f4a"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/lightning-surge.png",
+    "local": "./images/database/icons-enchantments-lightning-surge.png",
+    "sha256": "d9a05d30ea7b4cd666f6d61d1eaed0719cb194e4d2887b6aa172ce0414b65a21"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/piercing.png",
+    "local": "./images/database/icons-enchantments-piercing.png",
+    "sha256": "b84f04c0e0cbc2464b356bd6e71a8c9a94721d29615b105df4e33fe1b69d5502"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/poison-fog.png",
+    "local": "./images/database/icons-enchantments-poison-fog.png",
+    "sha256": "b54fcdc64323474e9a3219c732a96a73d3313df563801686ea0ffc01b798ba11"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/grindstone.png",
+    "local": "./images/database/icons-statuses-grindstone.png",
+    "sha256": "d93d787111680e7156da9e8fc5e7e8da891d5b672080d35f70c113cfb1905f1d"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/healing-smite.png",
+    "local": "./images/database/icons-enchantments-healing-smite.png",
+    "sha256": "d7892cea8ce1ffb9d331c135522d0a7d0d76ba313b5a658668ff9ea5fb0e999c"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/power-amplifier.png",
+    "local": "./images/database/icons-enchantments-power-amplifier.png",
+    "sha256": "9d5f222cab40d4eb69eca4975cd7591ef194bbdfbcccc836c29c6f37160239c5"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/ricochet.png",
+    "local": "./images/database/icons-enchantments-ricochet.png",
+    "sha256": "0a57f71692079142a5f2f9c2b826b8ad9758d4ea17d17d35b61c7399d91677cf"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/poisoned.png",
+    "local": "./images/database/icons-statuses-poisoned.png",
+    "sha256": "d70aa9d97516e06c81d45e994b2c3a0c7a7e2d5b986f8e767a429ae1c6dd2b72"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/powershaker.png",
+    "local": "./images/database/icons-statuses-powershaker.png",
+    "sha256": "14e926072e0cb1e542e40a58840cb5e23da161084ee8109d6d0ef090e3ee5c6e"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/regenerating.png",
+    "local": "./images/database/icons-statuses-regenerating.png",
+    "sha256": "4e146659a15cb285eb0a8b5c129d0898245c2695153048161ea607df9ec77ae8"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/sealed.png",
+    "local": "./images/database/icons-statuses-sealed.png",
+    "sha256": "99a375e1d452c9ec0b299a5a99bf8eca6b49d97cb66bdfec55747b8d6a2bb4e3"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/shadowcloak.png",
+    "local": "./images/database/icons-enchantments-shadowcloak.png",
+    "sha256": "f51b2634bc7e1f2e1318b47b733b803631018f546ceaa85f3b0b47567c5b22af"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/shadowcloaking.png",
+    "local": "./images/database/icons-statuses-shadowcloaking.png",
+    "sha256": "29d296d08d9f70b8e3ee6c3f3cfad3b4a3141de8d3bb0cbdb49a312664721708"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/shielding-smite.png",
+    "local": "./images/database/icons-enchantments-shielding-smite.png",
+    "sha256": "f1de009454782cceae4393d80ef76d782e23e47318db1415208bea5049fdd30b"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/shockwave.png",
+    "local": "./images/database/icons-enchantments-shockwave.png",
+    "sha256": "debb4c9fd5bd819c274e52052f4ef2692ec1165d118d1f75af01d90b8b3ab439"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/soul-blast.png",
+    "local": "./images/database/icons-enchantments-soul-blast.png",
+    "sha256": "a8904f97e3c52428d8a7f0999ac3d3e3f721207ef7c2a1d807a596daf2a34ca5"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/soulsick.png",
+    "local": "./images/database/icons-statuses-soulsick.png",
+    "sha256": "83950fe154cd9ca38c2333a6029da8fc9f5063df186468e67536db1c1bf2c2bc"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/stampeding.png",
+    "local": "./images/database/icons-statuses-stampeding.png",
+    "sha256": "0a78c073ab19ebeafd801cef48eb06cd913755a818a1fcb9df81033a60f7ddcd"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/springload.png",
+    "local": "./images/database/icons-enchantments-springload.png",
+    "sha256": "267375a6b2ac03ab0ccc23c602e4f5840d3413973fcad825488f6e53b77e0266"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/strengthened.png",
+    "local": "./images/database/icons-statuses-strengthened.png",
+    "sha256": "a4bd6a01b30f975fe116c3d85de4216383ed1f1d971fbb3504decdeee2df36b7"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/slowed.png",
+    "local": "./images/database/icons-statuses-slowed.png",
+    "sha256": "68aedbb12ad2d66905829beaaa210f23c2b1b9185d1a045415a0cc46fb56d8b4"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/somersault.png",
+    "local": "./images/database/icons-enchantments-somersault.png",
+    "sha256": "d0b7c5daa105c0566b3156a4f6116278ed41d25ca756042172f55f33d1420edd"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/swirling.png",
+    "local": "./images/database/icons-enchantments-swirling.png",
+    "sha256": "5794b546532df41aca1612322539e9b2efda952c2f9f01f63eff953f0705fbf8"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/tempo-theft.png",
+    "local": "./images/database/icons-enchantments-tempo-theft.png",
+    "sha256": "a443cd8e6c1b0e587fbb63b4faef179ee6ae76eb3fe5e85db5137a07bbe8cd7e"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/tumbleshot.png",
+    "local": "./images/database/icons-enchantments-tumbleshot.png",
+    "sha256": "f45587049629953ab05a83d84a2060a8428111463351229b323dc97e9349a157"
+  },
+  {
+    "remote": "/images/d2/icons/enchantments/thundering.png",
+    "local": "./images/database/icons-enchantments-thundering.png",
+    "sha256": "92ca3ea737f3607a1c437015d49459079e2e073946b3bc0b3f0b15648c32cbe0"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/webbed.png",
+    "local": "./images/database/icons-statuses-webbed.png",
+    "sha256": "a0ccb28de17d0e008f445ed5a7104d049255827828b27aa732df437e6753a55c"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/zapped.png",
+    "local": "./images/database/icons-statuses-zapped.png",
+    "sha256": "51906e33b48196245aeab6733ea6b98d40b52e545d991b90e092c6f85ae3aaec"
+  },
+  {
+    "remote": "/images/d2/icons/effects/acrobat.png",
+    "local": "./images/database/icons-effects-acrobat.png",
+    "sha256": "98e50f4a478dc82609cdd7decdc6bca80d09d63c5b698bf1e6c852463a5ff58b"
+  },
+  {
+    "remote": "/images/d2/icons/effects/aim.png",
+    "local": "./images/database/icons-effects-aim.png",
+    "sha256": "a3ba779f688718d05f8883cc8184efbc564a8e5e2826c2f0f776f9662f4ac66f"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/weakened.png",
+    "local": "./images/database/icons-statuses-weakened.png",
+    "sha256": "ad80813ccd4089b2326c8b0ceaabddc7300ff1bb978431d6c52fb8e37088a48e"
+  },
+  {
+    "remote": "/images/d2/icons/statuses/vined.png",
+    "local": "./images/database/icons-statuses-vined.png",
+    "sha256": "2762849c6fb802ee98cbea08e0dbb8c0058e68f3c28098d39354037e117a6937"
+  },
+  {
+    "remote": "/images/d2/icons/effects/alchemist.png",
+    "local": "./images/database/icons-effects-alchemist.png",
+    "sha256": "3defbaecc0a1edb8201bed792909cf6b21e0af5d3e1c5d4a77cc43fb190082d9"
+  },
+  {
+    "remote": "/images/d2/icons/effects/ally.png",
+    "local": "./images/database/icons-effects-ally.png",
+    "sha256": "42a77d32c9fded6bcbcf017b51463951350e78f9d5c956c1c2d56154ec88b031"
+  },
+  {
+    "remote": "/images/d2/icons/effects/assassin.png",
+    "local": "./images/database/icons-effects-assassin.png",
+    "sha256": "8d362cfc0efaad33f69c6fefb31071e6067178a62ac81bdd8c0812a08f4c1098"
+  },
+  {
+    "remote": "/images/d2/icons/effects/boost.png",
+    "local": "./images/database/icons-effects-boost.png",
+    "sha256": "a6a9415c552d31a8923773bba115630e726868ddc0442318f6c3a5a150053da9"
+  },
+  {
+    "remote": "/images/d2/icons/effects/brawler.png",
+    "local": "./images/database/icons-effects-brawler.png",
+    "sha256": "a82f4b078d9ed99440c47a5644a92eabd20b19cb7009e0f61223a6a04445f18e"
+  },
+  {
+    "remote": "/images/d2/icons/effects/bully.png",
+    "local": "./images/database/icons-effects-bully.png",
+    "sha256": "00ca723b68a1e5108c45d3a4dd06c07bea0af0fdb2a7f4c67f35b96206f88641"
+  },
+  {
+    "remote": "/images/d2/icons/effects/constitution.png",
+    "local": "./images/database/icons-effects-constitution.png",
+    "sha256": "0c52dabf6a8a054d287c7fd4aab908616a4410ddae3957b67383826e0639cdb8"
+  },
+  {
+    "remote": "/images/d2/icons/effects/cooldown.png",
+    "local": "./images/database/icons-effects-cooldown.png",
+    "sha256": "021cdc3011134df131dcc18482a1fd9f71ab6600b55c83a4b0d651ebb91172eb"
+  },
+  {
+    "remote": "/images/d2/icons/effects/bounty-hunter.png",
+    "local": "./images/database/icons-effects-bounty-hunter.png",
+    "sha256": "eec447516d4761008c721074f6dd285643a5f4b6949183058998224d3cddeef4"
+  },
+  {
+    "remote": "/images/d2/icons/effects/bowyer.png",
+    "local": "./images/database/icons-effects-bowyer.png",
+    "sha256": "c53bee87caf79bf116c000a488b550c08860a608e23b3cabb4319733f8d30ad9"
+  },
+  {
+    "remote": "/images/d2/icons/effects/critical-hit.png",
+    "local": "./images/database/icons-effects-critical-hit.png",
+    "sha256": "e617f2e620163e2cb8177cdd2e01b4d582824dc942f70ae8ef0e7afb60b06b28"
+  },
+  {
+    "remote": "/images/d2/icons/effects/critical-edge.png",
+    "local": "./images/database/icons-effects-critical-edge.png",
+    "sha256": "8a80f1f313347d5958bf2de015a6606b299b0d98b6766dce1f98032bd42ec1d7"
+  },
+  {
+    "remote": "/images/d2/icons/effects/cryomancer.png",
+    "local": "./images/database/icons-effects-cryomancer.png",
+    "sha256": "fe61a060fa66df8c2b4e3e2c2b7bf3dd99de792fbbb5946a3432720ba93b3c59"
+  },
+  {
+    "remote": "/images/d2/icons/effects/deflection.png",
+    "local": "./images/database/icons-effects-deflection.png",
+    "sha256": "10b79ebdbda595118737df7bf611b2b18a699a165c72b4ae85471e0c287a8c3a"
+  },
+  {
+    "remote": "/images/d2/icons/effects/duelist.png",
+    "local": "./images/database/icons-effects-duelist.png",
+    "sha256": "5005569cbce261286b7c8034274e8bcce23029a39ca28e81b8228f141e472521"
+  },
+  {
+    "remote": "/images/d2/icons/effects/electromancer.png",
+    "local": "./images/database/icons-effects-electromancer.png",
+    "sha256": "9d350fd3bb1a1c38aacec0bd1280e1efd5bccd85bbae28d23e5e05b25f0a0573"
+  },
+  {
+    "remote": "/images/d2/icons/effects/elemental-protection.png",
+    "local": "./images/database/icons-effects-elemental-protection.png",
+    "sha256": "9a284db0f07e36bd012b4ee6efa326eb29500cecb26e44d00bd0735a686ea831"
+  },
+  {
+    "remote": "/images/d2/icons/effects/evasion.png",
+    "local": "./images/database/icons-effects-evasion.png",
+    "sha256": "85bad2e59e7d6febc1e33569cff2d929b6f090c4f0271c4d8a993c695ef87fc4"
+  },
+  {
+    "remote": "/images/d2/icons/effects/finesse.png",
+    "local": "./images/database/icons-effects-finesse.png",
+    "sha256": "635a8f4efb642c2f8d7920c0c98dd9d9881982e987a9f54919df36a4a019397e"
+  },
+  {
+    "remote": "/images/d2/icons/effects/fletcher.png",
+    "local": "./images/database/icons-effects-fletcher.png",
+    "sha256": "2d40df2d0645a033f60c7e131766391c6d44f5621a8d302960e0fddf90615971"
+  },
+  {
+    "remote": "/images/d2/icons/effects/healer.png",
+    "local": "./images/database/icons-effects-healer.png",
+    "sha256": "889a488ea973d0a96d5ff167c5791de35318b1a6dc19740576b0e45cc084f53b"
+  },
+  {
+    "remote": "/images/d2/icons/effects/healthy-strike.png",
+    "local": "./images/database/icons-effects-healthy-strike.png",
+    "sha256": "ab7b3441814d3f49cd9950c484e09aefb49497cc5d414b55bdf0fc110e842558"
+  },
+  {
+    "remote": "/images/d2/icons/effects/impact.png",
+    "local": "./images/database/icons-effects-impact.png",
+    "sha256": "8d6a975cd0047f851818f1d281c93175399e3495e8b6aa2b163796ecfc13f0cc"
+  },
+  {
+    "remote": "/images/d2/icons/effects/jumpshot.png",
+    "local": "./images/database/icons-effects-jumpshot.png",
+    "sha256": "2a1ffb128a40b359bd2f318d85281f6b029809c43829230efe55f58e4f03e427"
+  },
+  {
+    "remote": "/images/d2/icons/effects/leaper.png",
+    "local": "./images/database/icons-effects-leaper.png",
+    "sha256": "62dd6342b3342011dbf612a72921a998f232f637d7a224d3c01cbdda24ed2293"
+  },
+  {
+    "remote": "/images/d2/icons/effects/looter.png",
+    "local": "./images/database/icons-effects-looter.png",
+    "sha256": "758362493990da6bb06e4074973fd13f92f47278b7e40b177bccd438658d59d2"
+  },
+  {
+    "remote": "/images/d2/icons/effects/luck.png",
+    "local": "./images/database/icons-effects-luck.png",
+    "sha256": "19af348bd347a943c0cabca805166138b528e0c271dd792d9c3cf696ec456157"
+  },
+  {
+    "remote": "/images/d2/icons/effects/marksman.png",
+    "local": "./images/database/icons-effects-marksman.png",
+    "sha256": "437fedf6af7c5df6965d4770bf1137109ddb5a11269f0a04cba8a117147e5728"
+  },
+  {
+    "remote": "/images/d2/icons/effects/pack-leader.png",
+    "local": "./images/database/icons-effects-pack-leader.png",
+    "sha256": "5cbc3795369574a4577d1e8ae5bf507cb85efadeac5ff260dee8db926657cf2f"
+  },
+  {
+    "remote": "/images/d2/icons/effects/knockback.png",
+    "local": "./images/database/icons-effects-knockback.png",
+    "sha256": "816507695396c4c7b45acf2b2866de015a476c17be0dc036a7cb15d3fd665a98"
+  },
+  {
+    "remote": "/images/d2/icons/effects/momentum.png",
+    "local": "./images/database/icons-effects-momentum.png",
+    "sha256": "ccb567817bd1f1741dd642f85a18700e0e115d2a33faa40f743e28a66425a770"
+  },
+  {
+    "remote": "/images/d2/icons/effects/persistence.png",
+    "local": "./images/database/icons-effects-persistence.png",
+    "sha256": "1efad50ebe4aec8534ca9fd4131281ed33289ec654d97442acd818d773152060"
+  },
+  {
+    "remote": "/images/d2/icons/effects/point-blank.png",
+    "local": "./images/database/icons-effects-point-blank.png",
+    "sha256": "bccac0ad86b6853883b145b116a40d2d483761f7c80f82c44894f7ac3dac450b"
+  },
+  {
+    "remote": "/images/d2/icons/effects/potion-maker.png",
+    "local": "./images/database/icons-effects-potion-maker.png",
+    "sha256": "53f41a2fccc93a0f26fee4957902d81a0852aca48693c1634e05d7c47b06921d"
+  },
+  {
+    "remote": "/images/d2/icons/effects/precision.png",
+    "local": "./images/database/icons-effects-precision.png",
+    "sha256": "3aacfac71136b24c59d6e38015e47ef2127d7c370a6fb84969f14afc26401ce1"
+  },
+  {
+    "remote": "/images/d2/icons/effects/prodigy.png",
+    "local": "./images/database/icons-effects-prodigy.png",
+    "sha256": "87897f3f84f6c188c0479bf5b6b01c5b2a81083b9bf1fefd1e33ad64a2d9e56a"
+  },
+  {
+    "remote": "/images/d2/icons/effects/projectile-protection.png",
+    "local": "./images/database/icons-effects-projectile-protection.png",
+    "sha256": "750fb7d1830e215b7b34534473f285b89af517f3e10a0cd09f50320182701ae1"
+  },
+  {
+    "remote": "/images/d2/icons/effects/protection.png",
+    "local": "./images/database/icons-effects-protection.png",
+    "sha256": "1cf6e7049dfad7501df863c0441861b9371afbc281c64b5e53689032f2cb8cd2"
+  },
+  {
+    "remote": "/images/d2/icons/effects/prospector.png",
+    "local": "./images/database/icons-effects-prospector.png",
+    "sha256": "bbb1a32c470a50975eec6211dcdda443bdfcbe467b86a12039dd71d80efede79"
+  },
+  {
+    "remote": "/images/d2/icons/effects/prowler.png",
+    "local": "./images/database/icons-effects-prowler.png",
+    "sha256": "6c6602372d033945c73aa5b3604d1e751a93cddcabd3191d8d22e6759b11ae45"
+  },
+  {
+    "remote": "/images/d2/icons/effects/pyrotechnics.png",
+    "local": "./images/database/icons-effects-pyrotechnics.png",
+    "sha256": "c462746e7997d51f9be356e432a51000e507e31278b097e4b9dabaeb7752739e"
+  },
+  {
+    "remote": "/images/d2/icons/effects/pyromancer.png",
+    "local": "./images/database/icons-effects-pyromancer.png",
+    "sha256": "63480590e891af03bd66f7d072c8e220b7f29cb04a5084ab8307632c0a73a3f5"
+  },
+  {
+    "remote": "/images/d2/icons/effects/quiver.png",
+    "local": "./images/database/icons-effects-quiver.png",
+    "sha256": "2b614ae961aa44e42c1acbb3b41cba470790b82e7c74245bbd0043df295398c4"
+  },
+  {
+    "remote": "/images/d2/icons/effects/prickly.png",
+    "local": "./images/database/icons-effects-prickly.png",
+    "sha256": "b256557d9963811d3e18ff6bfd88774f08c821e2ac426d989d9240c12bf7a9ef"
+  },
+  {
+    "remote": "/images/d2/icons/effects/raider.png",
+    "local": "./images/database/icons-effects-raider.png",
+    "sha256": "7417617053f36fc9611bf103ecf3d2d4ede9201ff671063479e3035710be079a"
+  },
+  {
+    "remote": "/images/d2/icons/effects/randomancer.png",
+    "local": "./images/database/icons-effects-randomancer.png",
+    "sha256": "e019dd935dbbac4f7a59d2a8fa7bade2ee617095a969f00adbc7dd870c3d60b8"
+  },
+  {
+    "remote": "/images/d2/icons/effects/ranger.png",
+    "local": "./images/database/icons-effects-ranger.png",
+    "sha256": "90a0abd75d9a28664db844c7b684e237907b15116ae1b63f60c29b36a9d0d0da"
+  },
+  {
+    "remote": "/images/d2/icons/effects/recovery.png",
+    "local": "./images/database/icons-effects-recovery.png",
+    "sha256": "0b358215f759c5c79dd9a19d3b3e3b8670b137256531a210b91188e6dbf8056c"
+  },
+  {
+    "remote": "/images/d2/icons/effects/relic.png",
+    "local": "./images/database/icons-effects-relic.png",
+    "sha256": "31bec0698a435a52114e453959e978a609961307e0fe1075dfe6fcda32b95931"
+  },
+  {
+    "remote": "/images/d2/icons/effects/reaper.png",
+    "local": "./images/database/icons-effects-reaper.png",
+    "sha256": "b3836df035a0a6b356c1cab622818aae00e62a7ed149f954386f3c40394bc8e9"
+  },
+  {
+    "remote": "/images/d2/icons/effects/reload.png",
+    "local": "./images/database/icons-effects-reload.png",
+    "sha256": "089fc7b118322ba00c44a85143df47f75be0a24d6c8861868b6330990a9aba89"
+  },
+  {
+    "remote": "/images/d2/icons/effects/resilience.png",
+    "local": "./images/database/icons-effects-resilience.png",
+    "sha256": "9c31f25d13402801ec2e7097df9f6ed90fd9f266412332f2fb7472127e672931"
+  },
+  {
+    "remote": "/images/d2/icons/effects/shackler.png",
+    "local": "./images/database/icons-effects-shackler.png",
+    "sha256": "48c993f4694c06c565f4b4855837201a33e55ec33b4a6ad9c5919574f5b05145"
+  },
+  {
+    "remote": "/images/d2/icons/effects/sharpness.png",
+    "local": "./images/database/icons-effects-sharpness.png",
+    "sha256": "e2bce16fd06591f8dac90879aaa1c64231f3814ef4a712407296ff5389181143"
+  },
+  {
+    "remote": "/images/d2/icons/effects/regeneration.png",
+    "local": "./images/database/icons-effects-regeneration.png",
+    "sha256": "db8e61b83b5cfbcd798013be22aa59075502bf7a3ab731e60d0a3325a7538dce"
+  },
+  {
+    "remote": "/images/d2/icons/effects/sharpshooter.png",
+    "local": "./images/database/icons-effects-sharpshooter.png",
+    "sha256": "876a6d471515de2cc8bb7c05cf67e89af0e5a12976a2ac0083ead52e7bbd5671"
+  },
+  {
+    "remote": "/images/d2/icons/effects/slinger-of-bling.png",
+    "local": "./images/database/icons-effects-slinger-of-bling.png",
+    "sha256": "d2103b039abd63e90e073696569c769b1484a470329c00b9324d31cf80b3add5"
+  },
+  {
+    "remote": "/images/d2/icons/effects/shepherd.png",
+    "local": "./images/database/icons-effects-shepherd.png",
+    "sha256": "65d47bdf21d92bc972541f3f06785c96d6ec7b0aa5ce0899d53aa5d3be136224"
+  },
+  {
+    "remote": "/images/d2/icons/effects/sniper.png",
+    "local": "./images/database/icons-effects-sniper.png",
+    "sha256": "5fb35b56a461c6a78dd922d7b3384131520d0bc60ba1f60fb7e3d270a890a221"
+  },
+  {
+    "remote": "/images/d2/icons/effects/sorcerer.png",
+    "local": "./images/database/icons-effects-sorcerer.png",
+    "sha256": "fb826b0949e733a295cdeb62e0d117d82c0661d35c43ebfbf0f07a2d5ba5af4c"
+  },
+  {
+    "remote": "/images/d2/icons/effects/soulmancer.png",
+    "local": "./images/database/icons-effects-soulmancer.png",
+    "sha256": "659cd321eb50e80a268c7b7e6e7d63c5a5d4db4b8f3ad7587d73bedea8638175"
+  },
+  {
+    "remote": "/images/d2/icons/effects/soul-cursed.png",
+    "local": "./images/database/icons-effects-soul-cursed.png",
+    "sha256": "d6c258bf726755b0f41582181a8c0b246de23c8509cb36c14d257fe4b8474763"
+  },
+  {
+    "remote": "/images/d2/icons/effects/speed.png",
+    "local": "./images/database/icons-effects-speed.png",
+    "sha256": "28ce8dabd9697732f33d674c4200e684709c7fe753d9ce8dd6fcad726b7659bf"
+  },
+  {
+    "remote": "/images/d2/icons/effects/speed-increment.png",
+    "local": "./images/database/icons-effects-speed-increment.png",
+    "sha256": "e30439209a10ad654bafccbb584aca6d015fe3e17015661e7a96b8fc347d6e97"
+  },
+  {
+    "remote": "/images/d2/icons/effects/spiritual.png",
+    "local": "./images/database/icons-effects-spiritual.png",
+    "sha256": "55dd9c51d5be38b0e5015f0faf1a685da8696e507ac17d82f27b73f68875aee7"
+  },
+  {
+    "remote": "/images/d2/icons/effects/stealth.png",
+    "local": "./images/database/icons-effects-stealth.png",
+    "sha256": "3112f9a9dc0cde8331724bd9870bc979efe1b74ad608462baa0ba4f44df62cad"
+  },
+  {
+    "remote": "/images/d2/icons/effects/strength.png",
+    "local": "./images/database/icons-effects-strength.png",
+    "sha256": "268578fbace7109e361dd283ecfc697390d49c08e45222c6f48b7add7bcc6871"
+  },
+  {
+    "remote": "/images/d2/icons/effects/swiftness.png",
+    "local": "./images/database/icons-effects-swiftness.png",
+    "sha256": "eb9e32140d7da7dc41e398ba32cedb6fa94d4deb465fde0c7ee530c34c516608"
+  },
+  {
+    "remote": "/images/d2/icons/effects/tainted.png",
+    "local": "./images/database/icons-effects-tainted.png",
+    "sha256": "2b8bcd168f93c0078d96ad1f259840aa63ef15783fb8158285dd7433039b4516"
+  },
+  {
+    "remote": "/images/d2/icons/effects/strengthening-hit.png",
+    "local": "./images/database/icons-effects-strengthening-hit.png",
+    "sha256": "aacd2686164a98b235b4bbc872374bcf420f287dddef72e2acbd168eeef54095"
+  },
+  {
+    "remote": "/images/d2/icons/effects/totem-radius.png",
+    "local": "./images/database/icons-effects-totem-radius.png",
+    "sha256": "3e3d38544feda65be5719058a159d827b80c0fd47fc37faba608422ceb613f66"
+  },
+  {
+    "remote": "/images/d2/icons/effects/vanguard.png",
+    "local": "./images/database/icons-effects-vanguard.png",
+    "sha256": "198814e1b94d95626a50cfecf701257463acbee3111e45eb2a05ba1990362d35"
+  },
+  {
+    "remote": "/images/d2/icons/effects/venomancer.png",
+    "local": "./images/database/icons-effects-venomancer.png",
+    "sha256": "bf490edb46708ca988cddf803576fd1d345552d99cc96db40944b3b6160ebfce"
+  },
+  {
+    "remote": "/images/d2/icons/areas/brave-haven.png",
+    "local": "./images/database/icons-areas-brave-haven.png",
+    "sha256": "fea8d1b551f6c3165bbfd8312633413d234d493422910985ebbdd5b527972a17"
+  },
+  {
+    "remote": "/images/d2/icons/areas/the-deep-dark.png",
+    "local": "./images/database/icons-areas-the-deep-dark.png",
+    "sha256": "974b3c3263c396410e7e231f08c405dbb108f9ba7c708752757e6a8398c36d16"
+  },
+  {
+    "remote": "/images/d2/icons/areas/frozen-highlands.png",
+    "local": "./images/database/icons-areas-frozen-highlands.png",
+    "sha256": "cd6deca382338f45ccbb3fd69776b71e6ba1af57e7b20e60ed5cdcaac7006e27"
+  },
+  {
+    "remote": "/images/d2/icons/areas/howling-woods.png",
+    "local": "./images/database/icons-areas-howling-woods.png",
+    "sha256": "247b754e7c8fe1e4f68977b8f97c0446a4ab98c8c74bb4e5712165c5de64c700"
+  },
+  {
+    "remote": "/images/d2/icons/effects/veterinarian.png",
+    "local": "./images/database/icons-effects-veterinarian.png",
+    "sha256": "744db8c55762afb051466c9c6ac66c97af1697794fc7ae8652c2b88faef55e3e"
+  },
+  {
+    "remote": "/images/d2/icons/areas/humbler-huskland.png",
+    "local": "./images/database/icons-areas-humbler-huskland.png",
+    "sha256": "81f4387670b67511eb86b017d0d5372516de30589fb5b34066c921e607b92985"
+  },
+  {
+    "remote": "/images/d2/icons/areas/rainy-plains.png",
+    "local": "./images/database/icons-areas-rainy-plains.png",
+    "sha256": "9d05194f9789d0863fe45df9bf987c1c4425dcdc95dea5b8e7959fc65b6dc01d"
+  },
+  {
+    "remote": "/images/d2/icons/areas/ravines.png",
+    "local": "./images/database/icons-areas-ravines.png",
+    "sha256": "974b3c3263c396410e7e231f08c405dbb108f9ba7c708752757e6a8398c36d16"
+  },
+  {
+    "remote": "/images/d2/icons/areas/singers-meadow.png",
+    "local": "./images/database/icons-areas-singers-meadow.png",
+    "sha256": "7145542ee6105ef6ff4864a942f7bcf5633947264489d13b97aab24925351ab3"
+  },
+  {
+    "remote": "/images/d2/icons/areas/honeycomb-fields.png",
+    "local": "./images/database/icons-areas-honeycomb-fields.png",
+    "sha256": "8e5f99c6f9828334712e3e553166e7f546333276b16ebc184da825887dc8cd05"
+  },
+  {
+    "remote": "/images/d2/icons/areas/squid-coast.png",
+    "local": "./images/database/icons-areas-squid-coast.png",
+    "sha256": "5bf516518e3c092fc1dbadc5ce9272700e1f5b42b7de16da311417c431ab52ec"
+  },
+  {
+    "remote": "/images/d2/icons/pet/cheesy-cube-pet.png",
+    "local": "./images/database/icons-pet-cheesy-cube-pet.png",
+    "sha256": "863fa58768ab08e059f1acf33f76a8fcd4e59e81f40eeff1a6ce8b79cf8d52b7"
+  },
+  {
+    "remote": "/images/d2/icons/cape/corrupted-creeper-cape.png",
+    "local": "./images/database/icons-cape-corrupted-creeper-cape.png",
+    "sha256": "1e0bc9ec92fcb4b8e9fa55ceb8a5809ba7cc06aa675bf71e623d2b6dd4f5e13d"
+  },
+  {
+    "remote": "/images/d2/icons/areas/lullaby-hills.png",
+    "local": "./images/database/icons-areas-lullaby-hills.png",
+    "sha256": "05780d3b68f403a0828f598e682877a461b2462e3e5fc3090bd34861706cbc88"
+  },
+  {
+    "remote": "/images/d2/icons/cape/slice-slayer-cape.png",
+    "local": "./images/database/icons-cape-slice-slayer-cape.png",
+    "sha256": "a8e7115a01d9f1e5689d7b2f03b580196814155599ca04084560b226727e07ac"
+  },
+  {
+    "remote": "/images/d2/icons/cape/soul-cape.png",
+    "local": "./images/database/icons-cape-soul-cape.png",
+    "sha256": "e0de0991b8e451ef25bd6cf6c9f3e43134e390b61080aa966e5619778e6f4d65"
+  },
+  {
+    "remote": "/images/d2/icons/pet/blub-pet.png",
+    "local": "./images/database/icons-pet-blub-pet.png",
+    "sha256": "90900e7d45aab363070c9d150c87086aa40113a2f0ea16bb45197cdb47e91803"
+  },
+  {
+    "remote": "/images/d2/icons/cape/twisted-cape.png",
+    "local": "./images/database/icons-cape-twisted-cape.png",
+    "sha256": "52848dd8c749f603a420fee426f0b64d97188ce49ca6301627b2e04568cdbb55"
+  },
+  {
+    "remote": "/images/d2/icons/pet/twisted-chicken-pet.png",
+    "local": "./images/database/icons-pet-twisted-chicken-pet.png",
+    "sha256": "439f60f0643c7c51dceef1e9db6e99bba27d07dabd917e9be3925c13cc49db71"
+  },
+  {
+    "remote": "/images/d2/icons/cape/hero-cape.png",
+    "local": "./images/database/icons-cape-hero-cape.png",
+    "sha256": "01ae2c1aa75c416c97d154add9475df200440f291404154b10927ce5b630b6b4"
+  },
+  {
+    "remote": "/images/d2/icons/cape/mojang-cape.png",
+    "local": "./images/database/icons-cape-mojang-cape.png",
+    "sha256": "73ee06b00c1f92f3713b30fbec71b650c64b008aa64b238033a470aece997e46"
+  },
+  {
+    "remote": "/images/d2/map/icons/CoreQuestGiver.png",
+    "local": "./images/database/map-icons-CoreQuestGiver.png",
+    "sha256": "4a0df806bf79f863c73329ad6ba980649e15edf52dc14a857b8b8295ef05049d"
+  },
+  {
+    "remote": "/images/d2/icons/cape/special-cape.png",
+    "local": "./images/database/icons-cape-special-cape.png",
+    "sha256": "73355ba75de9a46db73c9d3491c032edf88710214ad55fb88225dde3be39a29d"
+  },
+  {
+    "remote": "/images/d2/map/icons/SideQuestGiver.png",
+    "local": "./images/database/map-icons-SideQuestGiver.png",
+    "sha256": "d0887ecebfd926afbe2f490bbe664effb678bbd01de2aba9ef52a1ed68ab57de"
+  },
+  {
+    "remote": "/images/d2/map/icons/QuestGiver.png",
+    "local": "./images/database/map-icons-QuestGiver.png",
+    "sha256": "ea758cf1a6dad38a72033e6b230bba7a470b5dd90cb29ca37d879a029f3e1a35"
+  }
+]

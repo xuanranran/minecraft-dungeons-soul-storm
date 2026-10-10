@@ -1,0 +1,93 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "30"
+    ],
+    [
+      "Top hit",
+      "75"
+    ],
+    [
+      "Poise",
+      "36"
+    ],
+    [
+      "Souls",
+      "12"
+    ],
+    [
+      "Speed",
+      "400"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Ignition",
+          "75",
+          "40",
+          "Blast",
+          ""
+        ]
+      ]
+    },
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "DAMAGE",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Base",
+          "30",
+          "75",
+          "36",
+          "12"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Poison damage",
+      "+25%"
+    ],
+    [
+      "Lightning damage",
+      "-25%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/charged-creeper"
+}

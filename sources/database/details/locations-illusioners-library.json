@@ -1,0 +1,51 @@
+{
+  "parameters": [
+    [
+      "Region",
+      "Frozen Highlands"
+    ],
+    [
+      "Entrances",
+      "1"
+    ],
+    [
+      "Fancy chests",
+      "1"
+    ],
+    [
+      "Pots",
+      "5"
+    ]
+  ],
+  "objectives": [],
+  "tables": [],
+  "resistances": [
+    [
+      "Pillager",
+      "40%"
+    ],
+    [
+      "Royal Guard",
+      "26%"
+    ],
+    [
+      "Vindicator",
+      "20%"
+    ],
+    [
+      "Ravager",
+      "8%"
+    ],
+    [
+      "Geomancer",
+      "6%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/illusioners-library"
+}

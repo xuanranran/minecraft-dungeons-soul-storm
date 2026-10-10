@@ -1,0 +1,71 @@
+{
+  "parameters": [
+    [
+      "Region",
+      "Lullaby Hills"
+    ],
+    [
+      "Entrances",
+      "5"
+    ],
+    [
+      "Fancy chests",
+      "8"
+    ],
+    [
+      "Wooden chests",
+      "3"
+    ],
+    [
+      "Wellspring chests",
+      "3"
+    ],
+    [
+      "Pots",
+      "45"
+    ]
+  ],
+  "objectives": [],
+  "tables": [],
+  "resistances": [
+    [
+      "Royal Guard",
+      "47%"
+    ],
+    [
+      "Vindicator",
+      "26%"
+    ],
+    [
+      "Pillager",
+      "18%"
+    ],
+    [
+      "Enchanter",
+      "5%"
+    ],
+    [
+      "Ravager",
+      "2%"
+    ],
+    [
+      "Geomancer",
+      "2%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    },
+    {
+      "name": "Evoker",
+      "href": "/2/enemies/evoker"
+    },
+    {
+      "name": "Soul Corrupted Pillager",
+      "href": "/2/enemies/soul-corrupted-pillager"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/illager-stronghold"
+}

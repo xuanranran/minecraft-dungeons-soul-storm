@@ -1,0 +1,77 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "17"
+    ],
+    [
+      "Top hit",
+      "70"
+    ],
+    [
+      "Poise",
+      "36"
+    ],
+    [
+      "Souls",
+      "4"
+    ],
+    [
+      "Speed",
+      "500"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Ignition",
+          "70",
+          "40",
+          "Blast",
+          ""
+        ]
+      ]
+    }
+  ],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    },
+    {
+      "name": "The Deep Dark",
+      "href": "/2/locations/the-deep-dark"
+    },
+    {
+      "name": "Deep Dark dungeons",
+      "href": "/2/locations/deep-dark-dungeons"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "Humbler Huskland",
+      "href": "/2/locations/humbler-huskland"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/creeper"
+}

@@ -1,0 +1,78 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "130"
+    ],
+    [
+      "Top hit",
+      "20"
+    ],
+    [
+      "Speed",
+      "550"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Slam",
+          "20",
+          "none",
+          "Physical",
+          "5 sec"
+        ],
+        [
+          "Swipe",
+          "5 ×3",
+          "none",
+          "Physical",
+          "0.1 sec"
+        ]
+      ]
+    },
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "DAMAGE",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Companion",
+          "130",
+          "20",
+          "none",
+          "none"
+        ],
+        [
+          "Wild",
+          "none",
+          "none",
+          "none",
+          "none"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "TNT damage",
+      "-50%"
+    ]
+  ],
+  "links": [],
+  "source": "https://www.dungeons.tools/2/enemies/wolf"
+}

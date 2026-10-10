@@ -1,0 +1,107 @@
+{
+  "parameters": [
+    [
+      "Region",
+      "Rainy Plains"
+    ],
+    [
+      "Entrances",
+      "1"
+    ],
+    [
+      "Fancy chests",
+      "2"
+    ],
+    [
+      "Wooden chests",
+      "2"
+    ],
+    [
+      "Hidden chests",
+      "1"
+    ],
+    [
+      "Pots",
+      "23"
+    ]
+  ],
+  "objectives": [],
+  "tables": [],
+  "resistances": [
+    [
+      "Nester",
+      "28%"
+    ],
+    [
+      "Pollinator",
+      "21%"
+    ],
+    [
+      "Sentinel",
+      "21%"
+    ],
+    [
+      "Sprout",
+      "17%"
+    ],
+    [
+      "Seedling",
+      "14%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "Enchanter",
+      "href": "/2/enemies/enchanter"
+    },
+    {
+      "name": "Geomancer",
+      "href": "/2/enemies/geomancer"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Ravager",
+      "href": "/2/enemies/ravager"
+    },
+    {
+      "name": "Royal Guard",
+      "href": "/2/enemies/royal-guard"
+    },
+    {
+      "name": "Soul Corrupted Enchanter",
+      "href": "/2/enemies/soul-corrupted-enchanter"
+    },
+    {
+      "name": "Soul Corrupted Geomancer",
+      "href": "/2/enemies/soul-corrupted-geomancer"
+    },
+    {
+      "name": "Soul Corrupted Pillager",
+      "href": "/2/enemies/soul-corrupted-pillager"
+    },
+    {
+      "name": "Soul Corrupted Ravager",
+      "href": "/2/enemies/soul-corrupted-ravager"
+    },
+    {
+      "name": "Soul Corrupted Royal Guard",
+      "href": "/2/enemies/soul-corrupted-royal-guard"
+    },
+    {
+      "name": "Soul Corrupted Vindicator",
+      "href": "/2/enemies/soul-corrupted-vindicator"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/white-tower"
+}

@@ -1,0 +1,79 @@
+{
+  "parameters": [
+    [
+      "Level",
+      "26"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "Wading Rainy Plains"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "550"
+    ],
+    [
+      "Emeralds",
+      "5 to 90, 15 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Track down the illagers",
+      "map": "/2/map#p=5529,5868"
+    },
+    {
+      "text": "Defeat the illagers",
+      "map": ""
+    },
+    {
+      "text": "Pick up the soul block",
+      "map": "/2/map#p=5548,5845"
+    },
+    {
+      "text": "Return to the Echo Golem",
+      "map": "/2/map#p=5002,5949"
+    },
+    {
+      "text": "Place the soul block",
+      "map": "/2/map#p=4978,5934"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "on the map",
+      "href": "/2/map#m=quest-CT_S04_A"
+    },
+    {
+      "name": "Wading Rainy Plains",
+      "href": "/2/quests/wading-rainy-plains"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5529,5868"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5548,5845"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5002,5949"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4978,5934"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/the-rusting-golem"
+}

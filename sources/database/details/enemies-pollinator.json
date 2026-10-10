@@ -1,0 +1,88 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "40"
+    ],
+    [
+      "Top hit",
+      "12"
+    ],
+    [
+      "Poise",
+      "60"
+    ],
+    [
+      "Souls",
+      "8"
+    ],
+    [
+      "Speed",
+      "200"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Tongue jab",
+          "6",
+          "none",
+          "Physical",
+          ""
+        ],
+        [
+          "Seed shell burst",
+          "12",
+          "none",
+          "Physical",
+          ""
+        ],
+        [
+          "Goo puddle",
+          "2% max health",
+          "none",
+          "Physical",
+          ""
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Elemental damage",
+      "+25%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "Humbler Huskland",
+      "href": "/2/locations/humbler-huskland"
+    },
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    },
+    {
+      "name": "Sift rifts",
+      "href": "/2/locations/sift-rifts"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/pollinator"
+}

@@ -1,0 +1,60 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "233"
+    ],
+    [
+      "Top hit",
+      "10"
+    ],
+    [
+      "Poise",
+      "233"
+    ],
+    [
+      "Souls",
+      "50"
+    ],
+    [
+      "Speed",
+      "400"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Ranged attack",
+          "8",
+          "none",
+          "Physical",
+          "0.5 sec"
+        ],
+        [
+          "Retreat shot",
+          "10",
+          "none",
+          "Physical",
+          "0.5 sec"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Poison damage",
+      "+50%"
+    ]
+  ],
+  "links": [],
+  "source": "https://www.dungeons.tools/2/enemies/soul-corrupted-roamroot"
+}

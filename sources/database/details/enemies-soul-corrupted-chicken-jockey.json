@@ -1,0 +1,69 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "200"
+    ],
+    [
+      "Top hit",
+      "15"
+    ],
+    [
+      "Poise",
+      "200"
+    ],
+    [
+      "Souls",
+      "50"
+    ],
+    [
+      "Speed",
+      "820"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Light attack",
+          "15",
+          "none",
+          "Physical",
+          "0.3 sec"
+        ],
+        [
+          "Peck combo",
+          "7 ×3",
+          "none",
+          "Physical",
+          "3 sec"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Blast damage",
+      "+50%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/soul-corrupted-chicken-jockey"
+}

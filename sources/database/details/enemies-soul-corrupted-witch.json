@@ -1,0 +1,170 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "1,200"
+    ],
+    [
+      "Top hit",
+      "15"
+    ],
+    [
+      "Poise",
+      "700"
+    ],
+    [
+      "Souls",
+      "50"
+    ],
+    [
+      "Speed",
+      "550"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Where you fight it",
+      "columns": [
+        "WHEN",
+        "QUEST",
+        "WHERE"
+      ],
+      "rows": [
+        [
+          "Story quest",
+          "Corruption in the Woods",
+          "Howling Woods"
+        ],
+        [
+          "Rematch",
+          "The Witch Revived",
+          "Howling Woods"
+        ]
+      ]
+    },
+    {
+      "title": "Moves",
+      "columns": [
+        "MOVE",
+        "WHAT IT DOES",
+        "DAMAGE",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "Poison potion",
+          "She lobs three poison bottles 0.6 seconds apart across a 90-degree fan, and each one leaves a cloud that lasts 8 seconds and Poisons anyone inside. Keep moving through the volley and don't fight inside the clouds.",
+          "3",
+          "Poison"
+        ],
+        [
+          "Damage potion",
+          "She winds up for about a second, then throws a single flask that bursts where it lands, dealing Blast damage around the impact and knocking you back hard. It's the throw she uses from farthest away, so sidestep when she winds up rather than backing off.",
+          "15",
+          "Blast"
+        ],
+        [
+          "Slime bucket",
+          "A long bucket swing splashes four or five slimes out in a line in front of her, with up to eight alive at once and no more than one swing every 30 seconds. Melee hits these slimes 25% harder, so cut through them before they surround you.",
+          "",
+          ""
+        ],
+        [
+          "Cave Spider summon",
+          "When the slime bucket finishes, two or three Cave Spiders appear around her, with no more than five at a time. They're faster than she is and take double Lightning damage, so a Lightning hit clears them quickly.",
+          "",
+          ""
+        ],
+        [
+          "Self heal potion",
+          "Once she drops below 60% health she stops to drink a potion that heals her over 10 seconds, and she can only do it once every two minutes. The drink takes 2.6 seconds, a clean window to hit her.",
+          "",
+          ""
+        ],
+        [
+          "Invisibility",
+          "If you get close while her flee is ready, she throws down an invisibility potion and becomes untargetable until she finishes fleeing or 10 seconds pass. She can't throw potions or use the slime bucket while invisible.",
+          "",
+          ""
+        ],
+        [
+          "Flee",
+          "Straight after turning invisible she runs for a flee point in the arena at double speed and can't be knocked back until she gets there, at most once every 10 seconds. Chasing her rarely pays, so spend that time on the slimes and spiders.",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "DAMAGE",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Boss fight",
+          "1,200",
+          "15",
+          "700",
+          "50"
+        ],
+        [
+          "Base",
+          "800",
+          "15",
+          "800",
+          "50"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Blast damage",
+      "+15%"
+    ],
+    [
+      "Elemental damage",
+      "-25%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Cave Spider",
+      "href": "/2/enemies/cave-spider"
+    },
+    {
+      "name": "Slime",
+      "href": "/2/enemies/slime"
+    },
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    },
+    {
+      "name": "The Deep Dark",
+      "href": "/2/locations/the-deep-dark"
+    },
+    {
+      "name": "Deep Dark dungeons",
+      "href": "/2/locations/deep-dark-dungeons"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/soul-corrupted-witch"
+}

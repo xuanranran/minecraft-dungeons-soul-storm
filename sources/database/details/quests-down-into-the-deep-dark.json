@@ -1,0 +1,131 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Howling Woods"
+    ],
+    [
+      "Level",
+      "14, then 16 from objective 9"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "Corruption in the Woods"
+    ],
+    [
+      "Opens",
+      "The Missing Note Blocks and The Twisted Warden Revived"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "4,180"
+    ],
+    [
+      "Emeralds",
+      "15 to 270, 109 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Enter the Deep Dark",
+      "map": ""
+    },
+    {
+      "text": "Traverse the caves",
+      "map": ""
+    },
+    {
+      "text": "Get past the illager defences",
+      "map": ""
+    },
+    {
+      "text": "Continue searching the caves",
+      "map": ""
+    },
+    {
+      "text": "Navigate the amethyst geode",
+      "map": ""
+    },
+    {
+      "text": "Descend the abyss",
+      "map": ""
+    },
+    {
+      "text": "Defeat the warden",
+      "map": ""
+    },
+    {
+      "text": "Delve deeper...",
+      "map": ""
+    },
+    {
+      "text": "Open the gate level 16",
+      "map": ""
+    },
+    {
+      "text": "Defeat the Twisted Warden",
+      "map": ""
+    },
+    {
+      "text": "Check on the trapped Echo Golem",
+      "map": ""
+    },
+    {
+      "text": "Rescue the Echo Golem",
+      "map": ""
+    },
+    {
+      "text": "Follow the Echo Golem restarts if you quit",
+      "map": ""
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map#m=quest-CA03"
+    },
+    {
+      "name": "Corruption in the Woods",
+      "href": "/2/quests/corruption-in-the-woods"
+    },
+    {
+      "name": "The Missing Note Blocks",
+      "href": "/2/quests/the-missing-note-blocks"
+    },
+    {
+      "name": "The Twisted Warden Revived",
+      "href": "/2/quests/the-twisted-warden-revived"
+    },
+    {
+      "name": "Twisted Warden",
+      "href": "/2/enemies/twisted-warden"
+    },
+    {
+      "name": "Warden",
+      "href": "/2/enemies/warden"
+    },
+    {
+      "name": "Twisted Warden Vest",
+      "href": "/2/armor/twisted-warden-vest"
+    },
+    {
+      "name": "Twisted Tooth",
+      "href": "/2/artifacts/twisted-tooth"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/down-into-the-deep-dark"
+}

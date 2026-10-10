@@ -1,0 +1,84 @@
+{
+  "parameters": [
+    [
+      "Region",
+      "Humbler Huskland"
+    ],
+    [
+      "Entrances",
+      "6"
+    ],
+    [
+      "Fancy chests",
+      "3"
+    ],
+    [
+      "Pots",
+      "6"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Opens once you finish \"Bring the tuners to the gate\" in Wrath of the Sculkers",
+      "map": "/2/map/the-sift#p=2611,5466"
+    }
+  ],
+  "tables": [],
+  "resistances": [
+    [
+      "Stalker",
+      "28%"
+    ],
+    [
+      "Fusefly",
+      "25%"
+    ],
+    [
+      "Hurler",
+      "25%"
+    ],
+    [
+      "Scavenger",
+      "19%"
+    ],
+    [
+      "Hunter",
+      "2%"
+    ],
+    [
+      "Trapper",
+      "1%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Humbler Huskland",
+      "href": "/2/locations/humbler-huskland"
+    },
+    {
+      "name": "Wrath of the Sculkers",
+      "href": "/2/quests/wrath-of-the-sculkers"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=2611,5466"
+    },
+    {
+      "name": "Soul Corrupted Hunter",
+      "href": "/2/enemies/soul-corrupted-hunter"
+    },
+    {
+      "name": "Soul Corrupted Scavenger",
+      "href": "/2/enemies/soul-corrupted-scavenger"
+    },
+    {
+      "name": "Soul Corrupted Stalker",
+      "href": "/2/enemies/soul-corrupted-stalker"
+    },
+    {
+      "name": "Soul Corrupted Trapper",
+      "href": "/2/enemies/soul-corrupted-trapper"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/humbler-husk"
+}

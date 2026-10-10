@@ -1,0 +1,295 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Rainy Plains"
+    ],
+    [
+      "Level",
+      "21"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "The Missing Note Blocks"
+    ],
+    [
+      "Opens",
+      "The Rusting Golem, Hiking Frozen Highlands, The Copper Monstrosity Revived, Recycling Your Monstrosity, Wildflower Warrior and Illegal Illager Trials"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "2,750"
+    ],
+    [
+      "Emeralds",
+      "12 to 216, 75 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Return to Woodcutter's Outpost",
+      "map": "/2/map#p=5118,4448"
+    },
+    {
+      "text": "Speak to the Villager",
+      "map": "/2/map#p=5120,4449"
+    },
+    {
+      "text": "Find Puddle Pond Village",
+      "map": "/2/map#p=5063,5628"
+    },
+    {
+      "text": "Ask around for information",
+      "map": "/2/map#p=4416,5645"
+    },
+    {
+      "text": "Speak to the Inventor",
+      "map": "/2/map#p=4558,5798"
+    },
+    {
+      "text": "Find the first bridge",
+      "map": "/2/map#p=4629,6025"
+    },
+    {
+      "text": "Place the ichor core",
+      "map": "/2/map#p=4603,6019"
+    },
+    {
+      "text": "Cross the bridge",
+      "map": "/2/map#p=4652,6229"
+    },
+    {
+      "text": "Find the White Tower's ichor core",
+      "map": "/2/map#p=4710,6678"
+    },
+    {
+      "text": "Find the bridge to the Orange Tower",
+      "map": "/2/map#p=4806,7119"
+    },
+    {
+      "text": "Place the ichor core",
+      "map": "/2/map#p=4808,7117"
+    },
+    {
+      "text": "Find the Orange Tower's ichor core",
+      "map": ""
+    },
+    {
+      "text": "Find the bridge to the Red Tower",
+      "map": "/2/map#p=5249,7132"
+    },
+    {
+      "text": "Place the ichor core",
+      "map": "/2/map#p=5248,7132"
+    },
+    {
+      "text": "Find the Red Tower's ichor core",
+      "map": ""
+    },
+    {
+      "text": "Find the bridge to the Supreme Evoker's Tower",
+      "map": "/2/map#p=4956,6354"
+    },
+    {
+      "text": "Place the ichor core",
+      "map": "/2/map#p=4961,6354"
+    },
+    {
+      "text": "Reach the Supreme Evoker's Tower",
+      "map": "/2/map#p=4961,6678"
+    },
+    {
+      "text": "Enter the Supreme Evoker's Tower",
+      "map": "/2/map#p=1830,6157"
+    },
+    {
+      "text": "Search for the Supreme Evoker",
+      "map": "/2/map#p=1738,6165"
+    },
+    {
+      "text": "Defeat the ambush",
+      "map": ""
+    },
+    {
+      "text": "Check on the Villager restarts if you quit",
+      "map": "/2/map#p=1764,6157"
+    },
+    {
+      "text": "Go after the Supreme Evoker",
+      "map": "/2/map#p=2977,6195"
+    },
+    {
+      "text": "Investigate the copper",
+      "map": "/2/map#p=3100,6187"
+    },
+    {
+      "text": "Defeat the Copper Monstrosity restarts if you quit",
+      "map": ""
+    },
+    {
+      "text": "Search for the note block",
+      "map": ""
+    },
+    {
+      "text": "Collect the note block",
+      "map": ""
+    },
+    {
+      "text": "Return to Puddle Pond Village",
+      "map": "/2/map#p=4424,5693"
+    },
+    {
+      "text": "Speak to the Villager",
+      "map": "/2/map#p=4416,5645"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map#m=quest-CA07"
+    },
+    {
+      "name": "The Missing Note Blocks",
+      "href": "/2/quests/the-missing-note-blocks"
+    },
+    {
+      "name": "The Rusting Golem",
+      "href": "/2/quests/the-rusting-golem"
+    },
+    {
+      "name": "Hiking Frozen Highlands",
+      "href": "/2/quests/hiking-frozen-highlands"
+    },
+    {
+      "name": "The Copper Monstrosity Revived",
+      "href": "/2/quests/the-copper-monstrosity-revived"
+    },
+    {
+      "name": "Recycling Your Monstrosity",
+      "href": "/2/quests/recycling-your-monstrosity"
+    },
+    {
+      "name": "Wildflower Warrior",
+      "href": "/2/quests/wildflower-warrior"
+    },
+    {
+      "name": "Illegal Illager Trials",
+      "href": "/2/quests/illegal-illager-trials"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5118,4448"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5120,4449"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5063,5628"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4416,5645"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4558,5798"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4629,6025"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4603,6019"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4652,6229"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4710,6678"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4806,7119"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4808,7117"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5249,7132"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5248,7132"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4956,6354"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4961,6354"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4961,6678"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=1830,6157"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=1738,6165"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=1764,6157"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2977,6195"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3100,6187"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4424,5693"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4416,5645"
+    },
+    {
+      "name": "Copper Monstrosity",
+      "href": "/2/enemies/copper-monstrosity"
+    },
+    {
+      "name": "Scythe",
+      "href": "/2/weapons/scythe"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/wading-rainy-plains"
+}

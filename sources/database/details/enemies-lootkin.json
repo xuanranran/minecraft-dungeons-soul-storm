@@ -1,0 +1,21 @@
+{
+  "parameters": [
+    [
+      "Speed",
+      "200"
+    ]
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/lootkin"
+}

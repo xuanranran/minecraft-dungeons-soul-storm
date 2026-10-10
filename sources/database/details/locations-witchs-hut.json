@@ -1,0 +1,39 @@
+{
+  "parameters": [
+    [
+      "Region",
+      "Howling Woods"
+    ],
+    [
+      "Entrances",
+      "1"
+    ],
+    [
+      "Fancy chests",
+      "1"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Opens once you finish \"Defeat the Witch\" in Corruption in the Woods",
+      "map": "/2/map#p=3669,3469"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Corruption in the Woods",
+      "href": "/2/quests/corruption-in-the-woods"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3669,3469"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/witchs-hut"
+}

@@ -1,0 +1,199 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Humbler Huskland"
+    ],
+    [
+      "Level",
+      "36, then 40 from objective 12"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "A Monstrosity in the Meadow"
+    ],
+    [
+      "Opens",
+      "Breaking Camps, A Dip in Ichor Springs and The Final Souldown"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "4,180"
+    ],
+    [
+      "Emeralds",
+      "15 to 270, 109 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Bring the tuners to the gate restarts if you quit",
+      "map": ""
+    },
+    {
+      "text": "Reach the Echo Den",
+      "map": ""
+    },
+    {
+      "text": "Speak to the Echo Golem",
+      "map": "/2/map/the-sift#p=3031,5577"
+    },
+    {
+      "text": "Free the captured tuners any orderDefeat Vindicator, Pillager, Stalker and Scavenger",
+      "map": ""
+    },
+    {
+      "text": "Pass the musical gate",
+      "map": "/2/map/the-sift#p=3733,5350"
+    },
+    {
+      "text": "Find the passage to Lullaby Hills",
+      "map": "/2/map/the-sift#p=4263,5141"
+    },
+    {
+      "text": "Speak to the Echo Golem",
+      "map": "/2/map/the-sift#p=4280,5142"
+    },
+    {
+      "text": "Find the ichor cores",
+      "map": "/2/map/the-sift#p=4419,5064"
+    },
+    {
+      "text": "Defeat the ambush",
+      "map": ""
+    },
+    {
+      "text": "Enter the sculker nest",
+      "map": ""
+    },
+    {
+      "text": "Search the sculker nest",
+      "map": ""
+    },
+    {
+      "text": "Defeat the Monarch level 40",
+      "map": ""
+    },
+    {
+      "text": "Find the ichor cores",
+      "map": ""
+    },
+    {
+      "text": "Collect the ichor cores any order",
+      "map": ""
+    },
+    {
+      "text": "Return to the Echo Golem",
+      "map": "/2/map/the-sift#p=4263,5141"
+    },
+    {
+      "text": "Place the ichor core any order",
+      "map": ""
+    },
+    {
+      "text": "Find the Golem's friend",
+      "map": ""
+    },
+    {
+      "text": "Speak to the Echo Golem",
+      "map": "/2/map/the-sift#p=4577,5325"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Humbler Huskland",
+      "href": "/2/locations/humbler-huskland"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map/the-sift#m=quest-CA09"
+    },
+    {
+      "name": "A Monstrosity in the Meadow",
+      "href": "/2/quests/a-monstrosity-in-the-meadow"
+    },
+    {
+      "name": "Breaking Camps",
+      "href": "/2/quests/breaking-camps"
+    },
+    {
+      "name": "A Dip in Ichor Springs",
+      "href": "/2/quests/a-dip-in-ichor-springs"
+    },
+    {
+      "name": "The Final Souldown",
+      "href": "/2/quests/the-final-souldown"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=3031,5577"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Stalker",
+      "href": "/2/enemies/stalker"
+    },
+    {
+      "name": "Scavenger",
+      "href": "/2/enemies/scavenger"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=3733,5350"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=4263,5141"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=4280,5142"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=4419,5064"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=4263,5141"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=4577,5325"
+    },
+    {
+      "name": "Monarch",
+      "href": "/2/enemies/monarch"
+    },
+    {
+      "name": "Echo Ocarina",
+      "href": "/2/artifacts/echo-ocarina"
+    },
+    {
+      "name": "Shortbow",
+      "href": "/2/weapons/shortbow"
+    },
+    {
+      "name": "The Eye of Experience",
+      "href": "/2/artifacts/the-eye-of-experience"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/wrath-of-the-sculkers"
+}

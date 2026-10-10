@@ -1,0 +1,79 @@
+{
+  "parameters": [
+    [
+      "Level",
+      "17"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "The Missing Note Blocks"
+    ],
+    [
+      "Repeatable",
+      "Yes"
+    ],
+    [
+      "XP",
+      "550 the first time, 500 after that"
+    ],
+    [
+      "Emeralds",
+      "5 to 90, 15 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Track down the illagers",
+      "map": "/2/map#p=4816,3757"
+    },
+    {
+      "text": "Defeat the illagers",
+      "map": ""
+    },
+    {
+      "text": "Pick up the soul block",
+      "map": "/2/map#p=4908,3704"
+    },
+    {
+      "text": "Return to the Echo Golem",
+      "map": "/2/map#p=4797,4155"
+    },
+    {
+      "text": "Place the soul block",
+      "map": "/2/map#p=4834,4143"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "on the map",
+      "href": "/2/map#m=quest-CT_S01_A"
+    },
+    {
+      "name": "The Missing Note Blocks",
+      "href": "/2/quests/the-missing-note-blocks"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4816,3757"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4908,3704"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4797,4155"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4834,4143"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/the-trembling-golem"
+}

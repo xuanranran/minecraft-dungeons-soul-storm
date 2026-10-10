@@ -1,0 +1,183 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "330"
+    ],
+    [
+      "Top hit",
+      "25"
+    ],
+    [
+      "Poise",
+      "133"
+    ],
+    [
+      "Souls",
+      "50"
+    ],
+    [
+      "Speed",
+      "450"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Where you fight it",
+      "columns": [
+        "WHEN",
+        "QUEST",
+        "WHERE"
+      ],
+      "rows": [
+        [
+          "Story quest, possible",
+          "The Illagers from the Rift",
+          "Singer's Meadow"
+        ],
+        [
+          "Story quest",
+          "The Lost Merchant",
+          "Honeycomb Fields"
+        ],
+        [
+          "Story quest, possible",
+          "The Silence in Little Howl",
+          "Howling Woods"
+        ],
+        [
+          "Story quest, possible",
+          "Hiking Frozen Highlands",
+          "Frozen Highlands"
+        ],
+        [
+          "Story quest, possible",
+          "Wading Rainy Plains",
+          "Rainy Plains"
+        ],
+        [
+          "Story quest, possible",
+          "Lost Harmonies",
+          "Singer's Meadow"
+        ],
+        [
+          "Story quest",
+          "A Monstrosity in the Meadow",
+          "Singer's Meadow"
+        ],
+        [
+          "Story quest, possible",
+          "Wrath of the Sculkers",
+          "Humbler Huskland"
+        ],
+        [
+          "Side quest",
+          "Illager Intelligence",
+          "Frozen Highlands"
+        ],
+        [
+          "Side quest",
+          "Gone Fishing",
+          "Frozen Highlands"
+        ],
+        [
+          "Side quest",
+          "A Friend till the End",
+          "Lullaby Hills"
+        ],
+        [
+          "Side quest",
+          "Lonesome in Lullaby Hills",
+          "Lullaby Hills"
+        ],
+        [
+          "Side quest, possible",
+          "The Creeper Candle Conspiracy",
+          "Honeycomb Fields"
+        ],
+        [
+          "Side quest",
+          "Illegal Illager Trials",
+          "Rainy Plains"
+        ],
+        [
+          "Dungeon room, possible",
+          "Inside the procedural dungeon",
+          "Sift rifts"
+        ],
+        [
+          "Ambush arena",
+          "No quest needed",
+          "Lullaby Hills"
+        ]
+      ]
+    },
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Punch",
+          "12",
+          "none",
+          "Physical",
+          "0.5 sec"
+        ],
+        [
+          "Exploding pillars",
+          "25",
+          "none",
+          "Blast",
+          ""
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Blast damage",
+      "+50%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    },
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "Humbler Huskland",
+      "href": "/2/locations/humbler-huskland"
+    },
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    },
+    {
+      "name": "Sift rifts",
+      "href": "/2/locations/sift-rifts"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/soul-corrupted-geomancer"
+}

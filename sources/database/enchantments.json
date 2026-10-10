@@ -1,0 +1,2360 @@
+{
+  "source": "https://www.dungeons.tools/2/enchantments",
+  "captured_at": "2026-10-10",
+  "rows": [
+    {
+      "name": "Ancient Alchemy",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/ancient-alchemy",
+      "image": "/images/d2/icons/enchantments/ancient-alchemy.png",
+      "values": [
+        [
+          "GOES ON",
+          "Boots, Chest, Helmet, Leggings"
+        ],
+        [
+          "WHAT IT DOES",
+          "Potion usage grants 30 souls."
+        ]
+      ],
+      "tip": {
+        "n": "Ancient Alchemy",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/ancient-alchemy.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Potion usage grants 30 souls.",
+          "Tier II: Potion usage grants 45 souls.",
+          "Tier III: Potion usage grants 60 souls."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Using health potion also grants additional souls. Allows potion to be used even at full health.",
+        "e": [
+          {
+            "x": "Tier I: Potion usage grants 30 souls.",
+            "i": "/images/d2/icons/enchantments/ancient-alchemy.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Potion usage grants 45 souls.",
+            "i": "/images/d2/icons/enchantments/ancient-alchemy.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Potion usage grants 60 souls.",
+            "i": "/images/d2/icons/enchantments/ancient-alchemy.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Artifact Amplifier",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/artifact-amplifier",
+      "image": "/images/d2/icons/enchantments/artifact-amplifier.png",
+      "values": [
+        [
+          "GOES ON",
+          "Boots, Chest, Helmet, Leggings"
+        ],
+        [
+          "WHAT IT DOES",
+          "Artifact usage improves artifact cooldown and damage for 6 seconds."
+        ]
+      ],
+      "tip": {
+        "n": "Artifact Amplifier",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/artifact-amplifier.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Artifact usage improves artifact cooldown and damage for 6 seconds.",
+          "Tier II: Artifact usage improves artifact cooldown and damage for 7.5 seconds.",
+          "Tier III: Artifact usage improves artifact cooldown and damage for 9 seconds."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Using an artifact grants the Artificing status, decreasing artifact cooldown while increasing artifact damage and soul gathering.",
+        "e": [
+          {
+            "x": "Tier I: Artifact usage improves artifact cooldown and damage for 6 seconds.",
+            "i": "/images/d2/icons/enchantments/artifact-amplifier.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Artifact usage improves artifact cooldown and damage for 7.5 seconds.",
+            "i": "/images/d2/icons/enchantments/artifact-amplifier.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Artifact usage improves artifact cooldown and damage for 9 seconds.",
+            "i": "/images/d2/icons/enchantments/artifact-amplifier.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Artificing",
+      "sub": "Positive status",
+      "href": "/2/enchantments/artificing",
+      "image": "/images/d2/icons/statuses/artificing.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Artifact damage and soul gathering are increased, and artifact cooldown is reduced."
+        ]
+      ],
+      "tip": {
+        "n": "Artificing",
+        "k": "Positive status",
+        "i": "/images/d2/icons/statuses/artificing.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Artifact damage and soul gathering are increased, and artifact cooldown is reduced."
+        ]
+      }
+    },
+    {
+      "name": "Barrier Brew",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/barrier-brew",
+      "image": "/images/d2/icons/enchantments/barrier-brew.png",
+      "values": [
+        [
+          "GOES ON",
+          "Boots, Chest, Helmet, Leggings"
+        ],
+        [
+          "WHAT IT DOES",
+          "Potion usage creates a Fortifying well for allies lasting 2 seconds."
+        ]
+      ],
+      "tip": {
+        "n": "Barrier Brew",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/barrier-brew.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Potion usage creates a Fortifying well for allies lasting 2 seconds.",
+          "Tier II: Potion usage creates a Fortifying well for allies lasting 4 seconds.",
+          "Tier III: Potion usage creates a Fortifying well for allies lasting 6 seconds."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Using health potion creates a well that grants you and your allies the Fortifying status, protecting you from enemies. Allows potion to be used even at full health.",
+        "e": [
+          {
+            "x": "Tier I: Potion usage creates a Fortifying well for allies lasting 2 seconds.",
+            "i": "/images/d2/icons/enchantments/barrier-brew.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier II: Potion usage creates a Fortifying well for allies lasting 4 seconds.",
+            "i": "/images/d2/icons/enchantments/barrier-brew.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier III: Potion usage creates a Fortifying well for allies lasting 6 seconds.",
+            "i": "/images/d2/icons/enchantments/barrier-brew.png",
+            "c": "defensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Blaze Bangle",
+      "sub": "Positive status",
+      "href": "/2/enchantments/blaze-bangle",
+      "image": "/images/d2/icons/statuses/blaze-bangle.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Melee attacks deal additional Fire damage."
+        ]
+      ],
+      "tip": {
+        "n": "Blaze Bangle",
+        "k": "Positive status",
+        "i": "/images/d2/icons/statuses/blaze-bangle.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Melee attacks deal additional Fire damage."
+        ]
+      }
+    },
+    {
+      "name": "Blight Bangle",
+      "sub": "Positive status",
+      "href": "/2/enchantments/blight-bangle",
+      "image": "/images/d2/icons/statuses/blight-bangle.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Melee attacks deal additional Poison damage."
+        ]
+      ],
+      "tip": {
+        "n": "Blight Bangle",
+        "k": "Positive status",
+        "i": "/images/d2/icons/statuses/blight-bangle.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Melee attacks deal additional Poison damage."
+        ]
+      }
+    },
+    {
+      "name": "Blizzard Bangle",
+      "sub": "Positive status",
+      "href": "/2/enchantments/blizzard-bangle",
+      "image": "/images/d2/icons/statuses/blizzard-bangle.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Melee attacks deal additional Frost damage."
+        ]
+      ],
+      "tip": {
+        "n": "Blizzard Bangle",
+        "k": "Positive status",
+        "i": "/images/d2/icons/statuses/blizzard-bangle.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Melee attacks deal additional Frost damage."
+        ]
+      }
+    },
+    {
+      "name": "Bottomless Brew",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/bottomless-brew",
+      "image": "/images/d2/icons/enchantments/bottomless-brew.png",
+      "values": [
+        [
+          "GOES ON",
+          "Chest"
+        ],
+        [
+          "WHAT IT DOES",
+          "Grants 1 additional health potions."
+        ]
+      ],
+      "tip": {
+        "n": "Bottomless Brew",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/bottomless-brew.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Grants 1 additional health potions.",
+          "Tier II: Grants 2 additional health potions.",
+          "Tier III: Grants 3 additional health potions."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Grants additional uses of health potion.",
+        "e": [
+          {
+            "x": "Tier I: Grants 1 additional health potions.",
+            "i": "/images/d2/icons/enchantments/bottomless-brew.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Grants 2 additional health potions.",
+            "i": "/images/d2/icons/enchantments/bottomless-brew.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Grants 3 additional health potions.",
+            "i": "/images/d2/icons/enchantments/bottomless-brew.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Buddy Brew",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/buddy-brew",
+      "image": "/images/d2/icons/enchantments/buddy-brew.png",
+      "values": [
+        [
+          "GOES ON",
+          "Boots, Chest, Helmet, Leggings"
+        ],
+        [
+          "WHAT IT DOES",
+          "Potion usage creates a Regenerating well for allies lasting 2 seconds."
+        ]
+      ],
+      "tip": {
+        "n": "Buddy Brew",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/buddy-brew.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Potion usage creates a Regenerating well for allies lasting 2 seconds.",
+          "Tier II: Potion usage creates a Regenerating well for allies lasting 4 seconds.",
+          "Tier III: Potion usage creates a Regenerating well for allies lasting 6 seconds."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Using health potion creates a well that grants you and your allies the Regenerating status, restoring your health. Allows potion to be used even at full health.",
+        "e": [
+          {
+            "x": "Tier I: Potion usage creates a Regenerating well for allies lasting 2 seconds.",
+            "i": "/images/d2/icons/enchantments/buddy-brew.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Potion usage creates a Regenerating well for allies lasting 4 seconds.",
+            "i": "/images/d2/icons/enchantments/buddy-brew.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Potion usage creates a Regenerating well for allies lasting 6 seconds.",
+            "i": "/images/d2/icons/enchantments/buddy-brew.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Burned",
+      "sub": "Negative status",
+      "href": "/2/enchantments/burned",
+      "image": "/images/d2/icons/statuses/burned.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Fire damage is being taken over time."
+        ]
+      ],
+      "tip": {
+        "n": "Burned",
+        "k": "Negative status",
+        "i": "/images/d2/icons/statuses/burned.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Fire damage is being taken over time."
+        ]
+      }
+    },
+    {
+      "name": "Chain Reaction",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/chain-reaction",
+      "image": "/images/d2/icons/enchantments/chain-reaction.png",
+      "values": [
+        [
+          "GOES ON",
+          "Ranged weapon"
+        ],
+        [
+          "WHAT IT DOES",
+          "Projectiles have a 20% chance to spawn 4 additional projectiles."
+        ]
+      ],
+      "tip": {
+        "n": "Chain Reaction",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/chain-reaction.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Projectiles have a 20% chance to spawn 4 additional projectiles.",
+          "Tier II: Projectiles have a 30% chance to spawn 6 additional projectiles.",
+          "Tier III: Projectiles have a 40% chance to spawn 8 additional projectiles."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Successful ranged hits have a chance to fire off additional projectiles at nearby enemies.",
+        "e": [
+          {
+            "x": "Tier I: Projectiles have a 20% chance to spawn 4 additional projectiles.",
+            "i": "/images/d2/icons/enchantments/chain-reaction.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Projectiles have a 30% chance to spawn 6 additional projectiles.",
+            "i": "/images/d2/icons/enchantments/chain-reaction.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Projectiles have a 40% chance to spawn 8 additional projectiles.",
+            "i": "/images/d2/icons/enchantments/chain-reaction.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Chained",
+      "sub": "Negative status",
+      "href": "/2/enchantments/chained",
+      "image": "/images/d2/icons/statuses/chained.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Movement is completely disabled and can spread to multiple targets within range."
+        ]
+      ],
+      "tip": {
+        "n": "Chained",
+        "k": "Negative status",
+        "i": "/images/d2/icons/statuses/chained.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Movement is completely disabled and can spread to multiple targets within range."
+        ]
+      }
+    },
+    {
+      "name": "Cow Stampede",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/cow-stampede",
+      "image": "/images/d2/icons/enchantments/cow-stampede.png",
+      "values": [
+        [
+          "GOES ON",
+          "Boots, Chest, Helmet, Leggings"
+        ],
+        [
+          "WHAT IT DOES",
+          "Slamming into enemies deals damage and knocks them back."
+        ]
+      ],
+      "tip": {
+        "n": "Cow Stampede",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/cow-stampede.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Slamming into enemies deals damage and knocks them back.",
+          "Tier II: Slamming into enemies deals damage and knocks them back.",
+          "Tier III: Slamming into enemies deals damage and knocks them back."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "After sprinting at full speed for a short time, slamming into enemies deals damage and knocks them out of your way.",
+        "e": [
+          {
+            "x": "Tier I: Slamming into enemies deals damage and knocks them back.",
+            "i": "/images/d2/icons/enchantments/cow-stampede.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Slamming into enemies deals damage and knocks them back.",
+            "i": "/images/d2/icons/enchantments/cow-stampede.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Slamming into enemies deals damage and knocks them back.",
+            "i": "/images/d2/icons/enchantments/cow-stampede.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Crash Landing",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/crash-landing",
+      "image": "/images/d2/icons/enchantments/crash-landing.png",
+      "values": [
+        [
+          "GOES ON",
+          "Melee weapon"
+        ],
+        [
+          "WHAT IT DOES",
+          "Jump attack landings deal 5% additional damage and increases knockback by 125%."
+        ]
+      ],
+      "tip": {
+        "n": "Crash Landing",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/crash-landing.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Jump attack landings deal 5% additional damage and increases knockback by 125%.",
+          "Tier II: Jump attack landings deal 5% additional damage and increases knockback by 175%.",
+          "Tier III: Jump attack landings deal 5% additional damage and increases knockback by 200%."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Jump attacks cause an impact that deals additional damage to nearby enemies and knocks them back.",
+        "e": [
+          {
+            "x": "Tier I: Jump attack landings deal 5% additional damage and increases knockback by 125%.",
+            "i": "/images/d2/icons/enchantments/crash-landing.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Jump attack landings deal 5% additional damage and increases knockback by 175%.",
+            "i": "/images/d2/icons/enchantments/crash-landing.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Jump attack landings deal 5% additional damage and increases knockback by 200%.",
+            "i": "/images/d2/icons/enchantments/crash-landing.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Critical Precision",
+      "sub": "Positive status",
+      "href": "/2/enchantments/critical-precision",
+      "image": "/images/d2/icons/statuses/critical-precision.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Attacks are guaranteed critical hits."
+        ]
+      ],
+      "tip": {
+        "n": "Critical Precision",
+        "k": "Positive status",
+        "i": "/images/d2/icons/statuses/critical-precision.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Attacks are guaranteed critical hits."
+        ]
+      }
+    },
+    {
+      "name": "Critical Quiver",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/critical-quiver",
+      "image": "/images/d2/icons/enchantments/critical-quiver.png",
+      "values": [
+        [
+          "GOES ON",
+          "Boots, Chest, Helmet, Leggings"
+        ],
+        [
+          "WHAT IT DOES",
+          "Critical hits restore 1 arrows."
+        ]
+      ],
+      "tip": {
+        "n": "Critical Quiver",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/critical-quiver.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Critical hits restore 1 arrows.",
+          "Tier II: Critical hits restore 3 arrows.",
+          "Tier III: Critical hits restore 5 arrows."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Critical hits restore arrows to your quiver.",
+        "e": [
+          {
+            "x": "Tier I: Critical hits restore 1 arrows.",
+            "i": "/images/d2/icons/enchantments/critical-quiver.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Critical hits restore 3 arrows.",
+            "i": "/images/d2/icons/enchantments/critical-quiver.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Critical hits restore 5 arrows.",
+            "i": "/images/d2/icons/enchantments/critical-quiver.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Critical Strength",
+      "sub": "Positive status",
+      "href": "/2/enchantments/critical-strength",
+      "image": "/images/d2/icons/statuses/critical-strength.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Critical hit damage is increased."
+        ]
+      ],
+      "tip": {
+        "n": "Critical Strength",
+        "k": "Positive status",
+        "i": "/images/d2/icons/statuses/critical-strength.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Critical hit damage is increased."
+        ]
+      }
+    },
+    {
+      "name": "Deathcap Mushroom",
+      "sub": "Positive status",
+      "href": "/2/enchantments/deathcap-mushroom",
+      "image": "/images/d2/icons/statuses/deathcap-mushroom.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Movement speed and melee attack speed are increased."
+        ]
+      ],
+      "tip": {
+        "n": "Deathcap Mushroom",
+        "k": "Positive status",
+        "i": "/images/d2/icons/statuses/deathcap-mushroom.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Movement speed and melee attack speed are increased."
+        ]
+      }
+    },
+    {
+      "name": "Deflection",
+      "sub": "Positive status",
+      "href": "/2/enchantments/deflection",
+      "image": "/images/d2/icons/statuses/deflection.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "All projectiles are being deflected."
+        ]
+      ],
+      "tip": {
+        "n": "Deflection",
+        "k": "Positive status",
+        "i": "/images/d2/icons/statuses/deflection.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "All projectiles are being deflected."
+        ]
+      }
+    },
+    {
+      "name": "Dynamo",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/dynamo",
+      "image": "/images/d2/icons/enchantments/dynamo.png",
+      "values": [
+        [
+          "GOES ON",
+          "Boots, Chest, Helmet, Leggings"
+        ],
+        [
+          "WHAT IT DOES",
+          "Rolling applies 20% damage amplification to your next melee or ranged attack."
+        ]
+      ],
+      "tip": {
+        "n": "Dynamo",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/dynamo.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Rolling applies 20% damage amplification to your next melee or ranged attack.",
+          "Tier II: Rolling applies 30% damage amplification to your next melee or ranged attack.",
+          "Tier III: Rolling applies 40% damage amplification to your next melee or ranged attack."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Rolling amplifies the damage of your next melee or ranged attack, stacking with each use.",
+        "e": [
+          {
+            "x": "Tier I: Rolling applies 20% damage amplification to your next melee or ranged attack.",
+            "i": "/images/d2/icons/enchantments/dynamo.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Rolling applies 30% damage amplification to your next melee or ranged attack.",
+            "i": "/images/d2/icons/enchantments/dynamo.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Rolling applies 40% damage amplification to your next melee or ranged attack.",
+            "i": "/images/d2/icons/enchantments/dynamo.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Electric Bangle",
+      "sub": "Positive status",
+      "href": "/2/enchantments/electric-bangle",
+      "image": "/images/d2/icons/statuses/electric-bangle.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Melee attacks deal additional Lightning damage."
+        ]
+      ],
+      "tip": {
+        "n": "Electric Bangle",
+        "k": "Positive status",
+        "i": "/images/d2/icons/statuses/electric-bangle.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Melee attacks deal additional Lightning damage."
+        ]
+      }
+    },
+    {
+      "name": "Ender Mines",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/ender-mines",
+      "image": "/images/d2/icons/enchantments/ender-mines.png",
+      "values": [
+        [
+          "GOES ON",
+          "Melee weapon, Ranged weapon"
+        ],
+        [
+          "WHAT IT DOES",
+          "Weapon attacks deploy 2 mines that explode in proximity to enemies or after a short time."
+        ]
+      ],
+      "tip": {
+        "n": "Ender Mines",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/ender-mines.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Weapon attacks deploy 2 mines that explode in proximity to enemies or after a short time.",
+          "Tier II: Weapon attacks deploy 3 mines that explode in proximity to enemies or after a short time.",
+          "Tier III: Weapon attacks deploy 4 mines that explode in proximity to enemies or after a short time."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Weapon attacks deploy End crystals that explode in proximity to enemies or after a short time.",
+        "e": [
+          {
+            "x": "Tier I: Weapon attacks deploy 2 mines that explode in proximity to enemies or after a short time.",
+            "i": "/images/d2/icons/enchantments/ender-mines.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Weapon attacks deploy 3 mines that explode in proximity to enemies or after a short time.",
+            "i": "/images/d2/icons/enchantments/ender-mines.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Weapon attacks deploy 4 mines that explode in proximity to enemies or after a short time.",
+            "i": "/images/d2/icons/enchantments/ender-mines.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ender Quiver",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/ender-quiver",
+      "image": "/images/d2/icons/enchantments/ender-quiver.png",
+      "values": [
+        [
+          "GOES ON",
+          "Boots, Chest, Helmet, Leggings"
+        ],
+        [
+          "WHAT IT DOES",
+          "Grants 2 additional arrows."
+        ]
+      ],
+      "tip": {
+        "n": "Ender Quiver",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/ender-quiver.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Grants 2 additional arrows.",
+          "Tier II: Grants 3 additional arrows.",
+          "Tier III: Grants 4 additional arrows."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Increases your maximum arrow capacity.",
+        "e": [
+          {
+            "x": "Tier I: Grants 2 additional arrows.",
+            "i": "/images/d2/icons/enchantments/ender-quiver.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Grants 3 additional arrows.",
+            "i": "/images/d2/icons/enchantments/ender-quiver.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Grants 4 additional arrows.",
+            "i": "/images/d2/icons/enchantments/ender-quiver.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fire Aspect",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/fire-aspect",
+      "image": "/images/d2/icons/enchantments/fire-aspect.png",
+      "values": [
+        [
+          "GOES ON",
+          "Melee weapon"
+        ],
+        [
+          "WHAT IT DOES",
+          "Wave deals 35% of weapon damage and sets mobs on fire for a short time."
+        ]
+      ],
+      "tip": {
+        "n": "Fire Aspect",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/fire-aspect.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Wave deals 35% of weapon damage and sets mobs on fire for a short time.",
+          "Tier II: Wave deals 45% of weapon damage and sets mobs on fire for a short time.",
+          "Tier III: Wave deals 50% of weapon damage and sets mobs on fire for a short time."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Jump attacks and final hits create a wave of fire that damages enemies and sets them on fire for a short time.",
+        "e": [
+          {
+            "x": "Tier I: Wave deals 35% of weapon damage and sets mobs on fire for a short time.",
+            "i": "/images/d2/icons/enchantments/fire-aspect.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Wave deals 45% of weapon damage and sets mobs on fire for a short time.",
+            "i": "/images/d2/icons/enchantments/fire-aspect.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Wave deals 50% of weapon damage and sets mobs on fire for a short time.",
+            "i": "/images/d2/icons/enchantments/fire-aspect.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Flurrying",
+      "sub": "Positive status",
+      "href": "/2/enchantments/flurrying",
+      "image": "/images/d2/icons/statuses/flurrying.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Melee and ranged attack speed is increased."
+        ]
+      ],
+      "tip": {
+        "n": "Flurrying",
+        "k": "Positive status",
+        "i": "/images/d2/icons/statuses/flurrying.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Melee and ranged attack speed is increased."
+        ]
+      }
+    },
+    {
+      "name": "Fortifying",
+      "sub": "Positive status",
+      "href": "/2/enchantments/fortifying",
+      "image": "/images/d2/icons/statuses/fortifying.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "All damage taken is reduced."
+        ]
+      ],
+      "tip": {
+        "n": "Fortifying",
+        "k": "Positive status",
+        "i": "/images/d2/icons/statuses/fortifying.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "All damage taken is reduced."
+        ]
+      }
+    },
+    {
+      "name": "Frost Crescent",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/frost-crescent",
+      "image": "/images/d2/icons/enchantments/frost-crescent.png",
+      "values": [
+        [
+          "GOES ON",
+          "Melee weapon"
+        ],
+        [
+          "WHAT IT DOES",
+          "Wave deals 10% of weapon damage and freezes mobs for a short time, slowing their attacks and movement."
+        ]
+      ],
+      "tip": {
+        "n": "Frost Crescent",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/frost-crescent.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Wave deals 10% of weapon damage and freezes mobs for a short time, slowing their attacks and movement.",
+          "Tier II: Wave deals 15% of weapon damage and freezes mobs for a short time, slowing their attacks and movement.",
+          "Tier III: Wave deals 20% of weapon damage and freezes mobs for a short time, slowing their attacks and movement."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Jump attacks and final hits create a wave of ice that damages enemies and freezes them for a short time, slowing their attacks and movement.",
+        "e": [
+          {
+            "x": "Tier I: Wave deals 10% of weapon damage and freezes mobs for a short time, slowing their attacks and movement.",
+            "i": "/images/d2/icons/enchantments/frost-crescent.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Wave deals 15% of weapon damage and freezes mobs for a short time, slowing their attacks and movement.",
+            "i": "/images/d2/icons/enchantments/frost-crescent.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Wave deals 20% of weapon damage and freezes mobs for a short time, slowing their attacks and movement.",
+            "i": "/images/d2/icons/enchantments/frost-crescent.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Frozen",
+      "sub": "Negative status",
+      "href": "/2/enchantments/frozen",
+      "image": "/images/d2/icons/statuses/frozen.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Attack speed and movement speed are reduced."
+        ]
+      ],
+      "tip": {
+        "n": "Frozen",
+        "k": "Negative status",
+        "i": "/images/d2/icons/statuses/frozen.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Attack speed and movement speed are reduced."
+        ]
+      }
+    },
+    {
+      "name": "Gravity Pulse",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/gravity-pulse",
+      "image": "/images/d2/icons/enchantments/gravity-pulse.png",
+      "values": [
+        [
+          "GOES ON",
+          "Boots, Chest, Helmet, Leggings"
+        ],
+        [
+          "WHAT IT DOES",
+          "Using an artifact pulls all nearby enemies toward you."
+        ]
+      ],
+      "tip": {
+        "n": "Gravity Pulse",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/gravity-pulse.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Using an artifact pulls all nearby enemies toward you.",
+        "e": []
+      }
+    },
+    {
+      "name": "Grindstone",
+      "sub": "Positive status",
+      "href": "/2/enchantments/grindstone",
+      "image": "/images/d2/icons/statuses/grindstone.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "All attacks deal increased additive damage."
+        ]
+      ],
+      "tip": {
+        "n": "Grindstone",
+        "k": "Positive status",
+        "i": "/images/d2/icons/statuses/grindstone.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "All attacks deal increased additive damage."
+        ]
+      }
+    },
+    {
+      "name": "Healing Smite",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/healing-smite",
+      "image": "/images/d2/icons/enchantments/healing-smite.png",
+      "values": [
+        [
+          "GOES ON",
+          "Melee weapon, Ranged weapon"
+        ],
+        [
+          "WHAT IT DOES",
+          "Defeating an enemy has a 20% chance to create a Regenerating well for allies."
+        ]
+      ],
+      "tip": {
+        "n": "Healing Smite",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/healing-smite.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Defeating an enemy has a 20% chance to create a Regenerating well for allies.",
+          "Tier II: Defeating an enemy has a 35% chance to create a Regenerating well for allies.",
+          "Tier III: Defeating an enemy has a 50% chance to create a Regenerating well for allies."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Defeating an enemy has a chance to create a well that grants allies the Regenerating status, restoring their health.",
+        "e": [
+          {
+            "x": "Tier I: Defeating an enemy has a 20% chance to create a Regenerating well for allies.",
+            "i": "/images/d2/icons/enchantments/healing-smite.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Defeating an enemy has a 35% chance to create a Regenerating well for allies.",
+            "i": "/images/d2/icons/enchantments/healing-smite.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Defeating an enemy has a 50% chance to create a Regenerating well for allies.",
+            "i": "/images/d2/icons/enchantments/healing-smite.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Health Synergy",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/health-synergy",
+      "image": "/images/d2/icons/enchantments/health-synergy.png",
+      "values": [
+        [
+          "GOES ON",
+          "Boots, Chest, Helmet, Leggings"
+        ],
+        [
+          "WHAT IT DOES",
+          "Artifact usage heals 15% of your maximum health."
+        ]
+      ],
+      "tip": {
+        "n": "Health Synergy",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/health-synergy.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Artifact usage heals 15% of your maximum health.",
+          "Tier II: Artifact usage heals 25% of your maximum health.",
+          "Tier III: Artifact usage heals 35% of your maximum health."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Using an artifact regenerates health.",
+        "e": [
+          {
+            "x": "Tier I: Artifact usage heals 15% of your maximum health.",
+            "i": "/images/d2/icons/enchantments/health-synergy.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier II: Artifact usage heals 25% of your maximum health.",
+            "i": "/images/d2/icons/enchantments/health-synergy.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier III: Artifact usage heals 35% of your maximum health.",
+            "i": "/images/d2/icons/enchantments/health-synergy.png",
+            "c": "defensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Honeyed",
+      "sub": "Negative status",
+      "href": "/2/enchantments/honeyed",
+      "image": "/images/d2/icons/statuses/honeyed.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Movement speed is reduced."
+        ]
+      ],
+      "tip": {
+        "n": "Honeyed",
+        "k": "Negative status",
+        "i": "/images/d2/icons/statuses/honeyed.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Movement speed is reduced."
+        ]
+      }
+    },
+    {
+      "name": "Hurrying",
+      "sub": "Positive status",
+      "href": "/2/enchantments/hurrying",
+      "image": "/images/d2/icons/statuses/hurrying.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Movement speed is increased."
+        ]
+      ],
+      "tip": {
+        "n": "Hurrying",
+        "k": "Positive status",
+        "i": "/images/d2/icons/statuses/hurrying.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Movement speed is increased."
+        ]
+      }
+    },
+    {
+      "name": "Invulnerable",
+      "sub": "Positive status",
+      "href": "/2/enchantments/invulnerable",
+      "image": "/images/d2/icons/statuses/invulnerable.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "No damage is being taken."
+        ]
+      ],
+      "tip": {
+        "n": "Invulnerable",
+        "k": "Positive status",
+        "i": "/images/d2/icons/statuses/invulnerable.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "No damage is being taken."
+        ]
+      }
+    },
+    {
+      "name": "Lightning Surge",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/lightning-surge",
+      "image": "/images/d2/icons/enchantments/lightning-surge.png",
+      "values": [
+        [
+          "GOES ON",
+          "Melee weapon"
+        ],
+        [
+          "WHAT IT DOES",
+          "Wave deals 60% of weapon damage and zaps mobs for a short time, making them weaker but faster."
+        ]
+      ],
+      "tip": {
+        "n": "Lightning Surge",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/lightning-surge.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Wave deals 60% of weapon damage and zaps mobs for a short time, making them weaker but faster.",
+          "Tier II: Wave deals 75% of weapon damage and zaps mobs for a short time, making them weaker but faster.",
+          "Tier III: Wave deals 90% of weapon damage and zaps mobs for a short time, making them weaker but faster."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Jump attacks and final hits create a wave of lightning that damages enemies and zaps them for a short time, making them weaker but faster.",
+        "e": [
+          {
+            "x": "Tier I: Wave deals 60% of weapon damage and zaps mobs for a short time, making them weaker but faster.",
+            "i": "/images/d2/icons/enchantments/lightning-surge.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Wave deals 75% of weapon damage and zaps mobs for a short time, making them weaker but faster.",
+            "i": "/images/d2/icons/enchantments/lightning-surge.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Wave deals 90% of weapon damage and zaps mobs for a short time, making them weaker but faster.",
+            "i": "/images/d2/icons/enchantments/lightning-surge.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Piercing",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/piercing",
+      "image": "/images/d2/icons/enchantments/piercing.png",
+      "values": [
+        [
+          "GOES ON",
+          "Ranged weapon"
+        ],
+        [
+          "WHAT IT DOES",
+          "Projectiles can pierce up to 1 enemies."
+        ]
+      ],
+      "tip": {
+        "n": "Piercing",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/piercing.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Projectiles can pierce up to 1 enemies.",
+          "Tier II: Projectiles can pierce up to 3 enemies.",
+          "Tier III: Projectiles can pierce up to 5 enemies."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Allows fired arrows and projectiles to pierce through multiple targets.",
+        "e": [
+          {
+            "x": "Tier I: Projectiles can pierce up to 1 enemies.",
+            "i": "/images/d2/icons/enchantments/piercing.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Projectiles can pierce up to 3 enemies.",
+            "i": "/images/d2/icons/enchantments/piercing.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Projectiles can pierce up to 5 enemies.",
+            "i": "/images/d2/icons/enchantments/piercing.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Poison Fog",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/poison-fog",
+      "image": "/images/d2/icons/enchantments/poison-fog.png",
+      "values": [
+        [
+          "GOES ON",
+          "Melee weapon"
+        ],
+        [
+          "WHAT IT DOES",
+          "Wave deals 10% of weapon damage and poisons mobs for a time."
+        ]
+      ],
+      "tip": {
+        "n": "Poison Fog",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/poison-fog.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Wave deals 10% of weapon damage and poisons mobs for a time.",
+          "Tier II: Wave deals 20% of weapon damage and poisons mobs for a time.",
+          "Tier III: Wave deals 30% of weapon damage and poisons mobs for a time."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Jump attacks and final hits create a wave of poison that damages enemies and poisons them for a time.",
+        "e": [
+          {
+            "x": "Tier I: Wave deals 10% of weapon damage and poisons mobs for a time.",
+            "i": "/images/d2/icons/enchantments/poison-fog.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Wave deals 20% of weapon damage and poisons mobs for a time.",
+            "i": "/images/d2/icons/enchantments/poison-fog.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Wave deals 30% of weapon damage and poisons mobs for a time.",
+            "i": "/images/d2/icons/enchantments/poison-fog.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Poisoned",
+      "sub": "Negative status",
+      "href": "/2/enchantments/poisoned",
+      "image": "/images/d2/icons/statuses/poisoned.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Poison damage is being taken over time."
+        ]
+      ],
+      "tip": {
+        "n": "Poisoned",
+        "k": "Negative status",
+        "i": "/images/d2/icons/statuses/poisoned.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Poison damage is being taken over time."
+        ]
+      }
+    },
+    {
+      "name": "Power Amplifier",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/power-amplifier",
+      "image": "/images/d2/icons/enchantments/power-amplifier.png",
+      "values": [
+        [
+          "GOES ON",
+          "Boots, Chest, Helmet, Leggings"
+        ],
+        [
+          "WHAT IT DOES",
+          "Artifact usage applies 20% damage amplification to your next melee or ranged attack."
+        ]
+      ],
+      "tip": {
+        "n": "Power Amplifier",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/power-amplifier.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Artifact usage applies 20% damage amplification to your next melee or ranged attack.",
+          "Tier II: Artifact usage applies 30% damage amplification to your next melee or ranged attack.",
+          "Tier III: Artifact usage applies 40% damage amplification to your next melee or ranged attack."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Using an artifact amplifies the damage of your next melee or ranged attack, stacking with each use.",
+        "e": [
+          {
+            "x": "Tier I: Artifact usage applies 20% damage amplification to your next melee or ranged attack.",
+            "i": "/images/d2/icons/enchantments/power-amplifier.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Artifact usage applies 30% damage amplification to your next melee or ranged attack.",
+            "i": "/images/d2/icons/enchantments/power-amplifier.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Artifact usage applies 40% damage amplification to your next melee or ranged attack.",
+            "i": "/images/d2/icons/enchantments/power-amplifier.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Powershaker",
+      "sub": "Positive status",
+      "href": "/2/enchantments/powershaker",
+      "image": "/images/d2/icons/statuses/powershaker.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Melee attacks cause tiny explosions on hit."
+        ]
+      ],
+      "tip": {
+        "n": "Powershaker",
+        "k": "Positive status",
+        "i": "/images/d2/icons/statuses/powershaker.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Melee attacks cause tiny explosions on hit."
+        ]
+      }
+    },
+    {
+      "name": "Regenerating",
+      "sub": "Positive status",
+      "href": "/2/enchantments/regenerating",
+      "image": "/images/d2/icons/statuses/regenerating.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Health is being gradually restored."
+        ]
+      ],
+      "tip": {
+        "n": "Regenerating",
+        "k": "Positive status",
+        "i": "/images/d2/icons/statuses/regenerating.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Health is being gradually restored."
+        ]
+      }
+    },
+    {
+      "name": "Ricochet",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/ricochet",
+      "image": "/images/d2/icons/enchantments/ricochet.png",
+      "values": [
+        [
+          "GOES ON",
+          "Ranged weapon"
+        ],
+        [
+          "WHAT IT DOES",
+          "Projectiles can bounce up to 1 times."
+        ]
+      ],
+      "tip": {
+        "n": "Ricochet",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/ricochet.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Projectiles can bounce up to 1 times.",
+          "Tier II: Projectiles can bounce up to 2 times.",
+          "Tier III: Projectiles can bounce up to 3 times."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Allows fired arrows and projectiles to bounce between multiple targets.",
+        "e": [
+          {
+            "x": "Tier I: Projectiles can bounce up to 1 times.",
+            "i": "/images/d2/icons/enchantments/ricochet.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Projectiles can bounce up to 2 times.",
+            "i": "/images/d2/icons/enchantments/ricochet.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Projectiles can bounce up to 3 times.",
+            "i": "/images/d2/icons/enchantments/ricochet.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sealed",
+      "sub": "Negative status",
+      "href": "/2/enchantments/sealed",
+      "image": "/images/d2/icons/statuses/sealed.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Artifact usage is completely blocked."
+        ]
+      ],
+      "tip": {
+        "n": "Sealed",
+        "k": "Negative status",
+        "i": "/images/d2/icons/statuses/sealed.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Artifact usage is completely blocked."
+        ]
+      }
+    },
+    {
+      "name": "Shadowcloak",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/shadowcloak",
+      "image": "/images/d2/icons/enchantments/shadowcloak.png",
+      "values": [
+        [
+          "GOES ON",
+          "Melee weapon, Ranged weapon"
+        ],
+        [
+          "WHAT IT DOES",
+          "Grants a 15% chance to enter Shadowcloaking when defeating enemies."
+        ]
+      ],
+      "tip": {
+        "n": "Shadowcloak",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/shadowcloak.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Grants a 15% chance to enter Shadowcloaking when defeating enemies.",
+          "Tier II: Grants a 20% chance to enter Shadowcloaking when defeating enemies.",
+          "Tier III: Grants a 35% chance to enter Shadowcloaking when defeating enemies."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Defeating an enemy has a chance to grant Shadowcloaking, making you invisible to enemies.",
+        "e": [
+          {
+            "x": "Tier I: Grants a 15% chance to enter Shadowcloaking when defeating enemies.",
+            "i": "/images/d2/icons/enchantments/shadowcloak.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Grants a 20% chance to enter Shadowcloaking when defeating enemies.",
+            "i": "/images/d2/icons/enchantments/shadowcloak.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Grants a 35% chance to enter Shadowcloaking when defeating enemies.",
+            "i": "/images/d2/icons/enchantments/shadowcloak.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Shadowcloaking",
+      "sub": "Positive status",
+      "href": "/2/enchantments/shadowcloaking",
+      "image": "/images/d2/icons/statuses/shadowcloaking.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Invisible to mobs and the next attack is a critical hit, ending on the next attack or artifact use."
+        ]
+      ],
+      "tip": {
+        "n": "Shadowcloaking",
+        "k": "Positive status",
+        "i": "/images/d2/icons/statuses/shadowcloaking.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Invisible to mobs and the next attack is a critical hit, ending on the next attack or artifact use."
+        ]
+      }
+    },
+    {
+      "name": "Shielding Smite",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/shielding-smite",
+      "image": "/images/d2/icons/enchantments/shielding-smite.png",
+      "values": [
+        [
+          "GOES ON",
+          "Melee weapon, Ranged weapon"
+        ],
+        [
+          "WHAT IT DOES",
+          "Defeating an enemy has a 10% chance to create a Fortifying well for allies."
+        ]
+      ],
+      "tip": {
+        "n": "Shielding Smite",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/shielding-smite.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Defeating an enemy has a 10% chance to create a Fortifying well for allies.",
+          "Tier II: Defeating an enemy has a 20% chance to create a Fortifying well for allies.",
+          "Tier III: Defeating an enemy has a 40% chance to create a Fortifying well for allies."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Defeating an enemy has a chance to create a well that grants you and your allies the Fortifying status, protecting you from enemies.",
+        "e": [
+          {
+            "x": "Tier I: Defeating an enemy has a 10% chance to create a Fortifying well for allies.",
+            "i": "/images/d2/icons/enchantments/shielding-smite.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier II: Defeating an enemy has a 20% chance to create a Fortifying well for allies.",
+            "i": "/images/d2/icons/enchantments/shielding-smite.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier III: Defeating an enemy has a 40% chance to create a Fortifying well for allies.",
+            "i": "/images/d2/icons/enchantments/shielding-smite.png",
+            "c": "defensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Shockwave",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/shockwave",
+      "image": "/images/d2/icons/enchantments/shockwave.png",
+      "values": [
+        [
+          "GOES ON",
+          "Melee weapon"
+        ],
+        [
+          "WHAT IT DOES",
+          "Shockwave deals 20% of weapon damage and increases knockback by 125%."
+        ]
+      ],
+      "tip": {
+        "n": "Shockwave",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/shockwave.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Shockwave deals 20% of weapon damage and increases knockback by 125%.",
+          "Tier II: Shockwave deals 35% of weapon damage and increases knockback by 150%.",
+          "Tier III: Shockwave deals 50% of weapon damage and increases knockback by 175%."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Jump attacks and final hits create a shockwave that damages enemies and knocks them back.",
+        "e": [
+          {
+            "x": "Tier I: Shockwave deals 20% of weapon damage and increases knockback by 125%.",
+            "i": "/images/d2/icons/enchantments/shockwave.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Shockwave deals 35% of weapon damage and increases knockback by 150%.",
+            "i": "/images/d2/icons/enchantments/shockwave.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Shockwave deals 50% of weapon damage and increases knockback by 175%.",
+            "i": "/images/d2/icons/enchantments/shockwave.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Slowed",
+      "sub": "Negative status",
+      "href": "/2/enchantments/slowed",
+      "image": "/images/d2/icons/statuses/slowed.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Movement speed is reduced."
+        ]
+      ],
+      "tip": {
+        "n": "Slowed",
+        "k": "Negative status",
+        "i": "/images/d2/icons/statuses/slowed.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Movement speed is reduced."
+        ]
+      }
+    },
+    {
+      "name": "Somersault",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/somersault",
+      "image": "/images/d2/icons/enchantments/somersault.png",
+      "values": [
+        [
+          "GOES ON",
+          "Boots, Helmet, Leggings, Chest"
+        ],
+        [
+          "WHAT IT DOES",
+          "Grants 1 additional rolls."
+        ]
+      ],
+      "tip": {
+        "n": "Somersault",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/somersault.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Grants 1 additional rolls.",
+          "Tier II: Grants 2 additional rolls.",
+          "Tier III: Grants 3 additional rolls."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Grants the ability to perform multiple rolls in a row.",
+        "e": [
+          {
+            "x": "Tier I: Grants 1 additional rolls.",
+            "i": "/images/d2/icons/enchantments/somersault.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Grants 2 additional rolls.",
+            "i": "/images/d2/icons/enchantments/somersault.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Grants 3 additional rolls.",
+            "i": "/images/d2/icons/enchantments/somersault.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Soul Blast",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/soul-blast",
+      "image": "/images/d2/icons/enchantments/soul-blast.png",
+      "values": [
+        [
+          "GOES ON",
+          "Melee weapon"
+        ],
+        [
+          "WHAT IT DOES",
+          "Wave deals 50% of weapon damage and deals additional soul damage over time."
+        ]
+      ],
+      "tip": {
+        "n": "Soul Blast",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/soul-blast.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Wave deals 50% of weapon damage and deals additional soul damage over time.",
+          "Tier II: Wave deals 60% of weapon damage and deals additional soul damage over time.",
+          "Tier III: Wave deals 75% of weapon damage and deals additional soul damage over time."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Jump attacks and final hits create a wave of souls that damages enemies and deals additional soul damage over time.",
+        "e": [
+          {
+            "x": "Tier I: Wave deals 50% of weapon damage and deals additional soul damage over time.",
+            "i": "/images/d2/icons/enchantments/soul-blast.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Wave deals 60% of weapon damage and deals additional soul damage over time.",
+            "i": "/images/d2/icons/enchantments/soul-blast.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Wave deals 75% of weapon damage and deals additional soul damage over time.",
+            "i": "/images/d2/icons/enchantments/soul-blast.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Soulsick",
+      "sub": "Negative status",
+      "href": "/2/enchantments/soulsick",
+      "image": "/images/d2/icons/statuses/soulsick.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Soul damage is being taken over time, reducing both health and souls."
+        ]
+      ],
+      "tip": {
+        "n": "Soulsick",
+        "k": "Negative status",
+        "i": "/images/d2/icons/statuses/soulsick.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Soul damage is being taken over time, reducing both health and souls."
+        ]
+      }
+    },
+    {
+      "name": "Springload",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/springload",
+      "image": "/images/d2/icons/enchantments/springload.png",
+      "values": [
+        [
+          "GOES ON",
+          "Boots, Chest, Helmet, Leggings"
+        ],
+        [
+          "WHAT IT DOES",
+          "Artifact usage grants the Hurrying status for 4 seconds, increasing movement speed."
+        ]
+      ],
+      "tip": {
+        "n": "Springload",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/springload.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Artifact usage grants the Hurrying status for 4 seconds, increasing movement speed.",
+          "Tier II: Artifact usage grants the Hurrying status for 5 seconds, increasing movement speed.",
+          "Tier III: Artifact usage grants the Hurrying status for 6 seconds, increasing movement speed."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Using an artifact grants the Hurrying status, increasing movement speed.",
+        "e": [
+          {
+            "x": "Tier I: Artifact usage grants the Hurrying status for 4 seconds, increasing movement speed.",
+            "i": "/images/d2/icons/enchantments/springload.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Artifact usage grants the Hurrying status for 5 seconds, increasing movement speed.",
+            "i": "/images/d2/icons/enchantments/springload.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Artifact usage grants the Hurrying status for 6 seconds, increasing movement speed.",
+            "i": "/images/d2/icons/enchantments/springload.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Stampeding",
+      "sub": "Positive status",
+      "href": "/2/enchantments/stampeding",
+      "image": "/images/d2/icons/statuses/stampeding.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Movement speed is slightly increased and running into mobs knocks them back and deals damage."
+        ]
+      ],
+      "tip": {
+        "n": "Stampeding",
+        "k": "Positive status",
+        "i": "/images/d2/icons/statuses/stampeding.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Movement speed is slightly increased and running into mobs knocks them back and deals damage."
+        ]
+      }
+    },
+    {
+      "name": "Strengthened",
+      "sub": "Positive status",
+      "href": "/2/enchantments/strengthened",
+      "image": "/images/d2/icons/statuses/strengthened.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "All attacks deal increased multiplicative damage."
+        ]
+      ],
+      "tip": {
+        "n": "Strengthened",
+        "k": "Positive status",
+        "i": "/images/d2/icons/statuses/strengthened.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "All attacks deal increased multiplicative damage."
+        ]
+      }
+    },
+    {
+      "name": "Swirling",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/swirling",
+      "image": "/images/d2/icons/enchantments/swirling.png",
+      "values": [
+        [
+          "GOES ON",
+          "Melee weapon, Ranged weapon"
+        ],
+        [
+          "WHAT IT DOES",
+          "Swirl deals an additional 50% of weapon damage to nearby enemies."
+        ]
+      ],
+      "tip": {
+        "n": "Swirling",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/swirling.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Swirl deals an additional 50% of weapon damage to nearby enemies.",
+          "Tier II: Swirl deals an additional 75% of weapon damage to nearby enemies.",
+          "Tier III: Swirl deals an additional 100% of weapon damage to nearby enemies."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Weapon attacks unleash a swirl of air which deals additional damage to nearby enemies.",
+        "e": [
+          {
+            "x": "Tier I: Swirl deals an additional 50% of weapon damage to nearby enemies.",
+            "i": "/images/d2/icons/enchantments/swirling.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Swirl deals an additional 75% of weapon damage to nearby enemies.",
+            "i": "/images/d2/icons/enchantments/swirling.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Swirl deals an additional 100% of weapon damage to nearby enemies.",
+            "i": "/images/d2/icons/enchantments/swirling.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tempo Theft",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/tempo-theft",
+      "image": "/images/d2/icons/enchantments/tempo-theft.png",
+      "values": [
+        [
+          "GOES ON",
+          "Melee weapon, Ranged weapon"
+        ],
+        [
+          "WHAT IT DOES",
+          "Grants a 30% chance to increase movement speed when defeating enemies."
+        ]
+      ],
+      "tip": {
+        "n": "Tempo Theft",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/tempo-theft.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Grants a 30% chance to increase movement speed when defeating enemies.",
+          "Tier II: Grants a 40% chance to increase movement speed when defeating enemies.",
+          "Tier III: Grants a 50% chance to increase movement speed when defeating enemies."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Defeating an enemy has a chance to grant the Hurrying status, increasing movement speed for a short time.",
+        "e": [
+          {
+            "x": "Tier I: Grants a 30% chance to increase movement speed when defeating enemies.",
+            "i": "/images/d2/icons/enchantments/tempo-theft.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Grants a 40% chance to increase movement speed when defeating enemies.",
+            "i": "/images/d2/icons/enchantments/tempo-theft.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Grants a 50% chance to increase movement speed when defeating enemies.",
+            "i": "/images/d2/icons/enchantments/tempo-theft.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Thundering",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/thundering",
+      "image": "/images/d2/icons/enchantments/thundering.png",
+      "values": [
+        [
+          "GOES ON",
+          "Melee weapon, Ranged weapon"
+        ],
+        [
+          "WHAT IT DOES",
+          "Grants a 25% chance for 15% of weapon damage to spread as lightning damage."
+        ]
+      ],
+      "tip": {
+        "n": "Thundering",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/thundering.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Grants a 25% chance for 15% of weapon damage to spread as lightning damage.",
+          "Tier II: Grants a 33% chance for 30% of weapon damage to spread as lightning damage.",
+          "Tier III: Grants a 50% chance for 50% of weapon damage to spread as lightning damage."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Attacks have a chance to spread lightning damage to nearby enemies.",
+        "e": [
+          {
+            "x": "Tier I: Grants a 25% chance for 15% of weapon damage to spread as lightning damage.",
+            "i": "/images/d2/icons/enchantments/thundering.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Grants a 33% chance for 30% of weapon damage to spread as lightning damage.",
+            "i": "/images/d2/icons/enchantments/thundering.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Grants a 50% chance for 50% of weapon damage to spread as lightning damage.",
+            "i": "/images/d2/icons/enchantments/thundering.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tumbleshot",
+      "sub": "Enchantment",
+      "href": "/2/enchantments/tumbleshot",
+      "image": "/images/d2/icons/enchantments/tumbleshot.png",
+      "values": [
+        [
+          "GOES ON",
+          "Boots, Chest, Helmet, Leggings"
+        ],
+        [
+          "WHAT IT DOES",
+          "Rolling fires a barrage of 1 arrows, dealing 110% of ranged weapon damage."
+        ]
+      ],
+      "tip": {
+        "n": "Tumbleshot",
+        "k": "Enchantment",
+        "i": "/images/d2/icons/enchantments/tumbleshot.png",
+        "g": 2,
+        "fc": "#c65bf5",
+        "f": [
+          "Tier I: Rolling fires a barrage of 1 arrows, dealing 110% of ranged weapon damage.",
+          "Tier II: Rolling fires a barrage of 1 arrows, dealing 120% of ranged weapon damage.",
+          "Tier III: Rolling fires a barrage of 2 arrows, dealing 130% of ranged weapon damage."
+        ],
+        "h": "Enchantment",
+        "t": null,
+        "s": [],
+        "d": "Rolling fires a barrage of arrows targeting nearby enemies.",
+        "e": [
+          {
+            "x": "Tier I: Rolling fires a barrage of 1 arrows, dealing 110% of ranged weapon damage.",
+            "i": "/images/d2/icons/enchantments/tumbleshot.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Rolling fires a barrage of 1 arrows, dealing 120% of ranged weapon damage.",
+            "i": "/images/d2/icons/enchantments/tumbleshot.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Rolling fires a barrage of 2 arrows, dealing 130% of ranged weapon damage.",
+            "i": "/images/d2/icons/enchantments/tumbleshot.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Vined",
+      "sub": "Negative status",
+      "href": "/2/enchantments/vined",
+      "image": "/images/d2/icons/statuses/vined.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Movement is completely disabled."
+        ]
+      ],
+      "tip": {
+        "n": "Vined",
+        "k": "Negative status",
+        "i": "/images/d2/icons/statuses/vined.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Movement is completely disabled."
+        ]
+      }
+    },
+    {
+      "name": "Weakened",
+      "sub": "Negative status",
+      "href": "/2/enchantments/weakened",
+      "image": "/images/d2/icons/statuses/weakened.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Damage dealt is reduced and damage taken is increased."
+        ]
+      ],
+      "tip": {
+        "n": "Weakened",
+        "k": "Negative status",
+        "i": "/images/d2/icons/statuses/weakened.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Damage dealt is reduced and damage taken is increased."
+        ]
+      }
+    },
+    {
+      "name": "Webbed",
+      "sub": "Negative status",
+      "href": "/2/enchantments/webbed",
+      "image": "/images/d2/icons/statuses/webbed.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Rolling and jumping are blocked, and movement speed is greatly reduced."
+        ]
+      ],
+      "tip": {
+        "n": "Webbed",
+        "k": "Negative status",
+        "i": "/images/d2/icons/statuses/webbed.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Rolling and jumping are blocked, and movement speed is greatly reduced."
+        ]
+      }
+    },
+    {
+      "name": "Zapped",
+      "sub": "Negative status",
+      "href": "/2/enchantments/zapped",
+      "image": "/images/d2/icons/statuses/zapped.png",
+      "values": [
+        [
+          "GOES ON",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Movement speed is increased at the cost of greatly reduced damage resistance."
+        ]
+      ],
+      "tip": {
+        "n": "Zapped",
+        "k": "Negative status",
+        "i": "/images/d2/icons/statuses/zapped.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Movement speed is increased at the cost of greatly reduced damage resistance."
+        ]
+      }
+    }
+  ]
+}

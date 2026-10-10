@@ -1,0 +1,17 @@
+{
+  "parameters": [
+    [
+      "Speed",
+      "300"
+    ]
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/arctic-fox"
+}

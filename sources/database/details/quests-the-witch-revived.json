@@ -1,0 +1,87 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Howling Woods"
+    ],
+    [
+      "Level",
+      "14"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "Corruption in the Woods"
+    ],
+    [
+      "Repeatable",
+      "Yes"
+    ],
+    [
+      "XP",
+      "550 the first time, 500 after that"
+    ],
+    [
+      "Emeralds",
+      "5 to 90, 15 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Approach the witch's hut",
+      "map": "/2/map#p=3579,3579"
+    },
+    {
+      "text": "Defeat the witch",
+      "map": ""
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map#m=quest-CA02_B_BR"
+    },
+    {
+      "name": "Corruption in the Woods",
+      "href": "/2/quests/corruption-in-the-woods"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3579,3579"
+    },
+    {
+      "name": "Soul Corrupted Witch",
+      "href": "/2/enemies/soul-corrupted-witch"
+    },
+    {
+      "name": "Realmreacher Boots",
+      "href": "/2/armor/realmreacher-boots"
+    },
+    {
+      "name": "Realmreacher Robe",
+      "href": "/2/armor/realmreacher-robe"
+    },
+    {
+      "name": "Realmreacher Hat",
+      "href": "/2/armor/realmreacher-hat"
+    },
+    {
+      "name": "Realmreacher Leggings",
+      "href": "/2/armor/realmreacher-leggings"
+    },
+    {
+      "name": "Sculker Claws",
+      "href": "/2/weapons/sculker-claws"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/the-witch-revived"
+}

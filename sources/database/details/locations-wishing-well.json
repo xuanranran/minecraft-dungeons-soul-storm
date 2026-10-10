@@ -1,0 +1,59 @@
+{
+  "parameters": [
+    [
+      "Region",
+      "Howling Woods"
+    ],
+    [
+      "Entrances",
+      "1"
+    ],
+    [
+      "Pots",
+      "4"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Opens during Training with the Enchantsmith at \"Search for the Book of Ancient Alchemy\"",
+      "map": "/2/map#p=3375,4177"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Training with the Enchantsmith",
+      "href": "/2/quests/training-with-the-enchantsmith"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3375,4177"
+    },
+    {
+      "name": "Enchanter",
+      "href": "/2/enemies/enchanter"
+    },
+    {
+      "name": "Geomancer",
+      "href": "/2/enemies/geomancer"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Royal Guard",
+      "href": "/2/enemies/royal-guard"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/wishing-well"
+}

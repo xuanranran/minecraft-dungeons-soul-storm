@@ -1,0 +1,21 @@
+{
+  "parameters": [
+    [
+      "Speed",
+      "300"
+    ]
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    },
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/cow"
+}

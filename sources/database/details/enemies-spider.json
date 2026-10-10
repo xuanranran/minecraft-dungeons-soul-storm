@@ -1,0 +1,103 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "15"
+    ],
+    [
+      "Top hit",
+      "10"
+    ],
+    [
+      "Poise",
+      "40"
+    ],
+    [
+      "Souls",
+      "4"
+    ],
+    [
+      "Speed",
+      "600"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Swipe",
+          "10",
+          "none",
+          "Physical",
+          "0.3 sec"
+        ]
+      ]
+    },
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "DAMAGE",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Base",
+          "15",
+          "10",
+          "40",
+          "4"
+        ],
+        [
+          "Soul imbalance",
+          "9",
+          "10",
+          "40",
+          "4"
+        ]
+      ]
+    }
+  ],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    },
+    {
+      "name": "The Deep Dark",
+      "href": "/2/locations/the-deep-dark"
+    },
+    {
+      "name": "Deep Dark dungeons",
+      "href": "/2/locations/deep-dark-dungeons"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "Squid Coast",
+      "href": "/2/locations/squid-coast"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/spider"
+}

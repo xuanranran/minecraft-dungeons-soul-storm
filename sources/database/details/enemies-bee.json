@@ -1,0 +1,63 @@
+{
+  "parameters": [
+    [
+      "Speed",
+      "320"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Light attack (honeypot)",
+          "5",
+          "none",
+          "Physical",
+          ""
+        ]
+      ]
+    },
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "DAMAGE",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Base",
+          "none",
+          "none",
+          "none",
+          "none"
+        ],
+        [
+          "Honeypot",
+          "none",
+          "5",
+          "none",
+          "none"
+        ]
+      ]
+    }
+  ],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/bee"
+}

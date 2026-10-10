@@ -1,0 +1,139 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Singer's Meadow"
+    ],
+    [
+      "Level",
+      "36"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "Lost Harmonies"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "550"
+    ],
+    [
+      "Emeralds",
+      "5 to 90, 15 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Head to the wild meadows",
+      "map": "/2/map/the-sift#p=658,5192"
+    },
+    {
+      "text": "Speak to the Echo Golem",
+      "map": "/2/map/the-sift#p=740,5197"
+    },
+    {
+      "text": "Rip out the illager roots any order",
+      "map": ""
+    },
+    {
+      "text": "Ambush",
+      "map": ""
+    },
+    {
+      "text": "Ambush",
+      "map": ""
+    },
+    {
+      "text": "Ambush",
+      "map": ""
+    },
+    {
+      "text": "Find the final banner",
+      "map": "/2/map/the-sift#p=1126,5263"
+    },
+    {
+      "text": "Rip out the illager roots",
+      "map": "/2/map/the-sift#p=1132,5258"
+    },
+    {
+      "text": "Defeat the ambush",
+      "map": ""
+    },
+    {
+      "text": "Return to the Singer",
+      "map": "/2/map/the-sift#p=566,5688"
+    },
+    {
+      "text": "Speak to the Singer",
+      "map": "/2/map/the-sift#p=494,5737"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map/the-sift#m=quest-MEa1_S05_A"
+    },
+    {
+      "name": "Lost Harmonies",
+      "href": "/2/quests/lost-harmonies"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=658,5192"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=740,5197"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=1126,5263"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=1132,5258"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=566,5688"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=494,5737"
+    },
+    {
+      "name": "Harmonizer",
+      "href": "/2/enemies/harmonizer"
+    },
+    {
+      "name": "Sifter Boots",
+      "href": "/2/armor/sifter-boots"
+    },
+    {
+      "name": "Sifter Robe",
+      "href": "/2/armor/sifter-robe"
+    },
+    {
+      "name": "Sifter Hood",
+      "href": "/2/armor/sifter-hood"
+    },
+    {
+      "name": "Sifter Leggings",
+      "href": "/2/armor/sifter-leggings"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/rage-of-the-sifters"
+}

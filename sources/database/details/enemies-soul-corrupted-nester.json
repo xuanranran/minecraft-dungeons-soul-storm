@@ -1,0 +1,88 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "233"
+    ],
+    [
+      "Top hit",
+      "9"
+    ],
+    [
+      "Poise",
+      "250"
+    ],
+    [
+      "Souls",
+      "50"
+    ],
+    [
+      "Speed",
+      "700"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Where you fight it",
+      "columns": [
+        "WHEN",
+        "QUEST",
+        "WHERE"
+      ],
+      "rows": [
+        [
+          "Ambush arena",
+          "No quest needed",
+          "Singer's Meadow"
+        ]
+      ]
+    },
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Bite",
+          "9 ×2",
+          "none",
+          "Physical",
+          "2 sec"
+        ],
+        [
+          "Swipe",
+          "8",
+          "none",
+          "Physical",
+          "2 sec"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Elemental damage",
+      "+25%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    },
+    {
+      "name": "Sift rifts",
+      "href": "/2/locations/sift-rifts"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/soul-corrupted-nester"
+}

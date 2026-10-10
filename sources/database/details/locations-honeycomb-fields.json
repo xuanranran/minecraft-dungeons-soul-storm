@@ -1,0 +1,379 @@
+{
+  "parameters": [
+    [
+      "Minecart stations",
+      "2"
+    ],
+    [
+      "Dungeon entrances",
+      "7"
+    ],
+    [
+      "Rift entrances",
+      "8"
+    ],
+    [
+      "Minecart station",
+      "Honeybrook Bridge"
+    ],
+    [
+      "Minecart station",
+      "Honeycomb Farm"
+    ]
+  ],
+  "objectives": [],
+  "tables": [],
+  "resistances": [
+    [
+      "Vindicator",
+      "23%"
+    ],
+    [
+      "Zombie",
+      "17%"
+    ],
+    [
+      "Pillager",
+      "16%"
+    ],
+    [
+      "Skeleton",
+      "8%"
+    ],
+    [
+      "Baby Zombie",
+      "5%"
+    ],
+    [
+      "Vanguard",
+      "5%"
+    ],
+    [
+      "Spider",
+      "5%"
+    ],
+    [
+      "Enchanter",
+      "5%"
+    ],
+    [
+      "Creeper",
+      "4%"
+    ],
+    [
+      "Chicken Jockey",
+      "3%"
+    ],
+    [
+      "Spider Jockey",
+      "3%"
+    ],
+    [
+      "Ravager",
+      "2%"
+    ],
+    [
+      "Geomancer",
+      "1%"
+    ],
+    [
+      "Royal Guard",
+      "1%"
+    ],
+    [
+      "Charged Creeper",
+      "<1%"
+    ],
+    [
+      "Pillager",
+      "28%"
+    ],
+    [
+      "Vindicator",
+      "16%"
+    ],
+    [
+      "Creeper",
+      "15%"
+    ],
+    [
+      "Zombie",
+      "12%"
+    ],
+    [
+      "Skeleton",
+      "6%"
+    ],
+    [
+      "Baby Zombie",
+      "4%"
+    ],
+    [
+      "Vanguard",
+      "4%"
+    ],
+    [
+      "Spider",
+      "4%"
+    ],
+    [
+      "Enchanter",
+      "3%"
+    ],
+    [
+      "Chicken Jockey",
+      "2%"
+    ],
+    [
+      "Spider Jockey",
+      "2%"
+    ],
+    [
+      "Charged Creeper",
+      "2%"
+    ],
+    [
+      "Ravager",
+      "1%"
+    ],
+    [
+      "Geomancer",
+      "1%"
+    ],
+    [
+      "Royal Guard",
+      "1%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "7",
+      "href": "/2/locations/deep-dark-dungeons"
+    },
+    {
+      "name": "8",
+      "href": "/2/locations/sift-rifts"
+    },
+    {
+      "name": "Enderman",
+      "href": "/2/enemies/enderman"
+    },
+    {
+      "name": "Witch",
+      "href": "/2/enemies/witch"
+    },
+    {
+      "name": "Soul Corrupted Enderman",
+      "href": "/2/enemies/soul-corrupted-enderman"
+    },
+    {
+      "name": "Soul Corrupted Witch",
+      "href": "/2/enemies/soul-corrupted-witch"
+    },
+    {
+      "name": "Evoker",
+      "href": "/2/enemies/evoker"
+    },
+    {
+      "name": "Bee",
+      "href": "/2/enemies/bee"
+    },
+    {
+      "name": "Cow",
+      "href": "/2/enemies/cow"
+    },
+    {
+      "name": "Pig",
+      "href": "/2/enemies/pig"
+    },
+    {
+      "name": "Sheep",
+      "href": "/2/enemies/sheep"
+    },
+    {
+      "name": "Chicken",
+      "href": "/2/enemies/chicken"
+    },
+    {
+      "name": "Key Golem",
+      "href": "/2/enemies/key-golem"
+    },
+    {
+      "name": "Enderman",
+      "href": "/2/enemies/enderman"
+    },
+    {
+      "name": "Evoker",
+      "href": "/2/enemies/evoker"
+    },
+    {
+      "name": "Soul Corrupted Enchanter",
+      "href": "/2/enemies/soul-corrupted-enchanter"
+    },
+    {
+      "name": "Soul Corrupted Evoker",
+      "href": "/2/enemies/soul-corrupted-evoker"
+    },
+    {
+      "name": "Soul Corrupted Geomancer",
+      "href": "/2/enemies/soul-corrupted-geomancer"
+    },
+    {
+      "name": "Soul Corrupted Pillager",
+      "href": "/2/enemies/soul-corrupted-pillager"
+    },
+    {
+      "name": "Soul Corrupted Ravager",
+      "href": "/2/enemies/soul-corrupted-ravager"
+    },
+    {
+      "name": "Soul Corrupted Royal Guard",
+      "href": "/2/enemies/soul-corrupted-royal-guard"
+    },
+    {
+      "name": "Soul Corrupted Vindicator",
+      "href": "/2/enemies/soul-corrupted-vindicator"
+    },
+    {
+      "name": "Honeybrook Bridge",
+      "href": "/2/map#m=station-2882-4250"
+    },
+    {
+      "name": "Honeycomb Farm",
+      "href": "/2/map#m=station-2769-3640"
+    },
+    {
+      "name": "Corrupted Beacon",
+      "href": "/2/artifacts/corrupted-beacon"
+    },
+    {
+      "name": "Creeper Candle",
+      "href": "/2/artifacts/creeper-candle"
+    },
+    {
+      "name": "Fighter's Flute",
+      "href": "/2/artifacts/fighters-flute"
+    },
+    {
+      "name": "Firework Arrow",
+      "href": "/2/artifacts/firework-arrow"
+    },
+    {
+      "name": "Honey Dipper",
+      "href": "/2/artifacts/honey-dipper"
+    },
+    {
+      "name": "Blight Bangle",
+      "href": "/2/artifacts/blight-bangle"
+    },
+    {
+      "name": "Humbling Horn",
+      "href": "/2/artifacts/humbling-horn"
+    },
+    {
+      "name": "Pouch of Frost",
+      "href": "/2/artifacts/pouch-of-frost"
+    },
+    {
+      "name": "Warding Chimes",
+      "href": "/2/artifacts/warding-chimes"
+    },
+    {
+      "name": "Bow",
+      "href": "/2/weapons/bow"
+    },
+    {
+      "name": "Crossbow",
+      "href": "/2/weapons/crossbow"
+    },
+    {
+      "name": "Greatsword",
+      "href": "/2/weapons/greatsword"
+    },
+    {
+      "name": "Beekeeper Boots",
+      "href": "/2/armor/beekeeper-boots"
+    },
+    {
+      "name": "Beekeeper Suit",
+      "href": "/2/armor/beekeeper-suit"
+    },
+    {
+      "name": "Beekeeper Veil",
+      "href": "/2/armor/beekeeper-veil"
+    },
+    {
+      "name": "Beekeeper Leggings",
+      "href": "/2/armor/beekeeper-leggings"
+    },
+    {
+      "name": "Mace",
+      "href": "/2/weapons/mace"
+    },
+    {
+      "name": "Mystic Boots",
+      "href": "/2/armor/mystic-boots"
+    },
+    {
+      "name": "Mystic Robe",
+      "href": "/2/armor/mystic-robe"
+    },
+    {
+      "name": "Mystic Circlet",
+      "href": "/2/armor/mystic-circlet"
+    },
+    {
+      "name": "Mystic Leggings",
+      "href": "/2/armor/mystic-leggings"
+    },
+    {
+      "name": "Powerbow",
+      "href": "/2/weapons/powerbow"
+    },
+    {
+      "name": "Rapier",
+      "href": "/2/weapons/rapier"
+    },
+    {
+      "name": "Ranger Boots",
+      "href": "/2/armor/ranger-boots"
+    },
+    {
+      "name": "Ranger Jacket",
+      "href": "/2/armor/ranger-jacket"
+    },
+    {
+      "name": "Ranger Cap",
+      "href": "/2/armor/ranger-cap"
+    },
+    {
+      "name": "Ranger Leggings",
+      "href": "/2/armor/ranger-leggings"
+    },
+    {
+      "name": "Double Sickles",
+      "href": "/2/weapons/double-sickles"
+    },
+    {
+      "name": "Sword",
+      "href": "/2/weapons/sword"
+    },
+    {
+      "name": "Bounty Hunter Boots",
+      "href": "/2/armor/bounty-hunter-boots"
+    },
+    {
+      "name": "Bounty Hunter Chestplate",
+      "href": "/2/armor/bounty-hunter-chestplate"
+    },
+    {
+      "name": "Bounty Hunter Helmet",
+      "href": "/2/armor/bounty-hunter-helmet"
+    },
+    {
+      "name": "Bounty Hunter Shinguards",
+      "href": "/2/armor/bounty-hunter-shinguards"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/honeycomb-fields"
+}

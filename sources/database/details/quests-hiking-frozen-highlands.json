@@ -1,0 +1,271 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Frozen Fortress"
+    ],
+    [
+      "Level",
+      "26"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "Wading Rainy Plains"
+    ],
+    [
+      "Opens",
+      "The Freezing Golem, Returning the Note Blocks, The Prime Enchanter Revived, Illager Intelligence, The Fight at the End of the Tunnel and Gone Fishing"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "4,180"
+    ],
+    [
+      "Emeralds",
+      "15 to 270, 109 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Return to the Woodcutter's Outpost",
+      "map": "/2/map#p=5054,4388"
+    },
+    {
+      "text": "Speak to the Frozen Highlands Villager",
+      "map": "/2/map#p=5135,4325"
+    },
+    {
+      "text": "Reach Frostrime Village",
+      "map": "/2/map#p=6298,4342"
+    },
+    {
+      "text": "Search for survivors",
+      "map": "/2/map#p=6308,4333"
+    },
+    {
+      "text": "Find the big shipwreck",
+      "map": "/2/map#p=6618,4611"
+    },
+    {
+      "text": "Search the shipwreck for materials",
+      "map": ""
+    },
+    {
+      "text": "Find the materials any order",
+      "map": ""
+    },
+    {
+      "text": "Leave the shipwreck",
+      "map": ""
+    },
+    {
+      "text": "Defeat the illagers",
+      "map": ""
+    },
+    {
+      "text": "Find the small shipwreck",
+      "map": "/2/map#p=5809,4718"
+    },
+    {
+      "text": "Search the shipwreck for materials",
+      "map": ""
+    },
+    {
+      "text": "Find the materials",
+      "map": ""
+    },
+    {
+      "text": "Return to the Villager",
+      "map": "/2/map#p=6298,4342"
+    },
+    {
+      "text": "Speak to the Villager",
+      "map": "/2/map#p=6307,4336"
+    },
+    {
+      "text": "Meet up with the Villager",
+      "map": "/2/map#p=6638,3964"
+    },
+    {
+      "text": "Speak to the Villager",
+      "map": "/2/map#p=6640,3967"
+    },
+    {
+      "text": "Search the fishing huts any order",
+      "map": ""
+    },
+    {
+      "text": "Ambush",
+      "map": ""
+    },
+    {
+      "text": "Ambush",
+      "map": ""
+    },
+    {
+      "text": "Meet the survivors at the fortress",
+      "map": "/2/map#p=7050,4009"
+    },
+    {
+      "text": "Speak to the Villager",
+      "map": "/2/map#p=7045,4001"
+    },
+    {
+      "text": "Look for the hidden entrance",
+      "map": "/2/map#p=7178,4173"
+    },
+    {
+      "text": "Navigate the fortress",
+      "map": ""
+    },
+    {
+      "text": "Activate the bridge any order",
+      "map": ""
+    },
+    {
+      "text": "Cross the bridge",
+      "map": ""
+    },
+    {
+      "text": "Navigate the fortress",
+      "map": ""
+    },
+    {
+      "text": "Find the fortress entrance",
+      "map": ""
+    },
+    {
+      "text": "Defeat the Prime Enchanter",
+      "map": ""
+    },
+    {
+      "text": "Search for the note block",
+      "map": ""
+    },
+    {
+      "text": "Collect the note block",
+      "map": ""
+    },
+    {
+      "text": "Find the fortress entrance",
+      "map": ""
+    },
+    {
+      "text": "Open the fortress doors",
+      "map": ""
+    },
+    {
+      "text": "Unlock the fortress doors",
+      "map": ""
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Frozen Fortress",
+      "href": "/2/locations/frozen-fortress"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map#m=quest-CA05"
+    },
+    {
+      "name": "Wading Rainy Plains",
+      "href": "/2/quests/wading-rainy-plains"
+    },
+    {
+      "name": "The Freezing Golem",
+      "href": "/2/quests/the-freezing-golem"
+    },
+    {
+      "name": "Returning the Note Blocks",
+      "href": "/2/quests/returning-the-note-blocks"
+    },
+    {
+      "name": "The Prime Enchanter Revived",
+      "href": "/2/quests/the-prime-enchanter-revived"
+    },
+    {
+      "name": "Illager Intelligence",
+      "href": "/2/quests/illager-intelligence"
+    },
+    {
+      "name": "The Fight at the End of the Tunnel",
+      "href": "/2/quests/the-fight-at-the-end-of-the-tunnel"
+    },
+    {
+      "name": "Gone Fishing",
+      "href": "/2/quests/gone-fishing"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5054,4388"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5135,4325"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=6298,4342"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=6308,4333"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=6618,4611"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5809,4718"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=6298,4342"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=6307,4336"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=6638,3964"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=6640,3967"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=7050,4009"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=7045,4001"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=7178,4173"
+    },
+    {
+      "name": "The Prime Enchanter",
+      "href": "/2/enemies/the-prime-enchanter"
+    },
+    {
+      "name": "Mob Mallet",
+      "href": "/2/weapons/mob-mallet"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/hiking-frozen-highlands"
+}

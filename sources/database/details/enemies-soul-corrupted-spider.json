@@ -1,0 +1,81 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "200"
+    ],
+    [
+      "Top hit",
+      "8"
+    ],
+    [
+      "Poise",
+      "200"
+    ],
+    [
+      "Souls",
+      "50"
+    ],
+    [
+      "Speed",
+      "600"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Where you fight it",
+      "columns": [
+        "WHEN",
+        "QUEST",
+        "WHERE"
+      ],
+      "rows": [
+        [
+          "Side quest",
+          "The Cleric's Apprentice",
+          "Howling Woods"
+        ],
+        [
+          "Ambush arena",
+          "No quest needed",
+          "Frozen Highlands"
+        ]
+      ]
+    },
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Swipe",
+          "8",
+          "none",
+          "Physical",
+          "0.3 sec"
+        ]
+      ]
+    }
+  ],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/soul-corrupted-spider"
+}

@@ -1,0 +1,81 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "55"
+    ],
+    [
+      "Top hit",
+      "7"
+    ],
+    [
+      "Poise",
+      "60"
+    ],
+    [
+      "Souls",
+      "8"
+    ],
+    [
+      "Speed",
+      "700"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Bite",
+          "7 ×2",
+          "none",
+          "Physical",
+          "2 sec"
+        ],
+        [
+          "Swipe",
+          "5",
+          "none",
+          "Physical",
+          "2 sec"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Elemental damage",
+      "+25%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "Humbler Huskland",
+      "href": "/2/locations/humbler-huskland"
+    },
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    },
+    {
+      "name": "Sift rifts",
+      "href": "/2/locations/sift-rifts"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/nester"
+}

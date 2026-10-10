@@ -1,0 +1,72 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "166"
+    ],
+    [
+      "Top hit",
+      "50"
+    ],
+    [
+      "Poise",
+      "200"
+    ],
+    [
+      "Souls",
+      "50"
+    ],
+    [
+      "Speed",
+      "550"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Where you fight it",
+      "columns": [
+        "WHEN",
+        "QUEST",
+        "WHERE"
+      ],
+      "rows": [
+        [
+          "Ambush arena",
+          "No quest needed",
+          "Frozen Highlands"
+        ]
+      ]
+    },
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Ignition",
+          "50",
+          "25",
+          "Blast",
+          ""
+        ]
+      ]
+    }
+  ],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/soul-corrupted-creeper"
+}

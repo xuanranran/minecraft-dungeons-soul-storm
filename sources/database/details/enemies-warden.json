@@ -1,0 +1,145 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "760"
+    ],
+    [
+      "Top hit",
+      "25"
+    ],
+    [
+      "Poise",
+      "750"
+    ],
+    [
+      "Souls",
+      "75"
+    ],
+    [
+      "Speed",
+      "600"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Where you fight it",
+      "columns": [
+        "WHEN",
+        "QUEST",
+        "WHERE"
+      ],
+      "rows": [
+        [
+          "Story quest",
+          "Down into the Deep Dark",
+          "The Deep Dark"
+        ],
+        [
+          "Dungeon room",
+          "Inside the procedural dungeon",
+          "Deep Dark dungeons"
+        ],
+        [
+          "Ambush arena",
+          "No quest needed",
+          "Frozen Highlands"
+        ],
+        [
+          "Soul Storm, possible",
+          "20 minute storms every 40 minutes",
+          "Howling Woods, Singer's Meadow, Rainy Plains, Humbler Huskland, Lullaby Hills, Frozen Highlands, Honeycomb Fields"
+        ]
+      ]
+    },
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Single arm swing",
+          "20",
+          "none",
+          "Physical",
+          "0.5 sec"
+        ],
+        [
+          "Double arm swing",
+          "25",
+          "15",
+          "Physical",
+          "0.5 sec"
+        ],
+        [
+          "Sonic boom",
+          "7.5 ×4",
+          "none",
+          "Soul",
+          "4 sec"
+        ],
+        [
+          "Scream",
+          "10",
+          "none",
+          "Soul",
+          "5 sec"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Blast damage",
+      "+15%"
+    ],
+    [
+      "Soul damage",
+      "-20%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "The Deep Dark",
+      "href": "/2/locations/the-deep-dark"
+    },
+    {
+      "name": "Deep Dark dungeons",
+      "href": "/2/locations/deep-dark-dungeons"
+    },
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "Humbler Huskland",
+      "href": "/2/locations/humbler-huskland"
+    },
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    },
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/warden"
+}

@@ -1,0 +1,175 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Howling Woods"
+    ],
+    [
+      "Level",
+      "9, then 13 from objective 11"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "Training with the Enchantsmith"
+    ],
+    [
+      "Opens",
+      "Down into the Deep Dark, The Witch Revived and The Cleric's Apprentice"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "2,750"
+    ],
+    [
+      "Emeralds",
+      "12 to 216, 75 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Return to Little Howl Hamlet",
+      "map": "/2/map#p=3963,4296"
+    },
+    {
+      "text": "Speak to the Villager",
+      "map": "/2/map#p=3971,4294"
+    },
+    {
+      "text": "Head deeper into Howling Woods",
+      "map": "/2/map#p=4035,3968"
+    },
+    {
+      "text": "Search for the Deep Dark caves",
+      "map": "/2/map#p=3861,3922"
+    },
+    {
+      "text": "Speak to the Forager",
+      "map": "/2/map#p=3870,3958"
+    },
+    {
+      "text": "Enter the Spider Caves",
+      "map": ""
+    },
+    {
+      "text": "Find the missing foragers",
+      "map": ""
+    },
+    {
+      "text": "Rescue the foragers",
+      "map": ""
+    },
+    {
+      "text": "Reach the end of the caves",
+      "map": "/2/map#p=3745,3836"
+    },
+    {
+      "text": "Speak to the foragers",
+      "map": "/2/map#p=3708,3800"
+    },
+    {
+      "text": "Reach the Witch's hut level 13",
+      "map": "/2/map#p=3584,3548"
+    },
+    {
+      "text": "Investigate the cauldron",
+      "map": "/2/map#p=3589,3589"
+    },
+    {
+      "text": "Defeat the Witch",
+      "map": ""
+    },
+    {
+      "text": "Wait for the forager restarts if you quit",
+      "map": ""
+    },
+    {
+      "text": "Speak to the Forager",
+      "map": "/2/map#p=3638,3587"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map#m=quest-CA02_B"
+    },
+    {
+      "name": "Training with the Enchantsmith",
+      "href": "/2/quests/training-with-the-enchantsmith"
+    },
+    {
+      "name": "Down into the Deep Dark",
+      "href": "/2/quests/down-into-the-deep-dark"
+    },
+    {
+      "name": "The Witch Revived",
+      "href": "/2/quests/the-witch-revived"
+    },
+    {
+      "name": "The Cleric's Apprentice",
+      "href": "/2/quests/the-clerics-apprentice"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3963,4296"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3971,4294"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4035,3968"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3861,3922"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3870,3958"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3745,3836"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3708,3800"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3584,3548"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3589,3589"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3638,3587"
+    },
+    {
+      "name": "Soul Corrupted Witch",
+      "href": "/2/enemies/soul-corrupted-witch"
+    },
+    {
+      "name": "Heavy Crossbow",
+      "href": "/2/weapons/heavy-crossbow"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/corruption-in-the-woods"
+}

@@ -17,6 +17,7 @@ try{
   assert.equal(await page.locator('.storm-map-state:visible').innerText(),'开启中');
   await page.locator('.settings-trigger').click();await page.locator('#theme').selectOption('dark');await page.locator('#font-choice').selectOption('mojangles');await page.keyboard.press('Escape');
   await page.locator('.alarm-panel>summary').click();
+  await page.evaluate(()=>document.fonts.ready);
   const check=await page.locator('.alarm-check').boundingBox(),controls=await page.locator('#alarm-form .controls').boundingBox(),actions=await page.locator('.alarm-actions').boundingBox();
   assert.ok(check.y-controls.y-controls.height>=14,'Alarm controls need breathing room');
   assert.ok(actions.y-check.y-check.height>=14,'Alarm buttons need breathing room');

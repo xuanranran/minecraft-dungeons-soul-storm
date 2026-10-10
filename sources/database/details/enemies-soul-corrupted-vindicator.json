@@ -1,0 +1,171 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "233"
+    ],
+    [
+      "Top hit",
+      "12"
+    ],
+    [
+      "Poise",
+      "233"
+    ],
+    [
+      "Souls",
+      "50"
+    ],
+    [
+      "Speed",
+      "900"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Where you fight it",
+      "columns": [
+        "WHEN",
+        "QUEST",
+        "WHERE"
+      ],
+      "rows": [
+        [
+          "Story quest",
+          "A Monstrosity in the Meadow",
+          "Singer's Meadow"
+        ],
+        [
+          "Side quest",
+          "Illager Intelligence",
+          "Frozen Highlands"
+        ],
+        [
+          "Side quest",
+          "Gone Fishing",
+          "Frozen Highlands"
+        ],
+        [
+          "Side quest",
+          "A Friend till the End",
+          "Lullaby Hills"
+        ],
+        [
+          "Side quest",
+          "Illegal Illager Trials",
+          "Rainy Plains"
+        ],
+        [
+          "Ambush arena",
+          "No quest needed",
+          "Lullaby Hills"
+        ],
+        [
+          "Soul Storm, possible",
+          "20 minute storms every 40 minutes",
+          "Howling Woods, Singer's Meadow, Rainy Plains, Humbler Huskland, Lullaby Hills, Frozen Highlands, Honeycomb Fields"
+        ]
+      ]
+    },
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Light attack",
+          "10",
+          "none",
+          "Physical",
+          "0.5 sec"
+        ],
+        [
+          "Heavy attack",
+          "12",
+          "5",
+          "Physical",
+          "5 sec"
+        ]
+      ]
+    },
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "DAMAGE",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Base",
+          "233",
+          "12",
+          "233",
+          "50"
+        ],
+        [
+          "Variant I",
+          "266",
+          "15",
+          "266",
+          "50"
+        ],
+        [
+          "Variant II",
+          "300",
+          "20",
+          "300",
+          "50"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Soul damage",
+      "+50%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    },
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "Humbler Huskland",
+      "href": "/2/locations/humbler-huskland"
+    },
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    },
+    {
+      "name": "Sift rifts",
+      "href": "/2/locations/sift-rifts"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/soul-corrupted-vindicator"
+}

@@ -1,0 +1,63 @@
+{
+  "parameters": [
+    [
+      "Region",
+      "Frozen Highlands"
+    ],
+    [
+      "Entrances",
+      "1"
+    ],
+    [
+      "Fancy chests",
+      "1"
+    ],
+    [
+      "Pots",
+      "7"
+    ]
+  ],
+  "objectives": [],
+  "tables": [],
+  "resistances": [
+    [
+      "Creeper",
+      "91%"
+    ],
+    [
+      "Charged Creeper",
+      "9%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Enchanter",
+      "href": "/2/enemies/enchanter"
+    },
+    {
+      "name": "Geomancer",
+      "href": "/2/enemies/geomancer"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Soul Corrupted Royal Guard",
+      "href": "/2/enemies/soul-corrupted-royal-guard"
+    },
+    {
+      "name": "Soul Corrupted Vindicator",
+      "href": "/2/enemies/soul-corrupted-vindicator"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/evokers-library"
+}

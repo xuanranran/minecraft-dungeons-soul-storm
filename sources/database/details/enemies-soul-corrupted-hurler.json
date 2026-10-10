@@ -1,0 +1,64 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "275"
+    ],
+    [
+      "Top hit",
+      "15"
+    ],
+    [
+      "Poise",
+      "275"
+    ],
+    [
+      "Souls",
+      "50"
+    ],
+    [
+      "Speed",
+      "850"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Light attack",
+          "15",
+          "none",
+          "Physical",
+          "0.5 sec"
+        ],
+        [
+          "Swipe",
+          "15",
+          "none",
+          "Physical",
+          ""
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Blast damage",
+      "+20%"
+    ],
+    [
+      "Melee damage",
+      "-20%"
+    ]
+  ],
+  "links": [],
+  "source": "https://www.dungeons.tools/2/enemies/soul-corrupted-hurler"
+}

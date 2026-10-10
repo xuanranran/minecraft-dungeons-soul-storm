@@ -1,0 +1,71 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Rainy Plains"
+    ],
+    [
+      "Level",
+      "26"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "Wading Rainy Plains"
+    ],
+    [
+      "Repeatable",
+      "Yes"
+    ],
+    [
+      "XP",
+      "1,100 the first time, 1,000 after that"
+    ],
+    [
+      "Emeralds",
+      "8 to 144, 40 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Enter the arena",
+      "map": "/2/map#p=3041,6193"
+    },
+    {
+      "text": "Defeat the Copper Monstrosity",
+      "map": ""
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map#m=quest-CA07_BR"
+    },
+    {
+      "name": "Wading Rainy Plains",
+      "href": "/2/quests/wading-rainy-plains"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3041,6193"
+    },
+    {
+      "name": "Copper Monstrosity",
+      "href": "/2/enemies/copper-monstrosity"
+    },
+    {
+      "name": "Stormcaller",
+      "href": "/2/weapons/stormcaller"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/the-copper-monstrosity-revived"
+}

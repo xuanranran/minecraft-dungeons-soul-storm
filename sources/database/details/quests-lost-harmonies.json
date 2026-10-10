@@ -1,0 +1,139 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Singer's Meadow"
+    ],
+    [
+      "Level",
+      "33"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "Returning the Note Blocks"
+    ],
+    [
+      "Opens",
+      "A Monstrosity in the Meadow, Rage of the Sifters and Wobble Run"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "2,750"
+    ],
+    [
+      "Emeralds",
+      "12 to 216, 75 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Find the silenced echo golems",
+      "map": "/2/map/the-sift#p=1119,5947"
+    },
+    {
+      "text": "Ambush",
+      "map": ""
+    },
+    {
+      "text": "Ambush",
+      "map": ""
+    },
+    {
+      "text": "Find the stolen soul blocks",
+      "map": "/2/map/the-sift#p=118,5647"
+    },
+    {
+      "text": "Defeat the illagers",
+      "map": ""
+    },
+    {
+      "text": "Check on the Echo Golem",
+      "map": "/2/map/the-sift#p=153,5612"
+    },
+    {
+      "text": "Head back to defend the Singer",
+      "map": "/2/map/the-sift#p=686,5704"
+    },
+    {
+      "text": "Defend Singer's Meadow",
+      "map": ""
+    },
+    {
+      "text": "Check on the Singer",
+      "map": "/2/map/the-sift#p=487,5754"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map/the-sift#m=quest-CA08"
+    },
+    {
+      "name": "Returning the Note Blocks",
+      "href": "/2/quests/returning-the-note-blocks"
+    },
+    {
+      "name": "A Monstrosity in the Meadow",
+      "href": "/2/quests/a-monstrosity-in-the-meadow"
+    },
+    {
+      "name": "Rage of the Sifters",
+      "href": "/2/quests/rage-of-the-sifters"
+    },
+    {
+      "name": "Wobble Run",
+      "href": "/2/quests/wobble-run"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=1119,5947"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=118,5647"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=153,5612"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=686,5704"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=487,5754"
+    },
+    {
+      "name": "Nomad Boots",
+      "href": "/2/armor/nomad-boots"
+    },
+    {
+      "name": "Nomad Chestplate",
+      "href": "/2/armor/nomad-chestplate"
+    },
+    {
+      "name": "Nomad Hood",
+      "href": "/2/armor/nomad-hood"
+    },
+    {
+      "name": "Nomad Leggings",
+      "href": "/2/armor/nomad-leggings"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/lost-harmonies"
+}

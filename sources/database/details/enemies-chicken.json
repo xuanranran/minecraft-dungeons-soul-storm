@@ -1,0 +1,25 @@
+{
+  "parameters": [
+    [
+      "Speed",
+      "200"
+    ]
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    },
+    {
+      "name": "Brave Haven",
+      "href": "/2/locations/brave-haven"
+    },
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/chicken"
+}

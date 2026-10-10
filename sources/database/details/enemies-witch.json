@@ -1,0 +1,131 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "460"
+    ],
+    [
+      "Top hit",
+      "15"
+    ],
+    [
+      "Poise",
+      "300"
+    ],
+    [
+      "Souls",
+      "75"
+    ],
+    [
+      "Speed",
+      "550"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Where you fight it",
+      "columns": [
+        "WHEN",
+        "QUEST",
+        "WHERE"
+      ],
+      "rows": [
+        [
+          "Soul Storm, possible",
+          "20 minute storms every 40 minutes",
+          "Howling Woods, Singer's Meadow, Rainy Plains, Humbler Huskland, Lullaby Hills, Frozen Highlands, Honeycomb Fields"
+        ]
+      ]
+    },
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Poison potion",
+          "3 ×3",
+          "none",
+          "Poison",
+          "5 sec"
+        ],
+        [
+          "Poison cloud",
+          "10",
+          "none",
+          "Poison",
+          ""
+        ],
+        [
+          "Damage puddle",
+          "15",
+          "none",
+          "Blast",
+          ""
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Blast damage",
+      "+15%"
+    ],
+    [
+      "Elemental damage",
+      "-25%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Slime",
+      "href": "/2/enemies/slime"
+    },
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    },
+    {
+      "name": "The Deep Dark",
+      "href": "/2/locations/the-deep-dark"
+    },
+    {
+      "name": "Deep Dark dungeons",
+      "href": "/2/locations/deep-dark-dungeons"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "Humbler Huskland",
+      "href": "/2/locations/humbler-huskland"
+    },
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    },
+    {
+      "name": "Witch Brew",
+      "href": "/2/artifacts/witch-brew"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/witch"
+}

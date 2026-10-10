@@ -1,0 +1,66 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "200"
+    ],
+    [
+      "Top hit",
+      "10"
+    ],
+    [
+      "Poise",
+      "200"
+    ],
+    [
+      "Souls",
+      "50"
+    ],
+    [
+      "Speed",
+      "750"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Swipe",
+          "10",
+          "none",
+          "Physical",
+          "0.8 sec"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Poison damage",
+      "-50%"
+    ],
+    [
+      "Lightning damage",
+      "+100%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/soul-corrupted-cave-spider"
+}

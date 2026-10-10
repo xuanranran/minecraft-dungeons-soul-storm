@@ -1,0 +1,298 @@
+{
+  "parameters": [],
+  "objectives": [],
+  "tables": [
+    {
+      "title": "Doors",
+      "columns": [
+        "REGION",
+        "DOORS",
+        "OPEN AT ONCE",
+        "LEVELS"
+      ],
+      "rows": [
+        [
+          "Honeycomb Fields",
+          "8",
+          "2",
+          "4 + boss"
+        ],
+        [
+          "Rainy Plains",
+          "10",
+          "3",
+          "4 + boss"
+        ],
+        [
+          "Howling Woods",
+          "12",
+          "3",
+          "4 + boss"
+        ],
+        [
+          "Frozen Highlands",
+          "16",
+          "4",
+          "4 + boss"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Nester",
+      "19%"
+    ],
+    [
+      "Bloombud",
+      "17%"
+    ],
+    [
+      "Pollinator",
+      "14%"
+    ],
+    [
+      "Sentinel",
+      "14%"
+    ],
+    [
+      "Sprout",
+      "11%"
+    ],
+    [
+      "Seedling",
+      "9%"
+    ],
+    [
+      "Roamroot",
+      "8%"
+    ],
+    [
+      "Hurler",
+      "6%"
+    ],
+    [
+      "Fusefly",
+      "3%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Sculk Monstrosity",
+      "href": "/2/enemies/sculk-monstrosity"
+    },
+    {
+      "name": "Harmonizer",
+      "href": "/2/enemies/harmonizer"
+    },
+    {
+      "name": "Soul Corrupted Harmonizer",
+      "href": "/2/enemies/soul-corrupted-harmonizer"
+    },
+    {
+      "name": "Enderman",
+      "href": "/2/enemies/enderman"
+    },
+    {
+      "name": "Soul Corrupted Enderman",
+      "href": "/2/enemies/soul-corrupted-enderman"
+    },
+    {
+      "name": "Dartback",
+      "href": "/2/enemies/dartback"
+    },
+    {
+      "name": "Soul Corrupted Dartback",
+      "href": "/2/enemies/soul-corrupted-dartback"
+    },
+    {
+      "name": "Soul Corrupted Nester",
+      "href": "/2/enemies/soul-corrupted-nester"
+    },
+    {
+      "name": "Soul Corrupted Pollinator",
+      "href": "/2/enemies/soul-corrupted-pollinator"
+    },
+    {
+      "name": "Soul Corrupted Seedling",
+      "href": "/2/enemies/soul-corrupted-seedling"
+    },
+    {
+      "name": "Soul Corrupted Sentinel",
+      "href": "/2/enemies/soul-corrupted-sentinel"
+    },
+    {
+      "name": "Soul Corrupted Sprout",
+      "href": "/2/enemies/soul-corrupted-sprout"
+    },
+    {
+      "name": "Tumbleshot",
+      "href": "/2/enchantments/tumbleshot"
+    },
+    {
+      "name": "Critical Quiver",
+      "href": "/2/enchantments/critical-quiver"
+    },
+    {
+      "name": "Shielding Smite",
+      "href": "/2/enchantments/shielding-smite"
+    },
+    {
+      "name": "Power Amplifier",
+      "href": "/2/enchantments/power-amplifier"
+    },
+    {
+      "name": "Barrier Brew",
+      "href": "/2/enchantments/barrier-brew"
+    },
+    {
+      "name": "Swirling",
+      "href": "/2/enchantments/swirling"
+    },
+    {
+      "name": "Electric Bangle",
+      "href": "/2/artifacts/electric-bangle"
+    },
+    {
+      "name": "Corrupted Beacon",
+      "href": "/2/artifacts/corrupted-beacon"
+    },
+    {
+      "name": "Creeper Candle",
+      "href": "/2/artifacts/creeper-candle"
+    },
+    {
+      "name": "Freezing Quiver",
+      "href": "/2/artifacts/freezing-quiver"
+    },
+    {
+      "name": "Grindstone",
+      "href": "/2/artifacts/grindstone"
+    },
+    {
+      "name": "Honey Dipper",
+      "href": "/2/artifacts/honey-dipper"
+    },
+    {
+      "name": "Redstone Mine Launcher",
+      "href": "/2/artifacts/redstone-mine-launcher"
+    },
+    {
+      "name": "Pouch of Frost",
+      "href": "/2/artifacts/pouch-of-frost"
+    },
+    {
+      "name": "Warrior Drums",
+      "href": "/2/artifacts/warrior-drums"
+    },
+    {
+      "name": "Sculk Digger Boots",
+      "href": "/2/armor/sculk-digger-boots"
+    },
+    {
+      "name": "Sculk Digger Robe",
+      "href": "/2/armor/sculk-digger-robe"
+    },
+    {
+      "name": "Sculk Digger Hood",
+      "href": "/2/armor/sculk-digger-hood"
+    },
+    {
+      "name": "Sculk Digger Leggings",
+      "href": "/2/armor/sculk-digger-leggings"
+    },
+    {
+      "name": "Wolf Claws",
+      "href": "/2/weapons/wolf-claws"
+    },
+    {
+      "name": "Claymore",
+      "href": "/2/weapons/claymore"
+    },
+    {
+      "name": "Meat Cleaver",
+      "href": "/2/weapons/meat-cleaver"
+    },
+    {
+      "name": "Dual Crossbows",
+      "href": "/2/weapons/dual-crossbows"
+    },
+    {
+      "name": "Gauntlets",
+      "href": "/2/weapons/gauntlets"
+    },
+    {
+      "name": "Tidal Sickle",
+      "href": "/2/weapons/tidal-sickle"
+    },
+    {
+      "name": "Mushroom Boots",
+      "href": "/2/armor/mushroom-boots"
+    },
+    {
+      "name": "Mushroom Robe",
+      "href": "/2/armor/mushroom-robe"
+    },
+    {
+      "name": "Mushroom Cap",
+      "href": "/2/armor/mushroom-cap"
+    },
+    {
+      "name": "Mushroom Leggings",
+      "href": "/2/armor/mushroom-leggings"
+    },
+    {
+      "name": "Pike",
+      "href": "/2/weapons/pike"
+    },
+    {
+      "name": "Redstone Boots",
+      "href": "/2/armor/redstone-boots"
+    },
+    {
+      "name": "Redstone Chestplate",
+      "href": "/2/armor/redstone-chestplate"
+    },
+    {
+      "name": "Redstone Helmet",
+      "href": "/2/armor/redstone-helmet"
+    },
+    {
+      "name": "Redstone Shinguards",
+      "href": "/2/armor/redstone-shinguards"
+    },
+    {
+      "name": "Scatter Crossbow",
+      "href": "/2/weapons/scatter-crossbow"
+    },
+    {
+      "name": "Sculker Boots",
+      "href": "/2/armor/sculker-boots"
+    },
+    {
+      "name": "Sculker Robe",
+      "href": "/2/armor/sculker-robe"
+    },
+    {
+      "name": "Sculker Mask",
+      "href": "/2/armor/sculker-mask"
+    },
+    {
+      "name": "Sculker Slacks",
+      "href": "/2/armor/sculker-slacks"
+    },
+    {
+      "name": "Scythe",
+      "href": "/2/weapons/scythe"
+    },
+    {
+      "name": "Short Spear",
+      "href": "/2/weapons/short-spear"
+    },
+    {
+      "name": "War Hammer",
+      "href": "/2/weapons/war-hammer"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/sift-rifts"
+}

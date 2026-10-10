@@ -1,0 +1,129 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "1,300"
+    ],
+    [
+      "Top hit",
+      "30"
+    ],
+    [
+      "Poise",
+      "1,300"
+    ],
+    [
+      "Souls",
+      "75"
+    ],
+    [
+      "Speed",
+      "450"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Where you fight it",
+      "columns": [
+        "WHEN",
+        "QUEST",
+        "WHERE"
+      ],
+      "rows": [
+        [
+          "Side quest",
+          "Breaking Camps",
+          "Humbler Huskland"
+        ],
+        [
+          "Side quest, possible",
+          "Rage of the Sifters",
+          "Singer's Meadow"
+        ]
+      ]
+    },
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Swipe",
+          "20",
+          "none",
+          "Physical",
+          "1 sec"
+        ],
+        [
+          "Gravity explosion",
+          "30",
+          "5",
+          "Physical",
+          ""
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Blast damage",
+      "+25%"
+    ],
+    [
+      "Soul damage",
+      "-25%"
+    ],
+    [
+      "Melee damage",
+      "+10%"
+    ],
+    [
+      "Ranged damage",
+      "-20%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Nester",
+      "href": "/2/enemies/nester"
+    },
+    {
+      "name": "Pollinator",
+      "href": "/2/enemies/pollinator"
+    },
+    {
+      "name": "Seedling",
+      "href": "/2/enemies/seedling"
+    },
+    {
+      "name": "Sentinel",
+      "href": "/2/enemies/sentinel"
+    },
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "Humbler Huskland",
+      "href": "/2/locations/humbler-huskland"
+    },
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    },
+    {
+      "name": "Sift rifts",
+      "href": "/2/locations/sift-rifts"
+    },
+    {
+      "name": "Ravines",
+      "href": "/2/locations/ravines"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/soul-corrupted-harmonizer"
+}

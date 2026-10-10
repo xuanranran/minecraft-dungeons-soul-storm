@@ -1,0 +1,17 @@
+{
+  "parameters": [
+    [
+      "Speed",
+      "200"
+    ]
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Brave Haven",
+      "href": "/2/locations/brave-haven"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/baby-pig"
+}

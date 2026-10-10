@@ -1,0 +1,288 @@
+{
+  "parameters": [],
+  "objectives": [],
+  "tables": [
+    {
+      "title": "Doors",
+      "columns": [
+        "REGION",
+        "DOORS",
+        "OPEN AT ONCE",
+        "LEVELS"
+      ],
+      "rows": [
+        [
+          "Singer's Meadow",
+          "10",
+          "4",
+          "4 + boss"
+        ],
+        [
+          "Humbler Huskland",
+          "5",
+          "2",
+          "4 + boss"
+        ],
+        [
+          "Lullaby Hills",
+          "7",
+          "3",
+          "4 + boss"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Stalker",
+      "28%"
+    ],
+    [
+      "Bloombud",
+      "25%"
+    ],
+    [
+      "Scavenger",
+      "19%"
+    ],
+    [
+      "Roamroot",
+      "13%"
+    ],
+    [
+      "Hurler",
+      "8%"
+    ],
+    [
+      "Fusefly",
+      "4%"
+    ],
+    [
+      "Hunter",
+      "2%"
+    ],
+    [
+      "Trapper",
+      "1%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Monarch",
+      "href": "/2/enemies/monarch"
+    },
+    {
+      "name": "Dartback",
+      "href": "/2/enemies/dartback"
+    },
+    {
+      "name": "Harmonizer",
+      "href": "/2/enemies/harmonizer"
+    },
+    {
+      "name": "Enderman",
+      "href": "/2/enemies/enderman"
+    },
+    {
+      "name": "Soul Corrupted Dartback",
+      "href": "/2/enemies/soul-corrupted-dartback"
+    },
+    {
+      "name": "Soul Corrupted Harmonizer",
+      "href": "/2/enemies/soul-corrupted-harmonizer"
+    },
+    {
+      "name": "Soul Corrupted Enderman",
+      "href": "/2/enemies/soul-corrupted-enderman"
+    },
+    {
+      "name": "Soul Corrupted Hunter",
+      "href": "/2/enemies/soul-corrupted-hunter"
+    },
+    {
+      "name": "Soul Corrupted Scavenger",
+      "href": "/2/enemies/soul-corrupted-scavenger"
+    },
+    {
+      "name": "Soul Corrupted Stalker",
+      "href": "/2/enemies/soul-corrupted-stalker"
+    },
+    {
+      "name": "Soul Corrupted Trapper",
+      "href": "/2/enemies/soul-corrupted-trapper"
+    },
+    {
+      "name": "Artifact Amplifier",
+      "href": "/2/enchantments/artifact-amplifier"
+    },
+    {
+      "name": "Chain Reaction",
+      "href": "/2/enchantments/chain-reaction"
+    },
+    {
+      "name": "Gravity Pulse",
+      "href": "/2/enchantments/gravity-pulse"
+    },
+    {
+      "name": "Health Synergy",
+      "href": "/2/enchantments/health-synergy"
+    },
+    {
+      "name": "Bottomless Brew",
+      "href": "/2/enchantments/bottomless-brew"
+    },
+    {
+      "name": "Soul Blast",
+      "href": "/2/enchantments/soul-blast"
+    },
+    {
+      "name": "Winter Staff",
+      "href": "/2/artifacts/winter-staff"
+    },
+    {
+      "name": "Death Cap Mushroom",
+      "href": "/2/artifacts/death-cap-mushroom"
+    },
+    {
+      "name": "Blaze Bangle",
+      "href": "/2/artifacts/blaze-bangle"
+    },
+    {
+      "name": "Picnic Basket",
+      "href": "/2/artifacts/picnic-basket"
+    },
+    {
+      "name": "Venomous Quiver",
+      "href": "/2/artifacts/venomous-quiver"
+    },
+    {
+      "name": "Pouch of Poison",
+      "href": "/2/artifacts/pouch-of-poison"
+    },
+    {
+      "name": "Ender Fog",
+      "href": "/2/artifacts/ender-fog"
+    },
+    {
+      "name": "Totem of Regeneration",
+      "href": "/2/artifacts/totem-of-regeneration"
+    },
+    {
+      "name": "Witch Brew",
+      "href": "/2/artifacts/witch-brew"
+    },
+    {
+      "name": "Battlestaff",
+      "href": "/2/weapons/battlestaff"
+    },
+    {
+      "name": "Crossbow",
+      "href": "/2/weapons/crossbow"
+    },
+    {
+      "name": "Sorcerer Boots",
+      "href": "/2/armor/sorcerer-boots"
+    },
+    {
+      "name": "Sorcerer Robe",
+      "href": "/2/armor/sorcerer-robe"
+    },
+    {
+      "name": "Sorcerer Hat",
+      "href": "/2/armor/sorcerer-hat"
+    },
+    {
+      "name": "Sorcerer Leggings",
+      "href": "/2/armor/sorcerer-leggings"
+    },
+    {
+      "name": "Clobberer",
+      "href": "/2/weapons/clobberer"
+    },
+    {
+      "name": "Mob Mallet",
+      "href": "/2/weapons/mob-mallet"
+    },
+    {
+      "name": "Glaive",
+      "href": "/2/weapons/glaive"
+    },
+    {
+      "name": "Greataxe",
+      "href": "/2/weapons/greataxe"
+    },
+    {
+      "name": "Greatbow",
+      "href": "/2/weapons/greatbow"
+    },
+    {
+      "name": "Mace",
+      "href": "/2/weapons/mace"
+    },
+    {
+      "name": "Rapid Crossbow",
+      "href": "/2/weapons/rapid-crossbow"
+    },
+    {
+      "name": "Rapier",
+      "href": "/2/weapons/rapier"
+    },
+    {
+      "name": "Sabre",
+      "href": "/2/weapons/sabre"
+    },
+    {
+      "name": "Double Sickles",
+      "href": "/2/weapons/double-sickles"
+    },
+    {
+      "name": "Realmreacher Boots",
+      "href": "/2/armor/realmreacher-boots"
+    },
+    {
+      "name": "Realmreacher Robe",
+      "href": "/2/armor/realmreacher-robe"
+    },
+    {
+      "name": "Realmreacher Hat",
+      "href": "/2/armor/realmreacher-hat"
+    },
+    {
+      "name": "Realmreacher Leggings",
+      "href": "/2/armor/realmreacher-leggings"
+    },
+    {
+      "name": "Bounty Hunter Boots",
+      "href": "/2/armor/bounty-hunter-boots"
+    },
+    {
+      "name": "Bounty Hunter Chestplate",
+      "href": "/2/armor/bounty-hunter-chestplate"
+    },
+    {
+      "name": "Bounty Hunter Helmet",
+      "href": "/2/armor/bounty-hunter-helmet"
+    },
+    {
+      "name": "Bounty Hunter Shinguards",
+      "href": "/2/armor/bounty-hunter-shinguards"
+    },
+    {
+      "name": "Wolfpack Boots",
+      "href": "/2/armor/wolfpack-boots"
+    },
+    {
+      "name": "Wolfpack Jacket",
+      "href": "/2/armor/wolfpack-jacket"
+    },
+    {
+      "name": "Wolfpack Hood",
+      "href": "/2/armor/wolfpack-hood"
+    },
+    {
+      "name": "Wolfpack Leggings",
+      "href": "/2/armor/wolfpack-leggings"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/ravines"
+}

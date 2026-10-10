@@ -1,0 +1,235 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Honeycomb Fields"
+    ],
+    [
+      "Level",
+      "2"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "Escape from Squid Coast"
+    ],
+    [
+      "Opens",
+      "The Lost Merchant, The Creeper Candle Conspiracy and Keeper of the Bees"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "1,100"
+    ],
+    [
+      "Emeralds",
+      "8 to 144, 40 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Reach the town gate restarts if you quit",
+      "map": "/2/map#p=696,4421"
+    },
+    {
+      "text": "Speak to the Villager",
+      "map": "/2/map#p=693,4400"
+    },
+    {
+      "text": "Find the key golem restarts if you quit",
+      "map": "/2/map#p=568,4245"
+    },
+    {
+      "text": "Open the gate restarts if you quit",
+      "map": "/2/map#p=758,4423"
+    },
+    {
+      "text": "Defeat the illagers",
+      "map": "/2/map#p=819,4424"
+    },
+    {
+      "text": "Defeat the illagers",
+      "map": ""
+    },
+    {
+      "text": "Speak to the Villager",
+      "map": "/2/map#p=844,4456"
+    },
+    {
+      "text": "Find Honeycomb Farm",
+      "map": "/2/map#p=2657,3630"
+    },
+    {
+      "text": "Defeat the illagers: Pillager and Vindicator restarts if you quit",
+      "map": "/2/map#p=2657,3630"
+    },
+    {
+      "text": "Speak to the Farmer",
+      "map": "/2/map#p=2656,3622"
+    },
+    {
+      "text": "Reach the Farmer's fields",
+      "map": "/2/map#p=2882,3281"
+    },
+    {
+      "text": "Defeat the soul corrupted monsters: Soul Corrupted Zombie restarts if you quit",
+      "map": "/2/map#p=2882,3281"
+    },
+    {
+      "text": "Return to the Farmer restarts if you quit",
+      "map": "/2/map#p=2865,3640"
+    },
+    {
+      "text": "Speak to the Farmer restarts if you quit",
+      "map": "/2/map#p=2810,3658"
+    },
+    {
+      "text": "Investigate the illager activity",
+      "map": ""
+    },
+    {
+      "text": "Defeat the illagers",
+      "map": ""
+    },
+    {
+      "text": "Enter the rift",
+      "map": "/2/map#p=2847,3629"
+    },
+    {
+      "text": "Explore the new dimension",
+      "map": ""
+    },
+    {
+      "text": "Defeat the illagers",
+      "map": ""
+    },
+    {
+      "text": "Return to the Overworld",
+      "map": "/2/map#p=2865,3635"
+    },
+    {
+      "text": "Speak to the Farmer",
+      "map": "/2/map#p=2810,3658"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map#m=quest-CA01"
+    },
+    {
+      "name": "Escape from Squid Coast",
+      "href": "/2/quests/escape-from-squid-coast"
+    },
+    {
+      "name": "The Lost Merchant",
+      "href": "/2/quests/the-lost-merchant"
+    },
+    {
+      "name": "The Creeper Candle Conspiracy",
+      "href": "/2/quests/the-creeper-candle-conspiracy"
+    },
+    {
+      "name": "Keeper of the Bees",
+      "href": "/2/quests/keeper-of-the-bees"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=696,4421"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=693,4400"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=568,4245"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=758,4423"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=819,4424"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=844,4456"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2657,3630"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2657,3630"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2656,3622"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2882,3281"
+    },
+    {
+      "name": "Soul Corrupted Zombie",
+      "href": "/2/enemies/soul-corrupted-zombie"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2882,3281"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2865,3640"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2810,3658"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2847,3629"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2865,3635"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2810,3658"
+    },
+    {
+      "name": "Honey Dipper",
+      "href": "/2/artifacts/honey-dipper"
+    },
+    {
+      "name": "Sigil of Beeswax",
+      "href": "/2/artifacts/sigil-of-beeswax"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/the-illagers-from-the-rift"
+}

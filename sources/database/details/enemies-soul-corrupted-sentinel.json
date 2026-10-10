@@ -1,0 +1,81 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "233"
+    ],
+    [
+      "Top hit",
+      "3"
+    ],
+    [
+      "Poise",
+      "233"
+    ],
+    [
+      "Souls",
+      "50"
+    ],
+    [
+      "Speed",
+      "500"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Where you fight it",
+      "columns": [
+        "WHEN",
+        "QUEST",
+        "WHERE"
+      ],
+      "rows": [
+        [
+          "Ambush arena",
+          "No quest needed",
+          "Singer's Meadow"
+        ]
+      ]
+    },
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Quill storm",
+          "3 ×12",
+          "none",
+          "Physical",
+          "0.3 sec"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Elemental damage",
+      "+25%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    },
+    {
+      "name": "Sift rifts",
+      "href": "/2/locations/sift-rifts"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/soul-corrupted-sentinel"
+}

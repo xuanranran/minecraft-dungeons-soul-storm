@@ -1,0 +1,455 @@
+{
+  "parameters": [
+    [
+      "Minecart stations",
+      "5"
+    ],
+    [
+      "Dungeon entrances",
+      "9"
+    ],
+    [
+      "Rift entrances",
+      "10"
+    ],
+    [
+      "Minecart station",
+      "Monsoon Banks"
+    ],
+    [
+      "Minecart station",
+      "Orange Tower"
+    ],
+    [
+      "Minecart station",
+      "Puddle Pond"
+    ],
+    [
+      "Minecart station",
+      "Red Tower"
+    ],
+    [
+      "Minecart station",
+      "White Tower"
+    ],
+    [
+      "Enchantsmith",
+      "Outpost by Puddle Pond station"
+    ],
+    [
+      "Blacksmith",
+      "Outpost by Puddle Pond station"
+    ],
+    [
+      "Town Merchant",
+      "Outpost by Puddle Pond station"
+    ]
+  ],
+  "objectives": [],
+  "tables": [],
+  "resistances": [
+    [
+      "Slime",
+      "33%"
+    ],
+    [
+      "Zombie",
+      "20%"
+    ],
+    [
+      "Creeper",
+      "11%"
+    ],
+    [
+      "Skeleton",
+      "10%"
+    ],
+    [
+      "Baby Zombie",
+      "6%"
+    ],
+    [
+      "Vanguard",
+      "6%"
+    ],
+    [
+      "Spider",
+      "6%"
+    ],
+    [
+      "Chicken Jockey",
+      "4%"
+    ],
+    [
+      "Spider Jockey",
+      "4%"
+    ],
+    [
+      "Vindicator",
+      "34%"
+    ],
+    [
+      "Royal Guard",
+      "32%"
+    ],
+    [
+      "Pillager",
+      "23%"
+    ],
+    [
+      "Enchanter",
+      "7%"
+    ],
+    [
+      "Ravager",
+      "3%"
+    ],
+    [
+      "Geomancer",
+      "2%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "9",
+      "href": "/2/locations/deep-dark-dungeons"
+    },
+    {
+      "name": "10",
+      "href": "/2/locations/sift-rifts"
+    },
+    {
+      "name": "Evoker",
+      "href": "/2/enemies/evoker"
+    },
+    {
+      "name": "Witch",
+      "href": "/2/enemies/witch"
+    },
+    {
+      "name": "Enderman",
+      "href": "/2/enemies/enderman"
+    },
+    {
+      "name": "Soul Corrupted Evoker",
+      "href": "/2/enemies/soul-corrupted-evoker"
+    },
+    {
+      "name": "Soul Corrupted Witch",
+      "href": "/2/enemies/soul-corrupted-witch"
+    },
+    {
+      "name": "Soul Corrupted Enderman",
+      "href": "/2/enemies/soul-corrupted-enderman"
+    },
+    {
+      "name": "Sheep",
+      "href": "/2/enemies/sheep"
+    },
+    {
+      "name": "Key Golem",
+      "href": "/2/enemies/key-golem"
+    },
+    {
+      "name": "Frog",
+      "href": "/2/enemies/frog"
+    },
+    {
+      "name": "Enchanter",
+      "href": "/2/enemies/enchanter"
+    },
+    {
+      "name": "Evoker",
+      "href": "/2/enemies/evoker"
+    },
+    {
+      "name": "Geomancer",
+      "href": "/2/enemies/geomancer"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Ravager",
+      "href": "/2/enemies/ravager"
+    },
+    {
+      "name": "Royal Guard",
+      "href": "/2/enemies/royal-guard"
+    },
+    {
+      "name": "Soul Corrupted Baby Zombie",
+      "href": "/2/enemies/soul-corrupted-baby-zombie"
+    },
+    {
+      "name": "Soul Corrupted Cave Spider",
+      "href": "/2/enemies/soul-corrupted-cave-spider"
+    },
+    {
+      "name": "Soul Corrupted Chicken Jockey",
+      "href": "/2/enemies/soul-corrupted-chicken-jockey"
+    },
+    {
+      "name": "Soul Corrupted Creeper",
+      "href": "/2/enemies/soul-corrupted-creeper"
+    },
+    {
+      "name": "Soul Corrupted Enchanter",
+      "href": "/2/enemies/soul-corrupted-enchanter"
+    },
+    {
+      "name": "Soul Corrupted Evoker",
+      "href": "/2/enemies/soul-corrupted-evoker"
+    },
+    {
+      "name": "Soul Corrupted Geomancer",
+      "href": "/2/enemies/soul-corrupted-geomancer"
+    },
+    {
+      "name": "Soul Corrupted Husk",
+      "href": "/2/enemies/soul-corrupted-husk"
+    },
+    {
+      "name": "Soul Corrupted Pillager",
+      "href": "/2/enemies/soul-corrupted-pillager"
+    },
+    {
+      "name": "Soul Corrupted Ravager",
+      "href": "/2/enemies/soul-corrupted-ravager"
+    },
+    {
+      "name": "Soul Corrupted Royal Guard",
+      "href": "/2/enemies/soul-corrupted-royal-guard"
+    },
+    {
+      "name": "Soul Corrupted Skeleton",
+      "href": "/2/enemies/soul-corrupted-skeleton"
+    },
+    {
+      "name": "Soul Corrupted Slime",
+      "href": "/2/enemies/soul-corrupted-slime"
+    },
+    {
+      "name": "Soul Corrupted Spider",
+      "href": "/2/enemies/soul-corrupted-spider"
+    },
+    {
+      "name": "Soul Corrupted Spider Jockey",
+      "href": "/2/enemies/soul-corrupted-spider-jockey"
+    },
+    {
+      "name": "Soul Corrupted Vanguard",
+      "href": "/2/enemies/soul-corrupted-vanguard"
+    },
+    {
+      "name": "Soul Corrupted Vindicator",
+      "href": "/2/enemies/soul-corrupted-vindicator"
+    },
+    {
+      "name": "Soul Corrupted Zombie",
+      "href": "/2/enemies/soul-corrupted-zombie"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    },
+    {
+      "name": "Monsoon Banks",
+      "href": "/2/map#m=station-4797-7044"
+    },
+    {
+      "name": "Orange Tower",
+      "href": "/2/map#m=station-4955-7598"
+    },
+    {
+      "name": "Puddle Pond",
+      "href": "/2/map#m=station-4470-5698"
+    },
+    {
+      "name": "Red Tower",
+      "href": "/2/map#m=station-5518-6211"
+    },
+    {
+      "name": "White Tower",
+      "href": "/2/map#m=station-4347-6875"
+    },
+    {
+      "name": "Outpost by Puddle Pond station",
+      "href": "/2/map#m=trader-4558-5718"
+    },
+    {
+      "name": "Outpost by Puddle Pond station",
+      "href": "/2/map#m=trader-4357-5489"
+    },
+    {
+      "name": "Outpost by Puddle Pond station",
+      "href": "/2/map#m=trader-4434-5605"
+    },
+    {
+      "name": "Blaze Bangle",
+      "href": "/2/artifacts/blaze-bangle"
+    },
+    {
+      "name": "Cinder Scepter",
+      "href": "/2/artifacts/cinder-scepter"
+    },
+    {
+      "name": "Tempo Truffle",
+      "href": "/2/artifacts/tempo-truffle"
+    },
+    {
+      "name": "Conductive Quiver",
+      "href": "/2/artifacts/conductive-quiver"
+    },
+    {
+      "name": "Picnic Basket",
+      "href": "/2/artifacts/picnic-basket"
+    },
+    {
+      "name": "Pouch of Poison",
+      "href": "/2/artifacts/pouch-of-poison"
+    },
+    {
+      "name": "Soul Harvester",
+      "href": "/2/artifacts/soul-harvester"
+    },
+    {
+      "name": "Totem of Casting",
+      "href": "/2/artifacts/totem-of-casting"
+    },
+    {
+      "name": "Totem of Regeneration",
+      "href": "/2/artifacts/totem-of-regeneration"
+    },
+    {
+      "name": "Bow",
+      "href": "/2/weapons/bow"
+    },
+    {
+      "name": "Claymore",
+      "href": "/2/weapons/claymore"
+    },
+    {
+      "name": "Cookiecutter",
+      "href": "/2/weapons/cookiecutter"
+    },
+    {
+      "name": "Riftslasher",
+      "href": "/2/weapons/riftslasher"
+    },
+    {
+      "name": "Twilight Dagger",
+      "href": "/2/weapons/twilight-dagger"
+    },
+    {
+      "name": "Double Daggers",
+      "href": "/2/weapons/double-daggers"
+    },
+    {
+      "name": "Dual Crossbows",
+      "href": "/2/weapons/dual-crossbows"
+    },
+    {
+      "name": "Gauntlets",
+      "href": "/2/weapons/gauntlets"
+    },
+    {
+      "name": "Greatbow",
+      "href": "/2/weapons/greatbow"
+    },
+    {
+      "name": "Greatsword",
+      "href": "/2/weapons/greatsword"
+    },
+    {
+      "name": "Battle Hammer",
+      "href": "/2/weapons/battle-hammer"
+    },
+    {
+      "name": "Treehugger Clogs",
+      "href": "/2/armor/treehugger-clogs"
+    },
+    {
+      "name": "Treehugger Chestplate",
+      "href": "/2/armor/treehugger-chestplate"
+    },
+    {
+      "name": "Treehugger Mask",
+      "href": "/2/armor/treehugger-mask"
+    },
+    {
+      "name": "Treehugger Leggings",
+      "href": "/2/armor/treehugger-leggings"
+    },
+    {
+      "name": "Ranger Boots",
+      "href": "/2/armor/ranger-boots"
+    },
+    {
+      "name": "Ranger Jacket",
+      "href": "/2/armor/ranger-jacket"
+    },
+    {
+      "name": "Ranger Cap",
+      "href": "/2/armor/ranger-cap"
+    },
+    {
+      "name": "Ranger Leggings",
+      "href": "/2/armor/ranger-leggings"
+    },
+    {
+      "name": "Scamp Sneakers",
+      "href": "/2/armor/scamp-sneakers"
+    },
+    {
+      "name": "Scamp Jacket",
+      "href": "/2/armor/scamp-jacket"
+    },
+    {
+      "name": "Scamp Hood",
+      "href": "/2/armor/scamp-hood"
+    },
+    {
+      "name": "Scamp Leggings",
+      "href": "/2/armor/scamp-leggings"
+    },
+    {
+      "name": "Scatter Crossbow",
+      "href": "/2/weapons/scatter-crossbow"
+    },
+    {
+      "name": "Longsword",
+      "href": "/2/weapons/longsword"
+    },
+    {
+      "name": "Sword",
+      "href": "/2/weapons/sword"
+    },
+    {
+      "name": "Realmreacher Boots",
+      "href": "/2/armor/realmreacher-boots"
+    },
+    {
+      "name": "Realmreacher Robe",
+      "href": "/2/armor/realmreacher-robe"
+    },
+    {
+      "name": "Realmreacher Hat",
+      "href": "/2/armor/realmreacher-hat"
+    },
+    {
+      "name": "Realmreacher Leggings",
+      "href": "/2/armor/realmreacher-leggings"
+    },
+    {
+      "name": "Trickbow",
+      "href": "/2/weapons/trickbow"
+    },
+    {
+      "name": "War Hammer",
+      "href": "/2/weapons/war-hammer"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/rainy-plains"
+}

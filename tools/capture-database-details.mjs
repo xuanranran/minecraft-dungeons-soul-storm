@@ -1,0 +1,21 @@
+import {homedir} from 'node:os';import {join} from 'node:path';import {pathToFileURL} from 'node:url';import {mkdir,readFile,writeFile} from 'node:fs/promises';import {createHash} from 'node:crypto';
+const {chromium}=await import('playwright').catch(()=>import(pathToFileURL(join(homedir(),'.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs'))));
+const browser=await chromium.launch({channel:'msedge',headless:true});const directory='sources/database';const jobs=[];
+for(const category of (process.argv.includes('--supplement')?['locations','quests','cosmetics']:['enemies','locations','quests','cosmetics'])){const data=JSON.parse(await readFile(directory+'/'+category+'.json','utf8'));for(const row of data.rows)jobs.push({category,...row});}
+await mkdir(directory+'/details',{recursive:true});await mkdir('dist/images/database',{recursive:true});
+try{
+ const context=await browser.newContext();let next=0,done=0;const errors=[];
+ await Promise.all(Array.from({length:4},async()=>{const page=await context.newPage();while(next<jobs.length){const job=jobs[next++];
+  try{await page.goto('https://www.dungeons.tools'+job.href,{waitUntil:'domcontentloaded'});
+   const detail=await page.locator('main').evaluate(root=>({parameters:[...[...root.querySelectorAll('.g2-statline>span')].map(e=>[e.querySelector('small')?.textContent||'',e.textContent.slice(e.querySelector('small')?.textContent.length||0).trim()]),...[...root.querySelectorAll('.g2-facts>div')].map(e=>[e.querySelector('dt')?.textContent||'',e.querySelector('dd')?.textContent||''])],objectives:[...root.querySelectorAll('.g2-steps li')].map(e=>({text:e.querySelector('.t')?.textContent||'',map:e.querySelector('a.go')?.getAttribute('href')||''})),tables:[...root.querySelectorAll('.g2-tbl')].map(t=>({title:t.closest('section')?.querySelector('h2')?.childNodes[0]?.textContent||'',columns:[...t.querySelectorAll('.g2-th>span,.g2-th>button')].map(e=>e.textContent),rows:[...t.querySelectorAll('.g2-tr')].map(r=>[...r.children].map(c=>c.textContent.trim()))})),resistances:[...root.querySelectorAll('.g2-barrow')].map(r=>[r.querySelector('.l')?.textContent,r.querySelector('.v')?.textContent]),links:[...root.querySelectorAll('a.g2-link, .g2-facts a[href], .g2-steps a[href]')].map(a=>({name:a.querySelector('.nm')?.textContent||a.textContent.trim(),href:a.getAttribute('href')}))}));
+   await writeFile(directory+'/details/'+job.category+'-'+job.href.split('/').at(-1)+'.json',JSON.stringify({...detail,source:'https://www.dungeons.tools'+job.href},null,2));
+  }catch(e){errors.push({href:job.href,error:String(e)});}if(++done%40===0)console.log('Details',done+'/'+jobs.length);
+ }await page.close();}));
+ if(process.argv.includes('--supplement')){console.log('Supplemented',done,'details;',errors.length,'errors');await writeFile(directory+'/supplement-errors.json',JSON.stringify(errors,null,2));await browser.close();process.exit(0);}
+ const images=new Map();for(const category of ['enemies','enchantments','effects','locations','cosmetics','quests']){const data=JSON.parse(await readFile(directory+'/'+category+'.json','utf8'));for(const row of data.rows)if(row.image)images.set(row.image,null);}
+ const entries=[...images.keys()];next=0;const assets=[];
+ await Promise.all(Array.from({length:6},async()=>{while(next<entries.length){const remote=entries[next++];const filename=remote.replace('/images/d2/','').replaceAll('/','-');
+  try{const response=await context.request.get('https://www.dungeons.tools'+remote);if(!response.ok())throw Error('HTTP '+response.status());const bytes=await response.body();if(!response.headers()['content-type']?.startsWith('image/'))throw Error('Not an image');await writeFile('dist/images/database/'+filename,bytes);assets.push({remote,local:'./images/database/'+filename,sha256:createHash('sha256').update(bytes).digest('hex')});}
+  catch(e){errors.push({image:remote,error:String(e)});}
+ }}));await writeFile(directory+'/assets.json',JSON.stringify(assets,null,2));await writeFile(directory+'/capture-errors.json',JSON.stringify(errors,null,2));console.log('Captured',done,'details and',assets.length,'images;',errors.length,'errors');
+}finally{await browser.close();}

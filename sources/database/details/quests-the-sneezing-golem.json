@@ -1,0 +1,79 @@
+{
+  "parameters": [
+    [
+      "Level",
+      "17"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "The Missing Note Blocks"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "550"
+    ],
+    [
+      "Emeralds",
+      "5 to 90, 15 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Track down the illagers",
+      "map": "/2/map#p=2853,3400"
+    },
+    {
+      "text": "Defeat the illagers",
+      "map": ""
+    },
+    {
+      "text": "Pick up the soul block",
+      "map": "/2/map#p=2843,3400"
+    },
+    {
+      "text": "Return to the Echo Golem",
+      "map": "/2/map#p=2473,3658"
+    },
+    {
+      "text": "Place the soul block",
+      "map": "/2/map#p=2443,3643"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "on the map",
+      "href": "/2/map#m=quest-CT_S03_A"
+    },
+    {
+      "name": "The Missing Note Blocks",
+      "href": "/2/quests/the-missing-note-blocks"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2853,3400"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2843,3400"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2473,3658"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2443,3643"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/the-sneezing-golem"
+}

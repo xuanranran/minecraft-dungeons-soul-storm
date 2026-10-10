@@ -1,0 +1,99 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Howling Woods"
+    ],
+    [
+      "Level",
+      "14"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "Corruption in the Woods"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "550"
+    ],
+    [
+      "Emeralds",
+      "5 to 90, 15 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Find the Apprentice",
+      "map": ""
+    },
+    {
+      "text": "Speak to the Apprentice",
+      "map": ""
+    },
+    {
+      "text": "Defeat the spiders",
+      "map": ""
+    },
+    {
+      "text": "Rescue the Apprentice",
+      "map": ""
+    },
+    {
+      "text": "Find the lost satchel",
+      "map": ""
+    },
+    {
+      "text": "Pick up the lost satchel",
+      "map": ""
+    },
+    {
+      "text": "Bring the satchel to Little Howl",
+      "map": "/2/map#p=3885,4522"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map#m=quest-FOa1_S10_A"
+    },
+    {
+      "name": "Corruption in the Woods",
+      "href": "/2/quests/corruption-in-the-woods"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3885,4522"
+    },
+    {
+      "name": "Mushroom Boots",
+      "href": "/2/armor/mushroom-boots"
+    },
+    {
+      "name": "Mushroom Robe",
+      "href": "/2/armor/mushroom-robe"
+    },
+    {
+      "name": "Mushroom Cap",
+      "href": "/2/armor/mushroom-cap"
+    },
+    {
+      "name": "Mushroom Leggings",
+      "href": "/2/armor/mushroom-leggings"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/the-clerics-apprentice"
+}

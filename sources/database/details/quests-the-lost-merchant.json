@@ -1,0 +1,147 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Honeycomb Fields"
+    ],
+    [
+      "Level",
+      "2"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "The Illagers from the Rift"
+    ],
+    [
+      "Opens",
+      "The Silence in Little Howl"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "1,100"
+    ],
+    [
+      "Emeralds",
+      "8 to 144, 40 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Speak to the Villager by the bridge",
+      "map": "/2/map#p=2711,3919"
+    },
+    {
+      "text": "Find the Merchant",
+      "map": "/2/map#p=2130,4117"
+    },
+    {
+      "text": "Rescue the Merchant restarts if you quit",
+      "map": ""
+    },
+    {
+      "text": "Speak to the Merchant",
+      "map": "/2/map#p=2133,4114"
+    },
+    {
+      "text": "Recover the Merchant's stolen supplies any order",
+      "map": ""
+    },
+    {
+      "text": "Meet the Merchant at Honeycomb Farm",
+      "map": "/2/map#p=2747,3663"
+    },
+    {
+      "text": "Speak to the Merchant",
+      "map": "/2/map#p=2749,3651"
+    },
+    {
+      "text": "Travel to Brave Haven",
+      "map": "/2/map#p=634,4393"
+    },
+    {
+      "text": "Find the Merchant's stall",
+      "map": "/2/map#p=486,4362"
+    },
+    {
+      "text": "Speak to the Merchant",
+      "map": "/2/map#p=497,4367"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map#m=quest-CA01_B"
+    },
+    {
+      "name": "The Illagers from the Rift",
+      "href": "/2/quests/the-illagers-from-the-rift"
+    },
+    {
+      "name": "The Silence in Little Howl",
+      "href": "/2/quests/the-silence-in-little-howl"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2711,3919"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2130,4117"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2133,4114"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2747,3663"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2749,3651"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=634,4393"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=486,4362"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=497,4367"
+    },
+    {
+      "name": "Beekeeper Boots",
+      "href": "/2/armor/beekeeper-boots"
+    },
+    {
+      "name": "Beekeeper Suit",
+      "href": "/2/armor/beekeeper-suit"
+    },
+    {
+      "name": "Beekeeper Veil",
+      "href": "/2/armor/beekeeper-veil"
+    },
+    {
+      "name": "Beekeeper Leggings",
+      "href": "/2/armor/beekeeper-leggings"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/the-lost-merchant"
+}

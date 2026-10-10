@@ -1,0 +1,195 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Rainy Plains"
+    ],
+    [
+      "Level",
+      "26"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "Wading Rainy Plains"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "550"
+    ],
+    [
+      "Emeralds",
+      "5 to 90, 15 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Find the lost Gatherer",
+      "map": "/2/map#p=5421,5994"
+    },
+    {
+      "text": "Speak to the Gatherer",
+      "map": "/2/map#p=5424,5985"
+    },
+    {
+      "text": "Find some pretty flowers",
+      "map": "/2/map#p=5207,7187"
+    },
+    {
+      "text": "Defeat the ravagers: Ravager, Pillager and Vindicator restarts if you quit",
+      "map": "/2/map#p=5212,7183"
+    },
+    {
+      "text": "Pick some pretty flowers any order",
+      "map": ""
+    },
+    {
+      "text": "Find some pretty flowers",
+      "map": "/2/map#p=4890,7680"
+    },
+    {
+      "text": "Defeat the ravagers: Ravager restarts if you quit",
+      "map": "/2/map#p=4910,7660"
+    },
+    {
+      "text": "Pick some pretty flowers any order",
+      "map": ""
+    },
+    {
+      "text": "Find some pretty flowers",
+      "map": "/2/map#p=4604,6477"
+    },
+    {
+      "text": "Defeat the ravagers: Ravager, Vindicator and Pillager restarts if you quit",
+      "map": "/2/map#p=4669,6428"
+    },
+    {
+      "text": "Pick some pretty flowers any order",
+      "map": ""
+    },
+    {
+      "text": "Bring flowers to the Gatherer",
+      "map": "/2/map#p=5424,5985"
+    },
+    {
+      "text": "Lead the Gatherer to home",
+      "map": ""
+    },
+    {
+      "text": "Defeat the illagers: Ravager restarts if you quit",
+      "map": "/2/map#p=4716,5888"
+    },
+    {
+      "text": "Lead the Gatherer home",
+      "map": ""
+    },
+    {
+      "text": "Speak to the Gatherer",
+      "map": "/2/map#p=5424,5985"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map#m=quest-PLa2_S16_A"
+    },
+    {
+      "name": "Wading Rainy Plains",
+      "href": "/2/quests/wading-rainy-plains"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5421,5994"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5424,5985"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5207,7187"
+    },
+    {
+      "name": "Ravager",
+      "href": "/2/enemies/ravager"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5212,7183"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4890,7680"
+    },
+    {
+      "name": "Ravager",
+      "href": "/2/enemies/ravager"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4910,7660"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4604,6477"
+    },
+    {
+      "name": "Ravager",
+      "href": "/2/enemies/ravager"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4669,6428"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5424,5985"
+    },
+    {
+      "name": "Ravager",
+      "href": "/2/enemies/ravager"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4716,5888"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5424,5985"
+    },
+    {
+      "name": "Healing Heart",
+      "href": "/2/artifacts/healing-heart"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/wildflower-warrior"
+}

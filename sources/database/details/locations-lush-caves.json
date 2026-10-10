@@ -1,0 +1,30 @@
+{
+  "parameters": [
+    [
+      "Region",
+      "Howling Woods"
+    ],
+    [
+      "Entrances",
+      "1"
+    ],
+    [
+      "Fancy chests",
+      "4"
+    ]
+  ],
+  "objectives": [],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Mosstrosity",
+      "href": "/2/enemies/mosstrosity"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/lush-caves"
+}

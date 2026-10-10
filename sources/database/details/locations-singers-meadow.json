@@ -1,0 +1,483 @@
+{
+  "parameters": [
+    [
+      "Minecart stations",
+      "4"
+    ],
+    [
+      "Dungeon entrances",
+      "10"
+    ],
+    [
+      "Minecart station",
+      "Choral Glen"
+    ],
+    [
+      "Minecart station",
+      "Sifter Canyon"
+    ],
+    [
+      "Minecart station",
+      "Singer's Portal"
+    ],
+    [
+      "Minecart station",
+      "Wild Meadows"
+    ]
+  ],
+  "objectives": [],
+  "tables": [],
+  "resistances": [
+    [
+      "Stalker",
+      "22%"
+    ],
+    [
+      "Scavenger",
+      "16%"
+    ],
+    [
+      "Nester",
+      "11%"
+    ],
+    [
+      "Bloombud",
+      "10%"
+    ],
+    [
+      "Pollinator",
+      "8%"
+    ],
+    [
+      "Sentinel",
+      "8%"
+    ],
+    [
+      "Sprout",
+      "7%"
+    ],
+    [
+      "Seedling",
+      "6%"
+    ],
+    [
+      "Roamroot",
+      "5%"
+    ],
+    [
+      "Hurler",
+      "3%"
+    ],
+    [
+      "Fusefly",
+      "2%"
+    ],
+    [
+      "Hunter",
+      "1%"
+    ],
+    [
+      "Trapper",
+      "1%"
+    ],
+    [
+      "Vindicator",
+      "33%"
+    ],
+    [
+      "Pillager",
+      "23%"
+    ],
+    [
+      "Royal Guard",
+      "7%"
+    ],
+    [
+      "Enchanter",
+      "7%"
+    ],
+    [
+      "Hurler",
+      "5%"
+    ],
+    [
+      "Stalker",
+      "5%"
+    ],
+    [
+      "Nester",
+      "4%"
+    ],
+    [
+      "Fusefly",
+      "4%"
+    ],
+    [
+      "Scavenger",
+      "3%"
+    ],
+    [
+      "Geomancer",
+      "3%"
+    ],
+    [
+      "Seedling",
+      "2%"
+    ],
+    [
+      "Ravager",
+      "2%"
+    ],
+    [
+      "Bloombud",
+      "1%"
+    ],
+    [
+      "Roamroot",
+      "1%"
+    ],
+    [
+      "Sprout",
+      "1%"
+    ],
+    [
+      "Pollinator",
+      "1%"
+    ],
+    [
+      "Sentinel",
+      "1%"
+    ],
+    [
+      "Hunter",
+      "<1%"
+    ],
+    [
+      "Trapper",
+      "<1%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "10",
+      "href": "/2/locations/ravines"
+    },
+    {
+      "name": "Harmonizer",
+      "href": "/2/enemies/harmonizer"
+    },
+    {
+      "name": "Enderman",
+      "href": "/2/enemies/enderman"
+    },
+    {
+      "name": "Dartback",
+      "href": "/2/enemies/dartback"
+    },
+    {
+      "name": "Evoker",
+      "href": "/2/enemies/evoker"
+    },
+    {
+      "name": "Soul Corrupted Harmonizer",
+      "href": "/2/enemies/soul-corrupted-harmonizer"
+    },
+    {
+      "name": "Soul Corrupted Enderman",
+      "href": "/2/enemies/soul-corrupted-enderman"
+    },
+    {
+      "name": "Soul Corrupted Dartback",
+      "href": "/2/enemies/soul-corrupted-dartback"
+    },
+    {
+      "name": "Soul Corrupted Evoker",
+      "href": "/2/enemies/soul-corrupted-evoker"
+    },
+    {
+      "name": "Blub",
+      "href": "/2/enemies/blub"
+    },
+    {
+      "name": "Slabber",
+      "href": "/2/enemies/slabber"
+    },
+    {
+      "name": "Key Golem",
+      "href": "/2/enemies/key-golem"
+    },
+    {
+      "name": "Lootkin",
+      "href": "/2/enemies/lootkin"
+    },
+    {
+      "name": "Nuzzle",
+      "href": "/2/enemies/nuzzle"
+    },
+    {
+      "name": "Enchanter",
+      "href": "/2/enemies/enchanter"
+    },
+    {
+      "name": "Evoker",
+      "href": "/2/enemies/evoker"
+    },
+    {
+      "name": "Geomancer",
+      "href": "/2/enemies/geomancer"
+    },
+    {
+      "name": "Harmonizer",
+      "href": "/2/enemies/harmonizer"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Ravager",
+      "href": "/2/enemies/ravager"
+    },
+    {
+      "name": "Royal Guard",
+      "href": "/2/enemies/royal-guard"
+    },
+    {
+      "name": "Soul Corrupted Enchanter",
+      "href": "/2/enemies/soul-corrupted-enchanter"
+    },
+    {
+      "name": "Soul Corrupted Evoker",
+      "href": "/2/enemies/soul-corrupted-evoker"
+    },
+    {
+      "name": "Soul Corrupted Fusefly",
+      "href": "/2/enemies/soul-corrupted-fusefly"
+    },
+    {
+      "name": "Soul Corrupted Geomancer",
+      "href": "/2/enemies/soul-corrupted-geomancer"
+    },
+    {
+      "name": "Soul Corrupted Harmonizer",
+      "href": "/2/enemies/soul-corrupted-harmonizer"
+    },
+    {
+      "name": "Soul Corrupted Hunter",
+      "href": "/2/enemies/soul-corrupted-hunter"
+    },
+    {
+      "name": "Soul Corrupted Nester",
+      "href": "/2/enemies/soul-corrupted-nester"
+    },
+    {
+      "name": "Soul Corrupted Pillager",
+      "href": "/2/enemies/soul-corrupted-pillager"
+    },
+    {
+      "name": "Soul Corrupted Pollinator",
+      "href": "/2/enemies/soul-corrupted-pollinator"
+    },
+    {
+      "name": "Soul Corrupted Ravager",
+      "href": "/2/enemies/soul-corrupted-ravager"
+    },
+    {
+      "name": "Soul Corrupted Royal Guard",
+      "href": "/2/enemies/soul-corrupted-royal-guard"
+    },
+    {
+      "name": "Soul Corrupted Scavenger",
+      "href": "/2/enemies/soul-corrupted-scavenger"
+    },
+    {
+      "name": "Soul Corrupted Seedling",
+      "href": "/2/enemies/soul-corrupted-seedling"
+    },
+    {
+      "name": "Soul Corrupted Sentinel",
+      "href": "/2/enemies/soul-corrupted-sentinel"
+    },
+    {
+      "name": "Soul Corrupted Sprout",
+      "href": "/2/enemies/soul-corrupted-sprout"
+    },
+    {
+      "name": "Soul Corrupted Stalker",
+      "href": "/2/enemies/soul-corrupted-stalker"
+    },
+    {
+      "name": "Soul Corrupted Trapper",
+      "href": "/2/enemies/soul-corrupted-trapper"
+    },
+    {
+      "name": "Soul Corrupted Vindicator",
+      "href": "/2/enemies/soul-corrupted-vindicator"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    },
+    {
+      "name": "Choral Glen",
+      "href": "/2/map/the-sift#m=station-389-6696"
+    },
+    {
+      "name": "Sifter Canyon",
+      "href": "/2/map/the-sift#m=station-374-4653"
+    },
+    {
+      "name": "Singer's Portal",
+      "href": "/2/map/the-sift#m=station-987-5570"
+    },
+    {
+      "name": "Wild Meadows",
+      "href": "/2/map/the-sift#m=station-865-4970"
+    },
+    {
+      "name": "Cinder Scepter",
+      "href": "/2/artifacts/cinder-scepter"
+    },
+    {
+      "name": "Blizzard Bangle",
+      "href": "/2/artifacts/blizzard-bangle"
+    },
+    {
+      "name": "Tempo Truffle",
+      "href": "/2/artifacts/tempo-truffle"
+    },
+    {
+      "name": "Conductive Quiver",
+      "href": "/2/artifacts/conductive-quiver"
+    },
+    {
+      "name": "Powershaker",
+      "href": "/2/artifacts/powershaker"
+    },
+    {
+      "name": "Pouch of Ember",
+      "href": "/2/artifacts/pouch-of-ember"
+    },
+    {
+      "name": "Soul Harvester",
+      "href": "/2/artifacts/soul-harvester"
+    },
+    {
+      "name": "Totem of Casting",
+      "href": "/2/artifacts/totem-of-casting"
+    },
+    {
+      "name": "Battle Banner",
+      "href": "/2/artifacts/battle-banner"
+    },
+    {
+      "name": "Cookiecutter",
+      "href": "/2/weapons/cookiecutter"
+    },
+    {
+      "name": "Clobberer",
+      "href": "/2/weapons/clobberer"
+    },
+    {
+      "name": "Mob Mallet",
+      "href": "/2/weapons/mob-mallet"
+    },
+    {
+      "name": "Greataxe",
+      "href": "/2/weapons/greataxe"
+    },
+    {
+      "name": "Greatsword",
+      "href": "/2/weapons/greatsword"
+    },
+    {
+      "name": "Battle Hammer",
+      "href": "/2/weapons/battle-hammer"
+    },
+    {
+      "name": "Treehugger Clogs",
+      "href": "/2/armor/treehugger-clogs"
+    },
+    {
+      "name": "Treehugger Chestplate",
+      "href": "/2/armor/treehugger-chestplate"
+    },
+    {
+      "name": "Treehugger Mask",
+      "href": "/2/armor/treehugger-mask"
+    },
+    {
+      "name": "Treehugger Leggings",
+      "href": "/2/armor/treehugger-leggings"
+    },
+    {
+      "name": "Longbow",
+      "href": "/2/weapons/longbow"
+    },
+    {
+      "name": "Powerbow",
+      "href": "/2/weapons/powerbow"
+    },
+    {
+      "name": "Scamp Sneakers",
+      "href": "/2/armor/scamp-sneakers"
+    },
+    {
+      "name": "Scamp Jacket",
+      "href": "/2/armor/scamp-jacket"
+    },
+    {
+      "name": "Scamp Hood",
+      "href": "/2/armor/scamp-hood"
+    },
+    {
+      "name": "Scamp Leggings",
+      "href": "/2/armor/scamp-leggings"
+    },
+    {
+      "name": "Longsword",
+      "href": "/2/weapons/longsword"
+    },
+    {
+      "name": "Sword",
+      "href": "/2/weapons/sword"
+    },
+    {
+      "name": "Trickbow",
+      "href": "/2/weapons/trickbow"
+    },
+    {
+      "name": "Nomad Boots",
+      "href": "/2/armor/nomad-boots"
+    },
+    {
+      "name": "Nomad Chestplate",
+      "href": "/2/armor/nomad-chestplate"
+    },
+    {
+      "name": "Nomad Hood",
+      "href": "/2/armor/nomad-hood"
+    },
+    {
+      "name": "Nomad Leggings",
+      "href": "/2/armor/nomad-leggings"
+    },
+    {
+      "name": "Sifter Boots",
+      "href": "/2/armor/sifter-boots"
+    },
+    {
+      "name": "Sifter Robe",
+      "href": "/2/armor/sifter-robe"
+    },
+    {
+      "name": "Sifter Hood",
+      "href": "/2/armor/sifter-hood"
+    },
+    {
+      "name": "Sifter Leggings",
+      "href": "/2/armor/sifter-leggings"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/singers-meadow"
+}

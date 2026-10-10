@@ -1,0 +1,138 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "1,500"
+    ],
+    [
+      "Top hit",
+      "35"
+    ],
+    [
+      "Poise",
+      "700"
+    ],
+    [
+      "Souls",
+      "200"
+    ],
+    [
+      "Speed",
+      "700"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Where you fight it",
+      "columns": [
+        "WHEN",
+        "QUEST",
+        "WHERE"
+      ],
+      "rows": [
+        [
+          "Story quest",
+          "Hiking Frozen Highlands",
+          "Frozen Highlands"
+        ],
+        [
+          "Rematch",
+          "The Prime Enchanter Revived",
+          "Frozen Highlands"
+        ]
+      ]
+    },
+    {
+      "title": "Moves",
+      "columns": [
+        "MOVE",
+        "WHAT IT DOES",
+        "DAMAGE",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "Forward strike",
+          "His right fist charges with frost for about a second before he lunges into a punch that knocks you back and leaves you Frozen. The lunge scatters up to 15 ice mines along the ground it covers, so dodge sideways instead of staying in his wake.",
+          "25",
+          "Frost"
+        ],
+        [
+          "Fury fist",
+          "Two quick jabs, a pause while both fists power up, then an ice punch (Frozen), a lightning punch (Zapped) and a two-handed ground slam that applies both. Zapped greatly cuts your damage resistance right before that final slam, so use the power-up pause to roll out of range.",
+          "30",
+          ""
+        ],
+        [
+          "Launch",
+          "Put distance between you and he launches away, untargetable and invulnerable for about a second, then comes down on a marked spot by you, up to once every 6 seconds. The landing point locks in a second before impact, so keep moving, step clear of the marker, then deal with the ring of ice mines that follows.",
+          "25",
+          "Lightning"
+        ],
+        [
+          "Ice mines",
+          "Eight mines appear in a ring around his Launch landings, and Forward strike scatters more along its path. Each bursts 2 seconds after it appears for Frost damage and Frozen, with a weaker splash reaching a little further, so keep clear of them until they pop.",
+          "8",
+          "Frost"
+        ],
+        [
+          "Summon illagers",
+          "Once he's lost a sliver of health, and at most every 40 seconds after, he spends about two seconds calling in four to eight Pillagers, Vindicators and Royal Guards near one of the arena's platforms, never more than 10 alive at once. Each one is worth 20 souls more than usual.",
+          "",
+          ""
+        ],
+        [
+          "Lightning slam",
+          "Available from two-thirds health: he charges both fists, jumps, and slams down after about two and a half seconds, blasting a wide circle with heavy knockback and Zapped. Get well clear during the windup, since the slam also sends out a lightning ripple, and three of the arena's platforms rise shortly after it lands.",
+          "35",
+          "Lightning"
+        ],
+        [
+          "Lightning ripple",
+          "A ring of lightning spreads out from the slam point across most of the arena and hits each target once. Jump over it or roll through it.",
+          "15",
+          "Lightning"
+        ],
+        [
+          "Overcharge",
+          "Below half health, Lightning slam flows straight into Overcharge: he turns invulnerable and the arena floor carries current for 5 seconds, hurting you for as long as you stand on it. Don't spend cooldowns on him while it runs, and move the moment it ends, because he launches straight at you, ice mines and all.",
+          "5",
+          "Lightning"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Lightning damage",
+      "-50%"
+    ],
+    [
+      "Ranged damage",
+      "-20%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Royal Guard",
+      "href": "/2/enemies/royal-guard"
+    },
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Gauntlets",
+      "href": "/2/weapons/gauntlets"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/the-prime-enchanter"
+}

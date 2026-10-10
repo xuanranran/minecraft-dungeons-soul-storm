@@ -1,0 +1,988 @@
+{
+  "source": "https://www.dungeons.tools/2/locations",
+  "captured_at": "2026-10-10",
+  "rows": [
+    {
+      "name": "Brave Haven",
+      "sub": "Region",
+      "href": "/2/locations/brave-haven",
+      "image": "/images/d2/icons/areas/brave-haven.png",
+      "values": [
+        [
+          "LEVEL",
+          "1"
+        ],
+        [
+          "REGION",
+          ""
+        ],
+        [
+          "MOBS",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Brave Haven",
+        "k": "Region",
+        "i": "/images/d2/icons/areas/brave-haven.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "Level 1"
+        ]
+      }
+    },
+    {
+      "name": "Deep Dark dungeons",
+      "sub": "Dungeons",
+      "href": "/2/locations/deep-dark-dungeons",
+      "image": "/images/d2/icons/areas/the-deep-dark.png",
+      "values": [
+        [
+          "LEVEL",
+          ""
+        ],
+        [
+          "REGION",
+          ""
+        ],
+        [
+          "MOBS",
+          "Slime, Vindicator, Pillager, Excavator"
+        ]
+      ],
+      "tip": {
+        "n": "Deep Dark dungeons",
+        "k": "Dungeons",
+        "i": "/images/d2/icons/areas/the-deep-dark.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "Slime, Vindicator, Pillager, Excavator"
+        ]
+      }
+    },
+    {
+      "name": "Enchanter's Library",
+      "sub": "Place",
+      "href": "/2/locations/enchanters-library",
+      "image": "/images/d2/icons/areas/frozen-highlands.png",
+      "values": [
+        [
+          "LEVEL",
+          ""
+        ],
+        [
+          "REGION",
+          "Frozen Highlands"
+        ],
+        [
+          "MOBS",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Enchanter's Library",
+        "k": "Place",
+        "i": "/images/d2/icons/areas/frozen-highlands.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "In Frozen Highlands"
+        ]
+      }
+    },
+    {
+      "name": "Evoker's Library",
+      "sub": "Place",
+      "href": "/2/locations/evokers-library",
+      "image": "/images/d2/icons/areas/frozen-highlands.png",
+      "values": [
+        [
+          "LEVEL",
+          ""
+        ],
+        [
+          "REGION",
+          "Frozen Highlands"
+        ],
+        [
+          "MOBS",
+          "Creeper, Charged Creeper"
+        ]
+      ],
+      "tip": {
+        "n": "Evoker's Library",
+        "k": "Place",
+        "i": "/images/d2/icons/areas/frozen-highlands.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "In Frozen Highlands",
+          "Creeper, Charged Creeper"
+        ]
+      }
+    },
+    {
+      "name": "Fishing Hut",
+      "sub": "Place",
+      "href": "/2/locations/fishing-hut",
+      "image": "/images/d2/icons/areas/frozen-highlands.png",
+      "values": [
+        [
+          "LEVEL",
+          ""
+        ],
+        [
+          "REGION",
+          "Frozen Highlands"
+        ],
+        [
+          "MOBS",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Fishing Hut",
+        "k": "Place",
+        "i": "/images/d2/icons/areas/frozen-highlands.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "In Frozen Highlands"
+        ]
+      }
+    },
+    {
+      "name": "Frozen Fortress",
+      "sub": "Place",
+      "href": "/2/locations/frozen-fortress",
+      "image": "/images/d2/icons/areas/frozen-highlands.png",
+      "values": [
+        [
+          "LEVEL",
+          ""
+        ],
+        [
+          "REGION",
+          "Frozen Highlands"
+        ],
+        [
+          "MOBS",
+          "Vindicator, Pillager, Skeleton, Vanguard"
+        ]
+      ],
+      "tip": {
+        "n": "Frozen Fortress",
+        "k": "Place",
+        "i": "/images/d2/icons/areas/frozen-highlands.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "In Frozen Highlands",
+          "Vindicator, Pillager, Skeleton, Vanguard"
+        ]
+      }
+    },
+    {
+      "name": "Frozen Highlands",
+      "sub": "Region",
+      "href": "/2/locations/frozen-highlands",
+      "image": "/images/d2/icons/areas/frozen-highlands.png",
+      "values": [
+        [
+          "LEVEL",
+          "26"
+        ],
+        [
+          "REGION",
+          ""
+        ],
+        [
+          "MOBS",
+          "Vindicator, Pillager, Zombie, Creeper"
+        ]
+      ],
+      "tip": {
+        "n": "Frozen Highlands",
+        "k": "Region",
+        "i": "/images/d2/icons/areas/frozen-highlands.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "Level 26",
+          "Vindicator, Pillager, Zombie, Creeper"
+        ]
+      }
+    },
+    {
+      "name": "Honeycomb Barn",
+      "sub": "Place",
+      "href": "/2/locations/honeycomb-barn",
+      "image": "/images/d2/icons/areas/honeycomb-fields.png",
+      "values": [
+        [
+          "LEVEL",
+          ""
+        ],
+        [
+          "REGION",
+          "Honeycomb Fields"
+        ],
+        [
+          "MOBS",
+          "Zombie"
+        ]
+      ],
+      "tip": {
+        "n": "Honeycomb Barn",
+        "k": "Place",
+        "i": "/images/d2/icons/areas/honeycomb-fields.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "In Honeycomb Fields",
+          "Zombie"
+        ]
+      }
+    },
+    {
+      "name": "Honeycomb Fields",
+      "sub": "Region",
+      "href": "/2/locations/honeycomb-fields",
+      "image": "/images/d2/icons/areas/honeycomb-fields.png",
+      "values": [
+        [
+          "LEVEL",
+          "2"
+        ],
+        [
+          "REGION",
+          ""
+        ],
+        [
+          "MOBS",
+          "Vindicator, Zombie, Pillager, Skeleton"
+        ]
+      ],
+      "tip": {
+        "n": "Honeycomb Fields",
+        "k": "Region",
+        "i": "/images/d2/icons/areas/honeycomb-fields.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "Level 2",
+          "Vindicator, Zombie, Pillager, Skeleton"
+        ]
+      }
+    },
+    {
+      "name": "Howling Woods",
+      "sub": "Region",
+      "href": "/2/locations/howling-woods",
+      "image": "/images/d2/icons/areas/howling-woods.png",
+      "values": [
+        [
+          "LEVEL",
+          "6"
+        ],
+        [
+          "REGION",
+          ""
+        ],
+        [
+          "MOBS",
+          "Spider, Slime, Zombie, Skeleton"
+        ]
+      ],
+      "tip": {
+        "n": "Howling Woods",
+        "k": "Region",
+        "i": "/images/d2/icons/areas/howling-woods.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "Level 6",
+          "Spider, Slime, Zombie, Skeleton"
+        ]
+      }
+    },
+    {
+      "name": "Humbler Husk",
+      "sub": "Place",
+      "href": "/2/locations/humbler-husk",
+      "image": "/images/d2/icons/areas/humbler-huskland.png",
+      "values": [
+        [
+          "LEVEL",
+          ""
+        ],
+        [
+          "REGION",
+          "Humbler Huskland"
+        ],
+        [
+          "MOBS",
+          "Stalker, Fusefly, Hurler, Scavenger"
+        ]
+      ],
+      "tip": {
+        "n": "Humbler Husk",
+        "k": "Place",
+        "i": "/images/d2/icons/areas/humbler-huskland.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "In Humbler Huskland",
+          "Stalker, Fusefly, Hurler, Scavenger"
+        ]
+      }
+    },
+    {
+      "name": "Humbler Huskland",
+      "sub": "Region",
+      "href": "/2/locations/humbler-huskland",
+      "image": "/images/d2/icons/areas/humbler-huskland.png",
+      "values": [
+        [
+          "LEVEL",
+          "36"
+        ],
+        [
+          "REGION",
+          ""
+        ],
+        [
+          "MOBS",
+          "Stalker, Scavenger, Nester, Pollinator"
+        ]
+      ],
+      "tip": {
+        "n": "Humbler Huskland",
+        "k": "Region",
+        "i": "/images/d2/icons/areas/humbler-huskland.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "Level 36",
+          "Stalker, Scavenger, Nester, Pollinator"
+        ]
+      }
+    },
+    {
+      "name": "Ice Caves",
+      "sub": "Place",
+      "href": "/2/locations/ice-caves",
+      "image": "/images/d2/icons/areas/frozen-highlands.png",
+      "values": [
+        [
+          "LEVEL",
+          ""
+        ],
+        [
+          "REGION",
+          "Frozen Highlands"
+        ],
+        [
+          "MOBS",
+          "Skeleton, Vanguard, Pillager, Spider"
+        ]
+      ],
+      "tip": {
+        "n": "Ice Caves",
+        "k": "Place",
+        "i": "/images/d2/icons/areas/frozen-highlands.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "In Frozen Highlands",
+          "Skeleton, Vanguard, Pillager, Spider"
+        ]
+      }
+    },
+    {
+      "name": "Illager Stronghold",
+      "sub": "Place",
+      "href": "/2/locations/illager-stronghold",
+      "image": "/images/d2/icons/areas/lullaby-hills.png",
+      "values": [
+        [
+          "LEVEL",
+          ""
+        ],
+        [
+          "REGION",
+          "Lullaby Hills"
+        ],
+        [
+          "MOBS",
+          "Royal Guard, Vindicator, Pillager, Enchanter"
+        ]
+      ],
+      "tip": {
+        "n": "Illager Stronghold",
+        "k": "Place",
+        "i": "/images/d2/icons/areas/lullaby-hills.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "In Lullaby Hills",
+          "Royal Guard, Vindicator, Pillager, Enchanter"
+        ]
+      }
+    },
+    {
+      "name": "Illusioner's Library",
+      "sub": "Place",
+      "href": "/2/locations/illusioners-library",
+      "image": "/images/d2/icons/areas/frozen-highlands.png",
+      "values": [
+        [
+          "LEVEL",
+          ""
+        ],
+        [
+          "REGION",
+          "Frozen Highlands"
+        ],
+        [
+          "MOBS",
+          "Pillager, Royal Guard, Vindicator, Ravager"
+        ]
+      ],
+      "tip": {
+        "n": "Illusioner's Library",
+        "k": "Place",
+        "i": "/images/d2/icons/areas/frozen-highlands.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "In Frozen Highlands",
+          "Pillager, Royal Guard, Vindicator, Ravager"
+        ]
+      }
+    },
+    {
+      "name": "Library Towers",
+      "sub": "Place",
+      "href": "/2/locations/library-towers",
+      "image": "/images/d2/icons/areas/frozen-highlands.png",
+      "values": [
+        [
+          "LEVEL",
+          ""
+        ],
+        [
+          "REGION",
+          "Frozen Highlands"
+        ],
+        [
+          "MOBS",
+          "Pillager, Royal Guard, Vindicator, Ravager"
+        ]
+      ],
+      "tip": {
+        "n": "Library Towers",
+        "k": "Place",
+        "i": "/images/d2/icons/areas/frozen-highlands.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "In Frozen Highlands",
+          "Pillager, Royal Guard, Vindicator, Ravager"
+        ]
+      }
+    },
+    {
+      "name": "Lullaby Hills",
+      "sub": "Region",
+      "href": "/2/locations/lullaby-hills",
+      "image": "/images/d2/icons/areas/lullaby-hills.png",
+      "values": [
+        [
+          "LEVEL",
+          "42"
+        ],
+        [
+          "REGION",
+          ""
+        ],
+        [
+          "MOBS",
+          "Bloombud, Stalker, Nester, Roamroot"
+        ]
+      ],
+      "tip": {
+        "n": "Lullaby Hills",
+        "k": "Region",
+        "i": "/images/d2/icons/areas/lullaby-hills.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "Level 42",
+          "Bloombud, Stalker, Nester, Roamroot"
+        ]
+      }
+    },
+    {
+      "name": "Lush Caves",
+      "sub": "Place",
+      "href": "/2/locations/lush-caves",
+      "image": "/images/d2/icons/areas/howling-woods.png",
+      "values": [
+        [
+          "LEVEL",
+          ""
+        ],
+        [
+          "REGION",
+          "Howling Woods"
+        ],
+        [
+          "MOBS",
+          "Mosstrosity"
+        ]
+      ],
+      "tip": {
+        "n": "Lush Caves",
+        "k": "Place",
+        "i": "/images/d2/icons/areas/howling-woods.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "In Howling Woods"
+        ]
+      }
+    },
+    {
+      "name": "Orange Tower",
+      "sub": "Place",
+      "href": "/2/locations/orange-tower",
+      "image": "/images/d2/icons/areas/rainy-plains.png",
+      "values": [
+        [
+          "LEVEL",
+          ""
+        ],
+        [
+          "REGION",
+          "Rainy Plains"
+        ],
+        [
+          "MOBS",
+          "Creeper, Charged Creeper, Zombie, Skeleton"
+        ]
+      ],
+      "tip": {
+        "n": "Orange Tower",
+        "k": "Place",
+        "i": "/images/d2/icons/areas/rainy-plains.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "In Rainy Plains",
+          "Creeper, Charged Creeper, Zombie, Skeleton"
+        ]
+      }
+    },
+    {
+      "name": "Rainy Plains",
+      "sub": "Region",
+      "href": "/2/locations/rainy-plains",
+      "image": "/images/d2/icons/areas/rainy-plains.png",
+      "values": [
+        [
+          "LEVEL",
+          "21"
+        ],
+        [
+          "REGION",
+          ""
+        ],
+        [
+          "MOBS",
+          "Slime, Zombie, Creeper, Skeleton"
+        ]
+      ],
+      "tip": {
+        "n": "Rainy Plains",
+        "k": "Region",
+        "i": "/images/d2/icons/areas/rainy-plains.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "Level 21",
+          "Slime, Zombie, Creeper, Skeleton"
+        ]
+      }
+    },
+    {
+      "name": "Ravines",
+      "sub": "Dungeons",
+      "href": "/2/locations/ravines",
+      "image": "/images/d2/icons/areas/ravines.png",
+      "values": [
+        [
+          "LEVEL",
+          ""
+        ],
+        [
+          "REGION",
+          ""
+        ],
+        [
+          "MOBS",
+          "Stalker, Bloombud, Scavenger, Roamroot"
+        ]
+      ],
+      "tip": {
+        "n": "Ravines",
+        "k": "Dungeons",
+        "i": "/images/d2/icons/areas/ravines.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "Stalker, Bloombud, Scavenger, Roamroot"
+        ]
+      }
+    },
+    {
+      "name": "Red Tower",
+      "sub": "Place",
+      "href": "/2/locations/red-tower",
+      "image": "/images/d2/icons/areas/rainy-plains.png",
+      "values": [
+        [
+          "LEVEL",
+          ""
+        ],
+        [
+          "REGION",
+          "Rainy Plains"
+        ],
+        [
+          "MOBS",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Red Tower",
+        "k": "Place",
+        "i": "/images/d2/icons/areas/rainy-plains.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "In Rainy Plains"
+        ]
+      }
+    },
+    {
+      "name": "Shipwreck",
+      "sub": "Place",
+      "href": "/2/locations/shipwreck",
+      "image": "/images/d2/icons/areas/frozen-highlands.png",
+      "values": [
+        [
+          "LEVEL",
+          ""
+        ],
+        [
+          "REGION",
+          "Frozen Highlands"
+        ],
+        [
+          "MOBS",
+          "Zombie, Skeleton, Baby Zombie, Vanguard"
+        ]
+      ],
+      "tip": {
+        "n": "Shipwreck",
+        "k": "Place",
+        "i": "/images/d2/icons/areas/frozen-highlands.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "In Frozen Highlands",
+          "Zombie, Skeleton, Baby Zombie, Vanguard"
+        ]
+      }
+    },
+    {
+      "name": "Sift rifts",
+      "sub": "Rifts",
+      "href": "/2/locations/sift-rifts",
+      "image": "/images/d2/icons/areas/singers-meadow.png",
+      "values": [
+        [
+          "LEVEL",
+          ""
+        ],
+        [
+          "REGION",
+          ""
+        ],
+        [
+          "MOBS",
+          "Nester, Bloombud, Pollinator, Sentinel"
+        ]
+      ],
+      "tip": {
+        "n": "Sift rifts",
+        "k": "Rifts",
+        "i": "/images/d2/icons/areas/singers-meadow.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "Nester, Bloombud, Pollinator, Sentinel"
+        ]
+      }
+    },
+    {
+      "name": "Singer's Meadow",
+      "sub": "Region",
+      "href": "/2/locations/singers-meadow",
+      "image": "/images/d2/icons/areas/singers-meadow.png",
+      "values": [
+        [
+          "LEVEL",
+          "33"
+        ],
+        [
+          "REGION",
+          ""
+        ],
+        [
+          "MOBS",
+          "Stalker, Scavenger, Nester, Bloombud"
+        ]
+      ],
+      "tip": {
+        "n": "Singer's Meadow",
+        "k": "Region",
+        "i": "/images/d2/icons/areas/singers-meadow.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "Level 33",
+          "Stalker, Scavenger, Nester, Bloombud"
+        ]
+      }
+    },
+    {
+      "name": "Spider Caves",
+      "sub": "Place",
+      "href": "/2/locations/spider-caves",
+      "image": "/images/d2/icons/areas/howling-woods.png",
+      "values": [
+        [
+          "LEVEL",
+          ""
+        ],
+        [
+          "REGION",
+          "Howling Woods"
+        ],
+        [
+          "MOBS",
+          "Spider, Slime, Cave Spider, Spider Jockey"
+        ]
+      ],
+      "tip": {
+        "n": "Spider Caves",
+        "k": "Place",
+        "i": "/images/d2/icons/areas/howling-woods.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "In Howling Woods",
+          "Spider, Slime, Cave Spider, Spider Jockey"
+        ]
+      }
+    },
+    {
+      "name": "Squid Coast",
+      "sub": "Region",
+      "href": "/2/locations/squid-coast",
+      "image": "/images/d2/icons/areas/squid-coast.png",
+      "values": [
+        [
+          "LEVEL",
+          "1"
+        ],
+        [
+          "REGION",
+          ""
+        ],
+        [
+          "MOBS",
+          "Zombie, Vindicator, Skeleton, Pillager"
+        ]
+      ],
+      "tip": {
+        "n": "Squid Coast",
+        "k": "Region",
+        "i": "/images/d2/icons/areas/squid-coast.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "Level 1",
+          "Zombie, Vindicator, Skeleton, Pillager"
+        ]
+      }
+    },
+    {
+      "name": "The Deep Dark",
+      "sub": "Region",
+      "href": "/2/locations/the-deep-dark",
+      "image": "/images/d2/icons/areas/the-deep-dark.png",
+      "values": [
+        [
+          "LEVEL",
+          "14"
+        ],
+        [
+          "REGION",
+          ""
+        ],
+        [
+          "MOBS",
+          "Slime, Spider, Vindicator, Pillager"
+        ]
+      ],
+      "tip": {
+        "n": "The Deep Dark",
+        "k": "Region",
+        "i": "/images/d2/icons/areas/the-deep-dark.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "Level 14",
+          "Slime, Spider, Vindicator, Pillager"
+        ]
+      }
+    },
+    {
+      "name": "The Supreme Evoker's Tower",
+      "sub": "Place",
+      "href": "/2/locations/the-supreme-evokers-tower",
+      "image": "/images/d2/icons/areas/rainy-plains.png",
+      "values": [
+        [
+          "LEVEL",
+          ""
+        ],
+        [
+          "REGION",
+          "Rainy Plains"
+        ],
+        [
+          "MOBS",
+          "Royal Guard, Vindicator, Pillager, Enchanter"
+        ]
+      ],
+      "tip": {
+        "n": "The Supreme Evoker's Tower",
+        "k": "Place",
+        "i": "/images/d2/icons/areas/rainy-plains.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "In Rainy Plains",
+          "Royal Guard, Vindicator, Pillager, Enchanter"
+        ]
+      }
+    },
+    {
+      "name": "White Tower",
+      "sub": "Place",
+      "href": "/2/locations/white-tower",
+      "image": "/images/d2/icons/areas/rainy-plains.png",
+      "values": [
+        [
+          "LEVEL",
+          ""
+        ],
+        [
+          "REGION",
+          "Rainy Plains"
+        ],
+        [
+          "MOBS",
+          "Nester, Pollinator, Sentinel, Sprout"
+        ]
+      ],
+      "tip": {
+        "n": "White Tower",
+        "k": "Place",
+        "i": "/images/d2/icons/areas/rainy-plains.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "In Rainy Plains",
+          "Nester, Pollinator, Sentinel, Sprout"
+        ]
+      }
+    },
+    {
+      "name": "Wishing Well",
+      "sub": "Place",
+      "href": "/2/locations/wishing-well",
+      "image": "/images/d2/icons/areas/howling-woods.png",
+      "values": [
+        [
+          "LEVEL",
+          ""
+        ],
+        [
+          "REGION",
+          "Howling Woods"
+        ],
+        [
+          "MOBS",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Wishing Well",
+        "k": "Place",
+        "i": "/images/d2/icons/areas/howling-woods.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "In Howling Woods"
+        ]
+      }
+    },
+    {
+      "name": "Witch's Hut",
+      "sub": "Place",
+      "href": "/2/locations/witchs-hut",
+      "image": "/images/d2/icons/areas/howling-woods.png",
+      "values": [
+        [
+          "LEVEL",
+          ""
+        ],
+        [
+          "REGION",
+          "Howling Woods"
+        ],
+        [
+          "MOBS",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Witch's Hut",
+        "k": "Place",
+        "i": "/images/d2/icons/areas/howling-woods.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "In Howling Woods"
+        ]
+      }
+    }
+  ]
+}

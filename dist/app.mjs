@@ -6,15 +6,16 @@ import {loadMapIndex} from './map-data.mjs?v=layout2';
 setupPreferences();
 const $=id=>document.getElementById(id),clock=new SyncedClock();
 let mapController,stormController,lastWorld='overworld',routeTicket=0;
-const toolNames=['collection','planner','builds','compare'];
+const toolNames=['database','collection','planner','builds','compare'];
 const toolControllers=Object.fromEntries(toolNames.map(name=>[name,retryable(async()=>{
- const [module]=await Promise.all([import('./'+name+'.mjs?v=tools2'),loadStyle('./explorer.css?v=tools2'),loadStyle('./drops.css?v=fonts1'),...(name==='collection'?[]:[loadStyle('./'+name+'.css?v=tools2')])]);
+ const [module]=await Promise.all([import('./'+name+'.mjs?v=db1'),loadStyle('./explorer.css?v=db1'),loadStyle('./drops.css?v=db1'),...(['collection','database'].includes(name)?[]:[loadStyle('./'+name+'.css?v=tools2')])]);
  await loadStyle('./explorer-game.css?v=tools2');
  await loadStyle('./explorer-reference.css?v=tools2');
+ await loadStyle('./database.css?v=db1');
  return module['setup'+name[0].toUpperCase()+name.slice(1)]();
 })]));
 const getMaps=retryable(async()=>{
- const [module]=await Promise.all([import('./maps.mjs?v=stormlink1'),loadStyle('./maps.css?v=fonts1'),loadStyle('./vendor/leaflet/leaflet.css'),loadScript('./vendor/leaflet/leaflet.js'),loadMapIndex()]);
+ const [module]=await Promise.all([import('./maps.mjs?v=db1'),loadStyle('./maps.css?v=fonts1'),loadStyle('./vendor/leaflet/leaflet.css'),loadScript('./vendor/leaflet/leaflet.js'),loadMapIndex()]);
  mapController=await module.setupMaps();return mapController;
 });
 const getStorm=retryable(async()=>{
@@ -22,7 +23,7 @@ const getStorm=retryable(async()=>{
  stormController=await module.setupStorm({clock});return stormController;
 });
 const getDrops=retryable(async()=>{
- const [module]=await Promise.all([import('./drops.mjs?v=layout2'),loadStyle('./drops.css?v=fonts1')]);
+ const [module]=await Promise.all([import('./drops.mjs?v=db1'),loadStyle('./drops.css?v=db1'),loadStyle('./database.css?v=db1')]);
  return module.setupDrops();
 });
 
@@ -53,7 +54,7 @@ async function route(){
  try{
   if(view==='map'){$('map-loading').hidden=false;const controller=await getMaps();if(ticket!==routeTicket)return;await controller.show(params);lastWorld=controller.worldId;}
   else if(view==='storm'){const controller=await getStorm();if(ticket!==routeTicket)return;focusRegionQuery=controller.show(params.get('region'));}
-  else{const controller=await toolControllers[view]();if(ticket!==routeTicket)return;controller.show(params);}
+  else{const controller=await toolControllers[view]();if(ticket!==routeTicket)return;await controller.show(params);}
  }catch(error){
   if(ticket!==routeTicket)return;
   if(view==='map'){$('map-status').textContent=error.message;$('map-retry').hidden=false;$('map-loading').hidden=true;}

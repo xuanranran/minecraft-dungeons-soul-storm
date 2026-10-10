@@ -1,0 +1,167 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Squid Coast"
+    ],
+    [
+      "Level",
+      "1"
+    ],
+    [
+      "Given by",
+      "Starts with the game"
+    ],
+    [
+      "Opens",
+      "The Illagers from the Rift"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "550"
+    ],
+    [
+      "Emeralds",
+      "5 to 90, 15 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Get back to camp",
+      "map": "/2/map/camp#p=422,2588"
+    },
+    {
+      "text": "Defeat the monsters: Zombie restarts if you quit",
+      "map": ""
+    },
+    {
+      "text": "Open the gate",
+      "map": "/2/map/camp#p=407,2445"
+    },
+    {
+      "text": "Investigate camp",
+      "map": "/2/map/camp#p=213,2412"
+    },
+    {
+      "text": "Defeat the illagers: Vindicator restarts if you quit",
+      "map": ""
+    },
+    {
+      "text": "Speak to the Villager",
+      "map": "/2/map/camp#p=114,2256"
+    },
+    {
+      "text": "Rescue the villagers any order",
+      "map": ""
+    },
+    {
+      "text": "Meet the villagers at the gate",
+      "map": "/2/map/camp#p=425,2345"
+    },
+    {
+      "text": "Speak to the Villager",
+      "map": "/2/map/camp#p=422,2324"
+    },
+    {
+      "text": "Open the gate",
+      "map": "/2/map/camp#p=540,2348"
+    },
+    {
+      "text": "Clear the way to the docks",
+      "map": "/2/map/camp#p=1014,1275"
+    },
+    {
+      "text": "Defeat the ambush",
+      "map": ""
+    },
+    {
+      "text": "Clear the way to the docks",
+      "map": "/2/map/camp#p=1201,968"
+    },
+    {
+      "text": "Speak to the Villager",
+      "map": "/2/map/camp#p=1190,940"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Squid Coast",
+      "href": "/2/locations/squid-coast"
+    },
+    {
+      "name": "The Illagers from the Rift",
+      "href": "/2/quests/the-illagers-from-the-rift"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/camp#p=422,2588"
+    },
+    {
+      "name": "Zombie",
+      "href": "/2/enemies/zombie"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/camp#p=407,2445"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/camp#p=213,2412"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/camp#p=114,2256"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/camp#p=425,2345"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/camp#p=422,2324"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/camp#p=540,2348"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/camp#p=1014,1275"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/camp#p=1201,968"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/camp#p=1190,940"
+    },
+    {
+      "name": "Mystic Boots",
+      "href": "/2/armor/mystic-boots"
+    },
+    {
+      "name": "Mystic Robe",
+      "href": "/2/armor/mystic-robe"
+    },
+    {
+      "name": "Mystic Circlet",
+      "href": "/2/armor/mystic-circlet"
+    },
+    {
+      "name": "Mystic Leggings",
+      "href": "/2/armor/mystic-leggings"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/escape-from-squid-coast"
+}

@@ -1,0 +1,57 @@
+{
+  "parameters": [
+    [
+      "Speed",
+      "200"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Gold",
+          "none",
+          "none",
+          "none"
+        ],
+        [
+          "Silver",
+          "none",
+          "none",
+          "none"
+        ]
+      ]
+    }
+  ],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    },
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    },
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/key-golem"
+}

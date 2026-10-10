@@ -1,0 +1,127 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "1,000"
+    ],
+    [
+      "Top hit",
+      "15"
+    ],
+    [
+      "Poise",
+      "650"
+    ],
+    [
+      "Souls",
+      "200"
+    ],
+    [
+      "Speed",
+      "380"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Where you fight it",
+      "columns": [
+        "WHEN",
+        "QUEST",
+        "WHERE"
+      ],
+      "rows": [
+        [
+          "Story quest",
+          "The Final Souldown",
+          "The Deep Dark"
+        ],
+        [
+          "Rematch",
+          "The Final Souldown Encore",
+          "The Deep Dark"
+        ]
+      ]
+    },
+    {
+      "title": "Moves",
+      "columns": [
+        "MOVE",
+        "WHAT IT DOES",
+        "DAMAGE",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "Enchanted projectiles",
+          "It thrusts out one hand, then the other, and each one releases a fan of orbs spread across 80 degrees. The orbs fly straight at a tenth of a Pillager arrow's speed and break on walls, so step through the gaps or put cover between you.",
+          "8",
+          ""
+        ],
+        [
+          "Fang trap",
+          "It only casts this when you're close. The regular Evoker's trap-summon sound plays, and after a slow wind-up seven fangs erupt in a ring around it; each hits for 15, knocks you back and applies Slowed, so roll out of the ring as soon as you hear the cue.",
+          "15",
+          ""
+        ],
+        [
+          "Protective bubble",
+          "A bubble forms around it and takes every hit meant for the Evoker until it has absorbed 50 damage (up to 1.75 times that with four players). A new bubble can't go up until 23 seconds after the last one did, so popping it fast buys a longer window on the boss.",
+          "",
+          ""
+        ],
+        [
+          "Summon illagers",
+          "Between 95% and 60% health it calls in a squad of 1-2 Pillagers, 2-6 Vindicators, up to 2 Royal Guards and sometimes an Enchanter, with no more than six alive from this spell. It can recast every 26 seconds.",
+          "",
+          ""
+        ],
+        [
+          "Summon soul vex",
+          "Below 60% health the squad is replaced by a bigger wave: four Vex, 1-2 Pillagers, 1-2 Royal Guards and an Enchanter, with up to 12 alive at once. It can recast every 32 seconds.",
+          "",
+          ""
+        ],
+        [
+          "Teleport retreat",
+          "Only while its bubble is down and it's above 15% health, it fades out and reappears at a random flee point in the arena, at most once every 15 seconds. It's untargetable and invulnerable for about half a second as it vanishes.",
+          "",
+          ""
+        ],
+        [
+          "Teleport construct",
+          "Once its health drops below 15%, it teleports to the center of the arena a single time. It has already stopped chasing you at 25% and no longer retreats, so it finishes the fight from that spot.",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Enchanter",
+      "href": "/2/enemies/enchanter"
+    },
+    {
+      "name": "Royal Guard",
+      "href": "/2/enemies/royal-guard"
+    },
+    {
+      "name": "Vex",
+      "href": "/2/enemies/vex"
+    },
+    {
+      "name": "The Deep Dark",
+      "href": "/2/locations/the-deep-dark"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/the-supreme-evoker"
+}

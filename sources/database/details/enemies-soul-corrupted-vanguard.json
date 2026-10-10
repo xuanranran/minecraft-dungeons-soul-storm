@@ -1,0 +1,100 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "400"
+    ],
+    [
+      "Top hit",
+      "15"
+    ],
+    [
+      "Poise",
+      "450"
+    ],
+    [
+      "Souls",
+      "50"
+    ],
+    [
+      "Speed",
+      "385"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Where you fight it",
+      "columns": [
+        "WHEN",
+        "QUEST",
+        "WHERE"
+      ],
+      "rows": [
+        [
+          "Side quest",
+          "Gone Fishing",
+          "Frozen Highlands"
+        ],
+        [
+          "Ambush arena",
+          "No quest needed",
+          "Frozen Highlands"
+        ]
+      ]
+    },
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Spear thrust (shield up)",
+          "13",
+          "none",
+          "Physical",
+          "0.5 sec"
+        ],
+        [
+          "Spear combo (shield broken), hit 2",
+          "12",
+          "none",
+          "Physical",
+          "0.5 sec"
+        ],
+        [
+          "Spear combo (shield broken), hit 3",
+          "15",
+          "none",
+          "Physical",
+          ""
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Lightning damage",
+      "+50%"
+    ],
+    [
+      "Melee damage",
+      "-20%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/soul-corrupted-vanguard"
+}

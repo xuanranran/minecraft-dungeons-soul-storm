@@ -1,0 +1,123 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Humbler Huskland"
+    ],
+    [
+      "Level",
+      "42"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "Wrath of the Sculkers"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "550"
+    ],
+    [
+      "Emeralds",
+      "5 to 90, 15 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Visit Ichor Ponds",
+      "map": "/2/map/the-sift#p=2583,5304"
+    },
+    {
+      "text": "Collect ichor crust any order",
+      "map": ""
+    },
+    {
+      "text": "Visit Sculker Springs",
+      "map": "/2/map/the-sift#p=3640,5770"
+    },
+    {
+      "text": "Collect ichor crust any order",
+      "map": ""
+    },
+    {
+      "text": "Recharge the sleeping echo golems any orderDefeat Vindicator, Pillager and Enchanter",
+      "map": ""
+    },
+    {
+      "text": "Return to the Echo Den",
+      "map": "/2/map/the-sift#p=3036,5598"
+    },
+    {
+      "text": "Speak to the Echo Golem",
+      "map": "/2/map/the-sift#p=3042,5551"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Humbler Huskland",
+      "href": "/2/locations/humbler-huskland"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map/the-sift#m=quest-CAa1_S02_A"
+    },
+    {
+      "name": "Wrath of the Sculkers",
+      "href": "/2/quests/wrath-of-the-sculkers"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=2583,5304"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=3640,5770"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Enchanter",
+      "href": "/2/enemies/enchanter"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=3036,5598"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=3042,5551"
+    },
+    {
+      "name": "Oracle Sandals",
+      "href": "/2/armor/oracle-sandals"
+    },
+    {
+      "name": "Oracle Mantle",
+      "href": "/2/armor/oracle-mantle"
+    },
+    {
+      "name": "Oracle Crown",
+      "href": "/2/armor/oracle-crown"
+    },
+    {
+      "name": "Oracle Tights",
+      "href": "/2/armor/oracle-tights"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/a-dip-in-ichor-springs"
+}

@@ -1,0 +1,93 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "233"
+    ],
+    [
+      "Top hit",
+      "18"
+    ],
+    [
+      "Poise",
+      "233"
+    ],
+    [
+      "Souls",
+      "50"
+    ],
+    [
+      "Speed",
+      "820"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Where you fight it",
+      "columns": [
+        "WHEN",
+        "QUEST",
+        "WHERE"
+      ],
+      "rows": [
+        [
+          "Story quest",
+          "The Missing Note Blocks",
+          "Howling Woods"
+        ],
+        [
+          "Ambush arena",
+          "No quest needed",
+          "Rainy Plains"
+        ]
+      ]
+    },
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Ranged attack",
+          "10 ×2",
+          "none",
+          "Physical",
+          "3 sec"
+        ],
+        [
+          "Light attack",
+          "18",
+          "none",
+          "Physical",
+          "1 sec"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Blast damage",
+      "+50%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/soul-corrupted-spider-jockey"
+}

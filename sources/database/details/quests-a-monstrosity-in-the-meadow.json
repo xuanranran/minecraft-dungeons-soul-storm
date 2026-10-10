@@ -1,0 +1,123 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Singer's Meadow"
+    ],
+    [
+      "Level",
+      "33"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "Lost Harmonies"
+    ],
+    [
+      "Opens",
+      "Wrath of the Sculkers and The Sculk Monstrosity Revived"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "2,750"
+    ],
+    [
+      "Emeralds",
+      "12 to 216, 75 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Reach the musical gate",
+      "map": "/2/map/the-sift#p=1142,5606"
+    },
+    {
+      "text": "Pass the musical gate restarts if you quit",
+      "map": ""
+    },
+    {
+      "text": "Find the pass to Humbler Huskland",
+      "map": "/2/map/the-sift#p=1828,5540"
+    },
+    {
+      "text": "Investigate the gate",
+      "map": "/2/map/the-sift#p=1848,5537"
+    },
+    {
+      "text": "Take down the illager banners any order",
+      "map": ""
+    },
+    {
+      "text": "Return to the illager gate",
+      "map": "/2/map/the-sift#p=1825,5540"
+    },
+    {
+      "text": "Pass the illager gate",
+      "map": "/2/map/the-sift#p=1925,5504"
+    },
+    {
+      "text": "Defeat the Sculk Monstrosity",
+      "map": ""
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map/the-sift#m=quest-CA08_B"
+    },
+    {
+      "name": "Lost Harmonies",
+      "href": "/2/quests/lost-harmonies"
+    },
+    {
+      "name": "Wrath of the Sculkers",
+      "href": "/2/quests/wrath-of-the-sculkers"
+    },
+    {
+      "name": "The Sculk Monstrosity Revived",
+      "href": "/2/quests/the-sculk-monstrosity-revived"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=1142,5606"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=1828,5540"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=1848,5537"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=1825,5540"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=1925,5504"
+    },
+    {
+      "name": "Sculk Monstrosity",
+      "href": "/2/enemies/sculk-monstrosity"
+    },
+    {
+      "name": "Sculker Claws",
+      "href": "/2/weapons/sculker-claws"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/a-monstrosity-in-the-meadow"
+}

@@ -1,0 +1,53 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "220"
+    ],
+    [
+      "Top hit",
+      "8"
+    ],
+    [
+      "Poise",
+      "220"
+    ],
+    [
+      "Souls",
+      "50"
+    ],
+    [
+      "Speed",
+      "250"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Light attack",
+          "8",
+          "none",
+          "Physical",
+          "0.5 sec"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Poison damage",
+      "+50%"
+    ]
+  ],
+  "links": [],
+  "source": "https://www.dungeons.tools/2/enemies/soul-corrupted-bloombud"
+}

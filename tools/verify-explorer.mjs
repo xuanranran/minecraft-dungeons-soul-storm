@@ -24,7 +24,7 @@ try{
    await page.screenshot({path:'explorer-hover-1440.png'});await page.keyboard.press('Escape');assert.equal(await page.locator('#native-equipment-tooltip:popover-open').count(),0);
   }
   await first.locator('.tool-build-title').click();await page.locator('dialog[open] .tool-build-detail').waitFor();
-  assert.ok(await page.locator('dialog[open] .tool-build-detail-item').count()>=9);assert.ok(page.url().includes('#builds'));assert.equal(newPages.length,0);
+  await page.locator('dialog[open] .tool-build-detail-item').nth(8).waitFor();assert.ok(await page.locator('dialog[open] .tool-build-detail-item').count()>=9);assert.ok(page.url().includes('#builds'));assert.equal(newPages.length,0);
   await page.locator('dialog[open]').getByRole('button',{name:'关闭窗口'}).click();
   await gear.click();await page.locator('dialog[open] .drop-detail-panel').waitFor();
   assert.ok(page.url().includes('#builds'));assert.equal(newPages.length,0);

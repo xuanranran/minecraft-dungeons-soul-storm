@@ -1,0 +1,167 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Howling Woods"
+    ],
+    [
+      "Level",
+      "6"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "The Lost Merchant"
+    ],
+    [
+      "Opens",
+      "Training with the Enchantsmith"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "2,750"
+    ],
+    [
+      "Emeralds",
+      "12 to 216, 75 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Return to the bridge",
+      "map": "/2/map#p=2704,3906"
+    },
+    {
+      "text": "Speak to the Farmer",
+      "map": "/2/map#p=2675,3916"
+    },
+    {
+      "text": "Replace the broken lever",
+      "map": "/2/map#p=2714,3930"
+    },
+    {
+      "text": "Reach Little Howl Hamlet",
+      "map": "/2/map#p=3830,4685"
+    },
+    {
+      "text": "Open the gate",
+      "map": "/2/map#p=3841,4682"
+    },
+    {
+      "text": "Investigate Little Howl restarts if you quit",
+      "map": "/2/map#p=3935,4439"
+    },
+    {
+      "text": "Defeat the illagers restarts if you quit",
+      "map": ""
+    },
+    {
+      "text": "Defeat the reinforcements",
+      "map": ""
+    },
+    {
+      "text": "Enter the rift",
+      "map": ""
+    },
+    {
+      "text": "Pursue the illagers",
+      "map": ""
+    },
+    {
+      "text": "Pet the strange creature",
+      "map": ""
+    },
+    {
+      "text": "Defeat the rabid sifters",
+      "map": ""
+    },
+    {
+      "text": "Find a way home",
+      "map": ""
+    },
+    {
+      "text": "Defeat the rabid sifters",
+      "map": ""
+    },
+    {
+      "text": "Check on the creature",
+      "map": "/2/map/the-sift#p=16,5815"
+    },
+    {
+      "text": "Return to the Overworld",
+      "map": ""
+    },
+    {
+      "text": "Speak to the Cleric",
+      "map": "/2/map#p=3885,4522"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map#m=quest-CA02"
+    },
+    {
+      "name": "The Lost Merchant",
+      "href": "/2/quests/the-lost-merchant"
+    },
+    {
+      "name": "Training with the Enchantsmith",
+      "href": "/2/quests/training-with-the-enchantsmith"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2704,3906"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2675,3916"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2714,3930"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3830,4685"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3841,4682"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3935,4439"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=16,5815"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3885,4522"
+    },
+    {
+      "name": "Axe",
+      "href": "/2/weapons/axe"
+    },
+    {
+      "name": "Tasty Bone",
+      "href": "/2/artifacts/tasty-bone"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/the-silence-in-little-howl"
+}

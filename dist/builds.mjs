@@ -1,6 +1,6 @@
 import {loadCatalogue,loadPublicBuilds,loadRules,loadLoadouts,readSaved,save} from './explorer-data.mjs?v=tools2';
 import {context,decodeBuild,encodeBuild} from './explorer-model.mjs?v=tools2';
-import {el,heading,button,input,select,itemPicture,modal,inspect,notify,download,importFile,safeSave} from './explorer-ui.mjs?v=tools2';
+import {el,heading,button,input,select,itemPicture,modal,inspect,notify,download,importFile,safeSave} from './explorer-ui.mjs?v=db1';
 export async function setupBuilds(){
  const [catalogue,publicData]=await Promise.all([loadCatalogue(),loadPublicBuilds()]),items=new Map(catalogue.items.map(i=>[i.slug,i])),panel=document.getElementById('builds-panel');panel.replaceChildren();panel.classList.add('tool-page');
  heading(panel,'BUILDS','配装列表','浏览参考配装，或整理自己保存的搭配。选择一套即可载入规划器继续调整。');

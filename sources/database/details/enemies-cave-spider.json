@@ -1,0 +1,74 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "15"
+    ],
+    [
+      "Top hit",
+      "8"
+    ],
+    [
+      "Poise",
+      "40"
+    ],
+    [
+      "Souls",
+      "4"
+    ],
+    [
+      "Speed",
+      "750"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Swipe",
+          "8",
+          "none",
+          "Physical",
+          "0.8 sec"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Poison damage",
+      "-50%"
+    ],
+    [
+      "Lightning damage",
+      "+100%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "The Deep Dark",
+      "href": "/2/locations/the-deep-dark"
+    },
+    {
+      "name": "Deep Dark dungeons",
+      "href": "/2/locations/deep-dark-dungeons"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/cave-spider"
+}

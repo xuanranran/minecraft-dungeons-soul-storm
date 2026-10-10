@@ -1,0 +1,95 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "The Deep Dark"
+    ],
+    [
+      "Level",
+      "33"
+    ],
+    [
+      "Given by",
+      "A quest giver"
+    ],
+    [
+      "Comes after",
+      "Hiking Frozen Highlands"
+    ],
+    [
+      "Opens",
+      "Lost Harmonies"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "2,750"
+    ],
+    [
+      "Emeralds",
+      "12 to 216, 75 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Return to Brave Haven",
+      "map": "/2/map#p=435,4419"
+    },
+    {
+      "text": "Speak to the Cartographer",
+      "map": "/2/map#p=348,4418"
+    },
+    {
+      "text": "Reach the Deep Dark tunnel",
+      "map": "/2/map#p=364,3850"
+    },
+    {
+      "text": "Return to the ancient portal",
+      "map": ""
+    },
+    {
+      "text": "Activate the portal",
+      "map": ""
+    },
+    {
+      "text": "Enter the portal",
+      "map": ""
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "The Deep Dark",
+      "href": "/2/locations/the-deep-dark"
+    },
+    {
+      "name": "Hiking Frozen Highlands",
+      "href": "/2/quests/hiking-frozen-highlands"
+    },
+    {
+      "name": "Lost Harmonies",
+      "href": "/2/quests/lost-harmonies"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=435,4419"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=348,4418"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=364,3850"
+    },
+    {
+      "name": "Tendrils of the Sprout",
+      "href": "/2/artifacts/tendrils-of-the-sprout"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/returning-the-note-blocks"
+}

@@ -1,0 +1,83 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "1,500"
+    ],
+    [
+      "Top hit",
+      "25"
+    ],
+    [
+      "Poise",
+      "1,500"
+    ],
+    [
+      "Souls",
+      "75"
+    ],
+    [
+      "Speed",
+      "600"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Single arm swing",
+          "20",
+          "none",
+          "Physical",
+          "0.5 sec"
+        ],
+        [
+          "Double arm swing",
+          "25",
+          "15",
+          "Physical",
+          "0.5 sec"
+        ],
+        [
+          "Sonic boom",
+          "7.5 ×4",
+          "none",
+          "Soul",
+          "4 sec"
+        ],
+        [
+          "Scream",
+          "10",
+          "none",
+          "Soul",
+          "5 sec"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Blast damage",
+      "+15%"
+    ],
+    [
+      "Soul damage",
+      "-20%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Deep Dark dungeons",
+      "href": "/2/locations/deep-dark-dungeons"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/soul-corrupted-warden"
+}

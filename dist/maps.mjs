@@ -10,7 +10,7 @@ const save=(key,value)=>{try{localStorage.setItem(key,JSON.stringify(value))}cat
 export async function setupMaps(){
  if(!globalThis.L)await loadScript('./vendor/leaflet/leaflet.js');
  const data=await loadMapIndex();
- let world,map,tiles,focusArea,query='',routeNumber=0,searchTimer;
+ let world,map,tiles,focusArea,query='',routeNumber=0,searchTimer,coordinateMarker;
  const rendered=new Map(),icons=new Map(),views=new Map();
  let categories=new Map(),points=new Map(),off=new Set(readList('dungeons-map-off',['entrance','arena','pot'])),found=new Set(readList('dungeons-map-found')),hideFound=read('dungeons-map-hide-found',false)===true;
  const foundKey=m=>world.id+':'+m.id;
@@ -120,6 +120,8 @@ export async function setupMaps(){
    if(!map||world.id!==next.id)createWorld(next);
    map.invalidateSize();if(area)focusRegion(area.name);else if(focusArea){focusArea=undefined;render();fitWorld();}
    if(params.has('marker'))focusMarker(params.get('marker'));
+   coordinateMarker?.remove();coordinateMarker=undefined;
+   if(params.has('position')){const coordinates=params.get('position').split(',').map(Number);if(coordinates.length===2&&coordinates.every(n=>Number.isFinite(n)&&n>=0&&n<=world.size)){const target=point(...coordinates);map.setView(target,Math.max(world.zmax-1,map.getZoom()),{animate:false});coordinateMarker=L.circleMarker(target,{radius:9,color:'#fff',weight:3,fillColor:'#ffb30b',fillOpacity:1}).addTo(map);coordinateMarker.bindTooltip('任务目标位置',{permanent:true,direction:'top'}).openTooltip();status('已定位任务目标 · '+coordinates.join(', '));}}
   }finally{if(ticket===routeNumber)$('map-loading').hidden=true;}
  }
  const tabs=document.createDocumentFragment();for(const d of data.dimensions){const button=node('button','map-world-tab',d.name);button.type='button';button.dataset.mapWorld=d.id;button.setAttribute('aria-pressed','false');button.addEventListener('click',()=>{location.hash=new URLSearchParams({map:d.id});});tabs.append(button);}$('map-world-tabs').replaceChildren(tabs);

@@ -1,0 +1,1 @@
+{"id":"singer","slug":"singer","name":"吟唱者","english":"Singer","kind":"enemy","categoryKey":"enemies","dbKind":"reference","image":"./images/database/renders-thumb-singer.png","description":"","parameters":[["速度","125"]],"tables":[],"related":[],"source":"https://www.dungeons.tools/2/enemies/singer","subtype":"被动生物","detail":"./data/database/items/enemies-singer.json?v=db1"}

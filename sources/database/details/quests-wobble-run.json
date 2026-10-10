@@ -1,0 +1,171 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Singer's Meadow"
+    ],
+    [
+      "Level",
+      "36"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "Lost Harmonies"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "1,100"
+    ],
+    [
+      "Emeralds",
+      "8 to 144, 40 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Find the hiding wobble",
+      "map": "/2/map/the-sift#p=745,5430"
+    },
+    {
+      "text": "Search for the hiding wobble",
+      "map": ""
+    },
+    {
+      "text": "Lead the wobble to the Echo Golem",
+      "map": "/2/map/the-sift#p=639,5678"
+    },
+    {
+      "text": "Speak to the Echo Golem",
+      "map": "/2/map/the-sift#p=644,5666"
+    },
+    {
+      "text": "Find the wobbles",
+      "map": "/2/map/the-sift#p=891,6298"
+    },
+    {
+      "text": "Search for the hiding wobble",
+      "map": ""
+    },
+    {
+      "text": "Find the wobbles",
+      "map": "/2/map/the-sift#p=348,6861"
+    },
+    {
+      "text": "Search for the hiding wobble",
+      "map": ""
+    },
+    {
+      "text": "Find the wobbles",
+      "map": "/2/map/the-sift#p=300,6170"
+    },
+    {
+      "text": "Search for the hiding wobble",
+      "map": ""
+    },
+    {
+      "text": "Return to the Echo Golem",
+      "map": "/2/map/the-sift#p=640,5678"
+    },
+    {
+      "text": "Speak to the Echo Golem",
+      "map": "/2/map/the-sift#p=644,5666"
+    },
+    {
+      "text": "Find the last wobble",
+      "map": "/2/map/the-sift#p=1702,6201"
+    },
+    {
+      "text": "Defeat the sculkers: Stalker, Scavenger and Hunter restarts if you quit",
+      "map": "/2/map/the-sift#p=1722,6244"
+    },
+    {
+      "text": "Speak to the Echo Golem",
+      "map": "/2/map/the-sift#p=1710,6200"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map/the-sift#m=quest-MEa1_S06_A"
+    },
+    {
+      "name": "Lost Harmonies",
+      "href": "/2/quests/lost-harmonies"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=745,5430"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=639,5678"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=644,5666"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=891,6298"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=348,6861"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=300,6170"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=640,5678"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=644,5666"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=1702,6201"
+    },
+    {
+      "name": "Stalker",
+      "href": "/2/enemies/stalker"
+    },
+    {
+      "name": "Scavenger",
+      "href": "/2/enemies/scavenger"
+    },
+    {
+      "name": "Hunter",
+      "href": "/2/enemies/hunter"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=1722,6244"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=1710,6200"
+    },
+    {
+      "name": "Wobblestone",
+      "href": "/2/artifacts/wobblestone"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/wobble-run"
+}

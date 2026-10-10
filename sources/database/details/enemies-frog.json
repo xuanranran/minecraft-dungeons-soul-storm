@@ -1,0 +1,51 @@
+{
+  "parameters": [
+    [
+      "Speed",
+      "60"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Cold",
+          "none",
+          "none",
+          "none"
+        ],
+        [
+          "Warm",
+          "none",
+          "none",
+          "none"
+        ],
+        [
+          "Base",
+          "none",
+          "none",
+          "none"
+        ]
+      ]
+    }
+  ],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/frog"
+}

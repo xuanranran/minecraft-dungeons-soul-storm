@@ -1,0 +1,119 @@
+{
+  "parameters": [
+    [
+      "Region",
+      "Frozen Highlands"
+    ],
+    [
+      "Entrances",
+      "8"
+    ],
+    [
+      "Fancy chests",
+      "4"
+    ],
+    [
+      "Wooden chests",
+      "3"
+    ],
+    [
+      "Hidden chests",
+      "3"
+    ],
+    [
+      "Pots",
+      "32"
+    ]
+  ],
+  "objectives": [],
+  "tables": [],
+  "resistances": [
+    [
+      "Vindicator",
+      "31%"
+    ],
+    [
+      "Pillager",
+      "29%"
+    ],
+    [
+      "Skeleton",
+      "12%"
+    ],
+    [
+      "Vanguard",
+      "10%"
+    ],
+    [
+      "Ravager",
+      "5%"
+    ],
+    [
+      "Geomancer",
+      "4%"
+    ],
+    [
+      "Royal Guard",
+      "4%"
+    ],
+    [
+      "Spider",
+      "2%"
+    ],
+    [
+      "Creeper",
+      "2%"
+    ],
+    [
+      "Zombie",
+      "1%"
+    ],
+    [
+      "Frozen",
+      "1%"
+    ],
+    [
+      "Husk",
+      "<1%"
+    ],
+    [
+      "Charged Creeper",
+      "<1%"
+    ],
+    [
+      "Stray",
+      "<1%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "The Prime Enchanter",
+      "href": "/2/enemies/the-prime-enchanter"
+    },
+    {
+      "name": "Warden",
+      "href": "/2/enemies/warden"
+    },
+    {
+      "name": "Soul Corrupted Skeleton",
+      "href": "/2/enemies/soul-corrupted-skeleton"
+    },
+    {
+      "name": "Soul Corrupted Spider",
+      "href": "/2/enemies/soul-corrupted-spider"
+    },
+    {
+      "name": "Soul Corrupted Vanguard",
+      "href": "/2/enemies/soul-corrupted-vanguard"
+    },
+    {
+      "name": "Soul Corrupted Zombie",
+      "href": "/2/enemies/soul-corrupted-zombie"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/frozen-fortress"
+}

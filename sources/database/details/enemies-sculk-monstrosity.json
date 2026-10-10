@@ -1,0 +1,195 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "2,000"
+    ],
+    [
+      "Top hit",
+      "35"
+    ],
+    [
+      "Poise",
+      "1,200"
+    ],
+    [
+      "Souls",
+      "200"
+    ],
+    [
+      "Speed",
+      "300"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Where you fight it",
+      "columns": [
+        "WHEN",
+        "QUEST",
+        "WHERE"
+      ],
+      "rows": [
+        [
+          "Story quest",
+          "A Monstrosity in the Meadow",
+          "Singer's Meadow"
+        ],
+        [
+          "Side quest",
+          "Illager Intelligence",
+          "Frozen Highlands"
+        ],
+        [
+          "Dungeon boss room",
+          "End of the procedural dungeon",
+          "Sift rifts"
+        ],
+        [
+          "Rematch",
+          "The Sculk Monstrosity Revived",
+          "Singer's Meadow"
+        ],
+        [
+          "Soul Storm, possible",
+          "20 minute storms every 40 minutes",
+          "Howling Woods, Singer's Meadow, Rainy Plains, Humbler Huskland, Lullaby Hills, Frozen Highlands, Honeycomb Fields"
+        ]
+      ]
+    },
+    {
+      "title": "Moves",
+      "columns": [
+        "MOVE",
+        "WHAT IT DOES",
+        "DAMAGE",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "Punch combo",
+          "Two punches into a narrow cone in front of it, each with a short lunge. Sidestepping beats backing off, because it follows up with Swipe, which reaches farther.",
+          "12.5",
+          ""
+        ],
+        [
+          "Swipe",
+          "A single arm sweep covering twice the angle of the punches, with longer reach and harder knockback. It follows a finished punch combo, so keep a dodge ready for it.",
+          "20",
+          ""
+        ],
+        [
+          "Charge",
+          "Once you're a few steps away it winds up, then rushes you far faster than it walks and launches whatever it hits, its own cubes included. It can only turn 20 degrees per second mid-charge, so sidestep late and it runs past.",
+          "25",
+          ""
+        ],
+        [
+          "Mega punch",
+          "Right after a charge it plants itself, winds up a glowing right fist and lunges into a soul punch that inflicts Soulsick. It's the hardest hit it has but covers only a narrow cone, so get to its side during the long wind-up, and expect the punch combo next if you're still close.",
+          "35",
+          "Soul"
+        ],
+        [
+          "Sculk projectile",
+          "When you're well out of reach it fires three sculk blobs from its back in quick succession, each arcing down toward you. Every blob bursts where it lands and starts a sculk ripple, so get off the spot you were standing on.",
+          "20",
+          ""
+        ],
+        [
+          "Sculk ripple",
+          "Each projectile impact sends a ring spreading slowly outward along the ground. You can jump over it or roll through it, and it only hits you once.",
+          "15",
+          ""
+        ],
+        [
+          "Cube summon",
+          "It stops and roars, and 5 to 7 Sculk Cubes appear around the arena shortly after, up to 15 at a time. At 15 health each they die fast, and they share the boss's fire weakness.",
+          "",
+          ""
+        ],
+        [
+          "Catalyst summon",
+          "Once it's at 70% health or lower, its hands glow and 2 or 3 sculk catalysts rise at set spots in the arena. Any catalyst still standing when its 12-second timer runs out bursts and heals the boss, and with 22 health each they're cheap to destroy.",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "DAMAGE",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Base",
+          "2,000",
+          "35",
+          "1,200",
+          "200"
+        ],
+        [
+          "Soul Storm",
+          "700",
+          "20",
+          "700",
+          "200"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Fire damage",
+      "+50%"
+    ],
+    [
+      "Soul damage",
+      "-35%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Sculk Cube",
+      "href": "/2/enemies/sculk-cube"
+    },
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Sift rifts",
+      "href": "/2/locations/sift-rifts"
+    },
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "Humbler Huskland",
+      "href": "/2/locations/humbler-huskland"
+    },
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    },
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/sculk-monstrosity"
+}

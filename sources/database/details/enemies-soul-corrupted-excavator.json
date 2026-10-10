@@ -1,0 +1,86 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "300"
+    ],
+    [
+      "Top hit",
+      "16"
+    ],
+    [
+      "Poise",
+      "350"
+    ],
+    [
+      "Souls",
+      "50"
+    ],
+    [
+      "Speed",
+      "500"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Light attack",
+          "9",
+          "none",
+          "Physical",
+          "0.5 sec"
+        ],
+        [
+          "Heavy attack",
+          "16",
+          "5",
+          "Physical",
+          "4 sec"
+        ]
+      ]
+    },
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "DAMAGE",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Base",
+          "300",
+          "16",
+          "350",
+          "50"
+        ],
+        [
+          "Backpack",
+          "300",
+          "18",
+          "300",
+          "50"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Soul damage",
+      "+50%"
+    ]
+  ],
+  "links": [],
+  "source": "https://www.dungeons.tools/2/enemies/soul-corrupted-excavator"
+}

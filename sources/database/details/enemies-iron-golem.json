@@ -1,0 +1,52 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "220"
+    ],
+    [
+      "Top hit",
+      "9"
+    ],
+    [
+      "Speed",
+      "400"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Slam",
+          "5",
+          "40",
+          "Physical",
+          "6 sec"
+        ],
+        [
+          "Swipe",
+          "9",
+          "none",
+          "Physical",
+          "0.25 sec"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "TNT damage",
+      "-50%"
+    ]
+  ],
+  "links": [],
+  "source": "https://www.dungeons.tools/2/enemies/iron-golem"
+}

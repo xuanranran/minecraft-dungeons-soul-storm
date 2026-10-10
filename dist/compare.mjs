@@ -1,6 +1,6 @@
 import {loadCatalogue,loadWeapons,loadRules} from './explorer-data.mjs?v=tools2';
 import {weaponMetrics,powerMultiplier} from './explorer-model.mjs?v=tools2';
-import {el,heading,button,field,input,select,itemSummary,picker,inspect,copyLink} from './explorer-ui.mjs?v=tools2';
+import {el,heading,button,field,input,select,itemSummary,picker,inspect,copyLink} from './explorer-ui.mjs?v=db1';
 export async function setupCompare(){
  const [catalogue,weapons,rules]=await Promise.all([loadCatalogue(),loadWeapons(),loadRules()]),items=new Map(catalogue.items.filter(i=>weapons[i.slug]).map(i=>[i.slug,i])),panel=document.getElementById('compare-panel');panel.replaceChildren();panel.classList.add('tool-page');
  heading(panel,'COMPARE','装备对比','比较两件武器的基础属性、连招与随机效果池。');

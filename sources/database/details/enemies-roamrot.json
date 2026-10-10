@@ -1,0 +1,79 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "6"
+    ],
+    [
+      "Top hit",
+      "6"
+    ],
+    [
+      "Poise",
+      "20"
+    ],
+    [
+      "Souls",
+      "4"
+    ],
+    [
+      "Speed",
+      "400"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Ranged attack",
+          "6",
+          "none",
+          "Physical",
+          "0.5 sec"
+        ],
+        [
+          "Retreat shot",
+          "6",
+          "none",
+          "Physical",
+          "0.5 sec"
+        ]
+      ]
+    },
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "DAMAGE",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Soul imbalance",
+          "6",
+          "6",
+          "20",
+          "4"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Poison damage",
+      "+50%"
+    ]
+  ],
+  "links": [],
+  "source": "https://www.dungeons.tools/2/enemies/roamrot"
+}

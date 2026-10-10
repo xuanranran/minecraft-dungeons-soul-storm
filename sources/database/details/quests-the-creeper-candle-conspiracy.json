@@ -1,0 +1,267 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Honeycomb Fields"
+    ],
+    [
+      "Level",
+      "6"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "The Illagers from the Rift"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "550"
+    ],
+    [
+      "Emeralds",
+      "5 to 90, 15 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Check in on the Candlemaker",
+      "map": "/2/map#p=1536,3927"
+    },
+    {
+      "text": "Speak to the Candlemaker",
+      "map": "/2/map#p=1535,3937"
+    },
+    {
+      "text": "Head to the Candlemaker's workshop",
+      "map": "/2/map#p=1930,3589"
+    },
+    {
+      "text": "Defeat the ambush: Pillager and Vindicator restarts if you quit",
+      "map": "/2/map#p=1950,3586"
+    },
+    {
+      "text": "Collect the cellar key",
+      "map": "/2/map#p=1996,3578"
+    },
+    {
+      "text": "Find the food cellar",
+      "map": "/2/map#p=2246,3748"
+    },
+    {
+      "text": "Open the food cellar",
+      "map": "/2/map#p=2237,3743"
+    },
+    {
+      "text": "Enter the food cellar",
+      "map": "/2/map#p=2191,7649"
+    },
+    {
+      "text": "Defeat the illager ambush restarts if you quit",
+      "map": ""
+    },
+    {
+      "text": "Inspect the map",
+      "map": "/2/map#p=2208,7654"
+    },
+    {
+      "text": "Find the first Creeper Candle",
+      "map": "/2/map#p=2028,3932"
+    },
+    {
+      "text": "Defeat the illagers: Pillager and Vindicator restarts if you quit",
+      "map": "/2/map#p=2028,3927"
+    },
+    {
+      "text": "Defuse the Creeper Candle",
+      "map": "/2/map#p=2038,3933"
+    },
+    {
+      "text": "Find the second Creeper Candle",
+      "map": "/2/map#p=2176,3692"
+    },
+    {
+      "text": "Defeat the illagers: Pillager and Vindicator restarts if you quit",
+      "map": "/2/map#p=2181,3692"
+    },
+    {
+      "text": "Defuse the Creeper Candle",
+      "map": "/2/map#p=2182,3691"
+    },
+    {
+      "text": "Find the third Creeper Candle",
+      "map": "/2/map#p=1894,3845"
+    },
+    {
+      "text": "Defeat the illagers: Pillager and Vindicator restarts if you quit",
+      "map": "/2/map#p=1874,3845"
+    },
+    {
+      "text": "Defuse the Creeper Candle",
+      "map": "/2/map#p=1911,3830"
+    },
+    {
+      "text": "Find the last Creeper Candle",
+      "map": "/2/map#p=1654,3747"
+    },
+    {
+      "text": "Defuse the Creeper Candles any order",
+      "map": ""
+    },
+    {
+      "text": "Defeat the illager ambush",
+      "map": ""
+    },
+    {
+      "text": "Return to the Candlemaker",
+      "map": "/2/map#p=1537,3927"
+    },
+    {
+      "text": "Speak to the Candlemaker",
+      "map": "/2/map#p=1535,3937"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map#m=quest-PLa1_S08_A"
+    },
+    {
+      "name": "The Illagers from the Rift",
+      "href": "/2/quests/the-illagers-from-the-rift"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=1536,3927"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=1535,3937"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=1930,3589"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=1950,3586"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=1996,3578"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2246,3748"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2237,3743"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2191,7649"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2208,7654"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2028,3932"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2028,3927"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2038,3933"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2176,3692"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2181,3692"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2182,3691"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=1894,3845"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=1874,3845"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=1911,3830"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=1654,3747"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=1537,3927"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=1535,3937"
+    },
+    {
+      "name": "Creeper Candle",
+      "href": "/2/artifacts/creeper-candle"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/the-creeper-candle-conspiracy"
+}

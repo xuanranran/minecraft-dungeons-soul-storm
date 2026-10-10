@@ -1,0 +1,103 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Humbler Huskland"
+    ],
+    [
+      "Level",
+      "42"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "Wrath of the Sculkers"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "2,750"
+    ],
+    [
+      "Emeralds",
+      "12 to 216, 75 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Clear out the illager camps any order",
+      "map": ""
+    },
+    {
+      "text": "Ambush",
+      "map": ""
+    },
+    {
+      "text": "Ambush",
+      "map": ""
+    },
+    {
+      "text": "Ambush",
+      "map": ""
+    },
+    {
+      "text": "Clear out the final illager camp",
+      "map": ""
+    },
+    {
+      "text": "Ambush",
+      "map": ""
+    },
+    {
+      "text": "Return to the Echo Golem",
+      "map": "/2/map/the-sift#p=3031,5600"
+    },
+    {
+      "text": "Speak to the Echo Golem",
+      "map": "/2/map/the-sift#p=3043,5626"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Humbler Huskland",
+      "href": "/2/locations/humbler-huskland"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map/the-sift#m=quest-CAa1_S03_A"
+    },
+    {
+      "name": "Wrath of the Sculkers",
+      "href": "/2/quests/wrath-of-the-sculkers"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=3031,5600"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=3043,5626"
+    },
+    {
+      "name": "Copper Monstrosity",
+      "href": "/2/enemies/copper-monstrosity"
+    },
+    {
+      "name": "Paragon",
+      "href": "/2/weapons/paragon"
+    },
+    {
+      "name": "Essence of Efficiency",
+      "href": "/2/artifacts/essence-of-efficiency"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/breaking-camps"
+}

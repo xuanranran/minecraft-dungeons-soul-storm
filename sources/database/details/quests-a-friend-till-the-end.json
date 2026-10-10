@@ -1,0 +1,131 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Lullaby Hills"
+    ],
+    [
+      "Level",
+      "45"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "The Final Souldown"
+    ],
+    [
+      "Opens",
+      "Lonesome in Lullaby Hills"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "550"
+    ],
+    [
+      "Emeralds",
+      "5 to 90, 15 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Find the soul block",
+      "map": "/2/map/the-sift#p=4638,6610"
+    },
+    {
+      "text": "Collect the soul block",
+      "map": "/2/map/the-sift#p=4639,6606"
+    },
+    {
+      "text": "Return to the Echo Golem",
+      "map": "/2/map/the-sift#p=5037,6145"
+    },
+    {
+      "text": "Place the soul block",
+      "map": "/2/map/the-sift#p=5048,6144"
+    },
+    {
+      "text": "Destroy the illager machines any order",
+      "map": ""
+    },
+    {
+      "text": "Ambush",
+      "map": ""
+    },
+    {
+      "text": "Ambush",
+      "map": ""
+    },
+    {
+      "text": "Ambush",
+      "map": ""
+    },
+    {
+      "text": "Return to the Echo Golem",
+      "map": "/2/map/the-sift#p=5044,6145"
+    },
+    {
+      "text": "Speak to the Echo Golem",
+      "map": "/2/map/the-sift#p=5048,6144"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map/the-sift#m=quest-MEa2_S02_A"
+    },
+    {
+      "name": "The Final Souldown",
+      "href": "/2/quests/the-final-souldown"
+    },
+    {
+      "name": "Lonesome in Lullaby Hills",
+      "href": "/2/quests/lonesome-in-lullaby-hills"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=4638,6610"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=4639,6606"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=5037,6145"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=5048,6144"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=5044,6145"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=5048,6144"
+    },
+    {
+      "name": "Evoker",
+      "href": "/2/enemies/evoker"
+    },
+    {
+      "name": "Prickle's Mark",
+      "href": "/2/artifacts/prickles-mark"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/a-friend-till-the-end"
+}

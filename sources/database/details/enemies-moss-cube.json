@@ -1,0 +1,57 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "22"
+    ],
+    [
+      "Top hit",
+      "7"
+    ],
+    [
+      "Poise",
+      "50"
+    ],
+    [
+      "Souls",
+      "20"
+    ],
+    [
+      "Speed",
+      "430"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Light attack",
+          "7",
+          "none",
+          "Physical",
+          "0.5 sec"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Poison damage",
+      "-35%"
+    ],
+    [
+      "Lightning damage",
+      "+50%"
+    ]
+  ],
+  "links": [],
+  "source": "https://www.dungeons.tools/2/enemies/moss-cube"
+}

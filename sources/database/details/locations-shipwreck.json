@@ -1,0 +1,167 @@
+{
+  "parameters": [
+    [
+      "Region",
+      "Frozen Highlands"
+    ],
+    [
+      "Entrances",
+      "5"
+    ],
+    [
+      "Fancy chests",
+      "4"
+    ],
+    [
+      "Hidden chests",
+      "2"
+    ],
+    [
+      "Pots",
+      "26"
+    ]
+  ],
+  "objectives": [],
+  "tables": [],
+  "resistances": [
+    [
+      "Zombie",
+      "19%"
+    ],
+    [
+      "Skeleton",
+      "16%"
+    ],
+    [
+      "Baby Zombie",
+      "10%"
+    ],
+    [
+      "Vanguard",
+      "10%"
+    ],
+    [
+      "Spider",
+      "10%"
+    ],
+    [
+      "Frozen",
+      "8%"
+    ],
+    [
+      "Chicken Jockey",
+      "7%"
+    ],
+    [
+      "Spider Jockey",
+      "7%"
+    ],
+    [
+      "Husk",
+      "6%"
+    ],
+    [
+      "Soul Corrupted Skeleton",
+      "1%"
+    ],
+    [
+      "Soul Corrupted Slime",
+      "1%"
+    ],
+    [
+      "Soul Corrupted Zombie",
+      "1%"
+    ],
+    [
+      "Stray",
+      "1%"
+    ],
+    [
+      "Soul Corrupted Baby Zombie",
+      "<1%"
+    ],
+    [
+      "Soul Corrupted Cave Spider",
+      "<1%"
+    ],
+    [
+      "Soul Corrupted Chicken Jockey",
+      "<1%"
+    ],
+    [
+      "Soul Corrupted Creeper",
+      "<1%"
+    ],
+    [
+      "Soul Corrupted Husk",
+      "<1%"
+    ],
+    [
+      "Soul Corrupted Spider",
+      "<1%"
+    ],
+    [
+      "Soul Corrupted Spider Jockey",
+      "<1%"
+    ],
+    [
+      "Soul Corrupted Vanguard",
+      "<1%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Enchanter",
+      "href": "/2/enemies/enchanter"
+    },
+    {
+      "name": "Geomancer",
+      "href": "/2/enemies/geomancer"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Ravager",
+      "href": "/2/enemies/ravager"
+    },
+    {
+      "name": "Royal Guard",
+      "href": "/2/enemies/royal-guard"
+    },
+    {
+      "name": "Soul Corrupted Enchanter",
+      "href": "/2/enemies/soul-corrupted-enchanter"
+    },
+    {
+      "name": "Soul Corrupted Geomancer",
+      "href": "/2/enemies/soul-corrupted-geomancer"
+    },
+    {
+      "name": "Soul Corrupted Pillager",
+      "href": "/2/enemies/soul-corrupted-pillager"
+    },
+    {
+      "name": "Soul Corrupted Ravager",
+      "href": "/2/enemies/soul-corrupted-ravager"
+    },
+    {
+      "name": "Soul Corrupted Royal Guard",
+      "href": "/2/enemies/soul-corrupted-royal-guard"
+    },
+    {
+      "name": "Soul Corrupted Vindicator",
+      "href": "/2/enemies/soul-corrupted-vindicator"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/shipwreck"
+}

@@ -1,0 +1,274 @@
+{
+  "parameters": [],
+  "objectives": [],
+  "tables": [],
+  "resistances": [
+    [
+      "Slime",
+      "14%"
+    ],
+    [
+      "Spider",
+      "13%"
+    ],
+    [
+      "Vindicator",
+      "12%"
+    ],
+    [
+      "Pillager",
+      "11%"
+    ],
+    [
+      "Excavator",
+      "8%"
+    ],
+    [
+      "Zombie",
+      "8%"
+    ],
+    [
+      "Cave Spider",
+      "7%"
+    ],
+    [
+      "Spider Jockey",
+      "5%"
+    ],
+    [
+      "Enchanter",
+      "4%"
+    ],
+    [
+      "Skeleton",
+      "4%"
+    ],
+    [
+      "Flame Construct",
+      "3%"
+    ],
+    [
+      "Baby Zombie",
+      "2%"
+    ],
+    [
+      "Vanguard",
+      "2%"
+    ],
+    [
+      "Geomancer",
+      "2%"
+    ],
+    [
+      "Royal Guard",
+      "2%"
+    ],
+    [
+      "Chicken Jockey",
+      "2%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Enderman",
+      "href": "/2/enemies/enderman"
+    },
+    {
+      "name": "Witch",
+      "href": "/2/enemies/witch"
+    },
+    {
+      "name": "Evoker",
+      "href": "/2/enemies/evoker"
+    },
+    {
+      "name": "Soul Corrupted Enderman",
+      "href": "/2/enemies/soul-corrupted-enderman"
+    },
+    {
+      "name": "Soul Corrupted Witch",
+      "href": "/2/enemies/soul-corrupted-witch"
+    },
+    {
+      "name": "Soul Corrupted Evoker",
+      "href": "/2/enemies/soul-corrupted-evoker"
+    },
+    {
+      "name": "Warden",
+      "href": "/2/enemies/warden"
+    },
+    {
+      "name": "Electric Bangle",
+      "href": "/2/artifacts/electric-bangle"
+    },
+    {
+      "name": "Corrupted Seeds",
+      "href": "/2/artifacts/corrupted-seeds"
+    },
+    {
+      "name": "Flaming Quiver",
+      "href": "/2/artifacts/flaming-quiver"
+    },
+    {
+      "name": "Grindstone",
+      "href": "/2/artifacts/grindstone"
+    },
+    {
+      "name": "Turtle Master's Mandolin",
+      "href": "/2/artifacts/turtle-masters-mandolin"
+    },
+    {
+      "name": "Powershaker",
+      "href": "/2/artifacts/powershaker"
+    },
+    {
+      "name": "Redstone Mine Launcher",
+      "href": "/2/artifacts/redstone-mine-launcher"
+    },
+    {
+      "name": "Pouch of Thunder",
+      "href": "/2/artifacts/pouch-of-thunder"
+    },
+    {
+      "name": "Totem of Shielding",
+      "href": "/2/artifacts/totem-of-shielding"
+    },
+    {
+      "name": "Warrior Drums",
+      "href": "/2/artifacts/warrior-drums"
+    },
+    {
+      "name": "Axe",
+      "href": "/2/weapons/axe"
+    },
+    {
+      "name": "Bow",
+      "href": "/2/weapons/bow"
+    },
+    {
+      "name": "Sculk Digger Boots",
+      "href": "/2/armor/sculk-digger-boots"
+    },
+    {
+      "name": "Sculk Digger Robe",
+      "href": "/2/armor/sculk-digger-robe"
+    },
+    {
+      "name": "Sculk Digger Hood",
+      "href": "/2/armor/sculk-digger-hood"
+    },
+    {
+      "name": "Sculk Digger Leggings",
+      "href": "/2/armor/sculk-digger-leggings"
+    },
+    {
+      "name": "Meat Cleaver",
+      "href": "/2/weapons/meat-cleaver"
+    },
+    {
+      "name": "Riftslasher",
+      "href": "/2/weapons/riftslasher"
+    },
+    {
+      "name": "Twilight Dagger",
+      "href": "/2/weapons/twilight-dagger"
+    },
+    {
+      "name": "Double Daggers",
+      "href": "/2/weapons/double-daggers"
+    },
+    {
+      "name": "Disciple Wraps",
+      "href": "/2/armor/disciple-wraps"
+    },
+    {
+      "name": "Disciple Robe",
+      "href": "/2/armor/disciple-robe"
+    },
+    {
+      "name": "Disciple mask",
+      "href": "/2/armor/disciple-mask"
+    },
+    {
+      "name": "Disciple Leggings",
+      "href": "/2/armor/disciple-leggings"
+    },
+    {
+      "name": "Dual Crossbows",
+      "href": "/2/weapons/dual-crossbows"
+    },
+    {
+      "name": "Heavy Crossbow",
+      "href": "/2/weapons/heavy-crossbow"
+    },
+    {
+      "name": "Mystic Boots",
+      "href": "/2/armor/mystic-boots"
+    },
+    {
+      "name": "Mystic Robe",
+      "href": "/2/armor/mystic-robe"
+    },
+    {
+      "name": "Mystic Circlet",
+      "href": "/2/armor/mystic-circlet"
+    },
+    {
+      "name": "Mystic Leggings",
+      "href": "/2/armor/mystic-leggings"
+    },
+    {
+      "name": "Pickaxe",
+      "href": "/2/weapons/pickaxe"
+    },
+    {
+      "name": "Pike",
+      "href": "/2/weapons/pike"
+    },
+    {
+      "name": "Redstone Boots",
+      "href": "/2/armor/redstone-boots"
+    },
+    {
+      "name": "Redstone Chestplate",
+      "href": "/2/armor/redstone-chestplate"
+    },
+    {
+      "name": "Redstone Helmet",
+      "href": "/2/armor/redstone-helmet"
+    },
+    {
+      "name": "Redstone Shinguards",
+      "href": "/2/armor/redstone-shinguards"
+    },
+    {
+      "name": "Scythe",
+      "href": "/2/weapons/scythe"
+    },
+    {
+      "name": "Shovel",
+      "href": "/2/weapons/shovel"
+    },
+    {
+      "name": "Protector Boots",
+      "href": "/2/armor/protector-boots"
+    },
+    {
+      "name": "Protector Chestplate",
+      "href": "/2/armor/protector-chestplate"
+    },
+    {
+      "name": "Protector Helmet",
+      "href": "/2/armor/protector-helmet"
+    },
+    {
+      "name": "Protector Shinguards",
+      "href": "/2/armor/protector-shinguards"
+    },
+    {
+      "name": "Trickbow",
+      "href": "/2/weapons/trickbow"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/the-deep-dark"
+}

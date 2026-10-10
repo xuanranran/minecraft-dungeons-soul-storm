@@ -1,0 +1,122 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "26"
+    ],
+    [
+      "Top hit",
+      "8"
+    ],
+    [
+      "Poise",
+      "40"
+    ],
+    [
+      "Souls",
+      "4"
+    ],
+    [
+      "Speed",
+      "200"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Light attack",
+          "8",
+          "none",
+          "Physical",
+          "0.5 sec"
+        ]
+      ]
+    },
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "DAMAGE",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Large",
+          "26",
+          "8",
+          "40",
+          "4"
+        ],
+        [
+          "Medium",
+          "15",
+          "6",
+          "50",
+          "4"
+        ],
+        [
+          "Small",
+          "6",
+          "2",
+          "25",
+          "4"
+        ],
+        [
+          "Witch's slime",
+          "35",
+          "2",
+          "10,000",
+          "4"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Blast damage",
+      "+20%"
+    ],
+    [
+      "Melee damage",
+      "+30%"
+    ],
+    [
+      "Elemental damage",
+      "-35%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "The Deep Dark",
+      "href": "/2/locations/the-deep-dark"
+    },
+    {
+      "name": "Deep Dark dungeons",
+      "href": "/2/locations/deep-dark-dungeons"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/slime"
+}

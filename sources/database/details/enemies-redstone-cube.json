@@ -1,0 +1,61 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "18"
+    ],
+    [
+      "Top hit",
+      "7"
+    ],
+    [
+      "Poise",
+      "50"
+    ],
+    [
+      "Souls",
+      "20"
+    ],
+    [
+      "Speed",
+      "430"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Light attack",
+          "7",
+          "none",
+          "Physical",
+          "0.5 sec"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Blast damage",
+      "-25%"
+    ],
+    [
+      "Fire damage",
+      "-35%"
+    ],
+    [
+      "Frost damage",
+      "+50%"
+    ]
+  ],
+  "links": [],
+  "source": "https://www.dungeons.tools/2/enemies/redstone-cube"
+}

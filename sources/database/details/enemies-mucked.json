@@ -1,0 +1,85 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "30"
+    ],
+    [
+      "Top hit",
+      "10"
+    ],
+    [
+      "Poise",
+      "28"
+    ],
+    [
+      "Souls",
+      "8"
+    ],
+    [
+      "Speed",
+      "300"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Light attack",
+          "10",
+          "none",
+          "Poison",
+          "0.5 sec"
+        ]
+      ]
+    },
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "DAMAGE",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Base",
+          "30",
+          "10",
+          "28",
+          "8"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Blast damage",
+      "+50%"
+    ],
+    [
+      "Poison damage",
+      "-25%"
+    ],
+    [
+      "Lightning damage",
+      "+25%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/mucked"
+}

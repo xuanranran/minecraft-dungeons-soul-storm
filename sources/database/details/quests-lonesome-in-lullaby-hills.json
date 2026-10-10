@@ -1,0 +1,107 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Lullaby Hills"
+    ],
+    [
+      "Level",
+      "45"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "A Friend till the End"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "550"
+    ],
+    [
+      "Emeralds",
+      "5 to 90, 15 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Reach the illager stronghold",
+      "map": "/2/map/the-sift#p=5999,5566"
+    },
+    {
+      "text": "Find the stolen soul blocks any order",
+      "map": ""
+    },
+    {
+      "text": "Ambush",
+      "map": ""
+    },
+    {
+      "text": "Ambush",
+      "map": ""
+    },
+    {
+      "text": "Ambush",
+      "map": ""
+    },
+    {
+      "text": "Ambush",
+      "map": ""
+    },
+    {
+      "text": "Return to the Echo Golem",
+      "map": "/2/map/the-sift#p=4971,5920"
+    },
+    {
+      "text": "Place the soul blocks any order",
+      "map": ""
+    },
+    {
+      "text": "Speak to the Echo Golem",
+      "map": "/2/map/the-sift#p=5048,6144"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map/the-sift#m=quest-MEa2_S03_A"
+    },
+    {
+      "name": "A Friend till the End",
+      "href": "/2/quests/a-friend-till-the-end"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=5999,5566"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=4971,5920"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=5048,6144"
+    },
+    {
+      "name": "Redstone Monstrosity",
+      "href": "/2/enemies/redstone-monstrosity"
+    },
+    {
+      "name": "Lullaby Blade",
+      "href": "/2/weapons/lullaby-blade"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/lonesome-in-lullaby-hills"
+}

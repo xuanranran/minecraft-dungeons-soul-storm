@@ -1,0 +1,147 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Rainy Plains"
+    ],
+    [
+      "Level",
+      "26"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "Wading Rainy Plains"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "550"
+    ],
+    [
+      "Emeralds",
+      "5 to 90, 15 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Pursue the illager convoy",
+      "map": "/2/map#p=5089,5949"
+    },
+    {
+      "text": "Defeat the illagers: Vindicator and Pillager restarts if you quit",
+      "map": "/2/map#p=5082,5952"
+    },
+    {
+      "text": "Search the copper barrel",
+      "map": "/2/map#p=5050,5931"
+    },
+    {
+      "text": "Pursue the illager convoy",
+      "map": "/2/map#p=5453,6920"
+    },
+    {
+      "text": "Defeat the illagers: Vindicator and Pillager restarts if you quit",
+      "map": "/2/map#p=5453,6973"
+    },
+    {
+      "text": "Search the copper barrel",
+      "map": "/2/map#p=5418,6971"
+    },
+    {
+      "text": "Pursue the illager convoy",
+      "map": "/2/map#p=5269,8013"
+    },
+    {
+      "text": "Defeat the illagers",
+      "map": ""
+    },
+    {
+      "text": "Search the copper barrel",
+      "map": "/2/map#p=5222,8063"
+    },
+    {
+      "text": "Bring the copper to the Inventor",
+      "map": "/2/map#p=4558,5798"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map#m=quest-PLa2_S15_A"
+    },
+    {
+      "name": "Wading Rainy Plains",
+      "href": "/2/quests/wading-rainy-plains"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5089,5949"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5082,5952"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5050,5931"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5453,6920"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5453,6973"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5418,6971"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5269,8013"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5222,8063"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4558,5798"
+    },
+    {
+      "name": "Pride of the Plains",
+      "href": "/2/weapons/pride-of-the-plains"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/recycling-your-monstrosity"
+}

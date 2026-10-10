@@ -1,0 +1,61 @@
+{
+  "parameters": [
+    [
+      "Speed",
+      "200"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Small",
+          "none",
+          "none",
+          "none"
+        ],
+        [
+          "Medium",
+          "none",
+          "none",
+          "none"
+        ],
+        [
+          "Large",
+          "none",
+          "none",
+          "none"
+        ],
+        [
+          "Base",
+          "none",
+          "none",
+          "none"
+        ]
+      ]
+    }
+  ],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "Humbler Huskland",
+      "href": "/2/locations/humbler-huskland"
+    },
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/tuner"
+}

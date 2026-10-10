@@ -1,0 +1,80 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "33"
+    ],
+    [
+      "Top hit",
+      "5"
+    ],
+    [
+      "Poise",
+      "28"
+    ],
+    [
+      "Souls",
+      "8"
+    ],
+    [
+      "Speed",
+      "400"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Ranged attack",
+          "5",
+          "none",
+          "Fire",
+          "1 sec"
+        ]
+      ]
+    },
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "DAMAGE",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Base (unused)",
+          "33",
+          "5",
+          "28",
+          "8"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Blast damage",
+      "+50%"
+    ],
+    [
+      "Fire damage",
+      "-25%"
+    ],
+    [
+      "Frost damage",
+      "+25%"
+    ]
+  ],
+  "links": [],
+  "source": "https://www.dungeons.tools/2/enemies/scorched"
+}

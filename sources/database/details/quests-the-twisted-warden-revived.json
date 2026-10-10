@@ -1,0 +1,75 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Howling Woods"
+    ],
+    [
+      "Level",
+      "17"
+    ],
+    [
+      "Comes after",
+      "Down into the Deep Dark"
+    ],
+    [
+      "Repeatable",
+      "Yes"
+    ],
+    [
+      "XP",
+      "550 the first time, 500 after that"
+    ],
+    [
+      "Emeralds",
+      "5 to 90, 15 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Enter the arena",
+      "map": ""
+    },
+    {
+      "text": "Defeat the Twisted Warden",
+      "map": ""
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Down into the Deep Dark",
+      "href": "/2/quests/down-into-the-deep-dark"
+    },
+    {
+      "name": "Twisted Warden",
+      "href": "/2/enemies/twisted-warden"
+    },
+    {
+      "name": "Sculk Digger Boots",
+      "href": "/2/armor/sculk-digger-boots"
+    },
+    {
+      "name": "Sculk Digger Robe",
+      "href": "/2/armor/sculk-digger-robe"
+    },
+    {
+      "name": "Sculk Digger Hood",
+      "href": "/2/armor/sculk-digger-hood"
+    },
+    {
+      "name": "Sculk Digger Leggings",
+      "href": "/2/armor/sculk-digger-leggings"
+    },
+    {
+      "name": "Venomous Fangs",
+      "href": "/2/weapons/venomous-fangs"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/the-twisted-warden-revived"
+}

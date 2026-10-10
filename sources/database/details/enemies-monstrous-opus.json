@@ -1,0 +1,142 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "2,000"
+    ],
+    [
+      "Top hit",
+      "90"
+    ],
+    [
+      "Poise",
+      "1,000"
+    ],
+    [
+      "Souls",
+      "200"
+    ],
+    [
+      "Speed",
+      "800"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Where you fight it",
+      "columns": [
+        "WHEN",
+        "QUEST",
+        "WHERE"
+      ],
+      "rows": [
+        [
+          "Story quest",
+          "The Final Souldown",
+          "The Deep Dark"
+        ],
+        [
+          "Rematch",
+          "The Final Souldown Encore",
+          "The Deep Dark"
+        ]
+      ]
+    },
+    {
+      "title": "Moves",
+      "columns": [
+        "MOVE",
+        "WHAT IT DOES",
+        "DAMAGE",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "Headbutt",
+          "Two lunging headbutts open its melee combo. Each one is marked by a stab indicator and hits a narrow 60-degree cone in front of it, so stepping to the side works better than backing away.",
+          "12",
+          ""
+        ],
+        [
+          "Stomp",
+          "The third hit of the combo comes after roughly two seconds of windup. It's a slam that hits everything near it for 35 with heavy knockback, then scatters 30 earth mines around the boss, so get clear during the windup and stay out until the mines pop.",
+          "35",
+          ""
+        ],
+        [
+          "Earth mines",
+          "Each mine explodes one second after it appears, launching you straight up for 5 damage (3 at the edge of the blast). One is trivial, but the stomp drops 30 at once and every Earth outbreak rock leaves a trail of them.",
+          "5",
+          ""
+        ],
+        [
+          "Magma wave",
+          "Its horns change color, then it slams one fist and then the other about a second apart. Each slam sends a ring of magma rolling outward that hits for 22 and inflicts Burned, so jump over each ring, since a dodge roll won't carry you through it.",
+          "22",
+          "Fire"
+        ],
+        [
+          "Earth outbreak",
+          "It tracks you for about two seconds, then launches three rocks along the ground in a 40-degree fan. Each hits for 18, inflicts Burned and knocks you back, and leaves earth mines in its path, so sidestep late and don't run down the trail.",
+          "18",
+          ""
+        ],
+        [
+          "Deconstruct",
+          "Below 80% health, whenever its 28-second cooldown is ready, it moves to the arena center and comes apart, and the next swap pulls it back into armor. It can't be staggered while it transforms.",
+          "",
+          ""
+        ],
+        [
+          "Soul cannon",
+          "After about two seconds of charging, it fires three to five soul beams that rotate around it for 12 seconds and deal 7 soul damage every tenth of a second to anything inside one. Keep moving with the rotation rather than trying to cross a beam.",
+          "7",
+          "Soul"
+        ],
+        [
+          "Orb storm",
+          "It fires rings of 13 orbs in every direction, roughly two rings a second for 11 seconds, and each orb hits for 10. The gaps between orbs widen with distance, so slipping through is easier at range than up close.",
+          "10",
+          ""
+        ],
+        [
+          "Soul harvester",
+          "A gravity well drags you toward it while pulses of force contract inward, and after about seven seconds it detonates for 90 soul damage up close and 8 farther out, with massive knockback. Jump or roll through each pulse, spend the pull walking out of range, and don't count on Evasion, which doesn't work against the blast.",
+          "90",
+          "Soul"
+        ]
+      ]
+    },
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Armored (deflects every projectile)",
+          "2,000",
+          "1,000",
+          "200"
+        ],
+        [
+          "Deconstructed",
+          "2,000",
+          "1,000",
+          "200"
+        ]
+      ]
+    }
+  ],
+  "resistances": [],
+  "links": [
+    {
+      "name": "The Deep Dark",
+      "href": "/2/locations/the-deep-dark"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/monstrous-opus"
+}

@@ -1,0 +1,311 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Humbler Huskland"
+    ],
+    [
+      "Level",
+      "42"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "Wrath of the Sculkers"
+    ],
+    [
+      "Opens",
+      "The Redstone Monstrosity Revived, The Final Souldown Encore and A Friend till the End"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "4,180"
+    ],
+    [
+      "Emeralds",
+      "15 to 270, 109 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Search for the echo golems",
+      "map": "/2/map/the-sift#p=4613,6180"
+    },
+    {
+      "text": "Investigate the area",
+      "map": "/2/map/the-sift#p=4618,6441"
+    },
+    {
+      "text": "Find the tuners any order restarts if you quit",
+      "map": ""
+    },
+    {
+      "text": "Open the musical gate",
+      "map": "/2/map/the-sift#p=4664,6436"
+    },
+    {
+      "text": "Catch up with the Echo Golem restarts if you quit",
+      "map": ""
+    },
+    {
+      "text": "Speak to the Echo Golem",
+      "map": "/2/map/the-sift#p=5005,6408"
+    },
+    {
+      "text": "Lead the Golem to Lullaby Hilltop any order restarts if you quit",
+      "map": ""
+    },
+    {
+      "text": "Defeat the illagers restarts if you quit",
+      "map": "/2/map/the-sift#p=4982,5955"
+    },
+    {
+      "text": "Check on the scared Golem restarts if you quit",
+      "map": ""
+    },
+    {
+      "text": "Find the illager stronghold restarts if you quit",
+      "map": ""
+    },
+    {
+      "text": "Speak to the Scared Golem",
+      "map": "/2/map/the-sift#p=5048,6144"
+    },
+    {
+      "text": "Accept the Golem's soul block",
+      "map": "/2/map/the-sift#p=5048,6144"
+    },
+    {
+      "text": "Place the soul block",
+      "map": "/2/map/the-sift#p=5071,6113"
+    },
+    {
+      "text": "Find a way across the chasm",
+      "map": "/2/map/the-sift#p=5174,5763"
+    },
+    {
+      "text": "Open the gate",
+      "map": "/2/map/the-sift#p=5174,5709"
+    },
+    {
+      "text": "Find a way across the chasm",
+      "map": "/2/map/the-sift#p=5338,5624"
+    },
+    {
+      "text": "Defeat the Redstone Monstrosity",
+      "map": ""
+    },
+    {
+      "text": "Cross the chasm",
+      "map": "/2/map/the-sift#p=5965,5596"
+    },
+    {
+      "text": "Storm the stronghold",
+      "map": "/2/map/the-sift#p=6287,5263"
+    },
+    {
+      "text": "Cut across the courtyard",
+      "map": "/2/map/the-sift#p=6246,5094"
+    },
+    {
+      "text": "Climb the ramparts",
+      "map": "/2/map/the-sift#p=6229,4841"
+    },
+    {
+      "text": "Clear the ramparts",
+      "map": "/2/map/the-sift#p=6474,4841"
+    },
+    {
+      "text": "Survive the ambush",
+      "map": ""
+    },
+    {
+      "text": "Clear the ramparts",
+      "map": "/2/map/the-sift#p=6282,5379"
+    },
+    {
+      "text": "Cross the gap",
+      "map": "/2/map/the-sift#p=6080,5371"
+    },
+    {
+      "text": "Reach the portal",
+      "map": "/2/map/the-sift#p=6431,5555"
+    },
+    {
+      "text": "Stand your ground",
+      "map": ""
+    },
+    {
+      "text": "Enter the portal",
+      "map": ""
+    },
+    {
+      "text": "Follow the ichor pipes",
+      "map": ""
+    },
+    {
+      "text": "Investigate the experiment restarts if you quit",
+      "map": ""
+    },
+    {
+      "text": "Defeat the Supreme Evoker restarts if you quit",
+      "map": ""
+    },
+    {
+      "text": "Defeat the Monstrous Opus restarts if you quit",
+      "map": ""
+    },
+    {
+      "text": "Pick up the soul block",
+      "map": ""
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Humbler Huskland",
+      "href": "/2/locations/humbler-huskland"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map/the-sift#m=quest-CA10"
+    },
+    {
+      "name": "Wrath of the Sculkers",
+      "href": "/2/quests/wrath-of-the-sculkers"
+    },
+    {
+      "name": "The Redstone Monstrosity Revived",
+      "href": "/2/quests/the-redstone-monstrosity-revived"
+    },
+    {
+      "name": "The Final Souldown Encore",
+      "href": "/2/quests/the-final-souldown-encore"
+    },
+    {
+      "name": "A Friend till the End",
+      "href": "/2/quests/a-friend-till-the-end"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=4613,6180"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=4618,6441"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=4664,6436"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=5005,6408"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=4982,5955"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=5048,6144"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=5048,6144"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=5071,6113"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=5174,5763"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=5174,5709"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=5338,5624"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=5965,5596"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=6287,5263"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=6246,5094"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=6229,4841"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=6474,4841"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=6282,5379"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=6080,5371"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map/the-sift#p=6431,5555"
+    },
+    {
+      "name": "Redstone Monstrosity",
+      "href": "/2/enemies/redstone-monstrosity"
+    },
+    {
+      "name": "Monstrous Opus",
+      "href": "/2/enemies/monstrous-opus"
+    },
+    {
+      "name": "The Supreme Evoker",
+      "href": "/2/enemies/the-supreme-evoker"
+    },
+    {
+      "name": "Emerald Hammer",
+      "href": "/2/weapons/emerald-hammer"
+    },
+    {
+      "name": "Humbler Tarsi",
+      "href": "/2/armor/humbler-tarsi"
+    },
+    {
+      "name": "Humbler Carapace",
+      "href": "/2/armor/humbler-carapace"
+    },
+    {
+      "name": "Humbler Antenna",
+      "href": "/2/armor/humbler-antenna"
+    },
+    {
+      "name": "Humbler Greaves",
+      "href": "/2/armor/humbler-greaves"
+    },
+    {
+      "name": "Golem Kit",
+      "href": "/2/artifacts/golem-kit"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/the-final-souldown"
+}

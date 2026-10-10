@@ -1,0 +1,143 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Rainy Plains"
+    ],
+    [
+      "Level",
+      "26"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "Wading Rainy Plains"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "550"
+    ],
+    [
+      "Emeralds",
+      "5 to 90, 15 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Head to the Red Tower",
+      "map": "/2/map#p=5489,6139"
+    },
+    {
+      "text": "Investigate the tower",
+      "map": ""
+    },
+    {
+      "text": "Free the captured Villager",
+      "map": ""
+    },
+    {
+      "text": "Defeat the illagers",
+      "map": ""
+    },
+    {
+      "text": "Track the soul corrupted illagers",
+      "map": "/2/map#p=5443,6973"
+    },
+    {
+      "text": "Defeat the soul corrupted illagers: Soul Corrupted Vindicator, Vindicator and Pillager restarts if you quit",
+      "map": "/2/map#p=5489,7055"
+    },
+    {
+      "text": "Track the soul corrupted illagers",
+      "map": "/2/map#p=4188,6682"
+    },
+    {
+      "text": "Defeat the soul corrupted illagers: Soul Corrupted Geomancer, Pillager and Vindicator restarts if you quit",
+      "map": "/2/map#p=4175,6615"
+    },
+    {
+      "text": "Return to Puddle Pond",
+      "map": "/2/map#p=4449,5590"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map#m=quest-PLa2_S17_A"
+    },
+    {
+      "name": "Wading Rainy Plains",
+      "href": "/2/quests/wading-rainy-plains"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5489,6139"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5443,6973"
+    },
+    {
+      "name": "Soul Corrupted Vindicator",
+      "href": "/2/enemies/soul-corrupted-vindicator"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=5489,7055"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4188,6682"
+    },
+    {
+      "name": "Soul Corrupted Geomancer",
+      "href": "/2/enemies/soul-corrupted-geomancer"
+    },
+    {
+      "name": "Pillager",
+      "href": "/2/enemies/pillager"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4175,6615"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4449,5590"
+    },
+    {
+      "name": "Corrupted Seeds",
+      "href": "/2/artifacts/corrupted-seeds"
+    },
+    {
+      "name": "Armadillo Amulet",
+      "href": "/2/artifacts/armadillo-amulet"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/illegal-illager-trials"
+}

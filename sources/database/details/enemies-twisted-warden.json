@@ -1,0 +1,152 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "1,750"
+    ],
+    [
+      "Top hit",
+      "32"
+    ],
+    [
+      "Poise",
+      "800"
+    ],
+    [
+      "Souls",
+      "200"
+    ],
+    [
+      "Speed",
+      "550"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Where you fight it",
+      "columns": [
+        "WHEN",
+        "QUEST",
+        "WHERE"
+      ],
+      "rows": [
+        [
+          "Story quest",
+          "Down into the Deep Dark",
+          "The Deep Dark"
+        ],
+        [
+          "Rematch",
+          "The Twisted Warden Revived",
+          "The Deep Dark"
+        ]
+      ]
+    },
+    {
+      "title": "Moves",
+      "columns": [
+        "MOVE",
+        "WHAT IT DOES",
+        "DAMAGE",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "Unburrow",
+          "The fight opens with it climbing out of the ground, and for roughly the first three seconds of that animation it can't be targeted or damaged. Get into position and hold your cooldowns until it's fully out.",
+          "",
+          ""
+        ],
+        [
+          "Initial swipe",
+          "Every melee combo opens with this wide arm swing, which has only light knockback. It always rolls into a second swing, so don't stay in front of it after the first hit.",
+          "18",
+          ""
+        ],
+        [
+          "Follow swipe",
+          "One of the two possible second swings. It does the same damage as the opener with six times the knockback, so a hit sends you flying.",
+          "18",
+          ""
+        ],
+        [
+          "Heavy swipe",
+          "The other possible finisher and its hardest melee hit, with the same heavy knockback as the follow swipe.",
+          "22",
+          ""
+        ],
+        [
+          "Spin attack",
+          "Unlocked at 70% health and used whenever its 20-second cooldown is up, often straight after a swipe combo. For six seconds it chases its target, battering everything nearby through walls and deflecting every projectile, so hold your shots and keep clear until it stops, then punish the wind-down.",
+          "3",
+          ""
+        ],
+        [
+          "Sonic boom",
+          "After a windup of about a second and a half it fires a fast blast straight along its facing that knocks you back and leaves a line of soul puddles for 6 seconds, each inflicting Soulsick. Sidestep out of the line instead of backing down it, and don't hug it either, because the blast also shoves away anyone close.",
+          "32",
+          "Soul"
+        ],
+        [
+          "Secondary sonic boom",
+          "Three more booms follow the first, 0.3 seconds apart, and it turns back toward its target as they start. Keep moving sideways until the third has passed.",
+          "18",
+          "Soul"
+        ],
+        [
+          "Soul stars",
+          "Six slow soul orbs fan out as the sonic boom fires and begin homing in after a brief delay. They burst on terrain, so ducking behind cover gets rid of them.",
+          "6",
+          "Soul"
+        ],
+        [
+          "Soul puke",
+          "Used at most once every 15 seconds, and only when you're close enough. After a short charge-up it spews souls: anyone near its mouth is hit, knocked back and slowed, and all 19 floor patches in the arena turn into Soulsick pools for 10 seconds, so learn the patch layout and step off them before the charge ends.",
+          "15",
+          "Soul"
+        ],
+        [
+          "Summon",
+          "From 90% health down it roars in two or three Skeletons, up to one Flame Construct and two to six Excavators, never more than eight at once, on a 15-second cooldown. Every summoned mob yields 20 souls more than usual (24 for an Excavator or Flame Construct, 28 for the Skeletons), so the adds double as a soul refill.",
+          "",
+          ""
+        ],
+        [
+          "Stagger",
+          "Breaking its 800 poise stuns it for 8.8 seconds. As it gets back up it drops a Soulsick puddle just in front of itself that lasts 7 seconds, so don't linger at its feet as the stun ends.",
+          "",
+          "Soul"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Soul damage",
+      "-50%"
+    ],
+    [
+      "Melee damage",
+      "-20%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Excavator",
+      "href": "/2/enemies/excavator"
+    },
+    {
+      "name": "Flame Construct",
+      "href": "/2/enemies/flame-construct"
+    },
+    {
+      "name": "Skeleton",
+      "href": "/2/enemies/skeleton"
+    },
+    {
+      "name": "The Deep Dark",
+      "href": "/2/locations/the-deep-dark"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/twisted-warden"
+}

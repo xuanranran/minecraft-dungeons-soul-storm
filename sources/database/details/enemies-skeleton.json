@@ -1,0 +1,136 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "7"
+    ],
+    [
+      "Top hit",
+      "5"
+    ],
+    [
+      "Poise",
+      "28"
+    ],
+    [
+      "Souls",
+      "4"
+    ],
+    [
+      "Speed",
+      "400"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Ranged attack",
+          "5",
+          "none",
+          "Physical",
+          "1 sec"
+        ],
+        [
+          "Retreat shot (long-range)",
+          "50",
+          "none",
+          "Physical",
+          "0.5 sec"
+        ]
+      ]
+    },
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "DAMAGE",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Base",
+          "7",
+          "5",
+          "28",
+          "4"
+        ],
+        [
+          "Long-range",
+          "10.2",
+          "50",
+          "28",
+          "4"
+        ],
+        [
+          "Soul imbalance",
+          "6",
+          "5",
+          "28",
+          "4"
+        ],
+        [
+          "Variant I",
+          "23",
+          "5",
+          "65",
+          "8"
+        ],
+        [
+          "Variant II",
+          "37",
+          "5",
+          "80",
+          "12"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Blast damage",
+      "+50%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    },
+    {
+      "name": "The Deep Dark",
+      "href": "/2/locations/the-deep-dark"
+    },
+    {
+      "name": "Deep Dark dungeons",
+      "href": "/2/locations/deep-dark-dungeons"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "Squid Coast",
+      "href": "/2/locations/squid-coast"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/skeleton"
+}

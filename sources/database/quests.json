@@ -1,0 +1,342 @@
+{
+  "source": "https://www.dungeons.tools/2/quests",
+  "captured_at": "2026-10-10",
+  "rows": [
+    {
+      "name": "Escape from Squid Coast",
+      "sub": "",
+      "href": "/2/quests/escape-from-squid-coast",
+      "image": "/images/d2/map/icons/CoreQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "The Illagers from the Rift",
+      "sub": "",
+      "href": "/2/quests/the-illagers-from-the-rift",
+      "image": "/images/d2/map/icons/CoreQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "The Lost Merchant",
+      "sub": "",
+      "href": "/2/quests/the-lost-merchant",
+      "image": "/images/d2/map/icons/CoreQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "The Silence in Little Howl",
+      "sub": "",
+      "href": "/2/quests/the-silence-in-little-howl",
+      "image": "/images/d2/map/icons/CoreQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "Training with the Enchantsmith",
+      "sub": "",
+      "href": "/2/quests/training-with-the-enchantsmith",
+      "image": "/images/d2/map/icons/CoreQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "Corruption in the Woods",
+      "sub": "",
+      "href": "/2/quests/corruption-in-the-woods",
+      "image": "/images/d2/map/icons/CoreQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "Down into the Deep Dark",
+      "sub": "",
+      "href": "/2/quests/down-into-the-deep-dark",
+      "image": "/images/d2/map/icons/CoreQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "The Missing Note Blocks",
+      "sub": "",
+      "href": "/2/quests/the-missing-note-blocks",
+      "image": "/images/d2/map/icons/CoreQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "Wading Rainy Plains",
+      "sub": "",
+      "href": "/2/quests/wading-rainy-plains",
+      "image": "/images/d2/map/icons/CoreQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "Hiking Frozen Highlands",
+      "sub": "",
+      "href": "/2/quests/hiking-frozen-highlands",
+      "image": "/images/d2/map/icons/CoreQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "Returning the Note Blocks",
+      "sub": "",
+      "href": "/2/quests/returning-the-note-blocks",
+      "image": "/images/d2/map/icons/CoreQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "Lost Harmonies",
+      "sub": "",
+      "href": "/2/quests/lost-harmonies",
+      "image": "/images/d2/map/icons/CoreQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "A Monstrosity in the Meadow",
+      "sub": "",
+      "href": "/2/quests/a-monstrosity-in-the-meadow",
+      "image": "/images/d2/map/icons/CoreQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "Wrath of the Sculkers",
+      "sub": "",
+      "href": "/2/quests/wrath-of-the-sculkers",
+      "image": "/images/d2/map/icons/CoreQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "The Final Souldown",
+      "sub": "",
+      "href": "/2/quests/the-final-souldown",
+      "image": "/images/d2/map/icons/CoreQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "Keeper of the Bees",
+      "sub": "",
+      "href": "/2/quests/keeper-of-the-bees",
+      "image": "/images/d2/map/icons/SideQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "The Creeper Candle Conspiracy",
+      "sub": "",
+      "href": "/2/quests/the-creeper-candle-conspiracy",
+      "image": "/images/d2/map/icons/SideQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "Part of the Pack",
+      "sub": "",
+      "href": "/2/quests/part-of-the-pack",
+      "image": "/images/d2/map/icons/SideQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "The Cleric's Apprentice",
+      "sub": "",
+      "href": "/2/quests/the-clerics-apprentice",
+      "image": "/images/d2/map/icons/SideQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "Illegal Illager Trials",
+      "sub": "",
+      "href": "/2/quests/illegal-illager-trials",
+      "image": "/images/d2/map/icons/SideQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "Recycling Your Monstrosity",
+      "sub": "",
+      "href": "/2/quests/recycling-your-monstrosity",
+      "image": "/images/d2/map/icons/SideQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "Wildflower Warrior",
+      "sub": "",
+      "href": "/2/quests/wildflower-warrior",
+      "image": "/images/d2/map/icons/SideQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "Rage of the Sifters",
+      "sub": "",
+      "href": "/2/quests/rage-of-the-sifters",
+      "image": "/images/d2/map/icons/SideQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "Wobble Run",
+      "sub": "",
+      "href": "/2/quests/wobble-run",
+      "image": "/images/d2/map/icons/SideQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "A Dip in Ichor Springs",
+      "sub": "",
+      "href": "/2/quests/a-dip-in-ichor-springs",
+      "image": "/images/d2/map/icons/SideQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "Breaking Camps",
+      "sub": "",
+      "href": "/2/quests/breaking-camps",
+      "image": "/images/d2/map/icons/SideQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "A Friend till the End",
+      "sub": "",
+      "href": "/2/quests/a-friend-till-the-end",
+      "image": "/images/d2/map/icons/SideQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "Gone Fishing",
+      "sub": "",
+      "href": "/2/quests/gone-fishing",
+      "image": "/images/d2/map/icons/SideQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "Illager Intelligence",
+      "sub": "",
+      "href": "/2/quests/illager-intelligence",
+      "image": "/images/d2/map/icons/SideQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "Lonesome in Lullaby Hills",
+      "sub": "",
+      "href": "/2/quests/lonesome-in-lullaby-hills",
+      "image": "/images/d2/map/icons/SideQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "The Fight at the End of the Tunnel",
+      "sub": "",
+      "href": "/2/quests/the-fight-at-the-end-of-the-tunnel",
+      "image": "/images/d2/map/icons/SideQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "The Freezing Golem",
+      "sub": "",
+      "href": "/2/quests/the-freezing-golem",
+      "image": "/images/d2/map/icons/SideQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "The Rusting Golem",
+      "sub": "",
+      "href": "/2/quests/the-rusting-golem",
+      "image": "/images/d2/map/icons/SideQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "The Sneezing Golem",
+      "sub": "",
+      "href": "/2/quests/the-sneezing-golem",
+      "image": "/images/d2/map/icons/SideQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "The Trembling Golem",
+      "sub": "",
+      "href": "/2/quests/the-trembling-golem",
+      "image": "/images/d2/map/icons/SideQuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "The Copper Monstrosity Revived",
+      "sub": "",
+      "href": "/2/quests/the-copper-monstrosity-revived",
+      "image": "/images/d2/map/icons/QuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "The Final Souldown Encore",
+      "sub": "",
+      "href": "/2/quests/the-final-souldown-encore",
+      "image": "/images/d2/map/icons/QuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "The Prime Enchanter Revived",
+      "sub": "",
+      "href": "/2/quests/the-prime-enchanter-revived",
+      "image": "/images/d2/map/icons/QuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "The Redstone Monstrosity Revived",
+      "sub": "",
+      "href": "/2/quests/the-redstone-monstrosity-revived",
+      "image": "/images/d2/map/icons/QuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "The Sculk Monstrosity Revived",
+      "sub": "",
+      "href": "/2/quests/the-sculk-monstrosity-revived",
+      "image": "/images/d2/map/icons/QuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "The Twisted Warden Revived",
+      "sub": "",
+      "href": "/2/quests/the-twisted-warden-revived",
+      "image": "/images/d2/map/icons/QuestGiver.png",
+      "values": [],
+      "tip": null
+    },
+    {
+      "name": "The Witch Revived",
+      "sub": "",
+      "href": "/2/quests/the-witch-revived",
+      "image": "/images/d2/map/icons/QuestGiver.png",
+      "values": [],
+      "tip": null
+    }
+  ]
+}

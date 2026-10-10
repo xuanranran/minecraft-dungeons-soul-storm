@@ -1,0 +1,3550 @@
+{
+  "source": "https://www.dungeons.tools/2/effects",
+  "captured_at": "2026-10-10",
+  "rows": [
+    {
+      "name": "Acrobat",
+      "sub": "Utility",
+      "href": "/2/effects/acrobat",
+      "image": "/images/d2/icons/effects/acrobat.png",
+      "values": [
+        [
+          "GEAR",
+          "40"
+        ],
+        [
+          "WHAT IT DOES",
+          "Reduces rolling cooldown time by 10%."
+        ]
+      ],
+      "tip": {
+        "n": "Acrobat",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/acrobat.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [
+          "Tier I: Reduces rolling cooldown time by 10%.",
+          "Tier II: Reduces rolling cooldown time by 15%.",
+          "Tier III: Reduces rolling cooldown time by 25%."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Reduces rolling cooldown time by 10%.",
+        "e": [
+          {
+            "x": "Tier I: Reduces rolling cooldown time by 10%.",
+            "i": "/images/d2/icons/effects/acrobat.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Reduces rolling cooldown time by 15%.",
+            "i": "/images/d2/icons/effects/acrobat.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Reduces rolling cooldown time by 25%.",
+            "i": "/images/d2/icons/effects/acrobat.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Aim",
+      "sub": "Offensive",
+      "href": "/2/effects/aim",
+      "image": "/images/d2/icons/effects/aim.png",
+      "values": [
+        [
+          "GEAR",
+          "15"
+        ],
+        [
+          "WHAT IT DOES",
+          "Increases chance of critical hits from ranged attacks by 10%."
+        ]
+      ],
+      "tip": {
+        "n": "Aim",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/aim.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Increases chance of critical hits from ranged attacks by 10%.",
+          "Tier II: Increases chance of critical hits from ranged attacks by 15%.",
+          "Tier III: Increases chance of critical hits from ranged attacks by 20%."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Increases chance of critical hits from ranged attacks by 10%.",
+        "e": [
+          {
+            "x": "Tier I: Increases chance of critical hits from ranged attacks by 10%.",
+            "i": "/images/d2/icons/effects/aim.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Increases chance of critical hits from ranged attacks by 15%.",
+            "i": "/images/d2/icons/effects/aim.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Increases chance of critical hits from ranged attacks by 20%.",
+            "i": "/images/d2/icons/effects/aim.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Alchemist",
+      "sub": "Defensive",
+      "href": "/2/effects/alchemist",
+      "image": "/images/d2/icons/effects/alchemist.png",
+      "values": [
+        [
+          "GEAR",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Restores 1% of max health for each soul gathered."
+        ]
+      ],
+      "tip": {
+        "n": "Alchemist",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/alchemist.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Tier I: Restores 1% of max health for each soul gathered.",
+          "Tier II: Restores 3% of max health for each soul gathered.",
+          "Tier III: Restores 5% of max health for each soul gathered."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Restores 1% of max health for each soul gathered.",
+        "e": [
+          {
+            "x": "Tier I: Restores 1% of max health for each soul gathered.",
+            "i": "/images/d2/icons/effects/alchemist.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier II: Restores 3% of max health for each soul gathered.",
+            "i": "/images/d2/icons/effects/alchemist.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier III: Restores 5% of max health for each soul gathered.",
+            "i": "/images/d2/icons/effects/alchemist.png",
+            "c": "defensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ally",
+      "sub": "Utility",
+      "href": "/2/effects/ally",
+      "image": "/images/d2/icons/effects/ally.png",
+      "values": [
+        [
+          "GEAR",
+          "40"
+        ],
+        [
+          "WHAT IT DOES",
+          "Positive statuses you apply to yourself and allies last 15% longer."
+        ]
+      ],
+      "tip": {
+        "n": "Ally",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/ally.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [
+          "Tier I: Positive statuses you apply to yourself and allies last 15% longer.",
+          "Tier II: Positive statuses you apply to yourself and allies last 30% longer.",
+          "Tier III: Positive statuses you apply to yourself and allies last 50% longer."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Positive statuses you apply to yourself and allies last 15% longer.",
+        "e": [
+          {
+            "x": "Tier I: Positive statuses you apply to yourself and allies last 15% longer.",
+            "i": "/images/d2/icons/effects/ally.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Positive statuses you apply to yourself and allies last 30% longer.",
+            "i": "/images/d2/icons/effects/ally.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Positive statuses you apply to yourself and allies last 50% longer.",
+            "i": "/images/d2/icons/effects/ally.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Assassin",
+      "sub": "Utility",
+      "href": "/2/effects/assassin",
+      "image": "/images/d2/icons/effects/assassin.png",
+      "values": [
+        [
+          "GEAR",
+          "40"
+        ],
+        [
+          "WHAT IT DOES",
+          "Grants a 10% chance to stay in Shadowcloaking when attacking."
+        ]
+      ],
+      "tip": {
+        "n": "Assassin",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/assassin.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [
+          "Tier I: Grants a 10% chance to stay in Shadowcloaking when attacking.",
+          "Tier II: Grants a 15% chance to stay in Shadowcloaking when attacking.",
+          "Tier III: Grants a 20% chance to stay in Shadowcloaking when attacking."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Grants a 10% chance to stay in Shadowcloaking when attacking.",
+        "e": [
+          {
+            "x": "Tier I: Grants a 10% chance to stay in Shadowcloaking when attacking.",
+            "i": "/images/d2/icons/effects/assassin.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Grants a 15% chance to stay in Shadowcloaking when attacking.",
+            "i": "/images/d2/icons/effects/assassin.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Grants a 20% chance to stay in Shadowcloaking when attacking.",
+            "i": "/images/d2/icons/effects/assassin.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Boost",
+      "sub": "Utility",
+      "href": "/2/effects/boost",
+      "image": "/images/d2/icons/effects/boost.png",
+      "values": [
+        [
+          "GEAR",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Increases duration of positive statuses applied to you by 20%."
+        ]
+      ],
+      "tip": {
+        "n": "Boost",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/boost.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [
+          "Unique: Increases duration of positive statuses applied to you by 20%."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Increases duration of positive statuses applied to you by 20%.",
+        "e": [
+          {
+            "x": "Unique: Increases duration of positive statuses applied to you by 20%.",
+            "i": "/images/d2/icons/effects/boost.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bounty Hunter",
+      "sub": "Offensive",
+      "href": "/2/effects/bounty-hunter",
+      "image": "/images/d2/icons/effects/bounty-hunter.png",
+      "values": [
+        [
+          "GEAR",
+          "39"
+        ],
+        [
+          "WHAT IT DOES",
+          "Deal 20% more damage to wounded enemies."
+        ]
+      ],
+      "tip": {
+        "n": "Bounty Hunter",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/bounty-hunter.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Deal 20% more damage to wounded enemies.",
+          "Tier II: Deal 25% more damage to wounded enemies.",
+          "Tier III: Deal 30% more damage to wounded enemies."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Deal 20% more damage to wounded enemies.",
+        "e": [
+          {
+            "x": "Tier I: Deal 20% more damage to wounded enemies.",
+            "i": "/images/d2/icons/effects/bounty-hunter.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Deal 25% more damage to wounded enemies.",
+            "i": "/images/d2/icons/effects/bounty-hunter.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Deal 30% more damage to wounded enemies.",
+            "i": "/images/d2/icons/effects/bounty-hunter.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bowyer",
+      "sub": "Utility",
+      "href": "/2/effects/bowyer",
+      "image": "/images/d2/icons/effects/bowyer.png",
+      "values": [
+        [
+          "GEAR",
+          "24"
+        ],
+        [
+          "WHAT IT DOES",
+          "Grants a 20% chance to gain an additional arrow when ammo is regained."
+        ]
+      ],
+      "tip": {
+        "n": "Bowyer",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/bowyer.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [
+          "Tier I: Grants a 20% chance to gain an additional arrow when ammo is regained.",
+          "Tier II: Grants a 25% chance to gain an additional arrow when ammo is regained.",
+          "Tier III: Grants a 30% chance to gain an additional arrow when ammo is regained."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Grants a 20% chance to gain an additional arrow when ammo is regained.",
+        "e": [
+          {
+            "x": "Tier I: Grants a 20% chance to gain an additional arrow when ammo is regained.",
+            "i": "/images/d2/icons/effects/bowyer.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Grants a 25% chance to gain an additional arrow when ammo is regained.",
+            "i": "/images/d2/icons/effects/bowyer.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Grants a 30% chance to gain an additional arrow when ammo is regained.",
+            "i": "/images/d2/icons/effects/bowyer.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Brawler",
+      "sub": "Offensive",
+      "href": "/2/effects/brawler",
+      "image": "/images/d2/icons/effects/brawler.png",
+      "values": [
+        [
+          "GEAR",
+          "18"
+        ],
+        [
+          "WHAT IT DOES",
+          "Melee attacks deal 20% more damage to secondary targets."
+        ]
+      ],
+      "tip": {
+        "n": "Brawler",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/brawler.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Melee attacks deal 20% more damage to secondary targets.",
+          "Tier II: Melee attacks deal 30% more damage to secondary targets.",
+          "Tier III: Melee attacks deal 40% more damage to secondary targets."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Melee attacks deal 20% more damage to secondary targets.",
+        "e": [
+          {
+            "x": "Tier I: Melee attacks deal 20% more damage to secondary targets.",
+            "i": "/images/d2/icons/effects/brawler.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Melee attacks deal 30% more damage to secondary targets.",
+            "i": "/images/d2/icons/effects/brawler.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Melee attacks deal 40% more damage to secondary targets.",
+            "i": "/images/d2/icons/effects/brawler.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bully",
+      "sub": "Offensive",
+      "href": "/2/effects/bully",
+      "image": "/images/d2/icons/effects/bully.png",
+      "values": [
+        [
+          "GEAR",
+          "16"
+        ],
+        [
+          "WHAT IT DOES",
+          "Deal 25% more damage to enemies affected by a negative status."
+        ]
+      ],
+      "tip": {
+        "n": "Bully",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/bully.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Deal 25% more damage to enemies affected by a negative status.",
+          "Tier II: Deal 35% more damage to enemies affected by a negative status.",
+          "Tier III: Deal 50% more damage to enemies affected by a negative status."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Deal 25% more damage to enemies affected by a negative status.",
+        "e": [
+          {
+            "x": "Tier I: Deal 25% more damage to enemies affected by a negative status.",
+            "i": "/images/d2/icons/effects/bully.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Deal 35% more damage to enemies affected by a negative status.",
+            "i": "/images/d2/icons/effects/bully.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Deal 50% more damage to enemies affected by a negative status.",
+            "i": "/images/d2/icons/effects/bully.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Constitution",
+      "sub": "Defensive",
+      "href": "/2/effects/constitution",
+      "image": "/images/d2/icons/effects/constitution.png",
+      "values": [
+        [
+          "GEAR",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Increases the player's maximum health by 30%."
+        ]
+      ],
+      "tip": {
+        "n": "Constitution",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/constitution.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Unique: Increases the player's maximum health by 30%."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Increases the player's maximum health by 30%.",
+        "e": [
+          {
+            "x": "Unique: Increases the player's maximum health by 30%.",
+            "i": "/images/d2/icons/effects/constitution.png",
+            "c": "defensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cooldown",
+      "sub": "Utility",
+      "href": "/2/effects/cooldown",
+      "image": "/images/d2/icons/effects/cooldown.png",
+      "values": [
+        [
+          "GEAR",
+          "104"
+        ],
+        [
+          "WHAT IT DOES",
+          "Reduces artifact cooldown time by 10%."
+        ]
+      ],
+      "tip": {
+        "n": "Cooldown",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/cooldown.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [
+          "Tier I: Reduces artifact cooldown time by 10%.",
+          "Tier II: Reduces artifact cooldown time by 15%.",
+          "Tier III: Reduces artifact cooldown time by 20%."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Reduces artifact cooldown time by 10%.",
+        "e": [
+          {
+            "x": "Tier I: Reduces artifact cooldown time by 10%.",
+            "i": "/images/d2/icons/effects/cooldown.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Reduces artifact cooldown time by 15%.",
+            "i": "/images/d2/icons/effects/cooldown.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Reduces artifact cooldown time by 20%.",
+            "i": "/images/d2/icons/effects/cooldown.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Critical Edge",
+      "sub": "Offensive",
+      "href": "/2/effects/critical-edge",
+      "image": "/images/d2/icons/effects/critical-edge.png",
+      "values": [
+        [
+          "GEAR",
+          "80"
+        ],
+        [
+          "WHAT IT DOES",
+          "All critical hits deal 10% more damage."
+        ]
+      ],
+      "tip": {
+        "n": "Critical Edge",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/critical-edge.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: All critical hits deal 10% more damage.",
+          "Tier II: All critical hits deal 20% more damage.",
+          "Tier III: All critical hits deal 30% more damage."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "All critical hits deal 10% more damage.",
+        "e": [
+          {
+            "x": "Tier I: All critical hits deal 10% more damage.",
+            "i": "/images/d2/icons/effects/critical-edge.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: All critical hits deal 20% more damage.",
+            "i": "/images/d2/icons/effects/critical-edge.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: All critical hits deal 30% more damage.",
+            "i": "/images/d2/icons/effects/critical-edge.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Critical Hit",
+      "sub": "Offensive",
+      "href": "/2/effects/critical-hit",
+      "image": "/images/d2/icons/effects/critical-hit.png",
+      "values": [
+        [
+          "GEAR",
+          "80"
+        ],
+        [
+          "WHAT IT DOES",
+          "Increases chance of critical hits by 5%."
+        ]
+      ],
+      "tip": {
+        "n": "Critical Hit",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/critical-hit.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Increases chance of critical hits by 5%.",
+          "Tier II: Increases chance of critical hits by 10%.",
+          "Tier III: Increases chance of critical hits by 15%."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Increases chance of critical hits by 5%.",
+        "e": [
+          {
+            "x": "Tier I: Increases chance of critical hits by 5%.",
+            "i": "/images/d2/icons/effects/critical-hit.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Increases chance of critical hits by 10%.",
+            "i": "/images/d2/icons/effects/critical-hit.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Increases chance of critical hits by 15%.",
+            "i": "/images/d2/icons/effects/critical-hit.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cryomancer",
+      "sub": "Offensive",
+      "href": "/2/effects/cryomancer",
+      "image": "/images/d2/icons/effects/cryomancer.png",
+      "values": [
+        [
+          "GEAR",
+          "104"
+        ],
+        [
+          "WHAT IT DOES",
+          "Frost attacks deal 10% more damage."
+        ]
+      ],
+      "tip": {
+        "n": "Cryomancer",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/cryomancer.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Frost attacks deal 10% more damage.",
+          "Tier II: Frost attacks deal 15% more damage.",
+          "Tier III: Frost attacks deal 20% more damage."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Frost attacks deal 10% more damage.",
+        "e": [
+          {
+            "x": "Tier I: Frost attacks deal 10% more damage.",
+            "i": "/images/d2/icons/effects/cryomancer.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Frost attacks deal 15% more damage.",
+            "i": "/images/d2/icons/effects/cryomancer.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Frost attacks deal 20% more damage.",
+            "i": "/images/d2/icons/effects/cryomancer.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Deflection",
+      "sub": "Defensive",
+      "href": "/2/effects/deflection",
+      "image": "/images/d2/icons/effects/deflection.png",
+      "values": [
+        [
+          "GEAR",
+          "40"
+        ],
+        [
+          "WHAT IT DOES",
+          "Grants a 10% chance to deflect enemy projectiles."
+        ]
+      ],
+      "tip": {
+        "n": "Deflection",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/deflection.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Tier I: Grants a 10% chance to deflect enemy projectiles.",
+          "Tier II: Grants a 15% chance to deflect enemy projectiles.",
+          "Tier III: Grants a 20% chance to deflect enemy projectiles."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Grants a 10% chance to deflect enemy projectiles.",
+        "e": [
+          {
+            "x": "Tier I: Grants a 10% chance to deflect enemy projectiles.",
+            "i": "/images/d2/icons/effects/deflection.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier II: Grants a 15% chance to deflect enemy projectiles.",
+            "i": "/images/d2/icons/effects/deflection.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier III: Grants a 20% chance to deflect enemy projectiles.",
+            "i": "/images/d2/icons/effects/deflection.png",
+            "c": "defensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Duelist",
+      "sub": "Offensive",
+      "href": "/2/effects/duelist",
+      "image": "/images/d2/icons/effects/duelist.png",
+      "values": [
+        [
+          "GEAR",
+          "15"
+        ],
+        [
+          "WHAT IT DOES",
+          "Melee attacks deal 20% more damage to primary targets."
+        ]
+      ],
+      "tip": {
+        "n": "Duelist",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/duelist.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Melee attacks deal 20% more damage to primary targets.",
+          "Tier II: Melee attacks deal 25% more damage to primary targets.",
+          "Tier III: Melee attacks deal 30% more damage to primary targets."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Melee attacks deal 20% more damage to primary targets.",
+        "e": [
+          {
+            "x": "Tier I: Melee attacks deal 20% more damage to primary targets.",
+            "i": "/images/d2/icons/effects/duelist.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Melee attacks deal 25% more damage to primary targets.",
+            "i": "/images/d2/icons/effects/duelist.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Melee attacks deal 30% more damage to primary targets.",
+            "i": "/images/d2/icons/effects/duelist.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Electromancer",
+      "sub": "Offensive",
+      "href": "/2/effects/electromancer",
+      "image": "/images/d2/icons/effects/electromancer.png",
+      "values": [
+        [
+          "GEAR",
+          "104"
+        ],
+        [
+          "WHAT IT DOES",
+          "Lightning attacks deal 10% more damage."
+        ]
+      ],
+      "tip": {
+        "n": "Electromancer",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/electromancer.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Lightning attacks deal 10% more damage.",
+          "Tier II: Lightning attacks deal 15% more damage.",
+          "Tier III: Lightning attacks deal 20% more damage."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Lightning attacks deal 10% more damage.",
+        "e": [
+          {
+            "x": "Tier I: Lightning attacks deal 10% more damage.",
+            "i": "/images/d2/icons/effects/electromancer.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Lightning attacks deal 15% more damage.",
+            "i": "/images/d2/icons/effects/electromancer.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Lightning attacks deal 20% more damage.",
+            "i": "/images/d2/icons/effects/electromancer.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Elemental Protection",
+      "sub": "Defensive",
+      "href": "/2/effects/elemental-protection",
+      "image": "/images/d2/icons/effects/elemental-protection.png",
+      "values": [
+        [
+          "GEAR",
+          "64"
+        ],
+        [
+          "WHAT IT DOES",
+          "Reduces damage taken from elemental attacks by 10%."
+        ]
+      ],
+      "tip": {
+        "n": "Elemental Protection",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/elemental-protection.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Tier I: Reduces damage taken from elemental attacks by 10%.",
+          "Tier II: Reduces damage taken from elemental attacks by 15%.",
+          "Tier III: Reduces damage taken from elemental attacks by 20%."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Reduces damage taken from elemental attacks by 10%.",
+        "e": [
+          {
+            "x": "Tier I: Reduces damage taken from elemental attacks by 10%.",
+            "i": "/images/d2/icons/effects/elemental-protection.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier II: Reduces damage taken from elemental attacks by 15%.",
+            "i": "/images/d2/icons/effects/elemental-protection.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier III: Reduces damage taken from elemental attacks by 20%.",
+            "i": "/images/d2/icons/effects/elemental-protection.png",
+            "c": "defensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Evasion",
+      "sub": "Utility",
+      "href": "/2/effects/evasion",
+      "image": "/images/d2/icons/effects/evasion.png",
+      "values": [
+        [
+          "GEAR",
+          "56"
+        ],
+        [
+          "WHAT IT DOES",
+          "Grants a 10% chance to evade melee damage."
+        ]
+      ],
+      "tip": {
+        "n": "Evasion",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/evasion.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [
+          "Tier I: Grants a 10% chance to evade melee damage.",
+          "Tier II: Grants a 15% chance to evade melee damage.",
+          "Tier III: Grants a 20% chance to evade melee damage."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Grants a 10% chance to evade melee damage.",
+        "e": [
+          {
+            "x": "Tier I: Grants a 10% chance to evade melee damage.",
+            "i": "/images/d2/icons/effects/evasion.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Grants a 15% chance to evade melee damage.",
+            "i": "/images/d2/icons/effects/evasion.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Grants a 20% chance to evade melee damage.",
+            "i": "/images/d2/icons/effects/evasion.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Finesse",
+      "sub": "Offensive",
+      "href": "/2/effects/finesse",
+      "image": "/images/d2/icons/effects/finesse.png",
+      "values": [
+        [
+          "GEAR",
+          "23"
+        ],
+        [
+          "WHAT IT DOES",
+          "Increases attack damage by 15% when jumping or rolling."
+        ]
+      ],
+      "tip": {
+        "n": "Finesse",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/finesse.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Increases attack damage by 15% when jumping or rolling.",
+          "Tier II: Increases attack damage by 25% when jumping or rolling.",
+          "Tier III: Increases attack damage by 35% when jumping or rolling."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Increases attack damage by 15% when jumping or rolling.",
+        "e": [
+          {
+            "x": "Tier I: Increases attack damage by 15% when jumping or rolling.",
+            "i": "/images/d2/icons/effects/finesse.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Increases attack damage by 25% when jumping or rolling.",
+            "i": "/images/d2/icons/effects/finesse.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Increases attack damage by 35% when jumping or rolling.",
+            "i": "/images/d2/icons/effects/finesse.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fletcher",
+      "sub": "Utility",
+      "href": "/2/effects/fletcher",
+      "image": "/images/d2/icons/effects/fletcher.png",
+      "values": [
+        [
+          "GEAR",
+          "24"
+        ],
+        [
+          "WHAT IT DOES",
+          "Reduces ranged ammo cooldown time by 15%."
+        ]
+      ],
+      "tip": {
+        "n": "Fletcher",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/fletcher.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [
+          "Tier I: Reduces ranged ammo cooldown time by 15%.",
+          "Tier II: Reduces ranged ammo cooldown time by 20%.",
+          "Tier III: Reduces ranged ammo cooldown time by 25%."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Reduces ranged ammo cooldown time by 15%.",
+        "e": [
+          {
+            "x": "Tier I: Reduces ranged ammo cooldown time by 15%.",
+            "i": "/images/d2/icons/effects/fletcher.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Reduces ranged ammo cooldown time by 20%.",
+            "i": "/images/d2/icons/effects/fletcher.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Reduces ranged ammo cooldown time by 25%.",
+            "i": "/images/d2/icons/effects/fletcher.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Healer",
+      "sub": "Defensive",
+      "href": "/2/effects/healer",
+      "image": "/images/d2/icons/effects/healer.png",
+      "values": [
+        [
+          "GEAR",
+          "40"
+        ],
+        [
+          "WHAT IT DOES",
+          "Increases healing given to yourself and allies by 25%."
+        ]
+      ],
+      "tip": {
+        "n": "Healer",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/healer.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Tier I: Increases healing given to yourself and allies by 25%.",
+          "Tier II: Increases healing given to yourself and allies by 35%.",
+          "Tier III: Increases healing given to yourself and allies by 50%."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Increases healing given to yourself and allies by 25%.",
+        "e": [
+          {
+            "x": "Tier I: Increases healing given to yourself and allies by 25%.",
+            "i": "/images/d2/icons/effects/healer.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier II: Increases healing given to yourself and allies by 35%.",
+            "i": "/images/d2/icons/effects/healer.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier III: Increases healing given to yourself and allies by 50%.",
+            "i": "/images/d2/icons/effects/healer.png",
+            "c": "defensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Healthy Strike",
+      "sub": "Offensive",
+      "href": "/2/effects/healthy-strike",
+      "image": "/images/d2/icons/effects/healthy-strike.png",
+      "values": [
+        [
+          "GEAR",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Healthy Strike",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/healthy-strike.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": null,
+        "e": []
+      }
+    },
+    {
+      "name": "Impact",
+      "sub": "Offensive",
+      "href": "/2/effects/impact",
+      "image": "/images/d2/icons/effects/impact.png",
+      "values": [
+        [
+          "GEAR",
+          "22"
+        ],
+        [
+          "WHAT IT DOES",
+          "Ranged attacks deal 10% more damage."
+        ]
+      ],
+      "tip": {
+        "n": "Impact",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/impact.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Ranged attacks deal 10% more damage.",
+          "Tier II: Ranged attacks deal 20% more damage.",
+          "Tier III: Ranged attacks deal 30% more damage."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Ranged attacks deal 10% more damage.",
+        "e": [
+          {
+            "x": "Tier I: Ranged attacks deal 10% more damage.",
+            "i": "/images/d2/icons/effects/impact.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Ranged attacks deal 20% more damage.",
+            "i": "/images/d2/icons/effects/impact.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Ranged attacks deal 30% more damage.",
+            "i": "/images/d2/icons/effects/impact.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Jumpshot",
+      "sub": "Offensive",
+      "href": "/2/effects/jumpshot",
+      "image": "/images/d2/icons/effects/jumpshot.png",
+      "values": [
+        [
+          "GEAR",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Increases jump shot damage dealt by 6%."
+        ]
+      ],
+      "tip": {
+        "n": "Jumpshot",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/jumpshot.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Unique: Increases jump shot damage dealt by 6%."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Increases jump shot damage dealt by 6%.",
+        "e": [
+          {
+            "x": "Unique: Increases jump shot damage dealt by 6%.",
+            "i": "/images/d2/icons/effects/jumpshot.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Knockback",
+      "sub": "Offensive",
+      "href": "/2/effects/knockback",
+      "image": "/images/d2/icons/effects/knockback.png",
+      "values": [
+        [
+          "GEAR",
+          "80"
+        ],
+        [
+          "WHAT IT DOES",
+          "Attacks do 15% more knockback."
+        ]
+      ],
+      "tip": {
+        "n": "Knockback",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/knockback.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Attacks do 15% more knockback.",
+          "Tier II: Attacks do 20% more knockback.",
+          "Tier III: Attacks do 30% more knockback."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Attacks do 15% more knockback.",
+        "e": [
+          {
+            "x": "Tier I: Attacks do 15% more knockback.",
+            "i": "/images/d2/icons/effects/knockback.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Attacks do 20% more knockback.",
+            "i": "/images/d2/icons/effects/knockback.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Attacks do 30% more knockback.",
+            "i": "/images/d2/icons/effects/knockback.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Leaper",
+      "sub": "Offensive",
+      "href": "/2/effects/leaper",
+      "image": "/images/d2/icons/effects/leaper.png",
+      "values": [
+        [
+          "GEAR",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Jumping melee attacks deal 50% more damage."
+        ]
+      ],
+      "tip": {
+        "n": "Leaper",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/leaper.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Unique: Jumping melee attacks deal 50% more damage."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Jumping melee attacks deal 50% more damage.",
+        "e": [
+          {
+            "x": "Unique: Jumping melee attacks deal 50% more damage.",
+            "i": "/images/d2/icons/effects/leaper.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Looter",
+      "sub": "Utility",
+      "href": "/2/effects/looter",
+      "image": "/images/d2/icons/effects/looter.png",
+      "values": [
+        [
+          "GEAR",
+          "80"
+        ],
+        [
+          "WHAT IT DOES",
+          "Grants a 20% chance to get additional loot drops."
+        ]
+      ],
+      "tip": {
+        "n": "Looter",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/looter.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [
+          "Tier I: Grants a 20% chance to get additional loot drops.",
+          "Tier II: Grants a 40% chance to get additional loot drops.",
+          "Tier III: Grants a 60% chance to get additional loot drops."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Grants a 20% chance to get additional loot drops.",
+        "e": [
+          {
+            "x": "Tier I: Grants a 20% chance to get additional loot drops.",
+            "i": "/images/d2/icons/effects/looter.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Grants a 40% chance to get additional loot drops.",
+            "i": "/images/d2/icons/effects/looter.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Grants a 60% chance to get additional loot drops.",
+            "i": "/images/d2/icons/effects/looter.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Luck",
+      "sub": "Utility",
+      "href": "/2/effects/luck",
+      "image": "/images/d2/icons/effects/luck.png",
+      "values": [
+        [
+          "GEAR",
+          "152"
+        ],
+        [
+          "WHAT IT DOES",
+          "Grants a 10% chance to drop duplicate variations of items."
+        ]
+      ],
+      "tip": {
+        "n": "Luck",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/luck.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [
+          "Tier I: Grants a 10% chance to drop duplicate variations of items.",
+          "Tier II: Grants a 15% chance to drop duplicate variations of items.",
+          "Tier III: Grants a 20% chance to drop duplicate variations of items."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Grants a 10% chance to drop duplicate variations of items.",
+        "e": [
+          {
+            "x": "Tier I: Grants a 10% chance to drop duplicate variations of items.",
+            "i": "/images/d2/icons/effects/luck.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Grants a 15% chance to drop duplicate variations of items.",
+            "i": "/images/d2/icons/effects/luck.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Grants a 20% chance to drop duplicate variations of items.",
+            "i": "/images/d2/icons/effects/luck.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Marksman",
+      "sub": "Offensive",
+      "href": "/2/effects/marksman",
+      "image": "/images/d2/icons/effects/marksman.png",
+      "values": [
+        [
+          "GEAR",
+          "19"
+        ],
+        [
+          "WHAT IT DOES",
+          "Critical hits with ranged weapons deal 15% more damage."
+        ]
+      ],
+      "tip": {
+        "n": "Marksman",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/marksman.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Critical hits with ranged weapons deal 15% more damage.",
+          "Tier II: Critical hits with ranged weapons deal 20% more damage.",
+          "Tier III: Critical hits with ranged weapons deal 25% more damage."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Critical hits with ranged weapons deal 15% more damage.",
+        "e": [
+          {
+            "x": "Tier I: Critical hits with ranged weapons deal 15% more damage.",
+            "i": "/images/d2/icons/effects/marksman.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Critical hits with ranged weapons deal 20% more damage.",
+            "i": "/images/d2/icons/effects/marksman.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Critical hits with ranged weapons deal 25% more damage.",
+            "i": "/images/d2/icons/effects/marksman.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Momentum",
+      "sub": "Offensive",
+      "href": "/2/effects/momentum",
+      "image": "/images/d2/icons/effects/momentum.png",
+      "values": [
+        [
+          "GEAR",
+          "21"
+        ],
+        [
+          "WHAT IT DOES",
+          "Increases chance to stagger enemies on hit by 20%."
+        ]
+      ],
+      "tip": {
+        "n": "Momentum",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/momentum.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Increases chance to stagger enemies on hit by 20%.",
+          "Tier II: Increases chance to stagger enemies on hit by 30%.",
+          "Tier III: Increases chance to stagger enemies on hit by 40%."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Increases chance to stagger enemies on hit by 20%.",
+        "e": [
+          {
+            "x": "Tier I: Increases chance to stagger enemies on hit by 20%.",
+            "i": "/images/d2/icons/effects/momentum.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Increases chance to stagger enemies on hit by 30%.",
+            "i": "/images/d2/icons/effects/momentum.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Increases chance to stagger enemies on hit by 40%.",
+            "i": "/images/d2/icons/effects/momentum.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pack Leader",
+      "sub": "Offensive",
+      "href": "/2/effects/pack-leader",
+      "image": "/images/d2/icons/effects/pack-leader.png",
+      "values": [
+        [
+          "GEAR",
+          "15"
+        ],
+        [
+          "WHAT IT DOES",
+          "Companions deal 20% more damage."
+        ]
+      ],
+      "tip": {
+        "n": "Pack Leader",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/pack-leader.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Companions deal 20% more damage.",
+          "Tier II: Companions deal 25% more damage.",
+          "Tier III: Companions deal 30% more damage."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Companions deal 20% more damage.",
+        "e": [
+          {
+            "x": "Tier I: Companions deal 20% more damage.",
+            "i": "/images/d2/icons/effects/pack-leader.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Companions deal 25% more damage.",
+            "i": "/images/d2/icons/effects/pack-leader.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Companions deal 30% more damage.",
+            "i": "/images/d2/icons/effects/pack-leader.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Persistence",
+      "sub": "Offensive",
+      "href": "/2/effects/persistence",
+      "image": "/images/d2/icons/effects/persistence.png",
+      "values": [
+        [
+          "GEAR",
+          "80"
+        ],
+        [
+          "WHAT IT DOES",
+          "Increases damage dealt by 10% of player's total missing health."
+        ]
+      ],
+      "tip": {
+        "n": "Persistence",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/persistence.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Increases damage dealt by 10% of player's total missing health.",
+          "Tier II: Increases damage dealt by 15% of player's total missing health.",
+          "Tier III: Increases damage dealt by 20% of player's total missing health."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Increases damage dealt by 10% of player's total missing health.",
+        "e": [
+          {
+            "x": "Tier I: Increases damage dealt by 10% of player's total missing health.",
+            "i": "/images/d2/icons/effects/persistence.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Increases damage dealt by 15% of player's total missing health.",
+            "i": "/images/d2/icons/effects/persistence.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Increases damage dealt by 20% of player's total missing health.",
+            "i": "/images/d2/icons/effects/persistence.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Point Blank",
+      "sub": "Offensive",
+      "href": "/2/effects/point-blank",
+      "image": "/images/d2/icons/effects/point-blank.png",
+      "values": [
+        [
+          "GEAR",
+          "3"
+        ],
+        [
+          "WHAT IT DOES",
+          "Ranged attacks deal 25% more damage at close range."
+        ]
+      ],
+      "tip": {
+        "n": "Point Blank",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/point-blank.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Ranged attacks deal 25% more damage at close range.",
+          "Tier II: Ranged attacks deal 50% more damage at close range.",
+          "Tier III: Ranged attacks deal 75% more damage at close range."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Ranged attacks deal 25% more damage at close range.",
+        "e": [
+          {
+            "x": "Tier I: Ranged attacks deal 25% more damage at close range.",
+            "i": "/images/d2/icons/effects/point-blank.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Ranged attacks deal 50% more damage at close range.",
+            "i": "/images/d2/icons/effects/point-blank.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Ranged attacks deal 75% more damage at close range.",
+            "i": "/images/d2/icons/effects/point-blank.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Potion Maker",
+      "sub": "Utility",
+      "href": "/2/effects/potion-maker",
+      "image": "/images/d2/icons/effects/potion-maker.png",
+      "values": [
+        [
+          "GEAR",
+          "72"
+        ],
+        [
+          "WHAT IT DOES",
+          "Reduces potion cooldown time by 5%."
+        ]
+      ],
+      "tip": {
+        "n": "Potion Maker",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/potion-maker.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [
+          "Tier I: Reduces potion cooldown time by 5%.",
+          "Tier II: Reduces potion cooldown time by 10%.",
+          "Tier III: Reduces potion cooldown time by 20%."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Reduces potion cooldown time by 5%.",
+        "e": [
+          {
+            "x": "Tier I: Reduces potion cooldown time by 5%.",
+            "i": "/images/d2/icons/effects/potion-maker.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Reduces potion cooldown time by 10%.",
+            "i": "/images/d2/icons/effects/potion-maker.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Reduces potion cooldown time by 20%.",
+            "i": "/images/d2/icons/effects/potion-maker.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Precision",
+      "sub": "Offensive",
+      "href": "/2/effects/precision",
+      "image": "/images/d2/icons/effects/precision.png",
+      "values": [
+        [
+          "GEAR",
+          "15"
+        ],
+        [
+          "WHAT IT DOES",
+          "Increases chance of critical hits with melee attacks by 10%."
+        ]
+      ],
+      "tip": {
+        "n": "Precision",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/precision.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Increases chance of critical hits with melee attacks by 10%.",
+          "Tier II: Increases chance of critical hits with melee attacks by 15%.",
+          "Tier III: Increases chance of critical hits with melee attacks by 20%."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Increases chance of critical hits with melee attacks by 10%.",
+        "e": [
+          {
+            "x": "Tier I: Increases chance of critical hits with melee attacks by 10%.",
+            "i": "/images/d2/icons/effects/precision.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Increases chance of critical hits with melee attacks by 15%.",
+            "i": "/images/d2/icons/effects/precision.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Increases chance of critical hits with melee attacks by 20%.",
+            "i": "/images/d2/icons/effects/precision.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Prickly",
+      "sub": "Offensive",
+      "href": "/2/effects/prickly",
+      "image": "/images/d2/icons/effects/prickly.png",
+      "values": [
+        [
+          "GEAR",
+          "48"
+        ],
+        [
+          "WHAT IT DOES",
+          "Deals 50% of received damage back to the attacker."
+        ]
+      ],
+      "tip": {
+        "n": "Prickly",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/prickly.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Deals 50% of received damage back to the attacker.",
+          "Tier II: Deals 65% of received damage back to the attacker.",
+          "Tier III: Deals 80% of received damage back to the attacker."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Deals 50% of received damage back to the attacker.",
+        "e": [
+          {
+            "x": "Tier I: Deals 50% of received damage back to the attacker.",
+            "i": "/images/d2/icons/effects/prickly.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Deals 65% of received damage back to the attacker.",
+            "i": "/images/d2/icons/effects/prickly.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Deals 80% of received damage back to the attacker.",
+            "i": "/images/d2/icons/effects/prickly.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Prodigy",
+      "sub": "Utility",
+      "href": "/2/effects/prodigy",
+      "image": "/images/d2/icons/effects/prodigy.png",
+      "values": [
+        [
+          "GEAR",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Increases experience gained by 8%."
+        ]
+      ],
+      "tip": {
+        "n": "Prodigy",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/prodigy.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [
+          "Unique: Increases experience gained by 8%."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Increases experience gained by 8%.",
+        "e": [
+          {
+            "x": "Unique: Increases experience gained by 8%.",
+            "i": "/images/d2/icons/effects/prodigy.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Projectile Protection",
+      "sub": "Defensive",
+      "href": "/2/effects/projectile-protection",
+      "image": "/images/d2/icons/effects/projectile-protection.png",
+      "values": [
+        [
+          "GEAR",
+          "88"
+        ],
+        [
+          "WHAT IT DOES",
+          "Take 10% less damage from ranged attacks."
+        ]
+      ],
+      "tip": {
+        "n": "Projectile Protection",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/projectile-protection.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Tier I: Take 10% less damage from ranged attacks.",
+          "Tier II: Take 15% less damage from ranged attacks.",
+          "Tier III: Take 20% less damage from ranged attacks."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Take 10% less damage from ranged attacks.",
+        "e": [
+          {
+            "x": "Tier I: Take 10% less damage from ranged attacks.",
+            "i": "/images/d2/icons/effects/projectile-protection.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier II: Take 15% less damage from ranged attacks.",
+            "i": "/images/d2/icons/effects/projectile-protection.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier III: Take 20% less damage from ranged attacks.",
+            "i": "/images/d2/icons/effects/projectile-protection.png",
+            "c": "defensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Prospector",
+      "sub": "Utility",
+      "href": "/2/effects/prospector",
+      "image": "/images/d2/icons/effects/prospector.png",
+      "values": [
+        [
+          "GEAR",
+          "152"
+        ],
+        [
+          "WHAT IT DOES",
+          "Grants a 5% chance to receive additional emeralds."
+        ]
+      ],
+      "tip": {
+        "n": "Prospector",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/prospector.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [
+          "Tier I: Grants a 5% chance to receive additional emeralds.",
+          "Tier II: Grants a 10% chance to receive additional emeralds.",
+          "Tier III: Grants a 15% chance to receive additional emeralds."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Grants a 5% chance to receive additional emeralds.",
+        "e": [
+          {
+            "x": "Tier I: Grants a 5% chance to receive additional emeralds.",
+            "i": "/images/d2/icons/effects/prospector.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Grants a 10% chance to receive additional emeralds.",
+            "i": "/images/d2/icons/effects/prospector.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Grants a 15% chance to receive additional emeralds.",
+            "i": "/images/d2/icons/effects/prospector.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Protection",
+      "sub": "Defensive",
+      "href": "/2/effects/protection",
+      "image": "/images/d2/icons/effects/protection.png",
+      "values": [
+        [
+          "GEAR",
+          "64"
+        ],
+        [
+          "WHAT IT DOES",
+          "Take 10% less damage."
+        ]
+      ],
+      "tip": {
+        "n": "Protection",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/protection.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Tier I: Take 10% less damage.",
+          "Tier II: Take 15% less damage.",
+          "Tier III: Take 20% less damage."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Take 10% less damage.",
+        "e": [
+          {
+            "x": "Tier I: Take 10% less damage.",
+            "i": "/images/d2/icons/effects/protection.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier II: Take 15% less damage.",
+            "i": "/images/d2/icons/effects/protection.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier III: Take 20% less damage.",
+            "i": "/images/d2/icons/effects/protection.png",
+            "c": "defensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Prowler",
+      "sub": "Utility",
+      "href": "/2/effects/prowler",
+      "image": "/images/d2/icons/effects/prowler.png",
+      "values": [
+        [
+          "GEAR",
+          "40"
+        ],
+        [
+          "WHAT IT DOES",
+          "Increases movement speed by 15% while Shadowcloaking."
+        ]
+      ],
+      "tip": {
+        "n": "Prowler",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/prowler.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [
+          "Tier I: Increases movement speed by 15% while Shadowcloaking.",
+          "Tier II: Increases movement speed by 20% while Shadowcloaking.",
+          "Tier III: Increases movement speed by 30% while Shadowcloaking."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Increases movement speed by 15% while Shadowcloaking.",
+        "e": [
+          {
+            "x": "Tier I: Increases movement speed by 15% while Shadowcloaking.",
+            "i": "/images/d2/icons/effects/prowler.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Increases movement speed by 20% while Shadowcloaking.",
+            "i": "/images/d2/icons/effects/prowler.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Increases movement speed by 30% while Shadowcloaking.",
+            "i": "/images/d2/icons/effects/prowler.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pyromancer",
+      "sub": "Offensive",
+      "href": "/2/effects/pyromancer",
+      "image": "/images/d2/icons/effects/pyromancer.png",
+      "values": [
+        [
+          "GEAR",
+          "104"
+        ],
+        [
+          "WHAT IT DOES",
+          "Fire attacks deal 10% more damage."
+        ]
+      ],
+      "tip": {
+        "n": "Pyromancer",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/pyromancer.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Fire attacks deal 10% more damage.",
+          "Tier II: Fire attacks deal 15% more damage.",
+          "Tier III: Fire attacks deal 20% more damage."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Fire attacks deal 10% more damage.",
+        "e": [
+          {
+            "x": "Tier I: Fire attacks deal 10% more damage.",
+            "i": "/images/d2/icons/effects/pyromancer.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Fire attacks deal 15% more damage.",
+            "i": "/images/d2/icons/effects/pyromancer.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Fire attacks deal 20% more damage.",
+            "i": "/images/d2/icons/effects/pyromancer.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pyrotechnics",
+      "sub": "Offensive",
+      "href": "/2/effects/pyrotechnics",
+      "image": "/images/d2/icons/effects/pyrotechnics.png",
+      "values": [
+        [
+          "GEAR",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Hits with this weapon explode on impact!"
+        ]
+      ],
+      "tip": {
+        "n": "Pyrotechnics",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/pyrotechnics.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Unique: Hits with this weapon explode on impact!"
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Hits with this weapon explode on impact!",
+        "e": [
+          {
+            "x": "Unique: Hits with this weapon explode on impact!",
+            "i": "/images/d2/icons/effects/pyrotechnics.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Quiver",
+      "sub": "Utility",
+      "href": "/2/effects/quiver",
+      "image": "/images/d2/icons/effects/quiver.png",
+      "values": [
+        [
+          "GEAR",
+          "5"
+        ],
+        [
+          "WHAT IT DOES",
+          "Carry 10% more ammo."
+        ]
+      ],
+      "tip": {
+        "n": "Quiver",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/quiver.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [
+          "Tier I: Carry 10% more ammo.",
+          "Tier II: Carry 15% more ammo.",
+          "Tier III: Carry 20% more ammo."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Carry 10% more ammo.",
+        "e": [
+          {
+            "x": "Tier I: Carry 10% more ammo.",
+            "i": "/images/d2/icons/effects/quiver.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Carry 15% more ammo.",
+            "i": "/images/d2/icons/effects/quiver.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Carry 20% more ammo.",
+            "i": "/images/d2/icons/effects/quiver.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Raider",
+      "sub": "Utility",
+      "href": "/2/effects/raider",
+      "image": "/images/d2/icons/effects/raider.png",
+      "values": [
+        [
+          "GEAR",
+          "80"
+        ],
+        [
+          "WHAT IT DOES",
+          "Grants a 1% chance of higher rarity loot drops."
+        ]
+      ],
+      "tip": {
+        "n": "Raider",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/raider.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [
+          "Tier I: Grants a 1% chance of higher rarity loot drops.",
+          "Tier II: Grants a 2% chance of higher rarity loot drops.",
+          "Tier III: Grants a 3% chance of higher rarity loot drops."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Grants a 1% chance of higher rarity loot drops.",
+        "e": [
+          {
+            "x": "Tier I: Grants a 1% chance of higher rarity loot drops.",
+            "i": "/images/d2/icons/effects/raider.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Grants a 2% chance of higher rarity loot drops.",
+            "i": "/images/d2/icons/effects/raider.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Grants a 3% chance of higher rarity loot drops.",
+            "i": "/images/d2/icons/effects/raider.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Randomancer",
+      "sub": "Offensive",
+      "href": "/2/effects/randomancer",
+      "image": "/images/d2/icons/effects/randomancer.png",
+      "values": [
+        [
+          "GEAR",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Chance to grant random elemental melee buff when defeating an enemy."
+        ]
+      ],
+      "tip": {
+        "n": "Randomancer",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/randomancer.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Unique: Chance to grant random elemental melee buff when defeating an enemy."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Chance to grant random elemental melee buff when defeating an enemy.",
+        "e": [
+          {
+            "x": "Unique: Chance to grant random elemental melee buff when defeating an enemy.",
+            "i": "/images/d2/icons/effects/randomancer.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ranger",
+      "sub": "Offensive",
+      "href": "/2/effects/ranger",
+      "image": "/images/d2/icons/effects/ranger.png",
+      "values": [
+        [
+          "GEAR",
+          "15"
+        ],
+        [
+          "WHAT IT DOES",
+          "Grants a 20% chance to fire additional projectiles."
+        ]
+      ],
+      "tip": {
+        "n": "Ranger",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/ranger.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Grants a 20% chance to fire additional projectiles.",
+          "Tier II: Grants a 30% chance to fire additional projectiles.",
+          "Tier III: Grants a 40% chance to fire additional projectiles."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Grants a 20% chance to fire additional projectiles.",
+        "e": [
+          {
+            "x": "Tier I: Grants a 20% chance to fire additional projectiles.",
+            "i": "/images/d2/icons/effects/ranger.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Grants a 30% chance to fire additional projectiles.",
+            "i": "/images/d2/icons/effects/ranger.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Grants a 40% chance to fire additional projectiles.",
+            "i": "/images/d2/icons/effects/ranger.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Reaper",
+      "sub": "Utility",
+      "href": "/2/effects/reaper",
+      "image": "/images/d2/icons/effects/reaper.png",
+      "values": [
+        [
+          "GEAR",
+          "40"
+        ],
+        [
+          "WHAT IT DOES",
+          "Increases souls gained by 25%."
+        ]
+      ],
+      "tip": {
+        "n": "Reaper",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/reaper.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [
+          "Tier I: Increases souls gained by 25%.",
+          "Tier II: Increases souls gained by 35%.",
+          "Tier III: Increases souls gained by 45%."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Increases souls gained by 25%.",
+        "e": [
+          {
+            "x": "Tier I: Increases souls gained by 25%.",
+            "i": "/images/d2/icons/effects/reaper.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Increases souls gained by 35%.",
+            "i": "/images/d2/icons/effects/reaper.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Increases souls gained by 45%.",
+            "i": "/images/d2/icons/effects/reaper.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Recovery",
+      "sub": "Defensive",
+      "href": "/2/effects/recovery",
+      "image": "/images/d2/icons/effects/recovery.png",
+      "values": [
+        [
+          "GEAR",
+          "48"
+        ],
+        [
+          "WHAT IT DOES",
+          "Increases all healing received by 10%."
+        ]
+      ],
+      "tip": {
+        "n": "Recovery",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/recovery.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Tier I: Increases all healing received by 10%.",
+          "Tier II: Increases all healing received by 20%.",
+          "Tier III: Increases all healing received by 30%."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Increases all healing received by 10%.",
+        "e": [
+          {
+            "x": "Tier I: Increases all healing received by 10%.",
+            "i": "/images/d2/icons/effects/recovery.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier II: Increases all healing received by 20%.",
+            "i": "/images/d2/icons/effects/recovery.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier III: Increases all healing received by 30%.",
+            "i": "/images/d2/icons/effects/recovery.png",
+            "c": "defensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Regeneration",
+      "sub": "Defensive",
+      "href": "/2/effects/regeneration",
+      "image": "/images/d2/icons/effects/regeneration.png",
+      "values": [
+        [
+          "GEAR",
+          "48"
+        ],
+        [
+          "WHAT IT DOES",
+          "Restores health by 10% per second after 5 seconds out of combat."
+        ]
+      ],
+      "tip": {
+        "n": "Regeneration",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/regeneration.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Tier I: Restores health by 10% per second after 5 seconds out of combat.",
+          "Tier II: Restores health by 15% per second after 5 seconds out of combat.",
+          "Tier III: Restores health by 20% per second after 5 seconds out of combat."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Restores health by 10% per second after 5 seconds out of combat.",
+        "e": [
+          {
+            "x": "Tier I: Restores health by 10% per second after 5 seconds out of combat.",
+            "i": "/images/d2/icons/effects/regeneration.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier II: Restores health by 15% per second after 5 seconds out of combat.",
+            "i": "/images/d2/icons/effects/regeneration.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier III: Restores health by 20% per second after 5 seconds out of combat.",
+            "i": "/images/d2/icons/effects/regeneration.png",
+            "c": "defensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Relic",
+      "sub": "Defensive",
+      "href": "/2/effects/relic",
+      "image": "/images/d2/icons/effects/relic.png",
+      "values": [
+        [
+          "GEAR",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Restores 6% of max health when activating an artifact."
+        ]
+      ],
+      "tip": {
+        "n": "Relic",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/relic.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Unique: Restores 6% of max health when activating an artifact."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Restores 6% of max health when activating an artifact.",
+        "e": [
+          {
+            "x": "Unique: Restores 6% of max health when activating an artifact.",
+            "i": "/images/d2/icons/effects/relic.png",
+            "c": "defensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Reload",
+      "sub": "Offensive",
+      "href": "/2/effects/reload",
+      "image": "/images/d2/icons/effects/reload.png",
+      "values": [
+        [
+          "GEAR",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Reduces time between shots with ranged weapons by 20%."
+        ]
+      ],
+      "tip": {
+        "n": "Reload",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/reload.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Reduces time between shots with ranged weapons by 20%.",
+          "Tier II: Reduces time between shots with ranged weapons by 30%.",
+          "Tier III: Reduces time between shots with ranged weapons by 40%."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Reduces time between shots with ranged weapons by 20%.",
+        "e": [
+          {
+            "x": "Tier I: Reduces time between shots with ranged weapons by 20%.",
+            "i": "/images/d2/icons/effects/reload.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Reduces time between shots with ranged weapons by 30%.",
+            "i": "/images/d2/icons/effects/reload.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Reduces time between shots with ranged weapons by 40%.",
+            "i": "/images/d2/icons/effects/reload.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Resilience",
+      "sub": "Defensive",
+      "href": "/2/effects/resilience",
+      "image": "/images/d2/icons/effects/resilience.png",
+      "values": [
+        [
+          "GEAR",
+          "48"
+        ],
+        [
+          "WHAT IT DOES",
+          "Recover from negative statuses 20% faster."
+        ]
+      ],
+      "tip": {
+        "n": "Resilience",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/resilience.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Tier I: Recover from negative statuses 20% faster.",
+          "Tier II: Recover from negative statuses 25% faster.",
+          "Tier III: Recover from negative statuses 30% faster."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Recover from negative statuses 20% faster.",
+        "e": [
+          {
+            "x": "Tier I: Recover from negative statuses 20% faster.",
+            "i": "/images/d2/icons/effects/resilience.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier II: Recover from negative statuses 25% faster.",
+            "i": "/images/d2/icons/effects/resilience.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier III: Recover from negative statuses 30% faster.",
+            "i": "/images/d2/icons/effects/resilience.png",
+            "c": "defensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Shackler",
+      "sub": "Offensive",
+      "href": "/2/effects/shackler",
+      "image": "/images/d2/icons/effects/shackler.png",
+      "values": [
+        [
+          "GEAR",
+          "16"
+        ],
+        [
+          "WHAT IT DOES",
+          "Attacks have a 10% chance to inflict the Chained status on hits."
+        ]
+      ],
+      "tip": {
+        "n": "Shackler",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/shackler.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Attacks have a 10% chance to inflict the Chained status on hits.",
+          "Tier II: Attacks have a 15% chance to inflict the Chained status on hits.",
+          "Tier III: Attacks have a 25% chance to inflict the Chained status on hits."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Attacks have a 10% chance to inflict the Chained status on hits.",
+        "e": [
+          {
+            "x": "Tier I: Attacks have a 10% chance to inflict the Chained status on hits.",
+            "i": "/images/d2/icons/effects/shackler.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Attacks have a 15% chance to inflict the Chained status on hits.",
+            "i": "/images/d2/icons/effects/shackler.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Attacks have a 25% chance to inflict the Chained status on hits.",
+            "i": "/images/d2/icons/effects/shackler.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sharpness",
+      "sub": "Offensive",
+      "href": "/2/effects/sharpness",
+      "image": "/images/d2/icons/effects/sharpness.png",
+      "values": [
+        [
+          "GEAR",
+          "58"
+        ],
+        [
+          "WHAT IT DOES",
+          "Melee attacks deal 10% more damage."
+        ]
+      ],
+      "tip": {
+        "n": "Sharpness",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/sharpness.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Melee attacks deal 10% more damage.",
+          "Tier II: Melee attacks deal 20% more damage.",
+          "Tier III: Melee attacks deal 30% more damage."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Melee attacks deal 10% more damage.",
+        "e": [
+          {
+            "x": "Tier I: Melee attacks deal 10% more damage.",
+            "i": "/images/d2/icons/effects/sharpness.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Melee attacks deal 20% more damage.",
+            "i": "/images/d2/icons/effects/sharpness.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Melee attacks deal 30% more damage.",
+            "i": "/images/d2/icons/effects/sharpness.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sharpshooter",
+      "sub": "Offensive",
+      "href": "/2/effects/sharpshooter",
+      "image": "/images/d2/icons/effects/sharpshooter.png",
+      "values": [
+        [
+          "GEAR",
+          "13"
+        ],
+        [
+          "WHAT IT DOES",
+          "Charged ranged attacks deal 30% more damage."
+        ]
+      ],
+      "tip": {
+        "n": "Sharpshooter",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/sharpshooter.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Charged ranged attacks deal 30% more damage.",
+          "Tier II: Charged ranged attacks deal 35% more damage.",
+          "Tier III: Charged ranged attacks deal 40% more damage."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Charged ranged attacks deal 30% more damage.",
+        "e": [
+          {
+            "x": "Tier I: Charged ranged attacks deal 30% more damage.",
+            "i": "/images/d2/icons/effects/sharpshooter.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Charged ranged attacks deal 35% more damage.",
+            "i": "/images/d2/icons/effects/sharpshooter.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Charged ranged attacks deal 40% more damage.",
+            "i": "/images/d2/icons/effects/sharpshooter.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Shepherd",
+      "sub": "Defensive",
+      "href": "/2/effects/shepherd",
+      "image": "/images/d2/icons/effects/shepherd.png",
+      "values": [
+        [
+          "GEAR",
+          "21"
+        ],
+        [
+          "WHAT IT DOES",
+          "Companions take 5% less damage."
+        ]
+      ],
+      "tip": {
+        "n": "Shepherd",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/shepherd.png",
+        "g": 2,
+        "fc": "#3fbf78",
+        "f": [
+          "Tier I: Companions take 5% less damage.",
+          "Tier II: Companions take 10% less damage.",
+          "Tier III: Companions take 15% less damage."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Companions take 5% less damage.",
+        "e": [
+          {
+            "x": "Tier I: Companions take 5% less damage.",
+            "i": "/images/d2/icons/effects/shepherd.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier II: Companions take 10% less damage.",
+            "i": "/images/d2/icons/effects/shepherd.png",
+            "c": "defensive"
+          },
+          {
+            "x": "Tier III: Companions take 15% less damage.",
+            "i": "/images/d2/icons/effects/shepherd.png",
+            "c": "defensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Slinger of Bling",
+      "sub": "Utility",
+      "href": "/2/effects/slinger-of-bling",
+      "image": "/images/d2/icons/effects/slinger-of-bling.png",
+      "values": [
+        [
+          "GEAR",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Slinger of Bling",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/slinger-of-bling.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": null,
+        "e": []
+      }
+    },
+    {
+      "name": "Sniper",
+      "sub": "Offensive",
+      "href": "/2/effects/sniper",
+      "image": "/images/d2/icons/effects/sniper.png",
+      "values": [
+        [
+          "GEAR",
+          "15"
+        ],
+        [
+          "WHAT IT DOES",
+          "Ranged attacks deal 25% more damage from far away."
+        ]
+      ],
+      "tip": {
+        "n": "Sniper",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/sniper.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Ranged attacks deal 25% more damage from far away.",
+          "Tier II: Ranged attacks deal 50% more damage from far away.",
+          "Tier III: Ranged attacks deal 75% more damage from far away."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Ranged attacks deal 25% more damage from far away.",
+        "e": [
+          {
+            "x": "Tier I: Ranged attacks deal 25% more damage from far away.",
+            "i": "/images/d2/icons/effects/sniper.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Ranged attacks deal 50% more damage from far away.",
+            "i": "/images/d2/icons/effects/sniper.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Ranged attacks deal 75% more damage from far away.",
+            "i": "/images/d2/icons/effects/sniper.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sorcerer",
+      "sub": "Offensive",
+      "href": "/2/effects/sorcerer",
+      "image": "/images/d2/icons/effects/sorcerer.png",
+      "values": [
+        [
+          "GEAR",
+          "104"
+        ],
+        [
+          "WHAT IT DOES",
+          "Artifact attacks deal 10% more damage."
+        ]
+      ],
+      "tip": {
+        "n": "Sorcerer",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/sorcerer.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Artifact attacks deal 10% more damage.",
+          "Tier II: Artifact attacks deal 15% more damage.",
+          "Tier III: Artifact attacks deal 20% more damage."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Artifact attacks deal 10% more damage.",
+        "e": [
+          {
+            "x": "Tier I: Artifact attacks deal 10% more damage.",
+            "i": "/images/d2/icons/effects/sorcerer.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Artifact attacks deal 15% more damage.",
+            "i": "/images/d2/icons/effects/sorcerer.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Artifact attacks deal 20% more damage.",
+            "i": "/images/d2/icons/effects/sorcerer.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Soul Cursed",
+      "sub": "Offensive",
+      "href": "/2/effects/soul-cursed",
+      "image": "/images/d2/icons/effects/soul-cursed.png",
+      "values": [
+        [
+          "GEAR",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Applies Soulsick status to enemies on hit."
+        ]
+      ],
+      "tip": {
+        "n": "Soul Cursed",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/soul-cursed.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Unique: Applies Soulsick status to enemies on hit."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Applies Soulsick status to enemies on hit.",
+        "e": [
+          {
+            "x": "Unique: Applies Soulsick status to enemies on hit.",
+            "i": "/images/d2/icons/effects/soul-cursed.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Soulmancer",
+      "sub": "Offensive",
+      "href": "/2/effects/soulmancer",
+      "image": "/images/d2/icons/effects/soulmancer.png",
+      "values": [
+        [
+          "GEAR",
+          "104"
+        ],
+        [
+          "WHAT IT DOES",
+          "Soul attacks deal 10% more damage."
+        ]
+      ],
+      "tip": {
+        "n": "Soulmancer",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/soulmancer.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Soul attacks deal 10% more damage.",
+          "Tier II: Soul attacks deal 15% more damage.",
+          "Tier III: Soul attacks deal 20% more damage."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Soul attacks deal 10% more damage.",
+        "e": [
+          {
+            "x": "Tier I: Soul attacks deal 10% more damage.",
+            "i": "/images/d2/icons/effects/soulmancer.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Soul attacks deal 15% more damage.",
+            "i": "/images/d2/icons/effects/soulmancer.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Soul attacks deal 20% more damage.",
+            "i": "/images/d2/icons/effects/soulmancer.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Speed",
+      "sub": "Utility",
+      "href": "/2/effects/speed",
+      "image": "/images/d2/icons/effects/speed.png",
+      "values": [
+        [
+          "GEAR",
+          "24"
+        ],
+        [
+          "WHAT IT DOES",
+          "Increases movement speed by 5%."
+        ]
+      ],
+      "tip": {
+        "n": "Speed",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/speed.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [
+          "Tier I: Increases movement speed by 5%.",
+          "Tier II: Increases movement speed by 10%.",
+          "Tier III: Increases movement speed by 15%."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Increases movement speed by 5%.",
+        "e": [
+          {
+            "x": "Tier I: Increases movement speed by 5%.",
+            "i": "/images/d2/icons/effects/speed.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Increases movement speed by 10%.",
+            "i": "/images/d2/icons/effects/speed.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Increases movement speed by 15%.",
+            "i": "/images/d2/icons/effects/speed.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Speed Increment",
+      "sub": "Utility",
+      "href": "/2/effects/speed-increment",
+      "image": "/images/d2/icons/effects/speed-increment.png",
+      "values": [
+        [
+          "GEAR",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Increases movement speed by 10% if moving for more than 3 seconds."
+        ]
+      ],
+      "tip": {
+        "n": "Speed Increment",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/speed-increment.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Increases movement speed by 10% if moving for more than 3 seconds.",
+        "e": []
+      }
+    },
+    {
+      "name": "Spiritual",
+      "sub": "Utility",
+      "href": "/2/effects/spiritual",
+      "image": "/images/d2/icons/effects/spiritual.png",
+      "values": [
+        [
+          "GEAR",
+          "104"
+        ],
+        [
+          "WHAT IT DOES",
+          "Increases Soul capacity by 25%."
+        ]
+      ],
+      "tip": {
+        "n": "Spiritual",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/spiritual.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [
+          "Tier I: Increases Soul capacity by 25%.",
+          "Tier II: Increases Soul capacity by 30%.",
+          "Tier III: Increases Soul capacity by 35%."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Increases Soul capacity by 25%.",
+        "e": [
+          {
+            "x": "Tier I: Increases Soul capacity by 25%.",
+            "i": "/images/d2/icons/effects/spiritual.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Increases Soul capacity by 30%.",
+            "i": "/images/d2/icons/effects/spiritual.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Increases Soul capacity by 35%.",
+            "i": "/images/d2/icons/effects/spiritual.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Stealth",
+      "sub": "Utility",
+      "href": "/2/effects/stealth",
+      "image": "/images/d2/icons/effects/stealth.png",
+      "values": [
+        [
+          "GEAR",
+          "40"
+        ],
+        [
+          "WHAT IT DOES",
+          "Shadowcloaking lasts 20% longer."
+        ]
+      ],
+      "tip": {
+        "n": "Stealth",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/stealth.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [
+          "Tier I: Shadowcloaking lasts 20% longer.",
+          "Tier II: Shadowcloaking lasts 25% longer.",
+          "Tier III: Shadowcloaking lasts 35% longer."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Shadowcloaking lasts 20% longer.",
+        "e": [
+          {
+            "x": "Tier I: Shadowcloaking lasts 20% longer.",
+            "i": "/images/d2/icons/effects/stealth.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Shadowcloaking lasts 25% longer.",
+            "i": "/images/d2/icons/effects/stealth.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Shadowcloaking lasts 35% longer.",
+            "i": "/images/d2/icons/effects/stealth.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Strength",
+      "sub": "Offensive",
+      "href": "/2/effects/strength",
+      "image": "/images/d2/icons/effects/strength.png",
+      "values": [
+        [
+          "GEAR",
+          "23"
+        ],
+        [
+          "WHAT IT DOES",
+          "Critical hits with melee weapons deal 15% more damage."
+        ]
+      ],
+      "tip": {
+        "n": "Strength",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/strength.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Critical hits with melee weapons deal 15% more damage.",
+          "Tier II: Critical hits with melee weapons deal 20% more damage.",
+          "Tier III: Critical hits with melee weapons deal 25% more damage."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Critical hits with melee weapons deal 15% more damage.",
+        "e": [
+          {
+            "x": "Tier I: Critical hits with melee weapons deal 15% more damage.",
+            "i": "/images/d2/icons/effects/strength.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Critical hits with melee weapons deal 20% more damage.",
+            "i": "/images/d2/icons/effects/strength.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Critical hits with melee weapons deal 25% more damage.",
+            "i": "/images/d2/icons/effects/strength.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Strengthening Hit",
+      "sub": "Offensive",
+      "href": "/2/effects/strengthening-hit",
+      "image": "/images/d2/icons/effects/strengthening-hit.png",
+      "values": [
+        [
+          "GEAR",
+          ""
+        ],
+        [
+          "WHAT IT DOES",
+          "Attacks have a 70% chance to grant the Strength status on hit."
+        ]
+      ],
+      "tip": {
+        "n": "Strengthening Hit",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/strengthening-hit.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Unique: Attacks have a 70% chance to grant the Strength status on hit."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Attacks have a 70% chance to grant the Strength status on hit.",
+        "e": [
+          {
+            "x": "Unique: Attacks have a 70% chance to grant the Strength status on hit.",
+            "i": "/images/d2/icons/effects/strengthening-hit.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Swiftness",
+      "sub": "Offensive",
+      "href": "/2/effects/swiftness",
+      "image": "/images/d2/icons/effects/swiftness.png",
+      "values": [
+        [
+          "GEAR",
+          "16"
+        ],
+        [
+          "WHAT IT DOES",
+          "Increases melee attack speed by 10%."
+        ]
+      ],
+      "tip": {
+        "n": "Swiftness",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/swiftness.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Increases melee attack speed by 10%.",
+          "Tier II: Increases melee attack speed by 15%.",
+          "Tier III: Increases melee attack speed by 20%."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Increases melee attack speed by 10%.",
+        "e": [
+          {
+            "x": "Tier I: Increases melee attack speed by 10%.",
+            "i": "/images/d2/icons/effects/swiftness.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Increases melee attack speed by 15%.",
+            "i": "/images/d2/icons/effects/swiftness.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Increases melee attack speed by 20%.",
+            "i": "/images/d2/icons/effects/swiftness.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tainted",
+      "sub": "Utility",
+      "href": "/2/effects/tainted",
+      "image": "/images/d2/icons/effects/tainted.png",
+      "values": [
+        [
+          "GEAR",
+          "24"
+        ],
+        [
+          "WHAT IT DOES",
+          "Increases duration of negative statuses on enemies by 40%."
+        ]
+      ],
+      "tip": {
+        "n": "Tainted",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/tainted.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [
+          "Tier I: Increases duration of negative statuses on enemies by 40%.",
+          "Tier II: Increases duration of negative statuses on enemies by 60%.",
+          "Tier III: Increases duration of negative statuses on enemies by 80%."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Increases duration of negative statuses on enemies by 40%.",
+        "e": [
+          {
+            "x": "Tier I: Increases duration of negative statuses on enemies by 40%.",
+            "i": "/images/d2/icons/effects/tainted.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Increases duration of negative statuses on enemies by 60%.",
+            "i": "/images/d2/icons/effects/tainted.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Increases duration of negative statuses on enemies by 80%.",
+            "i": "/images/d2/icons/effects/tainted.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Totem Radius",
+      "sub": "Utility",
+      "href": "/2/effects/totem-radius",
+      "image": "/images/d2/icons/effects/totem-radius.png",
+      "values": [
+        [
+          "GEAR",
+          "30"
+        ],
+        [
+          "WHAT IT DOES",
+          "Increases the area of all positive status effects by 20%."
+        ]
+      ],
+      "tip": {
+        "n": "Totem Radius",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/totem-radius.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [
+          "Tier I: Increases the area of all positive status effects by 20%.",
+          "Tier II: Increases the area of all positive status effects by 30%.",
+          "Tier III: Increases the area of all positive status effects by 40%."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Increases the area of all positive status effects by 20%.",
+        "e": [
+          {
+            "x": "Tier I: Increases the area of all positive status effects by 20%.",
+            "i": "/images/d2/icons/effects/totem-radius.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Increases the area of all positive status effects by 30%.",
+            "i": "/images/d2/icons/effects/totem-radius.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Increases the area of all positive status effects by 40%.",
+            "i": "/images/d2/icons/effects/totem-radius.png",
+            "c": "utility"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Vanguard",
+      "sub": "Offensive",
+      "href": "/2/effects/vanguard",
+      "image": "/images/d2/icons/effects/vanguard.png",
+      "values": [
+        [
+          "GEAR",
+          "23"
+        ],
+        [
+          "WHAT IT DOES",
+          "Deal 20% more damage to enemies who are at full health."
+        ]
+      ],
+      "tip": {
+        "n": "Vanguard",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/vanguard.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Deal 20% more damage to enemies who are at full health.",
+          "Tier II: Deal 35% more damage to enemies who are at full health.",
+          "Tier III: Deal 50% more damage to enemies who are at full health."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Deal 20% more damage to enemies who are at full health.",
+        "e": [
+          {
+            "x": "Tier I: Deal 20% more damage to enemies who are at full health.",
+            "i": "/images/d2/icons/effects/vanguard.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Deal 35% more damage to enemies who are at full health.",
+            "i": "/images/d2/icons/effects/vanguard.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Deal 50% more damage to enemies who are at full health.",
+            "i": "/images/d2/icons/effects/vanguard.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Venomancer",
+      "sub": "Offensive",
+      "href": "/2/effects/venomancer",
+      "image": "/images/d2/icons/effects/venomancer.png",
+      "values": [
+        [
+          "GEAR",
+          "104"
+        ],
+        [
+          "WHAT IT DOES",
+          "Poison attacks deal 10% more damage."
+        ]
+      ],
+      "tip": {
+        "n": "Venomancer",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/venomancer.png",
+        "g": 2,
+        "fc": "#d4453b",
+        "f": [
+          "Tier I: Poison attacks deal 10% more damage.",
+          "Tier II: Poison attacks deal 15% more damage.",
+          "Tier III: Poison attacks deal 20% more damage."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Poison attacks deal 10% more damage.",
+        "e": [
+          {
+            "x": "Tier I: Poison attacks deal 10% more damage.",
+            "i": "/images/d2/icons/effects/venomancer.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier II: Poison attacks deal 15% more damage.",
+            "i": "/images/d2/icons/effects/venomancer.png",
+            "c": "offensive"
+          },
+          {
+            "x": "Tier III: Poison attacks deal 20% more damage.",
+            "i": "/images/d2/icons/effects/venomancer.png",
+            "c": "offensive"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Veterinarian",
+      "sub": "Utility",
+      "href": "/2/effects/veterinarian",
+      "image": "/images/d2/icons/effects/veterinarian.png",
+      "values": [
+        [
+          "GEAR",
+          "21"
+        ],
+        [
+          "WHAT IT DOES",
+          "Defeated companions come back 5% faster."
+        ]
+      ],
+      "tip": {
+        "n": "Veterinarian",
+        "k": "Effect",
+        "i": "/images/d2/icons/effects/veterinarian.png",
+        "g": 2,
+        "fc": "#3f9ad8",
+        "f": [
+          "Tier I: Defeated companions come back 5% faster.",
+          "Tier II: Defeated companions come back 10% faster.",
+          "Tier III: Defeated companions come back 15% faster."
+        ],
+        "h": "Effect",
+        "t": null,
+        "s": [],
+        "d": "Defeated companions come back 5% faster.",
+        "e": [
+          {
+            "x": "Tier I: Defeated companions come back 5% faster.",
+            "i": "/images/d2/icons/effects/veterinarian.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier II: Defeated companions come back 10% faster.",
+            "i": "/images/d2/icons/effects/veterinarian.png",
+            "c": "utility"
+          },
+          {
+            "x": "Tier III: Defeated companions come back 15% faster.",
+            "i": "/images/d2/icons/effects/veterinarian.png",
+            "c": "utility"
+          }
+        ]
+      }
+    }
+  ]
+}

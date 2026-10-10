@@ -1,0 +1,5236 @@
+{
+  "source": "https://www.dungeons.tools/2/enemies",
+  "captured_at": "2026-10-10",
+  "rows": [
+    {
+      "name": "Arctic Fox",
+      "sub": "Passive",
+      "href": "/2/enemies/arctic-fox",
+      "image": "/images/d2/renders/thumb/arctic-fox.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Arctic Fox",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/arctic-fox.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Baby Chicken",
+      "sub": "Passive",
+      "href": "/2/enemies/baby-chicken",
+      "image": "/images/d2/renders/thumb/baby-chicken.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Baby Chicken",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/baby-chicken.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Baby Pig",
+      "sub": "Passive",
+      "href": "/2/enemies/baby-pig",
+      "image": "/images/d2/renders/thumb/baby-pig.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Baby Pig",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/baby-pig.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Baby Wolf",
+      "sub": "Passive",
+      "href": "/2/enemies/baby-wolf",
+      "image": "/images/d2/renders/thumb/baby-wolf.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Baby Wolf",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/baby-wolf.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Baby Zombie",
+      "sub": "Hostile",
+      "href": "/2/enemies/baby-zombie",
+      "image": "/images/d2/renders/thumb/baby-zombie.png",
+      "values": [
+        [
+          "HEALTH",
+          "8"
+        ],
+        [
+          "DAMAGE",
+          "5"
+        ],
+        [
+          "POISE",
+          "50"
+        ],
+        [
+          "SOULS",
+          "4"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Baby Zombie",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/baby-zombie.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "8 health",
+          "Light attack: 5 damage",
+          "Weak to blast"
+        ]
+      }
+    },
+    {
+      "name": "Bee",
+      "sub": "Passive",
+      "href": "/2/enemies/bee",
+      "image": "/images/d2/renders/thumb/bee.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Bee",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/bee.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Bloombud",
+      "sub": "Hostile",
+      "href": "/2/enemies/bloombud",
+      "image": "/images/d2/renders/thumb/bloombud.png",
+      "values": [
+        [
+          "HEALTH",
+          "12"
+        ],
+        [
+          "DAMAGE",
+          "6"
+        ],
+        [
+          "POISE",
+          "15"
+        ],
+        [
+          "SOULS",
+          "4"
+        ],
+        [
+          "WEAK TO",
+          "Poison ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Bloombud",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/bloombud.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "12 health",
+          "Light attack: 6 damage",
+          "Weak to poison"
+        ]
+      }
+    },
+    {
+      "name": "Blub",
+      "sub": "Passive",
+      "href": "/2/enemies/blub",
+      "image": "/images/d2/renders/thumb/blub.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Blub",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/blub.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Bogged",
+      "sub": "Hostile",
+      "href": "/2/enemies/bogged",
+      "image": "/images/d2/renders/thumb/bogged.png",
+      "values": [
+        [
+          "HEALTH",
+          "25"
+        ],
+        [
+          "DAMAGE",
+          "5"
+        ],
+        [
+          "POISE",
+          "28"
+        ],
+        [
+          "SOULS",
+          "8"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.5, Lightning ×1.25"
+        ]
+      ],
+      "tip": {
+        "n": "Bogged",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/bogged.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "25 health",
+          "Ranged attack: 5 damage",
+          "Weak to blast, lightning"
+        ]
+      }
+    },
+    {
+      "name": "Cat",
+      "sub": "Passive",
+      "href": "/2/enemies/cat",
+      "image": "/images/d2/renders/thumb/ocelot.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Cat",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/ocelot.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Cave Spider",
+      "sub": "Hostile",
+      "href": "/2/enemies/cave-spider",
+      "image": "/images/d2/renders/thumb/cave-spider.png",
+      "values": [
+        [
+          "HEALTH",
+          "15"
+        ],
+        [
+          "DAMAGE",
+          "8"
+        ],
+        [
+          "POISE",
+          "40"
+        ],
+        [
+          "SOULS",
+          "4"
+        ],
+        [
+          "WEAK TO",
+          "Lightning ×2"
+        ]
+      ],
+      "tip": {
+        "n": "Cave Spider",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/cave-spider.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "15 health",
+          "Swipe: 8 damage",
+          "Weak to lightning"
+        ]
+      }
+    },
+    {
+      "name": "Charged Creeper",
+      "sub": "Hostile",
+      "href": "/2/enemies/charged-creeper",
+      "image": "/images/d2/renders/thumb/charged-creeper.png",
+      "values": [
+        [
+          "HEALTH",
+          "30"
+        ],
+        [
+          "DAMAGE",
+          "75"
+        ],
+        [
+          "POISE",
+          "36"
+        ],
+        [
+          "SOULS",
+          "12"
+        ],
+        [
+          "WEAK TO",
+          "Poison ×1.25"
+        ]
+      ],
+      "tip": {
+        "n": "Charged Creeper",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/charged-creeper.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "30 health",
+          "Ignition: 75 damage",
+          "Weak to poison"
+        ]
+      }
+    },
+    {
+      "name": "Charred",
+      "sub": "Hostile",
+      "href": "/2/enemies/charred",
+      "image": "/images/d2/renders/thumb/charred.png",
+      "values": [
+        [
+          "HEALTH",
+          "42"
+        ],
+        [
+          "DAMAGE",
+          "12"
+        ],
+        [
+          "POISE",
+          "28"
+        ],
+        [
+          "SOULS",
+          "8"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.5, Frost ×1.25"
+        ]
+      ],
+      "tip": {
+        "n": "Charred",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/charred.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "42 health",
+          "Light attack: 12 damage",
+          "Weak to blast, frost"
+        ]
+      }
+    },
+    {
+      "name": "Chicken",
+      "sub": "Passive",
+      "href": "/2/enemies/chicken",
+      "image": "/images/d2/renders/thumb/chicken.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Chicken",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/chicken.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Chicken Jockey",
+      "sub": "Hostile",
+      "href": "/2/enemies/chicken-jockey",
+      "image": "/images/d2/renders/thumb/chicken-jockey.png",
+      "values": [
+        [
+          "HEALTH",
+          "25"
+        ],
+        [
+          "DAMAGE",
+          "12"
+        ],
+        [
+          "POISE",
+          "45"
+        ],
+        [
+          "SOULS",
+          "4"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Chicken Jockey",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/chicken-jockey.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "25 health",
+          "Light attack: 12 damage",
+          "Weak to blast"
+        ]
+      }
+    },
+    {
+      "name": "Copper Cube",
+      "sub": "Hostile",
+      "href": "/2/enemies/copper-cube",
+      "image": "/images/d2/renders/thumb/copper-cube.png",
+      "values": [
+        [
+          "HEALTH",
+          "20"
+        ],
+        [
+          "DAMAGE",
+          "7"
+        ],
+        [
+          "POISE",
+          "50"
+        ],
+        [
+          "SOULS",
+          "20"
+        ],
+        [
+          "WEAK TO",
+          "Poison ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Copper Cube",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/copper-cube.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "20 health",
+          "Light attack: 7 damage",
+          "Weak to poison"
+        ]
+      }
+    },
+    {
+      "name": "Copper Monstrosity",
+      "sub": "Boss",
+      "href": "/2/enemies/copper-monstrosity",
+      "image": "/images/d2/renders/thumb/copper-monstrosity.png",
+      "values": [
+        [
+          "HEALTH",
+          "2,400"
+        ],
+        [
+          "DAMAGE",
+          "30"
+        ],
+        [
+          "POISE",
+          "1,200"
+        ],
+        [
+          "SOULS",
+          "200"
+        ],
+        [
+          "WEAK TO",
+          "Poison ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Copper Monstrosity",
+        "k": "Boss",
+        "i": "/images/d2/renders/thumb/copper-monstrosity.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "2,400 health",
+          "Thunderbolt: 30 damage",
+          "Weak to poison",
+          "Story quest: Wading Rainy Plains"
+        ]
+      }
+    },
+    {
+      "name": "Cow",
+      "sub": "Passive",
+      "href": "/2/enemies/cow",
+      "image": "/images/d2/renders/thumb/cow.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Cow",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/cow.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Creeper",
+      "sub": "Hostile",
+      "href": "/2/enemies/creeper",
+      "image": "/images/d2/renders/thumb/creeper.png",
+      "values": [
+        [
+          "HEALTH",
+          "17"
+        ],
+        [
+          "DAMAGE",
+          "70"
+        ],
+        [
+          "POISE",
+          "36"
+        ],
+        [
+          "SOULS",
+          "4"
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Creeper",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/creeper.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "17 health",
+          "Ignition: 70 damage"
+        ]
+      }
+    },
+    {
+      "name": "Dartback",
+      "sub": "Miniboss",
+      "href": "/2/enemies/dartback",
+      "image": "/images/d2/renders/thumb/dartback.png",
+      "values": [
+        [
+          "HEALTH",
+          "700"
+        ],
+        [
+          "DAMAGE",
+          "25"
+        ],
+        [
+          "POISE",
+          "700"
+        ],
+        [
+          "SOULS",
+          "75"
+        ],
+        [
+          "WEAK TO",
+          "Elemental ×1.25"
+        ]
+      ],
+      "tip": {
+        "n": "Dartback",
+        "k": "Miniboss",
+        "i": "/images/d2/renders/thumb/dartback.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "700 health",
+          "Headbutt: 10 damage",
+          "Weak to elemental"
+        ]
+      }
+    },
+    {
+      "name": "Echo Golem",
+      "sub": "Passive",
+      "href": "/2/enemies/echo-golem",
+      "image": "/images/d2/renders/thumb/echo-golem.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Echo Golem",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/echo-golem.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Enchanter",
+      "sub": "Hostile",
+      "href": "/2/enemies/enchanter",
+      "image": "/images/d2/renders/thumb/enchanter.png",
+      "values": [
+        [
+          "HEALTH",
+          "45"
+        ],
+        [
+          "DAMAGE",
+          "4"
+        ],
+        [
+          "POISE",
+          "50"
+        ],
+        [
+          "SOULS",
+          "8"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.25, Melee ×1.2"
+        ]
+      ],
+      "tip": {
+        "n": "Enchanter",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/enchanter.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "45 health",
+          "Light attack: 3 damage",
+          "Weak to blast, melee"
+        ]
+      }
+    },
+    {
+      "name": "Enderman",
+      "sub": "Miniboss",
+      "href": "/2/enemies/enderman",
+      "image": "/images/d2/renders/thumb/enderman.png",
+      "values": [
+        [
+          "HEALTH",
+          "480"
+        ],
+        [
+          "DAMAGE",
+          "25"
+        ],
+        [
+          "POISE",
+          "250"
+        ],
+        [
+          "SOULS",
+          "75"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.25, Soul ×1.15"
+        ]
+      ],
+      "tip": {
+        "n": "Enderman",
+        "k": "Miniboss",
+        "i": "/images/d2/renders/thumb/enderman.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "480 health",
+          "Left swing (moving): 18 damage",
+          "Weak to blast, soul"
+        ]
+      }
+    },
+    {
+      "name": "Evoker",
+      "sub": "Miniboss",
+      "href": "/2/enemies/evoker",
+      "image": "/images/d2/renders/thumb/evoker.png",
+      "values": [
+        [
+          "HEALTH",
+          "430"
+        ],
+        [
+          "DAMAGE",
+          "15"
+        ],
+        [
+          "POISE",
+          "275"
+        ],
+        [
+          "SOULS",
+          "75"
+        ],
+        [
+          "WEAK TO",
+          "Melee ×1.25"
+        ]
+      ],
+      "tip": {
+        "n": "Evoker",
+        "k": "Miniboss",
+        "i": "/images/d2/renders/thumb/evoker.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "430 health",
+          "Fang trap: 15 damage",
+          "Weak to melee",
+          "Story quest: The Illagers from the Rift"
+        ]
+      }
+    },
+    {
+      "name": "Excavator",
+      "sub": "Hostile",
+      "href": "/2/enemies/excavator",
+      "image": "/images/d2/renders/thumb/excavator.png",
+      "values": [
+        [
+          "HEALTH",
+          "30"
+        ],
+        [
+          "DAMAGE",
+          "12"
+        ],
+        [
+          "POISE",
+          "65"
+        ],
+        [
+          "SOULS",
+          "4"
+        ],
+        [
+          "WEAK TO",
+          "Soul ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Excavator",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/excavator.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "30 health",
+          "Light attack: 7 damage",
+          "Weak to soul"
+        ]
+      }
+    },
+    {
+      "name": "Flame Construct",
+      "sub": "Hostile",
+      "href": "/2/enemies/flame-construct",
+      "image": "/images/d2/renders/thumb/flame-construct.png",
+      "values": [
+        [
+          "HEALTH",
+          "80"
+        ],
+        [
+          "DAMAGE",
+          "25"
+        ],
+        [
+          "POISE",
+          "80"
+        ],
+        [
+          "SOULS",
+          "4"
+        ],
+        [
+          "WEAK TO",
+          "Frost ×2"
+        ]
+      ],
+      "tip": {
+        "n": "Flame Construct",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/flame-construct.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "80 health",
+          "Fire burst: 25 damage",
+          "Weak to frost"
+        ]
+      }
+    },
+    {
+      "name": "Fox",
+      "sub": "Passive",
+      "href": "/2/enemies/fox",
+      "image": "/images/d2/renders/thumb/fox.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Fox",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/fox.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Frog",
+      "sub": "Passive",
+      "href": "/2/enemies/frog",
+      "image": "/images/d2/renders/thumb/frog.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Frog",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/frog.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Frozen",
+      "sub": "Hostile",
+      "href": "/2/enemies/frozen",
+      "image": "/images/d2/renders/thumb/frozen.png",
+      "values": [
+        [
+          "HEALTH",
+          "35"
+        ],
+        [
+          "DAMAGE",
+          "11"
+        ],
+        [
+          "POISE",
+          "28"
+        ],
+        [
+          "SOULS",
+          "8"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.5, Fire ×1.25"
+        ]
+      ],
+      "tip": {
+        "n": "Frozen",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/frozen.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "35 health",
+          "Light attack: 11 damage",
+          "Weak to blast, fire"
+        ]
+      }
+    },
+    {
+      "name": "Fusefly",
+      "sub": "Hostile",
+      "href": "/2/enemies/fusefly",
+      "image": "/images/d2/renders/thumb/fusefly.png",
+      "values": [
+        [
+          "HEALTH",
+          "45"
+        ],
+        [
+          "DAMAGE",
+          "30"
+        ],
+        [
+          "POISE",
+          "30"
+        ],
+        [
+          "SOULS",
+          "4"
+        ],
+        [
+          "WEAK TO",
+          "Melee ×1.2"
+        ]
+      ],
+      "tip": {
+        "n": "Fusefly",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/fusefly.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "45 health",
+          "Stage two attack: 10 damage",
+          "Weak to melee"
+        ]
+      }
+    },
+    {
+      "name": "Geomancer",
+      "sub": "Hostile",
+      "href": "/2/enemies/geomancer",
+      "image": "/images/d2/renders/thumb/geomancer.png",
+      "values": [
+        [
+          "HEALTH",
+          "60"
+        ],
+        [
+          "DAMAGE",
+          "25"
+        ],
+        [
+          "POISE",
+          "40"
+        ],
+        [
+          "SOULS",
+          "4"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Geomancer",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/geomancer.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "60 health",
+          "Punch: 8 damage",
+          "Weak to blast"
+        ]
+      }
+    },
+    {
+      "name": "Goat",
+      "sub": "Passive",
+      "href": "/2/enemies/goat",
+      "image": "/images/d2/renders/thumb/goat.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Goat",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/goat.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Harmonizer",
+      "sub": "Miniboss",
+      "href": "/2/enemies/harmonizer",
+      "image": "/images/d2/renders/thumb/harmonizer.png",
+      "values": [
+        [
+          "HEALTH",
+          "620"
+        ],
+        [
+          "DAMAGE",
+          "30"
+        ],
+        [
+          "POISE",
+          "650"
+        ],
+        [
+          "SOULS",
+          "75"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.25, Melee ×1.1"
+        ]
+      ],
+      "tip": {
+        "n": "Harmonizer",
+        "k": "Miniboss",
+        "i": "/images/d2/renders/thumb/harmonizer.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "620 health",
+          "Swipe: 20 damage",
+          "Weak to blast, melee"
+        ]
+      }
+    },
+    {
+      "name": "Hunter",
+      "sub": "Hostile",
+      "href": "/2/enemies/hunter",
+      "image": "/images/d2/renders/thumb/hunter.png",
+      "values": [
+        [
+          "HEALTH",
+          "100"
+        ],
+        [
+          "DAMAGE",
+          "40"
+        ],
+        [
+          "POISE",
+          "200"
+        ],
+        [
+          "SOULS",
+          "12"
+        ],
+        [
+          "WEAK TO",
+          "Lightning ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Hunter",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/hunter.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "100 health",
+          "Soul stomp: 5 damage",
+          "Weak to lightning"
+        ]
+      }
+    },
+    {
+      "name": "Hurler",
+      "sub": "Hostile",
+      "href": "/2/enemies/hurler",
+      "image": "/images/d2/renders/thumb/hurler.png",
+      "values": [
+        [
+          "HEALTH",
+          "45"
+        ],
+        [
+          "DAMAGE",
+          "12"
+        ],
+        [
+          "POISE",
+          "60"
+        ],
+        [
+          "SOULS",
+          "4"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.2"
+        ]
+      ],
+      "tip": {
+        "n": "Hurler",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/hurler.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "45 health",
+          "Light attack: 12 damage",
+          "Weak to blast"
+        ]
+      }
+    },
+    {
+      "name": "Husk",
+      "sub": "Hostile",
+      "href": "/2/enemies/husk",
+      "image": "/images/d2/renders/thumb/husk.png",
+      "values": [
+        [
+          "HEALTH",
+          "42"
+        ],
+        [
+          "DAMAGE",
+          "14"
+        ],
+        [
+          "POISE",
+          "100"
+        ],
+        [
+          "SOULS",
+          "8"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Husk",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/husk.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "42 health",
+          "Light attack: 14 damage",
+          "Weak to blast"
+        ]
+      }
+    },
+    {
+      "name": "Iron Golem",
+      "sub": "Companion",
+      "href": "/2/enemies/iron-golem",
+      "image": "/images/d2/renders/thumb/iron-golem.png",
+      "values": [
+        [
+          "HEALTH",
+          "220"
+        ],
+        [
+          "DAMAGE",
+          "9"
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Iron Golem",
+        "k": "Companion",
+        "i": "/images/d2/renders/thumb/iron-golem.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "220 health",
+          "Slam: 5 damage"
+        ]
+      }
+    },
+    {
+      "name": "Key Golem",
+      "sub": "Passive",
+      "href": "/2/enemies/key-golem",
+      "image": "/images/d2/renders/thumb/key-golem.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Key Golem",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/key-golem.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Llama",
+      "sub": "Companion",
+      "href": "/2/enemies/llama",
+      "image": "/images/d2/renders/thumb/llama.png",
+      "values": [
+        [
+          "HEALTH",
+          "135"
+        ],
+        [
+          "DAMAGE",
+          "6"
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Llama",
+        "k": "Companion",
+        "i": "/images/d2/renders/thumb/llama.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "135 health",
+          "Ranged attack: 6 damage"
+        ]
+      }
+    },
+    {
+      "name": "Lootkin",
+      "sub": "Passive",
+      "href": "/2/enemies/lootkin",
+      "image": "/images/d2/renders/thumb/lootkin.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Lootkin",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/lootkin.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Monarch",
+      "sub": "Boss",
+      "href": "/2/enemies/monarch",
+      "image": "/images/d2/renders/thumb/monarch.png",
+      "values": [
+        [
+          "HEALTH",
+          "1,400"
+        ],
+        [
+          "DAMAGE",
+          "18"
+        ],
+        [
+          "POISE",
+          "600"
+        ],
+        [
+          "SOULS",
+          "30"
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Monarch",
+        "k": "Boss",
+        "i": "/images/d2/renders/thumb/monarch.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "1,400 health",
+          "First aerial combo: 6 damage",
+          "Story quest: Wrath of the Sculkers"
+        ]
+      }
+    },
+    {
+      "name": "Monarch Echo",
+      "sub": "Boss",
+      "href": "/2/enemies/monarch-echo",
+      "image": "/images/d2/renders/thumb/monarch-echo.png",
+      "values": [
+        [
+          "HEALTH",
+          "300"
+        ],
+        [
+          "DAMAGE",
+          "18"
+        ],
+        [
+          "POISE",
+          "380"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Monarch Echo",
+        "k": "Boss",
+        "i": "/images/d2/renders/thumb/monarch-echo.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "300 health",
+          "First aerial combo: 6 damage"
+        ]
+      }
+    },
+    {
+      "name": "Monstrous Opus",
+      "sub": "Boss",
+      "href": "/2/enemies/monstrous-opus",
+      "image": "/images/d2/renders/thumb/monstrous-opus.png",
+      "values": [
+        [
+          "HEALTH",
+          "2,000"
+        ],
+        [
+          "DAMAGE",
+          "90"
+        ],
+        [
+          "POISE",
+          "1,000"
+        ],
+        [
+          "SOULS",
+          "200"
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Monstrous Opus",
+        "k": "Boss",
+        "i": "/images/d2/renders/thumb/monstrous-opus.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "2,000 health",
+          "Headbutt: 12 damage",
+          "Story quest: The Final Souldown"
+        ]
+      }
+    },
+    {
+      "name": "Moss Cube",
+      "sub": "Hostile",
+      "href": "/2/enemies/moss-cube",
+      "image": "/images/d2/renders/thumb/moss-cube.png",
+      "values": [
+        [
+          "HEALTH",
+          "22"
+        ],
+        [
+          "DAMAGE",
+          "7"
+        ],
+        [
+          "POISE",
+          "50"
+        ],
+        [
+          "SOULS",
+          "20"
+        ],
+        [
+          "WEAK TO",
+          "Lightning ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Moss Cube",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/moss-cube.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "22 health",
+          "Light attack: 7 damage",
+          "Weak to lightning"
+        ]
+      }
+    },
+    {
+      "name": "Mosstrosity",
+      "sub": "Boss",
+      "href": "/2/enemies/mosstrosity",
+      "image": "/images/d2/renders/thumb/mosstrosity.png",
+      "values": [
+        [
+          "HEALTH",
+          "2,400"
+        ],
+        [
+          "DAMAGE",
+          "35"
+        ],
+        [
+          "POISE",
+          "1,200"
+        ],
+        [
+          "SOULS",
+          "200"
+        ],
+        [
+          "WEAK TO",
+          "Lightning ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Mosstrosity",
+        "k": "Boss",
+        "i": "/images/d2/renders/thumb/mosstrosity.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "2,400 health",
+          "Left swing: 20 damage",
+          "Weak to lightning"
+        ]
+      }
+    },
+    {
+      "name": "Mucked",
+      "sub": "Hostile",
+      "href": "/2/enemies/mucked",
+      "image": "/images/d2/renders/thumb/mucked.png",
+      "values": [
+        [
+          "HEALTH",
+          "30"
+        ],
+        [
+          "DAMAGE",
+          "10"
+        ],
+        [
+          "POISE",
+          "28"
+        ],
+        [
+          "SOULS",
+          "8"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.5, Lightning ×1.25"
+        ]
+      ],
+      "tip": {
+        "n": "Mucked",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/mucked.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "30 health",
+          "Light attack: 10 damage",
+          "Weak to blast, lightning"
+        ]
+      }
+    },
+    {
+      "name": "Nester",
+      "sub": "Hostile",
+      "href": "/2/enemies/nester",
+      "image": "/images/d2/renders/thumb/nester.png",
+      "values": [
+        [
+          "HEALTH",
+          "55"
+        ],
+        [
+          "DAMAGE",
+          "7"
+        ],
+        [
+          "POISE",
+          "60"
+        ],
+        [
+          "SOULS",
+          "8"
+        ],
+        [
+          "WEAK TO",
+          "Elemental ×1.25"
+        ]
+      ],
+      "tip": {
+        "n": "Nester",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/nester.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "55 health",
+          "Bite: 7 damage",
+          "Weak to elemental"
+        ]
+      }
+    },
+    {
+      "name": "Nuzzle",
+      "sub": "Passive",
+      "href": "/2/enemies/nuzzle",
+      "image": "/images/d2/renders/thumb/nuzzle.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Nuzzle",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/nuzzle.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Ocelot",
+      "sub": "Passive",
+      "href": "/2/enemies/ocelot",
+      "image": "/images/d2/renders/thumb/ocelot.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Ocelot",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/ocelot.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Pig",
+      "sub": "Passive",
+      "href": "/2/enemies/pig",
+      "image": "/images/d2/renders/thumb/pig.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Pig",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/pig.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Pigeon",
+      "sub": "Passive",
+      "href": "/2/enemies/pigeon",
+      "image": "/images/d2/renders/thumb/pigeon.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Pigeon",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/pigeon.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Piggy Bank",
+      "sub": "Hostile",
+      "href": "/2/enemies/piggy-bank",
+      "image": "/images/d2/renders/thumb/piggy-bank.png",
+      "values": [
+        [
+          "HEALTH",
+          "80"
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          "9,999"
+        ],
+        [
+          "SOULS",
+          "4"
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Piggy Bank",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/piggy-bank.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "80 health"
+        ]
+      }
+    },
+    {
+      "name": "Pillager",
+      "sub": "Hostile",
+      "href": "/2/enemies/pillager",
+      "image": "/images/d2/renders/thumb/pillager.png",
+      "values": [
+        [
+          "HEALTH",
+          "20"
+        ],
+        [
+          "DAMAGE",
+          "6.5"
+        ],
+        [
+          "POISE",
+          "30"
+        ],
+        [
+          "SOULS",
+          "4"
+        ],
+        [
+          "WEAK TO",
+          "Soul ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Pillager",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/pillager.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "20 health",
+          "Ranged attack: 6.5 damage",
+          "Weak to soul"
+        ]
+      }
+    },
+    {
+      "name": "Pollinator",
+      "sub": "Hostile",
+      "href": "/2/enemies/pollinator",
+      "image": "/images/d2/renders/thumb/pollinator.png",
+      "values": [
+        [
+          "HEALTH",
+          "40"
+        ],
+        [
+          "DAMAGE",
+          "12"
+        ],
+        [
+          "POISE",
+          "60"
+        ],
+        [
+          "SOULS",
+          "8"
+        ],
+        [
+          "WEAK TO",
+          "Elemental ×1.25"
+        ]
+      ],
+      "tip": {
+        "n": "Pollinator",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/pollinator.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "40 health",
+          "Tongue jab: 6 damage",
+          "Weak to elemental"
+        ]
+      }
+    },
+    {
+      "name": "Prickle",
+      "sub": "Companion",
+      "href": "/2/enemies/prickle",
+      "image": "/images/d2/renders/thumb/prickle.png",
+      "values": [
+        [
+          "HEALTH",
+          "115"
+        ],
+        [
+          "DAMAGE",
+          "3"
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Prickle",
+        "k": "Companion",
+        "i": "/images/d2/renders/thumb/prickle.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "115 health",
+          "Light attack: 3 damage"
+        ]
+      }
+    },
+    {
+      "name": "Rabbit",
+      "sub": "Passive",
+      "href": "/2/enemies/rabbit",
+      "image": "/images/d2/renders/thumb/rabbit.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Rabbit",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/rabbit.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Ravager",
+      "sub": "Hostile",
+      "href": "/2/enemies/ravager",
+      "image": "/images/d2/renders/thumb/ravager.png",
+      "values": [
+        [
+          "HEALTH",
+          "140"
+        ],
+        [
+          "DAMAGE",
+          "11"
+        ],
+        [
+          "POISE",
+          "210"
+        ],
+        [
+          "SOULS",
+          "14"
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Ravager",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/ravager.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "140 health",
+          "Bite: 11 damage"
+        ]
+      }
+    },
+    {
+      "name": "Redstone Cube",
+      "sub": "Hostile",
+      "href": "/2/enemies/redstone-cube",
+      "image": "/images/d2/renders/thumb/redstone-cube.png",
+      "values": [
+        [
+          "HEALTH",
+          "18"
+        ],
+        [
+          "DAMAGE",
+          "7"
+        ],
+        [
+          "POISE",
+          "50"
+        ],
+        [
+          "SOULS",
+          "20"
+        ],
+        [
+          "WEAK TO",
+          "Frost ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Redstone Cube",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/redstone-cube.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "18 health",
+          "Light attack: 7 damage",
+          "Weak to frost"
+        ]
+      }
+    },
+    {
+      "name": "Redstone Monstrosity",
+      "sub": "Boss",
+      "href": "/2/enemies/redstone-monstrosity",
+      "image": "/images/d2/renders/thumb/redstone-monstrosity.png",
+      "values": [
+        [
+          "HEALTH",
+          "2,400"
+        ],
+        [
+          "DAMAGE",
+          "25"
+        ],
+        [
+          "POISE",
+          "1,200"
+        ],
+        [
+          "SOULS",
+          "200"
+        ],
+        [
+          "WEAK TO",
+          "Frost ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Redstone Monstrosity",
+        "k": "Boss",
+        "i": "/images/d2/renders/thumb/redstone-monstrosity.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "2,400 health",
+          "Left swing: 15 damage",
+          "Weak to frost",
+          "Story quest: The Final Souldown"
+        ]
+      }
+    },
+    {
+      "name": "Roamroot",
+      "sub": "Hostile",
+      "href": "/2/enemies/roamroot",
+      "image": "/images/d2/renders/thumb/roamroot.png",
+      "values": [
+        [
+          "HEALTH",
+          "12"
+        ],
+        [
+          "DAMAGE",
+          "6"
+        ],
+        [
+          "POISE",
+          "20"
+        ],
+        [
+          "SOULS",
+          "4"
+        ],
+        [
+          "WEAK TO",
+          "Poison ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Roamroot",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/roamroot.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "12 health",
+          "Ranged attack: 6 damage",
+          "Weak to poison"
+        ]
+      }
+    },
+    {
+      "name": "Roamrot",
+      "sub": "Hostile",
+      "href": "/2/enemies/roamrot",
+      "image": "/images/d2/renders/thumb/roamroot.png",
+      "values": [
+        [
+          "HEALTH",
+          "6"
+        ],
+        [
+          "DAMAGE",
+          "6"
+        ],
+        [
+          "POISE",
+          "20"
+        ],
+        [
+          "SOULS",
+          "4"
+        ],
+        [
+          "WEAK TO",
+          "Poison ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Roamrot",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/roamroot.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "6 health",
+          "Ranged attack: 6 damage",
+          "Weak to poison"
+        ]
+      }
+    },
+    {
+      "name": "Royal Guard",
+      "sub": "Hostile",
+      "href": "/2/enemies/royal-guard",
+      "image": "/images/d2/renders/thumb/royal-guard.png",
+      "values": [
+        [
+          "HEALTH",
+          "90"
+        ],
+        [
+          "DAMAGE",
+          "17"
+        ],
+        [
+          "POISE",
+          "120"
+        ],
+        [
+          "SOULS",
+          "16"
+        ],
+        [
+          "WEAK TO",
+          "Lightning ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Royal Guard",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/royal-guard.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "90 health",
+          "Light attack (shield up): 8 damage",
+          "Weak to lightning"
+        ]
+      }
+    },
+    {
+      "name": "Salmon",
+      "sub": "Passive",
+      "href": "/2/enemies/salmon",
+      "image": "/images/d2/renders/thumb/salmon.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Salmon",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/salmon.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Scavenger",
+      "sub": "Hostile",
+      "href": "/2/enemies/scavenger",
+      "image": "/images/d2/renders/thumb/scavenger.png",
+      "values": [
+        [
+          "HEALTH",
+          "50"
+        ],
+        [
+          "DAMAGE",
+          "5"
+        ],
+        [
+          "POISE",
+          "25"
+        ],
+        [
+          "SOULS",
+          "8"
+        ],
+        [
+          "WEAK TO",
+          "Fire ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Scavenger",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/scavenger.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "50 health",
+          "Boomerang explosion: 5 damage",
+          "Weak to fire"
+        ]
+      }
+    },
+    {
+      "name": "Scorched",
+      "sub": "Hostile",
+      "href": "/2/enemies/scorched",
+      "image": "/images/d2/renders/thumb/scorched.png",
+      "values": [
+        [
+          "HEALTH",
+          "33"
+        ],
+        [
+          "DAMAGE",
+          "5"
+        ],
+        [
+          "POISE",
+          "28"
+        ],
+        [
+          "SOULS",
+          "8"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.5, Frost ×1.25"
+        ]
+      ],
+      "tip": {
+        "n": "Scorched",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/scorched.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "33 health",
+          "Ranged attack: 5 damage",
+          "Weak to blast, frost"
+        ]
+      }
+    },
+    {
+      "name": "Sculk Cube",
+      "sub": "Hostile",
+      "href": "/2/enemies/sculk-cube",
+      "image": "/images/d2/renders/thumb/sculk-cube.png",
+      "values": [
+        [
+          "HEALTH",
+          "15"
+        ],
+        [
+          "DAMAGE",
+          "7"
+        ],
+        [
+          "POISE",
+          "50"
+        ],
+        [
+          "SOULS",
+          "20"
+        ],
+        [
+          "WEAK TO",
+          "Fire ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Sculk Cube",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/sculk-cube.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "15 health",
+          "Light attack: 7 damage",
+          "Weak to fire"
+        ]
+      }
+    },
+    {
+      "name": "Sculk Monstrosity",
+      "sub": "Boss",
+      "href": "/2/enemies/sculk-monstrosity",
+      "image": "/images/d2/renders/thumb/sculk-monstrosity.png",
+      "values": [
+        [
+          "HEALTH",
+          "2,000"
+        ],
+        [
+          "DAMAGE",
+          "35"
+        ],
+        [
+          "POISE",
+          "1,200"
+        ],
+        [
+          "SOULS",
+          "200"
+        ],
+        [
+          "WEAK TO",
+          "Fire ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Sculk Monstrosity",
+        "k": "Boss",
+        "i": "/images/d2/renders/thumb/sculk-monstrosity.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "2,000 health",
+          "Sculk projectile: 20 damage",
+          "Weak to fire",
+          "Story quest: A Monstrosity in the Meadow"
+        ]
+      }
+    },
+    {
+      "name": "Seedling",
+      "sub": "Hostile",
+      "href": "/2/enemies/seedling",
+      "image": "/images/d2/renders/thumb/seedling.png",
+      "values": [
+        [
+          "HEALTH",
+          "30"
+        ],
+        [
+          "DAMAGE",
+          "4"
+        ],
+        [
+          "POISE",
+          "35"
+        ],
+        [
+          "SOULS",
+          "4"
+        ],
+        [
+          "WEAK TO",
+          "Elemental ×1.25"
+        ]
+      ],
+      "tip": {
+        "n": "Seedling",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/seedling.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "30 health",
+          "Bite: 4 damage",
+          "Weak to elemental"
+        ]
+      }
+    },
+    {
+      "name": "Sentinel",
+      "sub": "Hostile",
+      "href": "/2/enemies/sentinel",
+      "image": "/images/d2/renders/thumb/sentinel.png",
+      "values": [
+        [
+          "HEALTH",
+          "37"
+        ],
+        [
+          "DAMAGE",
+          "2"
+        ],
+        [
+          "POISE",
+          "55"
+        ],
+        [
+          "SOULS",
+          "8"
+        ],
+        [
+          "WEAK TO",
+          "Elemental ×1.25"
+        ]
+      ],
+      "tip": {
+        "n": "Sentinel",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/sentinel.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "37 health",
+          "Quill storm: 2 damage",
+          "Weak to elemental"
+        ]
+      }
+    },
+    {
+      "name": "Sheep",
+      "sub": "Passive",
+      "href": "/2/enemies/sheep",
+      "image": "/images/d2/renders/thumb/sheep.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Sheep",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/sheep.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Singer",
+      "sub": "Passive",
+      "href": "/2/enemies/singer",
+      "image": "/images/d2/renders/thumb/singer.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Singer",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/singer.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Skeleton",
+      "sub": "Hostile",
+      "href": "/2/enemies/skeleton",
+      "image": "/images/d2/renders/thumb/skeleton.png",
+      "values": [
+        [
+          "HEALTH",
+          "7"
+        ],
+        [
+          "DAMAGE",
+          "5"
+        ],
+        [
+          "POISE",
+          "28"
+        ],
+        [
+          "SOULS",
+          "4"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Skeleton",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/skeleton.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "7 health",
+          "Ranged attack: 5 damage",
+          "Weak to blast"
+        ]
+      }
+    },
+    {
+      "name": "Slabber",
+      "sub": "Passive",
+      "href": "/2/enemies/slabber",
+      "image": "/images/d2/renders/thumb/slabber.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Slabber",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/slabber.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Slime",
+      "sub": "Hostile",
+      "href": "/2/enemies/slime",
+      "image": "/images/d2/renders/thumb/slime.png",
+      "values": [
+        [
+          "HEALTH",
+          "26"
+        ],
+        [
+          "DAMAGE",
+          "8"
+        ],
+        [
+          "POISE",
+          "40"
+        ],
+        [
+          "SOULS",
+          "4"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.2, Melee ×1.3"
+        ]
+      ],
+      "tip": {
+        "n": "Slime",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/slime.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "26 health",
+          "Light attack: 8 damage",
+          "Weak to blast, melee"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Baby Zombie",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-baby-zombie",
+      "image": "/images/d2/renders/thumb/soul-corrupted-baby-zombie.png",
+      "values": [
+        [
+          "HEALTH",
+          "133"
+        ],
+        [
+          "DAMAGE",
+          "7"
+        ],
+        [
+          "POISE",
+          "133"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Baby Zombie",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/soul-corrupted-baby-zombie.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "133 health",
+          "Light attack: 7 damage",
+          "Weak to blast"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Bloombud",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-bloombud",
+      "image": "/images/d2/renders/thumb/soul-corrupted-bloombud.png",
+      "values": [
+        [
+          "HEALTH",
+          "220"
+        ],
+        [
+          "DAMAGE",
+          "8"
+        ],
+        [
+          "POISE",
+          "220"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Poison ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Bloombud",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/soul-corrupted-bloombud.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "220 health",
+          "Light attack: 8 damage",
+          "Weak to poison"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Cave Spider",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-cave-spider",
+      "image": "/images/d2/renders/thumb/cave-spider.png",
+      "values": [
+        [
+          "HEALTH",
+          "200"
+        ],
+        [
+          "DAMAGE",
+          "10"
+        ],
+        [
+          "POISE",
+          "200"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Lightning ×2"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Cave Spider",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/cave-spider.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "200 health",
+          "Swipe: 10 damage",
+          "Weak to lightning"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Chicken Jockey",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-chicken-jockey",
+      "image": "/images/d2/renders/thumb/soul-corrupted-chicken-jockey.png",
+      "values": [
+        [
+          "HEALTH",
+          "200"
+        ],
+        [
+          "DAMAGE",
+          "15"
+        ],
+        [
+          "POISE",
+          "200"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Chicken Jockey",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/soul-corrupted-chicken-jockey.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "200 health",
+          "Light attack: 15 damage",
+          "Weak to blast"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Creeper",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-creeper",
+      "image": "/images/d2/renders/thumb/charged-creeper.png",
+      "values": [
+        [
+          "HEALTH",
+          "166"
+        ],
+        [
+          "DAMAGE",
+          "50"
+        ],
+        [
+          "POISE",
+          "200"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Creeper",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/charged-creeper.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "166 health",
+          "Ignition: 50 damage"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Dartback",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-dartback",
+      "image": "/images/d2/renders/thumb/soul-corrupted-dartback.png",
+      "values": [
+        [
+          "HEALTH",
+          "1,400"
+        ],
+        [
+          "DAMAGE",
+          "25"
+        ],
+        [
+          "POISE",
+          "1,400"
+        ],
+        [
+          "SOULS",
+          "75"
+        ],
+        [
+          "WEAK TO",
+          "Elemental ×1.25"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Dartback",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/soul-corrupted-dartback.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "1,400 health",
+          "Headbutt: 10 damage",
+          "Weak to elemental"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Enchanter",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-enchanter",
+      "image": "/images/d2/renders/thumb/soul-corrupted-enchanter.png",
+      "values": [
+        [
+          "HEALTH",
+          "300"
+        ],
+        [
+          "DAMAGE",
+          "10"
+        ],
+        [
+          "POISE",
+          "300"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.25, Melee ×1.2"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Enchanter",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/soul-corrupted-enchanter.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "300 health",
+          "Light attack: 7 damage",
+          "Weak to blast, melee",
+          "Story quest: Lost Harmonies"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Enderman",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-enderman",
+      "image": "/images/d2/renders/thumb/soul-corrupted-enderman.png",
+      "values": [
+        [
+          "HEALTH",
+          "900"
+        ],
+        [
+          "DAMAGE",
+          "25"
+        ],
+        [
+          "POISE",
+          "650"
+        ],
+        [
+          "SOULS",
+          "75"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.25, Soul ×1.15"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Enderman",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/soul-corrupted-enderman.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "900 health",
+          "Left swing (moving): 18 damage",
+          "Weak to blast, soul"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Evoker",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-evoker",
+      "image": "/images/d2/renders/thumb/evoker.png",
+      "values": [
+        [
+          "HEALTH",
+          "1,000"
+        ],
+        [
+          "DAMAGE",
+          "15"
+        ],
+        [
+          "POISE",
+          "1,000"
+        ],
+        [
+          "SOULS",
+          "75"
+        ],
+        [
+          "WEAK TO",
+          "Melee ×1.25"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Evoker",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/evoker.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "1,000 health",
+          "Fang trap: 15 damage",
+          "Weak to melee",
+          "Story quest: The Illagers from the Rift"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Excavator",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-excavator",
+      "image": "/images/d2/renders/thumb/soul-corrupted-excavator.png",
+      "values": [
+        [
+          "HEALTH",
+          "300"
+        ],
+        [
+          "DAMAGE",
+          "16"
+        ],
+        [
+          "POISE",
+          "350"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Soul ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Excavator",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/soul-corrupted-excavator.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "300 health",
+          "Light attack: 9 damage",
+          "Weak to soul"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Flame Construct",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-flame-construct",
+      "image": "/images/d2/renders/thumb/soul-corrupted-flame-construct.png",
+      "values": [
+        [
+          "HEALTH",
+          "266"
+        ],
+        [
+          "DAMAGE",
+          "30"
+        ],
+        [
+          "POISE",
+          "266"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Frost ×2"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Flame Construct",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/soul-corrupted-flame-construct.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "266 health",
+          "Fire burst: 30 damage",
+          "Weak to frost"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Fusefly",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-fusefly",
+      "image": "/images/d2/renders/thumb/soul-corrupted-fusefly.png",
+      "values": [
+        [
+          "HEALTH",
+          "200"
+        ],
+        [
+          "DAMAGE",
+          "15"
+        ],
+        [
+          "POISE",
+          "200"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Melee ×1.2"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Fusefly",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/soul-corrupted-fusefly.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "200 health",
+          "Stage two attack: 13 damage",
+          "Weak to melee"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Geomancer",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-geomancer",
+      "image": "/images/d2/renders/thumb/soul-corrupted-geomancer.png",
+      "values": [
+        [
+          "HEALTH",
+          "330"
+        ],
+        [
+          "DAMAGE",
+          "25"
+        ],
+        [
+          "POISE",
+          "133"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Geomancer",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/soul-corrupted-geomancer.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "330 health",
+          "Punch: 12 damage",
+          "Weak to blast",
+          "Story quest: The Illagers from the Rift"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Harmonizer",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-harmonizer",
+      "image": "/images/d2/renders/thumb/harmonizer.png",
+      "values": [
+        [
+          "HEALTH",
+          "1,300"
+        ],
+        [
+          "DAMAGE",
+          "30"
+        ],
+        [
+          "POISE",
+          "1,300"
+        ],
+        [
+          "SOULS",
+          "75"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.25, Melee ×1.1"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Harmonizer",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/harmonizer.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "1,300 health",
+          "Swipe: 20 damage",
+          "Weak to blast, melee"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Hunter",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-hunter",
+      "image": "/images/d2/renders/thumb/hunter.png",
+      "values": [
+        [
+          "HEALTH",
+          "300"
+        ],
+        [
+          "DAMAGE",
+          "40"
+        ],
+        [
+          "POISE",
+          "300"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Lightning ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Hunter",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/hunter.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "300 health",
+          "Soul stomp: 5 damage",
+          "Weak to lightning"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Hurler",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-hurler",
+      "image": "/images/d2/renders/thumb/soul-corrupted-hurler.png",
+      "values": [
+        [
+          "HEALTH",
+          "275"
+        ],
+        [
+          "DAMAGE",
+          "15"
+        ],
+        [
+          "POISE",
+          "275"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.2"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Hurler",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/soul-corrupted-hurler.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "275 health",
+          "Light attack: 15 damage",
+          "Weak to blast"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Husk",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-husk",
+      "image": "/images/d2/renders/thumb/husk.png",
+      "values": [
+        [
+          "HEALTH",
+          "250"
+        ],
+        [
+          "DAMAGE",
+          "16"
+        ],
+        [
+          "POISE",
+          "250"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Husk",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/husk.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "250 health",
+          "Light attack: 16 damage",
+          "Weak to blast"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Nester",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-nester",
+      "image": "/images/d2/renders/thumb/nester.png",
+      "values": [
+        [
+          "HEALTH",
+          "233"
+        ],
+        [
+          "DAMAGE",
+          "9"
+        ],
+        [
+          "POISE",
+          "250"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Elemental ×1.25"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Nester",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/nester.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "233 health",
+          "Bite: 9 damage",
+          "Weak to elemental"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Pillager",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-pillager",
+      "image": "/images/d2/renders/thumb/pillager.png",
+      "values": [
+        [
+          "HEALTH",
+          "183"
+        ],
+        [
+          "DAMAGE",
+          "10"
+        ],
+        [
+          "POISE",
+          "183"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Soul ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Pillager",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/pillager.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "183 health",
+          "Ranged attack: 10 damage",
+          "Weak to soul",
+          "Story quest: Lost Harmonies"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Pollinator",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-pollinator",
+      "image": "/images/d2/renders/thumb/pollinator.png",
+      "values": [
+        [
+          "HEALTH",
+          "233"
+        ],
+        [
+          "DAMAGE",
+          "12"
+        ],
+        [
+          "POISE",
+          "250"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Elemental ×1.25"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Pollinator",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/pollinator.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "233 health",
+          "Tongue jab: 10 damage",
+          "Weak to elemental"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Ravager",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-ravager",
+      "image": "/images/d2/renders/thumb/soul-corrupted-ravager.png",
+      "values": [
+        [
+          "HEALTH",
+          "400"
+        ],
+        [
+          "DAMAGE",
+          "15"
+        ],
+        [
+          "POISE",
+          "400"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Ravager",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/soul-corrupted-ravager.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "400 health",
+          "Bite: 13 damage",
+          "Story quest: The Illagers from the Rift"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Roamroot",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-roamroot",
+      "image": "/images/d2/renders/thumb/soul-corrupted-roamroot.png",
+      "values": [
+        [
+          "HEALTH",
+          "233"
+        ],
+        [
+          "DAMAGE",
+          "10"
+        ],
+        [
+          "POISE",
+          "233"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Poison ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Roamroot",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/soul-corrupted-roamroot.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "233 health",
+          "Ranged attack: 8 damage",
+          "Weak to poison"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Royal Guard",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-royal-guard",
+      "image": "/images/d2/renders/thumb/royal-guard.png",
+      "values": [
+        [
+          "HEALTH",
+          "366"
+        ],
+        [
+          "DAMAGE",
+          "17"
+        ],
+        [
+          "POISE",
+          "366"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Lightning ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Royal Guard",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/royal-guard.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "366 health",
+          "Light attack (shield up): 11 damage",
+          "Weak to lightning",
+          "Story quest: The Illagers from the Rift"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Scavenger",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-scavenger",
+      "image": "/images/d2/renders/thumb/scavenger.png",
+      "values": [
+        [
+          "HEALTH",
+          "266"
+        ],
+        [
+          "DAMAGE",
+          "5"
+        ],
+        [
+          "POISE",
+          "266"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Fire ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Scavenger",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/scavenger.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "266 health",
+          "Boomerang explosion: 5 damage",
+          "Weak to fire"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Seedling",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-seedling",
+      "image": "/images/d2/renders/thumb/soul-corrupted-seedling.png",
+      "values": [
+        [
+          "HEALTH",
+          "200"
+        ],
+        [
+          "DAMAGE",
+          "6"
+        ],
+        [
+          "POISE",
+          "200"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Elemental ×1.25"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Seedling",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/soul-corrupted-seedling.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "200 health",
+          "Bite: 6 damage",
+          "Weak to elemental"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Sentinel",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-sentinel",
+      "image": "/images/d2/renders/thumb/soul-corrupted-sentinel.png",
+      "values": [
+        [
+          "HEALTH",
+          "233"
+        ],
+        [
+          "DAMAGE",
+          "3"
+        ],
+        [
+          "POISE",
+          "233"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Elemental ×1.25"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Sentinel",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/soul-corrupted-sentinel.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "233 health",
+          "Quill storm: 3 damage",
+          "Weak to elemental"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Skeleton",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-skeleton",
+      "image": "/images/d2/renders/thumb/skeleton.png",
+      "values": [
+        [
+          "HEALTH",
+          "200"
+        ],
+        [
+          "DAMAGE",
+          "7"
+        ],
+        [
+          "POISE",
+          "200"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Skeleton",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/skeleton.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "200 health",
+          "Ranged attack: 7 damage",
+          "Weak to blast"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Slime",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-slime",
+      "image": "/images/d2/renders/thumb/slime.png",
+      "values": [
+        [
+          "HEALTH",
+          "133"
+        ],
+        [
+          "DAMAGE",
+          "11"
+        ],
+        [
+          "POISE",
+          "133"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.2, Melee ×1.3"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Slime",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/slime.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "133 health",
+          "Light attack: 11 damage",
+          "Weak to blast, melee"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Spider",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-spider",
+      "image": "/images/d2/renders/thumb/soul-corrupted-spider.png",
+      "values": [
+        [
+          "HEALTH",
+          "200"
+        ],
+        [
+          "DAMAGE",
+          "8"
+        ],
+        [
+          "POISE",
+          "200"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Spider",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/soul-corrupted-spider.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "200 health",
+          "Swipe: 8 damage"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Spider Jockey",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-spider-jockey",
+      "image": "/images/d2/renders/thumb/soul-corrupted-spider-jockey.png",
+      "values": [
+        [
+          "HEALTH",
+          "233"
+        ],
+        [
+          "DAMAGE",
+          "18"
+        ],
+        [
+          "POISE",
+          "233"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Spider Jockey",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/soul-corrupted-spider-jockey.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "233 health",
+          "Ranged attack: 10 damage",
+          "Weak to blast",
+          "Story quest: The Missing Note Blocks"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Sprout",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-sprout",
+      "image": "/images/d2/renders/thumb/sprout.png",
+      "values": [
+        [
+          "HEALTH",
+          "166"
+        ],
+        [
+          "DAMAGE",
+          "5"
+        ],
+        [
+          "POISE",
+          "166"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Sprout",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/sprout.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "166 health",
+          "Swipe: 5 damage",
+          "Weak to blast"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Stalker",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-stalker",
+      "image": "/images/d2/renders/thumb/stalker.png",
+      "values": [
+        [
+          "HEALTH",
+          "266"
+        ],
+        [
+          "DAMAGE",
+          "12"
+        ],
+        [
+          "POISE",
+          "266"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Fire ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Stalker",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/stalker.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "266 health",
+          "Light attack: 12 damage",
+          "Weak to fire"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Trapper",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-trapper",
+      "image": "/images/d2/renders/thumb/trapper.png",
+      "values": [
+        [
+          "HEALTH",
+          "266"
+        ],
+        [
+          "DAMAGE",
+          "12"
+        ],
+        [
+          "POISE",
+          "266"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Lightning ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Trapper",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/trapper.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "266 health",
+          "Soul prison: 10 damage",
+          "Weak to lightning"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Vanguard",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-vanguard",
+      "image": "/images/d2/renders/thumb/soul-corrupted-vanguard.png",
+      "values": [
+        [
+          "HEALTH",
+          "400"
+        ],
+        [
+          "DAMAGE",
+          "15"
+        ],
+        [
+          "POISE",
+          "450"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Lightning ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Vanguard",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/soul-corrupted-vanguard.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "400 health",
+          "Spear thrust (shield up): 13 damage",
+          "Weak to lightning"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Vex",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-vex",
+      "image": "/images/d2/renders/thumb/soul-corrupted-vex.png",
+      "values": [
+        [
+          "HEALTH",
+          "33"
+        ],
+        [
+          "DAMAGE",
+          "5"
+        ],
+        [
+          "POISE",
+          "25"
+        ],
+        [
+          "SOULS",
+          "10"
+        ],
+        [
+          "WEAK TO",
+          "Ranged ×1.15"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Vex",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/soul-corrupted-vex.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "33 health",
+          "Light attack: 5 damage",
+          "Weak to ranged"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Vindicator",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-vindicator",
+      "image": "/images/d2/renders/thumb/soul-corrupted-vindicator.png",
+      "values": [
+        [
+          "HEALTH",
+          "233"
+        ],
+        [
+          "DAMAGE",
+          "12"
+        ],
+        [
+          "POISE",
+          "233"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Soul ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Vindicator",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/soul-corrupted-vindicator.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "233 health",
+          "Light attack: 10 damage",
+          "Weak to soul",
+          "Story quest: A Monstrosity in the Meadow"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Warden",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-warden",
+      "image": "/images/d2/renders/thumb/warden.png",
+      "values": [
+        [
+          "HEALTH",
+          "1,500"
+        ],
+        [
+          "DAMAGE",
+          "25"
+        ],
+        [
+          "POISE",
+          "1,500"
+        ],
+        [
+          "SOULS",
+          "75"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.15"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Warden",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/warden.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "1,500 health",
+          "Single arm swing: 20 damage",
+          "Weak to blast"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Witch",
+      "sub": "Boss",
+      "href": "/2/enemies/soul-corrupted-witch",
+      "image": "/images/d2/renders/thumb/witch.png",
+      "values": [
+        [
+          "HEALTH",
+          "1,200"
+        ],
+        [
+          "DAMAGE",
+          "15"
+        ],
+        [
+          "POISE",
+          "700"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.15"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Witch",
+        "k": "Boss",
+        "i": "/images/d2/renders/thumb/witch.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "1,200 health",
+          "Poison potion: 3 damage",
+          "Weak to blast",
+          "Story quest: Corruption in the Woods"
+        ]
+      }
+    },
+    {
+      "name": "Soul Corrupted Zombie",
+      "sub": "Soul corrupted",
+      "href": "/2/enemies/soul-corrupted-zombie",
+      "image": "/images/d2/renders/thumb/soul-corrupted-zombie.png",
+      "values": [
+        [
+          "HEALTH",
+          "200"
+        ],
+        [
+          "DAMAGE",
+          "10"
+        ],
+        [
+          "POISE",
+          "200"
+        ],
+        [
+          "SOULS",
+          "50"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Soul Corrupted Zombie",
+        "k": "Soul corrupted",
+        "i": "/images/d2/renders/thumb/soul-corrupted-zombie.png",
+        "g": 2,
+        "fc": "#ff7e2f",
+        "f": [
+          "200 health",
+          "Light attack: 10 damage",
+          "Weak to blast",
+          "Story quest: The Illagers from the Rift"
+        ]
+      }
+    },
+    {
+      "name": "Spider",
+      "sub": "Hostile",
+      "href": "/2/enemies/spider",
+      "image": "/images/d2/renders/thumb/spider.png",
+      "values": [
+        [
+          "HEALTH",
+          "15"
+        ],
+        [
+          "DAMAGE",
+          "10"
+        ],
+        [
+          "POISE",
+          "40"
+        ],
+        [
+          "SOULS",
+          "4"
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Spider",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/spider.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "15 health",
+          "Swipe: 10 damage"
+        ]
+      }
+    },
+    {
+      "name": "Spider Jockey",
+      "sub": "Hostile",
+      "href": "/2/enemies/spider-jockey",
+      "image": "/images/d2/renders/thumb/spider-jockey.png",
+      "values": [
+        [
+          "HEALTH",
+          "32"
+        ],
+        [
+          "DAMAGE",
+          "15"
+        ],
+        [
+          "POISE",
+          "60"
+        ],
+        [
+          "SOULS",
+          "4"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Spider Jockey",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/spider-jockey.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "32 health",
+          "Ranged attack: 8 damage",
+          "Weak to blast"
+        ]
+      }
+    },
+    {
+      "name": "Sprout",
+      "sub": "Hostile",
+      "href": "/2/enemies/sprout",
+      "image": "/images/d2/renders/thumb/sprout.png",
+      "values": [
+        [
+          "HEALTH",
+          "32"
+        ],
+        [
+          "DAMAGE",
+          "3.2"
+        ],
+        [
+          "POISE",
+          "50"
+        ],
+        [
+          "SOULS",
+          "12"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Sprout",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/sprout.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "32 health",
+          "Swipe: 3.2 damage",
+          "Weak to blast"
+        ]
+      }
+    },
+    {
+      "name": "Squid",
+      "sub": "Passive",
+      "href": "/2/enemies/squid",
+      "image": "/images/d2/renders/thumb/squid.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Squid",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/squid.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Stalker",
+      "sub": "Hostile",
+      "href": "/2/enemies/stalker",
+      "image": "/images/d2/renders/thumb/stalker.png",
+      "values": [
+        [
+          "HEALTH",
+          "60"
+        ],
+        [
+          "DAMAGE",
+          "11"
+        ],
+        [
+          "POISE",
+          "28"
+        ],
+        [
+          "SOULS",
+          "8"
+        ],
+        [
+          "WEAK TO",
+          "Fire ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Stalker",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/stalker.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "60 health",
+          "Light attack: 11 damage",
+          "Weak to fire"
+        ]
+      }
+    },
+    {
+      "name": "Stray",
+      "sub": "Hostile",
+      "href": "/2/enemies/stray",
+      "image": "/images/d2/renders/thumb/stray.png",
+      "values": [
+        [
+          "HEALTH",
+          "28"
+        ],
+        [
+          "DAMAGE",
+          "5"
+        ],
+        [
+          "POISE",
+          "28"
+        ],
+        [
+          "SOULS",
+          "8"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.5, Fire ×1.25"
+        ]
+      ],
+      "tip": {
+        "n": "Stray",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/stray.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "28 health",
+          "Ranged attack: 5 damage",
+          "Weak to blast, fire"
+        ]
+      }
+    },
+    {
+      "name": "The Prime Enchanter",
+      "sub": "Boss",
+      "href": "/2/enemies/the-prime-enchanter",
+      "image": "/images/d2/renders/thumb/the-prime-enchanter.png",
+      "values": [
+        [
+          "HEALTH",
+          "1,500"
+        ],
+        [
+          "DAMAGE",
+          "35"
+        ],
+        [
+          "POISE",
+          "700"
+        ],
+        [
+          "SOULS",
+          "200"
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "The Prime Enchanter",
+        "k": "Boss",
+        "i": "/images/d2/renders/thumb/the-prime-enchanter.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "1,500 health",
+          "Lightning slam: 35 damage",
+          "Story quest: Hiking Frozen Highlands"
+        ]
+      }
+    },
+    {
+      "name": "The Supreme Evoker",
+      "sub": "Boss",
+      "href": "/2/enemies/the-supreme-evoker",
+      "image": "/images/d2/renders/thumb/the-supreme-evoker.png",
+      "values": [
+        [
+          "HEALTH",
+          "1,000"
+        ],
+        [
+          "DAMAGE",
+          "15"
+        ],
+        [
+          "POISE",
+          "650"
+        ],
+        [
+          "SOULS",
+          "200"
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "The Supreme Evoker",
+        "k": "Boss",
+        "i": "/images/d2/renders/thumb/the-supreme-evoker.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "1,000 health",
+          "Enchanted projectiles: 8 damage",
+          "Story quest: The Final Souldown"
+        ]
+      }
+    },
+    {
+      "name": "Trapper",
+      "sub": "Hostile",
+      "href": "/2/enemies/trapper",
+      "image": "/images/d2/renders/thumb/trapper.png",
+      "values": [
+        [
+          "HEALTH",
+          "45"
+        ],
+        [
+          "DAMAGE",
+          "13"
+        ],
+        [
+          "POISE",
+          "15"
+        ],
+        [
+          "SOULS",
+          "12"
+        ],
+        [
+          "WEAK TO",
+          "Lightning ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Trapper",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/trapper.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "45 health",
+          "Soul prison: 10 damage",
+          "Weak to lightning"
+        ]
+      }
+    },
+    {
+      "name": "Tuner",
+      "sub": "Passive",
+      "href": "/2/enemies/tuner",
+      "image": "/images/d2/renders/thumb/tuner.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Tuner",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/tuner.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Twisted Warden",
+      "sub": "Boss",
+      "href": "/2/enemies/twisted-warden",
+      "image": "/images/d2/renders/thumb/twisted-warden.png",
+      "values": [
+        [
+          "HEALTH",
+          "1,750"
+        ],
+        [
+          "DAMAGE",
+          "32"
+        ],
+        [
+          "POISE",
+          "800"
+        ],
+        [
+          "SOULS",
+          "200"
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Twisted Warden",
+        "k": "Boss",
+        "i": "/images/d2/renders/thumb/twisted-warden.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "1,750 health",
+          "Initial swipe: 18 damage",
+          "Story quest: Down into the Deep Dark"
+        ]
+      }
+    },
+    {
+      "name": "Vanguard",
+      "sub": "Hostile",
+      "href": "/2/enemies/vanguard",
+      "image": "/images/d2/renders/thumb/vanguard.png",
+      "values": [
+        [
+          "HEALTH",
+          "72"
+        ],
+        [
+          "DAMAGE",
+          "15"
+        ],
+        [
+          "POISE",
+          "100"
+        ],
+        [
+          "SOULS",
+          "8"
+        ],
+        [
+          "WEAK TO",
+          "Lightning ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Vanguard",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/vanguard.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "72 health",
+          "Spear thrust (shield up): 10 damage",
+          "Weak to lightning"
+        ]
+      }
+    },
+    {
+      "name": "Vex",
+      "sub": "Hostile",
+      "href": "/2/enemies/vex",
+      "image": "/images/d2/renders/thumb/vex.png",
+      "values": [
+        [
+          "HEALTH",
+          "15"
+        ],
+        [
+          "DAMAGE",
+          "5"
+        ],
+        [
+          "POISE",
+          "25"
+        ],
+        [
+          "SOULS",
+          "4"
+        ],
+        [
+          "WEAK TO",
+          "Ranged ×1.15"
+        ]
+      ],
+      "tip": {
+        "n": "Vex",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/vex.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "15 health",
+          "Light attack: 5 damage",
+          "Weak to ranged"
+        ]
+      }
+    },
+    {
+      "name": "Vindicator",
+      "sub": "Hostile",
+      "href": "/2/enemies/vindicator",
+      "image": "/images/d2/renders/thumb/vindicator.png",
+      "values": [
+        [
+          "HEALTH",
+          "25"
+        ],
+        [
+          "DAMAGE",
+          "7.5"
+        ],
+        [
+          "POISE",
+          "25"
+        ],
+        [
+          "SOULS",
+          "4"
+        ],
+        [
+          "WEAK TO",
+          "Soul ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Vindicator",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/vindicator.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "25 health",
+          "Light attack: 6 damage",
+          "Weak to soul"
+        ]
+      }
+    },
+    {
+      "name": "Warden",
+      "sub": "Miniboss",
+      "href": "/2/enemies/warden",
+      "image": "/images/d2/renders/thumb/warden.png",
+      "values": [
+        [
+          "HEALTH",
+          "760"
+        ],
+        [
+          "DAMAGE",
+          "25"
+        ],
+        [
+          "POISE",
+          "750"
+        ],
+        [
+          "SOULS",
+          "75"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.15"
+        ]
+      ],
+      "tip": {
+        "n": "Warden",
+        "k": "Miniboss",
+        "i": "/images/d2/renders/thumb/warden.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "760 health",
+          "Single arm swing: 20 damage",
+          "Weak to blast",
+          "Story quest: Down into the Deep Dark"
+        ]
+      }
+    },
+    {
+      "name": "Wisp",
+      "sub": "Passive",
+      "href": "/2/enemies/wisp",
+      "image": "/images/d2/renders/thumb/wisp.png",
+      "values": [
+        [
+          "HEALTH",
+          ""
+        ],
+        [
+          "DAMAGE",
+          ""
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Wisp",
+        "k": "Passive",
+        "i": "/images/d2/renders/thumb/wisp.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": []
+      }
+    },
+    {
+      "name": "Witch",
+      "sub": "Miniboss",
+      "href": "/2/enemies/witch",
+      "image": "/images/d2/renders/thumb/witch.png",
+      "values": [
+        [
+          "HEALTH",
+          "460"
+        ],
+        [
+          "DAMAGE",
+          "15"
+        ],
+        [
+          "POISE",
+          "300"
+        ],
+        [
+          "SOULS",
+          "75"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.15"
+        ]
+      ],
+      "tip": {
+        "n": "Witch",
+        "k": "Miniboss",
+        "i": "/images/d2/renders/thumb/witch.png",
+        "c": "var(--gold)",
+        "g": 2,
+        "fc": "#e6b054",
+        "f": [
+          "460 health",
+          "Poison potion: 3 damage",
+          "Weak to blast"
+        ]
+      }
+    },
+    {
+      "name": "Wobble",
+      "sub": "Companion",
+      "href": "/2/enemies/wobble",
+      "image": "/images/d2/renders/thumb/wobble.png",
+      "values": [
+        [
+          "HEALTH",
+          "50"
+        ],
+        [
+          "DAMAGE",
+          "3"
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Wobble",
+        "k": "Companion",
+        "i": "/images/d2/renders/thumb/wobble.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "50 health",
+          "Damage ripple: 3 damage"
+        ]
+      }
+    },
+    {
+      "name": "Wolf",
+      "sub": "Companion",
+      "href": "/2/enemies/wolf",
+      "image": "/images/d2/renders/thumb/wolf-2.png",
+      "values": [
+        [
+          "HEALTH",
+          "130"
+        ],
+        [
+          "DAMAGE",
+          "20"
+        ],
+        [
+          "POISE",
+          ""
+        ],
+        [
+          "SOULS",
+          ""
+        ],
+        [
+          "WEAK TO",
+          ""
+        ]
+      ],
+      "tip": {
+        "n": "Wolf",
+        "k": "Companion",
+        "i": "/images/d2/renders/thumb/wolf-2.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "130 health",
+          "Slam: 20 damage"
+        ]
+      }
+    },
+    {
+      "name": "Zombie",
+      "sub": "Hostile",
+      "href": "/2/enemies/zombie",
+      "image": "/images/d2/renders/thumb/zombie.png",
+      "values": [
+        [
+          "HEALTH",
+          "8"
+        ],
+        [
+          "DAMAGE",
+          "6"
+        ],
+        [
+          "POISE",
+          "28"
+        ],
+        [
+          "SOULS",
+          "4"
+        ],
+        [
+          "WEAK TO",
+          "Blast ×1.5"
+        ]
+      ],
+      "tip": {
+        "n": "Zombie",
+        "k": "Hostile",
+        "i": "/images/d2/renders/thumb/zombie.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "8 health",
+          "Light attack: 6 damage",
+          "Weak to blast"
+        ]
+      }
+    }
+  ]
+}

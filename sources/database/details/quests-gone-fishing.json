@@ -1,0 +1,147 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Frozen Highlands"
+    ],
+    [
+      "Level",
+      "33"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "Hiking Frozen Highlands"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "550"
+    ],
+    [
+      "Emeralds",
+      "5 to 90, 15 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Head to the ice caves",
+      "map": "/2/map#p=6943,4591"
+    },
+    {
+      "text": "Find the ice caves",
+      "map": "/2/map#p=6948,4737"
+    },
+    {
+      "text": "Open the gate",
+      "map": "/2/map#p=7576,5059"
+    },
+    {
+      "text": "Find the broken shipwreck",
+      "map": "/2/map#p=6834,5223"
+    },
+    {
+      "text": "Search for the spare key",
+      "map": ""
+    },
+    {
+      "text": "Defeat the illagers",
+      "map": ""
+    },
+    {
+      "text": "Pick up the key",
+      "map": ""
+    },
+    {
+      "text": "Return to the ice caves",
+      "map": "/2/map#p=7560,5062"
+    },
+    {
+      "text": "Unlock the gate",
+      "map": "/2/map#p=7576,5059"
+    },
+    {
+      "text": "Enter the ice caves",
+      "map": ""
+    },
+    {
+      "text": "Find the fishing equipment",
+      "map": ""
+    },
+    {
+      "text": "Defeat the ambush",
+      "map": ""
+    },
+    {
+      "text": "Collect the fishing equipment any order",
+      "map": ""
+    },
+    {
+      "text": "Return to the Fisher",
+      "map": "/2/map#p=6902,3983"
+    },
+    {
+      "text": "Speak to the Fisher",
+      "map": "/2/map#p=6928,3983"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map#m=quest-DEa1_S14_A"
+    },
+    {
+      "name": "Hiking Frozen Highlands",
+      "href": "/2/quests/hiking-frozen-highlands"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=6943,4591"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=6948,4737"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=7576,5059"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=6834,5223"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=7560,5062"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=7576,5059"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=6902,3983"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=6928,3983"
+    },
+    {
+      "name": "Looter's Charm",
+      "href": "/2/artifacts/looters-charm"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/gone-fishing"
+}

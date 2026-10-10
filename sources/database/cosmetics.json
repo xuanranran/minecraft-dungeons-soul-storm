@@ -1,0 +1,226 @@
+{
+  "source": "https://www.dungeons.tools/2/cosmetics",
+  "captured_at": "2026-10-10",
+  "rows": [
+    {
+      "name": "Blub Pet",
+      "sub": "Pet",
+      "href": "/2/cosmetics/blub-pet",
+      "image": "/images/d2/icons/pet/blub-pet.png",
+      "values": [
+        [
+          "WHAT IT DOES",
+          "Traveling far from its home, this lost blub will eagerly follow you wherever you go."
+        ]
+      ],
+      "tip": {
+        "n": "Blub Pet",
+        "k": "Pet",
+        "i": "/images/d2/icons/pet/blub-pet.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "Traveling far from its home, this lost blub will eagerly follow you wherever you go."
+        ]
+      }
+    },
+    {
+      "name": "Cheesy Cube Pet",
+      "sub": "Pet",
+      "href": "/2/cosmetics/cheesy-cube-pet",
+      "image": "/images/d2/icons/pet/cheesy-cube-pet.png",
+      "values": [
+        [
+          "WHAT IT DOES",
+          "Long days adventuring with this savory sidekick will have any hero asking themselves, 'Is it dungeon time... or dinner time?'"
+        ]
+      ],
+      "tip": {
+        "n": "Cheesy Cube Pet",
+        "k": "Pet",
+        "i": "/images/d2/icons/pet/cheesy-cube-pet.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "Long days adventuring with this savory sidekick will have any hero asking themselves, 'Is it dungeon time... or dinner time?'"
+        ]
+      }
+    },
+    {
+      "name": "Corrupted Creeper Cape",
+      "sub": "Cape",
+      "href": "/2/cosmetics/corrupted-creeper-cape",
+      "image": "/images/d2/icons/cape/corrupted-creeper-cape.png",
+      "values": [
+        [
+          "WHAT IT DOES",
+          "Fearsome and fashionable."
+        ]
+      ],
+      "tip": {
+        "n": "Corrupted Creeper Cape",
+        "k": "Cape",
+        "i": "/images/d2/icons/cape/corrupted-creeper-cape.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "Fearsome and fashionable."
+        ]
+      }
+    },
+    {
+      "name": "Hero Cape",
+      "sub": "Cape",
+      "href": "/2/cosmetics/hero-cape",
+      "image": "/images/d2/icons/cape/hero-cape.png",
+      "values": [
+        [
+          "WHAT IT DOES",
+          "The years have only made this trusty cape shine brighter than ever."
+        ]
+      ],
+      "tip": {
+        "n": "Hero Cape",
+        "k": "Cape",
+        "i": "/images/d2/icons/cape/hero-cape.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "The years have only made this trusty cape shine brighter than ever."
+        ]
+      }
+    },
+    {
+      "name": "Mojang Cape",
+      "sub": "Cape",
+      "href": "/2/cosmetics/mojang-cape",
+      "image": "/images/d2/icons/cape/mojang-cape.png",
+      "values": [
+        [
+          "WHAT IT DOES",
+          "Crafted with passion and perseverence."
+        ]
+      ],
+      "tip": {
+        "n": "Mojang Cape",
+        "k": "Cape",
+        "i": "/images/d2/icons/cape/mojang-cape.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "Crafted with passion and perseverence."
+        ]
+      }
+    },
+    {
+      "name": "Slice Slayer Cape",
+      "sub": "Cape",
+      "href": "/2/cosmetics/slice-slayer-cape",
+      "image": "/images/d2/icons/cape/slice-slayer-cape.png",
+      "values": [
+        [
+          "WHAT IT DOES",
+          "With a pattern that evokes memories of tastier times with friends, it now provides a measure of comfort while battling endless foes."
+        ]
+      ],
+      "tip": {
+        "n": "Slice Slayer Cape",
+        "k": "Cape",
+        "i": "/images/d2/icons/cape/slice-slayer-cape.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "With a pattern that evokes memories of tastier times with friends, it now provides a measure of comfort while battling endless foes."
+        ]
+      }
+    },
+    {
+      "name": "Soul Cape",
+      "sub": "Cape",
+      "href": "/2/cosmetics/soul-cape",
+      "image": "/images/d2/icons/cape/soul-cape.png",
+      "values": [
+        [
+          "WHAT IT DOES",
+          "A cape fit for heroes who are brave enough to face off against the Illager High Council."
+        ]
+      ],
+      "tip": {
+        "n": "Soul Cape",
+        "k": "Cape",
+        "i": "/images/d2/icons/cape/soul-cape.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "A cape fit for heroes who are brave enough to face off against the Illager High Council."
+        ]
+      }
+    },
+    {
+      "name": "Special Cape",
+      "sub": "Cape",
+      "href": "/2/cosmetics/special-cape",
+      "image": "/images/d2/icons/cape/special-cape.png",
+      "values": [
+        [
+          "WHAT IT DOES",
+          "A garment given to only the most special of heroes; now it's yours!"
+        ]
+      ],
+      "tip": {
+        "n": "Special Cape",
+        "k": "Cape",
+        "i": "/images/d2/icons/cape/special-cape.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "A garment given to only the most special of heroes; now it's yours!"
+        ]
+      }
+    },
+    {
+      "name": "Twisted Cape",
+      "sub": "Cape",
+      "href": "/2/cosmetics/twisted-cape",
+      "image": "/images/d2/icons/cape/twisted-cape.png",
+      "values": [
+        [
+          "WHAT IT DOES",
+          "Wrapping yourself in the form of this foe makes for quite the intimidating statement."
+        ]
+      ],
+      "tip": {
+        "n": "Twisted Cape",
+        "k": "Cape",
+        "i": "/images/d2/icons/cape/twisted-cape.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "Wrapping yourself in the form of this foe makes for quite the intimidating statement."
+        ]
+      }
+    },
+    {
+      "name": "Twisted Chicken Pet",
+      "sub": "Pet",
+      "href": "/2/cosmetics/twisted-chicken-pet",
+      "image": "/images/d2/icons/pet/twisted-chicken-pet.png",
+      "values": [
+        [
+          "WHAT IT DOES",
+          "Don't take a chicken into combat - unless that chicken is a clueless, soul-infused anomaly. Luckily, this one is."
+        ]
+      ],
+      "tip": {
+        "n": "Twisted Chicken Pet",
+        "k": "Pet",
+        "i": "/images/d2/icons/pet/twisted-chicken-pet.png",
+        "g": 2,
+        "fc": "#b49d89",
+        "f": [
+          "Don't take a chicken into combat - unless that chicken is a clueless, soul-infused anomaly. Luckily, this one is."
+        ]
+      }
+    }
+  ]
+}

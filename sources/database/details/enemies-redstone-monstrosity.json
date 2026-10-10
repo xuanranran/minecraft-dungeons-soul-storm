@@ -1,0 +1,199 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "2,400"
+    ],
+    [
+      "Top hit",
+      "25"
+    ],
+    [
+      "Poise",
+      "1,200"
+    ],
+    [
+      "Souls",
+      "200"
+    ],
+    [
+      "Speed",
+      "300"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Where you fight it",
+      "columns": [
+        "WHEN",
+        "QUEST",
+        "WHERE"
+      ],
+      "rows": [
+        [
+          "Story quest",
+          "The Final Souldown",
+          "Lullaby Hills"
+        ],
+        [
+          "Side quest",
+          "Lonesome in Lullaby Hills",
+          "Lullaby Hills"
+        ],
+        [
+          "Dungeon boss room",
+          "End of the procedural dungeon",
+          "Deep Dark dungeons"
+        ],
+        [
+          "Rematch",
+          "The Redstone Monstrosity Revived",
+          "Lullaby Hills"
+        ],
+        [
+          "Soul Storm, possible",
+          "20 minute storms every 40 minutes",
+          "Howling Woods, Singer's Meadow, Rainy Plains, Humbler Huskland, Lullaby Hills, Frozen Highlands, Honeycomb Fields"
+        ]
+      ]
+    },
+    {
+      "title": "Moves",
+      "columns": [
+        "MOVE",
+        "WHAT IT DOES",
+        "DAMAGE",
+        "TYPE"
+      ],
+      "rows": [
+        [
+          "Left and right swipe",
+          "Opens the combo when you're close, at most once every 6 seconds, and the right swipe always follows the left whether or not it hit. Each swing lunges forward as it lands, so roll sideways instead of backpedaling.",
+          "15",
+          ""
+        ],
+        [
+          "Fist slam",
+          "The combo's third hit keeps tracking you until the fist comes down, hits harder than the swipes and starts a redstone ripple a short way in front of it.",
+          "25",
+          ""
+        ],
+        [
+          "Redstone ripple",
+          "An expanding ring from the fist slam and the fist crush that damages you and sets you Burned. Jump or roll through it; each ring only hits you once.",
+          "15",
+          ""
+        ],
+        [
+          "Redstone projectile",
+          "When you're far away it glows and spits three redstone bolts in quick succession across a 60 degree fan. They arc in and explode on impact for 10% of your max health as Blast damage and leave you Burned, so keep strafing.",
+          "",
+          "Blast"
+        ],
+        [
+          "Charge",
+          "A wind-up and a burst of steam telegraph it, then it barrels at you for up to 3 seconds at greatly boosted speed. It turns very slowly once moving, so a late sidestep works, and a hit launches you a long way.",
+          "25",
+          ""
+        ],
+        [
+          "Fist crush",
+          "Comes only after a charge that connects: both fists slam down and send out two redstone ripples. Dodge the charge and you skip it entirely.",
+          "10",
+          ""
+        ],
+        [
+          "Redstone core",
+          "It flashes and fires four or five cores that land on fixed spots in the arena. Each core shoots three rounds of four straight bolts and then bursts, and cores can't be hit, so stay off their firing lines and clear out before they pop.",
+          "15",
+          "Fire"
+        ],
+        [
+          "Cube summon",
+          "A scream signals it, and 5 to 7 Redstone Cubes spawn around the arena, up to 15 alive at once. Each summoned cube is worth 20 souls.",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "title": "Forms",
+      "columns": [
+        "FORM",
+        "HEALTH",
+        "DAMAGE",
+        "POISE",
+        "SOULS"
+      ],
+      "rows": [
+        [
+          "Base",
+          "2,400",
+          "25",
+          "1,200",
+          "200"
+        ],
+        [
+          "Soul Storm",
+          "700",
+          "25",
+          "700",
+          "200"
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Blast damage",
+      "-25%"
+    ],
+    [
+      "Fire damage",
+      "-35%"
+    ],
+    [
+      "Frost damage",
+      "+50%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Redstone Cube",
+      "href": "/2/enemies/redstone-cube"
+    },
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    },
+    {
+      "name": "Deep Dark dungeons",
+      "href": "/2/locations/deep-dark-dungeons"
+    },
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "Humbler Huskland",
+      "href": "/2/locations/humbler-huskland"
+    },
+    {
+      "name": "Frozen Highlands",
+      "href": "/2/locations/frozen-highlands"
+    },
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/redstone-monstrosity"
+}

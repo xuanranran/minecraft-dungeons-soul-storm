@@ -1,0 +1,247 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Howling Woods"
+    ],
+    [
+      "Level",
+      "9"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "The Silence in Little Howl"
+    ],
+    [
+      "Opens",
+      "Corruption in the Woods and Part of the Pack"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "2,750"
+    ],
+    [
+      "Emeralds",
+      "12 to 216, 75 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Search for the Book of Healing Smite",
+      "map": "/2/map#p=3674,4296"
+    },
+    {
+      "text": "Collect the Book of Healing Smite",
+      "map": "/2/map#p=3679,4293"
+    },
+    {
+      "text": "Search for the Book of Piercing",
+      "map": "/2/map#p=3484,4634"
+    },
+    {
+      "text": "Collect the Book of Piercing",
+      "map": "/2/map#p=3500,4629"
+    },
+    {
+      "text": "Defeat the illagers: Vindicator restarts if you quit",
+      "map": "/2/map#p=3500,4629"
+    },
+    {
+      "text": "Search for the Book of Ancient Alchemy",
+      "map": "/2/map#p=3379,4163"
+    },
+    {
+      "text": "Enter the wishing well",
+      "map": "/2/map#p=1208,7701"
+    },
+    {
+      "text": "Search for the Book of Ancient Alchemy",
+      "map": "/2/map#p=1295,7688"
+    },
+    {
+      "text": "Investigate the empty lectern",
+      "map": "/2/map#p=1306,7688"
+    },
+    {
+      "text": "Defeat the illagers",
+      "map": ""
+    },
+    {
+      "text": "Return to the Enchantsmith",
+      "map": "/2/map#p=3999,4434"
+    },
+    {
+      "text": "Hand over the enchantment books",
+      "map": "/2/map#p=4020,4456"
+    },
+    {
+      "text": "Return to Brave Haven",
+      "map": "/2/map#p=461,4260"
+    },
+    {
+      "text": "Find the Enchantsmith's stall",
+      "map": "/2/map#p=497,4477"
+    },
+    {
+      "text": "Speak to the Enchantsmith",
+      "map": "/2/map#p=507,4492"
+    },
+    {
+      "text": "Find the dungeon entrance",
+      "map": "/2/map#p=1080,4337"
+    },
+    {
+      "text": "Enter the dungeon",
+      "map": ""
+    },
+    {
+      "text": "Search for the Book of Ancient Alchemy",
+      "map": ""
+    },
+    {
+      "text": "Collect the Book of Ancient Alchemy",
+      "map": ""
+    },
+    {
+      "text": "Survive the ambush",
+      "map": ""
+    },
+    {
+      "text": "Leave the dungeon",
+      "map": "/2/map#p=1080,4337"
+    },
+    {
+      "text": "Return to the Enchantsmith",
+      "map": "/2/map#p=497,4477"
+    },
+    {
+      "text": "Speak to the Enchantsmith",
+      "map": "/2/map#p=507,4492"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map#m=quest-CA02_C"
+    },
+    {
+      "name": "The Silence in Little Howl",
+      "href": "/2/quests/the-silence-in-little-howl"
+    },
+    {
+      "name": "Corruption in the Woods",
+      "href": "/2/quests/corruption-in-the-woods"
+    },
+    {
+      "name": "Part of the Pack",
+      "href": "/2/quests/part-of-the-pack"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3674,4296"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3679,4293"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3484,4634"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3500,4629"
+    },
+    {
+      "name": "Vindicator",
+      "href": "/2/enemies/vindicator"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3500,4629"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3379,4163"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=1208,7701"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=1295,7688"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=1306,7688"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3999,4434"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4020,4456"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=461,4260"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=497,4477"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=507,4492"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=1080,4337"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=1080,4337"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=497,4477"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=507,4492"
+    },
+    {
+      "name": "Evoker",
+      "href": "/2/enemies/evoker"
+    },
+    {
+      "name": "Piercing",
+      "href": "/2/enchantments/piercing"
+    },
+    {
+      "name": "Healing Smite",
+      "href": "/2/enchantments/healing-smite"
+    },
+    {
+      "name": "Ancient Alchemy",
+      "href": "/2/enchantments/ancient-alchemy"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/training-with-the-enchantsmith"
+}

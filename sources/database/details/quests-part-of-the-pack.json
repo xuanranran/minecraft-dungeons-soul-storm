@@ -1,0 +1,135 @@
+{
+  "parameters": [
+    [
+      "Area",
+      "Howling Woods"
+    ],
+    [
+      "Level",
+      "9"
+    ],
+    [
+      "Given by",
+      "A quest giver · on the map"
+    ],
+    [
+      "Comes after",
+      "Training with the Enchantsmith"
+    ],
+    [
+      "Repeatable",
+      "No"
+    ],
+    [
+      "XP",
+      "550"
+    ],
+    [
+      "Emeralds",
+      "5 to 90, 15 on average"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Follow the wolf",
+      "map": "/2/map#p=3595,4482"
+    },
+    {
+      "text": "Talk to the wolf",
+      "map": "/2/map#p=3557,4464"
+    },
+    {
+      "text": "Search for the captured wolves",
+      "map": "/2/map#p=3482,4608"
+    },
+    {
+      "text": "Defeat the illager poachers",
+      "map": ""
+    },
+    {
+      "text": "Free the Wolves",
+      "map": ""
+    },
+    {
+      "text": "Return to the pet wolf",
+      "map": "/2/map#p=3557,4464"
+    },
+    {
+      "text": "Follow the wolf",
+      "map": "/2/map#p=3406,4132"
+    },
+    {
+      "text": "Talk to the wolf",
+      "map": "/2/map#p=3380,4121"
+    },
+    {
+      "text": "Climb down the well",
+      "map": "/2/map#p=1194,7696"
+    },
+    {
+      "text": "Defeat the illager poachers",
+      "map": ""
+    },
+    {
+      "text": "Free the wolves any order",
+      "map": ""
+    },
+    {
+      "text": "Return to the pet wolf",
+      "map": "/2/map#p=3380,4121"
+    }
+  ],
+  "tables": [],
+  "resistances": [],
+  "links": [
+    {
+      "name": "Howling Woods",
+      "href": "/2/locations/howling-woods"
+    },
+    {
+      "name": "on the map",
+      "href": "/2/map#m=quest-FOa1_S08_A"
+    },
+    {
+      "name": "Training with the Enchantsmith",
+      "href": "/2/quests/training-with-the-enchantsmith"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3595,4482"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3557,4464"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3482,4608"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3557,4464"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3406,4132"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3380,4121"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=1194,7696"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=3380,4121"
+    },
+    {
+      "name": "Wolf Claws",
+      "href": "/2/weapons/wolf-claws"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/quests/part-of-the-pack"
+}

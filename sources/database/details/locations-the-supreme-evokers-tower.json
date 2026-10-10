@@ -1,0 +1,104 @@
+{
+  "parameters": [
+    [
+      "Region",
+      "Rainy Plains"
+    ],
+    [
+      "Entrances",
+      "1"
+    ],
+    [
+      "Wooden chests",
+      "2"
+    ],
+    [
+      "Pots",
+      "16"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Opens once you finish \"Reach the Supreme Evoker's Tower\" in Wading Rainy Plains",
+      "map": "/2/map#p=4992,6679"
+    }
+  ],
+  "tables": [],
+  "resistances": [
+    [
+      "Royal Guard",
+      "68%"
+    ],
+    [
+      "Vindicator",
+      "16%"
+    ],
+    [
+      "Pillager",
+      "11%"
+    ],
+    [
+      "Enchanter",
+      "3%"
+    ],
+    [
+      "Ravager",
+      "1%"
+    ],
+    [
+      "Geomancer",
+      "1%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Rainy Plains",
+      "href": "/2/locations/rainy-plains"
+    },
+    {
+      "name": "Wading Rainy Plains",
+      "href": "/2/quests/wading-rainy-plains"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=4992,6679"
+    },
+    {
+      "name": "Copper Monstrosity",
+      "href": "/2/enemies/copper-monstrosity"
+    },
+    {
+      "name": "Evoker",
+      "href": "/2/enemies/evoker"
+    },
+    {
+      "name": "Soul Corrupted Enchanter",
+      "href": "/2/enemies/soul-corrupted-enchanter"
+    },
+    {
+      "name": "Soul Corrupted Evoker",
+      "href": "/2/enemies/soul-corrupted-evoker"
+    },
+    {
+      "name": "Soul Corrupted Geomancer",
+      "href": "/2/enemies/soul-corrupted-geomancer"
+    },
+    {
+      "name": "Soul Corrupted Pillager",
+      "href": "/2/enemies/soul-corrupted-pillager"
+    },
+    {
+      "name": "Soul Corrupted Ravager",
+      "href": "/2/enemies/soul-corrupted-ravager"
+    },
+    {
+      "name": "Soul Corrupted Royal Guard",
+      "href": "/2/enemies/soul-corrupted-royal-guard"
+    },
+    {
+      "name": "Soul Corrupted Vindicator",
+      "href": "/2/enemies/soul-corrupted-vindicator"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/the-supreme-evokers-tower"
+}

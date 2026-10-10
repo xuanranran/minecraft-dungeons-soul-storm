@@ -1,0 +1,88 @@
+{
+  "parameters": [
+    [
+      "Health",
+      "60"
+    ],
+    [
+      "Top hit",
+      "11"
+    ],
+    [
+      "Poise",
+      "28"
+    ],
+    [
+      "Souls",
+      "8"
+    ],
+    [
+      "Speed",
+      "650"
+    ]
+  ],
+  "tables": [
+    {
+      "title": "Attacks",
+      "columns": [
+        "ATTACK",
+        "DAMAGE",
+        "SPLASH",
+        "TYPE",
+        "COOLDOWN"
+      ],
+      "rows": [
+        [
+          "Light attack",
+          "11",
+          "none",
+          "Physical",
+          "5 sec"
+        ],
+        [
+          "Combo",
+          "6 ×2",
+          "none",
+          "Physical",
+          "1 sec"
+        ],
+        [
+          "Combo, hit 3",
+          "11",
+          "none",
+          "Physical",
+          ""
+        ]
+      ]
+    }
+  ],
+  "resistances": [
+    [
+      "Fire damage",
+      "+50%"
+    ],
+    [
+      "Melee damage",
+      "-20%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Singer's Meadow",
+      "href": "/2/locations/singers-meadow"
+    },
+    {
+      "name": "Humbler Huskland",
+      "href": "/2/locations/humbler-huskland"
+    },
+    {
+      "name": "Lullaby Hills",
+      "href": "/2/locations/lullaby-hills"
+    },
+    {
+      "name": "Ravines",
+      "href": "/2/locations/ravines"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/enemies/stalker"
+}

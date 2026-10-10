@@ -1,0 +1,56 @@
+{
+  "parameters": [
+    [
+      "Region",
+      "Honeycomb Fields"
+    ],
+    [
+      "Entrances",
+      "1"
+    ],
+    [
+      "Fancy chests",
+      "1"
+    ],
+    [
+      "Wooden chests",
+      "2"
+    ],
+    [
+      "Pots",
+      "4"
+    ]
+  ],
+  "objectives": [
+    {
+      "text": "Opens once you finish \"Defeat the Witch\" in Corruption in the Woods",
+      "map": "/2/map#p=2675,3594"
+    }
+  ],
+  "tables": [],
+  "resistances": [
+    [
+      "Zombie",
+      "100%"
+    ]
+  ],
+  "links": [
+    {
+      "name": "Honeycomb Fields",
+      "href": "/2/locations/honeycomb-fields"
+    },
+    {
+      "name": "Corruption in the Woods",
+      "href": "/2/quests/corruption-in-the-woods"
+    },
+    {
+      "name": "Map",
+      "href": "/2/map#p=2675,3594"
+    },
+    {
+      "name": "Enderman",
+      "href": "/2/enemies/enderman"
+    }
+  ],
+  "source": "https://www.dungeons.tools/2/locations/honeycomb-barn"
+}
