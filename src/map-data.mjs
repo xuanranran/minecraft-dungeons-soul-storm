@@ -4,7 +4,7 @@ async function json(url) {
   if (!response.ok) throw Error('地图数据读取失败，请重试。');
   return response.json();
 }
-export const loadMapIndex = retryable(() => json('./data/maps/index.json?v=layout2'));
+export const loadMapIndex = retryable(() => json('./data/maps/index.json?v=native2'));
 const worlds = new Map();
 export async function loadMapWorld(id) {
   const index = await loadMapIndex();

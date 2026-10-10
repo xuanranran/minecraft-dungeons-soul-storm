@@ -4,6 +4,7 @@ import json
 import re
 import shutil
 import sys
+import subprocess
 from collections import Counter
 from pathlib import Path
 from PIL import Image
@@ -122,3 +123,5 @@ for tile in (OUT / 'images/map').rglob('*.webp'):
     manifest.append({'file': tile.relative_to(OUT).as_posix(), 'sha256': hashlib.sha256(tile.read_bytes()).hexdigest(), 'format': 'lossless WebP; native pixels retained at maximum zoom'})
 (ROOT / 'native-map-images.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf-8')
 (SOURCES / 'README.md').write_text('Map point captures from https://www.dungeons.tools/2/map, /2/map/the-sift and /2/map/camp on 2026-10-10. Only factual point data is retained; website components and page code are not copied. Native map textures and Chinese names are extracted locally. Generator groups use the nearest native area label; all seven totals match the reference rotation (7, 8, 8, 8, 8, 8, 5).\n', encoding='utf-8')
+if (ASSETS / 'reextract/2026-10-10-full/organized/maps/runtime-map-bounds.json').exists():
+    subprocess.run([sys.executable, str(ROOT / 'tools/import-native-map-fonts.py'), '--maps-only'], check=True)

@@ -1,6 +1,15 @@
-Mojangles-style Minecraft Classic web font
+Default global font: complete native Spicewood Sixteen (Regular / SemiBold / Bold)
+Source: local 2026-10-10 game extraction, Font_Spicewood_Sixteen_*.otf
+Archive: ../minecraft-dungeons-native-assets/reextract/2026-10-10-full/organized/fonts/
+Output: public/fonts/native-sixteen-{regular,semibold,bold}.woff2
+41,575 mapped characters per weight, including native Chinese glyphs.
+WOFF2 conversion preserves the complete original character map and outlines.
+Source hashes and output hashes: public/data/native-fonts.json.
+These are game assets, not project-original fonts.
+
+Optional Mojangles-style Minecraft Classic web font
 Source: https://classic.minecraft.net/assets/fonts/minecraftfont.woff
-Downloaded 2026-10-07. No CJK glyphs; Chinese uses the system fallback.
+Downloaded 2026-10-07. No CJK glyphs; Chinese uses native Spicewood Sixteen.
 
 Ark Pixel 12px proportional Simplified Chinese fallback
 Source: https://ark-pixel-font.takwolf.com/ark-pixel-12px-proportional-zh_hans.otf.woff2
@@ -12,4 +21,5 @@ Source: https://www.dungeons.tools/fonts/d2/mcd2-ten.woff2
 Source: https://www.dungeons.tools/fonts/d2/mcd2-sixteen.woff2
 Downloaded 2026-10-10; source URLs and hashes are recorded in
 sources/dungeons-tools/explorer/style-assets.json.
-Chinese glyphs use the Ark Pixel fallback. These are third-party game assets.
+These legacy assets remain archived; the current interface uses the complete
+native Spicewood Sixteen fonts above. System fonts can be selected in settings.

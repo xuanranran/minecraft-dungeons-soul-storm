@@ -6,6 +6,7 @@ await build({configFile:resolve(root,'vite.config.mjs')});
 const template=await readFile(resolve(out,'index.html'),'utf8'),json=async file=>JSON.parse(await readFile(resolve(root,'public',file),'utf8'));
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const routes=[['map','map=overworld','探索地图'],['storm','storm','灵魂风暴'],['database','database','数据库'],['collection','collection','收藏品'],['planner','planner','配装规划'],['builds','builds','配装列表'],['compare','compare','装备对比']];
+for(const map of (await json('data/maps/index.json')).dimensions)routes.push(['map/'+map.id,'map='+map.id,map.name+'地图']);
 for(const category of (await json('data/database/index.json')).categories){
  routes.push(['database/'+category.id,'database&category='+category.id,category.name]);
  for(const item of (await json('data/database/'+category.id+'.json')).items)routes.push(['database/'+category.id+'/'+item.id,'database&category='+category.id+'&item='+item.id,item.name,item.description||'',item]);

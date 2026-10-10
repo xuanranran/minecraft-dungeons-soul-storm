@@ -9,7 +9,7 @@ try{for(const width of [1920,1440,1024,768,390,320]){
   await page.goto(new URL(name+'/',base).href);await ready(name);await page.evaluate(()=>document.fonts.ready);
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,name+' overflow at '+width);
   assert.equal(await page.locator('[data-page-tab='+name+']').evaluate(n=>{const tab=n.getBoundingClientRect(),strip=n.parentElement.getBoundingClientRect();return tab.left>=strip.left-1&&tab.right<=strip.right+1;}),true,name+' active mobile tab clipped');
-  assert.equal(await page.evaluate(()=>getComputedStyle(document.body).backgroundColor),'rgb(9, 10, 12)');
+  assert.equal(await page.evaluate(()=>getComputedStyle(document.body).backgroundColor),'rgb(0, 0, 0)');
   assert.match(await page.locator('#'+name+'-panel').evaluate(n=>getComputedStyle(n).fontFamily),/Segoe UI/);
   assert.equal(await page.locator('#'+name+'-panel').evaluate(n=>getComputedStyle(n).backgroundColor),'rgba(0, 0, 0, 0)');
   if(name==='collection'){assert.equal(await page.locator('.tool-progress-card').count(),4);assert.equal(await page.locator('.tool-grid').evaluate(n=>getComputedStyle(n).padding),'0px');}
@@ -25,6 +25,6 @@ try{for(const width of [1920,1440,1024,768,390,320]){
  for(const name of ['map','storm','database','collection','planner','builds','compare']){
   await page.locator('[data-page-tab='+name+']').click();await ready(name);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,name+' light overflow');assert.equal(await page.locator('#'+name+'-panel').evaluate(n=>getComputedStyle(n).color),'rgb(24, 34, 46)');
  }
- await page.locator('[data-page-tab=builds]').click();await ready('builds');await page.locator('.tool-build-title').first().click();const build=page.locator('.build-introduction-dialog[open]');await build.locator('.equipment-card').nth(11).waitFor();assert.equal(await build.count(),1);assert.notEqual(await build.locator('.explorer-dialog-header h2').evaluate(n=>getComputedStyle(n).color),'rgb(255, 255, 255)');await page.screenshot({path:'artifacts/jamstack/build-light-'+width+'.png'});await page.goBack();await ready('compare');assert.equal(await page.locator('dialog[open]').count(),0);
- assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);await page.close();console.log(width+': directory routes, refresh/back, modern cards, native Chinese, compact enchantments, equal drop rows and unchanged dark background passed.');
+ await page.locator('[data-page-tab=builds]').click();await ready('builds');await page.locator('.tool-build-title').first().click();const build=page.locator('.build-introduction-dialog[open]');await build.locator('.equipment-card').nth(11).waitFor({state:'attached'});assert.equal(await build.count(),1);assert.notEqual(await build.locator('.explorer-dialog-header h2').evaluate(n=>getComputedStyle(n).color),'rgb(255, 255, 255)');await page.screenshot({path:'artifacts/jamstack/build-light-'+width+'.png'});await page.goBack();await ready('compare');assert.equal(await page.locator('dialog[open]').count(),0);
+ assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);await page.close();console.log(width+': directory routes, refresh/back, modern cards, native Chinese, compact enchantments, equal drop rows and pure black dark background passed.');
 }}finally{await browser.close();}

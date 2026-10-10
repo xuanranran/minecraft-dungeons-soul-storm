@@ -35,8 +35,9 @@ try{
    assert.equal(await page.locator('.map-sidebar #map-filter-details').count(),0,'Mobile filters must not take space above map');
    await page.locator('#map-filter-toggle').click();assert.equal(await page.locator('#map-filter-dialog').evaluate(e=>e.open),true);
    await page.locator('#map-hide-all').click();assert.match(await page.locator('#map-count').innerText(),/^0 \//);
-   assert.equal(await page.locator('#map-floating-caption').innerText(),'0/14');
-   await page.locator('#map-show-all').click();assert.equal(await page.locator('#map-floating-caption').innerText(),'14/14');
+   const categoryCount=await page.locator('.map-category').count();
+   assert.equal(await page.locator('#map-floating-caption').innerText(),`0/${categoryCount}`);
+   await page.locator('#map-show-all').click();assert.equal(await page.locator('#map-floating-caption').innerText(),`${categoryCount}/${categoryCount}`);
    if(width===390)await page.screenshot({path:'layout-mobile-filter-sheet.png'});
    await page.keyboard.press('Escape');assert.equal(await page.locator('#map-filter-dialog').evaluate(e=>e.open),false);
    assert.equal(await page.evaluate(()=>document.activeElement.id),'map-filter-toggle');

@@ -6,7 +6,7 @@ import {loadDatabaseRecord,findDatabaseRecord} from './database-data.mjs';
 import {navigationGuard} from './core/navigation.mjs';
 
 const kindCategory={melee:'weapons',ranged:'weapons',armor:'armor',artifact:'artifacts',talisman:'talismans'},categoryNames={weapons:'武器',armor:'盔甲','armor-sets':'盔甲套装',artifacts:'法器',talismans:'护身符',enchantments:'附魔',effects:'装备效果',unique:'独特物品',enemies:'生物',bosses:'首领',locations:'地点',quests:'任务',cosmetics:'装饰',upcoming:'文件预留'};
-const resources=()=>Promise.all([import('./explorer.css'),import('./drops.css'),import('./explorer-game.css')]).then(()=>import('./database.css')).then(()=>import('./ui/styles/details.css'));
+const resources=()=>Promise.all([import('./explorer.css'),import('./drops.css'),import('./ui/styles/native-equipment.css')]).then(()=>import('./database.css')).then(()=>import('./ui/styles/details.css'));
 export function databasePicture(item){
  const picture=el('span','database-picture'),image=el('img');image.src=item.image||'';image.alt='';image.loading='lazy';image.width=64;image.height=64;
  if(!item.image){picture.classList.add('is-empty');picture.textContent='◇';return picture;}

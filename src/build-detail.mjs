@@ -30,20 +30,24 @@ export async function showBuildDetail(build,title,introduction){
   inventory.append(controls);const sidebar=el('div','build-detail-sidebar'),about=section('关于这套配装');
   const metadata=el('dl','build-detail-metadata');for(const [label,value] of [['风格',build.tags.join(' · ')],['版本',build.patch],['作者',build.author],['发布',publishedDate(build.published)]])if(value)metadata.append(el('dt','',label),el('dd','',value));
   about.body.append(metadata);sidebar.append(about.box);overview.append(inventory,sidebar);content.append(overview);
+  const tabs=el('div','build-detail-tabs'),panes=[],tabPrefix='build-'+crypto.randomUUID();tabs.setAttribute('role','tablist');tabs.setAttribute('aria-label','配装详情');content.append(tabs);
+  function addPane(label,pane){const index=panes.length,tab=button(label,()=>activate(index),'build-detail-tab');tab.setAttribute('role','tab');tab.id=tabPrefix+'-tab-'+index;pane.id=tabPrefix+'-pane-'+index;tab.setAttribute('aria-controls',pane.id);pane.setAttribute('role','tabpanel');pane.setAttribute('aria-labelledby',tab.id);panes.push({tab,pane});tabs.append(tab);content.append(pane);activate(Math.max(0,panes.findIndex(({tab})=>tab.getAttribute("aria-selected")==="true")));}
+  function activate(index){panes.forEach(({tab,pane},n)=>{pane.hidden=n!==index;tab.setAttribute('aria-selected',String(n===index));tab.tabIndex=n===index?0:-1;});}
+  tabs.addEventListener('keydown',e=>{const index=panes.findIndex(({tab})=>tab===document.activeElement);if(index<0)return;let next;if(e.key==='ArrowRight')next=(index+1)%panes.length;else if(e.key==='ArrowLeft')next=(index+panes.length-1)%panes.length;else if(e.key==='Home')next=0;else if(e.key==='End')next=panes.length-1;else return;e.preventDefault();activate(next);panes[next].tab.focus();});
   const effects=section('效果与属性','build-detail-totals'),effectGrid=el('div','build-detail-effects');
-  for(const effect of summary.effects){const row=el('div','build-detail-effect');if(effect.info?.image)row.append(icon(effect.info.image));else row.append(el('span','build-detail-symbol','◇'));const text=el('div');text.append(el('strong','',effect.info?.name||effect.tag),el('span','',effect.entries.length>1?' ×'+effect.entries.length:''),el('p','',effect.text));row.append(text);effectGrid.append(row);}
+  for(const effect of summary.effects){const row=el('div','build-detail-effect');if(effect.info?.image)row.append(icon(effect.info.image));else row.append(el('span','build-detail-symbol','◇'));const text=el('div');text.append(el('strong','',(/[^\x00-\x7F]/.test(effect.info?.name||" ")?effect.info.name:effect.entries[0]?.item||"装备效果")),el('span','',effect.entries.length>1?' ×'+effect.entries.length:''),el('p','',effect.text));row.append(text);effectGrid.append(row);}
   effects.body.append(effectGrid,el('p','tool-note','同一属性的数值按游戏的汇总规则显示；触发类效果保留各件装备的说明。'));
   if(summary.enchants.length){effects.body.append(el('h4','build-detail-subheading','附魔'));const list=el('div','build-detail-enchantments');
    for(const enchant of summary.enchants){const row=el('div','build-detail-enchantment'),item=ctx.items.get(configured[slots.find(s=>s.name===enchant.slot).id].item),text=el('div');text.append(el('strong','',enchant.name+' '+enchant.tier+' · '+item.name),el('p','',enchant.text));row.append(icon(enchant.image),text);list.append(row);}effects.body.append(list);
-  }content.append(effects.box);
+  }addPane('配装效果',effects.box);
   if(build.id==='2-tumbleshot-close-ranger'){
-   const guide=section('玩法指南','build-detail-guide');content.append(guide.box);
+   const guide=section('玩法指南','build-detail-guide');addPane('玩法指南',guide.box);
    try{const response=await fetch('./data/explorer/guides/2-tumbleshot-close-ranger.json?v=tools2');if(!response.ok)throw Error();const data=await response.json();if(!box.dialog.open)return;
     for(const part of data.sections){const group=el('section');group.append(el('h4','',part.title));for(const text of part.paragraphs)group.append(el('p','',text));guide.body.append(group);}guide.body.append(el('p','tool-note',data.note));
    }catch{guide.body.append(el('p','tool-note','玩法说明读取失败。'),button('重新读取',()=>{box.close();showBuildDetail(build,title,introduction);}));}
   }
-  if(build.note){const notes=section('配装说明');notes.body.append(el('p','tool-build-note',build.note));content.append(notes.box);}
-  const details=section('装备详情 · '+Object.keys(configured).length,'build-detail-gear'),grid=el('div','build-detail-gear-grid');details.body.append(grid);content.append(details.box);
+  if(build.note){const notes=section('配装说明');notes.body.append(el('p','tool-build-note',build.note));addPane('配装说明',notes.box);}
+  const details=section('装备详情 · '+Object.keys(configured).length,'build-detail-gear'),grid=el('div','build-detail-gear-grid');details.body.append(grid);addPane('装备详情',details.box);
   const cards=await Promise.all(Object.values(configured).map(entry=>createEquipmentCard(ctx.items.get(entry.item),entry)));
   if(!box.dialog.open)return;grid.append(...cards);
  }catch{if(box.dialog.open){content.replaceChildren(el('p','tool-note','配装详情读取失败。'),button('重新读取',()=>{box.close();showBuildDetail(build,title,introduction);}));}}

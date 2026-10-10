@@ -3,7 +3,8 @@ import {readFile,stat,readdir} from 'node:fs/promises';
 import {resolve,dirname,relative} from 'node:path';
 const root=resolve(import.meta.dirname,'..'),out=resolve(root,'dist'),read=path=>readFile(resolve(out,path),'utf8');
 const routes=JSON.parse(await read('routes.json'));
-assert.equal(routes.length,895);assert.equal(new Set(routes.map(r=>r.path)).size,routes.length);
+const maps=JSON.parse(await read('data/maps/index.json'));
+assert.equal(routes.length,895+maps.dimensions.length);assert.equal(new Set(routes.map(r=>r.path)).size,routes.length);
 for(const route of routes){
  const html=await read(route.path.slice(1)+'index.html'),base=html.match(/<base href="([^"]+)"/)[1];
  const url=new URL('https://example.test/project'+route.path),baseURL=new URL(base,url);
@@ -25,4 +26,4 @@ for(const name of await readdir(resolve(out,'assets'))){
 const items=JSON.parse(await read('data/explorer/catalogue.json')).items,talismans=items.filter(i=>i.kind==='talisman');
 assert.equal(talismans.length,24);assert.ok(talismans.every(i=>/[\u4e00-\u9fff]/.test(i.description)));
 assert.equal(talismans.filter(i=>i.descriptionOrigin==='native-level-I-effect').length,19);
-console.log('895 unique static routes, project-subpath assets, independent feature chunks, CSS resources and 24 Chinese talisman descriptions passed.');
+console.log(routes.length+' unique static routes, project-subpath assets, independent feature chunks, CSS resources and 24 Chinese talisman descriptions passed.');
