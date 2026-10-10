@@ -24,8 +24,9 @@
       "special": "#2CA2FE",
       "unique": "#FF0000",
       "mask": "Blue channel of T_UI_SlotRarity_Markers_Soul: three skull marks at the upper-left",
-      "frame": "Native neutral inventory slot plus thin doubled pixel frame; geometry matched to supplied screenshot",
-      "removed": "Whole-slot animated SoulStorm crack masks; orange tinted native slot frame"
+      "frame": "Thin red/blue item frame only; neutral inventory-slot background removed at user request",
+      "removed": "Inventory equipment-slot gray outer frame, whole-slot crack masks and orange tint",
+      "image_box_to_frame_ratio": "74/88 (84.1%); native transparent padding and item proportions preserved"
     },
     "book": {
       "native_texture": "T_UI_Enchantment_Book_Slot",
