@@ -1,6 +1,6 @@
 import {loadCatalogue,readSaved,save} from './explorer-data.mjs?v=tools2';
 import {kinds,farmPlaces} from './explorer-model.mjs?v=tools2';
-import {el,heading,button,input,select,itemSummary,inspect,notify,copyLink,download,importFile,safeSave} from './explorer-ui.mjs?v=db1';
+import {el,heading,button,input,select,itemSummary,inspect,notify,copyLink,download,importFile,safeSave} from './explorer-ui.mjs?v=layoutrefine2';
 export async function setupCollection(){
  const panel=document.getElementById('collection-panel'),data=await loadCatalogue(),valid=new Set(data.items.map(i=>i.slug));panel.replaceChildren();panel.classList.add('tool-page');
  heading(panel,'COLLECTION','收藏品','记录已收集的装备，把想要的物品加入心愿清单。');

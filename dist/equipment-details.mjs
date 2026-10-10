@@ -1,24 +1,29 @@
 import {setRegionText} from './region-icons.mjs?v=listicons1';
-export function renderEquipmentDetails({item,panel,el,nativeIcon,displayedParameters,displayedTables}) {
-    const dl=el('dl','drop-parameter-grid');dl.dataset.detailSection='parameters';
-    for(const [key,value] of displayedParameters(item)){const cell=el('div','drop-parameter');cell.append(el('dt','',key),el('dd','',value));dl.append(cell)}panel.append(dl);
-    for(const effect of item.fixed_effects){
-     const box=el('div','drop-effect-card'),icon=nativeIcon(effect,'drop-effect-icon');box.dataset.detailSection='effects';
-     const text=el('div','drop-effect-copy'),name=el('button','database-related-name',effect.name);name.type='button';name.dataset.databaseName=effect.name;name.dataset.databaseCategory='effects';text.append(name,el('p','',effect.effect));box.append(icon,text);panel.append(box);
-    }
-    for(const table of displayedTables(item)){if(table.columns.includes('区域')||table.title==='属性 / 数值')continue;
-     const section=el('details','drop-extra'),heading=el('summary','',table.title.replace(item.name,''));section.append(heading);
-     section.dataset.detailSection=table.title.includes('附魔')?'enchantments':'effects';
-     if(table.title==='使用附魔效果')section.classList.add('drop-use-effects');
-     if(table.title.includes('可能出现'))section.classList.add('drop-possible-effects');
-     for(const row of table.rows){const entry=el('div','drop-entry'),fields=Object.entries(row).filter(([key])=>!['image','native_icon_kind','description','levels','effect_levels','ungraded_effect'].includes(key)),levelData=row.effect_levels?.filter(level=>level.level!=='独特'||level.effect.trim()!==row.effect_levels.find(tier=>tier.level==='III')?.effect.trim())??row.levels;
-      let copy=entry;
-      if(row.image){entry.classList.add('drop-enchantment-card');const icon=nativeIcon(row,'drop-list-icon',table.title.includes('可用附魔')||table.title==='使用附魔效果');copy=el('div','drop-enchantment-copy');const name=el('button','database-related-name',fields[0][1]);name.type='button';name.dataset.databaseName=fields[0][1];name.dataset.databaseCategory=table.title.includes('附魔')?'enchantments':'effects';copy.append(name);entry.append(icon,copy);fields.shift();}
-      if(row.description){entry.classList.add('has-description');copy.append(el('p','',row.description));}
-      for(const [key,value] of fields){if(row.levels&&/级效果/.test(key)||row.effect_levels&&['I','II','III','独特'].includes(key))continue;if(row.image&&key==='触发条件')entry.append(el('p','drop-enchantment-trigger',`${key}：${value}`));else copy.append(el('p','',`${key}：${value}`));}
-      if(levelData){entry.classList.add('has-levels');const levels=el('dl','drop-levels'),third=levelData.find(level=>level.level==='III');for(const level of levelData){const text=level.level==='独特'&&third&&level.effect.trim()===third.effect.trim()?'和 III 级一样的效果':level.effect,label=el('dt');if(/^(I|II|III)$/.test(level.level)){label.setAttribute('aria-label',`${level.level} 级`);label.append(el('span','native-level-badge',level.level));}else label.textContent=level.level;levels.append(label,el('dd','',text));}if(!levelData.length)levels.append(el('dt','','效果'),el('dd','',row.ungraded_effect||'暂无分级数据'));entry.append(levels);}
-      section.append(entry);
-     }panel.append(section);
-    }
-    const locations=el('details','drop-extra');locations.dataset.detailSection='locations';locations.append(el('summary','','获取位置'));for(const place of item.drops){const line=el('button','drop-location database-related-name');line.type='button';line.dataset.databaseName=place['区域'];line.dataset.databaseCategory='locations';setRegionText(line,place['区域']);locations.append(line)}panel.append(locations);
+const translateAttack=text=>String(text).replace(/Heavy/g,'重击').replace(/Light/g,'轻击').replace(/Projectile/g,'投射物').replace(/^\d+ 第(\d+)击 /,'第 $1 击 · ');
+export function renderParameterTable(parameters,el){
+ const wrap=el('div','database-table-wrap database-parameters'),table=el('table','database-parameter-table'),body=el('tbody');wrap.dataset.detailSection='parameters';table.setAttribute('aria-label','基本参数');
+ for(let index=0;index<parameters.length;index+=2){const row=el('tr');for(const pair of parameters.slice(index,index+2)){const th=el('th','',pair[0]);th.scope='row';row.append(th,el('td','',pair[1]));}body.append(row);}table.append(body);wrap.append(table);return wrap;
+}
+export function renderFixedEffects(effects,{el,nativeIcon}){
+ const section=el('section','database-fixed-effects');section.setAttribute('aria-label','固定词条');
+ for(const effect of effects){const card=el('div','drop-effect-card'),copy=el('div','drop-effect-copy'),link=el('button','database-related-name',effect.name);link.type='button';link.dataset.databaseName=effect.name;link.dataset.databaseCategory='effects';copy.append(link,el('p','',effect.effect));card.append(nativeIcon(effect,'drop-effect-icon'),copy);section.append(card);}return section;
+}
+export function renderEquipmentDetails({item,panel,el,nativeIcon,displayedParameters,displayedTables}){
+ panel.append(renderParameterTable(displayedParameters(item),el));
+ for(const table of displayedTables(item)){
+  if(table.columns.includes('区域')||table.title==='属性 / 数值')continue;
+  const combo=table.title.includes('连招拆解'),enchantment=table.title.includes('附魔'),section=el('section','database-detail-section');section.dataset.detailSection=combo?'parameters':enchantment?'enchantments':'effects';
+  const title=combo?'连招拆解':table.title.includes('可能出现')?'效果':table.title.replace(item.name,'');section.append(el('h3','',title));
+  const wrap=combo?el('div','database-table-wrap'):null,node=combo?el('table','database-combo-table'):null,head=combo?el('thead'):null,headers=combo?el('tr'):null,body=combo?el('tbody'):null;
+  if(combo){for(const column of table.columns){const th=el('th','',column);th.scope='col';headers.append(th);}for(const values of table.rows){const row=el('tr');for(const column of table.columns)row.append(el('td','',translateAttack(values[column]||'—')));body.append(row);}}
+  else{
+   for(const values of table.rows){const row=el('div','drop-enchantment-card database-effect-card'),name=el('div','database-effect-heading'),copy=el('div','drop-effect-copy'),label=values[enchantment?'附魔':'效果']||Object.values(values)[0],link=el('button','database-related-name',label);link.type='button';link.dataset.databaseName=label;link.dataset.databaseCategory=enchantment?'enchantments':'effects';if(values.image)row.append(nativeIcon(values,'drop-list-icon',enchantment));name.append(link);copy.append(name);
+    if(values.description)copy.append(el('p','database-row-description',values.description));if(values['类别'])copy.append(el('span','database-row-meta','类别：'+values['类别']));if(values['触发条件'])copy.append(el('p','database-row-meta','触发条件：'+values['触发条件']));
+    const tiers=values.effect_levels?.filter(level=>level.level!=='独特'||level.effect.trim()!==values.effect_levels.find(t=>t.level==='III')?.effect.trim())??values.levels;
+    if(tiers?.length){const levels=el('dl','drop-levels');for(const level of tiers){const dt=el('dt');dt.append(/^(I|II|III)$/.test(level.level)?el('span','native-level-badge',level.level):el('span','',level.level));levels.append(dt,el('dd','',level.effect));}row.append(copy,levels);}else{copy.append(el('p','',values.ungraded_effect||values['III级效果']||values['效果']||'暂无分级数据'));row.append(copy);}section.append(row);
+   }
+  }
+  if(combo){head.append(headers);node.append(head,body);wrap.append(node);section.append(wrap);}panel.append(section);
+ }
+ const locations=el('section','database-detail-section');locations.dataset.detailSection='locations';locations.append(el('h3','','获取位置'));const list=el('div','database-location-list');for(const place of item.drops){const link=el('button','drop-location database-related-name');link.type='button';link.dataset.databaseName=place['区域'];link.dataset.databaseCategory='locations';setRegionText(link,place['区域']);list.append(link);}locations.append(list);panel.append(locations);
 }

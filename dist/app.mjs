@@ -8,10 +8,10 @@ const $=id=>document.getElementById(id),clock=new SyncedClock();
 let mapController,stormController,lastWorld='overworld',routeTicket=0;
 const toolNames=['database','collection','planner','builds','compare'];
 const toolControllers=Object.fromEntries(toolNames.map(name=>[name,retryable(async()=>{
- const [module]=await Promise.all([import('./'+name+'.mjs?v=db2'),loadStyle('./explorer.css?v=db1'),loadStyle('./drops.css?v=db1'),...(['collection','database'].includes(name)?[]:[loadStyle('./'+name+'.css?v=tools2')])]);
+ const [module]=await Promise.all([import('./'+name+'.mjs?v=layoutrefine2'),loadStyle('./explorer.css?v=db1'),loadStyle('./drops.css?v=db1'),...(['collection','database'].includes(name)?[]:[loadStyle('./'+name+'.css?v=tools2')])]);
  await loadStyle('./explorer-game.css?v=tools2');
  await loadStyle('./explorer-reference.css?v=tools2');
- await loadStyle('./database.css?v=db1');
+ await loadStyle('./database.css?v=layoutrefine2');
  return module['setup'+name[0].toUpperCase()+name.slice(1)]();
 })]));
 const getMaps=retryable(async()=>{
@@ -23,7 +23,7 @@ const getStorm=retryable(async()=>{
  stormController=await module.setupStorm({clock});return stormController;
 });
 const getDrops=retryable(async()=>{
- const [module]=await Promise.all([import('./drops.mjs?v=db1'),loadStyle('./drops.css?v=db1'),loadStyle('./database.css?v=db1')]);
+ const [module]=await Promise.all([import('./drops.mjs?v=layoutrefine2'),loadStyle('./drops.css?v=db1'),loadStyle('./database.css?v=layoutrefine2')]);
  return module.setupDrops();
 });
 

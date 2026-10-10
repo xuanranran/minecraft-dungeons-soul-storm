@@ -1,6 +1,6 @@
-import {el,button,input,heading,select} from './explorer-ui.mjs?v=db1';
-import {loadDatabaseIndex,loadDatabaseCategory} from './database-data.mjs?v=db1';
-import {showDatabaseItem,databasePicture} from './database-detail.mjs?v=db1';
+import {el,button,input,heading,select} from './explorer-ui.mjs?v=layoutrefine2';
+import {loadDatabaseIndex,loadDatabaseCategory} from './database-data.mjs?v=copy1';
+import {showDatabaseItem,databasePicture} from './database-detail.mjs?v=layoutrefine2';
 
 export function setupDatabase(){
  const panel=document.getElementById('database-panel');panel.replaceChildren();heading(panel,'GAME DATABASE','数据库','查询装备与世界资料，点击条目查看完整参数与关联信息。');
@@ -17,8 +17,7 @@ export function setupDatabase(){
   if(!list.length){grid.append(el('p','database-empty','没有匹配的条目，试试其他名称。'));return;}
   const pages=Math.ceil(list.length/pageSize);page=Math.min(page,pages);
   for(const item of list.slice((page-1)*pageSize,page*pageSize)){
-   const card=button('',()=>showDatabaseItem(item),'database-item');card.setAttribute('aria-label','查看'+item.name+'数据库详情');card.dataset.id=item.id;const copy=el('span','database-item-copy');copy.append(el('strong','',item.name));if(item.english&&item.english!==item.name)copy.append(el('span','database-item-english',item.english));const category=index.categories.find(c=>c.id===item.categoryKey);copy.append(el('span','database-item-meta',[category?.name,item.unique?'独特':item.subtype,({boots:'靴子',chest:'胸甲',helmet:'头盔',leggings:'护腿'}[item.slot]||item.slot),item.archetype].filter(Boolean).join(' · ')));
-   if(item.parameters?.length)copy.append(el('span','database-item-stats',item.parameters.slice(0,2).map(([k,v])=>k+' '+v).join(' · ')));card.append(databasePicture(item),copy,el('span','database-item-arrow','↗'));grid.append(card);
+   const card=button('',()=>showDatabaseItem(item),'database-item');card.setAttribute('aria-label','查看'+item.name+'数据库详情');card.dataset.id=item.id;const copy=el('span','database-item-copy');copy.append(el('strong','',item.name));if(item.description)copy.append(el('span','database-item-description',item.description));card.append(databasePicture(item),copy,el('span','database-item-arrow','↗'));grid.append(card);
   }
   if(pages>1){const previous=button('上一页',()=>{page--;render();grid.scrollIntoView({block:'start'});}),next=button('下一页',()=>{page++;render();grid.scrollIntoView({block:'start'});});previous.disabled=page===1;next.disabled=page===pages;pager.append(previous,el('span','meta',page+' / '+pages),next);}
  }

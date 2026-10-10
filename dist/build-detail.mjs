@@ -1,6 +1,6 @@
 import {loadCatalogue,loadRules,loadLoadouts} from './explorer-data.mjs?v=tools2';
 import {context,decodeBuild,effectTotals,slots} from './explorer-model.mjs?v=tools2';
-import {el,button,itemPicture,modal,inspect,copyLink} from './explorer-ui.mjs?v=db1';
+import {el,button,itemPicture,modal,inspect,copyLink} from './explorer-ui.mjs?v=layoutrefine2';
 import {createEquipmentCard} from './equipment-tooltip.mjs?v=tools2';
 
 function section(title,cls=''){const box=el('section','build-detail-section '+cls);box.append(el('h3','build-detail-strip',title));const body=el('div','build-detail-section-body');box.append(body);return {box,body};}
@@ -14,7 +14,7 @@ export async function showBuildDetail(build,title,introduction){
   const [catalogue,rules,loadouts]=await Promise.all([loadCatalogue(),loadRules(),loadLoadouts()]);
   if(!box.dialog.open)return;
   const ctx=context(catalogue,rules,loadouts),configured=decodeBuild(build.q,ctx),summary=effectTotals(configured,ctx);
-  content.replaceChildren();if(build.public)content.append(el('p','build-detail-original',build.name));
+  content.replaceChildren();
   content.append(el('p','build-introduction',introduction));
   const overview=el('div','build-detail-overview'),inventory=el('div','build-detail-inventory');
   for(const [name,ids] of [['武器',['melee','ranged']],['盔甲',['helmet','chest','legs','boots']],['法器',['a1','a2','a3']],['护身符',['t1','t2','t3']]]){

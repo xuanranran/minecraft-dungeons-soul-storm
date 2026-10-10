@@ -21,6 +21,7 @@ try{
    await gear.hover();const tip=page.locator('#native-equipment-tooltip:popover-open');await tip.locator('.equipment-tip-enchant-box').waitFor();
    assert.match(await tip.innerText(),/已附魔/);assert.ok(await tip.locator('.equipment-tip-effect').count()>=2);
    const bounds=await tip.boundingBox();assert.equal(bounds.width,380);assert.ok(bounds.x>=0&&bounds.y>=0&&bounds.x+bounds.width<=width+1&&bounds.y+bounds.height<=1001);
+   await page.mouse.move(0,0);assert.equal(await tip.count(),0);await gear.hover();await tip.waitFor();await first.evaluate(n=>n.hidden=true);await tip.waitFor({state:'hidden'});assert.equal(await page.locator('#native-equipment-tooltip').evaluate(n=>n.hidden),true);await first.evaluate(n=>n.hidden=false);await gear.hover();await tip.waitFor();
    await page.screenshot({path:'explorer-hover-1440.png'});await page.keyboard.press('Escape');assert.equal(await page.locator('#native-equipment-tooltip:popover-open').count(),0);
   }
   await first.locator('.tool-build-title').click();await page.locator('dialog[open] .tool-build-detail').waitFor();

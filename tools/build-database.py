@@ -133,9 +133,9 @@ for category,label in names.items():
  records=categories[category]
  for record in records:
   record['detail']='./data/database/items/'+category+'-'+record['id']+'.json?v=db1';write(OUT/'items'/(category+'-'+record['id']+'.json'),record)
- lightweight=[{k:v for k,v in r.items() if k not in ['tables','tiers','related','objectives','description']} for r in records]
+ lightweight=[{k:v for k,v in r.items() if k not in ['tables','tiers','related','objectives']} for r in records]
  write(OUT/(category+'.json'),{'items':lightweight})
  index['categories'].append({'id':category,'name':label,'count':len(records),'image':next((r['image'] for r in records if r['image']),''),'description':'未实装的文件预留定义' if category=='upcoming' else '基础参数、详细机制与相关资料'})
- index['search'] += [{k:r[k] for k in ['id','name','english','image','categoryKey','kind','unique','subtype','iconKind'] if k in r} for r in records]
+ index['search'] += [{k:r[k] for k in ['id','name','english','image','categoryKey','kind','unique','subtype','iconKind','description'] if k in r} for r in records]
 write(OUT/'index.json',index);write(SOURCE/'native-translations.json',provenance)
 print('Database:',', '.join(k+' '+str(len(v)) for k,v in categories.items()))

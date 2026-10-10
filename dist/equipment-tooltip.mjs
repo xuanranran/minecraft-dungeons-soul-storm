@@ -6,16 +6,20 @@ const node=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.classNa
 const img=(src,cls)=>{const n=node('img',cls);n.src=src;n.alt='';return n;};
 let factsPromise;
 const facts=()=>factsPromise??=Promise.all([loadCatalogue(),loadRules(),loadLoadouts(),loadWeapons()]).then(([c,r,l,w])=>({ctx:context(c,r,l),weapons:w})).catch(error=>{factsPromise=null;throw error;});
-export function hideEquipmentTooltip(){clearTimeout(timer);serial++;active=null;if(described){described.removeAttribute('aria-describedby');described=null;}if(tip?.matches(':popover-open'))tip.hidePopover();}
+export function hideEquipmentTooltip(){clearTimeout(timer);serial++;active=null;if(described){described.removeAttribute('aria-describedby');described=null;}if(tip?.matches(':popover-open'))tip.hidePopover();if(tip)tip.hidden=true;}
+function eligible(target,focusTarget){const rect=target.getBoundingClientRect(),dialog=document.querySelector('dialog[open]');return target.isConnected&&rect.width>0&&rect.height>0&&!target.closest('[hidden]')&&(!dialog||target.closest('dialog[open]'))&&(focusTarget?focusTarget.matches(':focus-visible'):target.matches(':hover'));}
 export function bindEquipmentTooltip(target,item,equipment={}){
  targets.set(target,{item,equipment});target.dataset.equipmentTip='';
  if(installed)return;installed=true;
  document.addEventListener('pointerover',e=>{if(e.pointerType==='touch')return;const target=e.target.closest('[data-equipment-tip]');if(target&&targets.has(target))open(target);else if(!tip?.contains(e.target))scheduleHide();});
- document.addEventListener('focusin',e=>{const target=e.target.matches('[data-equipment-tip]')?e.target:e.target.querySelector('[data-equipment-tip]');if(target&&targets.has(target))open(target,e.target);else hideEquipmentTooltip();});
+ document.addEventListener('focusin',e=>{const target=e.target.matches('[data-equipment-tip]')?e.target:e.target.querySelector('[data-equipment-tip]');if(target&&targets.has(target)&&e.target.matches(':focus-visible'))open(target,e.target);else hideEquipmentTooltip();});
+ document.addEventListener('pointerout',e=>{if(active?.contains(e.target)&&!active.contains(e.relatedTarget))hideEquipmentTooltip();});
  document.addEventListener('focusout',()=>scheduleHide());
  document.addEventListener('pointerdown',e=>{if(!tip?.contains(e.target))hideEquipmentTooltip();});
  document.addEventListener('keydown',e=>{if(e.key==='Escape')hideEquipmentTooltip();});
  window.addEventListener('resize',hideEquipmentTooltip);window.addEventListener('hashchange',hideEquipmentTooltip);
+ window.addEventListener('blur',hideEquipmentTooltip);document.addEventListener('visibilitychange',()=>{if(document.hidden)hideEquipmentTooltip();});
+ new MutationObserver(()=>{if(active&&!eligible(active,described))hideEquipmentTooltip();}).observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['hidden','open']});
  document.addEventListener('scroll',e=>{if(!tip?.contains(e.target))hideEquipmentTooltip();},true);
 }
 function scheduleHide(){clearTimeout(timer);timer=setTimeout(hideEquipmentTooltip,140);}
@@ -25,13 +29,14 @@ function place(target){
  const h=tip.getBoundingClientRect().height,top=Math.max(12,Math.min(a.top,innerHeight-h-12));tip.style.left=left+'px';tip.style.top=top+'px';
 }
 async function open(target,focusTarget){
+ if(!eligible(target,focusTarget))return;
  clearTimeout(timer);if(active===target)return;hideEquipmentTooltip();active=target;const token=++serial,{item}=targets.get(target);let {equipment}=targets.get(target);
  if(!tip){tip=node('div','equipment-tooltip');tip.id='native-equipment-tooltip';tip.setAttribute('popover','manual');tip.setAttribute('role','tooltip');tip.addEventListener('pointerenter',()=>clearTimeout(timer));tip.addEventListener('pointerleave',scheduleHide);document.body.append(tip);}
  tip.replaceChildren(node('div','equipment-tip-strip',equipment.ench?'已装备 · 已附魔':'物品详情'),node('div','equipment-tip-loading',item.name+' · 正在读取…'));
- tip.showPopover();if(focusTarget){described=focusTarget;focusTarget.setAttribute('aria-describedby',tip.id);}place(target);
+ tip.hidden=false;tip.showPopover();if(focusTarget){described=focusTarget;focusTarget.setAttribute('aria-describedby',tip.id);}place(target);
  try{
   const card=await createEquipmentCard(item,equipment);
-  if(token!==serial||!target.isConnected||active!==target)return;
+  if(token!==serial||active!==target)return;if(!eligible(target,focusTarget)){hideEquipmentTooltip();return;}
   tip.replaceChildren(...card.childNodes);
   place(target);
  }catch{if(token===serial){tip.replaceChildren(node('div','equipment-tip-strip','物品详情'),node('div','equipment-tip-loading',item.name+' · 暂时无法读取，移开后重试。'));place(target);}}
