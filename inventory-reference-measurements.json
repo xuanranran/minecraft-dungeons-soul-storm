@@ -1,0 +1,54 @@
+{
+  "reference_size": [
+    1474,
+    368
+  ],
+  "source": "User supplied four-item in-game screenshot",
+  "method": "Opaque native sprite pixels matched at integer nearest-neighbor scales within each 306px item frame",
+  "items": [
+    {
+      "id": "carapace-mace",
+      "slot_size": 306,
+      "image_box_size": 243,
+      "image_box_position": [
+        31,
+        31
+      ],
+      "image_to_frame_ratio": 0.7941176470588235,
+      "score": 0.003696331987157464
+    },
+    {
+      "id": "lunar-sickle",
+      "slot_size": 306,
+      "image_box_size": 243,
+      "image_box_position": [
+        31,
+        31
+      ],
+      "image_to_frame_ratio": 0.7941176470588235,
+      "score": 0.0055206348188221455
+    },
+    {
+      "id": "the-darkshard",
+      "slot_size": 306,
+      "image_box_size": 243,
+      "image_box_position": [
+        31,
+        31
+      ],
+      "image_to_frame_ratio": 0.7941176470588235,
+      "score": 0.006631453055888414
+    },
+    {
+      "id": "the-burning-blade",
+      "slot_size": 306,
+      "image_box_size": 241,
+      "image_box_position": [
+        32,
+        32
+      ],
+      "image_to_frame_ratio": 0.7875816993464052,
+      "score": 0.008727886714041233
+    }
+  ]
+}

@@ -24,11 +24,11 @@
       "special": "#2CA2FE",
       "unique": "#FF0000",
       "mask": "Native T_UI_SlotRarity_Markers_Soul: blue channel for the three weapon/armor souls; green channel for the five artifact souls. Native PNG bytes and per-glyph opacity retained.",
-      "frame": "Thin red/blue item frame only; neutral inventory-slot background removed at user request",
+      "frame": "Screenshot-matched red/blue frame: 2% outer stroke, 1% inner stroke and 8% corner caps, fading toward the lower-right corner; no gray inventory equipment-slot border",
       "removed": "Inventory equipment-slot gray outer frame, whole-slot crack masks and orange tint",
-      "image_box_to_frame_ratio": "74/88 (84.1%); native transparent padding and item proportions preserved",
-      "soul_marker_cell": "Two ninths of frame width and height: two thirds of the previous marker size; native glyph aspect ratio preserved",
-      "soul_marker_position": "Centered within the top-left quarter of the item frame; glyph centered inside the SVG viewport"
+      "image_box_to_frame_ratio": "243/306 (79.4118%); opaque native sprite template matching against the supplied 1474 x 368 screenshot; original alpha padding retained",
+      "soul_marker_cell": "88/306 (28.7582%) full packed texture viewport; blue channel retains three souls, green channel retains five",
+      "soul_marker_position": "31/306 (10.1307%) from top and left; original 20 x 20 texture padding retained, without centering a cropped glyph group"
     },
     "book": {
       "native_texture": "T_UI_Enchantment_Book_Slot",
@@ -47,5 +47,5 @@
     "Unique red matches the supplied running game; the earlier static default color token was orange and is not used for this reference.",
     "No game equipment power, favorite or equipped state is invented on the drop catalogue."
   ],
-  "visual_reference": "Four user-supplied in-game inventory and enchantment-collection screenshots, 2026-10-10"
+  "visual_reference": "User supplied 1474 x 368 four-item game screenshot, 2026-10-10; measurements recorded in inventory-reference-measurements.json"
 }
