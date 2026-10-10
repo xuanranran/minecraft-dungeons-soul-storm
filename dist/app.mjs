@@ -7,11 +7,11 @@ setupPreferences();
 const $=id=>document.getElementById(id),clock=new SyncedClock();
 let mapController,stormController,lastWorld='overworld',routeTicket=0;
 const getMaps=retryable(async()=>{
- const [module]=await Promise.all([import('./maps.mjs?v=popup1'),loadStyle('./maps.css?v=popup1'),loadStyle('./vendor/leaflet/leaflet.css'),loadScript('./vendor/leaflet/leaflet.js'),loadMapIndex()]);
+ const [module]=await Promise.all([import('./maps.mjs?v=stormlink1'),loadStyle('./maps.css?v=popup1'),loadStyle('./vendor/leaflet/leaflet.css'),loadScript('./vendor/leaflet/leaflet.js'),loadMapIndex()]);
  mapController=await module.setupMaps();return mapController;
 });
 const getStorm=retryable(async()=>{
- const [module]=await Promise.all([import('./storm.mjs?v=layout2'),loadStyle('./storm.css?v=layout2')]);
+ const [module]=await Promise.all([import('./storm.mjs?v=stormlink1'),loadStyle('./storm.css?v=stormlink1')]);
  stormController=await module.setupStorm({clock});return stormController;
 });
 const getDrops=retryable(async()=>{
@@ -35,7 +35,8 @@ tick();syncTime();setInterval(()=>{if(!document.hidden||stormController)tick();}
 document.addEventListener('visibilitychange',()=>{if(!document.hidden){tick();syncTime();}});
 
 async function route(){
- const ticket=++routeTicket,params=new URLSearchParams(location.hash.slice(1)),view=location.hash==='#storm'?'storm':'map';
+ const ticket=++routeTicket,params=new URLSearchParams(location.hash.slice(1)),view=params.has('storm')?'storm':'map';
+ let focusRegionQuery=false;
  const switched=document.documentElement.dataset.view&&document.documentElement.dataset.view!==view;
  document.documentElement.dataset.view=view;$('map-panel').hidden=view!=='map';$('storm-panel').hidden=view!=='storm';
  if(view==='storm')mapController?.hide();
@@ -44,13 +45,14 @@ async function route(){
  const panel=$(view+'-panel');panel.setAttribute('aria-busy','true');
  try{
   if(view==='map'){$('map-loading').hidden=false;const controller=await getMaps();if(ticket!==routeTicket)return;await controller.show(params);lastWorld=controller.worldId;}
-  else{const controller=await getStorm();if(ticket!==routeTicket)return;controller.show();}
+  else{const controller=await getStorm();if(ticket!==routeTicket)return;focusRegionQuery=controller.show(params.get('region'));}
  }catch(error){
   if(ticket!==routeTicket)return;
   if(view==='map'){$('map-status').textContent=error.message;$('map-retry').hidden=false;$('map-loading').hidden=true;}
   else{$('storm-loading').textContent='加载失败，请点击重试。';$('storm-loading').hidden=false;}
   showNotice('内容加载失败，请检查网络后重试。');console.error(error);
  }finally{if(ticket===routeTicket)panel.setAttribute('aria-busy','false');}
+ if(ticket===routeTicket&&focusRegionQuery){$('query-heading').focus({preventScroll:true});$('query-heading').closest('section').scrollIntoView({block:'start',behavior:'instant'});}
 }
 window.addEventListener('hashchange',route);
 for(const tab of document.querySelectorAll('[data-page-tab]'))tab.addEventListener('click',()=>{const hash=tab.dataset.pageTab==='storm'?'storm':new URLSearchParams({map:lastWorld}).toString();if(location.hash==='#'+hash)route();else location.hash=hash;});

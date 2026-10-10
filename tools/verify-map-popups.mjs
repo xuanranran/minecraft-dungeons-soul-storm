@@ -24,12 +24,12 @@ try{
   await page.evaluate(()=>{navigator.clipboard.writeText=async()=>{throw Error('Clipboard unavailable');};});
   await page.locator('.map-share-button').click();const fallback=page.locator('.map-share-url');await fallback.waitFor();assert.match(await fallback.inputValue(),/marker=station-2769-3640$/);assert.equal(await fallback.getAttribute('aria-label'),'此地点的位置链接');
   await page.goto('http://127.0.0.1:8080/#map=overworld&marker=storm-5041-7759');await page.locator('.map-popup-name').waitFor();
-  assert.equal(await page.locator('.map-popup-name').innerText(),'风暴生成器');assert.ok(await page.locator('.map-popup-note').isVisible());assert.equal(await page.locator('.map-storm-tracker').getAttribute('href'),'#storm');
+  assert.equal(await page.locator('.map-popup-name').innerText(),'风暴生成器');assert.ok(await page.locator('.map-popup-note').isVisible());const target=new URLSearchParams((await page.locator('.map-storm-tracker').getAttribute('href')).slice(1));assert.ok(target.has('storm'));assert.equal(target.get('region'),'多雨平原');
   const container=await page.locator('#world-map').boundingBox(),bounds=await popup.boundingBox();
   assert.ok(bounds.x>=container.x-2&&bounds.x+bounds.width<=container.x+container.width+2,`${width}: popup fits map width`);
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   await popup.screenshot({path:`popup-generator-${width}.png`});
-  await page.locator('.map-storm-tracker').click();await page.locator('#current-name').waitFor();assert.equal(await page.locator('#storm-tab').getAttribute('aria-selected'),'true');
+  await page.locator('.map-storm-tracker').click();await page.locator('#region-result').waitFor();assert.equal(await page.locator('#storm-tab').getAttribute('aria-selected'),'true');assert.equal(await page.locator('#region option:checked').innerText(),'多雨平原');assert.match(await page.locator('#region-state').innerText(),/多雨平原/);assert.notEqual(await page.locator('#region-countdown').innerText(),'—');
   assert.deepEqual(errors,[]);console.log(width,'game-style popup, found persistence, keyboard toggle, copy/fallback and storm link passed');await page.close();
  }
 }finally{await browser.close()}

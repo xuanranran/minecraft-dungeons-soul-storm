@@ -19,7 +19,7 @@ const R=createRotation(settings),$=id=>document.getElementById(id),key='map-rota
  for(const button of document.querySelectorAll('.storm-map-link')){const active=c.active&&button.dataset.mapStorm===R.places[c.index];button.classList.toggle('is-active',active);if(active)button.setAttribute('aria-current','true');else button.removeAttribute('aria-current');button.querySelector('.storm-map-state').hidden=!active;}
  alarms.tick();
  }
- function select(region,hours){if(!Number.isInteger(region)||region< -1||region>6||![24,48,168].includes(hours))throw Error('地区或时间范围无效');config.region=region;config.hours=hours;$('region').value=region;$('horizon').value=hours;persist();listKey='';render()}
+ function select(region,hours){if(!Number.isInteger(region)||region< -1||region>6||![24,48,168].includes(hours))throw Error('地区或时间范围无效');config.region=region;config.hours=hours;$('region').value=region;$('horizon').value=hours;persist();listKey='';render();const params=new URLSearchParams(location.hash.slice(1));if(params.has('storm')&&params.has('region'))history.replaceState(null,'',region<0?'#storm':'#storm&'+new URLSearchParams({region:R.places[region]}));}
  $('region').addEventListener('change',()=>select(Number($('region').value),config.hours));$('horizon').addEventListener('change',()=>select(config.region,Number($('horizon').value)));
  $('calibration').addEventListener('submit',e=>{e.preventDefault();const anchor=Date.parse($('anchor-date').value+'T'+$('anchor-time').value+':00+08:00'),offset=Number($('anchor-region').value);if(!Number.isFinite(anchor)||anchor<Date.parse('2000-01-01')||anchor>=Date.parse('2100-01-01')||!Number.isInteger(offset)||offset<0||offset>6){$('save-message').textContent='请输入有效的日期、时间和地区。';return}config.anchor=anchor;config.offset=offset;$('save-message').textContent=persist()?'已保存，时段已更新':'校准已应用；当前浏览器无法保存设置。';listKey='';render()});
  const alarms=setupAlarm({R,clock:syncedClock,getConfig:()=>config,format:ms=>date(ms)+' '+time(ms)});
@@ -35,5 +35,5 @@ const R=createRotation(settings),$=id=>document.getElementById(id),key='map-rota
  $('storm-rotation-status').textContent='按此顺序循环；同一地区每 4 小时 40 分钟开启一次。';
  render();
  $('storm-loading').hidden=true;
- return {show:render,tick(){if(!document.hidden&&!$('storm-panel').hidden)render();else alarms.tick();}};
+ return {show(regionName){const region=R.places.indexOf(regionName);if(region>=0){select(region,config.hours);return true;}render();return false;},tick(){if(!document.hidden&&!$('storm-panel').hidden)render();else alarms.tick();}};
 }

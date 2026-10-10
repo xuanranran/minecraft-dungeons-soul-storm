@@ -63,10 +63,10 @@ GitHub Pages 通过 `.github/workflows/pages.yml` 发布 `dist/`，推送到 `ma
 
 固定顶栏提供地图、灵魂风暴导航、北京时间和显示设置。地图默认聚焦咆哮树林，可用“查看全图”浏览整个世界；手机端通过地图上的悬浮“地点分类”按钮打开筛选面板，可点击遮罩、关闭按钮或按 Escape 收起；“专注地图”扩大查看区域。灵魂风暴在桌面采用双栏布局，手机自动堆叠。
 
-地点窗口采用游戏风格的方角深色面板，显示原生地点图标、分类、名称和所属地区；勾选“已找到”保存探索进度，可复制位置链接，风暴地点提供灵魂风暴入口。窗口打开时缩放按钮移至右下方，避免遮挡关闭按钮。
+地点窗口采用游戏风格的方角深色面板，显示原生地点图标、分类、名称和所属地区；勾选“已找到”保存探索进度，可复制位置链接。风暴地点的“查看灵魂风暴”直接选中所属地区，并定位至该地区的开启时段和实时倒计时；地区链接支持刷新和收藏。窗口打开时缩放按钮移至右下方，避免遮挡关闭按钮。
 
 `app.mjs` 负责导航和公共时钟，`ui.mjs` 负责显示偏好。地图组件和 Leaflet 只在访问地图时加载；`storm.mjs` 与其样式只在打开灵魂风暴或恢复已启用闹钟时加载。地图点位分为三个区域文件，切换区域后读取并缓存；筛选与搜索复用已有标记。
 
 掉落窗口先读取约 195 KiB 的物品摘要（完整源数据约 3740 KiB），展开单件装备时才下载该件详情和 `equipment-details.mjs`，生成参数与附魔内容。修改完整装备资料后运行 `npm run build:data` 更新分发文件；`npm test` 检查分片与完整资料是否一致。地图数据分片由 `tools/build-maps.py` 同步生成。
 
-`tools/verify-layout.mjs`、`tools/verify-maps.mjs`、`tools/verify-responsive-controls.mjs` 和 `tools/verify-map-popups.mjs` 可用 Playwright 和 Edge 验证桌面、手机布局、加载请求、设置保存、掉落详情、地图交互、分类弹层、风暴状态切换及地点窗口交互；先运行本地服务，再运行脚本。
+`tools/verify-layout.mjs`、`tools/verify-maps.mjs`、`tools/verify-responsive-controls.mjs`、`tools/verify-map-popups.mjs` 和 `tools/verify-storm-links.mjs` 可用 Playwright 和 Edge 验证桌面、手机布局、加载请求、设置保存、掉落详情、地图交互、分类弹层、风暴状态切换、地点窗口交互及七个地区的生成器跳转；先运行本地服务，再运行脚本。
