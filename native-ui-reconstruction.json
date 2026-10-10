@@ -1,0 +1,33 @@
+{
+  "source": "Locally extracted UE5.6 Minecraft Dungeons II assets",
+  "exact": [
+    "272 native equipment PNGs",
+    "105 native enchantment/effect PNGs",
+    "Soul Storm mask and rarity marker source texture bytes",
+    "Enchantment/effect distinction from M_EnchantIndicator and MI_EffectIndicator"
+  ],
+  "browser_reconstruction": {
+    "enchantment": {
+      "material": "M_EnchantIndicator",
+      "Diamond/Square": true,
+      "Icon Scale": 1.23,
+      "FrameOpacity": 0.5
+    },
+    "effect": {
+      "material": "MI_EffectIndicator",
+      "Diamond/Square": false,
+      "Pixel Density": 8
+    },
+    "equipment": {
+      "material": "M_RaritySlot_BG",
+      "StateStormItem": 1,
+      "special": "#2CA2FE",
+      "unique": "#FF7E2F",
+      "mask": "Packed RGB channels; three separate SVG channel filters"
+    }
+  },
+  "limitations": [
+    "Shader expression graphs and complete runtime UI parameter overrides are absent from the cooked exports.",
+    "Browser frame geometry, channel blending, marker channel choice and animation are reconstruction choices, not an extracted shader render. No pixel-identical fidelity claim."
+  ]
+}

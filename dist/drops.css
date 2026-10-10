@@ -18,13 +18,17 @@
 .drops-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:10px}
 .drops-column{display:flex;flex-direction:column;gap:10px;min-width:0}
 .drop-item{display:grid;grid-template-columns:88px minmax(0,1fr);gap:10px 12px;align-items:start;align-content:start;padding:14px;border:1px solid var(--line);background:var(--surface-alt);border-radius:10px;min-width:0}
-.drop-picture{position:relative;isolation:isolate;display:grid;place-items:center;width:88px;min-width:88px;height:88px;background:#131619 url('./images/equipment-backgrounds/T_UI_Slot_Background.png') center/100% 100% no-repeat;border-radius:8px;overflow:hidden;padding:6px}
+.drop-picture{position:relative;isolation:isolate;display:grid;place-items:center;width:88px;min-width:88px;height:88px;background:color-mix(in srgb,var(--equipment-color,#aaa) 52%,#131619) url('./images/equipment-backgrounds/T_UI_Slot_Background.png') center/100% 100% no-repeat;background-blend-mode:luminosity;border-radius:0;clip-path:polygon(5% 0,95% 0,95% 5%,100% 5%,100% 95%,95% 95%,95% 100%,5% 100%,5% 95%,0 95%,0 5%,5% 5%);overflow:hidden;padding:6px}
 .drop-picture img{position:relative;z-index:2;width:100%;height:100%;object-fit:contain;image-rendering:pixelated}
-.drop-item.unique .drop-picture{--equipment-color:#ff7e2f;border:1px solid var(--equipment-color)}
-.drop-item.special .drop-picture{--equipment-color:#2ca2fe;border:1px solid var(--equipment-color)}
-/* Native slot texture and Soul Storm mask, composed with the game's rarity colors. */
-.drop-picture::before{content:"";position:absolute;inset:8%;z-index:0;background:radial-gradient(ellipse at 50% 68%,color-mix(in srgb,var(--equipment-color,#aaa) 38%,transparent),transparent 78%)}
-.drop-picture::after{content:"";position:absolute;inset:8%;z-index:1;pointer-events:none;background:var(--equipment-color,#aaa);mask:url('./images/equipment-backgrounds/T_UI_SlotFX_SoulStorm_Mask.png') center/100% 100% no-repeat;mask-mode:luminance;opacity:.24}
+.drop-item.unique .drop-picture{--equipment-color:#ff7e2f}
+.drop-item.special .drop-picture{--equipment-color:#2ca2fe}
+/* Native textures and packed channels; runtime shader blending is reconstructed for the browser. */
+.native-soul-layer{position:absolute;inset:7%;z-index:1;pointer-events:none;background:var(--equipment-color,#aaa);mask-size:100% 100%;mask-repeat:no-repeat;mask-mode:alpha;image-rendering:pixelated;opacity:.5;animation:native-soul-pulse 3s ease-in-out infinite}
+.native-soul-r{mask-image:url('./images/equipment-backgrounds/T_UI_SlotFX_SoulStorm_Mask-r.svg')}
+.native-soul-g{mask-image:url('./images/equipment-backgrounds/T_UI_SlotFX_SoulStorm_Mask-g.svg');animation-delay:-1s}
+.native-soul-b{mask-image:url('./images/equipment-backgrounds/T_UI_SlotFX_SoulStorm_Mask-b.svg');animation-delay:-2s}
+@keyframes native-soul-pulse{0%,100%{opacity:.24}50%{opacity:.7}}
+@media(prefers-reduced-motion:reduce){.native-soul-layer{animation:none;opacity:.45}}
 .drop-item.unique .drop-kind{color:#d85454}.drop-item.special .drop-kind{color:#2485d5}
 .drop-info{min-width:0;min-height:88px;display:flex;flex-direction:column;justify-content:flex-start;gap:2px}.drop-info h3{font-size:16px;margin:0;line-height:1.5}
 .drop-kind,.drop-weight{font-size:12px;color:var(--muted);line-height:1.6}
@@ -38,7 +42,16 @@
 .drop-details dt{color:var(--muted)}.drop-details dd{margin:0;overflow-wrap:anywhere}
 .drop-effect{font-size:12px;margin-bottom:7px;overflow-wrap:anywhere}
 .drop-effect-card{display:flex;align-items:flex-start;gap:10px;padding:10px;margin:10px 0;border:1px solid var(--line);border-radius:7px;background:var(--surface);font-size:12px;line-height:1.6}
-.drop-effect-icon{flex:none;width:48px;height:48px;object-fit:contain;image-rendering:pixelated;padding:2px;border:1px solid #a65316;border-radius:5px;background:radial-gradient(#492713,#111)}
+.drop-effect-icon{width:100%;height:100%;object-fit:contain;image-rendering:pixelated}
+.native-indicator{position:relative;isolation:isolate;display:grid;place-items:center;flex:none;width:48px;height:48px;overflow:hidden;background:rgb(0 0 0 / .5)}
+.native-indicator[hidden]{display:none}
+.native-indicator img{display:block;width:100%;height:100%;object-fit:contain;border:0;border-radius:0;padding:0;background:transparent;image-rendering:pixelated}
+.native-enchantment{clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+.native-enchantment img{transform:scale(1.23)}
+.native-effect{clip-path:polygon(8% 0,92% 0,92% 8%,100% 8%,100% 92%,92% 92%,92% 100%,8% 100%,8% 92%,0 92%,0 8%,8% 8%)}
+.native-book{display:grid;place-items:center;flex:none;width:48px;height:48px;background:url('./images/equipment-backgrounds/T_UI_Enchantment_Book_Slot.png') center/100% 100% no-repeat}
+.native-book .native-indicator{width:28px;height:28px}
+.native-book[hidden]{display:none}
 .drop-effect-copy{min-width:0;min-height:48px;display:flex;flex-direction:column;justify-content:center;gap:2px;overflow-wrap:anywhere}.drop-effect-copy strong{display:block;font-size:13px;margin:0}.drop-effect-copy p{color:var(--muted);margin:0}
 .region-icon{display:inline-block;width:22px;height:22px;object-fit:contain;image-rendering:pixelated;vertical-align:middle;margin-right:6px;flex:none;border-radius:4px}
 .status-name .region-icon{width:28px;height:28px}.drops-header .region-icon{width:26px;height:26px}
@@ -50,9 +63,9 @@
 .drop-extra{border:0;background:transparent;margin:10px 0}.drop-extra summary{line-height:1.5}.drop-entry{font-size:12px;padding:8px 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere}.drop-entry:last-child{border-bottom:0}
 .drop-detail-panel .drop-effect-card{background:var(--surface-alt)}
 .drop-extra .drop-enchantment-card{display:grid;grid-template-columns:48px minmax(0,1fr);align-items:start;gap:10px;padding:10px;margin:8px 0;border:1px solid var(--line);border-radius:8px;background:var(--surface-alt);line-height:1.6}
-.drop-enchantment-card .drop-list-icon{width:48px;height:48px;border:1px solid #a65316;border-radius:5px;padding:2px;background:radial-gradient(#492713,#111)}
+.drop-enchantment-card .drop-list-icon{width:100%;height:100%;border:0;border-radius:0;padding:0;background:transparent}
 .drop-enchantment-copy{min-width:0;min-height:48px;display:flex;flex-direction:column;justify-content:space-between;gap:2px;overflow-wrap:anywhere}.drop-enchantment-copy strong{display:block;font-size:12px;margin:0}.drop-enchantment-copy p{color:var(--muted);font-size:11px;line-height:1.5;margin:0}
-.has-description .drop-list-icon{align-self:center}
+.has-description .native-indicator,.has-description .native-book{align-self:center}
 .has-description .drop-enchantment-copy{justify-content:center;align-self:center}
 .drop-enchantment-trigger{grid-column:1/-1;font-size:12px;line-height:1.6;color:var(--muted);margin:0}
 .drop-details .drop-levels{grid-column:1/-1;grid-template-columns:40px minmax(0,1fr);gap:0 10px;margin:0;border-top:1px solid var(--line)}

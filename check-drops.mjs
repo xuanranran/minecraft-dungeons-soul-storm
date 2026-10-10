@@ -1,8 +1,14 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import {createHash} from 'node:crypto';
 import {itemsForRegion,displayedRarity,displayedParameters,displayedTables,categories} from './dist/drops.mjs';
 import {regionImages} from './dist/region-icons.mjs';
 const data=JSON.parse(fs.readFileSync(new URL('./dist/equipment.json',import.meta.url)));
+const nativeEffects=JSON.parse(fs.readFileSync(new URL('./native-effect-images.json',import.meta.url))).images;
+assert.equal(nativeEffects.length,105);
+const nativeKinds=new Map(nativeEffects.map(icon=>[icon.file,icon.kind]));
+for(const icon of nativeEffects){assert.equal(createHash('sha256').update(fs.readFileSync(new URL(`./dist/${icon.file}`,import.meta.url))).digest('hex'),icon.sha256);assert.equal(icon.kind,icon.native_package.includes('/Enchantments/')?'enchantment':'effect');}
+for(const item of data.items)for(const entry of [...item.fixed_effects,...item.tables.flatMap(table=>table.rows)])if(entry.image){assert.equal(entry.native_icon_kind,nativeKinds.get(entry.image));}
 const rotation=JSON.parse(fs.readFileSync(new URL('./dist/rotation.json',import.meta.url)));
 assert.equal(data.items.length,272);
 assert.ok(!JSON.stringify(data).includes('https://'));
@@ -34,7 +40,7 @@ for(const item of data.items){const entries=displayedParameters(item);assert.ok(
 const levelRows=data.items.flatMap(i=>i.tables.flatMap(t=>t.rows)).filter(r=>r.levels);
 const enchantmentReference=JSON.parse(fs.readFileSync(new URL('./enchantment-reference.json',import.meta.url))).enchantments;
 const effectNumbers=text=>text.match(/\d+(?:\.\d+)?%?/g)??[];
-const enchantmentSlug=image=>image?.split('enchantments-')[1]?.replace('.webp','');
+const enchantmentSlug=image=>image?.split('enchantments-')[1]?.replace('.png','');
 assert.equal(Object.keys(enchantmentReference).length,32);
 for(const row of levelRows){
  const reference=enchantmentReference[enchantmentSlug(row.image)];
@@ -59,26 +65,26 @@ for(const item of data.items){
  assert.deepEqual(tables.filter(t=>t.title.includes('可能出现')),item.tables.filter(t=>t.title.includes('可能出现')));
 }
 const gauntletBooks=displayedTables(uniqueGauntlets).find(t=>t.title.includes('可用附魔'));
-assert.ok(!gauntletBooks.rows.some(r=>r.image.endsWith('primed-enchantment.webp')||r.image.endsWith('ichor-blast.webp')));
+assert.ok(!gauntletBooks.rows.some(r=>r.image.endsWith('primed-enchantment.png')||r.image.endsWith('ichor-blast.png')));
 assert.ok(uniqueGauntlets.fixed_effects.some(e=>e.name==='霜电附魔'));
 assert.ok(levelRows.length>3000);
 for(const row of levelRows){if(row.levels.length){assert.deepEqual(row.levels.map(l=>l.level),['I','II','III']);assert.ok(row.levels.every(l=>typeof l.effect==='string'&&l.effect.length>0));}else assert.ok(row.ungraded_effect);}
 assert.equal(new Set(levelRows.map(row=>row.image)).size,34);
 for(const row of levelRows)assert.ok(row.description?.length>5);
-const amplifier=levelRows.find(row=>row.image.endsWith('enchantments-artifact-amplifier.webp'));
+const amplifier=levelRows.find(row=>row.image.endsWith('enchantments-artifact-amplifier.png'));
 assert.equal(amplifier.description,'使用法器时会获得“驭器”状态，缩短法器冷却时间，同时提高法器伤害和灵魂收集量。');
 const alchemy=levelRows.find(r=>r.image?.includes('ancient-alchemy'));
 assert.deepEqual(alchemy.levels.map(l=>l.effect.match(/\d+/)?.[0]),['30','45','60']);
 for(const row of levelRows){
- if(row.image.endsWith('enchantments-gravity-pulse.webp')){
+ if(row.image.endsWith('enchantments-gravity-pulse.png')){
   assert.deepEqual(row.levels.map(l=>l.effect.match(/\d+/)?.[0]),['4','8','10']);
   assert.equal(row['III级效果'],row.levels[2].effect);
  }
- if(row.image.endsWith('enchantments-tumbleshot.webp')){
+ if(row.image.endsWith('enchantments-tumbleshot.png')){
   assert.deepEqual(row.levels.map(l=>l.effect.match(/\d+/g)),[['1','110'],['1','120'],['2','130']]);
   assert.equal(row['III级效果'],row.levels[2].effect);
  }
- if(row.image.endsWith('enchantments-cow-stampede.webp')){
+ if(row.image.endsWith('enchantments-cow-stampede.png')){
   assert.equal(row['触发条件'],'全速冲刺后撞击敌人');
   assert.equal(new Set(row.levels.map(l=>l.effect)).size,1);
  }
@@ -93,7 +99,7 @@ for(const item of data.items.filter(i=>i.rarity==='独特'&&['武器','盔甲部
  assert.deepEqual(pools[0].rows,base.tables.find(t=>t.title.includes('可能出现')).rows);
 }
 for(const row of rollRows){assert.ok(['I','II','III'].every(level=>row.effect_levels.some(l=>l.level===level)));assert.ok(row.effect_levels.every(l=>l.value&&l.effect));}
-const ally=sample.tables.flatMap(t=>t.rows).find(r=>r.image?.endsWith('effects-ally.webp'));
+const ally=sample.tables.flatMap(t=>t.rows).find(r=>r.image?.endsWith('effects-ally.png'));
 assert.deepEqual(ally.effect_levels.map(l=>l.value),['15%','30%','50%','70%']);
 assert.deepEqual(ally.effect_levels.map(l=>l.level),['I','II','III','独特']);
 assert.ok(ally.effect_levels.every(l=>l.effect.includes('正面状态持续时间延长')));

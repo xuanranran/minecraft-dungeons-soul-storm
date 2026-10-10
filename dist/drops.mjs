@@ -19,10 +19,11 @@ export function setupDrops(){
  const dialog=document.getElementById('drops-dialog'),title=document.getElementById('drops-title'),grid=document.getElementById('drops-grid'),status=document.getElementById('drops-status'),tabs=document.getElementById('drops-tabs');
  let dataPromise,region='',category='近战武器',opener;
  const el=(tag,className,text)=>{const e=document.createElement(tag);if(className)e.className=className;if(text!=null)e.textContent=text;return e};
+ const nativeIcon=(entry,className,book=false)=>{const frame=el('span',`native-indicator native-${entry.native_icon_kind==='enchantment'?'enchantment':'effect'}`),icon=el('img',className),slot=book?el('span','native-book'):frame;icon.src=entry.image;icon.alt='';icon.width=48;icon.height=48;icon.loading='lazy';icon.addEventListener('error',()=>{slot.hidden=true},{once:true});frame.append(icon);if(book)slot.append(frame);return slot};
  const mobile=matchMedia('(max-width:600px)');
  const layoutCards=()=>{const cards=[...grid.querySelectorAll('.drop-item')].sort((a,b)=>Number(a.style.order)-Number(b.style.order));if(mobile.matches){grid.replaceChildren(...cards);return}const columns=[el('div','drops-column'),el('div','drops-column')];cards.forEach((card,index)=>columns[index%2].append(card));grid.replaceChildren(...columns)};
  mobile.addEventListener('change',layoutCards);
- const load=()=>dataPromise??=(fetch('./equipment.json?v=nativegear1').then(r=>{if(!r.ok)throw Error('无法读取装备数据');return r.json()}).catch(e=>{dataPromise=null;throw e}));
+ const load=()=>dataPromise??=(fetch('./equipment.json?v=nativeui2').then(r=>{if(!r.ok)throw Error('无法读取装备数据');return r.json()}).catch(e=>{dataPromise=null;throw e}));
  async function render(){
   const target=region,selected=category;grid.replaceChildren();status.textContent='正在读取掉落物品…';
   try{const data=await load();if(region!==target||category!==selected||!dialog.open)return;
@@ -32,6 +33,7 @@ export function setupDrops(){
     const card=el('article','drop-item'),picture=el('div','drop-picture'),img=el('img');img.src=item.image;img.alt=item.name;img.loading='lazy';img.width=88;img.height=88;
     card.classList.toggle('unique',item.rarity==='独特');
     card.classList.toggle('special',displayedRarity(item)==='特殊');
+    picture.classList.add('native-storm-slot');for(const channel of ['r','g','b'])picture.append(el('span',`native-soul-layer native-soul-${channel}`));
     img.addEventListener('error',()=>{picture.replaceChildren(el('span','meta','图片暂不可用'))},{once:true});picture.append(img);
     const info=el('div','drop-info');info.append(el('h3','',item.name),el('p','drop-kind',[displayedCategory(item),item.overview['部位'],displayedRarity(item)].filter(Boolean).join(' · ')));
     if(item.description)info.append(el('p','drop-description',item.description));
@@ -39,15 +41,15 @@ export function setupDrops(){
     const details=el('details','drop-details'),summary=el('summary','','参数与效果'),panel=el('div','drop-detail-panel');details.append(summary,panel);const dl=el('dl');
     for(const [key,value] of displayedParameters(item)){dl.append(el('dt','',key),el('dd','',value))}panel.append(dl);
     for(const effect of item.fixed_effects){
-     const box=el('div','drop-effect-card'),icon=el('img','drop-effect-icon');icon.src=effect.image;icon.alt='';icon.width=48;icon.height=48;icon.loading='lazy';icon.addEventListener('error',()=>{icon.hidden=true},{once:true});
+     const box=el('div','drop-effect-card'),icon=nativeIcon(effect,'drop-effect-icon');
      const text=el('div','drop-effect-copy');text.append(el('strong','',effect.name),el('p','',effect.effect));box.append(icon,text);panel.append(box);
     }
     for(const table of displayedTables(item)){if(table.columns.includes('区域')||table.title==='属性 / 数值')continue;
      const section=el('details','drop-extra'),heading=el('summary','',table.title.replace(item.name,''));section.append(heading);
      if(table.title==='使用附魔效果')section.classList.add('drop-use-effects');
-     for(const row of table.rows){const entry=el('div','drop-entry'),fields=Object.entries(row).filter(([key])=>!['image','description','levels','effect_levels','ungraded_effect'].includes(key)),levelData=row.effect_levels?.filter(level=>level.level!=='独特'||level.effect.trim()!==row.effect_levels.find(tier=>tier.level==='III')?.effect.trim())??row.levels;
+     for(const row of table.rows){const entry=el('div','drop-entry'),fields=Object.entries(row).filter(([key])=>!['image','native_icon_kind','description','levels','effect_levels','ungraded_effect'].includes(key)),levelData=row.effect_levels?.filter(level=>level.level!=='独特'||level.effect.trim()!==row.effect_levels.find(tier=>tier.level==='III')?.effect.trim())??row.levels;
       let copy=entry;
-      if(row.image){entry.classList.add('drop-enchantment-card');const icon=el('img','drop-list-icon');icon.src=row.image;icon.alt='';icon.width=48;icon.height=48;icon.loading='lazy';icon.addEventListener('error',()=>{icon.hidden=true},{once:true});copy=el('div','drop-enchantment-copy');copy.append(el('strong','',fields[0][1]));entry.append(icon,copy);fields.shift();}
+      if(row.image){entry.classList.add('drop-enchantment-card');const icon=nativeIcon(row,'drop-list-icon',table.title.includes('可用附魔'));copy=el('div','drop-enchantment-copy');copy.append(el('strong','',fields[0][1]));entry.append(icon,copy);fields.shift();}
       if(row.description){entry.classList.add('has-description');copy.append(el('p','',row.description));}
       for(const [key,value] of fields){if(row.levels&&/级效果/.test(key)||row.effect_levels&&['I','II','III','独特'].includes(key))continue;if(row.image&&key==='触发条件')entry.append(el('p','drop-enchantment-trigger',`${key}：${value}`));else copy.append(el('p','',`${key}：${value}`));}
       if(levelData){entry.classList.add('has-levels');const levels=el('dl','drop-levels'),third=levelData.find(level=>level.level==='III');for(const level of levelData){const text=level.level==='独特'&&third&&level.effect.trim()===third.effect.trim()?'和 III 级一样的效果':level.effect;levels.append(el('dt','',/^(I|II|III)$/.test(level.level)?`${level.level} 级`:level.level),el('dd','',text));}if(!levelData.length)levels.append(el('dt','','效果'),el('dd','',row.ungraded_effect||'暂无分级数据'));entry.append(levels);}

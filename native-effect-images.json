@@ -1,0 +1,634 @@
+{
+  "images": [
+    {
+      "file": "./images/effects/effects-acrobat.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_RollCooldown.uasset",
+      "sha256": "485c1cec89d67395979cc91c8a0221eaddd6558cf4aefcc1aff1778891711b1a"
+    },
+    {
+      "file": "./images/effects/effects-aim.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Eagle_Eye.uasset",
+      "sha256": "273c84170064e8ac0e24a51698914df9262243d838258eff0a1eef6db7cec99f"
+    },
+    {
+      "file": "./images/effects/effects-alchemist.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_AnimaConduit.uasset",
+      "sha256": "7603a063591b9686cf0bb903607f394754e8712e08da9e52c2b2dd434a1aee52"
+    },
+    {
+      "file": "./images/effects/effects-ally.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Vivify.uasset",
+      "sha256": "b0c24505843a270d1c9e849c37e206a27f69afbe8c031cd6f8a333d327113d76"
+    },
+    {
+      "file": "./images/effects/effects-assassin.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Gambler.uasset",
+      "sha256": "7ccb6563b74f1bf70451634e16aa54f460b1e6a7760593cdd94cb38584114ce6"
+    },
+    {
+      "file": "./images/effects/effects-boost.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_StatusBuff.uasset",
+      "sha256": "f07c1fb107ba3ce3a1d169afaedc6198d50f3ddcf850cc97d7e324b435f4d884"
+    },
+    {
+      "file": "./images/effects/effects-bounty-hunter.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Committed.uasset",
+      "sha256": "d31308e7abb1e0c4a2f71a9db39ac620860e2778c709daf1e6c193e0098d0745"
+    },
+    {
+      "file": "./images/effects/effects-bowyer.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_ArrowBurst.uasset",
+      "sha256": "f250bd6df350dd1522deda8cfade637d058fa4bd28e3132ca64df29004f2ca6b"
+    },
+    {
+      "file": "./images/effects/effects-brawler.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_SweepingEdge.uasset",
+      "sha256": "b7475fcb0a7a130c1496160cc0299e6fa84ad0f34db2880eaecd6c0e342fa32c"
+    },
+    {
+      "file": "./images/effects/effects-bully.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Opportunist.uasset",
+      "sha256": "1eedc8cf6ba8dd6196b4c1ae88b2bfcd55bdceef6ba3669a0c745613f6de30eb"
+    },
+    {
+      "file": "./images/effects/effects-constitution.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_HealthBoost.uasset",
+      "sha256": "764c3a03b89c3b59efcc5bbe6c92be6018673cc088815c122f652e85a4e7baa4"
+    },
+    {
+      "file": "./images/effects/effects-cooldown.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_CoolDown.uasset",
+      "sha256": "584bff3d900a78523f8997a609b5c50a4a2ee4a0cf3927c2a24961557f932d51"
+    },
+    {
+      "file": "./images/effects/effects-critical-edge.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_CriticalEdge.uasset",
+      "sha256": "a5b95b2d84bcbbbafef0a6faef1c90255f8ef1e7984767a231069791e7e53a40"
+    },
+    {
+      "file": "./images/effects/effects-critical-hit.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_CriticalHit.uasset",
+      "sha256": "270b7a3ae5854b762ac11f58613873f4832ac0a4946a5f726722e30290fcf40c"
+    },
+    {
+      "file": "./images/effects/effects-cryomancer.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_FrostFocus.uasset",
+      "sha256": "2391dd8e353d94845c4b6fe71557ac1fbce1201337266975b52ccb40e341a9b3"
+    },
+    {
+      "file": "./images/effects/effects-deflection.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Deflect.uasset",
+      "sha256": "e36299e3644cae57a0f88dbd06014f9b6ee7e0ab2b72c79c7f2b3109a2a850f8"
+    },
+    {
+      "file": "./images/effects/effects-duelist.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Duelist.uasset",
+      "sha256": "43a9ffe0d02f6c0c1b1faa0a4cf41178368289197b042173cbd7136dab52f147"
+    },
+    {
+      "file": "./images/effects/effects-electromancer.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_LightningFocus.uasset",
+      "sha256": "8ec535d7dcdd5869b227f2b4c9c0783d7971ae089d8a8eb9401c2081cb7cf197"
+    },
+    {
+      "file": "./images/effects/effects-elemental-protection.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_ElementalProtection.uasset",
+      "sha256": "f74de62fc3385ea36f6da6f95d55356f217223be3dd03ded5b36aa40af8a05fd"
+    },
+    {
+      "file": "./images/effects/effects-evasion.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_SideStep.uasset",
+      "sha256": "0de3fe05d0f5ed6c0fbb89751677b0245ea38a84236e22fc283f2cfb2814079b"
+    },
+    {
+      "file": "./images/effects/effects-finesse.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Finesse.uasset",
+      "sha256": "8dede0b4b5709ef9cd05b0f9d124b02dc34466f9e062d4411c5e19a7e31f1e4b"
+    },
+    {
+      "file": "./images/effects/effects-fletcher.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Reconstruction.uasset",
+      "sha256": "b032d5ffda87e67ed26076021feaee1d613d7fc3b74afcf7448463fea9107b2b"
+    },
+    {
+      "file": "./images/effects/effects-healer.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_HealingFocus.uasset",
+      "sha256": "96e91f01860031dd69102546565a9ff7b4fc24df2af95f76106243bf375d4d81"
+    },
+    {
+      "file": "./images/effects/effects-impact.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Power.uasset",
+      "sha256": "f483271da68aa8501a8d61d06e00915050eeec2e41dfef0a7da466225e90f4ee"
+    },
+    {
+      "file": "./images/effects/effects-jumpshot.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Jumpshot_unique.uasset",
+      "sha256": "14d4710ee8db2f2dfa1f73ff3399fa7f7864cb03762417981007eddeba7ed077"
+    },
+    {
+      "file": "./images/effects/effects-knockback.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Knockback.uasset",
+      "sha256": "8985dbea280ab0f5e05d5cb5c226869c451e44ba768eaa1be769349e445390e6"
+    },
+    {
+      "file": "./images/effects/effects-looter.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Looting.uasset",
+      "sha256": "183df4830d52e6e7397098f67cc9d2d56877a99299e021048442b8a3978800b9"
+    },
+    {
+      "file": "./images/effects/effects-luck.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Lucky.uasset",
+      "sha256": "f60d87bb2f009dd857eb43cad2e3704a0242950c78919f9ac04b05807aad687c"
+    },
+    {
+      "file": "./images/effects/effects-marksman.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Master_Marksman.uasset",
+      "sha256": "066b757a72c2e3ebb8b7043bee182aba4332d184d833f8c9162cdcfd9cdb5dfe"
+    },
+    {
+      "file": "./images/effects/effects-momentum.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Reeling.uasset",
+      "sha256": "0ec54420799551311d353307722ae9d58331fdaabc0786480b4d351070ba41f5"
+    },
+    {
+      "file": "./images/effects/effects-pack-leader.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_BeastBoss.uasset",
+      "sha256": "23eaab3ed9abe0c1869051eb40898f6ab86ce92e7cea898c2da456f9bcc5bcf2"
+    },
+    {
+      "file": "./images/effects/effects-persistence.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Desperation.uasset",
+      "sha256": "824106d9dc8979e8e2e16ef3d3b8a47c8fc9bdd1cfa65a5e23807c1d8005a09a"
+    },
+    {
+      "file": "./images/effects/effects-point-blank.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_PointBlank.uasset",
+      "sha256": "85e5dc2b386d2b104e35f6c3c5b5b285dee68443aea74e8dd0cc3ffe762a0066"
+    },
+    {
+      "file": "./images/effects/effects-potion-maker.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_PotionCooldown.uasset",
+      "sha256": "4b914e0192c99240f61b2136b25330c8787d81fe36e30a2ec42a47d6a89b1e1e"
+    },
+    {
+      "file": "./images/effects/effects-precision.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Precision.uasset",
+      "sha256": "213a5ddb86ce9288f1f697d76bbe25839c34f426b03775cae1fb52dcf0750711"
+    },
+    {
+      "file": "./images/effects/effects-prickly.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Thorns.uasset",
+      "sha256": "126163e2f62ec699ac68be2bd08199cf481b0cd8105dc538a1087a6745ec1ff8"
+    },
+    {
+      "file": "./images/effects/effects-projectile-protection.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_ProjectileProtection.uasset",
+      "sha256": "8b601dcf3612f8c207a26a835077a0e5a2d2339a26033f64415319b9d93d74b9"
+    },
+    {
+      "file": "./images/effects/effects-prospector.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Prospector.uasset",
+      "sha256": "3a5e3540093842335740c1847e524e15fe4bdac62f08e5284f82e59e4e9c3b4d"
+    },
+    {
+      "file": "./images/effects/effects-protection.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Protection.uasset",
+      "sha256": "9532fc77c2b5063f74b26a4874d7d8a50839ae19455b40021d5b5761966cef4a"
+    },
+    {
+      "file": "./images/effects/effects-prowler.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Shadow_Step.uasset",
+      "sha256": "c5ca2c627af6273e5e68294dd64626005a1707249f72d4d583f9219fd4fd33ac"
+    },
+    {
+      "file": "./images/effects/effects-pyromancer.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_FireFocus.uasset",
+      "sha256": "a27641d8aa6c33306820d9008330638f3d4a0e1ce22f0e6c87bc795e38e405e1"
+    },
+    {
+      "file": "./images/effects/effects-pyrotechnics.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_ExplosiveStrike.uasset",
+      "sha256": "7929cce9a4c13eda9fcf3eb9d5dcea3b46312ce55e1cb5a7218e66d1268c0c3b"
+    },
+    {
+      "file": "./images/effects/effects-quiver.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_AmmoCapacity.uasset",
+      "sha256": "f00b163143ff44a4497b79424ccda8ff9515609c7ab795906d833d99af22eeca"
+    },
+    {
+      "file": "./images/effects/effects-raider.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Opulence.uasset",
+      "sha256": "02b560843080b8c02b2893858f806ef4a14890e924fc2b17ecd293fce8d9402d"
+    },
+    {
+      "file": "./images/effects/effects-randomancer.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Randomancer.uasset",
+      "sha256": "77917aae8f6278fb98103c7c8363759878c3ddae84628d8643da61f9c81ab0e1"
+    },
+    {
+      "file": "./images/effects/effects-ranger.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_MultiShot.uasset",
+      "sha256": "17e179654ec814ad13aaaea38f1ed4fb69adef2bbe3d089136b6b57d72f8067a"
+    },
+    {
+      "file": "./images/effects/effects-reaper.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_SoulGatherMultiply.uasset",
+      "sha256": "3ac2b4503b7846b3c445d8634f123f2f92c59a91e6209f9cc8f0a702474c6c65"
+    },
+    {
+      "file": "./images/effects/effects-recovery.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Constitution.uasset",
+      "sha256": "b81706bef3e103a904d55bcd272f80c7afc3f91eb43fecdefff78f53e2dc2e7e"
+    },
+    {
+      "file": "./images/effects/effects-regeneration.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Regeneration.uasset",
+      "sha256": "d308b6e39fd635edadd93005bd8edceeb46fe50f62c392b9370166538c480ceb"
+    },
+    {
+      "file": "./images/effects/effects-relic.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_ArtifactHealing.uasset",
+      "sha256": "9a8810034c8fd1d39bfbc431ce4b8fe9035151445e8d4854aa77728122580172"
+    },
+    {
+      "file": "./images/effects/effects-reload.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Hairtrigger.uasset",
+      "sha256": "bf52b3d441fa29560d6ee60c835a41f1391f89433f3655e34d401cad0dcf6960"
+    },
+    {
+      "file": "./images/effects/effects-resilience.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Resilience.uasset",
+      "sha256": "5c3cb03c1582876cf1241687c505ba4bd6a18a00841b0c58bc06b4bcadab7201"
+    },
+    {
+      "file": "./images/effects/effects-shackler.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Chains.uasset",
+      "sha256": "09f57d456d10957b029885d10a2eec08bdbc1ff657dcaf0e22c278dfedf741c7"
+    },
+    {
+      "file": "./images/effects/effects-sharpness.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Sharpness.uasset",
+      "sha256": "8834b4916d50849b871d54af1661c4006cd665e249d5de9d55a74e82cf39bf25"
+    },
+    {
+      "file": "./images/effects/effects-sharpshooter.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_SuperCharge.uasset",
+      "sha256": "f8e14dfc3faed608dc52847eb3f8f0cecd577b34083a7036896d3055f952c193"
+    },
+    {
+      "file": "./images/effects/effects-shepherd.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Friendship.uasset",
+      "sha256": "3185e0cfff82f7709de697c8a2d40e13f9dd42b28c455dc538d838762e135ef9"
+    },
+    {
+      "file": "./images/effects/effects-sniper.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Sniper.uasset",
+      "sha256": "6509c3099309e99c3a1bcac17bc70775bd61104fb01ec901b7648c4a717c8922"
+    },
+    {
+      "file": "./images/effects/effects-sorcerer.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Vestige.uasset",
+      "sha256": "1525434ba195d821681ee4c49778dfe3b31cfbbccabde4ee0c81b3d68c534ea6"
+    },
+    {
+      "file": "./images/effects/effects-soul-cursed.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_SoulCurse.uasset",
+      "sha256": "621f757bc3d1c3c11c2933c1056236e25d86b05085b5aa91a3456f8e73c37977"
+    },
+    {
+      "file": "./images/effects/effects-soulmancer.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_SoulFocus.uasset",
+      "sha256": "1ae6e010bc3882eeb532f4cc3810f234fe273ba38c6cd5047baa09ca3d66f754"
+    },
+    {
+      "file": "./images/effects/effects-speed.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_SpeedBoost.uasset",
+      "sha256": "693487a6c99aa40d85e6ee8e66bcf4100077e5ce0d3e6f77f249dd4e3b06e85e"
+    },
+    {
+      "file": "./images/effects/effects-spiritual.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_SoulMax.uasset",
+      "sha256": "59297fb1f5e6dd7654273a8acaca805c7fe6dae8277eaabc99b7852e9e3d7cbe"
+    },
+    {
+      "file": "./images/effects/effects-stealth.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_ShadowWalk.uasset",
+      "sha256": "74ce283aff476e1dee380c307b6f140297b05b520f35bd0295cc20e752af784d"
+    },
+    {
+      "file": "./images/effects/effects-strength.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Master_Strike.uasset",
+      "sha256": "3a35801964b3a5345c8901a33420869295d9f2e17b696b10459f5830a1de2899"
+    },
+    {
+      "file": "./images/effects/effects-strengthening-hit.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_StrengtheningStrike.uasset",
+      "sha256": "7a0f145232fc0713a60d755d899e278dd75a49830447f84220f4eeefecd99326"
+    },
+    {
+      "file": "./images/effects/effects-swiftness.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_RapidStrike.uasset",
+      "sha256": "184d5a7519a5ade4f17d24964eba74f810cc0ba6f4a4222e6bb5601db624578b"
+    },
+    {
+      "file": "./images/effects/effects-tainted.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Saboteur.uasset",
+      "sha256": "4555d5c9a6c0932be0d41e3faa549a51727c4308ac405c90dbc9bcbff09a1f2f"
+    },
+    {
+      "file": "./images/effects/effects-totem-radius.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Expand.uasset",
+      "sha256": "5abb09523306c333ac5cee476c09406fc3dd2245e9aa98e3d48b7454034d613a"
+    },
+    {
+      "file": "./images/effects/effects-vanguard.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_Vanguard.uasset",
+      "sha256": "2e52e0b151aae2b44e0bf6248b1154464363c404ddfbb43dba1ce7e5aea35b4d"
+    },
+    {
+      "file": "./images/effects/effects-venomancer.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_PoisonFocus.uasset",
+      "sha256": "ff29d6681f32c3e77e7068187d52beab4221ef7c6dbafdd72788166ac16106d6"
+    },
+    {
+      "file": "./images/effects/effects-veterinarian.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_FriendsForever.uasset",
+      "sha256": "79eb38c2ae203e6db4dc203b0ac4e0c1e03f80d666aa358a47da4bd24ac139e4"
+    },
+    {
+      "file": "./images/effects/enchantments-ancient-alchemy.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_SoulInfusedPotion.uasset",
+      "sha256": "f1c81496eee1d070be10ce8b177ccc91b4d10a8d26955e89e9c5b9534579e9f0"
+    },
+    {
+      "file": "./images/effects/enchantments-artifact-amplifier.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_Arcane.uasset",
+      "sha256": "d00cf386220db090c2750371bc976d30e90bc81d2655d2e641d9d7fcd12aea61"
+    },
+    {
+      "file": "./images/effects/enchantments-barrier-brew.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_PotionBarrier.uasset",
+      "sha256": "ef47d11d4130b86f60076bee0edc4a00b25855538d8524c0c01a6cce8b2b974b"
+    },
+    {
+      "file": "./images/effects/enchantments-bottomless-brew.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_LocalBrewery.uasset",
+      "sha256": "ee959c0b2c078650219d9adec0ce710e617d411a5867ca5132bcbfa967f7a752"
+    },
+    {
+      "file": "./images/effects/enchantments-buddy-brew.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_PotionSharing.uasset",
+      "sha256": "63f7e58a82ca595cc4383c9305724ddc26359c760dd6d08a0b8cec6387399ab6"
+    },
+    {
+      "file": "./images/effects/enchantments-chain-reaction.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_ChainReaction.uasset",
+      "sha256": "81543bbb4fa62472372ee981f0abb7ec117a92c4a975968817a09b421c9b5bb9"
+    },
+    {
+      "file": "./images/effects/enchantments-cow-stampede.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_Unstoppable.uasset",
+      "sha256": "051f2b58a1ef5e57ca9209401864f3a1a2085bdb4e50d823bed590cc7807e128"
+    },
+    {
+      "file": "./images/effects/enchantments-crash-landing.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_Blowback.uasset",
+      "sha256": "9a03772bd8cc66b937676169a10bf38972a2a41d0f640b4015646bbc80fcf8ba"
+    },
+    {
+      "file": "./images/effects/enchantments-critical-quiver.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_CriticalQuiver.uasset",
+      "sha256": "b79ba13dcc87d033cd1c38770fd0e7f48f9d5448d5ef67525487bbb8442c8f3f"
+    },
+    {
+      "file": "./images/effects/enchantments-dynamo.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_Dynamo.uasset",
+      "sha256": "512c1382d6dc23536e967b8f3b7a0f68c63207d8e329594d92b645634dca1c58"
+    },
+    {
+      "file": "./images/effects/enchantments-ender-mines.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_Borealis.uasset",
+      "sha256": "8a1b71b9a185211c3c410bb08277d940b8bf8f30027ad2509417ec66c5d3576a"
+    },
+    {
+      "file": "./images/effects/enchantments-ender-quiver.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_ExpandedQuiver.uasset",
+      "sha256": "8b8159df351d6d4abd5ead06208201d2aa0ef4fc6fb6969d2ff24be2828015d0"
+    },
+    {
+      "file": "./images/effects/enchantments-fire-aspect.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_FireAspect.uasset",
+      "sha256": "04273ab684050392fcf7e5a74a88c954365667f32c334efd186d45a29d28ad3a"
+    },
+    {
+      "file": "./images/effects/enchantments-frost-crescent.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_FrostCrescent.uasset",
+      "sha256": "345527bc20a951dbf009c3d1fdef635d85ea534f4feace02e4f27fa38b5e97f7"
+    },
+    {
+      "file": "./images/effects/enchantments-gravity-pulse.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_GravityPulse.uasset",
+      "sha256": "bfe5bf625ed004d3639bc692a19a90b93b43ab4ef26c2cfee52f4652bde7e25e"
+    },
+    {
+      "file": "./images/effects/enchantments-healing-smite.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_Radiance.uasset",
+      "sha256": "838dee7a30152f846f4c1cec892b7d4782a5e2b2caeb096d00da70f8a80cb72e"
+    },
+    {
+      "file": "./images/effects/enchantments-health-synergy.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_HealthSynergy.uasset",
+      "sha256": "562ccfd5b2cb9995fa8da8e5e9508e16a38d92cd76a9717a0e536990975c05cb"
+    },
+    {
+      "file": "./images/effects/enchantments-ichor-blast.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_PhantomLance.uasset",
+      "sha256": "b8289052a9908d92daa47a1f4e35c560f4b6e12257e47c59a0133540e02c4b3a"
+    },
+    {
+      "file": "./images/effects/enchantments-lightning-surge.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_Channeling.uasset",
+      "sha256": "3aab22c5cdbc369349447ddd503661a6169ff1c5d7f66a7524d76ccfe98d03a8"
+    },
+    {
+      "file": "./images/effects/enchantments-piercing.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_Piercing.uasset",
+      "sha256": "ad394a3ce8e6bbbd99dca3d3bc58944669ff62f50fe60d69560f3b77edbaa253"
+    },
+    {
+      "file": "./images/effects/enchantments-poison-fog.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_PoisonFog.uasset",
+      "sha256": "c4f4133619950254d0b4b0cfc1898c495fec07068c0db7d8a46d3dcfc42cffd6"
+    },
+    {
+      "file": "./images/effects/enchantments-power-amplifier.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_LingeringPower.uasset",
+      "sha256": "71b662898def29cef64d835d24cb4023d51f2d02a850d6268b7a6684bcc53234"
+    },
+    {
+      "file": "./images/effects/enchantments-primed-enchantment.png",
+      "kind": "effect",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Effects/T_UI_Icon_Effect_MaulerDive.uasset",
+      "sha256": "dc43eee8af3a1e5f86be8c242856f4842f301bd0989cc8346242783134196784"
+    },
+    {
+      "file": "./images/effects/enchantments-ricochet.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_Ricochet.uasset",
+      "sha256": "1f8a45f2b991af6a82c370a1fd155abb8cc34c30ca7e3303287cd9fff5257553"
+    },
+    {
+      "file": "./images/effects/enchantments-shadowcloak.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_ShadowStrike.uasset",
+      "sha256": "871afa9f2b7f02aa5d181cbc4beadfb73fc4e8af2025dc033e02987e7544bd6d"
+    },
+    {
+      "file": "./images/effects/enchantments-shielding-smite.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_GuardingStrike.uasset",
+      "sha256": "c987cc21b1890bbc494b82e794e7fd2036cedae619cdb8a3a0b909d7a378f83d"
+    },
+    {
+      "file": "./images/effects/enchantments-shockwave.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_Shockwave.uasset",
+      "sha256": "e59ba5a268d70cf00bab6f55de2ea54c5b4db897493b95271833557d447841df"
+    },
+    {
+      "file": "./images/effects/enchantments-somersault.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_MultiRoll.uasset",
+      "sha256": "bd0358975cee45c7a407aa77be9702668a624f5b0045f97b7c90c92ea0b945bb"
+    },
+    {
+      "file": "./images/effects/enchantments-soul-blast.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_SoulFireAspect.uasset",
+      "sha256": "212fb4ee932df304f454289b3340de0a72f0cd6be5eafe9749bce398927c4ed1"
+    },
+    {
+      "file": "./images/effects/enchantments-springload.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_SpringLoaded.uasset",
+      "sha256": "155d5e0e8d56ca86dd0934233905454f7c78dc7a28a4f80b017871a15acf5da8"
+    },
+    {
+      "file": "./images/effects/enchantments-swirling.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_Swirling.uasset",
+      "sha256": "5f9122256b43e961a316a75e81cde3864615046a77155647151585b81b345225"
+    },
+    {
+      "file": "./images/effects/enchantments-tempo-theft.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_TempoTheft.uasset",
+      "sha256": "49db0688f1ac1fc836fef670294c98b7eaf8539625e3bb9c7e7f1be6ac90f1ac"
+    },
+    {
+      "file": "./images/effects/enchantments-thundering.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_Thundering.uasset",
+      "sha256": "975cd7902a17618d20e3d1b474f63dbc8b81c8e3b72b3ceee55f42eef1cabe73"
+    },
+    {
+      "file": "./images/effects/enchantments-tumbleshot.png",
+      "kind": "enchantment",
+      "native_package": "Dungeons/Plugins/OreUI/Content/UI/Icons/Enchantments/T_UI_Icon_Enchantment_BurstBowstring.uasset",
+      "sha256": "259450c71acc13ac28561e80516964f77ec24f82b42b0a623eded5911f7db57c"
+    }
+  ]
+}
