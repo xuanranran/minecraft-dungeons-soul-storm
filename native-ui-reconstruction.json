@@ -22,12 +22,27 @@
       "material": "M_RaritySlot_BG",
       "StateStormItem": 1,
       "special": "#2CA2FE",
-      "unique": "#FF7E2F",
-      "mask": "Packed RGB channels; three separate SVG channel filters"
+      "unique": "#FF0000",
+      "mask": "Blue channel of T_UI_SlotRarity_Markers_Soul: three skull marks at the upper-left",
+      "frame": "Native neutral inventory slot plus thin doubled pixel frame; geometry matched to supplied screenshot",
+      "removed": "Whole-slot animated SoulStorm crack masks; orange tinted native slot frame"
+    },
+    "book": {
+      "native_texture": "T_UI_Enchantment_Book_Slot",
+      "icon_to_book_ratio": "28/48",
+      "reference": "Enchantment collection screenshot"
+    },
+    "level_indicator": {
+      "material": "M_EnchantLevelIndicator",
+      "top_color": "#D082FF",
+      "bottom_color": "#BC76E1",
+      "rendering": "Purple diamond with a dark lower edge, Roman level centered"
     }
   },
   "limitations": [
-    "Shader expression graphs and complete runtime UI parameter overrides are absent from the cooked exports.",
-    "Browser frame geometry, channel blending, marker channel choice and animation are reconstruction choices, not an extracted shader render. No pixel-identical fidelity claim."
-  ]
+    "Frame and level badge geometry are browser implementations matched against supplied screenshots, not an extracted shader render.",
+    "Unique red matches the supplied running game; the earlier static default color token was orange and is not used for this reference.",
+    "No game equipment power, favorite or equipped state is invented on the drop catalogue."
+  ],
+  "visual_reference": "Four user-supplied in-game inventory and enchantment-collection screenshots, 2026-10-10"
 }

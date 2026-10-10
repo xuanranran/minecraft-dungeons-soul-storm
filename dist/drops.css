@@ -18,17 +18,14 @@
 .drops-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:10px}
 .drops-column{display:flex;flex-direction:column;gap:10px;min-width:0}
 .drop-item{display:grid;grid-template-columns:88px minmax(0,1fr);gap:10px 12px;align-items:start;align-content:start;padding:14px;border:1px solid var(--line);background:var(--surface-alt);border-radius:10px;min-width:0}
-.drop-picture{position:relative;isolation:isolate;display:grid;place-items:center;width:88px;min-width:88px;height:88px;background:color-mix(in srgb,var(--equipment-color,#aaa) 52%,#131619) url('./images/equipment-backgrounds/T_UI_Slot_Background.png') center/100% 100% no-repeat;background-blend-mode:luminosity;border-radius:0;clip-path:polygon(5% 0,95% 0,95% 5%,100% 5%,100% 95%,95% 95%,95% 100%,5% 100%,5% 95%,0 95%,0 5%,5% 5%);overflow:hidden;padding:6px}
+.drop-picture{position:relative;isolation:isolate;display:grid;place-items:center;width:88px;min-width:88px;height:88px;background:#080a0c url('./images/equipment-backgrounds/T_UI_Slot_Background.png') center/100% 100% no-repeat;border-radius:0;overflow:hidden;padding:8px}
 .drop-picture img{position:relative;z-index:2;width:100%;height:100%;object-fit:contain;image-rendering:pixelated}
-.drop-item.unique .drop-picture{--equipment-color:#ff7e2f}
+.drop-item.unique .drop-picture{--equipment-color:#ff0000}
 .drop-item.special .drop-picture{--equipment-color:#2ca2fe}
-/* Native textures and packed channels; runtime shader blending is reconstructed for the browser. */
-.native-soul-layer{position:absolute;inset:7%;z-index:1;pointer-events:none;background:var(--equipment-color,#aaa);mask-size:100% 100%;mask-repeat:no-repeat;mask-mode:alpha;image-rendering:pixelated;opacity:.5;animation:native-soul-pulse 3s ease-in-out infinite}
-.native-soul-r{mask-image:url('./images/equipment-backgrounds/T_UI_SlotFX_SoulStorm_Mask-r.svg')}
-.native-soul-g{mask-image:url('./images/equipment-backgrounds/T_UI_SlotFX_SoulStorm_Mask-g.svg');animation-delay:-1s}
-.native-soul-b{mask-image:url('./images/equipment-backgrounds/T_UI_SlotFX_SoulStorm_Mask-b.svg');animation-delay:-2s}
-@keyframes native-soul-pulse{0%,100%{opacity:.24}50%{opacity:.7}}
-@media(prefers-reduced-motion:reduce){.native-soul-layer{animation:none;opacity:.45}}
+/* Inventory reference: neutral native slot, thin rarity frame and three corner soul marks. */
+.drop-picture::before{content:"";position:absolute;inset:6px;z-index:0;background:radial-gradient(ellipse at 10% 12%,color-mix(in srgb,var(--equipment-color,#aaa) 28%,transparent),transparent 62%);pointer-events:none}
+.drop-picture::after{content:"";position:absolute;inset:5px;z-index:3;background:var(--equipment-color,#aaa);mask:url('./images/equipment-backgrounds/inventory-rarity-frame.svg') center/100% 100% no-repeat;pointer-events:none}
+.native-soul-mark{position:absolute;left:10px;top:10px;width:20px;height:20px;z-index:1;background:var(--equipment-color,#aaa);mask:url('./images/equipment-backgrounds/T_UI_SlotRarity_Markers_Soul-b.svg') center/100% 100% no-repeat;image-rendering:pixelated;pointer-events:none}
 .drop-item.unique .drop-kind{color:#d85454}.drop-item.special .drop-kind{color:#2485d5}
 .drop-info{min-width:0;min-height:88px;display:flex;flex-direction:column;justify-content:flex-start;gap:2px}.drop-info h3{font-size:16px;margin:0;line-height:1.5}
 .drop-kind,.drop-weight{font-size:12px;color:var(--muted);line-height:1.6}
@@ -43,12 +40,12 @@
 .drop-effect{font-size:12px;margin-bottom:7px;overflow-wrap:anywhere}
 .drop-effect-card{display:flex;align-items:flex-start;gap:10px;padding:10px;margin:10px 0;border:1px solid var(--line);border-radius:7px;background:var(--surface);font-size:12px;line-height:1.6}
 .drop-effect-icon{width:100%;height:100%;object-fit:contain;image-rendering:pixelated}
-.native-indicator{position:relative;isolation:isolate;display:grid;place-items:center;flex:none;width:48px;height:48px;overflow:hidden;background:rgb(0 0 0 / .5)}
+.native-indicator{position:relative;isolation:isolate;display:grid;place-items:center;flex:none;width:48px;height:48px;overflow:hidden;background:#07090b}
 .native-indicator[hidden]{display:none}
 .native-indicator img{display:block;width:100%;height:100%;object-fit:contain;border:0;border-radius:0;padding:0;background:transparent;image-rendering:pixelated}
 .native-enchantment{clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
 .native-enchantment img{transform:scale(1.23)}
-.native-effect{clip-path:polygon(8% 0,92% 0,92% 8%,100% 8%,100% 92%,92% 92%,92% 100%,8% 100%,8% 92%,0 92%,0 8%,8% 8%)}
+.native-effect{box-shadow:0 0 0 1px #07090b}
 .native-book{display:grid;place-items:center;flex:none;width:48px;height:48px;background:url('./images/equipment-backgrounds/T_UI_Enchantment_Book_Slot.png') center/100% 100% no-repeat}
 .native-book .native-indicator{width:28px;height:28px}
 .native-book[hidden]{display:none}
@@ -71,5 +68,8 @@
 .drop-details .drop-levels{grid-column:1/-1;grid-template-columns:40px minmax(0,1fr);gap:0 10px;margin:0;border-top:1px solid var(--line)}
 .drop-levels dt,.drop-levels dd{padding:8px 0;border-bottom:1px solid var(--line)}
 .drop-levels dt{display:flex;align-items:center;color:var(--blue)}.drop-levels dt:last-of-type,.drop-levels dd:last-of-type{border-bottom:0;padding-bottom:0}
+.native-level-badge{position:relative;isolation:isolate;display:grid;place-items:center;width:30px;height:34px;flex:none;color:#fff;font:bold 12px/1 Georgia,serif;text-shadow:1px 1px #241132,-1px -1px #241132}
+.native-level-badge::before{content:"";position:absolute;inset:2px 0 0;z-index:-2;background:#442159;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+.native-level-badge::after{content:"";position:absolute;inset:0 0 4px;z-index:-1;background:linear-gradient(135deg,#d082ff,#bc76e1 60%,#8e43be);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
 @media(max-width:600px){.drop-detail-panel{padding:10px}.drop-extra .drop-enchantment-card{padding:9px;gap:8px}}
 @media(max-width:600px){.drops-dialog{padding:14px;top:12px;max-height:calc(100dvh - 24px);width:calc(100% - 20px);border-radius:12px}.drops-grid{grid-template-columns:minmax(0,1fr)}.drops-column{display:contents}.drops-header h2{font-size:17px}.drop-item{padding:12px}.drop-trigger{min-height:36px}.drops-tab{min-height:40px}}

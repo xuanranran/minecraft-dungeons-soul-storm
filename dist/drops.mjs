@@ -23,7 +23,7 @@ export function setupDrops(){
  const mobile=matchMedia('(max-width:600px)');
  const layoutCards=()=>{const cards=[...grid.querySelectorAll('.drop-item')].sort((a,b)=>Number(a.style.order)-Number(b.style.order));if(mobile.matches){grid.replaceChildren(...cards);return}const columns=[el('div','drops-column'),el('div','drops-column')];cards.forEach((card,index)=>columns[index%2].append(card));grid.replaceChildren(...columns)};
  mobile.addEventListener('change',layoutCards);
- const load=()=>dataPromise??=(fetch('./equipment.json?v=nativeui2').then(r=>{if(!r.ok)throw Error('无法读取装备数据');return r.json()}).catch(e=>{dataPromise=null;throw e}));
+ const load=()=>dataPromise??=(fetch('./equipment.json?v=inventoryref3').then(r=>{if(!r.ok)throw Error('无法读取装备数据');return r.json()}).catch(e=>{dataPromise=null;throw e}));
  async function render(){
   const target=region,selected=category;grid.replaceChildren();status.textContent='正在读取掉落物品…';
   try{const data=await load();if(region!==target||category!==selected||!dialog.open)return;
@@ -33,7 +33,7 @@ export function setupDrops(){
     const card=el('article','drop-item'),picture=el('div','drop-picture'),img=el('img');img.src=item.image;img.alt=item.name;img.loading='lazy';img.width=88;img.height=88;
     card.classList.toggle('unique',item.rarity==='独特');
     card.classList.toggle('special',displayedRarity(item)==='特殊');
-    picture.classList.add('native-storm-slot');for(const channel of ['r','g','b'])picture.append(el('span',`native-soul-layer native-soul-${channel}`));
+    picture.classList.add('native-storm-slot');const soul=el('span','native-soul-mark');soul.setAttribute('aria-hidden','true');picture.append(soul);
     img.addEventListener('error',()=>{picture.replaceChildren(el('span','meta','图片暂不可用'))},{once:true});picture.append(img);
     const info=el('div','drop-info');info.append(el('h3','',item.name),el('p','drop-kind',[displayedCategory(item),item.overview['部位'],displayedRarity(item)].filter(Boolean).join(' · ')));
     if(item.description)info.append(el('p','drop-description',item.description));
@@ -52,7 +52,7 @@ export function setupDrops(){
       if(row.image){entry.classList.add('drop-enchantment-card');const icon=nativeIcon(row,'drop-list-icon',table.title.includes('可用附魔'));copy=el('div','drop-enchantment-copy');copy.append(el('strong','',fields[0][1]));entry.append(icon,copy);fields.shift();}
       if(row.description){entry.classList.add('has-description');copy.append(el('p','',row.description));}
       for(const [key,value] of fields){if(row.levels&&/级效果/.test(key)||row.effect_levels&&['I','II','III','独特'].includes(key))continue;if(row.image&&key==='触发条件')entry.append(el('p','drop-enchantment-trigger',`${key}：${value}`));else copy.append(el('p','',`${key}：${value}`));}
-      if(levelData){entry.classList.add('has-levels');const levels=el('dl','drop-levels'),third=levelData.find(level=>level.level==='III');for(const level of levelData){const text=level.level==='独特'&&third&&level.effect.trim()===third.effect.trim()?'和 III 级一样的效果':level.effect;levels.append(el('dt','',/^(I|II|III)$/.test(level.level)?`${level.level} 级`:level.level),el('dd','',text));}if(!levelData.length)levels.append(el('dt','','效果'),el('dd','',row.ungraded_effect||'暂无分级数据'));entry.append(levels);}
+      if(levelData){entry.classList.add('has-levels');const levels=el('dl','drop-levels'),third=levelData.find(level=>level.level==='III');for(const level of levelData){const text=level.level==='独特'&&third&&level.effect.trim()===third.effect.trim()?'和 III 级一样的效果':level.effect,label=el('dt');if(/^(I|II|III)$/.test(level.level)){label.setAttribute('aria-label',`${level.level} 级`);label.append(el('span','native-level-badge',level.level));}else label.textContent=level.level;levels.append(label,el('dd','',text));}if(!levelData.length)levels.append(el('dt','','效果'),el('dd','',row.ungraded_effect||'暂无分级数据'));entry.append(levels);}
       section.append(entry);
      }panel.append(section);
     }
