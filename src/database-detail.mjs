@@ -4,7 +4,7 @@ import {displayedParameters,displayedTables} from './drops.mjs';
 import {renderEquipmentDetails,renderParameterTable,renderFixedEffects} from './equipment-details.mjs';
 import {loadDatabaseRecord,findDatabaseRecord} from './database-data.mjs';
 import {navigationGuard} from './core/navigation.mjs';
-import {bindEquipmentTooltip} from './equipment-tooltip.mjs';
+import {bindEquipmentTooltip,showTapEquipmentTooltip,usesTapEquipmentTooltip} from './equipment-tooltip.mjs';
 
 const kindCategory={melee:'weapons',ranged:'weapons',armor:'armor',artifact:'artifacts',talisman:'talismans'},categoryNames={weapons:'武器',armor:'盔甲','armor-sets':'盔甲套装',artifacts:'法器',talismans:'护身符',enchantments:'附魔书',effects:'装备效果',statuses:'状态',unique:'独特物品',enemies:'生物',bosses:'首领',locations:'地点',quests:'任务',cosmetics:'装饰',upcoming:'文件预留'};
 const resources=()=>Promise.all([import('./explorer.css'),import('./drops.css'),import('./ui/styles/native-equipment.css')]).then(()=>import('./database.css')).then(()=>import('./ui/styles/details.css'));
@@ -22,8 +22,15 @@ function detailSection(title,tab){const section=el('section','database-detail-se
 function tableSection(table,tab='parameters'){const section=detailSection(table.title||'详细参数',tab),wrap=el('div','database-table-wrap'),node=el('table'),head=el('thead'),row=el('tr'),body=el('tbody');for(const name of table.columns){const th=el('th','',name);th.scope='col';row.append(th);}head.append(row);for(const values of table.rows){const tr=el('tr');for(const value of values)tr.append(el('td','',value));body.append(tr);}node.append(head,body);wrap.append(node);section.append(wrap);return section;}
 function tierSection(record){const section=detailSection(record.kind==='talisman'?'等级效果':'等级与效果','effects');for(const tier of record.tiers||[]){const card=el('div','database-tier'),copy=el('div');if(tier.image){card.append(databasePicture({...record,image:tier.image}));copy.append(el('strong','','等级 '+tier.tier));}else card.append(el('span','native-level-badge',tier.tier));copy.append(el('p','',tier.text));card.append(copy);section.append(card);}return section;}
 async function showRelated(category,id){const current=navigationGuard();try{const record=await findDatabaseRecord(category,id);if(!current())return;if(record)await showDatabaseItem(record);else notify('该条目暂未收录完整详情。');}catch{if(current())notify('关联资料读取失败，请重试。');}}
-export async function showDatabaseItem(input){
- const current=navigationGuard();await resources();if(!current())return;const box=modal(input.name||'数据库详情','database-dialog');box.body.append(el('p','meta','正在读取完整资料…'));box.open();box.dialog.addEventListener('close',()=>box.dialog.remove(),{once:true});
+export async function showDatabaseItem(input,trigger=document.activeElement){
+ const regionEquipment=Boolean(trigger?.closest('#drops-dialog,[data-region-equipment]'))&&!['enchantment','effect'].includes(input.kind);
+ if(usesTapEquipmentTooltip()&&!regionEquipment){
+  // Native item taps and deep links share one panel. Region-drop equipment
+  // keeps its full detail dialog; its enchantment/effect rows still use previews.
+  const target=trigger===document.body?document.querySelector('.database-item[data-id="'+CSS.escape(input.id||input.slug||'')+'"]')||trigger:trigger;
+  if(showTapEquipmentTooltip(target,{...input,slug:input.slug||input.id}))return;
+ }
+ const current=navigationGuard();await resources();if(!current())return;const box=modal(input.name||'数据库详情','database-dialog');if(regionEquipment)box.dialog.dataset.regionEquipment='';box.body.append(el('p','meta','正在读取完整资料…'));box.open();box.dialog.addEventListener('close',()=>box.dialog.remove(),{once:true});
  async function render(){
   let record=input;const category=input.categoryKey||kindCategory[input.kind];
   if(!input.dbKind&&category){const indexed=await findDatabaseRecord(category,input.slug||input.id);if(indexed)record=indexed;}

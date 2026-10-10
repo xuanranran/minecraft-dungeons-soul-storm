@@ -80,11 +80,11 @@ try{
   assert.equal(await page.getByLabel('数据库分类').inputValue(),'statuses');assert.match(await page.locator('.database-dialog[open]').innerText(),/灼烧/);
  }
  assert.deepEqual(errors,[]);await page.close();
- // A real touch context opens the existing item detail, never a hover preview.
+ // A real touch context uses the same native renderer without the old item dialog.
  const mobile=await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true,colorScheme:'dark'});
  await mobile.goto(base+'#builds');await mobile.locator('#builds-panel[aria-busy=false]').waitFor();await mobile.locator('.tool-gear-button').first().tap();
- await mobile.locator('dialog[open] .drop-detail-panel').waitFor();assert.equal(await mobile.locator('#native-equipment-tooltip:popover-open').count(),0);
- await mobile.locator('dialog[open]').getByRole('button',{name:'关闭窗口'}).tap();await mobile.waitForTimeout(180);assert.equal(await mobile.locator('#native-equipment-tooltip:popover-open').count(),0);
+ await mobile.locator('#native-equipment-tooltip:popover-open .equipment-tip-name').waitFor();assert.equal(await mobile.locator('.database-dialog[open]').count(),0);
+ await mobile.touchscreen.tap(4,4);await mobile.locator('#native-equipment-tooltip:popover-open').waitFor({state:'hidden'});
  await mobile.close();
- console.log('Game tooltip: native UI/font, four tools, pointer transfer, internal scroll, keyboard/Escape, viewport edges, stale-target cleanup and touch detail passed.');
+ console.log('Game tooltip: native UI/font, four tools, pointer transfer, internal scroll, keyboard/Escape, viewport edges, stale-target cleanup and native touch preview passed.');
 }finally{await browser.close();}

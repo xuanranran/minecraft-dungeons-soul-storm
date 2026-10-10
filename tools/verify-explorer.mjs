@@ -27,9 +27,9 @@ try{
   await first.locator('.tool-build-title').click();await page.locator('dialog[open] .tool-build-detail').waitFor();
   await page.locator('dialog[open] .tool-build-detail-item').nth(8).waitFor();assert.ok(await page.locator('dialog[open] .tool-build-detail-item').count()>=9);assert.ok(page.url().includes('#builds'));assert.equal(newPages.length,0);
   await page.locator('dialog[open]').getByRole('button',{name:'关闭窗口'}).click();
-  await gear.click();await page.locator('dialog[open] .drop-detail-panel').waitFor();
+  await gear.click();await page.locator(width===1440?'dialog[open] .drop-detail-panel':'#native-equipment-tooltip:popover-open .equipment-tip-name').waitFor();
   assert.ok(page.url().includes('#builds'));assert.equal(newPages.length,0);
-  await page.locator('dialog[open]').getByRole('button',{name:'关闭窗口'}).click();
+  if(width===1440)await page.locator('dialog[open]').getByRole('button',{name:'关闭窗口'}).click();else await page.mouse.click(4,4);
   await first.getByRole('link',{name:'载入规划器',exact:true}).click();await ready('planner');
   assert.equal(await page.locator('.tool-slot .tool-item-picture').count(),12);
   await page.locator('[data-slot="a1"]').click();assert.equal(await page.locator('.tool-editor').getByText('使用附魔',{exact:true}).count(),0);

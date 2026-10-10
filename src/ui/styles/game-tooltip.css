@@ -97,3 +97,13 @@
 .native-game-tooltip>.equipment-tip-render:not(.native-book)>.native-indicator{width:100%;height:100%}
 .native-game-tooltip .equipment-tip-loading{padding:var(--tip-inset);color:#adb8c2}
 .native-game-tooltip .equipment-tip-rarity.equipment-tip-talisman-level{font:400 calc(30px*var(--game-ui-scale))/1.2 'Dungeons Five',sans-serif;color:#f6bc0f;background:transparent;border:0;box-shadow:none;padding:0}
+
+/* Phone taps keep the native art and type scale, with a compact heading so
+   the badge-only row no longer leaves an empty band above the item name. */
+.native-game-tooltip[data-interaction=tap] .equipment-tip-name{text-wrap:balance}
+.native-game-tooltip[data-interaction=tap] .equipment-tip-scroll:not(:is([data-kind=enchantment],[data-kind=effect])) .equipment-tip-top{display:flex;flex-direction:column;padding-top:calc(24px*var(--game-ui-scale))}
+.native-game-tooltip[data-interaction=tap] .equipment-tip-scroll:not(:is([data-kind=enchantment],[data-kind=effect])) .equipment-tip-name{order:0;margin-bottom:calc(16px*var(--game-ui-scale))}
+.native-game-tooltip[data-interaction=tap] .equipment-tip-kind-row{order:1;margin-bottom:calc(16px*var(--game-ui-scale))}
+.native-game-tooltip[data-interaction=tap] .equipment-tip-weapon-stats,.native-game-tooltip[data-interaction=tap] .equipment-tip-stats{order:2}
+.native-game-tooltip[data-interaction=tap] .equipment-tip-weapon-stats{display:flex;flex-wrap:wrap;column-gap:calc(32px*var(--game-ui-scale));margin-right:calc(-208px*var(--game-ui-scale))}
+.native-game-tooltip[data-interaction=tap] .equipment-tip-scroll:not(:is([data-kind=enchantment],[data-kind=effect]))>.equipment-tip-description{margin-top:calc(24px*var(--game-ui-scale))}
