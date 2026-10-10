@@ -26,3 +26,16 @@ const fallback=new SyncedClock({local:()=>0,monotonic:()=>0,fetcher:async url=>{
 }});
 await fallback.sync();assert.equal(fallback.now(),epoch);assert.equal(fallback.source,'WorldTimeAPI');
 console.log('Public clock timezone, fractional seconds, latency, fallback and failed sync checks passed.');
+
+let lanTick=0,lanCalls=0;
+const lan=new SyncedClock({endpoint:'./api/time',local:()=>0,monotonic:()=>lanTick,fetcher:async url=>{
+ assert.equal(url,'./api/time');const delay=[100,20,60][lanCalls++%3];lanTick+=delay;
+ return {ok:true,json:async()=>({unixMs:epoch+lanTick-delay/2,synchronized:true})};
+}});
+await lan.sync();assert.equal(lan.source,'NTP');assert.equal(lan.ntp,true);assert.equal(lan.now(),epoch+lanTick);assert.equal(lanCalls,3);
+const unsynced=new SyncedClock({endpoint:'./api/time',monotonic:()=>0,fetcher:async()=>({ok:true,json:async()=>({unixMs:epoch,synchronized:false})})});
+await unsynced.sync();assert.equal(unsynced.source,'服务端时间');assert.equal(unsynced.ntp,false);
+const lanFallback=new SyncedClock({endpoint:'./api/time',monotonic:()=>0,fetcher:async url=>{
+ if(url==='./api/time')throw Error('offline');return {ok:true,json:async()=>({dateTime:'2026-10-09T12:00:00'})};
+}});await lanFallback.sync();assert.equal(lanFallback.source,'TimeAPI.io');assert.equal(lanFallback.now(),epoch);
+console.log('LAN NTP preference, latency, unsynchronized server status and public fallback passed.');

@@ -4,6 +4,7 @@ Requires paramiko and STORM_DEPLOY_PASSWORD. Retains previous entry documents
 and leaves existing content-hashed assets available to already-open clients.
 """
 import datetime
+import io
 import os
 import posixpath
 import shlex
@@ -43,7 +44,16 @@ try:
                         continue
                     if (source.suffix == '.html') != (kind == 'entries'):
                         continue
-                    archive.add(source, arcname=source.relative_to(build).as_posix())
+                    name = source.relative_to(build).as_posix()
+                    if kind == 'entries':
+                        # This server already supplies NTP time; public Pages has no API.
+                        html = source.read_text(encoding='utf-8').replace(
+                            '<html ', '<html data-time-endpoint="./api/time" ', 1).encode('utf-8')
+                        info = archive.gettarinfo(str(source), arcname=name)
+                        info.size = len(html)
+                        archive.addfile(info, io.BytesIO(html))
+                    else:
+                        archive.add(source, arcname=name)
             archives.append(path)
         with client.open_sftp() as sftp:
             for path in archives:

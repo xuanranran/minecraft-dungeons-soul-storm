@@ -113,3 +113,5 @@ GitHub Pages 通过 `.github/workflows/pages.yml` 发布 `dist/`，推送到 `ma
 `npm run check:build` 验证全部目录、GitHub Pages 子路径下的资源、独立页面包以及护身符中文说明。`tools/verify-jamstack.mjs` 验证目录直达、刷新与历史返回、四页自适应、卡片尺寸、原生说明、附魔摘要与地区掉落行高；配合 `npm start` 使用。全量装备详情审计另需同时运行 `npm run dev`。
 
 `tools/verify-async-navigation.mjs` 人为延迟配装模块与数据库分类响应，验证切页后不会出现旧请求的弹窗。护身符悬浮卡片和编辑器按所选等级显示效果，避免一级摘要与三级数值同时出现。
+
+局域网发布脚本会为静态入口配置原有 `./api/time` 校时端点，优先使用服务器 NTP；公网仍使用公共时间服务。两种部署共用同一构建，不修改服务器校时服务。

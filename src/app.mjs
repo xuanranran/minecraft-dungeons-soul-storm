@@ -30,7 +30,7 @@ function tick(){
 async function syncTime(){
  if(clock.busy)return;
  $('sync-status').textContent='校时中';
- try{await clock.sync();$('sync-status').textContent='已校准 · 网络时间';}
+ try{await clock.sync();$('sync-status').textContent='已校准 · '+(clock.source==='NTP'?'NTP':clock.source==='服务端时间'?'服务端时间':'网络时间');}
  catch{$('sync-status').textContent=clock.synced?'校时失败 · 沿用上次':'本机时间 · 暂未连接校时服务';}
  $('clock-connection').dataset.synced=String(clock.synced);$('clock-connection').title=$('sync-status').textContent;tick();
 }
