@@ -1,0 +1,1366 @@
+{
+  "source": "Minecraft Dungeons II local Steam installation",
+  "engine": "UE5.6",
+  "images": [
+    {
+      "id": "awesomeaxe",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Greataxe/Greataxe_Unique/T_UI_Greataxe_Unique_Icon.uasset",
+      "sha256": "8dae10e8a4f066f15f262ad06cb3c65279a48381c75803721c7489c91cfa1389"
+    },
+    {
+      "id": "axe",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Axe/T_UI_Axe_Icon.uasset",
+      "sha256": "9468624315d344e805cedda87bf1a7f8ec8aae84687bc1052b1e18220dde6df7"
+    },
+    {
+      "id": "battle-hammer",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Hammer/T_UI_Hammer_Icon.uasset",
+      "sha256": "96c43cdb0001ab4212959e36e8a21c3ecd529a1778ba9f01596a9216208ca601"
+    },
+    {
+      "id": "battlestaff",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Battlestaff/T_UI_Battlestaff_Icon.uasset",
+      "sha256": "eba40c3c379f27f06504215cee0ef1f32124bac6b1053c6695981d646c9d13ce"
+    },
+    {
+      "id": "bow",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Bow/T_UI_Bow_Icon.uasset",
+      "sha256": "7dcbd8321f6005dd618974f7366ab43f49f41500b59b2941240bacb80f04ac43"
+    },
+    {
+      "id": "cacaphonous-cleaver",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Cleaver/Cleaver_Unique/T_UI_Cleaver_Unique_Icon.uasset",
+      "sha256": "215f1f1733f5e6a443cb68c846fe3c9769a0d3a6fd4b1762838b9d21bf29a7fc"
+    },
+    {
+      "id": "carapace-mace",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Mace/Mace_Unique/T_UI_Mace_Unique_Icon.uasset",
+      "sha256": "15b63491b503d4c55fe47edfab09683df9510873b71b793593697f7eaf4c7716"
+    },
+    {
+      "id": "claymore",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Claymore/T_UI_Claymore_Icon.uasset",
+      "sha256": "fc0b7abd0bffb5b2fab33f53971a82efc5a7cf27e6310542a18215dd25c3d5aa"
+    },
+    {
+      "id": "clobberer",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/GiantClub/T_UI_GiantClub_Icon.uasset",
+      "sha256": "d3066309551affc0ade2ff9346da6e21ac52f1f11d609504fa419eaa74826253"
+    },
+    {
+      "id": "cookiecutter",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/CurvedGreatsword/T_UI_CurvedGreatsword_Icon.uasset",
+      "sha256": "b6798c668973aa8afb8a453e97c74bb93c939c470fed559611c3eefbcdc8f38c"
+    },
+    {
+      "id": "creakings-reach",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/LongBow/Longbow_Unique/T_UI_Longbow_Unique_Icon.uasset",
+      "sha256": "0fa20e3fd695001b4a67d92d4e8566c115aa01c1f98467fb6527853e6a4389a1"
+    },
+    {
+      "id": "crossbow",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Crossbow/T_UI_Crossbow_Icon.uasset",
+      "sha256": "2f3be9bb0face31451a3a808f69eab7bd84d9cfaaf53e59cc67bad2c343ae482"
+    },
+    {
+      "id": "diamond-shovel",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Shovel/Shovel_Unique/T_UI_Shovel_Unique_Icon.uasset",
+      "sha256": "2500bd9658fbd8aa701e846a99f16ede58dad5b4df59866b0655733c4f3381e3"
+    },
+    {
+      "id": "double-crossers",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/DualCrossbow/DualCrossbow_Unique/T_UI_DualCrossbow_Unique_Icon.uasset",
+      "sha256": "836d5ffc77f5359f1b62ea5a28e672ca8f9f83ae35b523d3157ee5ee31a4f3c9"
+    },
+    {
+      "id": "double-daggers",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Daggers/T_UI_Daggers_Icon.uasset",
+      "sha256": "6b1149957457ee9a144fa516763655cb6f4af91aa4ce2cc3ee12d0d92352ae01"
+    },
+    {
+      "id": "double-sickles",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Sickles/T_UI_Sickles_Icon.uasset",
+      "sha256": "4d58c83b6ea18349097a8eda9e6bef0e714be90cf7d80381fed947e7a8d59066"
+    },
+    {
+      "id": "dual-crossbows",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/DualCrossbow/T_UI_DualCrossbow_Icon.uasset",
+      "sha256": "dcee7b7e4ded4cd9f482f179c6b4174f83a39e25c71bea0b652fd0fcc50d2b1d"
+    },
+    {
+      "id": "elemental-staff",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Battlestaff/Battlestaff_Unique/T_UI_Battlestaff_Unique_Icon.uasset",
+      "sha256": "d22f945facff0133d79b0bed8c92ab38f3ee4fd3ced31a49638c51a26774a94f"
+    },
+    {
+      "id": "emerald-hammer",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Hammer/Hammer_Unique/T_UI_Hammer_Unique_Icon.uasset",
+      "sha256": "f2c989ab2b0b0ee61b037fb10748c8456b250397b66210ada562328e9ddae61b"
+    },
+    {
+      "id": "frostbiter",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Straightsword/Straightsword_Unique/T_UI_Straightsword_Unique_Icon.uasset",
+      "sha256": "4268ef16cfcb25b6197d97960d7f5fbffbcba5914740143a4d59a3d9370cb9b1"
+    },
+    {
+      "id": "gauntlets",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Gauntlet/T_UI_Gauntlets_Icon.uasset",
+      "sha256": "7d05475890434081485d309b7b24241cc16c9a68ba6fe2e4a41958f907d3b091"
+    },
+    {
+      "id": "glaive",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Glaive/T_UI_Glaive_Icon.uasset",
+      "sha256": "725feb9bf678e1f31da358748487d970199a333e52a22ae8e4606454520ab71c"
+    },
+    {
+      "id": "golden-glaive",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Glaive/Glaive_Unique/T_UI_Glaive_Unique_Icon.uasset",
+      "sha256": "bae814a55695bc547dbf744d6483764c71037116dc0087b5d44c68da6c753256"
+    },
+    {
+      "id": "greataxe",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Greataxe/T_UI_Greataxe_Icon.uasset",
+      "sha256": "3e3ed3fcc2d13debfaabef0c1b3ab70b8bb1fec20de8c530a5208343f0202e02"
+    },
+    {
+      "id": "greatbow",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Greatbow/T_UI_Greatbow_Icon.uasset",
+      "sha256": "2ff414e11a038894b768df43cf8862c38f8dee8076f287c68f72ec56a9e7ce89"
+    },
+    {
+      "id": "greatsword",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Greatsword/T_UI_Greatsword_Icon.uasset",
+      "sha256": "17d95bdb52b09d446ec62705115bcf1f4d45c14c60b7e180e2f8cbf3e6850117"
+    },
+    {
+      "id": "harp-crossbow",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/ScatterCrossbow/T_UI_ScatterCrossbow_Unique_Icon.uasset",
+      "sha256": "e6d4dcf8e14ae26cfd7a1402e79ec1504923059da9194f817eaba9c19843e8b0"
+    },
+    {
+      "id": "heartbreaker",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Warhammer/Warhammer_Unique/T_UI_Warhammer_Unique_Icon.uasset",
+      "sha256": "75c3879f11b7b7036235269944308d891dcfa636cfadbc384ae16b1ada19ae1f"
+    },
+    {
+      "id": "heavy-crossbow",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/HeavyCrossbow/T_UI_HeavyCrossbow_Icon.uasset",
+      "sha256": "ae56a32b90853bc52d4f97ec2fc7a5a2884aaffc12582bff7ddfe8d567159d9a"
+    },
+    {
+      "id": "humbler-heartstring",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Greatbow/Greatbow_Unique/T_UI_Greatbow_Unique_Icon.uasset",
+      "sha256": "a87bdbb3b655b863976fc3be1bc661a50dc3c7351922aceefa467e164f11b80a"
+    },
+    {
+      "id": "hunters-hatchet",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Axe/Axe_Unique/T_UI_Axe_Unique_Icon.uasset",
+      "sha256": "bb5325f3413203d9c6cfab08aabfe3ebf4ef847dbdde26acd0aa2c059ee66ee3"
+    },
+    {
+      "id": "longbow",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/LongBow/T_UI_Longbow_Icon.uasset",
+      "sha256": "1eb833c059ddf0780c5048f5c3f89369730124f98d0d2fc1fe3b9da9d56ddb6f"
+    },
+    {
+      "id": "longsword",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Straightsword/T_UI_Straightsword_Icon.uasset",
+      "sha256": "9f95cdf9feb56ec926e10790831b5b84096abca6afc039dcd6723091270a0533"
+    },
+    {
+      "id": "lullaby-blade",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/CurvedGreatsword/CurvedGreatsword_Unique/T_UI_CurvedGreatsword_Unique_Icon.uasset",
+      "sha256": "f90bb902af786b70f8de35fbf701b0e875ff8bf69c4a20afeae28af18a683915"
+    },
+    {
+      "id": "lunar-sickle",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Moonsword/Moonsword_Unique/T_UI_Moonsword_Unique_Icon.uasset",
+      "sha256": "bdf24d88993747767ed5c3115691ca6fd9996c63db217405ec3c7272f2fde890"
+    },
+    {
+      "id": "mace",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Mace/T_UI_Mace_Icon.uasset",
+      "sha256": "6ec125bc7b8feb6eaf0ccc7eba9864aebffac51e8b802c84271b10e4eb6eb202"
+    },
+    {
+      "id": "meat-cleaver",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Cleaver/T_UI_Cleaver_Icon.uasset",
+      "sha256": "e64ac8314b7fab019872e1904851fb4025e050ee44ffb39b12d398b127e5d64d"
+    },
+    {
+      "id": "mob-mallet",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/GiantMallet/T_UI_GiantMallet_Icon.uasset",
+      "sha256": "adbae831d6c96baea6ba5e743aa0774d4b29a07690cab320dff2362093b57922"
+    },
+    {
+      "id": "monster-masher",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/GiantMallet/GiantMallet_Unique/T_UI_GiantMallet_Unique_Icon.uasset",
+      "sha256": "eb6f20efacd1bf89bc0dedc02a5a6d80bf284c603e21b385878d1ecfc2edf4c8"
+    },
+    {
+      "id": "paragon",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Powerbow/Powerbow_Unique/T_UI_Powerbow_Unique_Icon.uasset",
+      "sha256": "adb5d5aca770bc73eb21a5dbac1879a646b6c012190d920268982e498e621e6b"
+    },
+    {
+      "id": "phantom-wing",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Trickbow/T_UI_Trickbow_Unique_Icon.uasset",
+      "sha256": "da468d5cd4b38eed6d1ad932d85a6392ac156f92c22fc90a193997082e8a82a5"
+    },
+    {
+      "id": "pickaxe",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Pickaxe/T_UI_Pickaxe_Icon.uasset",
+      "sha256": "74038380ce441ed3614a7db305407ec1cf03c12b8b0b046e91f5c2926aa0d34d"
+    },
+    {
+      "id": "pike",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Pike/T_UI_Pike_Icon.uasset",
+      "sha256": "e8bdd2132b5db8f7bc1e3663e7f777c0c5a31131b5248237396862bba82fff67"
+    },
+    {
+      "id": "powerbow",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Powerbow/T_UI_Powerbow_Icon.uasset",
+      "sha256": "88e5693330e1120c67245c5fa9456d850a7906d73a02c280b5204d74b40e8f8f"
+    },
+    {
+      "id": "pride-of-the-plains",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/CurvedLongsword/CurvedLongsword_Unique/T_UI_CurvedLongsword_Unique_Icon.uasset",
+      "sha256": "efd021f0018009b233cfa1173e5fa92bfd91933a5bb255cf0c58d486588c91b9"
+    },
+    {
+      "id": "prime-enchanters-gauntlets",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Gauntlet/Gauntlet_Unique/T_UI_Gauntlets_Unique_Icon.uasset",
+      "sha256": "84507e76e930799db3e9681c15eb5332bf85cd890d2e01c2a67fdf8f1f8bf0f6"
+    },
+    {
+      "id": "rangers-promise",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Bow/Bow_Unique/T_UI_Bow_Unique_Icon.uasset",
+      "sha256": "8adb2d180b800c90418bccd9a2a564592b2965620cae1776c35c04797b265910"
+    },
+    {
+      "id": "rapid-crossbow",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/RapidCrossbow/T_UI_RapidCrossbow_Icon.uasset",
+      "sha256": "17ecad195d195a84785ca4c8355e7798f392452a512eaf1c6f86910849e2188e"
+    },
+    {
+      "id": "rapier",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Rapier/T_UI_Rapier_Icon.uasset",
+      "sha256": "e51b8a464e1c1f05ab7b220f5f22fe7bddff2b2656b8070aefc8f176f3e0fbd7"
+    },
+    {
+      "id": "rascals-razor",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Sabre/Sabre_Unique/T_UI_Sabre_Unique_Icon.uasset",
+      "sha256": "7d05da9899773c54b662936881f1c4d3c97a3aa1522aeffd6394b36ce279f42c"
+    },
+    {
+      "id": "redstone-wrecker",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/GiantClub/GiantClub_Unique/T_UI_GiantClub_Unique_Icon.uasset",
+      "sha256": "f14a45cd0e865b984a838be8ea0e1dbe416e8dd7813d8b93ebb3aadcd67d6d62"
+    },
+    {
+      "id": "riftslasher",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/CurvedLongsword/T_UI_CurvedLongsword_Icon.uasset",
+      "sha256": "b9e962c7b757d1e27b1d2663c4a2ddefcccdf9ac980d498d8f4d940112c61896"
+    },
+    {
+      "id": "sabre",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Sabre/T_UI_Sabre_Icon.uasset",
+      "sha256": "eb87b0f9eff414b9abfa235efbd825ecb95ceb0f00a1247a0da65113bd3ad80c"
+    },
+    {
+      "id": "scatter-crossbow",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/ScatterCrossbow/T_UI_ScatterCrossbow_Icon.uasset",
+      "sha256": "9b35fc5f5f64747c3a50309286f8936e503133a174417b03ceae85b588e57f03"
+    },
+    {
+      "id": "sculker-claws",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Claws/Claws_unique/T_UI_Claws_Unique_Icon.uasset",
+      "sha256": "cdd08898c6718daf7262b11274521b6e6533e43c21736f75281604fa90791fa2"
+    },
+    {
+      "id": "sculkers-bane",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Dagger/Dagger_Unique/T_UI_Dagger_Unique_Icon.uasset",
+      "sha256": "af042df965edf408729aab2090f653b5e92680808d64fa751490ad5f74ae4f6e"
+    },
+    {
+      "id": "scythe",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Scythe/T_UI_Scythe_Icon.uasset",
+      "sha256": "37d29ae0e700c7c22c0573d8546e0af19b9b1cd675622bd6c2bddc4ecab3d043"
+    },
+    {
+      "id": "shooting-star",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Shortbow/Shortbow_Unique/T_UI_Shortbow_Unique_Icon.uasset",
+      "sha256": "c2b0dc5b755873364e7307aee39104f720d200b8c97dd4c802c6d02aa7b70e86"
+    },
+    {
+      "id": "short-spear",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Shortspear/T_UI_Shortspear_Icon.uasset",
+      "sha256": "c8d425af7a2575538d35ea713dc5a90095b08db9647482e7ec5d8aee45b5e1b3"
+    },
+    {
+      "id": "shortbow",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Shortbow/T_UI_Shortbow_Icon.uasset",
+      "sha256": "1c4f203a7326edd4af0ed371492507a5a73de50b1deb8e2bb4bd6b6eccc74f63"
+    },
+    {
+      "id": "shovel",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Shovel/T_UI_Shovel_Icon.uasset",
+      "sha256": "d918b0a704545f98504de2791a436943cad1ab5e1cba9e1a51b2457e603527a5"
+    },
+    {
+      "id": "sift-sickles",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Sickles/Sickles_Unique/T_UI_Sickles_Unique_Icon.uasset",
+      "sha256": "0af0db80bc021fdc0ada261e251bfd4402f560b709bf15cd86c886d877d791c8"
+    },
+    {
+      "id": "slaymore",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Claymore/Claymore_Unique/T_UI_Claymore_Unique_Icon.uasset",
+      "sha256": "aa6cda70844e74fca157ac79ba99263717a56372f2e748b436ad6bcfdc9523ba"
+    },
+    {
+      "id": "soul-reaper",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Scythe/Scythe_Unique/T_UI_Scythe_Unique_Icon.uasset",
+      "sha256": "bfb7fd57fc0a4e8ac05a8d3dee67e131e616b80845a812d424824709e933e72e"
+    },
+    {
+      "id": "spectral-spear",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Shortspear/Shortspear_Unique/T_UI_Shortspear_Unique_Icon.uasset",
+      "sha256": "e2042e34e0a39a60bfb929cfaf698e3b438a8a859fc3ea6fbc15e929ccec9ebe"
+    },
+    {
+      "id": "stormcaller",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Pike/Pike_Unique/T_UI_Pike_Unique_Icon.uasset",
+      "sha256": "d6b292d5d832e15cefc8fc161b27d74195b85dccdd72a038e86bf10b3400e256"
+    },
+    {
+      "id": "sword",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Sword/T_UI_Sword_Icon.uasset",
+      "sha256": "929caa6993f386bf69f8b9c75977120468fe9080f72b729eca4481c8ceba6c57"
+    },
+    {
+      "id": "the-burning-blade",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Sword/Sword_Unique/T_UI_Sword_Unique_Icon.uasset",
+      "sha256": "df1699cf86a8aea4190b040f0baed40e0465817916d685e7797f806c81892ac8"
+    },
+    {
+      "id": "the-close-ranger",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/HeavyCrossbow/HeavyCrossbow_Unique/T_UI_HeavyCrossbow_Unique_Icon.uasset",
+      "sha256": "690082436880fb06b5b8b81ce8b5ad4c2632f2f07291fa6b74b11d05fe3281e4"
+    },
+    {
+      "id": "the-cross-pollinator",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/RapidCrossbow/RapidCrossbow_Unique/T_UI_RapidCrossbow_Unique_Icon.uasset",
+      "sha256": "ee9b9fe6daaa9cf4f09a7a593087e16de5395ccee739228c0596abf724ef2d55"
+    },
+    {
+      "id": "the-darkshard",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Greatsword/Greatsword_Unique/T_UI_Greatsword_Unique_Icon.uasset",
+      "sha256": "93725ee94e5f8c77c652d01891d3b2b3d228cb69f27082f25a886d3903d40668"
+    },
+    {
+      "id": "the-prospectors-pick",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Pickaxe/Pickaxe_Unique/T_UI_Pickaxe_Unique_Icon.uasset",
+      "sha256": "4dc028d4e051cd6d6957d4cd24b5b06210434a4d757ce6d0a3427ab4b22a125b"
+    },
+    {
+      "id": "the-shackler",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Crossbow/Crossbow_Unique/T_UI_Crossbow_Unique_Icon.uasset",
+      "sha256": "770885e4d0f8cbe936efa44329dc403ad2dc34e738803119fe2ec6be7133e7cc"
+    },
+    {
+      "id": "the-thousand-cuts",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Rapier/Rapier_Unique/T_UI_Rapier_Unique_Icon.uasset",
+      "sha256": "d971e5fb999341606766826508341dcd622a6f2a8871b6b52d181111db68c2e1"
+    },
+    {
+      "id": "tidal-sickle",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Moonsword/T_UI_Moonsword_Icon.uasset",
+      "sha256": "5c549c44e04f8aa285c0e0bcc38fdba360a336bec1f96f4d39b8ad4060966510"
+    },
+    {
+      "id": "trickbow",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Trickbow/T_UI_Trickbow_Icon.uasset",
+      "sha256": "bf727e79b6c7aacfbcb5e1525c6161bc23982d6a45e2e816f1f91820d3940276"
+    },
+    {
+      "id": "twilight-dagger",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Dagger/T_UI_Dagger_Icon.uasset",
+      "sha256": "752d06474bfde0cc80ff974a201ebde1e5c0e41e2e787bf3e2964a2d7da8bb07"
+    },
+    {
+      "id": "venomous-fangs",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Daggers/Daggers_Unique/T_UI_Daggers_Unique_Icon.uasset",
+      "sha256": "ca482f6d183a820d89e8b04f3f0119780152856ad105544bdf400d6ec1ba0b05"
+    },
+    {
+      "id": "war-hammer",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Warhammer/T_UI_Warhammer_Icon.uasset",
+      "sha256": "eadde43bec4c0386203f0e0f0dbccbe04a80c69419bfab38c1d33c5f46692bcb"
+    },
+    {
+      "id": "wolf-claws",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Weapons/Claws/T_UI_Claws_Icon.uasset",
+      "sha256": "4762eab06f9cdd4df624161292af54bdc3e29321c93c148666ef86f00802631d"
+    },
+    {
+      "id": "battle-banner",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/Warbanner/T_UI_Warbanner_Icon.uasset",
+      "sha256": "6f964a6b91a016fc799522f529ffd8fc451527e174c8c207d49cc3da50514a4c"
+    },
+    {
+      "id": "blaze-bangle",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/Bracelet/Bracelet_Fire/T_UI_BraceletFire_Icon.uasset",
+      "sha256": "986bf935ab2944c698f949ba7075263323f8d38a1a6150e466560b9400e36cfb"
+    },
+    {
+      "id": "blight-bangle",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/Bracelet/Bracelet_Poison/T_UI_BraceletPoison_Icon.uasset",
+      "sha256": "786d4f10ec3a70046a34b8ce0842a24df71a7d891b9ff46d5365368ada060ac9"
+    },
+    {
+      "id": "blizzard-bangle",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/Bracelet/Bracelet_Freezing/T_UI_BraceletFreezing_Icon.uasset",
+      "sha256": "4f4a4844821f24fdc81082d00e32662b0d14071840592e1e129c2cf331d28baa"
+    },
+    {
+      "id": "cinder-scepter",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/FlameSceptre/T_UI_FlameSceptre_Icon.uasset",
+      "sha256": "f3b61be0be72d162ca2866425a7e0cf9355d238cf7ed513c5b74a4f4a631d0d8"
+    },
+    {
+      "id": "conductive-quiver",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/ElementalQuivers/Quiver_Conductive/T_UI_Quiver_Conductor_Icon.uasset",
+      "sha256": "3210dc60c363443613457911271e444f523e6bf645851d30f9f35fe9cee63db3"
+    },
+    {
+      "id": "corrupted-beacon",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/CorruptedBeacon/T_UI_CorruptedBeacon.uasset",
+      "sha256": "2c8a57217f5dea256c7dd88f324af5e03eeb4b9e971af3152449c0d2793c1e04"
+    },
+    {
+      "id": "corrupted-seeds",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/CorruptedSeeds/T_UI_CorruptedSeeds_Icon.uasset",
+      "sha256": "3d61ca23ff9f98f8afc18d228f71c7c6d51bd66ae5b510092e5189616de04da8"
+    },
+    {
+      "id": "creeper-candle",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/CreeperCandle/T_UI_Icon_Creeper_Candle.uasset",
+      "sha256": "78a50ede734c7b9043422cbbc815fd695b4233aee21b024adc2fb348d3d06067"
+    },
+    {
+      "id": "death-cap-mushroom",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/Mushrooms/Mushroom_Deathcap/T_UI_DeathCapMushroom.uasset",
+      "sha256": "25dada4ed50412b7949976bd27de073f8295ce9060bfa011daf34b01c98ae2ec"
+    },
+    {
+      "id": "echo-ocarina",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/Instruments/Carapace_Ocarina/T_UI_Icon_CarapaceOcarina.uasset",
+      "sha256": "a295b18a08b30e33e1b1b35b33d3597a02b792deaeaa03477af073132479e9db"
+    },
+    {
+      "id": "electric-bangle",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/Bracelet/Bracelet_Conductive/T_UI_BraceletConductive_Icon.uasset",
+      "sha256": "ee6d3e8e4bc22131bce1d534d1c8942c2f2fec52ba3cc245e63210ddae7665d3"
+    },
+    {
+      "id": "ender-fog",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/SmokeBomb/T_UI_SmokeBomb_Icon.uasset",
+      "sha256": "04f0a0e0e08ca23103e9f56dcd04b1e4eb1f6c9f3a1fe382cd181bf701c671a6"
+    },
+    {
+      "id": "fighters-flute",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/Instruments/FightersFife/T_UI_Icon_FightersFife.uasset",
+      "sha256": "5edf4559a2568fa2524c88524e52d5d4e1ff913cde09399e5423f58013bbc4c9"
+    },
+    {
+      "id": "fighting-fungus",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/Mushrooms/Mushroom_Maiming/T_UI_Icon_Mushroom_Maiming.uasset",
+      "sha256": "3773d8bd774191fe1eba1f93c1e1a92db9a85d9b2909ba37f4db6de13b66b48e"
+    },
+    {
+      "id": "firework-arrow",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/ElementalQuivers/Quiver_Firework/T_UI_FireworkQuiver_Icon.uasset",
+      "sha256": "37b4d9670f48d0553e0831b353a1912a356a1f659f94cc18f0921be9fbaab295"
+    },
+    {
+      "id": "flaming-quiver",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/ElementalQuivers/Quiver_Fire/T_UI_Quiver_Burning_Icon.uasset",
+      "sha256": "804205baae2cb6bf887f7145326f79d9c1145175dd71a9d05724576cbdb211b5"
+    },
+    {
+      "id": "freezing-quiver",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/ElementalQuivers/Quiver_Freezing/T_UI_Quiver_Freezing_Icon.uasset",
+      "sha256": "e1c8966f13e4254241870ec3d76a046285691dc94555810b3dfe6d5b1f96de49"
+    },
+    {
+      "id": "grindstone",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/Grindstone/T_UI_Grindstone_Icon.uasset",
+      "sha256": "e0318f5d4884e637c79daccdfeba80b76f9a04f3de98b224c1eaa179f40e3de8"
+    },
+    {
+      "id": "honey-dipper",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/Honeypot/T_UI_Honeypot_Icon.uasset",
+      "sha256": "ebe88c56f857acb29c32fa1fb0b648291e39bc43912cd53f348c689c89d04279"
+    },
+    {
+      "id": "humbling-horn",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/RallyingHorn/T_UI_RallyingHorn_Icon.uasset",
+      "sha256": "03a8971ff29b70ed1f8d2b6293bb4a7ed6fe129a31bc4486d416b2255b68f218"
+    },
+    {
+      "id": "lightning-rod",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/LightningRod/T_UI_LightningRod_Icon.uasset",
+      "sha256": "8ce2a4d6df729b6f1548e1cb123998aefd130632feaecf4c287777226f78f052"
+    },
+    {
+      "id": "picnic-basket",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/PicnicBlanket/T_UI_PicnicBlanket_Icon.uasset",
+      "sha256": "ba29756c6b1968edba3e5ddfebae1c69c812f8172788ef6538c34537c4f0764c"
+    },
+    {
+      "id": "pouch-of-ember",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/Satchels/Satchel_Fire/T_UI_Icon_Satchel_Fire.uasset",
+      "sha256": "9ad0856f16fa578e37544d12907baaa0596275a606c52d2b220a75e71f644752"
+    },
+    {
+      "id": "pouch-of-frost",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/Satchels/Satchel_Freezing/T_UI_Icon_Satchel_Freezing.uasset",
+      "sha256": "1a2b096838327f94f7cde3da7df37c8b334f8ff942f62ec8ed08cb53efe83788"
+    },
+    {
+      "id": "pouch-of-poison",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/Satchels/Satchel_Poison/T_UI_Icon_Satchel_Poison.uasset",
+      "sha256": "c824b0f8fea1acb8a2cbe40bf1200afb56e554b3536edde05797c11c22163fc4"
+    },
+    {
+      "id": "pouch-of-thunder",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/Satchels/Satchel_Conductive/T_UI_Icon_Satchel_Conductive.uasset",
+      "sha256": "984daee99fd5e02ca7d91a635c236604e3656a18ecc860520f10864587a532bc"
+    },
+    {
+      "id": "powershaker",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/Powershaker/T_UI_Powershaker.uasset",
+      "sha256": "0d81e3b0f4f80c82679d40cef5d9a37b3dbf99347feda866f81b31e4a394948b"
+    },
+    {
+      "id": "redstone-mine-launcher",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/RedstoneMineLauncher/T_UI_RedstoneMinelauncher_Icon.uasset",
+      "sha256": "3f27e49b1d6470bce580452a62f2844181fa4b24a3a5797e386423db79ed3642"
+    },
+    {
+      "id": "soul-harvester",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/SoulHarvester/T_UI_SoulHarvester_Icon.uasset",
+      "sha256": "7b8100a7183580eee01875c836bec3e8ed3963d623de5a78eedf6fb4dec12f22"
+    },
+    {
+      "id": "tempo-truffle",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/Mushrooms/Mushroom_Haste/T_UI_Icon_Mushroom_Haste.uasset",
+      "sha256": "405c570ac46b7070d9b69c43e3457d43606ebfe6d95d6281f766689682dc490e"
+    },
+    {
+      "id": "totem-of-casting",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/TotemOfCasting/T_UI_TotemOfCasting_Icon.uasset",
+      "sha256": "76461e17ab8a5b730728bb3c9f6c72c7654f6a0911288d277f415c476c6a1d41"
+    },
+    {
+      "id": "totem-of-regeneration",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/TotemOfRegeneration/T_UI_TotemofRegeneration_Icon.uasset",
+      "sha256": "7fac39c5b9df1ff8fe803da938198a48a136731143458c2c6e9bd080c0549603"
+    },
+    {
+      "id": "totem-of-shielding",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/TotemOfShielding/T_UI_TotemofShielding_Icon.uasset",
+      "sha256": "1f521c6a2988d78b5e1c24b3a4346086f60ec177b01ffc15fe82b8a24c0c5e15"
+    },
+    {
+      "id": "turtle-masters-mandolin",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/Instruments/IronHideLute/T_UI_Icon_IronHideLute.uasset",
+      "sha256": "f08b115a5dc9951b01e751426fb84a72642231bc2cb7aaa799913ad550ec57f0"
+    },
+    {
+      "id": "venomous-quiver",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/ElementalQuivers/Quiver_Poison/T_UI_Quiver_Poisoned_Icon.uasset",
+      "sha256": "ca643ec3bf09ba9fb5dda873ec74666071b25e111734129493bf3d317674b39f"
+    },
+    {
+      "id": "warding-chimes",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/Instruments/WardingChimes/T_UI_Icon_WardingChimes.uasset",
+      "sha256": "7a3e063375e95de17ee9537771840b1006f5e5778759f872692f04d9412ac761"
+    },
+    {
+      "id": "warrior-drums",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/Instruments/WarriorsDrum/T_UI_Icon_WarriorsDrum.uasset",
+      "sha256": "fa30b9d3510f5f57363e15c877e090e649083de5dcfad4b91fc26c25cbcae8b7"
+    },
+    {
+      "id": "winter-staff",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/BlizzardStaff/T_UI_BlizzardStaff_Icon.uasset",
+      "sha256": "21333b3b3aa6ed30d5c088d519ca04a12083b7d4510ab026489d4de7b9b24b40"
+    },
+    {
+      "id": "witch-brew",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Artifacts/WitchesBrew/T_UI_WitchesBrew_Icon.uasset",
+      "sha256": "0d889ada171c6d5020cd1690fd2962510f8fd15963895fbb519ad8cddcad5d9b"
+    },
+    {
+      "id": "alchemist-loafers",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Evocation_Armor/Unique/T_UI_Boots_Evocation_Unique_Icon.uasset",
+      "sha256": "a24b3879a0f5b3df3c51fc8c2c017abcfb60664e7f97cf5296f0e44e1a54523e"
+    },
+    {
+      "id": "alchemist-overcoat",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Evocation_Armor/Unique/T_UI_Chest_Evocation_Unique_Icon.uasset",
+      "sha256": "d5abd4c3ff5b21360a1a3745dc50301c9e001dcf86f62806ab1089340718d492"
+    },
+    {
+      "id": "alchemist-top-hat",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Evocation_Armor/Unique/T_UI_Helmet_Evocation_Unique_Icon.uasset",
+      "sha256": "b094a2f4a310998db0a03dfe45e4c76deb8ba9ba025e3d137a976c7f4c01e6f2"
+    },
+    {
+      "id": "alchemist-trousers",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Evocation_Armor/Unique/T_UI_Leggings_Evocation_Unique_Icon.uasset",
+      "sha256": "909b34355fd2b8ccf37afd722ee4d0f6c9f7204c343f50a19cca08940397ac59"
+    },
+    {
+      "id": "beekeeper-boots",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Honey_Armor/T_UI_Boots_Honey_Icon.uasset",
+      "sha256": "9ed8668255235f61f44560d55b74644e897225b0b60fd32223e0b5b2f69245a9"
+    },
+    {
+      "id": "beekeeper-leggings",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Honey_Armor/T_UI_Leggings_Honey_Icon.uasset",
+      "sha256": "562aa156f5b3da631e2f4f39c99052038ac4a505166bc43a0b46ae8f9428145e"
+    },
+    {
+      "id": "beekeeper-suit",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Honey_Armor/T_UI_Chest_Honey_Icon.uasset",
+      "sha256": "2ba205f7c12c884a65939513edc5b52cb73f772cf37d23b7c0275ed8ec78173e"
+    },
+    {
+      "id": "beekeeper-veil",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Honey_Armor/T_UI_Helmet_Honey_Icon.uasset",
+      "sha256": "ea0d5f4a5f691749892637e35084da53ff33f058469d831fc577991df1acdc8f"
+    },
+    {
+      "id": "bounty-hunter-boots",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Undaunted_Armor/T_UI_UndauntedBoots_Icon.uasset",
+      "sha256": "cc02a5972b44553915d6c7fdd64eb4549cbb8f840cd54364fb7a26a93611b6ca"
+    },
+    {
+      "id": "bounty-hunter-chestplate",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Undaunted_Armor/T_UI_UndauntedChest_Icon.uasset",
+      "sha256": "5fc27eaa465a0213fd34211e4b46eb70f55d97c56cd3a27db888e22673d93732"
+    },
+    {
+      "id": "bounty-hunter-helmet",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Undaunted_Armor/T_UI_UndauntedHelmet_Icon.uasset",
+      "sha256": "827849dd562d07455a01994d78a158aa7016857fe5661059f6f5e33b830ae402"
+    },
+    {
+      "id": "bounty-hunter-shinguards",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Undaunted_Armor/T_UI_UndauntedLeggings_Icon.uasset",
+      "sha256": "b37dede80ae907ca83badc343fe4c205fcddfce4ac75e21ae62db0546044c9c6"
+    },
+    {
+      "id": "dauntless-greaves",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Undaunted_Armor/Unique/T_UI_UndauntedLeggings_Unique_Icon.uasset",
+      "sha256": "d12c03b86f0c97dd863c27f0c4c0978b47f23e88089e64adc1fe3446054dcd48"
+    },
+    {
+      "id": "dauntless-horns",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Undaunted_Armor/Unique/T_UI_UndauntedHelmet_Unique_Icon.uasset",
+      "sha256": "55dee3c17dd854ff601ab206d4327023f8608922c94f1e10a3107e709f817b97"
+    },
+    {
+      "id": "dauntless-pauldrons",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Undaunted_Armor/Unique/T_UI_UndauntedChest_Unique_Icon.uasset",
+      "sha256": "7c64d7e6d24904aba08b1f687fdce5d07cb24b8509c132c68d548b611770afdf"
+    },
+    {
+      "id": "dauntless-sabatons",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Undaunted_Armor/Unique/T_UI_UndauntedBoots_Unique_Icon.uasset",
+      "sha256": "d7922973dc738d3e118097d9970a1462b0eb05b2d17f6daa7a42928dd5b9785a"
+    },
+    {
+      "id": "disciple-leggings",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Disciple_Armor/T_UI_Leggings_Disciple_Icon.uasset",
+      "sha256": "70cb94a7eca3951db2fc1ee562b45e6afea7f113595d8783760bcb90adf1bd3e"
+    },
+    {
+      "id": "disciple-mask",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Disciple_Armor/T_UI_Helmet_Disciple_Icon.uasset",
+      "sha256": "cb244203dd265c42bfeebd145ccbf7a44679f886b64f2196be50c81cc759f8fe"
+    },
+    {
+      "id": "disciple-robe",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Disciple_Armor/T_UI_Chest_Disciple_Icon.uasset",
+      "sha256": "68eab9102f5244ff730082f504ffd600ba8187f3f4434c1075a88d7e86630439"
+    },
+    {
+      "id": "disciple-wraps",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Disciple_Armor/T_UI_Boots_Disciple_Icon.uasset",
+      "sha256": "9d75f5d3cc9da528312e853a932c3aabf688ec3d118abc119a8cb79c8d9689f2"
+    },
+    {
+      "id": "dreamruler-cover",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Phantom_Armor/Unique/T_UI_Chest_Phantom_Unique_Icon.uasset",
+      "sha256": "8028d36b3f5001326a86a225b8ca345f156c9aeb5b225f833c3c2ad890d26ecc"
+    },
+    {
+      "id": "dreamruler-crown",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Phantom_Armor/Unique/T_UI_Helmet_Phantom_Unique_Icon.uasset",
+      "sha256": "dc2174dc53eeffac6be33c28ae6f5c33c283ab0d9f9420797e7fded93f3f467e"
+    },
+    {
+      "id": "dreamruler-pyjamas",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Phantom_Armor/Unique/T_UI_Leggings_Phantom_Unique_Icon.uasset",
+      "sha256": "e04fcee925b039f48c705099849065b354200a7b8a6f2cadcaf60fb28b53a1c7"
+    },
+    {
+      "id": "dreamruler-slippers",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Phantom_Armor/Unique/T_UI_Boots_Phantom_Unique_Icon.uasset",
+      "sha256": "9191a2c68cf6380c2e2732c16c556589e3164512a590a59f62159d6fb992d0e2"
+    },
+    {
+      "id": "fly-agaric-cap",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Mushroom_Armor/Unique/T_UI_Helmet_Mushroom_Unique_Icon.uasset",
+      "sha256": "03a0c98e5be20bd6245745ac55c91d7ea4ad902f045f61c9d6ad4180a42bc9a3"
+    },
+    {
+      "id": "fly-agaric-coat",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Mushroom_Armor/Unique/T_UI_Chest_Mushroom_Unique_Icon.uasset",
+      "sha256": "8ebc750becc3261475642872cfae640db6efa7fd8952ef156d20478dd2244495"
+    },
+    {
+      "id": "fly-agaric-galoshes",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Mushroom_Armor/Unique/T_UI_Boots_Mushroom_Unique_Icon.uasset",
+      "sha256": "cf0a78518030722bd06e9be26deafb16d03b52401a68bb030846c3dd02162e9d"
+    },
+    {
+      "id": "fly-agaric-trousers",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Mushroom_Armor/Unique/T_UI_Leggings_Mushroom_Unique_Icon.uasset",
+      "sha256": "c8b0af8205206876dcb23c94c0b12406e6cc06ceeaf85cec07751a295909c3fc"
+    },
+    {
+      "id": "hivemind-hardhat",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Honey_Armor/Unique/T_UI_Helmet_Honey_Unique_Icon.uasset",
+      "sha256": "4cbcd4e0fdcd51702ec3727b2570161e04c5f496268edd073c735b6937235388"
+    },
+    {
+      "id": "hivemind-stingers",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Honey_Armor/Unique/T_UI_Boots_Honey_Unique_Icon.uasset",
+      "sha256": "0f046e515ad72c3288be9fb53a6977b896207cd28c87b1862c8538436ff21639"
+    },
+    {
+      "id": "hivemind-thorax",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Honey_Armor/Unique/T_UI_Chest_Honey_Unique_Icon.uasset",
+      "sha256": "e90a66e5dd11dbb7f70da5bdc0d45659a7df7f610e6130ddd7992cd0ba247aec"
+    },
+    {
+      "id": "hivemind-trousers",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Honey_Armor/Unique/T_UI_Leggings_Honey_Unique_Icon.uasset",
+      "sha256": "f89540c71b7a474426fec2d33fa80342e5c17923f6dc037696496803ad9fde2b"
+    },
+    {
+      "id": "humbler-antenna",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Stalwart_Armor/Unique/T_UI_Helmet_Stalwart_Unique_Icon.uasset",
+      "sha256": "383ba3176e8eccd9cd883b449830ab632c48ea8e2f0659b3ccf459ca1d3e36b6"
+    },
+    {
+      "id": "humbler-carapace",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Stalwart_Armor/Unique/T_UI_Chest_Stalwart_Unique_Icon.uasset",
+      "sha256": "a9c347e880e3dbe75b5fe529d73b999687041777bc4fc0571ebd03ece227f9aa"
+    },
+    {
+      "id": "humbler-greaves",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Stalwart_Armor/Unique/T_UI_Leggings_Stalwart_Unique_Icon.uasset",
+      "sha256": "45c46c86cf306bf8fa85f817ada8342b2b61846791746d788139a1ee3be1d788"
+    },
+    {
+      "id": "humbler-tarsi",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Stalwart_Armor/Unique/T_UI_Boots_Stalwart_Unique_Icon.uasset",
+      "sha256": "efa774ee4b90d894c9648c9138f0efcd636e90fcc222de4f47a31cb0cd2f7002"
+    },
+    {
+      "id": "mad-sifter-mask",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Wellspring_Armor/Unique/T_UI_Helmet_Wellspring_Unique_Icon.uasset",
+      "sha256": "8f32e617a54b87c77622bccbc2997835e017af6bfdc25f9ef035cbb76def021a"
+    },
+    {
+      "id": "mad-sifter-paws",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Wellspring_Armor/Unique/T_UI_Boots_Wellspring_Unique_Icon.uasset",
+      "sha256": "718df85bea3a93b9964c68ba8918adaa66074293b687ae8cab49691d33b30be2"
+    },
+    {
+      "id": "mad-sifter-slacks",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Wellspring_Armor/Unique/T_UI_Leggings_Wellspring_Unique_Icon.uasset",
+      "sha256": "dd3a1c87a2dac8ce22cd0f3ae692d5515d4e6b6eb64ea1c432bb0bc3e24ab4fa"
+    },
+    {
+      "id": "mad-sifter-vest",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Wellspring_Armor/Unique/T_UI_Chest_Wellspring_Unique_Icon.uasset",
+      "sha256": "419e24b5ad2b68ceddd1534605ed9aaab394b82d068b10ed3a76f8894eda0d96"
+    },
+    {
+      "id": "monarch-crown",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Scavenger_Armor/Unique/T_UI_Helmet_Scavenger_Unique_Icon.uasset",
+      "sha256": "e623d428968ed19cc5919f2cf0a61b45cfaf97e9a2df6c970338b853dc40b057"
+    },
+    {
+      "id": "monarch-mantle",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Scavenger_Armor/Unique/T_UI_Chest_Scavenger_Unique_Icon.uasset",
+      "sha256": "cb92f60cd78fdd8109d2f635329e62f47bda0fe0549dd47981997e42fce27fe6"
+    },
+    {
+      "id": "monarch-sash",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Scavenger_Armor/Unique/T_UI_Leggings_Scavenger_Unique_Icon.uasset",
+      "sha256": "a59446b94f20fef55f2d7befbc2c88391cdff3d00855e73a51ba287e0fb77cef"
+    },
+    {
+      "id": "monarch-talons",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Scavenger_Armor/Unique/T_UI_Boots_Scavenger_Unique_Icon.uasset",
+      "sha256": "2153ce5b74e24fe67a125f217ebb1bcc5a4fce40493b38bf105856b5e0ed347c"
+    },
+    {
+      "id": "monstrosity-armor",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Redstone_Armor/Unique/T_UI_Chest_Redstone_Unique_Icon.uasset",
+      "sha256": "f33475f759645a46c625224a172c8a80a10af5541a12f49bab2dccf2a4ccf774"
+    },
+    {
+      "id": "monstrosity-greaves",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Redstone_Armor/Unique/T_UI_Leggings_Redstone_Unique_Icon.uasset",
+      "sha256": "356a761ed351344068af415bee8a3208b54fe8c4e9a12f8c4ab60eecc178b1b8"
+    },
+    {
+      "id": "monstrosity-horns",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Redstone_Armor/Unique/T_UI_Helmet_Redstone_Unique_Icon.uasset",
+      "sha256": "ba9ff1badef6a9d64eb1d59173705bb74a0f0b82b202a5700dfad7805ea9d3b7"
+    },
+    {
+      "id": "monstrosity-stompers",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Redstone_Armor/Unique/T_UI_Boots_Redstone_Unique_Icon.uasset",
+      "sha256": "ccb9acc00db4c3a66eefa7570e7cae6bb17e496045de37f86cd97fcc49ee3d74"
+    },
+    {
+      "id": "mushroom-boots",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Mushroom_Armor/T_UI_Boots_Mushroom_Icon.uasset",
+      "sha256": "4bdc5493647fdb40cdb253ef42c613e663e034e379ed3648c0e95e3d6240357b"
+    },
+    {
+      "id": "mushroom-cap",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Mushroom_Armor/T_UI_Helmet_Mushroom_Icon.uasset",
+      "sha256": "61917ffd46de8326b9cb6b78d4909db5194c492a7bcb13abe1e973bae18f0b4f"
+    },
+    {
+      "id": "mushroom-leggings",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Mushroom_Armor/T_UI_Leggings_Mushroom_Icon.uasset",
+      "sha256": "f1dd97e995a6dff4444372157415a094ae39a1fd523f263846942718f8abb381"
+    },
+    {
+      "id": "mushroom-robe",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Mushroom_Armor/T_UI_Chest_Mushroom_Icon.uasset",
+      "sha256": "3c12155ccb0ba1a3848863112671f35f36bc584fb993c43b38a8a869d299ac01"
+    },
+    {
+      "id": "mystic-boots",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Mystic_Armor/T_UI_MysticBoots_Icon.uasset",
+      "sha256": "930146ca3429db055fe8464da846dc68fb4f4c02a73f3a6312c4052e72a68e3e"
+    },
+    {
+      "id": "mystic-circlet",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Mystic_Armor/T_UI_MysticHelmet_Icon.uasset",
+      "sha256": "702bba4fd613f05442f054981022c6d998fab4c7786c77007840d87197a7b3d4"
+    },
+    {
+      "id": "mystic-leggings",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Mystic_Armor/T_UI_MysticLeggings_Icon.uasset",
+      "sha256": "480a97d1b7673571b9dbe6da353adb7f16032b787ae08c76623e24a5aacad679"
+    },
+    {
+      "id": "mystic-robe",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Mystic_Armor/T_UI_MysticChestplate_Icon.uasset",
+      "sha256": "980ce2c06a6c0adcddc26e1442e7130ef1ac43e52f377e1c841ec1b4d2b989f6"
+    },
+    {
+      "id": "nomad-boots",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Voyagers_Armor/T_UI_VoyagerBoots_Icon.uasset",
+      "sha256": "6494a09035a388eedbbe6f8dfbf300df2a1573179b5f119d5a970631193b60f4"
+    },
+    {
+      "id": "nomad-chestplate",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Voyagers_Armor/T_UI_VoyagerChest_Icon.uasset",
+      "sha256": "299cecb9edd731d46472c21459601ab0bd670b7d63768d1687384c9e13e74866"
+    },
+    {
+      "id": "nomad-hood",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Voyagers_Armor/T_UI_VoyagerHelmet_Icon.uasset",
+      "sha256": "1a98d807808160db53d923e9e9f46d2e33f4b57f3ef9211c88c935bc1cd2e627"
+    },
+    {
+      "id": "nomad-leggings",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Voyagers_Armor/T_UI_VoyagerLeggings_Icon.uasset",
+      "sha256": "57227f36e98c9f7c75ce30567ef3c79e6f6032bbbe86fcaba8502d112e1a3c15"
+    },
+    {
+      "id": "oracle-crown",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Mystic_Armor/Unique/T_UI_MysticHelmet_Unique_Icon.uasset",
+      "sha256": "d5799b69d4d34851ff83154a7508a5abb2fe95e3db97a62fa110215db825fd86"
+    },
+    {
+      "id": "oracle-mantle",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Mystic_Armor/Unique/T_UI_MysticChestplate_Unique_Icon.uasset",
+      "sha256": "ae746798694a787822f81ca2b01f9e1b2cfe72e697ba3582adcd0044246ca999"
+    },
+    {
+      "id": "oracle-sandals",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Mystic_Armor/Unique/T_UI_MysticBoots_Unique_Icon.uasset",
+      "sha256": "dfc6b3d5973e9fef309f553a309624799300e780523040dad2f471545743886e"
+    },
+    {
+      "id": "oracle-tights",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Mystic_Armor/Unique/T_UI_MysticLeggings_Unique_Icon.uasset",
+      "sha256": "b68b33d12000732789311eb8b3f45e142cd20ade72744a34c23226b91e8b9136"
+    },
+    {
+      "id": "packleader-fur-chaps",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Wolfclutch_Armor/Unique/T_UI_Leggings_Wolfclutch_Unique_Icon_png.uasset",
+      "sha256": "a53df08f5a40bfce933c53afd8a727ebb85966554af57a8f7d811902e34a1bac"
+    },
+    {
+      "id": "packleader-hide",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Wolfclutch_Armor/Unique/T_UI_Chest_Wolfclutch_Unique_Icon.uasset",
+      "sha256": "0bb22227dbf6b20dca6ed120a41745952c402cb141b373bbf463b684ba886395"
+    },
+    {
+      "id": "packleader-muzzle",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Wolfclutch_Armor/Unique/T_UI_Helmet_Wolfclutch_Unique_Icon_png.uasset",
+      "sha256": "ac3f7db4623559d38823455c15c0ee5b2aac1cf165ca0fbc01de8f1d048dcf1d"
+    },
+    {
+      "id": "packleader-paws",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Wolfclutch_Armor/Unique/T_UI_Boots_Wolfclutch_Unique_Icon.uasset",
+      "sha256": "481d818247a0ddcfd7562694a336fe2cc56059af6f118b28e201fa71e8522791"
+    },
+    {
+      "id": "phantom-boots",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Phantom_Armor/T_UI_Boots_Phantom_Icon.uasset",
+      "sha256": "3f89b7ea7c2c1480df541fda65b115897c40a54a2fcfe82747238519839f92d6"
+    },
+    {
+      "id": "phantom-chestplate",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Phantom_Armor/T_UI_Chest_Phantom_Icon.uasset",
+      "sha256": "9008d3ed2776d431179902373167203808d1356caf619daaa94012aa7f505300"
+    },
+    {
+      "id": "phantom-helmet",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Phantom_Armor/T_UI_Helmet_Phantom_Icon.uasset",
+      "sha256": "87efe39ad8fefc181871100f0dcf03e184a7cda586f5a424ee5048bb274f8211"
+    },
+    {
+      "id": "phantom-pants",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Phantom_Armor/T_UI_Leggings_Phantom_Icon.uasset",
+      "sha256": "4f2f031c907f28195b4eedb54b0d4bac8877e2fb38a7c414eb7b49ceb6c4ee31"
+    },
+    {
+      "id": "protector-boots",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Stalwart_Armor/T_UI_Boots_Stalwart_Icon.uasset",
+      "sha256": "44e44961920829addd3609c59aaa71ba8a9f693c0ac604af855817a2fa2326af"
+    },
+    {
+      "id": "protector-chestplate",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Stalwart_Armor/T_UI_Chest_Stalwart_Icon_png.uasset",
+      "sha256": "0b62aa5eb29c35d0fd97574cbbe214edec68a8354e2f75cd81dacfe1dc5599d3"
+    },
+    {
+      "id": "protector-helmet",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Stalwart_Armor/T_UI_Helmet_Stalwart_Icon_png.uasset",
+      "sha256": "b11e48a989d93cea84f76f9425fec9fd8e0ac14f133d9af7dde07d2369472ef4"
+    },
+    {
+      "id": "protector-shinguards",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Stalwart_Armor/T_UI_Leggings_Stalwart_Icon_png.uasset",
+      "sha256": "e9174883c015d78f3992a9ae829a5f990ca562569a797bfce85c4734f2140224"
+    },
+    {
+      "id": "ranger-boots",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Realmreacher_Armor/T_UI_Boots_Realmreacher.uasset",
+      "sha256": "274c6e67dedc466c45ff225e66f7e729def800d3bf20d1cf625bb27fc95121a7"
+    },
+    {
+      "id": "ranger-cap",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Realmreacher_Armor/T_UI_Helmet_Realmreacher.uasset",
+      "sha256": "39f0c5d14ed860abd3309714fd5efef1df9451da7a51c280c6202de09e13a1a8"
+    },
+    {
+      "id": "ranger-jacket",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Realmreacher_Armor/T_UI_Chest_Realmreacher.uasset",
+      "sha256": "f7bfd1a80cadfd7a6440b258d2519e8f88d50625bd88ae5b7f6862a967b369d7"
+    },
+    {
+      "id": "ranger-leggings",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Realmreacher_Armor/T_UI_Leggings_Realmreacher.uasset",
+      "sha256": "ea9b407436e4b1a86c841550313f456d32cb9d44f4fadd4a86bd9e2e74a9b042"
+    },
+    {
+      "id": "realmreacher-boots",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Timeworn_Armor/T_UI_Boots_Timeworn_Icon.uasset",
+      "sha256": "a2566077e9d3c89eae6c713c7cbfc15b5f2c45235c849765b62545c2caf9faf5"
+    },
+    {
+      "id": "realmreacher-hat",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Timeworn_Armor/T_UI_Helmet_Timeworn_Icon.uasset",
+      "sha256": "018eb20659bf858cb93c32470797f64e495a40287997e462079ba372be46c19b"
+    },
+    {
+      "id": "realmreacher-leggings",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Timeworn_Armor/T_UI_Leggings_Timeworn_Icon.uasset",
+      "sha256": "5669e72a06513cb7110bf8c1584eca9ab0f3da3dea6d25179101f400167e7f6f"
+    },
+    {
+      "id": "realmreacher-robe",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Timeworn_Armor/T_UI_Chest_Timeworn_Icon.uasset",
+      "sha256": "7144fc1c11c72693b5d859d704e8dac78d57b7b904f4a8d52109964e44bff6e9"
+    },
+    {
+      "id": "redstone-boots",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Redstone_Armor/T_UI_Boots_Redstone_Icon.uasset",
+      "sha256": "456699e20f6904531ac90c61fbb2f4d102b335c88b769f5933ef54acdf562154"
+    },
+    {
+      "id": "redstone-chestplate",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Redstone_Armor/T_UI_Chest_Redstone_Icon.uasset",
+      "sha256": "3e70e9ce65f952ff402bfa5736247109c1ad378652ee55d48c40ffc9c24f1db8"
+    },
+    {
+      "id": "redstone-helmet",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Redstone_Armor/T_UI_Helmet_Redstone_Icon.uasset",
+      "sha256": "cc7b88490788d25fa87092c28b8fb0b002ae68333bf8eafaab03d29e214447d3"
+    },
+    {
+      "id": "redstone-shinguards",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Redstone_Armor/T_UI_Leggings_Redstone_Icon.uasset",
+      "sha256": "3bff9fe3b9307c6f08a004750569990cfdbcfc242d353663850d8776cea0104f"
+    },
+    {
+      "id": "rimefrost-armor",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Frostrime_Armor/Unique/T_UI_FrostrimeChest_Unique_Icon.uasset",
+      "sha256": "a11925da4f32956b442bd0786e3cd290f21009550be68ac3b733565ce66a781e"
+    },
+    {
+      "id": "rimefrost-icecap",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Frostrime_Armor/Unique/T_UI_FrostrimeHelmet_Unique_Icon.uasset",
+      "sha256": "f39c2649cd7076bf3d748b9e52bddb26903d0adb4e3eadaa330528103b4cfd12"
+    },
+    {
+      "id": "rimefrost-longjohns",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Frostrime_Armor/Unique/T_UI_FrostrimeLeggings_Unique_Icon.uasset",
+      "sha256": "4b1cc0030a3f02476f13380eb28ebc6b1307bae241491f4b7f2b3b2cc62ddca7"
+    },
+    {
+      "id": "rimefrost-plodders",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Frostrime_Armor/Unique/T_UI_FrostrimeBoots_Unique_Icon.uasset",
+      "sha256": "f3d76ed8321d57e427ae08cb0b0e3333c60b6a629cd1ad42e32432a8b12cdcbc"
+    },
+    {
+      "id": "rover-gaiters",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Voyagers_Armor/Unique/T_UI_VoyagerLeggings_Unique_Icon.uasset",
+      "sha256": "89b10c409169d579850d06877bcdada92e4db7c843d3df99578ca883f75a0a01"
+    },
+    {
+      "id": "rover-pauldrons",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Voyagers_Armor/Unique/T_UI_VoyagerChest_Unique_Icon.uasset",
+      "sha256": "857355ce41c95d05f7433a7fccdcd2d440e047b41d7370e7a3c4ca994896e9c3"
+    },
+    {
+      "id": "rover-sabatons",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Voyagers_Armor/Unique/T_UI_VoyagerBoots_Unique_Icon.uasset",
+      "sha256": "cddb19b8a5cf824562a3d9e223ea7b4b4eb6ae67ae6b7006f92460b288f5f142"
+    },
+    {
+      "id": "rover-visor",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Voyagers_Armor/Unique/T_UI_VoyagerHelmet_Unique_Icon.uasset",
+      "sha256": "fdd5e9db67e1b2638bd22191072ec465d57e82a4990a276157f52781a1d76ef2"
+    },
+    {
+      "id": "sage-belt",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Disciple_Armor/Unique/T_UI_Leggings_Disciple_Unique_Icon.uasset",
+      "sha256": "d903ddfa75d35ab62e0455c817a1a67f3e5c9590b98b12131000a20fd93f431b"
+    },
+    {
+      "id": "sage-headband",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Disciple_Armor/Unique/T_UI_Helmet_Disciple_Unique_Icon.uasset",
+      "sha256": "1ade4b25be45d7380138277f62dcac0a9b0eaf27130b00ae6cf9af0d546a2ef1"
+    },
+    {
+      "id": "sage-tunic",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Disciple_Armor/Unique/T_UI_Chest_Disciple_Unique_Icon.uasset",
+      "sha256": "4d9d19917f3d5acc232dd591caccd12873f93769e2817c9411ec3fd90561ced4"
+    },
+    {
+      "id": "sage-wraps",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Disciple_Armor/Unique/T_UI_Boots_Disciple_Unique_Icon.uasset",
+      "sha256": "395ceb71601b3ec6e31628d72fc0e79ac2d46664a0f093775f092fab642adc98"
+    },
+    {
+      "id": "scamp-hood",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Scamp_Armor/T_UI_ScampHelmet_Icon.uasset",
+      "sha256": "d5405b8bc46b8c30e182e41a1d70e5633ceb7964c77c32ee796987250c81221c"
+    },
+    {
+      "id": "scamp-jacket",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Scamp_Armor/T_UI_ScampChest_Icon.uasset",
+      "sha256": "8cca20fd7d58820f65afaf4585d6689edd52a313c782facfd4893bea5ccf93d1"
+    },
+    {
+      "id": "scamp-leggings",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Scamp_Armor/T_UI_ScampLeggings_Icon.uasset",
+      "sha256": "75e8e5a79291d65951f0ef991b1117ac72d526cc120149489e5bf3e37046a1ac"
+    },
+    {
+      "id": "scamp-sneakers",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Scamp_Armor/T_UI_ScampBoots_Icon.uasset",
+      "sha256": "d779ce6968de3d8971a5402d405278b00cf3d82cbaadf97f72b5a8f8697945ce"
+    },
+    {
+      "id": "scoundrel-blazer",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Scamp_Armor/Unique/T_UI_ScampChest_Unique_Icon.uasset",
+      "sha256": "3c72b888854d884b54fd12534ccba0e8b5b6b3a38fbbac79e8f67338543e8932"
+    },
+    {
+      "id": "scoundrel-chaps",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Scamp_Armor/Unique/T_UI_ScampLeggings_Unique_Icon.uasset",
+      "sha256": "cca5c3980da0da6dd8c6c3153fa4201d7fa7325fbe967d23ca252e0606bb462f"
+    },
+    {
+      "id": "scoundrel-cowl",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Scamp_Armor/Unique/T_UI_ScampHelmet_Unique_Icon.uasset",
+      "sha256": "4558466d92c8acc68a14703d16997091807988d4235db322425fc54124cac8cd"
+    },
+    {
+      "id": "scoundrel-sneakers",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Scamp_Armor/Unique/T_UI_ScampBoots_Unique_Icon.uasset",
+      "sha256": "f2ad94b96952e011cf1d6fa5229e6603fa634496826e487b86788f65384b993e"
+    },
+    {
+      "id": "sculk-digger-boots",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Cavecrawler_Armor/T_UI_CavecrawlerBoots_Icon.uasset",
+      "sha256": "f0f483daa7d8e82a01f20c1335a42aa4db280c0e293aeaeba88f0e552719cd57"
+    },
+    {
+      "id": "sculk-digger-hood",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Cavecrawler_Armor/T_UI_CavecrawlerHelmet_Icon.uasset",
+      "sha256": "c8868448e6968b7f3e9e9df0d69399c9c649b358c865aba177c772790dded2b3"
+    },
+    {
+      "id": "sculk-digger-leggings",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Cavecrawler_Armor/T_UI_CavecrawlerLeggings_Icon.uasset",
+      "sha256": "d0864f393edfcdf7bc926020d7970c6fb5c3512daf2433da477c09c863505c3b"
+    },
+    {
+      "id": "sculk-digger-robe",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Cavecrawler_Armor/T_UI_CavecrawlerChest_Icon.uasset",
+      "sha256": "76e8e692099cdcbc48e88c6df1115e81e628cde6fdcb8aa60fffded283af484d"
+    },
+    {
+      "id": "sculker-boots",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Scavenger_Armor/T_UI_Boots_Scavenger_Icon.uasset",
+      "sha256": "81469bd462067bcf7055c7fabed39e836ca54a9da6157d06e04d0170d4d4c6c0"
+    },
+    {
+      "id": "sculker-mask",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Scavenger_Armor/T_UI_Helmet_Scavenger_Icon.uasset",
+      "sha256": "a39a10e3ac0dd96426a75d23fc0acc8510682f15ac56bd935f469feb9dbe8a10"
+    },
+    {
+      "id": "sculker-robe",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Scavenger_Armor/T_UI_Chest_Scavenger_Icon.uasset",
+      "sha256": "46b037b1f8fd050626a30b61e3eeda4b4798c10d318fa07cc3d4ab576c2262f2"
+    },
+    {
+      "id": "sculker-slacks",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Scavenger_Armor/T_UI_Leggings_Scavenger_Icon.uasset",
+      "sha256": "34d418ceba53d3ec3898baef2fb7917b7b37824e150cee24f84859c80a652901"
+    },
+    {
+      "id": "sharpshooter-chaps",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Realmreacher_Armor/Unique/T_UI_Leggings_Realmreacher_Unique.uasset",
+      "sha256": "cb557a8ca041b3d0016fe973141f2c487446c5096f8957dbaab228168349bc04"
+    },
+    {
+      "id": "sharpshooter-duster",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Realmreacher_Armor/Unique/T_UI_Chest_Realmreacher_Unique.uasset",
+      "sha256": "9d7e255937c195c0e4014c5871a2f9f9c86dd067d72b52f4b2f632ad40a08e96"
+    },
+    {
+      "id": "sharpshooter-fedora",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Realmreacher_Armor/Unique/T_UI_Helmet_Realmreacher_Unique.uasset",
+      "sha256": "a898ba0b473e02caa8e5f4d4976a2857c5ff5abc013ae151ec4a7798b8f5d1ee"
+    },
+    {
+      "id": "sharpshooter-spurs",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Realmreacher_Armor/Unique/T_UI_Boots_Realmreacher_Unique.uasset",
+      "sha256": "2c9e70a8fe8fd593f469c8fbbf65e9e46dc764c0145620c99a2c383c10477162"
+    },
+    {
+      "id": "sifter-boots",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Wellspring_Armor/T_UI_Boots_Wellspring_Icon.uasset",
+      "sha256": "4fa23781b15b50d39e39b5e7f9217ed332e3a3e3483471720e9ab22132127fef"
+    },
+    {
+      "id": "sifter-hood",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Wellspring_Armor/T_UI_Helmet_Wellspring_Icon.uasset",
+      "sha256": "3317e8dc57e2ab248504dbf4eace8cd60efd1f904ad17a5471da2547d565ee69"
+    },
+    {
+      "id": "sifter-leggings",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Wellspring_Armor/T_UI_Leggings_Wellspring_Icon.uasset",
+      "sha256": "9d72e368d621f54e16df9f6a1c725ed56873797c899697a2298fe7ca6388e6d2"
+    },
+    {
+      "id": "sifter-robe",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Wellspring_Armor/T_UI_Chest_Wellspring_Icon.uasset",
+      "sha256": "8ef4359b14c82b96c060e160cad75ea131030344da6b982870e64571c91c2454"
+    },
+    {
+      "id": "sorcerer-boots",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Evocation_Armor/T_UI_Boots_Evocation_Icon.uasset",
+      "sha256": "f76eff7bfc64485d833ee69ff5c049fabcdb4129337599507aad6b3840eadadc"
+    },
+    {
+      "id": "sorcerer-hat",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Evocation_Armor/T_UI_Helmet_Evocation_Icon.uasset",
+      "sha256": "dee7045fb98f52f9ad02dbd95fff53ddfc9a5902c2a5828d863868ea6ccc61a9"
+    },
+    {
+      "id": "sorcerer-leggings",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Evocation_Armor/T_UI_Leggings_Evocation_Icon.uasset",
+      "sha256": "718ef23d124d91c65ef92d7bd768ec4d20bbf789bf2b3dca24fc7346d3f91117"
+    },
+    {
+      "id": "sorcerer-robe",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Evocation_Armor/T_UI_Chest_Evocation_Icon.uasset",
+      "sha256": "9af625d3cd77d57dc4fac667745ac7784e8aa76ef4012e3451a24e6ea24e8b65"
+    },
+    {
+      "id": "soul-corruptor-duster",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Timeworn_Armor/Unique/T_UI_Chest_Timeworn_Unique_Icon.uasset",
+      "sha256": "fdf7720c37d597cac87aa0d2f66e56af6f463728421ec222680cd10865b3e2c3"
+    },
+    {
+      "id": "soul-corruptor-mask",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Timeworn_Armor/Unique/T_UI_Helmet_Timeworn_Unique_Icon.uasset",
+      "sha256": "cfad56184462060bf3d4f011de47ee8911f04d9a4eac3d5693bc75fcedd30027"
+    },
+    {
+      "id": "soul-corruptor-sandals",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Timeworn_Armor/Unique/T_UI_Boots_Timeworn_Unique_Icon.uasset",
+      "sha256": "e487bafd364e8841fc78b3e308c57be3dd5941e07b6b1f1232ff23bf9d197ca3"
+    },
+    {
+      "id": "soul-corruptor-sash",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Timeworn_Armor/Unique/T_UI_Leggings_Timeworn_Unique_Icon.uasset",
+      "sha256": "cb8af73774443c24ebf8fbfc606219fdbe001fb25d5f7b2e36031e5a2834fca5"
+    },
+    {
+      "id": "steel-wool-boots",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Frostrime_Armor/T_UI_FrostrimeBoots_Icon.uasset",
+      "sha256": "1d49b87dc109429b75d141a9e290b47965a068825031dd9d425ccf2a04b39c72"
+    },
+    {
+      "id": "steel-wool-cap",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Frostrime_Armor/T_UI_FrostrimeHelmet_Icon.uasset",
+      "sha256": "57071e3939e74b6b905eeec1760fe521fa4b55c5091457a30a1ec7301d64361f"
+    },
+    {
+      "id": "steel-wool-leggings",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Frostrime_Armor/T_UI_FrostrimeLeggings_Icon.uasset",
+      "sha256": "5912ed4966f3aa322f8163d1ed9f2c52b7fd9c4477fb84182ea36b62cdce49fd"
+    },
+    {
+      "id": "steel-wool-sweater",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Frostrime_Armor/T_UI_FrostrimeChestplate_Icon.uasset",
+      "sha256": "d0e33e76cf4f335dd73588ff420894990dcf4000d77707a7af57b9a9df6d1821"
+    },
+    {
+      "id": "treehugger-chestplate",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Hewnbark_Armor/T_UI_Chest_Hewnbark_Icon.uasset",
+      "sha256": "5cc05aefd171f5cefd60e2029031e305eaf5b6015735739daf82561b141af82e"
+    },
+    {
+      "id": "treehugger-clogs",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Hewnbark_Armor/T_UI_Boots_Hewnbark_Icon.uasset",
+      "sha256": "d1eeb553fa6c7415bb8231540e55d277658b45242f6d9992f580ca857d043a18"
+    },
+    {
+      "id": "treehugger-leggings",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Hewnbark_Armor/T_UI_Leggings_Hewnbark_Icon.uasset",
+      "sha256": "a5f7f7013e1fa57e3ca253523583a73aecea7a46e4b7004fb6b86d6fa91f13a4"
+    },
+    {
+      "id": "treehugger-mask",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Hewnbark_Armor/T_UI_Helmet_Hewnbark_Icon.uasset",
+      "sha256": "8c4b49c852f67218c5d6c0bc912b708a89e2165c418c2ff2679f9dab0e0caefd"
+    },
+    {
+      "id": "twisted-warden-blindfold",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Cavecrawler_Armor/Unique/T_UI_CavecrawlerHelmet_Unique_Icon.uasset",
+      "sha256": "71a3a25d5de58ce1e7006ff7e535f11b87dec8b3bb7f323580f93702ea62affe"
+    },
+    {
+      "id": "twisted-warden-sneakers",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Cavecrawler_Armor/Unique/T_UI_CavecrawlerBoots_Unique_Icon.uasset",
+      "sha256": "359fea58c15038a0e28d762d46488dcec98e5e216dd63690a04ea2f328c10573"
+    },
+    {
+      "id": "twisted-warden-tights",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Cavecrawler_Armor/Unique/T_UI_CavecrawlerLeggings_Unique_Icon.uasset",
+      "sha256": "3b784bc001bb88fb9b8a5cbaf722c99c863b82527c6a9dd3218d8098701f1736"
+    },
+    {
+      "id": "twisted-warden-vest",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Cavecrawler_Armor/Unique/T_UI_CavecrawlerChest_Unique_Icon.uasset",
+      "sha256": "25b3a0b0142f5d0a2df6bbd0bb5a8e8509509b5e0192fc3b7743d6a54482f8c9"
+    },
+    {
+      "id": "wolfpack-boots",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Wolfclutch_Armor/T_UI_Boots_Wolfclutch_Icon.uasset",
+      "sha256": "f97095b6caf99c6b60a6372b008b72c436ff09294d97d3009e014e6fba5e2003"
+    },
+    {
+      "id": "wolfpack-hood",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Wolfclutch_Armor/T_UI_Helmet_Wolfclutch_Icon.uasset",
+      "sha256": "36cd41c0deaf39991edb707c48027f5cc6d6822b006f25f6a8ade39f591e088b"
+    },
+    {
+      "id": "wolfpack-jacket",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Wolfclutch_Armor/T_UI_Chest_Wolfclutch_Icon.uasset",
+      "sha256": "b6c3292c52d1b55ed525229110c3be059375c3d1a1f51a4e30c404dd75015994"
+    },
+    {
+      "id": "wolfpack-leggings",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Wolfclutch_Armor/T_UI_Leggings_Wolfclutch_Icon.uasset",
+      "sha256": "65978039aa09a8666e325843d38e388471138f8ede73d492b707c69dca653d59"
+    },
+    {
+      "id": "woodsprite-barkpiece",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Hewnbark_Armor/Unique/T_UI_Chest_Hewnbark_Unique_Icon.uasset",
+      "sha256": "97c257b3ee27c3185a10bc30d35f5efe59348860f9a9fad3ab3fd1a6ffd7b728"
+    },
+    {
+      "id": "woodsprite-crown",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Hewnbark_Armor/Unique/T_UI_Helmet_Hewnbark_Unique_Icon.uasset",
+      "sha256": "45b632afffe339e72522485f6f947ef8fa1f37e5e2e740d0cebcfa939982e41c"
+    },
+    {
+      "id": "woodsprite-root-boots",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Hewnbark_Armor/Unique/T_UI_Boots_Hewnbark_Unique_Icon.uasset",
+      "sha256": "47fd318c67843579a69bfbeb32d15ece82feff6d164403f824280ce665a307f6"
+    },
+    {
+      "id": "woodsprite-trunks",
+      "native_package": "Dungeons/Content/Spicewood/Art/Characters/Player/Equipment/Armor/Hewnbark_Armor/Unique/T_UI_Leggings_Hewnbark_Unique_Icon.uasset",
+      "sha256": "aacdfd8ce1b4d40e3e028fae2fccf3644104b15f4386ffbf9ba78784564ad296"
+    }
+  ]
+}
