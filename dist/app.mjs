@@ -8,8 +8,9 @@ const $=id=>document.getElementById(id),clock=new SyncedClock();
 let mapController,stormController,lastWorld='overworld',routeTicket=0;
 const toolNames=['collection','planner','builds','compare'];
 const toolControllers=Object.fromEntries(toolNames.map(name=>[name,retryable(async()=>{
- const [module]=await Promise.all([import('./'+name+'.mjs?v=tools1'),loadStyle('./explorer.css?v=tools1'),loadStyle('./drops.css?v=fonts1'),...(name==='collection'?[]:[loadStyle('./'+name+'.css?v=tools1')])]);
- await loadStyle('./explorer-game.css?v=tools1');
+ const [module]=await Promise.all([import('./'+name+'.mjs?v=tools2'),loadStyle('./explorer.css?v=tools2'),loadStyle('./drops.css?v=fonts1'),...(name==='collection'?[]:[loadStyle('./'+name+'.css?v=tools2')])]);
+ await loadStyle('./explorer-game.css?v=tools2');
+ await loadStyle('./explorer-reference.css?v=tools2');
  return module['setup'+name[0].toUpperCase()+name.slice(1)]();
 })]));
 const getMaps=retryable(async()=>{

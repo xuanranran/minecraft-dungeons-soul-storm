@@ -1,0 +1,10 @@
+{
+  "captured_at": "2026-10-10",
+  "sources": ["https://www.dungeons.tools/2/collection", "https://www.dungeons.tools/2/build-planner", "https://www.dungeons.tools/builds", "https://www.dungeons.tools/2/compare", "https://www.dungeons.tools/builds/2-tumbleshot-close-ranger"],
+  "viewports": [1440, 390],
+  "equipment_slots_px": {"collection":56,"planner_desktop":96,"planner_mobile":68,"inline_picker":60,"build_list":44,"compare_desktop":96,"compare_mobile":76},
+  "tooltip": {"width":380,"image":112,"effect_icon":40,"enchantment_icon":52,"block_gap":14,"strip_height":30},
+  "native_indicator": {"file":"dist/images/explorer-ui/enchant-swirl.png","source":"https://www.dungeons.tools/images/d2/ui/enchant-swirl.png","native_resource":"/OreUI/UI/Icons/Currency/T_UI_EnchantmentPoints","sha256":"f3892beb784cefa688d557611a8e140dbf7667dbf405d55085f51db10edb7b4c"},
+  "introductions": {"total":56,"file":"build-introductions-zh.json","method":"Chinese summaries of individual public build introductions. Empty or placeholder descriptions use a local configuration summary, rather than an invented author guide."},
+  "guide": {"file":"build-guide-tumbleshot-zh.json","source":"https://www.dungeons.tools/builds/2-tumbleshot-close-ranger","method":"Chinese rendering of the guide supplied by the user; item and enchantment terminology follows native localisation."}
+}

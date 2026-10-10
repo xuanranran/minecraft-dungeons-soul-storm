@@ -62,7 +62,7 @@ GitHub Pages 通过 `.github/workflows/pages.yml` 发布 `dist/`，推送到 `ma
 
 游戏原生中英文文本通过相同 namespace/key 匹配，装备描述、效果名、护身符及各级效果从本地导出的数据表获取。护身符的 72 张等级图标和补充效果图标来自本地游戏资源。辅助按钮和社区标签使用中文界面文案；公开配装保留原作者标题和署名。
 
-装备效果池、连招数据、品质规则、战力曲线及公开配装配置于 2026-10-10 从 [dungeons.tools](https://www.dungeons.tools/2/) 读取，事实快照保存在 `sources/dungeons-tools/explorer/`。没有打包对方组件代码或社区攻略正文。网页中的收集状态、配装保存、收藏与备份由本站执行，不需要第三方账号。
+装备效果池、连招数据、品质规则、战力曲线及公开配装配置于 2026-10-10 从 [dungeons.tools](https://www.dungeons.tools/2/) 读取，事实快照保存在 `sources/dungeons-tools/explorer/`。没有打包对方组件代码。公开配装简介以中文摘要呈现；用户指定的翻滚射击近身游侠配装包含中文玩法指南，保留原作者与版本资料。网页中的收集状态、配装保存、收藏与备份由本站执行，不需要第三方账号。
 
 `tools/build-explorer-data.py` 将事实快照与同级 `minecraft-dungeons-native-assets/exports/` 的原生数据表、中文本地化和纹理合并为 `dist/data/explorer/`。`check-explorer.mjs` 检查物品资源、72 个护身符等级、32 种附魔、56 套配置的编码往返、部位兼容性、效果叠加及伤害曲线。
 
@@ -87,3 +87,7 @@ GitHub Pages 通过 `.github/workflows/pages.yml` 发布 `dist/`，推送到 `ma
 掉落窗口先读取约 195 KiB 的物品摘要（完整源数据约 3740 KiB），展开单件装备时才下载该件详情和 `equipment-details.mjs`，生成参数与附魔内容。修改完整装备资料后运行 `npm run build:data` 更新分发文件；`npm test` 检查分片与完整资料是否一致。地图数据分片由 `tools/build-maps.py` 同步生成。
 
 `tools/verify-layout.mjs`、`tools/verify-maps.mjs`、`tools/verify-responsive-controls.mjs`、`tools/verify-map-popups.mjs` 和 `tools/verify-storm-links.mjs` 可用 Playwright 和 Edge 验证桌面、手机布局、加载请求、设置保存、掉落详情、地图交互、分类弹层、风暴状态切换、地点窗口交互及七个地区的生成器跳转；先运行本地服务，再运行脚本。
+
+配装列表点击名称会在本站打开介绍窗口，包含 12 个部位、配置词条、效果汇总、附魔与逐件装备卡片；`#builds&build=2-tumbleshot-close-ranger` 可直接分享指定介绍。`build-detail.mjs` 与该配装的中文指南在打开时才读取，不引入第三方运行依赖。装备卡片与悬浮窗复用相同的本地数据和渲染函数。
+
+`explorer-reference.css` 按参考站测量值调整四个工具：收藏槽 56 px、规划槽桌面 96 px / 手机 68 px、配装列表槽 44 px、对比槽桌面 96 px / 手机 76 px，悬浮窗宽 380 px；320 px 小屏进一步收紧规划槽。`tools/verify-build-introductions.mjs` 验证 1440、768、390、320 px 下的尺寸、中文指南、12 件配置装备、分享恢复、本站点击及横向溢出。

@@ -1,12 +1,12 @@
-import {loadCatalogue,loadRules,loadLoadouts,readSaved,save} from './explorer-data.mjs?v=tools1';
-import {context,slots,compatible,normalizeBuild,decodeBuild,encodeBuild,effectTotals,rarities} from './explorer-model.mjs?v=tools1';
-import {el,heading,button,field,input,select,itemPicture,itemSummary,modal,inspect,notify,copyLink,download,importFile,safeSave} from './explorer-ui.mjs?v=tools1';
+import {loadCatalogue,loadRules,loadLoadouts,readSaved,save} from './explorer-data.mjs?v=tools2';
+import {context,slots,compatible,normalizeBuild,decodeBuild,encodeBuild,effectTotals,rarities} from './explorer-model.mjs?v=tools2';
+import {el,heading,button,field,input,select,itemPicture,itemSummary,modal,inspect,notify,copyLink,download,importFile,safeSave} from './explorer-ui.mjs?v=tools2';
 export async function setupPlanner(){
  const [catalogue,rules,loadouts]=await Promise.all([loadCatalogue(),loadRules(),loadLoadouts()]),ctx=context(catalogue,rules,loadouts),panel=document.getElementById('planner-panel');panel.replaceChildren();panel.classList.add('tool-page');
  heading(panel,'BUILD PLANNER','配装规划','组合 12 个装备部位，选择随机效果与附魔，查看整套配装的效果。');
  let build={},active='melee',lastQuery='',recordId=null,choosing=false;
  const actions=el('div','tool-action-row'),summary=el('span','meta');actions.append(button('保存配装',saveDialog,''),button('分享配装',()=>copyLink('planner&'+encodeBuild(build,ctx))),button('导出配装',()=>download('地下城配装备份.json',{type:'dungeons-build',version:1,build:normalizeBuild(build,ctx)})),button('导入配装',()=>importFile(file=>{if(file.type!=='dungeons-build'||file.version!==1||!file.build||typeof file.build!=='object')throw Error();const clean=normalizeBuild(file.build,ctx);if(!Object.keys(clean).length||Object.keys(clean).length!==Object.keys(file.build).length)throw Error();build=clean;recordId=null;update();notify('配装已导入');})),button('清空槽位',()=>{build={};recordId=null;update();}),summary);
- const layout=el('div','tool-planner-layout'),screen=el('div','tool-planner-screen'),slotGrid=el('div','tool-slots'),editor=el('section','tool-card tool-editor'),totals=el('section','tool-card tool-totals');screen.append(slotGrid,totals);layout.append(screen,editor);panel.append(actions,el('p','tool-note','草稿自动保存在当前浏览器。普通、稀有、特殊装备分别有 0、1、2 个随机效果；独特装备另有固有效果。'),layout);
+ const layout=el('div','tool-planner-layout'),screen=el('div','tool-planner-screen'),slotGrid=el('div','tool-slots'),editor=el('section','tool-card tool-editor'),totals=el('section','tool-card tool-totals');screen.append(slotGrid,actions);layout.append(screen,editor);panel.append(el('p','tool-note','草稿自动保存在当前浏览器。普通、稀有、特殊装备分别有 0、1、2 个随机效果；独特装备另有固有效果。'),layout,totals);
  function persist(){safeSave(()=>save('draft',build));const query=encodeBuild(build,ctx);lastQuery=query;history.replaceState(null,'','#planner'+(query?'&'+query:''));}
  function update(){build=normalizeBuild(build,ctx);persist();render();}
  function setItem(slot,item){build[slot.id]={item:item.slug,rarity:item.unique?'unique':'special',level:1,rolls:[],ench:null};active=slot.id;choosing=false;update();}

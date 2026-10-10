@@ -1,6 +1,6 @@
 import {showNotice} from './ui.mjs?v=layout2';
-import {kinds,parts} from './explorer-model.mjs?v=tools1';
-import {bindEquipmentTooltip,hideEquipmentTooltip} from './equipment-tooltip.mjs?v=tools1';
+import {kinds,parts} from './explorer-model.mjs?v=tools2';
+import {bindEquipmentTooltip,hideEquipmentTooltip} from './equipment-tooltip.mjs?v=tools2';
 export function el(tag,className,text){const node=document.createElement(tag);if(className)node.className=className;if(text!=null)node.textContent=text;return node;}
 export function button(text,action,style='secondary'){const b=el('button',style,text);b.type='button';if(action)b.addEventListener('click',action);return b;}
 export function field(name,input){const label=el('label','explorer-field');label.append(el('span','',name),input);return label;}
@@ -14,7 +14,7 @@ export function itemPicture(item,{rarity=item.unique?'unique':item.kind==='artif
  if(!book&&item.kind!=='talisman'){const mark=el('span','native-square-mark');mark.setAttribute('aria-hidden','true');frame.append(mark);}
  if(book){const diamond=el('span','native-indicator native-enchantment');diamond.append(image);frame.append(diamond);}else frame.append(image);
  if(item.kind==='talisman')frame.append(el('span','tool-talisman-level',['I','II','III'][level-1]));
- if(equipment.ench)frame.append(el('span','tool-enchanted-mark','◈'));
+ if(equipment.ench){const mark=el('img','tool-enchanted-mark');mark.src='./images/explorer-ui/enchant-swirl.png';mark.alt='';frame.append(mark);}
  bindEquipmentTooltip(frame,item,{rarity,level,...equipment});return frame;
 }
 export const itemLabel=item=>[kinds[item.kind],parts[item.slot],item.unique?'独特':'',item.archetype].filter(Boolean).join(' · ');
@@ -36,7 +36,7 @@ export async function inspect(item){
   const nativeIcon=(entry,cls,book)=>{const frame=el('span',book?'native-book':'native-indicator native-'+(entry.native_icon_kind==='enchantment'?'enchantment':'effect')),img=el('img',cls);img.src=entry.image;img.alt='';img.loading='lazy';if(book){const d=el('span','native-indicator native-enchantment');d.append(img);frame.append(d);}else frame.append(img);return frame;};
   renderEquipmentDetails({item:full,panel,el,nativeIcon,displayedParameters,displayedTables});
  }catch{if(details.dialog.dataset.item===target)details.body.append(el('p','meta','详细参数读取失败，请关闭后重试。'));}}
- else {details.body.append(el('p','meta',item.sources.map(s=>s.name).join(' · ')));if(item.kind==='talisman')try{const m=await import('./explorer-data.mjs?v=tools1'),loadouts=await m.loadLoadouts();if(details.dialog.dataset.item!==target)return;for(const level of loadouts[item.slug].levels){const row=el('section','tool-talisman-detail'),info=el('div');info.append(el('h3','',['I','II','III'][Number(level.level)-1]+' 级'));for(const effect of level.effects)info.append(el('p','tool-description',effect.text));if(!level.effects.length)info.append(el('p','tool-description',item.description));row.append(itemPicture({...item,levels:loadouts[item.slug].levels},{level:Number(level.level)}),info);details.body.append(row);}}catch{if(details.dialog.dataset.item===target)details.body.append(el('p','meta','护身符等级读取失败，请关闭后重试。'));}}
+ else {details.body.append(el('p','meta',item.sources.map(s=>s.name).join(' · ')));if(item.kind==='talisman')try{const m=await import('./explorer-data.mjs?v=tools2'),loadouts=await m.loadLoadouts();if(details.dialog.dataset.item!==target)return;for(const level of loadouts[item.slug].levels){const row=el('section','tool-talisman-detail'),info=el('div');info.append(el('h3','',['I','II','III'][Number(level.level)-1]+' 级'));for(const effect of level.effects)info.append(el('p','tool-description',effect.text));if(!level.effects.length)info.append(el('p','tool-description',item.description));row.append(itemPicture({...item,levels:loadouts[item.slug].levels},{level:Number(level.level)}),info);details.body.append(row);}}catch{if(details.dialog.dataset.item===target)details.body.append(el('p','meta','护身符等级读取失败，请关闭后重试。'));}}
 
 }
 export function notify(text){showNotice(text);}

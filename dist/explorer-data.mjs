@@ -1,5 +1,5 @@
 import {retryable} from './resources.mjs?v=layout2';
-const get=async name=>{const r=await fetch('./data/explorer/'+name+'.json?v=tools1');if(!r.ok)throw Error('读取失败');return r.json();};
+const get=async name=>{const r=await fetch('./data/explorer/'+name+'.json?v=tools2');if(!r.ok)throw Error('读取失败');return r.json();};
 export const loadCatalogue=retryable(()=>get('catalogue'));
 export const loadRules=retryable(()=>get('rules'));
 export const loadLoadouts=retryable(()=>get('loadouts'));

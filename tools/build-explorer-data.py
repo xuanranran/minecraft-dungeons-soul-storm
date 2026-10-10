@@ -239,6 +239,11 @@ for original in planner['enchants']:
         entry['tiers'] = [{'tier': t['tier'], 'text': row['levels'][i].get('text', row['levels'][i].get('effect', ''))} for i, t in enumerate(original['tiers'])]
     assert all(t['text'] for t in entry['tiers']), row
     enchants.append(entry)
+for item in items:
+    detail = ROOT / 'dist/data/equipment/items' / (item['slug'] + '.json')
+    if item['kind'] == 'artifact' and detail.exists():
+        params = read(detail).get('parameters', {})
+        item['parameters'] = {k: params[k] for k in ['冷却', '灵魂消耗'] if k in params}
 write(OUT / 'catalogue.json', {'version': 1, 'items': [{k: v for k, v in i.items() if k not in ['pool', 'fixed', 'levels', 'stats', 'tags', 'rarities']} for i in items]})
 write(OUT / 'loadouts.json', {i['slug']: {k: i[k] for k in ['pool', 'fixed', 'levels', 'tags', 'rarities']} for i in items})
 write(OUT / 'weapons.json', {i['slug']: i['stats'] for i in items if 'stats' in i})
@@ -253,5 +258,12 @@ if (SOURCE / 'public-builds.json').exists():
     for build in builds:
         build['author'] = build['tags'][-1]
         build['tags'] = [translate(t) or labels.get(t, t) for t in build['tags'][:-1]]
+    introductions = read(SOURCE / 'build-introductions-zh.json') if (SOURCE / 'build-introductions-zh.json').exists() else {}
+    for build in builds:
+        build.update(introductions.get(build['id'], {}))
+    guide = SOURCE / 'build-guide-tumbleshot-zh.json'
+    if guide.exists():
+        (OUT / 'guides').mkdir(exist_ok=True)
+        write(OUT / 'guides' / '2-tumbleshot-close-ranger.json', read(guide))
     write(OUT / 'builds.json', {'captured_at': '2026-10-10', 'builds': builds})
 print('Built', len(items), 'items,', len(effects), 'effects,', len(enchants), 'enchantments and', len(copied), 'native texture references')
