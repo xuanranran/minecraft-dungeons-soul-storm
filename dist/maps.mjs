@@ -19,12 +19,14 @@ export async function setupMaps(){
  const available=m=>!off.has(m.cat)&&(!hideFound||!found.has(foundKey(m)))&&(!focusArea||m.generator&&m.area===focusArea)&&(!query||m.search.includes(query));
 
  function popup(m){
-  const content=node('div','map-popup');content.append(node('p','map-popup-type',categories.get(m.cat).label),node('strong','map-popup-name',m.name));
-  if(m.area)content.append(node('p','',m.area));
+  const content=node('div','map-popup'),type=node('div','map-popup-type'),symbol=node('img','map-popup-icon');symbol.src=m.icon;symbol.alt='';symbol.width=22;symbol.height=22;
+  type.append(symbol,node('span','',categories.get(m.cat).label));content.append(type,node('strong','map-popup-name',m.name));
+  if(m.area)content.append(node('p','map-popup-area',m.area));
   if(m.generator)content.append(node('p','map-popup-note','风暴生成器候选位置，实际生成点以本场游戏为准。'));
-  const actions=node('div','map-popup-actions'),button=node('button','map-found-button',found.has(foundKey(m))?'已找到 ✓':'标记为已找到');button.type='button';button.setAttribute('aria-pressed',String(found.has(foundKey(m))));
-  button.addEventListener('click',event=>{L.DomEvent.stopPropagation(event);const focused=document.activeElement===button,key=foundKey(m);found.has(key)?found.delete(key):found.add(key);save('dungeons-map-found',[...found]);render();const marker=rendered.get(m.id)?.layer;if(marker){const content=popup(m);marker.setPopupContent(content);marker.openPopup();if(focused)content.querySelector('button').focus({preventScroll:true});}});
-  const share=node('button','map-share-button','复制位置链接');share.type='button';share.addEventListener('click',async()=>{const url=new URL(location.href);url.hash=new URLSearchParams({map:world.id,marker:m.id});try{await navigator.clipboard.writeText(url.href);share.textContent='已复制'}catch{if(!content.querySelector('input')){const field=node('input','map-share-url');field.value=url.href;field.readOnly=true;content.append(field);field.select();}}});actions.append(button,share);content.append(actions);return content;
+  const actions=node('div','map-popup-actions'),button=node('button','map-found-button'),box=node('span','map-found-box');box.setAttribute('aria-hidden','true');button.append(box,node('span','','已找到'));button.type='button';button.setAttribute('aria-pressed',String(found.has(foundKey(m))));button.title='切换此地点的已找到状态';
+  button.addEventListener('click',event=>{L.DomEvent.stopPropagation(event);const focused=document.activeElement===button,key=foundKey(m);found.has(key)?found.delete(key):found.add(key);save('dungeons-map-found',[...found]);render();const marker=rendered.get(m.id)?.layer;if(marker){const content=popup(m);marker.setPopupContent(content);marker.openPopup();if(focused)content.querySelector('.map-found-button').focus({preventScroll:true});}});
+  if(m.cat==='storm'){const tracker=node('a','map-storm-tracker','查看灵魂风暴');tracker.href='#storm';actions.append(tracker);}
+  const share=node('button','map-share-button','复制链接');share.type='button';share.title='复制此地点的位置链接';share.setAttribute('aria-label','复制此地点的位置链接');share.addEventListener('click',async()=>{const url=new URL(location.href);url.hash=new URLSearchParams({map:world.id,marker:m.id});try{await navigator.clipboard.writeText(url.href);share.textContent='已复制'}catch{if(!content.querySelector('input')){const field=node('input','map-share-url');field.value=url.href;field.readOnly=true;field.setAttribute('aria-label','此地点的位置链接');content.append(field);field.focus();field.select();share.textContent='选中链接';}}});actions.append(button,share);content.append(actions);return content;
  }
  function icon(m,completed){
   const key=[m.icon,completed,m.generator].join('|');
@@ -35,7 +37,9 @@ export async function setupMaps(){
   let layer;
   if(m.cat==='pot')layer=L.circleMarker(point(m.x,m.y),{radius:3.5,color:'#0a3321',weight:1,fillColor:completed?'#77847b':'#35da76',fillOpacity:completed?.4:.9});
   else layer=L.marker(point(m.x,m.y),{icon:icon(m,completed),title:m.name,alt:m.name,keyboard:true,zIndexOffset:m.generator?150:0});
-  layer.bindPopup(()=>popup(m),{maxWidth:285});layer.on('click',()=>setMarkerHash(m.id));layer.addTo(map);return layer;
+  const popupWidth=Math.max(160,Math.min(360,map.getSize().x-56));
+  layer.bindPopup(()=>popup(m),{className:'native-place-popup',minWidth:Math.min(260,popupWidth),maxWidth:popupWidth,maxHeight:Math.max(170,Math.min(420,map.getSize().y-110)),autoPanPadding:[14,20]});
+  layer.on('popupopen',()=>{layer.getPopup().getElement().querySelector('.leaflet-popup-close-button')?.setAttribute('aria-label','关闭地点窗口');});layer.on('click',()=>setMarkerHash(m.id));layer.addTo(map);return layer;
  }
  function buildCategories(){
   const fragment=document.createDocumentFragment();
@@ -87,6 +91,8 @@ export async function setupMaps(){
   categories=new Map(world.categories.map(c=>[c.id,c]));points=new Map(world.markers.map(m=>[m.id,m]));
   for(const m of world.markers)m.search=[m.name,m.english,m.area,categories.get(m.cat).label].join(' ').toLocaleLowerCase();
   map=L.map('world-map',{crs:L.CRS.Simple,attributionControl:false,zoomControl:false,zoomSnap:.25,zoomDelta:.5,minZoom:0,maxZoom:world.zmax+2,preferCanvas:true,maxBoundsViscosity:.8,fadeAnimation:false});
+  $('world-map').classList.remove('has-place-popup');
+  map.on('popupopen',()=>$('world-map').classList.add('has-place-popup'));map.on('popupclose',()=>$('world-map').classList.remove('has-place-popup'));
   L.control.zoom({position:'topright',zoomInTitle:'放大',zoomOutTitle:'缩小'}).addTo(map);
   const [x0,y0,x1,y1]=world.box,bounds=L.latLngBounds(point(x0,y1),point(x1,y0));map.setMaxBounds(bounds.pad(.18));
   tiles=L.tileLayer(`./images/map/${world.id}/{z}/{x}/{y}.webp`,{tileSize:1024,minNativeZoom:2,maxNativeZoom:world.zmax,maxZoom:world.zmax+2,noWrap:true,bounds,keepBuffer:1,className:'native-map-tiles'}).addTo(map);

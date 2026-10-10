@@ -7,7 +7,7 @@ setupPreferences();
 const $=id=>document.getElementById(id),clock=new SyncedClock();
 let mapController,stormController,lastWorld='overworld',routeTicket=0;
 const getMaps=retryable(async()=>{
- const [module]=await Promise.all([import('./maps.mjs?v=layout2'),loadStyle('./maps.css?v=layout2'),loadStyle('./vendor/leaflet/leaflet.css'),loadScript('./vendor/leaflet/leaflet.js'),loadMapIndex()]);
+ const [module]=await Promise.all([import('./maps.mjs?v=popup1'),loadStyle('./maps.css?v=popup1'),loadStyle('./vendor/leaflet/leaflet.css'),loadScript('./vendor/leaflet/leaflet.js'),loadMapIndex()]);
  mapController=await module.setupMaps();return mapController;
 });
 const getStorm=retryable(async()=>{
