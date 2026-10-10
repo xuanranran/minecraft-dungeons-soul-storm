@@ -1,17 +1,18 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {context,slots,compatible,normalizeBuild,decodeBuild,encodeBuild,effectTotals,weaponMetrics,powerMultiplier,farmPlaces} from './dist/explorer-model.mjs';
-const get=name=>JSON.parse(fs.readFileSync(new URL('./dist/data/explorer/'+name+'.json',import.meta.url))),catalogue=get('catalogue'),rules=get('rules'),loadouts=get('loadouts'),weapons=get('weapons'),publicBuilds=get('builds'),ctx=context(catalogue,rules,loadouts);
+import {context,slots,compatible,normalizeBuild,decodeBuild,encodeBuild,effectTotals,weaponMetrics,powerMultiplier,farmPlaces} from './src/explorer-model.mjs';
+const get=name=>JSON.parse(fs.readFileSync(new URL('./public/data/explorer/'+name+'.json',import.meta.url))),catalogue=get('catalogue'),rules=get('rules'),loadouts=get('loadouts'),weapons=get('weapons'),publicBuilds=get('builds'),ctx=context(catalogue,rules,loadouts);
 assert.equal(catalogue.items.length,296);assert.equal(ctx.enchants.size,32);assert.equal(publicBuilds.builds.length,56);
+for(const build of publicBuilds.builds){assert.match(build.title_zh,/[\u3400-\u9fff]/,build.id);assert.doesNotMatch(build.title_zh,/[A-Za-z]/,build.id);}
 const counts={};for(const item of ctx.items.values()){
- counts[item.kind]=(counts[item.kind]||0)+1;assert.match(item.name,/[\u3400-\u9fff]/);assert.ok(fs.existsSync(new URL('./dist/'+item.image,import.meta.url)),item.image);
- if(item.detailURL)assert.ok(fs.existsSync(new URL('./dist/'+item.detailURL.split('?')[0],import.meta.url)));
+ counts[item.kind]=(counts[item.kind]||0)+1;assert.match(item.name,/[\u3400-\u9fff]/);assert.ok(fs.existsSync(new URL('./public/'+item.image,import.meta.url)),item.image);
+ if(item.detailURL)assert.ok(fs.existsSync(new URL('./public/'+item.detailURL.split('?')[0],import.meta.url)));
  assert.ok(slots.some(s=>compatible(item,s)));for(const tag of item.pool)assert.ok(ctx.templates.has(tag));
  for(const fixed of item.fixed){assert.ok(rules.effects[fixed.effect]?.name);assert.doesNotMatch(fixed.text,/[{}]/);}
- if(item.kind==='talisman'){assert.equal(item.levels.length,3);for(const l of item.levels){assert.ok(fs.existsSync(new URL('./dist/'+l.image,import.meta.url)));for(const e of l.effects)assert.doesNotMatch(e.text,/[{}]/);}}
+ if(item.kind==='talisman'){assert.equal(item.levels.length,3);for(const l of item.levels){assert.ok(fs.existsSync(new URL('./public/'+l.image,import.meta.url)));for(const e of l.effects)assert.doesNotMatch(e.text,/[{}]/);}}
 }
 assert.deepEqual(counts,{melee:58,ranged:22,armor:152,artifact:40,talisman:24});
-for(const e of rules.enchants){assert.deepEqual(e.tiers.map(t=>t.tier),['I','II','III']);for(const t of e.tiers)assert.match(t.text,/[\u3400-\u9fff]/);assert.ok(fs.existsSync(new URL('./dist/'+e.image,import.meta.url)));}
+for(const e of rules.enchants){assert.deepEqual(e.tiers.map(t=>t.tier),['I','II','III']);for(const t of e.tiers)assert.match(t.text,/[\u3400-\u9fff]/);assert.ok(fs.existsSync(new URL('./public/'+e.image,import.meta.url)));}
 for(const template of rules.templates)assert.doesNotMatch(template.text,/[{}]/);
 for(const build of publicBuilds.builds){const decoded=decodeBuild(build.q,ctx),count=[...new URLSearchParams(build.q).keys()].filter(id=>slots.some(s=>s.id===id)).length;assert.equal(Object.keys(decoded).length,count,build.id);assert.deepEqual(decodeBuild(encodeBuild(decoded,ctx),ctx),decoded);for(const effect of effectTotals(decoded,ctx).effects)assert.doesNotMatch(effect.text,/[{}]/);}
 const invalid=normalizeBuild({melee:{item:'bow'},chest:{item:'sword'},a1:{item:'corrupted-beacon',rarity:'unique',ench:{slug:'gravity-pulse',tier:'III'},rolls:['SW.EffectTemplate.Sharpness.III','fake']},t1:{item:'amethyst-lens',level:99}},ctx);

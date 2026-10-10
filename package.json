@@ -4,8 +4,17 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node check.mjs && node check-clock.mjs && node check-drops.mjs && node check-maps.mjs && node check-web-data.mjs && node --check dist/maps.mjs && node --check dist/app.mjs && node --check dist/drops.mjs && node --check dist/alarm.mjs && node --check dist/theme-init.js && node check-explorer.mjs && node --check dist/collection.mjs && node --check dist/planner.mjs && node --check dist/builds.mjs && node --check dist/compare.mjs && node --check dist/equipment-tooltip.mjs && node --check dist/build-detail.mjs && node check-database.mjs",
+    "test": "node check.mjs && node check-clock.mjs && node check-drops.mjs && node check-maps.mjs && node check-web-data.mjs && node --check src/maps.mjs && node --check src/app.mjs && node --check src/drops.mjs && node --check src/alarm.mjs && node --check public/theme-init.js && node check-explorer.mjs && node --check src/collection.mjs && node --check src/planner.mjs && node --check src/builds.mjs && node --check src/compare.mjs && node --check src/equipment-tooltip.mjs && node --check src/build-detail.mjs && node check-database.mjs",
     "build:data": "node tools/build-web-data.mjs",
-    "start": "python -m http.server 8080 --directory dist"
+    "start": "npm run preview",
+    "dev": "vite --host 127.0.0.1 --port 8081",
+    "build": "node tools/build-site.mjs",
+    "preview": "vite preview --host 127.0.0.1 --port 8080",
+    "check:build": "node tools/check-build.mjs",
+    "build:database": "python tools/build-database.py",
+    "build:explorer": "python tools/build-explorer-data.py"
+  },
+  "devDependencies": {
+    "vite": "^8.0.0"
   }
 }

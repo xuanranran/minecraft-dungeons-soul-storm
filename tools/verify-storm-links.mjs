@@ -3,7 +3,7 @@ import {join} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
-import {createRotation} from '../dist/schedule.mjs';
+import {createRotation} from '../src/schedule.mjs';
 const settings=JSON.parse(fs.readFileSync(new URL('../dist/rotation.json',import.meta.url))),R=createRotation(settings);
 const worlds=JSON.parse(fs.readFileSync(new URL('../dist/maps.json',import.meta.url))).dimensions,now=Date.parse('2026-10-10T14:45:00+08:00');
 const time=ms=>new Date(ms+8*3600000).toISOString().slice(11,16);

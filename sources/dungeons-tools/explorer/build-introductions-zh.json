@@ -12,384 +12,439 @@
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "4 Oct 2026",
-    "reference_votes": 17
+    "reference_votes": 17,
+    "title_zh": "红石破坏者火焰波"
   },
   "5-harp-crossbow-loot-farmer": {
     "intro": "竖琴弩的齐射在敌群间弹射，绿宝石锤、神谕凉鞋与寻宝者护符共同提升战利品收益。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "4 Oct 2026",
-    "reference_votes": 15
+    "reference_votes": 15,
+    "title_zh": "竖琴弩刷宝"
   },
   "4-thousand-cuts-lightning": {
     "intro": "千刃的快速攻击频繁触发引雷，将闪电伤害扩散到敌群。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "4 Oct 2026",
-    "reference_votes": 11
+    "reference_votes": 11,
+    "title_zh": "千刃雷击"
   },
   "1-pride-of-the-plains-leveling-build": {
     "intro": "面向主线推进：为灵魂收割者蓄力，使用疯牛冲锋穿过敌群，再翻滚引爆。所需核心装备较少。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "4 Oct 2026",
-    "reference_votes": 8
+    "reference_votes": 8,
+    "title_zh": "平原之傲练级配装"
   },
   "8-jump-attack-build": {
     "intro": "围绕高暴击率与跳跃攻击构建伤害。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "4 Oct 2026",
-    "reference_votes": 2
+    "reference_votes": 2,
+    "title_zh": "跳跃攻击"
   },
   "41-poison": {
     "intro": "通过毒素持续伤害覆盖敌群。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "7 Oct 2026",
-    "reference_votes": null
+    "reference_votes": null,
+    "title_zh": "毒素"
   },
   "32-support-mage-build": {
     "intro": "以支援队友为主要目标的法师搭配。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "6 Oct 2026",
-    "reference_votes": null
+    "reference_votes": null,
+    "title_zh": "辅助法师"
   },
   "17-pets": {
     "intro": "以召唤同伴为核心的配装。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "5 Oct 2026",
-    "reference_votes": null
+    "reference_votes": null,
+    "title_zh": "召唤同伴"
   },
   "16-hordebreaker-aoe-annihilation": {
     "intro": "碎心锤的范围爆炸配合闪电削弱敌人，法器补充治疗，并兼顾战利品收益。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "5 Oct 2026",
-    "reference_votes": null
+    "reference_votes": null,
+    "title_zh": "破阵者范围歼灭"
   },
   "15-crowd-and-boss-control": {
     "intro": "作者推荐用于离线与单人战斗，兼顾敌群与首领控制。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "5 Oct 2026",
-    "reference_votes": null
+    "reference_votes": null,
+    "title_zh": "敌群与首领控制"
   },
   "13-tank": {
     "intro": "",
     "intro_kind": "configuration",
     "patch": "1.1.1.0",
     "published": "5 Oct 2026",
-    "reference_votes": null
+    "reference_votes": null,
+    "title_zh": "坦克"
   },
   "11-immortal-frost-wizard": {
     "intro": "围绕生命药水冷却与灵魂补给构建冰霜输出，作者用于快速处理风暴生成器。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "5 Oct 2026",
-    "reference_votes": null
+    "reference_votes": null,
+    "title_zh": "不死冰霜法师"
   },
   "10-swift-striker": {
     "intro": "以近战攻击速度为核心，持续造成硬直与暴击。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "4 Oct 2026",
-    "reference_votes": null
+    "reference_votes": null,
+    "title_zh": "迅捷打击者"
   },
   "9-one-shot-ranger": {
     "intro": "借助典范弓的强力射击追求高额单次伤害。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "4 Oct 2026",
-    "reference_votes": null
+    "reference_votes": null,
+    "title_zh": "一击游侠"
   },
   "79-frost-lord": {
     "intro": "以冰霜减速控制敌群，搭配冰霜增伤；近战处理普通敌人，近距离寒冬法杖应对首领。",
     "intro_kind": "translated-summary",
     "patch": "1.1.2.0",
     "published": "10 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "冰霜领主"
   },
   "74-infinite-duration-aoe-effects": {
     "intro": "依靠守护风铃和药水延长范围防护与治疗，击败敌人也能补充团队状态。",
     "intro_kind": "translated-summary",
     "patch": "1.1.2.0",
     "published": "9 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "持续范围效果"
   },
   "73-rolling-ranger": {
     "intro": "翻滚进入敌群，触发远程伤害。作者提醒：最终首领会反射投射物。",
     "intro_kind": "translated-summary",
     "patch": "1.1.2.0",
     "published": "9 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "翻滚游侠"
   },
   "72-crit": {
     "intro": "以暴击为主要构建方向。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "9 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "暴击"
   },
   "71-invincible-wasp": {
     "intro": "饮用药水后持续获得治疗与抗性，衔接药水冷却，同时兼顾直接伤害与毒素伤害。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "9 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "无敌黄蜂"
   },
   "69-mimigun": {
     "intro": "围绕连续射击配置的远程搭配。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "9 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "连射机枪"
   },
   "67-minigun": {
     "intro": "以高频连续射击为主要输出手段。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "9 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "机枪"
   },
   "66-keep-on-rolling": {
     "intro": "通过连续翻滚触发伤害。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "9 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "持续翻滚"
   },
   "65-gauntlet-jump-attack-one-shot": {
     "intro": "追求护手跳跃攻击的高额爆发，同时兼顾生存。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "9 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "护手跳跃一击"
   },
   "64-full-melee": {
     "intro": "",
     "intro_kind": "configuration",
     "patch": "1.1.1.0",
     "published": "9 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "纯近战"
   },
   "63-axe-a-lot": {
     "intro": "",
     "intro_kind": "configuration",
     "patch": "1.1.1.0",
     "published": "9 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "巨斧连击"
   },
   "62-minigun": {
     "intro": "围绕快速连续射击构建的远程配装。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "9 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "机枪连射"
   },
   "61-swarm-sweeper-pure-damage": {
     "intro": "以纯伤害清理密集敌群，也用于挑战首领。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "9 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "清群纯伤害"
   },
   "60-like-4-seconds-tops": {
     "intro": "追求短时间击败目标的爆发配装。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "9 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "四秒爆发"
   },
   "59-rolling-rolling-what": {
     "intro": "围绕翻滚触发效果的搭配。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "8 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "翻滚循环"
   },
   "58-i-dont-wanna-fight": {
     "intro": "减少主动攻击操作，通过装备效果处理敌人。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "8 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "省心战斗"
   },
   "57-boss-grinder": {
     "intro": "追求首领战的高额单次爆发。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "8 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "首领粉碎机"
   },
   "56-jumping-brawler": {
     "intro": "反复使用跳跃攻击发挥这套配装的优势。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "8 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "跳跃斗士"
   },
   "51-absolute-dps-beast": {
     "intro": "",
     "intro_kind": "configuration",
     "patch": "1.1.1.0",
     "published": "8 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "极限伤害"
   },
   "50-solar-roller": {
     "intro": "面向单人后期刷取：使用松露加速通过普通敌群，翻滚接法器循环，兼顾爆发与治疗。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "8 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "日耀翻滚"
   },
   "47-pride-of-plains-electric-dps-build": {
     "intro": "",
     "intro_kind": "configuration",
     "patch": "1.1.1.0",
     "published": "7 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "平原之傲雷电输出"
   },
   "45-rusty-slap-chop": {
     "intro": "兼顾每秒伤害与生存能力的近战搭配。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "7 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "锈刃斩击"
   },
   "44-takedown": {
     "intro": "潮汐镰刀处理敌群，细剑应对首领。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "7 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "击倒"
   },
   "43-tank-support": {
     "intro": "通过治疗重击、生命增效、再生与图腾持续恢复生命，并延长团队防护状态、缩短负面状态。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "7 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "坦克辅助"
   },
   "42-elemental-damage-go-brrrrrrr": {
     "intro": "结合多种元素效果造成伤害。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "7 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "元素伤害爆发"
   },
   "40-loot-goblin": {
     "intro": "",
     "intro_kind": "configuration",
     "patch": "1.1.1.0",
     "published": "7 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "刷宝狂人"
   },
   "39-sniper-buiid": {
     "intro": "保持距离，蓄力打出高额伤害；敌人靠近时翻滚拉开距离。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "7 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "狙击配装"
   },
   "37-soul-harvester-hell": {
     "intro": "使用灵魂收割者造成大范围伤害。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "7 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "灵魂收割地狱"
   },
   "35-ranged-support": {
     "intro": "兼顾远程伤害、装填与箭矢供给，并为队友提供治疗增益、状态延长与食物。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "7 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "远程辅助"
   },
   "34-healer": {
     "intro": "以维持生命值和持续治疗为主要目标。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "6 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "治疗者"
   },
   "33-the-enhanced-lightning-slayer-build": {
     "intro": "加强闪电伤害，追求首领战爆发。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "6 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "强化雷击杀手"
   },
   "30-steel-wool-gauntlets": {
     "intro": "",
     "intro_kind": "configuration",
     "patch": "1.1.1.0",
     "published": "6 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "钢丝绒护手配装"
   },
   "28-arrow-god": {
     "intro": "围绕大量箭矢和暴击箭袋的弹药恢复构建。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "6 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "箭神"
   },
   "27-op-arrow-shower-tank": {
     "intro": "以密集箭雨输出，同时兼顾防护。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "6 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "箭雨坦克"
   },
   "26-epic-shotbow": {
     "intro": "使用多重射击弓追求大范围伤害。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "6 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "强力霰射弓"
   },
   "25-flame-poison-tank": {
     "intro": "通过火焰与毒素持续伤害输出，并保留一定生存能力。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "6 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "火焰毒素坦克"
   },
   "24-burning-blade-bosskiller": {
     "intro": "",
     "intro_kind": "configuration",
     "patch": "1.1.1.0",
     "published": "6 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "烈焰之刃首领杀手"
   },
   "23-prime-enchanter-guantlets-big-damage": {
     "intro": "",
     "intro_kind": "configuration",
     "patch": "1.1.1.0",
     "published": "6 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "首席附魔师护手爆发"
   },
   "22-prime-enchanter-electric-jump": {
     "intro": "使用首席附魔师护手，强化跳跃攻击与闪电伤害。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "6 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "首席附魔师雷电跳跃"
   },
   "19-potion-spam-dps-gauntlets": {
     "intro": "通过药水循环增强护手输出，作者用于灵魂风暴战斗。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "6 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "药水循环护手输出"
   },
   "18-fast-trickster-build": {
     "intro": "以快速攻击和高强度输出为目标的诡术师搭配。",
     "intro_kind": "translated-summary",
     "patch": "1.1.1.0",
     "published": "5 Oct 2026",
-    "reference_votes": 0
+    "reference_votes": 0,
+    "title_zh": "迅捷诡术师"
   }
 }

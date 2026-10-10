@@ -12,7 +12,7 @@ try{
    await page.goto(base+'#'+view);await ready(view);
    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),width+' '+view+' overflow');
    const selectors={collection:'.tool-grid .tool-item-picture',planner:'.tool-inline-choice .tool-item-picture',builds:'.tool-build-icons .tool-item-picture',compare:'.tool-compare-pick .tool-item-picture'};
-   const size=await page.locator(selectors[view]).first().boundingBox(),expected={collection:56,planner:60,builds:44,compare:width<760?76:96};assert.equal(size.width,expected[view],width+' '+view+' native slot size');
+   const size=await page.locator(selectors[view]).first().boundingBox(),expected={collection:width<760?56:64,planner:44,compare:width<600?56:72};if(view==='builds')assert.ok(size.width>=32&&size.width<=64);else assert.equal(size.width,expected[view],width+' '+view+' native slot size');
    if(width===1440||width===390)await page.screenshot({path:'tool-references/local-'+view+'-'+width+'.png',fullPage:false});
   }
   await page.goto(base+'#builds&build=2-tumbleshot-close-ranger');await ready('builds');

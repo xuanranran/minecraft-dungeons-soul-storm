@@ -45,6 +45,7 @@ try{
    await page.goto('http://127.0.0.1:8080/#'+name);await ready(name);await page.evaluate(()=>document.fonts.ready);
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true,width+' '+name+' horizontal overflow');
   }
+  await page.goto('http://127.0.0.1:8080/#planner&t1=ocelots-paw.3');await ready('planner');await page.locator('[data-slot=t1]').click();assert.equal(await page.getByLabel('护身符等级',{exact:true}).inputValue(),'3');const talisman=await page.evaluate(async()=>{const data=await(await fetch('./data/explorer/loadouts.json')).json();return data['ocelots-paw'];});assert.deepEqual(await page.locator('.tool-editor .tool-description').allTextContents(),talisman.levels[2].effects.map(e=>e.text));
   assert.deepEqual(errors,[]);assert.deepEqual(newPages,[]);await page.close();
   console.log(width+': collection persistence and rejected invalid import, local build/item clicks, populated planner, artifact restrictions, saved build reload, weapon swap, hover and responsive layout passed.');
  }

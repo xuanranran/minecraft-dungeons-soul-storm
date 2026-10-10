@@ -6,12 +6,12 @@
 
 ## 功能
 
-- 顶栏提供地图、灵魂风暴、收藏品、配装规划、配装列表和装备对比六个入口；地图包含主世界、汐浮与营地。
+- 顶栏提供地图、灵魂风暴、数据库、收藏品、配装规划、配装列表和装备对比七个入口；地图包含主世界、汐浮与营地。
 - 收藏品包含 296 件物品（80 件武器、152 件盔甲、40 件法器、24 件护身符），支持收集进度、心愿清单、筛选、分享、备份和刷取地点排序。
 - 配装规划支持 12 个部位，按装备实际效果池选择品质、随机效果与附魔；护身符支持 I–III 级，法器不提供直接附魔。草稿自动保存，可分享、导入导出和保存至个人配装列表。
 - 配装列表包含 56 套公开参考配置，支持战斗方式与标签筛选、收藏、本地详情和载入规划器；个人配装保存在当前浏览器。
 - 装备对比支持全部 80 件武器，显示伤害、连招、射击机制、随机效果池和战力曲线换算；条形长度按同类武器最高基础数值计算。
-- 四个装备工具采用参考站的游戏风格：蓝色像素背景、方形面板、装备槽、品质色和紫色附魔区域。指针悬浮及键盘聚焦显示所选装备详情，点击装备或配装名称打开本站内容。
+- 四个装备工具采用现代界面：统一的圆角卡片、紧凑工具栏、自适应网格与游戏原生装备图标，保留品质颜色与附魔标记。指针悬浮及键盘聚焦显示所选装备详情，点击装备或配装名称打开本站内容。
 - 地图包含 14 类、共 1,617 个地点，支持中文或英文搜索、拖动缩放、分类筛选、位置直达链接和本地已找到记录。
 - 灵魂风暴列出七个轮换地区和 52 个生成器候选位置，桌面显示在右侧、手机显示在下方；点击地区可定位地图，当前开启地区同步高亮并显示“开启中”。
 - 每 40 分钟开启一场、持续 20 分钟，跨日期连续轮换。
@@ -33,38 +33,41 @@
 
 ## 本地运行
 
-需要 Node.js 22（检查）和 Python 3（本地静态服务）。
+需要 Node.js 22.12+。原生游戏资料重建另需 Python 3 和同级解包资源仓库。
 
 ```sh
+npm ci
 npm test
+npm run build
+npm run check:build
 npm start
 ```
 
-打开 `http://localhost:8080/`。页面不需要安装 npm 依赖。
+打开 `http://localhost:8080/`。开发模式运行 `npm run dev`，地址为 `http://localhost:8081/`。线上只需要静态文件，不需要 Node 服务。
 
 ## 部署
 
-GitHub Pages 通过 `.github/workflows/pages.yml` 发布 `dist/`，推送到 `main` 后自动检查并更新网站。在仓库 Settings → Pages 中将 Source 设为 GitHub Actions。
+GitHub Pages 通过 `.github/workflows/pages.yml` 发布 `dist/`，推送到 `main` 后自动安装锁定依赖、检查数据、构建并验证静态路由，再更新网站。在仓库 Settings → Pages 中将 Source 设为 GitHub Actions。
 
 公开版使用 TimeAPI.io 校时，WorldTimeAPI 为备用。网络时间服务不可用时沿用上次校准，首次校时失败则使用设备时间并显示提示。GitHub Pages 不运行 `server.py`，该文件仅保留用于原有 Debian 部署参考。
 
 ## 装备资料
 
-装备资料采集于 2026-10-09，包含 272 件装备和 685 条地区掉落记录。装备资料源自 MetaBot.GG，装备、附魔图片与搭配背景使用本地游戏提取的原生资源；数值经过 Dungeons DB 对照修正。图片保存在 `dist/images/equipment/`，完整资料保存在 `dist/equipment.json`，掉落窗口无需调用外部资料服务。物品池占比不等于宝箱获取概率；独特版本与基础物品共享掉落区域。
+装备资料采集于 2026-10-09，包含 272 件装备和 685 条地区掉落记录。装备资料源自 MetaBot.GG，装备、附魔图片与搭配背景使用本地游戏提取的原生资源；数值经过 Dungeons DB 对照修正。图片保存在 `public/images/equipment/`，完整资料保存在 `public/equipment.json`，掉落窗口无需调用外部资料服务。物品池占比不等于宝箱获取概率；独特版本与基础物品共享掉落区域。
 
 ## 字体与音频
 
-字体来源见 `font-source.txt`。方舟像素字体使用 SIL Open Font License 1.1，许可证在 `dist/fonts/ARK-LICENSE-OFL.txt`。雷达铃声由项目使用者提供，第三方字体和音频不属于项目原创素材。
+字体来源见 `font-source.txt`。方舟像素字体使用 SIL Open Font License 1.1，许可证在 `public/fonts/ARK-LICENSE-OFL.txt`。雷达铃声由项目使用者提供，第三方字体和音频不属于项目原创素材。
 
-装备工具使用本地分发的 Dungeons Ten、Dungeons Sixteen 游戏字体，中文使用方舟中文像素字体补齐。字体和像素背景来源及 SHA-256 见 `sources/dungeons-tools/explorer/style-assets.json`。地图、风暴、地点分类计数及地点窗口继承全局字体偏好。
+主界面默认使用系统字体，像素字体可在设置中切换。游戏字体和像素背景来源及 SHA-256 见 `sources/dungeons-tools/explorer/style-assets.json`。地图、风暴、地点分类计数及地点窗口继承全局字体偏好。
 
 ## 收藏与配装资料
 
-游戏原生中英文文本通过相同 namespace/key 匹配，装备描述、效果名、护身符及各级效果从本地导出的数据表获取。护身符的 72 张等级图标和补充效果图标来自本地游戏资源。辅助按钮和社区标签使用中文界面文案；公开配装保留原作者标题和署名。
+游戏原生中英文文本通过相同 namespace/key 匹配，装备描述、效果名、护身符及各级效果从本地导出的数据表获取。护身符的 72 张等级图标和补充效果图标来自本地游戏资源。辅助按钮和社区标签使用中文界面文案；公开配装显示中文标题并保留作者署名；原作者标题保留在资料快照中。
 
 装备效果池、连招数据、品质规则、战力曲线及公开配装配置于 2026-10-10 从 [dungeons.tools](https://www.dungeons.tools/2/) 读取，事实快照保存在 `sources/dungeons-tools/explorer/`。没有打包对方组件代码。公开配装简介以中文摘要呈现；用户指定的翻滚射击近身游侠配装包含中文玩法指南，保留原作者与版本资料。网页中的收集状态、配装保存、收藏与备份由本站执行，不需要第三方账号。
 
-`tools/build-explorer-data.py` 将事实快照与同级 `minecraft-dungeons-native-assets/exports/` 的原生数据表、中文本地化和纹理合并为 `dist/data/explorer/`。`check-explorer.mjs` 检查物品资源、72 个护身符等级、32 种附魔、56 套配置的编码往返、部位兼容性、效果叠加及伤害曲线。
+`tools/build-explorer-data.py` 将事实快照与同级 `minecraft-dungeons-native-assets/exports/` 的原生数据表、中文本地化和纹理合并为 `public/data/explorer/`。`check-explorer.mjs` 检查物品资源、72 个护身符等级、32 种附魔、56 套配置的编码往返、部位兼容性、效果叠加及伤害曲线。
 
 ## 地图资料与复现
 
@@ -72,7 +75,7 @@ GitHub Pages 通过 `.github/workflows/pages.yml` 发布 `dist/`，推送到 `ma
 
 地点坐标采集自 [dungeons.tools](https://www.dungeons.tools/2/map)，事实数据保存在 `sources/dungeons-tools/`。原生中英文 `All.locres` 通过相同 namespace/key 匹配地点和任务名；“候选位置”“其他入口”、宝箱分类等网站辅助说明使用中文界面文案。生成器分组按原生区域标签最近距离计算，七组数量与参考轮换完全一致：7、8、8、8、8、8、5。候选位置不表示当前每一个点都已生成。
 
-`tools/build-maps.py` 从同级 `minecraft-dungeons-native-assets/exports/` 的解包文件重建地图，`native-map-images.json` 记录原始资源路径和 SHA-256，`check-maps.mjs` 检查全部坐标、分类、点位、地图分块和资源校验值。`npm test` 包含地图数据检查。Leaflet 1.9.4 随站点本地分发，其许可证保存在 `dist/vendor/leaflet/LICENSE`；地图底图及点位无需连接第三方服务即可使用。
+`tools/build-maps.py` 从同级 `minecraft-dungeons-native-assets/exports/` 的解包文件重建地图，`native-map-images.json` 记录原始资源路径和 SHA-256，`check-maps.mjs` 检查全部坐标、分类、点位、地图分块和资源校验值。`npm test` 包含地图数据检查。Leaflet 1.9.4 随站点本地分发，其许可证保存在 `public/vendor/leaflet/LICENSE`；地图底图及点位无需连接第三方服务即可使用。
 
 ## 页面与按需加载
 
@@ -82,7 +85,7 @@ GitHub Pages 通过 `.github/workflows/pages.yml` 发布 `dist/`，推送到 `ma
 
 `app.mjs` 负责导航和公共时钟，`ui.mjs` 负责显示偏好。地图组件和 Leaflet 只在访问地图时加载；`storm.mjs` 与其样式只在打开灵魂风暴或恢复已启用闹钟时加载。地图点位分为三个区域文件，切换区域后读取并缓存；筛选与搜索复用已有标记。
 
-`collection.mjs`、`planner.mjs`、`builds.mjs` 和 `compare.mjs` 分别按导航加载。物品摘要、效果规则、配装数据及武器机制分开读取并缓存；悬浮窗首次打开时才加载所需规则，单件详细资料在点击后读取。`tools/verify-explorer.mjs` 验证桌面、手机的本地点击、悬浮窗、收集与配装持久化、无效备份保护、法器限制、装备对比和页面宽度。
+`src/features/collection/`、`planner/`、`builds/` 和 `compare/` 各自维护页面逻辑与样式，并按导航加载。物品摘要、效果规则、配装数据及武器机制分开读取并缓存；悬浮窗首次打开时才加载所需规则，单件详细资料在点击后读取。`tools/verify-explorer.mjs` 验证桌面、手机的本地点击、悬浮窗、收集与配装持久化、无效备份保护、法器限制、装备对比和页面宽度。
 
 掉落窗口先读取约 195 KiB 的物品摘要（完整源数据约 3740 KiB），展开单件装备时才下载该件详情和 `equipment-details.mjs`，生成参数与附魔内容。修改完整装备资料后运行 `npm run build:data` 更新分发文件；`npm test` 检查分片与完整资料是否一致。地图数据分片由 `tools/build-maps.py` 同步生成。
 
@@ -90,4 +93,23 @@ GitHub Pages 通过 `.github/workflows/pages.yml` 发布 `dist/`，推送到 `ma
 
 配装列表点击名称会在本站打开介绍窗口，包含 12 个部位、配置词条、效果汇总、附魔与逐件装备卡片；`#builds&build=2-tumbleshot-close-ranger` 可直接分享指定介绍。`build-detail.mjs` 与该配装的中文指南在打开时才读取，不引入第三方运行依赖。装备卡片与悬浮窗复用相同的本地数据和渲染函数。
 
-`explorer-reference.css` 按参考站测量值调整四个工具：收藏槽 56 px、规划槽桌面 96 px / 手机 68 px、配装列表槽 44 px、对比槽桌面 96 px / 手机 76 px，悬浮窗宽 380 px；320 px 小屏进一步收紧规划槽。`tools/verify-build-introductions.mjs` 验证 1440、768、390、320 px 下的尺寸、中文指南、12 件配置装备、分享恢复、本站点击及横向溢出。
+## Jamstack 架构
+
+采用 Vite 8 构建现代 ES Modules，产物是可直接部署的静态 HTML、CSS、JavaScript 和游戏资源：
+
+- `src/core/`：目录路由、页面控制器、过期交互取消和按需加载。旧 hash 链接继续兼容；刷新、前进后退及项目子路径部署均支持。
+- `src/features/`：收藏品、配装规划、配装列表、装备对比的独立模块与样式。
+- `src/ui/styles/`：现代工具界面、共用详情行和配装介绍窗口的视觉规则；参数与连招使用表格，其余详情默认使用卡片。
+- `public/`：预构建中文游戏数据库、地图、原生图片、字体和本地 Leaflet；浏览器不会跳转第三方资料站。
+- `tools/build-site.mjs`：生成 7 个主页面、14 个分类页面和 874 个条目页面，共 895 条目录路由。详情页带独立标题、说明和无需 JavaScript 的内容摘要。
+- `dist/`：构建产物，不提交到 Git。GitHub Actions 使用 `npm ci` 锁定依赖，完成测试、构建和资源检查后发布。
+
+示例目录：`/collection/`、`/planner/`、`/builds/`、`/compare/`、`/database/talismans/ocelots-paw/`。所有部件共用同一个模块实例，构建文件名带内容哈希，不再手工为模块维护版本查询串。收藏、草稿、配装和偏好的原有 localStorage 键保持兼容。
+
+24 个护身符都有中文说明。其中 5 个采用原生中文介绍；另 19 个在解包文件中仍是英文描述占位，因此显示同一数据表中已本地化、已代入数值的一级效果说明，来源在 `descriptionOrigin` 中记录。不会将效果说明冒充不存在的原生背景介绍。其他分类按名称对应的本地化键补充原生说明，缺失数据不杜撰。
+
+地区掉落采用等宽等高网格；效果与附魔采用同一图文行规格，一级说明置于名称下方，点击后打开完整等级详情。桌面、平板与 320 px 手机均验证。深色模式背景维持原值 `#090a0c`。
+
+`npm run check:build` 验证全部目录、GitHub Pages 子路径下的资源、独立页面包以及护身符中文说明。`tools/verify-jamstack.mjs` 验证目录直达、刷新与历史返回、四页自适应、卡片尺寸、原生说明、附魔摘要与地区掉落行高；配合 `npm start` 使用。全量装备详情审计另需同时运行 `npm run dev`。
+
+`tools/verify-async-navigation.mjs` 人为延迟配装模块与数据库分类响应，验证切页后不会出现旧请求的弹窗。护身符悬浮卡片和编辑器按所选等级显示效果，避免一级摘要与三级数值同时出现。

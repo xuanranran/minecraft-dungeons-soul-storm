@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises';
-const dist=new URL('../dist/',import.meta.url),folder=new URL('data/equipment/',dist);
+const dist=new URL('../public/',import.meta.url),folder=new URL('data/equipment/',dist);
 const original=JSON.parse(await fs.readFile(new URL('equipment.json',dist),'utf8'));
 await fs.mkdir(new URL('items/',folder),{recursive:true});
 const items=[];

@@ -1,0 +1,30 @@
+import assert from 'node:assert/strict';
+import {homedir} from 'node:os';import {join} from 'node:path';import {pathToFileURL} from 'node:url';import {mkdir} from 'node:fs/promises';
+const {chromium}=await import('playwright').catch(()=>import(pathToFileURL(join(homedir(),'.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs'))));
+const base=process.env.SITE_TEST_URL||'http://127.0.0.1:8080/',browser=await chromium.launch({channel:'msedge',headless:true});await mkdir('artifacts/jamstack',{recursive:true});
+try{for(const width of [1920,1440,1024,768,390,320]){
+ const page=await browser.newPage({viewport:{width,height:1000}}),errors=[],missing=[];page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.url().startsWith(base)&&r.status()>=400)missing.push(r.url());});await page.emulateMedia({colorScheme:'dark'});
+ const ready=name=>page.locator('#'+name+'-panel[aria-busy=false]').waitFor(),box=()=>page.locator('.database-dialog[open]').last();
+ for(const name of ['collection','planner','builds','compare']){
+  await page.goto(new URL(name+'/',base).href);await ready(name);await page.evaluate(()=>document.fonts.ready);
+  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,name+' overflow at '+width);
+  assert.equal(await page.locator('[data-page-tab='+name+']').evaluate(n=>{const tab=n.getBoundingClientRect(),strip=n.parentElement.getBoundingClientRect();return tab.left>=strip.left-1&&tab.right<=strip.right+1;}),true,name+' active mobile tab clipped');
+  assert.equal(await page.evaluate(()=>getComputedStyle(document.body).backgroundColor),'rgb(9, 10, 12)');
+  assert.match(await page.locator('#'+name+'-panel').evaluate(n=>getComputedStyle(n).fontFamily),/Segoe UI/);
+  assert.equal(await page.locator('#'+name+'-panel').evaluate(n=>getComputedStyle(n).backgroundColor),'rgba(0, 0, 0, 0)');
+  if(name==='collection'){assert.equal(await page.locator('.tool-progress-card').count(),4);assert.equal(await page.locator('.tool-grid').evaluate(n=>getComputedStyle(n).padding),'0px');}
+  if(name==='planner'){assert.equal(await page.locator('.tool-slot-label').first().isVisible(),true);const slots=await page.locator('.tool-slot').evaluateAll(nodes=>nodes.map(n=>n.getBoundingClientRect()));assert.ok(slots.every(r=>r.width>=50));}
+  if(name==='builds')assert.equal(await page.locator('.tool-build-grid').evaluate(n=>getComputedStyle(n).display),'grid');
+  await page.screenshot({path:'artifacts/jamstack/'+name+'-'+width+'.png'});
+ }
+ await page.locator('[data-page-tab=collection]').click();await ready('collection');assert.equal(page.url(),new URL('collection/',base).href);await page.reload();await ready('collection');await page.goBack();await ready('compare');
+ await page.goto(new URL('database/talismans/ocelots-paw/',base).href);await ready('database');await box().locator('.database-detail-hero').waitFor();await box().locator('.database-tier').first().waitFor();assert.match(await box().locator('.database-detail-hero').innerText(),/豹猫之爪/);assert.ok((await box().locator('.database-detail-hero p').innerText()).length>5);await box().getByRole('button',{name:'关闭窗口'}).click();
+ await page.goto(new URL('database/weapons/awesomeaxe/',base).href);await ready('database');await box().getByRole('tab',{name:'附魔',exact:true}).waitFor();await box().getByRole('tab',{name:'附魔',exact:true}).click();const enchant=box().locator('[data-detail-section=enchantments] .database-effect-card').first();await enchant.waitFor();assert.equal(await enchant.locator('.drop-levels,.database-row-meta').count(),0);assert.ok(await enchant.locator('p').count()===1);await page.screenshot({path:'artifacts/jamstack/enchantments-'+width+'.png'});await box().getByRole('button',{name:'关闭窗口'}).click();
+ await page.goto(new URL('storm/',base).href);await ready('storm');await page.locator('#current-drops').click();await page.locator('#drops-dialog .drop-item').first().waitFor();assert.equal(await page.locator('.drops-column').count(),0);const sizes=await page.locator('#drops-dialog .drop-item').evaluateAll(nodes=>nodes.map(n=>({w:n.getBoundingClientRect().width,h:n.getBoundingClientRect().height})));assert.ok(sizes.every(n=>Math.abs(n.w-sizes[0].w)<1));assert.ok(sizes.every(n=>Math.abs(n.h-sizes[0].h)<1));await page.screenshot({path:'artifacts/jamstack/drops-'+width+'.png'});await page.locator('#drops-close').click();
+ await page.goto(new URL('collection/',base).href);await ready('collection');await page.locator('summary.settings-trigger').click();await page.locator('select#theme').selectOption('light');assert.equal(await page.evaluate(()=>document.documentElement.dataset.theme),'light');await page.keyboard.press('Escape');
+ for(const name of ['map','storm','database','collection','planner','builds','compare']){
+  await page.locator('[data-page-tab='+name+']').click();await ready(name);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,name+' light overflow');assert.equal(await page.locator('#'+name+'-panel').evaluate(n=>getComputedStyle(n).color),'rgb(24, 34, 46)');
+ }
+ await page.locator('[data-page-tab=builds]').click();await ready('builds');await page.locator('.tool-build-title').first().click();const build=page.locator('.build-introduction-dialog[open]');await build.locator('.equipment-card').nth(11).waitFor();assert.equal(await build.count(),1);assert.notEqual(await build.locator('.explorer-dialog-header h2').evaluate(n=>getComputedStyle(n).color),'rgb(255, 255, 255)');await page.screenshot({path:'artifacts/jamstack/build-light-'+width+'.png'});await page.goBack();await ready('compare');assert.equal(await page.locator('dialog[open]').count(),0);
+ assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);await page.close();console.log(width+': directory routes, refresh/back, modern cards, native Chinese, compact enchantments, equal drop rows and unchanged dark background passed.');
+}}finally{await browser.close();}

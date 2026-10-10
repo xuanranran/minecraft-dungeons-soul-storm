@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {SyncedClock} from './dist/clock.mjs';
+import {SyncedClock} from './src/clock.mjs';
 
 let tick=0,fail=false,calls=0;
 const epoch=Date.parse('2026-10-09T12:00:00+08:00');

@@ -10,7 +10,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT.parent / 'minecraft-dungeons-native-assets'
-OUT = ROOT / 'dist'
+OUT = ROOT / 'public'
 SOURCES = ROOT / 'sources/dungeons-tools'
 SOURCES.mkdir(parents=True, exist_ok=True)
 enroot = ASSETS / 'exports/map-localization/Dungeons/Content/Localization/All'

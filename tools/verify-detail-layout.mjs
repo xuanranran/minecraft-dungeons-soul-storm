@@ -5,9 +5,12 @@ const {chromium}=await import('playwright').catch(()=>import(pathToFileURL(join(
 const directory=new URL('../dist/data/equipment/items/',import.meta.url),records=await Promise.all((await readdir(directory)).filter(n=>n.endsWith('.json')).map(async name=>JSON.parse(await readFile(new URL(name,directory),'utf8'))));
 const browser=await chromium.launch({channel:'msedge',headless:true});
 try{
- const page=await browser.newPage();await page.goto('http://127.0.0.1:8080/');
+ const page=await browser.newPage();await page.goto('http://127.0.0.1:8081/');
+ await page.locator('#map-panel[aria-busy="false"]').waitFor();
  const failures=await page.evaluate(async records=>{
-  const {renderEquipmentDetails}=await import('./equipment-details.mjs?v=detailcleanup1'),{displayedParameters,displayedTables}=await import('./drops.mjs?v=detailcleanup1'),failures=[];
+  const {createEquipmentCard}=await import('./equipment-tooltip.mjs'),catalogue=await(await fetch('./data/explorer/catalogue.json')).json(),loadouts=await(await fetch('./data/explorer/loadouts.json')).json();
+  for(const item of catalogue.items.filter(i=>i.kind==='talisman'))for(const level of [1,2,3]){const card=await createEquipmentCard(item,{level});if(item.descriptionOrigin==='native-level-I-effect'&&card.querySelector('.equipment-tip-description'))throw Error(item.slug+': wrong-level description');const texts=[...card.querySelectorAll('.equipment-tip-effect>span:last-child')].map(n=>n.textContent);if(JSON.stringify(texts)!==JSON.stringify(loadouts[item.slug].levels[level-1].effects.map(e=>e.text)))throw Error(item.slug+': mismatched level effects');}
+  const {renderEquipmentDetails}=await import('./equipment-details.mjs?v=modern1'),{displayedParameters,displayedTables}=await import('./drops.mjs?v=modern1'),failures=[];
   const el=(tag,cls,text)=>{const n=document.createElement(tag);n.className=cls||'';if(text!=null)n.textContent=text;return n;};
   for(const item of records){
    const panel=el('div');renderEquipmentDetails({item,panel,el,nativeIcon:()=>el('span'),displayedParameters,displayedTables});

@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 NATIVE = ROOT.parent / 'minecraft-dungeons-native-assets'
 REF = ROOT / 'tool-references'
-OUT = ROOT / 'dist/data/explorer'
+OUT = ROOT / 'public/data/explorer'
 SOURCE = ROOT / 'sources/dungeons-tools/explorer'
 OUT.mkdir(parents=True, exist_ok=True)
 SOURCE.mkdir(parents=True, exist_ok=True)
@@ -61,7 +61,7 @@ write(SOURCE / 'enchants.json', planner['enchants'])
 write(SOURCE / 'rarity.json', planner['rarity'])
 write(SOURCE / 'capture.json', {'captured_at': '2026-10-10', 'urls': ['https://www.dungeons.tools/2/collection', 'https://www.dungeons.tools/2/build-planner', 'https://www.dungeons.tools/builds', 'https://www.dungeons.tools/2/compare']})
 
-equipment = read(ROOT / 'dist/equipment.json')['items']
+equipment = read(ROOT / 'public/equipment.json')['items']
 by_name = {norm(x['name']): x for x in equipment}
 by_id = {x['id']: x for x in equipment}
 matches_path = ROOT / 'native-image-matches.json'
@@ -77,11 +77,11 @@ def icon(ref, folder, filename):
     source = pngs.get(stem)
     if not source:
         raise ValueError('Missing native icon: '+ref)
-    target = ROOT / 'dist/images' / folder / (filename+'.png')
+    target = ROOT / 'public/images' / folder / (filename+'.png')
     target.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(source, target)
-    copied.append({'file': str(target.relative_to(ROOT / 'dist')).replace('\\', '/'), 'native': str(source.relative_to(NATIVE)).replace('\\', '/')})
-    return './'+str(target.relative_to(ROOT / 'dist')).replace('\\', '/')
+    copied.append({'file': str(target.relative_to(ROOT / 'public')).replace('\\', '/'), 'native': str(source.relative_to(NATIVE)).replace('\\', '/')})
+    return './'+str(target.relative_to(ROOT / 'public')).replace('\\', '/')
 
 defs = [x for group in ['ItemDefinitionMelee', 'ItemDefinitionRanged', 'ItemDefinitionArmor', 'ItemDefinitionArtifact', 'ItemDefinitionTalisman'] for x in table(group)]
 definitions = {norm(text(x, 'Name')): x for x in defs if text(x, 'Name')}
@@ -135,7 +135,7 @@ for tag, original in planner['planner']['effects'].items():
     if original.get('icon'):
         # Existing effect icons were already matched against native textures.
         slug = original['slug']
-        candidates = list((ROOT / 'dist/images/effects').glob('*'+slug+'.png'))
+        candidates = list((ROOT / 'public/images/effects').glob('*'+slug+'.png'))
         entry['image'] = './images/effects/'+candidates[0].name if candidates else icon(native['IconReference'], 'explorer-effects', slug)
     else:
         entry['image'] = None
@@ -220,7 +220,14 @@ for item in items:
                 raise ValueError('Unresolved native fixed effect: '+item['slug']+' '+e['effect'])
         e.pop('ref', None)
     if '{' in item.get('description', '') and item['levels']:
-        item['description'] = ''  # Values belong to the selected level, not a static I-tier description.
+        item['description'] = ''
+    if item['kind'] == 'talisman' and not item['description']:
+        # These locale entries are untranslated placeholders. Use the resolved
+        # native I-tier effect rather than inventing a flavour description.
+        item['description'] = '；'.join(e['text'] for e in item['levels'][0]['effects'])
+        item['descriptionOrigin'] = 'native-level-I-effect'
+    else:
+        item['descriptionOrigin'] = 'native-description'
 
 enchants = []
 all_rows = {row.get('附魔', row.get('效果', row.get('name'))): row for item in equipment for t in item.get('tables', []) for row in t.get('rows', []) if {l['level'] for l in row.get('levels', [])}.issuperset({'I', 'II', 'III'})}
@@ -240,7 +247,7 @@ for original in planner['enchants']:
     assert all(t['text'] for t in entry['tiers']), row
     enchants.append(entry)
 for item in items:
-    detail = ROOT / 'dist/data/equipment/items' / (item['slug'] + '.json')
+    detail = ROOT / 'public/data/equipment/items' / (item['slug'] + '.json')
     if item['kind'] == 'artifact' and detail.exists():
         params = read(detail).get('parameters', {})
         item['parameters'] = {k: params[k] for k in ['冷却', '灵魂消耗'] if k in params}

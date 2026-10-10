@@ -7,7 +7,7 @@ from collections import defaultdict
 
 ROOT=Path(__file__).resolve().parents[1]
 SOURCE=ROOT/'sources/database'
-OUT=ROOT/'dist/data/database'
+OUT=ROOT/'public/data/database'
 (OUT/'items').mkdir(parents=True,exist_ok=True)
 def read(p): return json.loads(p.read_text(encoding='utf-8'))
 def write(p,d): p.write_text(json.dumps(d,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
@@ -15,20 +15,34 @@ LOC=ROOT.parent/'minecraft-dungeons-native-assets/exports/map-localization/Dunge
 en,zh=read(LOC/'en/All.json'),read(LOC/'zh-Hans/All.json')
 def norm(t): return re.sub(r'\s+',' ',str(t).replace('’',"'")).strip().casefold()
 lookup={};provenance={};dynamic=[]
+native_entries=defaultdict(list)
 for ns,entries in en.items():
  for key,value in entries.items():
   target=zh.get(ns,{}).get(key)
+  if isinstance(target,str) and key.endswith('_SW_TextEntry_Name'):
+   description=zh.get(ns,{}).get(key.removesuffix('_Name')+'_Description','')
+   if not re.search(r'[\u3400-\u9fff]',description) or re.search(r'\{\d+\}|Description',description):description=''
+   native_entries[norm(value)].append((target,description,ns,key))
   if isinstance(value,str) and target:
    lookup[norm(value)]=(target,ns,key)
    if '{0}' in value and value.replace('{0}','').strip() and len(value)<250:
     dynamic.append((re.compile('^'+re.escape(value).replace(r'\{0\}',r'(.+?)')+'$',re.I),target))
 labels={'HEALTH':'基础生命','DAMAGE':'基础伤害','POISE':'韧性','SOULS':'灵魂','WEAK TO':'弱点','LEVEL':'推荐等级','REGION':'地区','MOBS':'生物','GOES ON':'可用部位','WHAT IT DOES':'效果','GEAR':'适用装备数','TYPE':'类型','IN-GAME TEXT':'原生说明','Health':'基础生命','Top hit':'最高单次伤害','Poise':'韧性','Souls':'灵魂','Speed':'速度','Area':'地区','Level':'推荐等级','Given by':'领取条件','Opens':'解锁任务','Repeatable':'可重复','XP':'经验','Emeralds':'绿宝石','Hostile':'敌对生物','Passive':'被动生物','Companion':'同伴','Boss':'首领','Miniboss':'小型首领','Soul corrupted':'灵魂腐化','Region':'地区','Dungeon':'地牢','Cave':'洞穴','Rift':'裂隙','Tower':'高塔','Portal':'传送门','Utility':'实用','Offensive':'攻击','Defensive':'防御','Boots':'靴子','Chest':'胸甲','Helmet':'头盔','Leggings':'护腿','MeleeWeapon':'近战武器','RangedWeapon':'远程武器','Melee weapon':'近战武器','Ranged weapon':'远程武器','Armor':'盔甲','Artifact':'法器','Talisman':'护身符','Enchantment':'附魔','Effect':'装备效果','Status':'状态','Attacks':'攻击方式','Weaknesses and resistances':'弱点与抗性','Forms':'变种','Spawns in':'出现地区','Physical':'物理','Light attack':'轻击','Heavy attack':'重击','Ranged attack':'远程攻击','Base':'基础形态','Soul imbalance':'灵魂失衡','Variant I':'变种 I','Variant II':'变种 II','ATTACK':'攻击','SPLASH':'溅射','COOLDOWN':'冷却','FORM':'形态','Blast damage':'爆炸伤害','Melee damage':'近战伤害','Ranged damage':'远程伤害','Fire damage':'火焰伤害','Frost damage':'冰霜伤害','Lightning damage':'闪电伤害','Poison damage':'毒素伤害','Soul damage':'灵魂伤害','Elemental damage':'元素伤害','Knockback':'击退','Yes':'是','No':'否','none':'无','Any':'任意','Starts with the game':'开始游戏时','No description yet':'暂无原生说明'}
 labels.update({'Positive status':'正面状态','Negative status':'负面状态','Deep Dark dungeons':'深暗之域地牢','Sift rifts':'汐浮裂隙','Minecart station':'矿车站','Entrances':'入口','Fancy chests':'华丽宝箱','Wooden chests':'木质宝箱','Pots':'绿宝石罐','Hidden chests':'隐藏宝箱','Dungeon entrances':'地牢入口','Rift entrances':'裂隙入口','Wellspring chests':'源泉宝箱','Comes after':'前置任务','How to get it':'获取方式'})
-def tr(text):
+def native_match(category,text):
+ # Identical English names can refer to a mob and an unrelated status.
+ # Resolve names and descriptions through the same category-specific entry.
+ groups={'enemies':['DT_Mob'],'bosses':['DT_Mob'],'locations':['DT_AreaDefinition'],'cosmetics':['DT_ItemDefinitionCape','DT_ItemDefinitionPet'],'effects':['EffectDefinition','DT_StatusDefinition'],'enchantments':['Enchant'],'armor-sets':['ArmorSet']}
+ entries=native_entries.get(norm(text),[])
+ if category in groups:entries=[entry for entry in entries if any(group in entry[2] for group in groups[category])]
+ return entries[-1] if entries else None
+
+def tr(text,category=None):
  text=str(text or '').strip()
  if not text:return ''
  if text in labels:return labels[text]
- value=lookup.get(norm(text))
+ native=native_match(category,text) if category else None
+ value=(native[0],native[2],native[3]) if native else lookup.get(norm(text))
  if value:
   provenance[text]={'namespace':value[1],'key':value[2],'zh':value[0]};return value[0]
  for expression,target in dynamic:
@@ -58,7 +72,7 @@ def objective_text(text):
    else:out.append(tr(piece.strip()))
  return '；'.join(out).replace('；（','（')
 
-catalogue=read(ROOT/'dist/data/explorer/catalogue.json')['items'];rules=read(ROOT/'dist/data/explorer/rules.json');loadouts=read(ROOT/'dist/data/explorer/loadouts.json')
+catalogue=read(ROOT/'public/data/explorer/catalogue.json')['items'];rules=read(ROOT/'public/data/explorer/rules.json');loadouts=read(ROOT/'public/data/explorer/loadouts.json')
 by_name={norm(i['name']):i for i in catalogue};by_slug={i['slug']:i for i in catalogue}
 assets={a['remote']:a['local'] for a in read(SOURCE/'assets.json')}
 categories=defaultdict(list)
@@ -66,7 +80,7 @@ kind_categories={'melee':'weapons','ranged':'weapons','armor':'armor','artifact'
 for item in catalogue:
  record={**item,'id':item['slug'],'categoryKey':kind_categories[item['kind']],'dbKind':'equipment','parameters':[]}
  if item.get('detailURL'):
-  full=read(ROOT/'dist'/item['detailURL'].split('?')[0].removeprefix('./'))
+  full=read(ROOT/'public'/item['detailURL'].split('?')[0].removeprefix('./'))
   record['parameters']=[[k,v] for k,v in full['parameters'].items() if k in ['DPS','连招伤害','攻击段数','重量','冷却','灵魂消耗','攻击距离']]
  else:
   record['tiers']=[{'tier':['I','II','III'][n],'image':level['image'],'text':'；'.join(e['text'] for e in level['effects']) or item['description']} for n,level in enumerate(loadouts[item['slug']]['levels'])]
@@ -76,13 +90,13 @@ for item in catalogue:
 enchants={e['slug']:e for e in rules['enchants']};effects={e['slug']:(tag,e) for tag,e in rules['effects'].items()}
 for category in ['enemies','enchantments','effects','locations','cosmetics','quests','upcoming']:
  for row in read(SOURCE/(category+'.json'))['rows']:
-  slug=row['href'].split('/')[-1].split('#')[-1];record={'id':slug,'slug':slug,'name':tr(row['name']),'english':row['name'],'kind':'enemy' if category=='enemies' else category.rstrip('s'),'categoryKey':category,'dbKind':'reference','image':assets.get(row['image'],''),'description':'','parameters':[[tr(k),tr(v)] for k,v in row['values'] if v],'tables':[],'related':[],'source':'https://www.dungeons.tools'+row['href'],'subtype':tr(row['sub'])}
+  slug=row['href'].split('/')[-1].split('#')[-1];record={'id':slug,'slug':slug,'name':tr(row['name'],category),'english':row['name'],'kind':'enemy' if category=='enemies' else category.rstrip('s'),'categoryKey':category,'dbKind':'reference','image':assets.get(row['image'],''),'description':'','parameters':[[tr(k),tr(v)] for k,v in row['values'] if v],'tables':[],'related':[],'source':'https://www.dungeons.tools'+row['href'],'subtype':tr(row['sub'])}
   detail_path=SOURCE/'details'/(category+'-'+slug+'.json')
   if detail_path.exists():
    detail=read(detail_path);record['parameters']+= [[tr(k),tr(v)] for k,v in detail['parameters'] if v]
    for t in detail['tables']:
     record['tables'].append({'title':tr(t['title']),'columns':[tr(c) for c in t['columns']],'rows':[[tr(v) for v in r] for r in t['rows']]})
-   if detail['resistances']:record['tables'].append({'title':'生物分布' if category=='locations' else '弱点与抗性','columns':['生物' if category=='locations' else '属性','占比' if category=='locations' else '变化'],'rows':[[tr(k),tr(v)] for k,v in detail['resistances']]})
+   if detail['resistances']:record['tables'].append({'title':'生物分布' if category=='locations' else '弱点与抗性','columns':['生物' if category=='locations' else '属性','占比' if category=='locations' else '变化'],'rows':[[tr(k,'enemies' if category=='locations' else None),tr(v)] for k,v in detail['resistances']]})
    for link in detail['links']:
     path=link['href'].split('/');key=path[2] if len(path)>3 else '';key='weapons' if key=='weapons' else 'artifacts' if key=='artifacts' else key
     if key in ['enemies','locations','quests','weapons','armor','artifacts','cosmetics']:record['related'].append({'category':key,'id':path[-1],'name':tr(link['name'])})
@@ -124,6 +138,11 @@ for record in categories['armor-sets']:
 all_records={r['id']:(category,r['name']) for category,records in categories.items() if category not in ['unique','bosses'] for r in records}
 for records in categories.values():
  for record in records:
+  native=native_match(record['categoryKey'],record.get('english',''))
+  if not record.get('description') and native and native[1]:
+   _,description,namespace,key=native
+   record['description']=description
+   provenance[record['categoryKey']+':'+record['name']+' description']={'namespace':namespace,'key':key.removesuffix('_Name')+'_Description','zh':description}
   for link in record.get('related',[]):
    if link['id'] in all_records and link['category']=='artifacts':
     link['category'],link['name']=all_records[link['id']]
@@ -132,7 +151,7 @@ index={'version':1,'captured_at':'2026-10-10','categories':[],'search':[]}
 for category,label in names.items():
  records=categories[category]
  for record in records:
-  record['detail']='./data/database/items/'+category+'-'+record['id']+'.json?v=db1';write(OUT/'items'/(category+'-'+record['id']+'.json'),record)
+  record['detail']='./data/database/items/'+category+'-'+record['id']+'.json?v=modern1';write(OUT/'items'/(category+'-'+record['id']+'.json'),record)
  lightweight=[{k:v for k,v in r.items() if k not in ['tables','tiers','related','objectives']} for r in records]
  write(OUT/(category+'.json'),{'items':lightweight})
  index['categories'].append({'id':category,'name':label,'count':len(records),'image':next((r['image'] for r in records if r['image']),''),'description':'未实装的文件预留定义' if category=='upcoming' else '基础参数、详细机制与相关资料'})

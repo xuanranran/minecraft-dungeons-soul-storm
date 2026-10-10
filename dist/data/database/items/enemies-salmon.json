@@ -1,1 +1,0 @@
-{"id":"salmon","slug":"salmon","name":"鲑鱼","english":"Salmon","kind":"enemy","categoryKey":"enemies","dbKind":"reference","image":"./images/database/renders-thumb-salmon.png","description":"","parameters":[["速度","200"]],"tables":[],"related":[],"source":"https://www.dungeons.tools/2/enemies/salmon","subtype":"被动生物","detail":"./data/database/items/enemies-salmon.json?v=db1"}

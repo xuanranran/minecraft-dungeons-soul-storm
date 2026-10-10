@@ -1,23 +1,23 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
-import {itemsForRegion,displayedRarity,displayedParameters,displayedTables,categories} from './dist/drops.mjs';
-import {regionImages} from './dist/region-icons.mjs';
-const data=JSON.parse(fs.readFileSync(new URL('./dist/equipment.json',import.meta.url)));
+import {itemsForRegion,displayedRarity,displayedParameters,displayedTables,categories} from './src/drops.mjs';
+import {regionImages} from './src/region-icons.mjs';
+const data=JSON.parse(fs.readFileSync(new URL('./public/equipment.json',import.meta.url)));
 const nativeEffects=JSON.parse(fs.readFileSync(new URL('./native-effect-images.json',import.meta.url))).images;
 assert.equal(nativeEffects.length,105);
 const nativeKinds=new Map(nativeEffects.map(icon=>[icon.file,icon.kind]));
-for(const icon of nativeEffects){assert.equal(createHash('sha256').update(fs.readFileSync(new URL(`./dist/${icon.file}`,import.meta.url))).digest('hex'),icon.sha256);assert.equal(icon.kind,icon.native_package.includes('/Enchantments/')?'enchantment':'effect');}
+for(const icon of nativeEffects){assert.equal(createHash('sha256').update(fs.readFileSync(new URL(`./public/${icon.file}`,import.meta.url))).digest('hex'),icon.sha256);assert.equal(icon.kind,icon.native_package.includes('/Enchantments/')?'enchantment':'effect');}
 for(const item of data.items)for(const entry of [...item.fixed_effects,...item.tables.flatMap(table=>table.rows)])if(entry.image){assert.equal(entry.native_icon_kind,nativeKinds.get(entry.image));}
-const rotation=JSON.parse(fs.readFileSync(new URL('./dist/rotation.json',import.meta.url)));
+const rotation=JSON.parse(fs.readFileSync(new URL('./public/rotation.json',import.meta.url)));
 assert.equal(data.items.length,272);
 assert.ok(!JSON.stringify(data).includes('https://'));
 assert.equal(new Set(data.items.map(i=>i.id)).size,272);
-for(const i of data.items){assert.ok(fs.existsSync(new URL(`./dist/${i.image}`,import.meta.url)));assert.ok(i.drops.length)}
-for(const i of data.items)for(const effect of i.fixed_effects){assert.ok(effect.image?.startsWith('./images/effects/'));assert.ok(fs.existsSync(new URL(`./dist/${effect.image}`,import.meta.url)));}
-for(const image of Object.values(regionImages))assert.ok(fs.existsSync(new URL(`./dist/${image}`,import.meta.url)));
+for(const i of data.items){assert.ok(fs.existsSync(new URL(`./public/${i.image}`,import.meta.url)));assert.ok(i.drops.length)}
+for(const i of data.items)for(const effect of i.fixed_effects){assert.ok(effect.image?.startsWith('./images/effects/'));assert.ok(fs.existsSync(new URL(`./public/${effect.image}`,import.meta.url)));}
+for(const image of Object.values(regionImages))assert.ok(fs.existsSync(new URL(`./public/${image}`,import.meta.url)));
 for(const name of rotation.places)assert.ok(regionImages[name]);
-for(const item of data.items)for(const table of item.tables)for(const row of table.rows)if(row.image)assert.ok(fs.existsSync(new URL(`./dist/${row.image}`,import.meta.url)));
+for(const item of data.items)for(const table of item.tables)for(const row of table.rows)if(row.image)assert.ok(fs.existsSync(new URL(`./public/${row.image}`,import.meta.url)));
 const regions=[...new Set(data.items.flatMap(i=>i.drops.map(d=>d['区域'])))];
 for(const region of regions){const all=itemsForRegion(data.items,region);assert.ok(all.every(i=>i.rarity==='独特'||i.category==='法器'));const combined=['武器','盔甲部件','法器'].flatMap(c=>itemsForRegion(data.items,region,c));assert.equal(all.length,combined.length);assert.deepEqual(new Set(all.map(i=>i.id)),new Set(combined.map(i=>i.id)));assert.deepEqual(new Set(all.map(i=>i.id)),new Set(data.items.filter(i=>(i.rarity==='独特'||i.category==='法器')&&i.drops.some(d=>d['区域']===region)).map(i=>i.id)))}
 assert.equal(itemsForRegion(data.items,'不存在的地区').length,0);

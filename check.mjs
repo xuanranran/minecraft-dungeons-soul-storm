@@ -1,9 +1,9 @@
 import fs from 'node:fs';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
-const html=fs.readFileSync(new URL('./dist/index.html',import.meta.url),'utf8');
-const settings=JSON.parse(fs.readFileSync(new URL('./dist/rotation.json',import.meta.url),'utf8'));
-const {createRotation}=await import('./dist/schedule.mjs');
+const html=fs.readFileSync(new URL('./src/index.html',import.meta.url),'utf8');
+const settings=JSON.parse(fs.readFileSync(new URL('./public/rotation.json',import.meta.url),'utf8'));
+const {createRotation}=await import('./src/schedule.mjs');
 const R=createRotation(settings),a=R.defaultAnchor;
 assert.equal(R.current(a,0,Date.parse('2026-10-07T11:20:00+08:00')).index,0);
 assert.equal(R.current(a,0,a).active,true);assert.equal(R.countdown(R.current(a,0,a).target,a),'20:00');

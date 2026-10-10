@@ -1,0 +1,1 @@
+{"id":"ocelot","slug":"ocelot","name":"豹猫","english":"Ocelot","kind":"enemy","categoryKey":"enemies","dbKind":"reference","image":"./images/database/renders-thumb-ocelot.png","description":"","parameters":[["速度","130"]],"tables":[],"related":[],"source":"https://www.dungeons.tools/2/enemies/ocelot","subtype":"被动生物","detail":"./data/database/items/enemies-ocelot.json?v=modern1"}

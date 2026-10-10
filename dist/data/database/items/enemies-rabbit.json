@@ -1,1 +1,0 @@
-{"id":"rabbit","slug":"rabbit","name":"兔子","english":"Rabbit","kind":"enemy","categoryKey":"enemies","dbKind":"reference","image":"./images/database/renders-thumb-rabbit.png","description":"","parameters":[["速度","200"]],"tables":[],"related":[],"source":"https://www.dungeons.tools/2/enemies/rabbit","subtype":"被动生物","detail":"./data/database/items/enemies-rabbit.json?v=db1"}
