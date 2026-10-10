@@ -23,7 +23,7 @@ export function setupDrops(){
  const mobile=matchMedia('(max-width:600px)');
  const layoutCards=()=>{const cards=[...grid.querySelectorAll('.drop-item')].sort((a,b)=>Number(a.style.order)-Number(b.style.order));if(mobile.matches){grid.replaceChildren(...cards);return}const columns=[el('div','drops-column'),el('div','drops-column')];cards.forEach((card,index)=>columns[index%2].append(card));grid.replaceChildren(...columns)};
  mobile.addEventListener('change',layoutCards);
- const load=()=>dataPromise??=(fetch('./equipment.json?v=itemscale4').then(r=>{if(!r.ok)throw Error('无法读取装备数据');return r.json()}).catch(e=>{dataPromise=null;throw e}));
+ const load=()=>dataPromise??=(fetch('./equipment.json?v=smalleffects5').then(r=>{if(!r.ok)throw Error('无法读取装备数据');return r.json()}).catch(e=>{dataPromise=null;throw e}));
  async function render(){
   const target=region,selected=category;grid.replaceChildren();status.textContent='正在读取掉落物品…';
   try{const data=await load();if(region!==target||category!==selected||!dialog.open)return;
@@ -47,6 +47,7 @@ export function setupDrops(){
     for(const table of displayedTables(item)){if(table.columns.includes('区域')||table.title==='属性 / 数值')continue;
      const section=el('details','drop-extra'),heading=el('summary','',table.title.replace(item.name,''));section.append(heading);
      if(table.title==='使用附魔效果')section.classList.add('drop-use-effects');
+     if(table.title.includes('可能出现'))section.classList.add('drop-possible-effects');
      for(const row of table.rows){const entry=el('div','drop-entry'),fields=Object.entries(row).filter(([key])=>!['image','native_icon_kind','description','levels','effect_levels','ungraded_effect'].includes(key)),levelData=row.effect_levels?.filter(level=>level.level!=='独特'||level.effect.trim()!==row.effect_levels.find(tier=>tier.level==='III')?.effect.trim())??row.levels;
       let copy=entry;
       if(row.image){entry.classList.add('drop-enchantment-card');const icon=nativeIcon(row,'drop-list-icon',table.title.includes('可用附魔'));copy=el('div','drop-enchantment-copy');copy.append(el('strong','',fields[0][1]));entry.append(icon,copy);fields.shift();}
