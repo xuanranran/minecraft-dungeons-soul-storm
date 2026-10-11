@@ -155,13 +155,23 @@ for records in categories.values():
   for link in record.get('related',[]):
    if link['id'] in all_records and link['category']=='artifacts':
     link['category'],link['name']=all_records[link['id']]
+supplement=SOURCE/'native-supplement.json'
+if supplement.exists():
+ patches=read(supplement)['records']
+ for category,records in categories.items():
+  for record in records:
+   patch=patches.get(('enemies' if category=='bosses' else category)+':'+record['id'])
+   if patch:
+    record['tables']=[t for t in record.get('tables',[]) if not t.get('native')]+patch['tables']
+    record['native']=patch['native']
+    if patch.get('image'):record['image']=patch['image']
 names={'weapons':'武器','armor':'盔甲','armor-sets':'盔甲套装','artifacts':'法器','talismans':'护身符','enchantments':'附魔书','effects':'装备效果','statuses':'状态','unique':'独特物品','enemies':'生物','bosses':'首领','locations':'地点','quests':'任务','cosmetics':'装饰','upcoming':'预留内容'}
 index={'version':1,'captured_at':'2026-10-10','categories':[],'search':[],'aliases':aliases}
 for category,label in names.items():
  records=categories[category]
  for record in records:
-  record['detail']='./data/database/items/'+category+'-'+record['id']+'.json?v=modern1';write(OUT/'items'/(category+'-'+record['id']+'.json'),record)
- lightweight=[{k:v for k,v in r.items() if k not in ['tables','tiers','related','objectives']} for r in records]
+  record['detail']='./data/database/items/'+category+'-'+record['id']+'.json?v='+('native3' if record.get('native') else 'modern1');write(OUT/'items'/(category+'-'+record['id']+'.json'),record)
+ lightweight=[{k:v for k,v in r.items() if k not in ['tables','tiers','related','objectives','native']} for r in records]
  write(OUT/(category+'.json'),{'items':lightweight})
  index['categories'].append({'id':category,'name':label,'count':len(records),'image':'./images/native-tooltip/enchantment-swirl.png' if category=='enchantments' else next((r['image'] for r in records if r['image']),''),'description':'未实装的文件预留定义' if category=='upcoming' else '基础参数、详细机制与相关资料'})
  index['search'] += [{k:r[k] for k in ['id','name','english','image','categoryKey','kind','unique','subtype','iconKind','description'] if k in r} for r in records]

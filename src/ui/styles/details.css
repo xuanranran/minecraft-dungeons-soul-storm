@@ -20,3 +20,10 @@
 :root[data-theme=light] .database-dialog.explorer-dialog .database-related-name:hover{color:#164780;background:transparent;border-color:transparent}
 :root[data-theme=light] .database-dialog.explorer-dialog .drop-location:hover{color:var(--text);background:var(--track);border-color:var(--input-hover)}
 :root[data-theme=light] .database-dialog .database-detail-eyebrow{color:var(--accent)}
+
+.database-dialog .database-native-section{min-width:0;border-top:1px solid var(--line);padding-top:10px}
+.database-dialog .database-native-section>summary{padding:8px 0;cursor:pointer;color:var(--text);font-weight:600;line-height:1.5}
+.database-dialog .database-native-section>.meta{margin:6px 0 12px;color:var(--muted);line-height:1.6}
+.database-dialog .database-native-section .database-table-wrap{max-width:100%;overflow-x:auto}
+.database-dialog .database-native-section td{overflow-wrap:anywhere;min-width:65px;vertical-align:top}
+.database-dialog .database-native-section th{white-space:nowrap}
