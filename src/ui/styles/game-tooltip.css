@@ -8,6 +8,7 @@
 .equipment-tooltip.native-game-tooltip{
  --game-ui-scale:.5;--tip-inset:calc(var(--game-native-inset)*var(--game-ui-scale));
  --tip-gap:calc(32px*var(--game-ui-scale));
+ --tip-notch:calc(var(--game-native-notch)*var(--game-ui-scale));
  position:fixed;margin:0;inset:auto;padding:0;border:0;border-radius:0;overflow:visible;
  background:transparent;color:#eee;isolation:isolate;pointer-events:auto;
  box-shadow:0 8px 24px #000b;
@@ -16,9 +17,9 @@
 }
 .equipment-tooltip.native-game-tooltip::before{
  content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;
- background:linear-gradient(#0009,#0009),var(--game-tip-panel);
- border:2px solid var(--game-tip-panel-shine);box-shadow:inset 0 0 0 1px #000;
- clip-path:polygon(0 4px,4px 4px,4px 0,calc(100% - 4px) 0,calc(100% - 4px) 4px,100% 4px,100% calc(100% - 4px),calc(100% - 4px) calc(100% - 4px),calc(100% - 4px) 100%,4px 100%,4px calc(100% - 4px),0 calc(100% - 4px));
+ background:var(--game-tip-fill);backdrop-filter:blur(calc(var(--game-native-blur)*var(--game-ui-scale)));
+ border:2px solid var(--game-tip-panel);border-top-color:var(--game-tip-panel-shine);box-shadow:inset 0 0 0 1px #000;
+ clip-path:polygon(0 var(--tip-notch),var(--tip-notch) var(--tip-notch),var(--tip-notch) 0,calc(100% - var(--tip-notch)) 0,calc(100% - var(--tip-notch)) var(--tip-notch),100% var(--tip-notch),100% calc(100% - var(--tip-notch)),calc(100% - var(--tip-notch)) calc(100% - var(--tip-notch)),calc(100% - var(--tip-notch)) 100%,var(--tip-notch) 100%,var(--tip-notch) calc(100% - var(--tip-notch)),0 calc(100% - var(--tip-notch)));
 }
 .native-game-tooltip .equipment-tip-scroll{max-height:inherit;overflow:auto;overscroll-behavior:contain;padding:0 0 var(--tip-inset);scrollbar-width:thin;scrollbar-color:#65747d #08131b}
 .native-game-tooltip .equipment-tip-strip{
@@ -96,14 +97,67 @@
 .native-game-tooltip>.equipment-tip-render.native-book .native-enchantment img{transform:scale(1.589937)}
 .native-game-tooltip>.equipment-tip-render:not(.native-book)>.native-indicator{width:100%;height:100%}
 .native-game-tooltip .equipment-tip-loading{padding:var(--tip-inset);color:#adb8c2}
-.native-game-tooltip .equipment-tip-rarity.equipment-tip-talisman-level{font:400 calc(30px*var(--game-ui-scale))/1.2 'Dungeons Five',sans-serif;color:#f6bc0f;background:transparent;border:0;box-shadow:none;padding:0}
+
+/* W_Tooltip row 1 is TalismanXP, row 2 is Title. The grade sits on
+   layer 1 over both ribbons; offsets and padding come from cooked slots.
+   There is no rarity badge or equipment strip in this item variant. */
+.native-game-tooltip .equipment-tip-scroll[data-kind=talisman] .equipment-tip-top{padding:var(--tip-inset) var(--tip-inset) 0}
+.native-game-tooltip .equipment-tip-scroll[data-kind=talisman] .equipment-tip-name{margin:0;padding-right:calc(128px*var(--game-ui-scale))}
+.native-game-tooltip .equipment-tip-talisman-xp{
+ display:flex;align-items:center;isolation:isolate;width:max-content;max-width:100%;
+ padding:calc(var(--game-talisman-module-top)*var(--game-ui-scale)) calc(var(--game-talisman-module-right)*var(--game-ui-scale)) calc(var(--game-talisman-module-bottom)*var(--game-ui-scale)) calc(var(--game-talisman-module-left)*var(--game-ui-scale));
+ font-weight:400;line-height:1;color:#eee;--talisman-grade-color:var(--game-talisman-bronze);
+}
+.native-game-tooltip .equipment-tip-talisman-xp[data-level="2"]{--talisman-grade-color:var(--game-talisman-silver)}
+.native-game-tooltip .equipment-tip-talisman-xp[data-level="3"]{--talisman-grade-color:var(--game-talisman-gold)}
+.native-game-tooltip .equipment-tip-talisman-grade-ribbon{display:flex;align-items:center;position:relative;z-index:var(--game-talisman-grade-layer);flex:none}
+.native-game-tooltip .equipment-tip-talisman-label{
+ margin-right:calc(var(--game-talisman-overlap)*var(--game-ui-scale));
+ padding:calc(var(--game-talisman-ribbon-top)*var(--game-ui-scale)) calc(var(--game-talisman-ribbon-right)*var(--game-ui-scale)) calc(var(--game-talisman-ribbon-bottom)*var(--game-ui-scale)) calc(var(--game-talisman-ribbon-left)*var(--game-ui-scale));
+ background:linear-gradient(90deg,transparent,var(--game-talisman-label) 22%,var(--game-talisman-label));
+ box-shadow:0 calc(4px*var(--game-ui-scale)) #0008;
+}
+.native-game-tooltip .equipment-tip-talisman-label>span{
+ display:block;white-space:nowrap;
+ padding:calc(var(--game-talisman-label-top)*var(--game-ui-scale)) calc(var(--game-talisman-label-right)*var(--game-ui-scale)) calc(var(--game-talisman-label-bottom)*var(--game-ui-scale)) calc(var(--game-talisman-label-left)*var(--game-ui-scale));
+}
+.native-game-tooltip .equipment-tip-talisman-grade{
+ display:grid;place-items:center;position:relative;isolation:isolate;z-index:var(--game-talisman-text-layer);
+ width:calc(80px*var(--game-ui-scale));height:calc(80px*var(--game-ui-scale));flex:none;
+ font:400 calc(var(--game-native-body)*var(--game-ui-scale))/1 'Dungeons Five',sans-serif;
+ color:var(--talisman-grade-color);text-shadow:0 calc(4px*var(--game-ui-scale)) #0008;
+ filter:drop-shadow(0 calc(8px*var(--game-ui-scale)) #0004);
+}
+.native-game-tooltip .equipment-tip-talisman-grade::before,.native-game-tooltip .equipment-tip-talisman-grade::after{
+ content:'';position:absolute;z-index:-1;inset:calc((1 - var(--game-talisman-hex-scale))*50%);
+ clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);background:var(--talisman-grade-color);
+}
+.native-game-tooltip .equipment-tip-talisman-grade::after{
+ inset:calc((1 - var(--game-talisman-hex-scale))*50% + 3px*var(--game-ui-scale));
+ background:linear-gradient(#0007,#0003),var(--talisman-grade-color);
+}
+.native-game-tooltip .equipment-tip-talisman-max{
+ position:relative;left:calc(var(--game-talisman-max-nudge)*var(--game-ui-scale));flex:none;white-space:nowrap;color:#654a21;text-shadow:none;
+ padding:calc(var(--game-talisman-ribbon-top)*var(--game-ui-scale)) calc(var(--game-talisman-max-label-right)*var(--game-ui-scale)) calc(var(--game-talisman-ribbon-bottom)*var(--game-ui-scale)) calc(var(--game-talisman-max-label-left)*var(--game-ui-scale));
+}
+.native-game-tooltip .equipment-tip-talisman-max::before{
+ content:'';position:absolute;z-index:-1;inset:0 0 0 calc(var(--game-talisman-max-bg-offset)*var(--game-ui-scale));
+ background:var(--game-talisman-max);box-shadow:0 calc(4px*var(--game-ui-scale)) #0008;
+ clip-path:polygon(0 0,100% 0,100% 20%,calc(100% - 8px*var(--game-ui-scale)) 20%,calc(100% - 8px*var(--game-ui-scale)) 80%,100% 80%,100% 100%,0 100%);
+}
 
 /* Phone taps keep the native art and type scale, with a compact heading so
    the badge-only row no longer leaves an empty band above the item name. */
+.native-game-tooltip[data-interaction=tap]{--tip-inset:calc(48px*var(--game-ui-scale));--tip-gap:calc(24px*var(--game-ui-scale))}
+.native-game-tooltip[data-interaction=tap]>.equipment-tip-render{width:calc(192px*var(--game-ui-scale));height:calc(192px*var(--game-ui-scale));top:calc(-32px*var(--game-ui-scale));right:calc(-32px*var(--game-ui-scale))}
+.native-game-tooltip[data-interaction=tap] .equipment-tip-top{padding-right:calc(208px*var(--game-ui-scale))}
+.native-game-tooltip[data-interaction=tap] .equipment-tip-scroll[data-kind=talisman] .equipment-tip-top{padding-top:calc(80px*var(--game-ui-scale));padding-right:var(--tip-inset)}
+.native-game-tooltip[data-interaction=tap] .equipment-tip-scroll[data-kind=talisman] .equipment-tip-name{padding-right:0}
+.native-game-tooltip[data-interaction=tap] .equipment-tip-scroll[data-kind=talisman]+.equipment-tip-render{top:calc(-96px*var(--game-ui-scale))}
 .native-game-tooltip[data-interaction=tap] .equipment-tip-name{text-wrap:balance}
-.native-game-tooltip[data-interaction=tap] .equipment-tip-scroll:not(:is([data-kind=enchantment],[data-kind=effect])) .equipment-tip-top{display:flex;flex-direction:column;padding-top:calc(24px*var(--game-ui-scale))}
-.native-game-tooltip[data-interaction=tap] .equipment-tip-scroll:not(:is([data-kind=enchantment],[data-kind=effect])) .equipment-tip-name{order:0;margin-bottom:calc(16px*var(--game-ui-scale))}
+.native-game-tooltip[data-interaction=tap] .equipment-tip-scroll:not(:is([data-kind=enchantment],[data-kind=effect],[data-kind=talisman])) .equipment-tip-top{display:flex;flex-direction:column;padding-top:calc(24px*var(--game-ui-scale))}
+.native-game-tooltip[data-interaction=tap] .equipment-tip-scroll:not(:is([data-kind=enchantment],[data-kind=effect],[data-kind=talisman])) .equipment-tip-name{order:0;margin-bottom:calc(16px*var(--game-ui-scale))}
 .native-game-tooltip[data-interaction=tap] .equipment-tip-kind-row{order:1;margin-bottom:calc(16px*var(--game-ui-scale))}
 .native-game-tooltip[data-interaction=tap] .equipment-tip-weapon-stats,.native-game-tooltip[data-interaction=tap] .equipment-tip-stats{order:2}
 .native-game-tooltip[data-interaction=tap] .equipment-tip-weapon-stats{display:flex;flex-wrap:wrap;column-gap:calc(32px*var(--game-ui-scale));margin-right:calc(-208px*var(--game-ui-scale))}
-.native-game-tooltip[data-interaction=tap] .equipment-tip-scroll:not(:is([data-kind=enchantment],[data-kind=effect]))>.equipment-tip-description{margin-top:calc(24px*var(--game-ui-scale))}
+.native-game-tooltip[data-interaction=tap] .equipment-tip-scroll:not(:is([data-kind=enchantment],[data-kind=effect],[data-kind=talisman]))>.equipment-tip-description{margin-top:calc(24px*var(--game-ui-scale))}

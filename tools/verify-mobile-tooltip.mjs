@@ -49,6 +49,36 @@ try{
   await page.goto(base+'#builds');await ready('builds');const gear=page.locator('.tool-gear-button').first();
   await tap(gear);await bounds();assert.equal(await tip.locator('.equipment-tip-strip').innerText(),'已装备');assert.equal(await tip.locator('.equipment-tip-enchant-label').innerText(),'已附魔');assert.ok(await tip.locator('.equipment-tip-effect').count()>=2);assert.equal(await page.locator('.database-dialog[open]').count(),0);
   await page.screenshot({path:'artifacts/game-tooltip/mobile-gear-'+width+'.png'});await dismiss();
+  // Talisman taps keep the same ribbon layers as desktop, without an equipped
+  // strip. A passive talisman must show only the selected level's contribution.
+  for(const slug of ['tasty-bone','tendrils-of-the-sprout']){
+   await page.goto(base+'#database&category=talismans');await ready('database');
+   await page.getByLabel('搜索数据库',{exact:true}).fill(slug==='tasty-bone'?'美味骨头':'浮须触手');
+   await tap(page.locator('.database-item[data-id='+slug+'] .database-item-copy'));
+   await bounds();assert.equal(await tip.locator('.equipment-tip-strip').isVisible(),false);
+   assert.equal(await tip.locator('.equipment-tip-talisman-grade').innerText(),'1');
+   assert.equal(await tip.locator('.equipment-tip-talisman-max').count(),0);
+   assert.equal(await tip.locator('.equipment-tip-description').count(),slug==='tasty-bone'?1:0);
+   await page.screenshot({path:'artifacts/game-tooltip/mobile-'+slug+'-'+width+'.png'});
+   await dismiss();
+  }
+  await page.goto(base+'#builds');await ready('builds');
+  await tap(page.getByRole('button',{name:'查看浮须触手详情',exact:true}).first());await bounds();
+  assert.equal(await tip.locator('.equipment-tip-talisman-grade').innerText(),'3');
+  assert.equal(await tip.locator('.equipment-tip-talisman-max').innerText(),'最高等级');
+  assert.equal(await tip.locator('.equipment-tip-strip').isVisible(),false);assert.match(await tip.innerText(),/75%[\s\S]*40%/);
+  const levelLabel=await tip.locator('.equipment-tip-talisman-label').boundingBox(),itemArt=await tip.locator(':scope > .equipment-tip-render').boundingBox();
+  assert.ok(itemArt.y+itemArt.height<=levelLabel.y+1,'mobile item render must not cover the level ribbon');
+  assert.equal(await tip.evaluate(n=>getComputedStyle(n,'::before').backgroundColor),'rgba(0, 0, 0, 0.5)');
+  assert.match(await tip.evaluate(n=>getComputedStyle(n,'::before').backdropFilter),/^blur\(/);
+  await page.screenshot({path:'artifacts/game-tooltip/mobile-talisman-III-'+width+'.png'});await dismiss();
+  // Cached navigation within one category must not dismiss the new deep-link
+  // preview after it opens. These records also exercise an off-screen anchor.
+  for(const slug of ['tasty-bone','tendrils-of-the-sprout']){
+   await page.goto(base+'#database&category=talismans&item='+slug);await ready('database');await tip.locator('.equipment-tip-name').waitFor();
+   await bounds();assert.equal(await tip.locator('.equipment-tip-talisman-grade').innerText(),'1');await dismiss();
+  }
+  await page.goto(base+'#builds');await ready('builds');
   await tap(gear);await page.keyboard.press('Escape');await tip.waitFor({state:'hidden'});assert.equal(await gear.getAttribute('aria-describedby'),null);
   await tap(gear);await page.evaluate(()=>scrollBy(0,80));await tip.waitFor({state:'hidden'});
   // Read-only item inspection inside a parent dialog must keep that dialog open.

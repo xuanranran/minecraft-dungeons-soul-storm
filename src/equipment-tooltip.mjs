@@ -2,7 +2,7 @@ import {loadCatalogue,loadRules,loadLoadouts,loadWeapons} from './explorer-data.
 import {context,decodeBuild,weaponMetrics,rarities,kinds,parts} from './explorer-model.mjs';
 import './ui/styles/game-tooltip.css';
 
-const targets=new WeakMap();let installed=false,active=null,timer,serial=0,tip,described,anchorRect,pointer,tapMode=false;
+const targets=new WeakMap();let installed=false,active=null,activeURL=null,timer,serial=0,tip,described,anchorRect,pointer,tapMode=false;
 const nativeKinds=new Set(['melee','ranged','armor','artifact','talisman','enchantment','effect']);
 const selectionControls='.tool-slot,.tool-inline-choice,.tool-picker-option';
 export const usesTapEquipmentTooltip=()=>matchMedia('(max-width:760px), (hover:none), (pointer:coarse)').matches;
@@ -10,7 +10,7 @@ const node=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.classNa
 const img=(src,cls)=>{const n=node('img',cls);n.src=src;n.alt='';return n;};
 let factsPromise;
 const facts=()=>factsPromise??=Promise.all([loadCatalogue(),loadRules(),loadLoadouts(),loadWeapons()]).then(([c,r,l,w])=>({ctx:context(c,r,l),weapons:w})).catch(error=>{factsPromise=null;throw error;});
-export function hideEquipmentTooltip(){clearTimeout(timer);serial++;active=null;pointer=null;tapMode=false;if(described){described.removeAttribute('aria-describedby');described=null;}if(tip?.matches(':popover-open'))tip.hidePopover();if(tip)tip.hidden=true;}
+export function hideEquipmentTooltip(){clearTimeout(timer);serial++;active=null;activeURL=null;pointer=null;tapMode=false;if(described){described.removeAttribute('aria-describedby');described=null;}if(tip?.matches(':popover-open'))tip.hidePopover();if(tip)tip.hidden=true;}
 function eligible(target,focusTarget,tap=false){const rect=target.getBoundingClientRect(),dialog=[...document.querySelectorAll('dialog[open]')].at(-1);return target.isConnected&&rect.width>0&&rect.height>0&&!target.closest('[hidden]')&&(!dialog||target.closest('dialog[open]')===dialog)&&(tap||(tapMode&&active===target)||(focusTarget?focusTarget.matches(':focus-visible'):target.matches(':hover')||(active===target&&!tip?.hidden&&tip?.matches(':hover'))));}
 export function showTapEquipmentTooltip(target,item,equipment={}){
  if(!nativeKinds.has(item.kind))return false;
@@ -42,11 +42,14 @@ function installTooltipListeners(){
  },true);
  document.addEventListener('pointerout',e=>{if(active?.contains(e.target)&&!active.contains(e.relatedTarget))scheduleHide();});
  document.addEventListener('focusout',()=>scheduleHide());
- document.addEventListener('pointerdown',e=>{if(!tip?.contains(e.target)&&!(tapMode&&active?.contains(e.target)))hideEquipmentTooltip();});
+ document.addEventListener('pointerdown',e=>{if(!tip?.contains(e.target)&&!(tapMode&&active!==document.body&&active?.contains(e.target)))hideEquipmentTooltip();});
  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&active){e.preventDefault();e.stopPropagation();hideEquipmentTooltip();}});
  const resize=()=>{if(tapMode&&active)place(active);else hideEquipmentTooltip();};
  window.addEventListener('resize',resize);window.visualViewport?.addEventListener('resize',resize);window.visualViewport?.addEventListener('scroll',resize);
- window.addEventListener('hashchange',hideEquipmentTooltip);window.addEventListener('popstate',hideEquipmentTooltip);
+ // A cached deep link may open its new preview before this navigation listener
+ // runs. Dismiss the old route's preview without closing the newly opened one.
+ const dismissPreviousRoute=()=>{if(activeURL!==location.href)hideEquipmentTooltip();};
+ window.addEventListener('hashchange',dismissPreviousRoute);window.addEventListener('popstate',dismissPreviousRoute);
  window.addEventListener('blur',hideEquipmentTooltip);document.addEventListener('visibilitychange',()=>{if(document.hidden)hideEquipmentTooltip();});
  new MutationObserver(()=>{if(active&&!eligible(active,described))hideEquipmentTooltip();}).observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['hidden','open']});
  document.addEventListener('scroll',e=>{if(active&&!tip?.contains(e.target)){const r=active.getBoundingClientRect();if(!anchorRect||r.x!==anchorRect.x||r.y!==anchorRect.y)hideEquipmentTooltip();}},true);
@@ -54,8 +57,8 @@ function installTooltipListeners(){
 function scheduleHide(){clearTimeout(timer);if(!tapMode)timer=setTimeout(hideEquipmentTooltip,140);}
 function place(target){
  if(tapMode){
-  const viewport=window.visualViewport,viewWidth=viewport?.width||innerWidth,viewHeight=viewport?.height||innerHeight,x=viewport?.offsetLeft||0,y=viewport?.offsetTop||0,margin=28,gap=32,w=Math.min(480,viewWidth-margin*2),rect=target.getBoundingClientRect();
-  anchorRect=rect;tip.style.width=w+'px';tip.style.setProperty('--game-ui-scale',Math.max(.44,w/960));
+  const viewport=window.visualViewport,viewWidth=viewport?.width||innerWidth,viewHeight=viewport?.height||innerHeight,x=viewport?.offsetLeft||0,y=viewport?.offsetTop||0,margin=28,w=Math.min(480,viewWidth-margin*2),rect=target.getBoundingClientRect(),scale=Math.max(.44,w/960),talisman=tip.querySelector('.equipment-tip-scroll[data-kind=talisman]'),gap=talisman?Math.ceil(96*scale)+8:32;
+  anchorRect=rect;tip.style.width=w+'px';tip.style.setProperty('--game-ui-scale',scale);
   const safeTop=y+margin*2,safeBottom=y+viewHeight-margin;
   // A linked record may be off the current results page. Use a viewport anchor
   // for that case; actual taps always remain attached to the visible card.
@@ -88,7 +91,7 @@ function place(target){
 }
 async function open(target,focusTarget,point,tap=false){
  if(!eligible(target,focusTarget,tap))return;
- clearTimeout(timer);if(active===target&&tapMode===tap){pointer=point||null;place(target);return;}hideEquipmentTooltip();active=target;tapMode=tap;pointer=point||null;const token=++serial,{item}=targets.get(target);let {equipment}=targets.get(target);
+ clearTimeout(timer);if(active===target&&tapMode===tap){pointer=point||null;place(target);return;}hideEquipmentTooltip();active=target;activeURL=location.href;tapMode=tap;pointer=point||null;const token=++serial,{item}=targets.get(target);let {equipment}=targets.get(target);
  if(!tip){tip=node('div','equipment-tooltip native-game-tooltip');tip.id='native-equipment-tooltip';tip.setAttribute('popover','manual');tip.setAttribute('role','tooltip');tip.addEventListener('pointerenter',()=>clearTimeout(timer));tip.addEventListener('pointerleave',scheduleHide);tip.addEventListener('load',()=>{if(active&&!tip.hidden)place(active);},true);new ResizeObserver(()=>{if(active&&!tip.hidden)place(active);}).observe(tip);document.body.append(tip);}
  tip.dataset.interaction=tap?'tap':'hover';tip.replaceChildren(node('div','equipment-tip-strip',equipment.ench?'已装备 · 已附魔':'物品详情'),node('div','equipment-tip-loading',item.name+' · 正在读取…'));
  tip.hidden=false;tip.showPopover();if(focusTarget){described=focusTarget;focusTarget.setAttribute('aria-describedby',tip.id);}place(target);
@@ -115,17 +118,24 @@ export async function createEquipmentCard(item,equipment={}, {nativeTooltip=fals
   const top=node('div','equipment-tip-top'),row=node('div','equipment-tip-kind-row'),badge=node('span','equipment-tip-rarity',rarities[rarity]);badge.dataset.rarity=rarity;
   top.dataset.kind=full.kind;
   row.append(node('span','equipment-tip-kind',full.kind==='enchantment'?'附魔书':[kinds[full.kind],parts[full.slot],full.archetype].filter(Boolean).join(' · ')));if(!isReference)row.append(badge);
-  if(nativeTooltip&&full.kind==='talisman'){badge.textContent=['I','II','III'][level-1];badge.classList.add('equipment-tip-talisman-level');}
   let render=img(full.levels?.[level-1]?.image||full.image,'equipment-tip-render');
   if(nativeTooltip&&isReference){const frame=node('span','equipment-tip-render'+(full.kind==='enchantment'?' native-book':'')),icon=node('span','native-indicator native-'+(full.kind==='enchantment'?'enchantment':'effect'));render.className='';icon.append(render);frame.append(icon);render=frame;}
-  top.append(render,row,node('h3','equipment-tip-name',full.name));
+  top.append(render);
+  if(nativeTooltip&&full.kind==='talisman'){
+   const ribbon=node('div','equipment-tip-talisman-xp'),gradeRibbon=node('div','equipment-tip-talisman-grade-ribbon'),label=node('span','equipment-tip-talisman-label'),grade=node('span','equipment-tip-talisman-grade',level);
+   ribbon.dataset.level=level;gradeRibbon.append(label,grade);label.append(node('span','','等级'));
+   ribbon.append(gradeRibbon);
+   if(level===3)ribbon.append(node('span','equipment-tip-talisman-max','最高等级'));
+   top.append(ribbon);
+  }else top.append(row);
+  top.append(node('h3','equipment-tip-name',full.name));
   const metrics=weapons[full.slug]?weaponMetrics(weapons[full.slug]):[];
   const weaponStats=node('div','equipment-tip-weapon-stats');
   for(const id of ['hits','dps','ammo','shot']){const metric=metrics.find(m=>m.id===id);if(metric){const line=node('div','equipment-tip-stat');line.append(node('span','',metric.name),node('b','',Number(metric.value.toFixed(2)).toLocaleString('zh-CN')));weaponStats.append(line);}}if(weaponStats.childNodes.length)top.append(weaponStats);
   const stats=node('div','equipment-tip-stats');
   for(const [name,value] of Object.entries(!isReference&&!(nativeTooltip&&full.kind==='armor')?full.parameters||{}:{})){const soulCost=['灵魂消耗','灵魂花费'].includes(name),line=node('div','equipment-tip-stat');line.append(node('span','',nativeTooltip&&soulCost?'花费':name));if(nativeTooltip&&full.kind==='artifact'&&(name==='冷却'||soulCost)){const icon=img('./images/native-tooltip/'+(name==='冷却'?'timer':'soul-cost')+'.png','equipment-tip-stat-icon');icon.dataset.metric=name==='冷却'?'timer':'soul-cost';line.append(icon);}line.append(node('b','',nativeTooltip&&full.kind==='artifact'?String(value).replace(/\s*秒$/,''):value));stats.append(line);}if(stats.childNodes.length)top.append(stats);
   const strip=node('div','equipment-tip-strip',equipment.item?'已装备':full.kind==='talisman'?'护身符 · '+['I','II','III'][level-1]+' 级':'物品详情');
-  strip.hidden=nativeTooltip&&!equipment.item;card.replaceChildren(strip,top);
+  strip.hidden=nativeTooltip&&(!equipment.item||full.kind==='talisman');card.replaceChildren(strip,top);
   if(full.description&&full.descriptionOrigin!=='native-level-I-effect'&&!(nativeTooltip&&isReference&&full.tiers?.some(t=>t.text===full.description)))card.append(node('p','equipment-tip-description',full.description));
   if(isReference){
    const list=node('div','equipment-tip-effects equipment-tip-tiers');for(const tier of full.tiers||[]){const line=node('div','equipment-tip-effect');line.append(node('span','equipment-tip-tier',tier.tier),node('span','',tier.text));list.append(line);}card.append(list);
@@ -140,10 +150,10 @@ export async function createEquipmentCard(item,equipment={}, {nativeTooltip=fals
   if(entries.length){const list=node('div','equipment-tip-effects');list.append(node('div','equipment-tip-effects-heading','效果'));
    for(const entry of entries){const info=ctx.rules.effects[entry.effect],line=node('div','equipment-tip-effect');line.dataset.category=info?.category||'';if((full.fixed||[]).includes(entry))line.classList.add('is-fixed');if(info?.image)line.append(img(info.image));else line.append(node('span','equipment-tip-effect-symbol','◇'));line.append(node('span','',entry.text||info?.name));list.append(line);}card.append(list);
   }
-  if(full.kind==='talisman'&&!entries.length)card.append(node('p','equipment-tip-description','此护身符召唤的同伴随等级成长。'));
+  if(!nativeTooltip&&full.kind==='talisman'&&!entries.length)card.append(node('p','equipment-tip-description','此护身符召唤的同伴随等级成长。'));
 
  if(nativeTooltip){
-  const scroll=node('div','equipment-tip-scroll');scroll.dataset.kind=full.kind;scroll.dataset.equipped=String(Boolean(equipment.item));
+  const scroll=node('div','equipment-tip-scroll');scroll.dataset.kind=full.kind;scroll.dataset.equipped=String(Boolean(equipment.item)&&full.kind!=='talisman');
   render.remove();scroll.append(...card.childNodes);card.replaceChildren(scroll,render);
  }
  return card;

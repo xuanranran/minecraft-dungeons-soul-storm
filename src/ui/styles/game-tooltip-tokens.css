@@ -14,3 +14,35 @@
  --game-native-section:45px;
  --game-native-grade:28.5px;
 }
+.equipment-tooltip.native-game-tooltip{
+ --game-native-blur:32px;
+ --game-native-notch:8px;
+ --game-tip-fill:rgb(0 0 0 / 0.5);
+}
+.equipment-tooltip.native-game-tooltip{
+ --game-talisman-bronze:#D87247;
+ --game-talisman-silver:#F9F9F9;
+ --game-talisman-gold:#EACD54;
+ --game-talisman-label:#3C4E5B;
+ --game-talisman-max:#CD9C48;
+ --game-talisman-module-left:15px;
+ --game-talisman-module-top:15px;
+ --game-talisman-module-right:15px;
+ --game-talisman-module-bottom:15px;
+ --game-talisman-ribbon-left:30px;
+ --game-talisman-ribbon-top:10px;
+ --game-talisman-ribbon-right:45px;
+ --game-talisman-ribbon-bottom:10px;
+ --game-talisman-label-left:15px;
+ --game-talisman-label-top:5px;
+ --game-talisman-label-right:10px;
+ --game-talisman-label-bottom:5px;
+ --game-talisman-max-label-left:40px;
+ --game-talisman-max-label-right:20px;
+ --game-talisman-overlap:-40px;
+ --game-talisman-max-nudge:-20px;
+ --game-talisman-max-bg-offset:-10px;
+ --game-talisman-hex-scale:0.8;
+ --game-talisman-grade-layer:1;
+ --game-talisman-text-layer:1;
+}

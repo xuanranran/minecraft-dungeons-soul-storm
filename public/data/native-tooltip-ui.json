@@ -60,6 +60,14 @@
       "sha256": "683040d19ba2125af34965846a0516f3c4da822047a92b91971938cd37d087ff"
     },
     {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Widget/Panel/MI_UI_Panel_BG_Framed_Tooltip.json",
+      "sha256": "985750f906038045ed5e2a0616c80712cf9bab84223cfa43a689ac9bc13bf78c"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Widget/Panel/TooltipContentPanel/MI_UI_Tooltip_UpperPanel.json",
+      "sha256": "6f9bf1f5a4abb3a66ba7477996c2709e73d74aacde6a151cf9f8313a97af7c7b"
+    },
+    {
       "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Typography/TextStyles/Style_Body_Text.json",
       "sha256": "4ee5391606807a419525896b752bf22e4fffba4a201833dfe467fd97481036eb"
     },
@@ -74,6 +82,50 @@
     {
       "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Typography/TextStyles/Custom_Variants/Style_EnchantmentLevelIndicator.json",
       "sha256": "93b85501342ea1c85706369bbf94a3b21ece3c10462afe1b1de743c3a565294c"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Widget/Tooltip/Modules/W_TooltipModule_TalismanXPBar.json",
+      "sha256": "bb90a6df62582bf8a6ad64cd5f0267b789493546532b563cac8e33b8d3334947"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Widget/Tooltip/Modules/W_LevelGradeRibbon.json",
+      "sha256": "f2af838493d628432e21f04b43794ea82fa55f567fbe21dac528d0827b2c7287"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Widget/Tooltip/Modules/W_LevelGrade.json",
+      "sha256": "279d775dc4a9c60dd71a3b443fbd3a1cd79c699cad3b7b1054551696bab98710"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Widget/Tooltip/Modules/Talisman/MI_Talisman_LevelIcon_Bronze.json",
+      "sha256": "682ee8f4ebcc852ea96d1132b58c6ac8dfc8d0567d2f2ce070b6eb087b75c03f"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Widget/Tooltip/Modules/Talisman/MI_Talisman_LevelIcon_Silver.json",
+      "sha256": "c7abaefdf8735aa9340ae16074fed6392e06e516dd39d368d642745f26b482a8"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Widget/Tooltip/Modules/Talisman/MI_Talisman_LevelIcon_Gold.json",
+      "sha256": "f9a88c794aa071283efae871c9f22320fe4c12796ca209c4834e497ad444ba42"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Widget/Tooltip/Modules/Talisman/MI_UI_Ribbon_Tailsman_LevelBanner.json",
+      "sha256": "197770765b4dde511dddd4208360fbb2c7a8da154a4fed12716b2b452a3a1e6e"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Widget/Tooltip/Modules/Talisman/MI_UI_Ribbon_Tailsman_MaxLevelBanner.json",
+      "sha256": "c0ca7ffeac02e6056263a5ea48d94d7f99077a2a545c2d362da6da2302253e09"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Widget/Tooltip/Modules/Talisman/M_Talisman_LevelIcon.json",
+      "sha256": "d07d542e34f216932d91b0aa475e6c6387df401b5f39df50302fc696193f37a2"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Materials/M_UI_Ribbon.json",
+      "sha256": "332a70eee2ed3ad74789fbd33fb53d2223c0e0f414cecdaef644126ff6385578"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Widget/Tooltip/W_Tooltip.json",
+      "sha256": "ebb32f84b24e6d9b58d0e3fb7534717e04121f420acb3eb2800bcf36f3801d24"
     },
     {
       "source": "textures/Dungeons/Plugins/OreUI/Content/UI/Textures/UI_FX/T_UI_Enchant_Icon_Mask.png",
@@ -108,6 +160,78 @@
       "sha256": "7a6af4d78a3f194953045ab865ca223c463c93d0a9aa494ecf003896a1ee6a91"
     }
   ],
+  "background": {
+    "rendering": "Procedural UI material, not a complete background texture. Browser composition uses native framed-tooltip Fill alpha, content-panel blur and tooltip-border colors.",
+    "fill": {
+      "R": 0.0,
+      "G": 0.0,
+      "B": 0.0,
+      "A": 0.5,
+      "Hex": "7F000000"
+    },
+    "blur": 32.0,
+    "notch": 8.0,
+    "textureReferences": []
+  },
+  "talisman": {
+    "widget": "W_TooltipModule_TalismanXPBar",
+    "colors": {
+      "bronze": "#D87247",
+      "silver": "#F9F9F9",
+      "gold": "#EACD54",
+      "label": "#3C4E5B",
+      "max": "#CD9C48"
+    },
+    "layout": {
+      "modulePadding": {
+        "Left": 15.0,
+        "Top": 15.0,
+        "Right": 15.0,
+        "Bottom": 15.0
+      },
+      "labelPadding": {
+        "Left": 15.0,
+        "Top": 5.0,
+        "Right": 10.0,
+        "Bottom": 5.0
+      },
+      "ribbonPadding": {
+        "Left": 30.0,
+        "Top": 10.0,
+        "Right": 45.0,
+        "Bottom": 10.0
+      },
+      "ribbonOverlap": -40.0,
+      "gradeLayer": 1,
+      "gradeTextLayer": 1,
+      "ribbonLayer": 1,
+      "maxLevelNudge": {
+        "X": -20.0,
+        "Y": 0.0
+      },
+      "maxLevelBackgroundPadding": {
+        "Left": -10.0
+      },
+      "maxLevelTextPadding": {
+        "Left": 40.0,
+        "Right": 20.0
+      },
+      "hexMaterial": {
+        "ShadowOpacity": 0.25,
+        "Scale": 0.8,
+        "Shadow Offset": 0.1,
+        "State_Flash": 0.0
+      },
+      "itemAttachment": {
+        "Column": 1,
+        "RowSpan": 3,
+        "HorizontalAlignment": "EHorizontalAlignment::HAlign_Right",
+        "VerticalAlignment": "EVerticalAlignment::VAlign_Top"
+      }
+    },
+    "runtimeDefaults": "Lazy-image brush size, text-style bindings and material shader graphs are absent from these cooked widget exports. The web hex uses an 80-unit frame and the shared body style; this is a browser adaptation, not an exported bitmap.",
+    "experience": "No player XP is supplied by catalogue/build data; do not invent an XP fill. Level 3 selects the native max-level banner."
+  },
   "adaptation": {
     "nativeContentInset": 80.0,
     "webContentInset": 40.0,

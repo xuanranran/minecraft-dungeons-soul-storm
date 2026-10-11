@@ -48,10 +48,32 @@ try{
  assert.equal(await tip.locator('.is-unenchanted').innerText(),'未附魔');
  await page.screenshot({path:'artifacts/game-tooltip/collection-1440.png'});
  await page.goto(base+'#planner&t1=ocelots-paw.3');await ready('planner');await show(page.locator('[data-slot=t1] .tool-item-picture'));await within();
- assert.equal(await tip.locator('.equipment-tip-talisman-level').innerText(),'III');assert.match(await tip.innerText(),/已装备/);
+ assert.equal(await tip.locator('.equipment-tip-talisman-grade').innerText(),'3');
+ assert.equal(await tip.locator('.equipment-tip-talisman-max').innerText(),'最高等级');
+ assert.equal(await tip.locator('.equipment-tip-strip').isVisible(),false);
  const loadouts=await page.evaluate(async()=>await(await fetch('./data/explorer/loadouts.json')).json());
  for(const effect of loadouts['ocelots-paw'].levels[2].effects)assert.ok((await tip.innerText()).includes(effect.text));
  await page.screenshot({path:'artifacts/game-tooltip/talisman-1440.png'});
+ // Both companion and passive talismans use the native level ribbon, even
+ // when equipped. Grade-specific art/effects must not fall back to level I.
+ for(const [slug,level] of [['tasty-bone',3],['tendrils-of-the-sprout',1],['tendrils-of-the-sprout',2],['tendrils-of-the-sprout',3]]){
+  await page.goto(base+'#planner&t1='+slug+'.'+level);await ready('planner');await show(page.locator('[data-slot=t1] .tool-item-picture'));await within();
+  assert.equal(await tip.locator('.equipment-tip-talisman-grade').innerText(),String(level));
+  assert.equal(await tip.locator('.equipment-tip-talisman-max').count(),level===3?1:0);
+  assert.equal(await tip.locator('.equipment-tip-strip').isVisible(),false);
+  assert.equal(await tip.locator('.equipment-tip-rarity').count(),0);
+  assert.doesNotMatch(await tip.innerText(),/已装备|此护身符召唤的同伴随等级成长|更多操作/);
+  assert.ok((await tip.locator(':scope > .equipment-tip-render').getAttribute('src')).endsWith(slug+'-'+level+'.png'));
+  const ribbon=await tip.locator('.equipment-tip-talisman-xp').boundingBox(),title=await tip.locator('.equipment-tip-name').boundingBox();
+  assert.ok(ribbon.y+ribbon.height<=title.y+1,'level ribbon precedes title');
+  const grey=await tip.locator('.equipment-tip-talisman-label').boundingBox(),hex=await tip.locator('.equipment-tip-talisman-grade').boundingBox();
+  assert.ok(grey.x+grey.width>hex.x,'grade overlays the grey ribbon');
+  for(const effect of loadouts[slug].levels[level-1].effects)assert.ok((await tip.innerText()).includes(effect.text));
+  if(slug==='tasty-bone')assert.equal(await tip.locator('.equipment-tip-description').count(),1);
+  else assert.equal(await tip.locator('.equipment-tip-description').count(),0);
+  await page.screenshot({path:'artifacts/game-tooltip/'+slug+'-'+level+'-1440.png'});
+  if(level===3){const frame=await tip.boundingBox(),art=await tip.locator(':scope > .equipment-tip-render').boundingBox(),x=Math.min(frame.x,art.x)-4,y=Math.min(frame.y,art.y)-4;await page.screenshot({path:'artifacts/game-tooltip/'+slug+'-native-preview.png',clip:{x,y,width:Math.max(frame.x+frame.width,art.x+art.width)-x+4,height:Math.max(frame.y+frame.height,art.y+art.height)-y+4}});}
+ }
  await page.goto(base+'#compare');await ready('compare');await show(page.locator('#compare-panel .tool-item-picture').first());await within();
  for(const [category,slug,query] of [['enchantments','frost-crescent','寒霜斩'],['effects','bounty-hunter','赏金猎人'],['artifacts','conductive-quiver','导电箭袋']]){
   await page.goto(base+'#database&category='+category);await ready('database');await page.getByLabel('搜索数据库',{exact:true}).fill(query);
