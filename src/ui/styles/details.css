@@ -27,3 +27,11 @@
 .database-dialog .database-native-section .database-table-wrap{max-width:100%;overflow-x:auto}
 .database-dialog .database-native-section td{overflow-wrap:anywhere;min-width:65px;vertical-align:top}
 .database-dialog .database-native-section th{white-space:nowrap}
+@media(max-width:600px){
+ .database-dialog .database-native-section table,.database-dialog .database-native-section tbody{display:block;width:100%;min-width:0}
+ .database-dialog .database-native-section thead{position:absolute;clip-path:inset(50%);width:1px;height:1px;overflow:hidden}
+ .database-dialog .database-native-section tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 12px;padding:12px 0;border-bottom:1px solid var(--line)}
+ .database-dialog .database-native-section td{display:block;min-width:0;border:0;padding:0;font-size:13px}
+ .database-dialog .database-native-section td:first-child{grid-column:1/-1}
+ .database-dialog .database-native-section td::before{content:attr(data-label);display:block;font-size:11px;color:var(--muted);margin-bottom:2px}
+}

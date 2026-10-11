@@ -21,6 +21,7 @@ try{for(const theme of ['light','dark'])for(const width of [1440,390,320]){
  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
  const bounds=await dialog.boundingBox();assert.ok(bounds.x>=0&&bounds.x+bounds.width<=width);
  assert.equal(await dialog.evaluate(n=>n.scrollWidth>n.clientWidth+1),false,'dialog horizontal overflow');
+ if(width<600){const cell=abilities.locator('tbody tr').first().locator('td').nth(1);assert.equal(await cell.evaluate(n=>getComputedStyle(n.parentElement).display),'grid');assert.ok((await cell.boundingBox()).width>=95,'mobile fields remain readable');assert.equal(await cell.getAttribute('data-label'),'能力');}
  await dialog.screenshot({path:'artifacts/native-database/zombie-'+theme+'-'+width+'.png'});
  await dialog.getByRole('button',{name:'关闭窗口'}).click();
  await page.goto(base+'#database&category=enemies&item=wolf');
