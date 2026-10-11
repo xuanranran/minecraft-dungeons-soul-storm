@@ -6,3 +6,17 @@
 .drops-dialog .drops-grid{grid-auto-rows:1fr}
 .drops-dialog .drop-item[role=button]{align-content:center;min-height:88px}
 .database-dialog .database-effect-card,.database-dialog .database-fixed-effects .drop-effect-card{width:100%;text-align:left}.database-dialog .database-effect-card:hover,.database-dialog .database-fixed-effects .drop-effect-card:hover{border-color:var(--blue);background:var(--track)}
+
+/* Detail dialogs previously forced dark tokens even on a light page. Inherit
+   the active theme while retaining the same native artwork and row layout. */
+:root[data-theme=light] .database-dialog.explorer-dialog{
+ --text:inherit;--muted:inherit;--surface:inherit;--surface-alt:inherit;
+ --line:inherit;--blue:inherit;--button:inherit;--input:inherit;
+ scrollbar-color:#8293a2 transparent;box-shadow:0 20px 60px #182a4033;
+}
+:root[data-theme=light] .database-dialog::backdrop{background:#182a4040}
+:root[data-theme=light] .database-dialog.explorer-dialog button:hover{background:var(--track);border-color:var(--input-hover)}
+:root[data-theme=light] .database-dialog.explorer-dialog .database-detail-tab[aria-selected=true]{background:#e6effb;border-color:#b8cee9;color:#205b9e}
+:root[data-theme=light] .database-dialog.explorer-dialog .database-related-name:hover{color:#164780;background:transparent;border-color:transparent}
+:root[data-theme=light] .database-dialog.explorer-dialog .drop-location:hover{color:var(--text);background:var(--track);border-color:var(--input-hover)}
+:root[data-theme=light] .database-dialog .database-detail-eyebrow{color:var(--accent)}

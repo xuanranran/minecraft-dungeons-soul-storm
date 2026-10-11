@@ -70,3 +70,13 @@
  #planner-panel .tool-inline-choice .tool-item-picture{width:52px;height:52px}
 }
 @media(prefers-reduced-motion:reduce){#planner-panel .tool-slot .tool-item-picture>img{transition:none}}
+
+/* Native white category icons and selection need contrast on a light page. */
+:root[data-theme=light] #planner-panel{--planner-headerColor:var(--muted);--planner-selectedColor:#31536b}
+:root[data-theme=light] #planner-panel .tool-slot-group>h3>img{filter:brightness(0);opacity:.7}
+:root[data-theme=light] #planner-panel :is(.tool-editor>.tool-section-heading,.tool-config>summary){color:var(--text)}
+:root[data-theme=light] #planner-panel :is(.tool-config,.tool-totals,.tool-editor){border-color:var(--line)}
+:root[data-theme=light] #planner-panel button:not(.tool-slot):not(.tool-inline-choice){background:#eef2f6;border-color:#bcc8d2;color:var(--text);box-shadow:inset 0 1px #fff,inset 0 -2px #182a4014}
+:root[data-theme=light] #planner-panel button:not(.tool-slot):not(.tool-inline-choice):hover{background:#e3ebf2;border-color:#8293a2}
+:root[data-theme=light] #planner-panel .tool-action-row>button:not([class]){background:var(--button);border-color:var(--button);color:#fff}
+:root[data-theme=light] #planner-panel .tool-inline-choice:is(:hover,:focus-visible){background:var(--anchor-bg)}
