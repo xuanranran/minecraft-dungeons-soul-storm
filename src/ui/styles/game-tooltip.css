@@ -161,21 +161,31 @@
  clip-path:polygon(0 0,100% 0,100% 20%,calc(100% - 8px*var(--game-ui-scale)) 20%,calc(100% - 8px*var(--game-ui-scale)) 80%,100% 80%,100% 100%,0 100%);
 }
 
-/* Phone taps keep the native art and type scale, with a compact heading so
-   the badge-only row no longer leaves an empty band above the item name. */
+/* Touch headers use a text column beside the overhanging art. Metrics span
+   both columns below it, with weapon values on separate readable lines. */
 .native-game-tooltip[data-interaction=tap]{--tip-inset:calc(48px*var(--game-ui-scale));--tip-gap:calc(24px*var(--game-ui-scale))}
 .native-game-tooltip[data-interaction=tap]>.equipment-tip-render{width:calc(192px*var(--game-ui-scale));height:calc(192px*var(--game-ui-scale));top:calc(-32px*var(--game-ui-scale));right:calc(-32px*var(--game-ui-scale))}
 .native-game-tooltip[data-interaction=tap] .equipment-tip-scroll[data-equipped=true]+.equipment-tip-render{top:calc(24px*var(--game-ui-scale))}
-.native-game-tooltip[data-interaction=tap] .equipment-tip-scroll:is([data-kind=melee],[data-kind=ranged],[data-kind=armor],[data-kind=artifact]) .equipment-tip-top{min-height:0;padding-right:calc(208px*var(--game-ui-scale))}
-.native-game-tooltip[data-interaction=tap] .equipment-tip-scroll:is([data-kind=melee],[data-kind=ranged],[data-kind=armor],[data-kind=artifact]) .equipment-tip-top>:is(.equipment-tip-weapon-stats,.equipment-tip-stats){margin-right:calc(-208px*var(--game-ui-scale))}
 .native-game-tooltip[data-interaction=tap] .equipment-tip-top{padding-right:calc(208px*var(--game-ui-scale))}
 .native-game-tooltip[data-interaction=tap] .equipment-tip-scroll[data-kind=talisman] .equipment-tip-top{padding-top:calc(80px*var(--game-ui-scale));padding-right:var(--tip-inset)}
 .native-game-tooltip[data-interaction=tap] .equipment-tip-scroll[data-kind=talisman] .equipment-tip-name{padding-right:0}
 .native-game-tooltip[data-interaction=tap] .equipment-tip-scroll[data-kind=talisman]+.equipment-tip-render{top:calc(-96px*var(--game-ui-scale))}
 .native-game-tooltip[data-interaction=tap] .equipment-tip-name{text-wrap:balance}
-.native-game-tooltip[data-interaction=tap] .equipment-tip-scroll:not(:is([data-kind=enchantment],[data-kind=effect],[data-kind=talisman])) .equipment-tip-top{display:flex;flex-direction:column;padding-top:calc(24px*var(--game-ui-scale))}
-.native-game-tooltip[data-interaction=tap] .equipment-tip-scroll:not(:is([data-kind=enchantment],[data-kind=effect],[data-kind=talisman])) .equipment-tip-name{order:0;margin-bottom:calc(16px*var(--game-ui-scale))}
-.native-game-tooltip[data-interaction=tap] .equipment-tip-kind-row{order:1;margin-bottom:calc(16px*var(--game-ui-scale))}
-.native-game-tooltip[data-interaction=tap] .equipment-tip-weapon-stats,.native-game-tooltip[data-interaction=tap] .equipment-tip-stats{order:2}
-.native-game-tooltip[data-interaction=tap] .equipment-tip-weapon-stats{display:flex;flex-wrap:wrap;column-gap:calc(32px*var(--game-ui-scale));margin-right:calc(-208px*var(--game-ui-scale))}
+.native-game-tooltip[data-interaction=tap] .equipment-tip-scroll:is([data-kind=melee],[data-kind=ranged],[data-kind=armor],[data-kind=artifact]) .equipment-tip-top{
+ display:grid;grid-template-columns:minmax(0,1fr) auto calc(112px*var(--game-ui-scale));
+ gap:calc(16px*var(--game-ui-scale));align-items:start;align-content:start;
+ min-height:calc(192px*var(--game-ui-scale));padding:calc(32px*var(--game-ui-scale)) var(--tip-inset) 0;text-align:left;
+}
+.native-game-tooltip[data-interaction=tap] .equipment-tip-scroll:is([data-kind=melee],[data-kind=ranged],[data-kind=armor],[data-kind=artifact]) .equipment-tip-name{
+ grid-column:1;grid-row:1;margin:0;font-size:calc(50px*var(--game-ui-scale));text-wrap:balance;
+}
+.native-game-tooltip[data-interaction=tap] .equipment-tip-scroll:is([data-kind=melee],[data-kind=ranged],[data-kind=armor],[data-kind=artifact]) .equipment-tip-kind-row{
+ grid-column:2;grid-row:1;justify-content:flex-start;align-self:center;margin:0;
+}
+.native-game-tooltip[data-interaction=tap] .equipment-tip-rarity{padding:calc(8px*var(--game-ui-scale)) calc(16px*var(--game-ui-scale)) calc(14px*var(--game-ui-scale))}
+.native-game-tooltip[data-interaction=tap] .equipment-tip-scroll:is([data-kind=melee],[data-kind=ranged],[data-kind=armor],[data-kind=artifact]) .equipment-tip-top>:is(.equipment-tip-weapon-stats,.equipment-tip-stats){
+ grid-column:1/-1;margin:calc(16px*var(--game-ui-scale)) 0 0;gap:calc(12px*var(--game-ui-scale)) calc(32px*var(--game-ui-scale));
+}
+.native-game-tooltip[data-interaction=tap] .equipment-tip-scroll:is([data-kind=melee],[data-kind=ranged]) .equipment-tip-weapon-stats{display:grid;grid-template-columns:1fr}
+.native-game-tooltip[data-interaction=tap] .equipment-tip-scroll:is([data-kind=melee],[data-kind=ranged],[data-kind=armor],[data-kind=artifact]) .equipment-tip-stat{justify-content:flex-start;min-width:0}
 .native-game-tooltip[data-interaction=tap] .equipment-tip-scroll:not(:is([data-kind=enchantment],[data-kind=effect],[data-kind=talisman]))>.equipment-tip-description{margin-top:calc(24px*var(--game-ui-scale))}

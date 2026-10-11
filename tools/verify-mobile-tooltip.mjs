@@ -8,7 +8,7 @@ const base=process.env.STORM_TEST_URL||'http://127.0.0.1:8080/';
 const browser=await chromium.launch({channel:'msedge',headless:true});
 await mkdir('artifacts/game-tooltip',{recursive:true});
 try{
- for(const width of [390,320,844]){
+ for(const width of [390,320,430,844]){
   const page=await browser.newPage({viewport:{width,height:width===844?390:844},isMobile:true,hasTouch:true,colorScheme:'dark'}),errors=[];
   // crypto.randomUUID is absent on the LAN HTTP origin. UI identifiers must
   // remain usable there, not only on localhost/HTTPS.
@@ -28,6 +28,18 @@ try{
    assert.equal(await tip.getAttribute('data-interaction'),'tap');
   };
   const dismiss=async()=>{await page.touchscreen.tap(4,4);await tip.waitFor({state:'hidden'});};
+  const equipmentHeading=async()=>{
+   const title=await tip.locator('.equipment-tip-name').boundingBox(),rarity=await tip.locator('.equipment-tip-rarity').boundingBox(),description=await tip.locator('.equipment-tip-description').boundingBox(),art=await tip.locator(':scope > .equipment-tip-render').boundingBox();
+   assert.ok(Math.abs(title.x-description.x)<1,'title and introduction share the left edge');
+   assert.ok(title.x+title.width<=rarity.x&&rarity.x+rarity.width<=art.x,'rarity fits between the title and the native art');
+   assert.ok(Math.min(title.y+title.height,rarity.y+rarity.height)>Math.max(title.y,rarity.y),'rarity shares the title row');
+   assert.ok(description.y>=art.y+art.height,'introduction starts below the art');
+   const metrics=await tip.locator('.equipment-tip-weapon-stats .equipment-tip-stat').evaluateAll(lines=>lines.map(line=>{const {x,y,height}=line.getBoundingClientRect();return {x,y,height};}));
+   for(let i=0;i<metrics.length;i++){
+    assert.ok(Math.abs(metrics[i].x-title.x)<1,'weapon metrics share the text inset');
+    if(i)assert.ok(metrics[i].y>=metrics[i-1].y+metrics[i-1].height,'weapon metrics use separate lines');
+   }
+  };
   await page.goto(base+'#database&category=enchantments');await ready('database');
   // Tap the text as well as the icon: neither should open the old large dialog.
   const alchemy=page.locator('.database-item[data-id=ancient-alchemy]');
@@ -48,7 +60,13 @@ try{
   }
   await page.goto(base+'#builds');await ready('builds');const gear=page.locator('.tool-gear-button').first();
   await tap(gear);await bounds();assert.equal(await tip.locator('.equipment-tip-strip').innerText(),'已装备');assert.equal(await tip.locator('.equipment-tip-enchant-label').innerText(),'已附魔');assert.ok(await tip.locator('.equipment-tip-effect').count()>=2);assert.equal(await page.locator('.database-dialog[open]').count(),0);
-  await page.screenshot({path:'artifacts/game-tooltip/mobile-gear-'+width+'.png'});await dismiss();
+  await equipmentHeading();await page.screenshot({path:'artifacts/game-tooltip/mobile-gear-'+width+'.png'});await dismiss();
+  // Long armor names and artifact metrics use the same inset without running
+  // into the upper-right native render at narrow or landscape widths.
+  for(const name of ['红石破坏者','神龟曼陀林','蜂群意识安全帽']){
+   await tap(page.getByRole('button',{name:'查看'+name+'详情',exact:true}).first());await bounds();await equipmentHeading();
+   await page.screenshot({path:'artifacts/game-tooltip/mobile-'+name+'-'+width+'.png'});await dismiss();
+  }
   // Talisman taps keep the same ribbon layers as desktop, without an equipped
   // strip. A passive talisman must show only the selected level's contribution.
   for(const slug of ['tasty-bone','tendrils-of-the-sprout']){
