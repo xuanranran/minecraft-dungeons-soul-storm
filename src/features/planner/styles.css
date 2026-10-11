@@ -1,55 +1,72 @@
-#planner-panel .tool-planner-layout{display:grid;grid-template-columns:320px minmax(0,1fr) 280px;gap:28px;align-items:start;margin-top:24px}
-#planner-panel .tool-planner-screen{min-width:0}
-#planner-panel .tool-slots{display:grid;gap:18px;border:0;border-radius:0;padding:0;background:transparent}
-#planner-panel .tool-slot-group>h3{font-size:11px;color:var(--muted);font-weight:500;margin:0 0 8px}
-#planner-panel .tool-slot-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
-#planner-panel .tool-slot{display:flex;flex-direction:column;align-items:center;gap:5px;min-width:0;width:100%;min-height:92px;padding:6px 3px;border:1px solid transparent;border-radius:8px;background:transparent;color:var(--text);text-align:center}
-#planner-panel .tool-slot:hover{background:var(--surface-alt)}
-#planner-panel .tool-slot[aria-pressed=true]{background:transparent;border-color:transparent}
-#planner-panel .tool-slot[aria-pressed=true] .tool-slot-label{color:var(--blue);font-weight:600}
-#planner-panel .tool-slot[aria-pressed=true] .tool-slot-empty{border-color:var(--blue);background:var(--anchor-bg);color:var(--blue)}
-#planner-panel .tool-slot-label{font-size:10px;position:static;overflow:visible;width:auto;height:auto}
-#planner-panel .tool-slot-empty{display:grid;place-items:center;width:48px;height:48px;border:1px dashed var(--input-border);border-radius:6px;background:transparent;color:var(--subtle);font:24px/1 var(--ui-font)}
-#planner-panel .tool-slot .tool-item-picture{width:48px;height:48px}
-#planner-panel .tool-slot strong{font-size:10px;font-weight:500;line-height:1.4;overflow-wrap:anywhere}
-#planner-panel .tool-slot>.meta{display:none}
-#planner-panel .tool-slot-enchant{font-size:9px;color:#bb79e7;display:none}
+@import './native-layout.css';
+
+/* W_GearOverviewSlots supplies rows and spacing. Editing controls belong below
+   the shared native tooltip preview, rather than in a third inventory column. */
+#planner-panel .tool-planner-layout{display:grid;grid-template-columns:minmax(0,440px) minmax(0,520px);justify-content:center;gap:40px;align-items:start;margin-top:24px}
+#planner-panel .tool-planner-screen{--planner-scale:.375;min-width:0}
+#planner-panel .tool-slots{display:grid;gap:0;border:0;padding:0 0 0 calc(-1*var(--planner-headerOffset)*var(--planner-scale));background:transparent}
+#planner-panel .tool-slot-group>h3{display:flex;align-items:center;gap:calc(var(--planner-icon-gap)*var(--planner-scale));margin:0 0 0 calc(var(--planner-headerOffset)*var(--planner-scale));font:600 max(16px,calc(var(--planner-headerFontSize)*var(--planner-scale)))/var(--planner-headerLineHeight) 'Dungeons Sixteen',sans-serif;color:var(--planner-headerColor)}
+#planner-panel .tool-slot-group>h3>img{width:calc(56px*var(--planner-scale));height:calc(56px*var(--planner-scale));object-fit:contain;image-rendering:pixelated;flex:none}
+#planner-panel .tool-slot-row{display:grid;grid-template-columns:repeat(4,calc(var(--planner-textureExtent)*var(--planner-scale)));gap:calc(var(--planner-slotGap)*var(--planner-scale));padding:0 calc(var(--planner-slotGap)*var(--planner-scale)) calc(var(--planner-groupGap)*var(--planner-scale)) 0}
+#planner-panel .tool-slot{position:relative;display:block;min-width:0;min-height:0;width:calc(var(--planner-textureExtent)*var(--planner-scale));height:calc(var(--planner-textureExtent)*var(--planner-scale));padding:0;border:0;border-radius:0;background:url('/images/native-planner/slot-background.png') center/100% 100% no-repeat;isolation:isolate}
+#planner-panel .tool-slot:hover{background-color:transparent;filter:brightness(1.12)}
+#planner-panel .tool-slot[aria-pressed=true]::after{content:'';position:absolute;inset:0;z-index:6;pointer-events:none;border:calc(12px*var(--planner-scale)) solid var(--planner-selectedColor);box-shadow:0 2px #0009}
+#planner-panel .tool-slot:focus-visible{outline:2px solid #f6bc0f;outline-offset:4px}
+#planner-panel .tool-slot-label,#planner-panel .planner-slot-name{position:absolute;clip-path:inset(50%);width:1px;height:1px;overflow:hidden;white-space:nowrap}
+#planner-panel .tool-slot .tool-item-picture{position:absolute;inset:calc((1 - var(--planner-frameScale))*50%);width:auto;height:auto;background:var(--planner-innerColor)}
+#planner-panel .tool-slot .tool-item-picture>img:not(.tool-enchanted-mark){inset:calc(var(--planner-contentInset)/var(--planner-textureExtent)*100%);width:calc(100% - var(--planner-contentInset)/var(--planner-textureExtent)*200%);height:calc(100% - var(--planner-contentInset)/var(--planner-textureExtent)*200%);transform:scale(var(--planner-iconScale));transition:transform .15s ease-out}
+#planner-panel .tool-slot[aria-pressed=true] .tool-item-picture>img:not(.tool-enchanted-mark){transform:scale(1)}
+#planner-panel .tool-slot .tool-item-picture>img.tool-enchanted-mark{inset:auto auto 0 -4px;width:calc(56px*var(--planner-scale));height:calc(56px*var(--planner-scale));z-index:5}
+#planner-panel .tool-slot .tool-item-picture[data-kind=talisman] .tool-talisman-level{inset:4px auto auto 7px;font:400 max(10px,calc(28.5px*var(--planner-scale)))/1 'Dungeons Five',sans-serif}
+#planner-panel .tool-slot-empty{position:absolute;inset:0;display:grid;place-items:center;background:transparent;border:0;border-radius:0}
+#planner-panel .tool-slot-empty>img{width:53.125%;height:53.125%;object-fit:contain;image-rendering:pixelated;opacity:.65}
 #planner-panel .tool-editor,#planner-panel .tool-totals{border:0;border-radius:0;background:transparent;padding:0;margin:0;min-width:0}
-#planner-panel .tool-editor{border-left:1px solid var(--line);padding-left:28px;scroll-margin-top:calc(var(--topbar-height) + 16px)}
+#planner-panel .tool-editor,#planner-panel .tool-planner-screen{scroll-margin-top:calc(var(--topbar-height) + 18px)}
+#planner-panel .planner-back-to-slots{display:none}
+#planner-panel .tool-editor>.tool-section-heading{font:400 16px/1.2 'Dungeons Sixteen',sans-serif;margin:0 0 16px;color:#b8c4cc}
+#planner-panel .planner-item-preview-host{padding:16px 24px 0 0}
+#planner-panel .planner-item-preview{position:relative;inset:auto;margin:0;padding:0;width:100%;max-width:480px;max-height:660px;min-height:0;border:0;border-radius:0;background:transparent;overflow:visible;font-family:'Dungeons Sixteen',sans-serif}
+#planner-panel .planner-item-preview .equipment-tip-scroll{max-height:inherit}
+#planner-panel .tool-editor>.tool-action-row{margin:14px 24px 0 0;gap:8px}
 #planner-panel .tool-editor>input{margin-bottom:12px}
-#planner-panel .tool-inline-picker{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;max-height:440px;overflow:auto;padding:0 4px 0 0;scrollbar-color:var(--input-border) transparent}
-#planner-panel .tool-inline-choice{display:flex;align-items:center;gap:10px;padding:8px;border:0;border-radius:7px;background:transparent;text-align:left;font-size:12px;min-width:0}
-#planner-panel .tool-inline-choice .tool-item-picture{width:40px;height:40px}
-#planner-panel .tool-inline-choice:hover{background:var(--surface-alt)}
-#planner-panel .tool-editor>.tool-item-summary{margin-bottom:14px}
-#planner-panel .tool-editor>.tool-description{margin:14px 0}
-#planner-panel .tool-editor>.tool-action-row{margin:14px 0}
+#planner-panel button:not(.tool-slot):not(.tool-inline-choice){border-radius:0;background:var(--planner-buttonColor);border-color:#65747d;color:#eef4f5;box-shadow:inset 0 1px #ffffff30,inset 0 -2px #0005}
+#planner-panel .tool-inline-picker{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;max-height:520px;overflow:auto;padding:4px 4px 4px 0;scrollbar-color:#65747d transparent}
+#planner-panel .tool-inline-choice{display:flex;flex-direction:column;align-items:center;gap:6px;padding:8px 4px;border:1px solid transparent;border-radius:0;background:transparent;text-align:center;font-size:12px;min-width:0}
+#planner-panel .tool-inline-choice .tool-item-picture{width:64px;height:64px}
+#planner-panel .tool-inline-choice:hover,#planner-panel .tool-inline-choice:focus-visible{background:#142028;border-color:var(--planner-selectedColor)}
+#planner-panel .tool-config{margin:16px 24px 0 0;border-top:1px solid #3a434f;padding-top:12px}
+#planner-panel .tool-config>summary{cursor:pointer;color:#b8c4cc;font:400 15px/1.5 'Dungeons Sixteen',sans-serif}
+#planner-panel .tool-config .tool-form{margin-top:14px;gap:12px}
+#planner-panel .tool-config select{border-radius:0}
 #planner-panel .tool-roll-line{display:grid;grid-template-columns:minmax(0,1fr) 78px;gap:8px}
 #planner-panel .tool-fixed-effect{display:grid;gap:3px;padding:10px 0;border-top:1px solid var(--line);font-size:12px}
 #planner-panel .tool-fixed-effect strong{color:var(--blue)}
 #planner-panel .tool-chosen-enchant{display:flex;gap:12px;align-items:center;font-size:12px}
+#planner-panel .tool-totals{grid-column:1/-1;max-width:960px;padding-top:20px;border-top:1px solid #3a434f}
+#planner-panel .tool-totals[hidden]{display:none}
 #planner-panel .tool-total-row{padding:10px 0;border-top:1px solid var(--line)}
-#planner-panel .tool-total-row summary{display:flex;align-items:center;gap:10px;list-style:none;cursor:pointer;font-size:12px}
-#planner-panel .tool-total-row summary>img{width:28px;height:28px;object-fit:contain;image-rendering:pixelated;flex:none}
+#planner-panel .tool-total-row summary{display:flex;align-items:center;gap:12px;list-style:none;cursor:pointer;font-size:14px}
+#planner-panel .tool-total-row summary>img{width:32px;height:32px;object-fit:contain;image-rendering:pixelated;flex:none}
 #planner-panel .tool-total-row summary>div{flex:1;min-width:0}
 #planner-panel .tool-total-row summary strong{font-weight:500}
-#planner-panel .tool-total-row summary p{color:var(--muted);font-size:11px;margin-top:3px}
+#planner-panel .tool-total-row summary p{color:var(--muted);font-size:13px;margin-top:3px}
 #planner-panel .tool-total-row summary::after{content:'+';color:var(--subtle)}
 #planner-panel .tool-total-row[open] summary::after{content:'−'}
-#planner-panel .tool-total-row ul{padding-left:18px;margin:8px 0 0 38px;color:var(--muted);font-size:11px;line-height:1.8}
-#planner-panel .tool-enchants-heading{font-size:13px;margin:18px 0 8px}
-#planner-panel .tool-total-enchant{display:flex;align-items:center;gap:10px;border-top:1px solid var(--line);padding:10px 0;font-size:12px}
-#planner-panel .tool-total-enchant p{font-size:11px;color:var(--muted);margin-top:3px}
-@media(max-width:1150px){#planner-panel .tool-planner-layout{grid-template-columns:320px minmax(0,1fr);gap:24px}#planner-panel .tool-totals{grid-column:1/-1;border-top:1px solid var(--line);padding-top:20px}}
+#planner-panel .tool-total-row ul{padding-left:18px;margin:8px 0 0 44px;color:var(--muted);font-size:12px;line-height:1.8}
+#planner-panel .tool-enchants-heading{font-size:14px;margin:18px 0 8px}
+#planner-panel .tool-total-enchant{display:flex;align-items:center;gap:12px;border-top:1px solid var(--line);padding:10px 0;font-size:13px}
+#planner-panel .tool-total-enchant p{font-size:12px;color:var(--muted);margin-top:3px}
+@media(max-width:1020px){#planner-panel .tool-planner-layout{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:20px}#planner-panel .tool-inline-picker{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){
- #planner-panel .tool-planner-layout{grid-template-columns:1fr;gap:22px;margin-top:18px}
- #planner-panel .tool-slot-row{grid-template-columns:repeat(4,minmax(0,1fr))}
- #planner-panel .tool-slots{gap:10px;max-width:380px;margin:auto}
- #planner-panel .tool-slot-group{display:grid;grid-template-columns:36px minmax(0,1fr);gap:8px;align-items:center}
- #planner-panel .tool-slot-group>h3{margin:0;font-size:10px}
- #planner-panel .tool-slot{min-height:82px;padding:5px 1px}
- #planner-panel .tool-slot .tool-item-picture,#planner-panel .tool-slot-empty{width:40px;height:40px}
- #planner-panel .tool-editor{border-left:0;padding:18px 0 0;border-top:1px solid var(--line)}
- #planner-panel .tool-inline-picker{max-height:340px}
- #planner-panel .tool-inline-choice{font-size:11px;gap:8px;padding:6px}
+ #planner-panel .tool-planner-layout{grid-template-columns:minmax(0,1fr);gap:16px;margin-top:18px}
+ #planner-panel .tool-planner-screen{width:100%;max-width:400px;margin:auto}
+ #planner-panel .tool-editor{padding-top:16px;border-top:1px solid #3a434f}
+ #planner-panel .planner-back-to-slots{display:block;margin:0 0 20px}
+ #planner-panel .planner-item-preview-host{padding:12px 16px 0 0}
+ #planner-panel .planner-item-preview{max-height:620px}
+ #planner-panel .tool-editor>.tool-action-row,#planner-panel .tool-config{margin-right:16px}
+ #planner-panel .tool-inline-picker{grid-template-columns:repeat(3,minmax(0,1fr));max-height:380px}
+ #planner-panel .tool-inline-choice{font-size:11px;gap:6px;padding:6px 2px}
+ #planner-panel .tool-inline-choice .tool-item-picture{width:52px;height:52px}
 }
+@media(prefers-reduced-motion:reduce){#planner-panel .tool-slot .tool-item-picture>img{transition:none}}

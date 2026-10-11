@@ -1,0 +1,371 @@
+{
+  "groups": [
+    {
+      "name": "武器",
+      "row": 0,
+      "columnSpan": 4,
+      "headerPadding": {
+        "Left": -50.0
+      },
+      "iconGap": 12.0,
+      "icon": "weapons",
+      "slots": [
+        "melee",
+        "ranged"
+      ]
+    },
+    {
+      "name": "盔甲",
+      "row": 2,
+      "columnSpan": 4,
+      "headerPadding": {
+        "Left": -50.0
+      },
+      "iconGap": 32.0,
+      "icon": "armor",
+      "slots": [
+        "helmet",
+        "chest",
+        "legs",
+        "boots"
+      ]
+    },
+    {
+      "name": "法器",
+      "row": 4,
+      "columnSpan": 4,
+      "headerPadding": {
+        "Left": -50.0
+      },
+      "iconGap": 12.0,
+      "icon": "artifacts",
+      "slots": [
+        "a1",
+        "a2",
+        "a3"
+      ]
+    },
+    {
+      "name": "护身符",
+      "row": 6,
+      "columnSpan": 4,
+      "headerPadding": {
+        "Left": -50.0
+      },
+      "iconGap": 12.0,
+      "icon": "talismans",
+      "slots": [
+        "t1",
+        "t2",
+        "t3"
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "id": "melee",
+      "nativeWidget": "Slot_Melee",
+      "row": 1,
+      "column": 0,
+      "layer": 0,
+      "padding": {
+        "Right": 20.0,
+        "Bottom": 35.0
+      }
+    },
+    {
+      "id": "ranged",
+      "nativeWidget": "Slot_Ranged",
+      "row": 1,
+      "column": 1,
+      "layer": 0,
+      "padding": {
+        "Right": 20.0,
+        "Bottom": 35.0
+      }
+    },
+    {
+      "id": "helmet",
+      "nativeWidget": "Slot_Helmet",
+      "row": 3,
+      "column": 0,
+      "layer": 0,
+      "padding": {
+        "Right": 20.0,
+        "Bottom": 35.0
+      }
+    },
+    {
+      "id": "chest",
+      "nativeWidget": "Slot_Chest",
+      "row": 3,
+      "column": 1,
+      "layer": 0,
+      "padding": {
+        "Right": 20.0,
+        "Bottom": 35.0
+      }
+    },
+    {
+      "id": "legs",
+      "nativeWidget": "Slot_Legs",
+      "row": 3,
+      "column": 2,
+      "layer": 0,
+      "padding": {
+        "Right": 20.0,
+        "Bottom": 35.0
+      }
+    },
+    {
+      "id": "boots",
+      "nativeWidget": "Slot_Boots",
+      "row": 3,
+      "column": 3,
+      "layer": 0,
+      "padding": {
+        "Right": 20.0,
+        "Bottom": 35.0
+      }
+    },
+    {
+      "id": "a1",
+      "nativeWidget": "Slot_Artifact1",
+      "row": 5,
+      "column": 0,
+      "layer": 1,
+      "padding": {
+        "Right": 20.0,
+        "Bottom": 35.0
+      }
+    },
+    {
+      "id": "a2",
+      "nativeWidget": "Slot_Artifact2",
+      "row": 5,
+      "column": 1,
+      "layer": 0,
+      "padding": {
+        "Right": 20.0,
+        "Bottom": 35.0
+      }
+    },
+    {
+      "id": "a3",
+      "nativeWidget": "Slot_Artifact3",
+      "row": 5,
+      "column": 2,
+      "layer": 0,
+      "padding": {
+        "Right": 20.0,
+        "Bottom": 35.0
+      }
+    },
+    {
+      "id": "t1",
+      "nativeWidget": "Slot_Talisman1",
+      "row": 7,
+      "column": 0,
+      "layer": 1,
+      "padding": {
+        "Right": 20.0,
+        "Bottom": 35.0
+      }
+    },
+    {
+      "id": "t2",
+      "nativeWidget": "Slot_Talisman2",
+      "row": 7,
+      "column": 1,
+      "layer": 1,
+      "padding": {
+        "Right": 20.0,
+        "Bottom": 35.0
+      }
+    },
+    {
+      "id": "t3",
+      "nativeWidget": "Slot_Talisman3",
+      "row": 7,
+      "column": 2,
+      "layer": 1,
+      "padding": {
+        "Right": 20.0,
+        "Bottom": 35.0
+      }
+    }
+  ],
+  "metrics": {
+    "textureExtent": 256,
+    "slotGap": 20.0,
+    "groupGap": 35.0,
+    "headerFontSize": 45.0,
+    "headerLineHeight": 1.1,
+    "headerColor": "#C7CAD3",
+    "headerOffset": -50.0,
+    "contentInset": 44.0,
+    "frameScale": 0.9125,
+    "iconScale": 0.8,
+    "selectedColor": "#FFFFFF",
+    "innerColor": "#0F0F0F",
+    "buttonColor": "#36434B",
+    "tooltipPadding": {
+      "Left": 40.0,
+      "Right": 128.0
+    }
+  },
+  "assets": {
+    "slot-background": "./images/native-planner/slot-background.png",
+    "equipped-check": "./images/native-planner/equipped-check.png",
+    "empty-melee": "./images/native-planner/empty-melee.png",
+    "empty-ranged": "./images/native-planner/empty-ranged.png",
+    "empty-helmet": "./images/native-planner/empty-helmet.png",
+    "empty-chest": "./images/native-planner/empty-chest.png",
+    "empty-legs": "./images/native-planner/empty-legs.png",
+    "empty-boots": "./images/native-planner/empty-boots.png",
+    "empty-artifact": "./images/native-planner/empty-artifact.png",
+    "empty-talisman": "./images/native-planner/empty-talisman.png",
+    "weapons": "./images/native-planner/weapons.png",
+    "armor": "./images/native-planner/armor.png",
+    "artifacts": "./images/native-planner/artifacts.png",
+    "talismans": "./images/native-planner/talismans.png"
+  },
+  "widgets": [
+    "W_PlayerInventory",
+    "W_GearOverviewSlots",
+    "W_Inventory_EquippedItemSlot",
+    "W_SlotContent_Base"
+  ],
+  "sources": [
+    {
+      "source": "ui-complete/Dungeons/Plugins/SpicewoodUI/Content/Spicewood/UI/Widget/Inventory/PlayerInventory/Overview/W_GearOverviewSlots.json",
+      "sha256": "3a31d141c9b1baf8c7e5ae4beacb3dfccfc1305f7bfeab7a4ee1f2638f3f39e8"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/SpicewoodUI/Content/Spicewood/UI/Widget/Inventory/PlayerInventory/W_PlayerInventory.json",
+      "sha256": "cb18327737c232c7e744d77621b1450343737ab6b61c32e0a313b12a17d253f4"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/SpicewoodUI/Content/Spicewood/UI/Widget/Inventory/PlayerInventory/Slot/W_Inventory_EquippedItemSlot.json",
+      "sha256": "649eb75ba0f225883fb4a4959f887e23e87bc2f5a95d41dd51d082900543a1d2"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/SpicewoodUI/Content/Spicewood/UI/Widget/Inventory/PlayerInventory/Slot/W_SlotContent_Base.json",
+      "sha256": "3c8c676f3287e18c99e441a1cc14b0bd5013ac46911fd3d7ddcbfc00c24859e7"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Button/SlotFrame/M_SlotFrame.json",
+      "sha256": "f34700dc84aaca169554f4dda7fa4406f8992aa375bdf02ec1980e3eedbf47fa"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Button/SlotFrame/M_UI_Slot_Selected.json",
+      "sha256": "08f368ca3b37d39123b9fb0677d2f299c7e9bcbb57bfc1413cdca9bf5dfa3925"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Button/SlotFrame/GearOverview/MI_SlotFrame_Equipped_Normal-Base.json",
+      "sha256": "1611f7a13d1466ddaa49cdeb8db051403914f5405b24d9b8a0c02d520817ad83"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Button/SlotFrame/GearOverview/MI_SlotFrame_Equipped_Selected-Base.json",
+      "sha256": "497b64380343274f99ebd1dae069b24fa3bbdd7b8c2d718e5f4876c047c1e80c"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Button/SlotFrame/GearOverview/MI_SlotFrame_Equipped_Talisman_Normal-Base.json",
+      "sha256": "0f1443beaf7b55321f5b47be7c2176e4a376f0ec4b8a12b658ce0241230fbf5b"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Button/Role/Secondary/MI_Secondary_KBM_Background-Normal-Base.json",
+      "sha256": "c4d4587ff6399ae9698f2321d3207ad6436942e831f5876425551dd9325f2eb0"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/SpicewoodUI/Content/Spicewood/UI/Widget/Inventory/PlayerInventory/TotalEffects/W_TotalEffectsPanel.json",
+      "sha256": "2d17e6a7320d3436250d697201df066bcb8ae326448d1e54ace58b42a5d00be1"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Button/SlotFrame/T_UI_Slot_Background.json",
+      "sha256": "25cc3082667b1dd10fc251809c138d5f81820a36cdecc44fb685a06a791bf09c"
+    },
+    {
+      "source": "ui-complete/Dungeons/Plugins/OreUI/Content/UI/Typography/TextStyles/Style_SectionHeader1_Text.json",
+      "sha256": "75f17b4acf076ac08f64e1dd636138a802b32cbcf5b8649f73974cc9fac12a52"
+    },
+    {
+      "source": "textures/Dungeons/Plugins/OreUI/Content/UI/Button/SlotFrame/T_UI_Slot_Background.png",
+      "file": "images/native-planner/slot-background.png",
+      "sha256": "295663d51330a438a66cfba7d3d8bff7127bdf05c7e2b376dbcabba665685dcc"
+    },
+    {
+      "source": "textures/Dungeons/Plugins/SpicewoodUI/Content/Spicewood/UI/Widget/Inventory/PlayerInventory/Slot/T_UI_Slot_Equipped.png",
+      "file": "images/native-planner/equipped-check.png",
+      "sha256": "24aa2f3825644dabbd3d634632fe6492e8c15ad5a024b542441fa4df3fd566af"
+    },
+    {
+      "source": "textures/Dungeons/Plugins/SpicewoodUI/Content/Spicewood/UI/Widget/Inventory/PlayerInventory/EmptyCategoryIcons/T_UI_Icon_Melee.png",
+      "file": "images/native-planner/empty-melee.png",
+      "sha256": "4e200b53cbb3e88468df8b952f28ecf38a5de9245ba80979775888e78def8c0a"
+    },
+    {
+      "source": "textures/Dungeons/Plugins/SpicewoodUI/Content/Spicewood/UI/Widget/Inventory/PlayerInventory/EmptyCategoryIcons/T_UI_Icon_Ranged.png",
+      "file": "images/native-planner/empty-ranged.png",
+      "sha256": "4b0a27de16aae993b318fee4ee00a6e09ffd315f475e10518c6298bb42ef3ff7"
+    },
+    {
+      "source": "textures/Dungeons/Plugins/SpicewoodUI/Content/Spicewood/UI/Widget/Inventory/PlayerInventory/EmptyCategoryIcons/T_UI_Icon_Helmet.png",
+      "file": "images/native-planner/empty-helmet.png",
+      "sha256": "0e6c216a3c2cbfd88265b3cce78fd06cab873d887dd8c36834063e183cb63574"
+    },
+    {
+      "source": "textures/Dungeons/Plugins/SpicewoodUI/Content/Spicewood/UI/Widget/Inventory/PlayerInventory/EmptyCategoryIcons/T_UI_Icon_Breast.png",
+      "file": "images/native-planner/empty-chest.png",
+      "sha256": "681c92e749026b12e2b463fda0272a5b4b727d24ea35d550842fba125c887937"
+    },
+    {
+      "source": "textures/Dungeons/Plugins/SpicewoodUI/Content/Spicewood/UI/Widget/Inventory/PlayerInventory/EmptyCategoryIcons/T_UI_Icon_Legs.png",
+      "file": "images/native-planner/empty-legs.png",
+      "sha256": "4bdc124ec22b92148ef9d514958ffc88dacf23dfe692d195c3a5c33a46f13683"
+    },
+    {
+      "source": "textures/Dungeons/Plugins/SpicewoodUI/Content/Spicewood/UI/Widget/Inventory/PlayerInventory/EmptyCategoryIcons/T_UI_Icon_Boots.png",
+      "file": "images/native-planner/empty-boots.png",
+      "sha256": "6761d60fa4faffd4ada895527303cc005c9635d472b1e1ecdfa36ebd9e1265f7"
+    },
+    {
+      "source": "textures/Dungeons/Plugins/SpicewoodUI/Content/Spicewood/UI/Widget/Inventory/PlayerInventory/EmptyCategoryIcons/T_UI_Icon_Artifact.png",
+      "file": "images/native-planner/empty-artifact.png",
+      "sha256": "e51bcffd4950f95e191eed5c6a98283c71fcb4c206615a2c7083069178825a75"
+    },
+    {
+      "source": "textures/Dungeons/Plugins/SpicewoodUI/Content/Spicewood/UI/Widget/Inventory/PlayerInventory/EmptyCategoryIcons/T_UI_Icon_Talisman.png",
+      "file": "images/native-planner/empty-talisman.png",
+      "sha256": "8f1b4670a37e8b2e3236b30313d840cdca67819a02c7348c04de6522a65947e9"
+    },
+    {
+      "source": "textures/Dungeons/Plugins/OreUI/Content/UI/Icons/Categories/T_UI_Icon_Category_Weapons.png",
+      "file": "images/native-planner/weapons.png",
+      "sha256": "f55776f393142befac2e3257dc8a5b45ecffdbdf3f7d977040a1c7f95c00bb6b"
+    },
+    {
+      "source": "textures/Dungeons/Plugins/OreUI/Content/UI/Icons/Categories/T_UI_Icon_Category_Shield.png",
+      "file": "images/native-planner/armor.png",
+      "sha256": "fdccb47549a38e8d912c918aeb7c5a19d2bc44dfa8b2062bf6f531d69fb59417"
+    },
+    {
+      "source": "textures/Dungeons/Plugins/OreUI/Content/UI/Icons/Categories/T_UI_Icon_Category_Potion.png",
+      "file": "images/native-planner/artifacts.png",
+      "sha256": "88890994d97610df310aa1788e48d561404089b8e0afef573b8c6ed3e0c8aad7"
+    },
+    {
+      "source": "textures/Dungeons/Plugins/OreUI/Content/UI/Icons/Categories/T_UI_Icon_Category_Talisman.png",
+      "file": "images/native-planner/talismans.png",
+      "sha256": "fb48e58d2135ad64914462bbfd34365d056068b1e59e733289e58b6a783f7fcf"
+    }
+  ],
+  "adaptation": {
+    "geometry": "Rows, columns, slot/header padding, frame scale and icon scale are copied from cooked exports. A uniform browser scale fits the grid to the available width.",
+    "missingRuntimeData": "Cooked custom lazy-image/button properties omit brush extents, bindings and shader graphs. The unchanged 256px slot texture supplies a browser canonical extent, not a claim about the native runtime brush size.",
+    "categories": "Original category-family icons are used; cooked header lazy-image texture bindings are unavailable.",
+    "materials": "Original slot texture plus browser composition for selection/rarity material layers. Procedural Unreal material shaders cannot be embedded as PNGs.",
+    "preview": "Shared native tooltip importer/assets render the configured equipment. Editing and save controls are web functionality.",
+    "playerValues": "No fabricated item power, player level, XP or Soul Storm state. Page background remains pure black."
+  }
+}

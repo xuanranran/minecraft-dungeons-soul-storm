@@ -35,6 +35,7 @@ try{
     assert.ok((await page.locator('.tool-slot').first().boundingBox()).height<125);
     await page.locator('.tool-inline-choice').first().click();
     assert.equal(await page.locator('.tool-slot .tool-item-picture').count(),1);
+    await page.locator('.tool-config>summary').click();
     const rarity=page.getByLabel('品质',{exact:true});await rarity.focus();await rarity.selectOption('rare');
     assert.equal(await rarity.evaluate(n=>n===document.activeElement),true,'editor field focus lost on rerender');
     await page.locator('[data-slot=ranged]').click();

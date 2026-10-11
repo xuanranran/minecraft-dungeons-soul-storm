@@ -1,0 +1,16 @@
+/* Generated from cooked inventory exports; browser extent is documented in native-planner-ui.json. */
+#planner-panel{
+ --planner-textureExtent:256px;
+ --planner-slotGap:20.0px;
+ --planner-groupGap:35.0px;
+ --planner-headerFontSize:45.0px;
+ --planner-headerLineHeight:1.1;
+ --planner-headerColor:#C7CAD3;
+ --planner-headerOffset:-50.0px;
+ --planner-contentInset:44.0px;
+ --planner-frameScale:0.9125;
+ --planner-iconScale:0.8;
+ --planner-selectedColor:#FFFFFF;
+ --planner-innerColor:#0F0F0F;
+ --planner-buttonColor:#36434B;
+}
