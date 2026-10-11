@@ -136,7 +136,10 @@ export async function createEquipmentCard(item,equipment={}, {nativeTooltip=fals
   for(const [name,value] of Object.entries(!isReference&&!(nativeTooltip&&full.kind==='armor')?full.parameters||{}:{})){const soulCost=['灵魂消耗','灵魂花费'].includes(name),line=node('div','equipment-tip-stat');line.append(node('span','',nativeTooltip&&soulCost?'花费':name));if(nativeTooltip&&full.kind==='artifact'&&(name==='冷却'||soulCost)){const icon=img('./images/native-tooltip/'+(name==='冷却'?'timer':'soul-cost')+'.png','equipment-tip-stat-icon');icon.dataset.metric=name==='冷却'?'timer':'soul-cost';line.append(icon);}line.append(node('b','',nativeTooltip&&full.kind==='artifact'?String(value).replace(/\s*秒$/,''):value));stats.append(line);}if(stats.childNodes.length)top.append(stats);
   const strip=node('div','equipment-tip-strip',equipment.item?'已装备':full.kind==='talisman'?'护身符 · '+['I','II','III'][level-1]+' 级':'物品详情');
   strip.hidden=nativeTooltip&&(!equipment.item||full.kind==='talisman');card.replaceChildren(strip,top);
-  if(full.description&&full.descriptionOrigin!=='native-level-I-effect'&&!(nativeTooltip&&isReference&&full.tiers?.some(t=>t.text===full.description)))card.append(node('p','equipment-tip-description',full.description));
+  if(full.description&&full.descriptionOrigin!=='native-level-I-effect'&&!(nativeTooltip&&isReference&&full.tiers?.some(t=>t.text===full.description))){
+   const description=node('p','equipment-tip-description',full.description);
+   (nativeTooltip?card:top).append(description);
+  }
   if(isReference){
    const list=node('div','equipment-tip-effects equipment-tip-tiers');for(const tier of full.tiers||[]){const line=node('div','equipment-tip-effect');line.append(node('span','equipment-tip-tier',tier.tier),node('span','',tier.text));list.append(line);}card.append(list);
   }
@@ -150,7 +153,6 @@ export async function createEquipmentCard(item,equipment={}, {nativeTooltip=fals
   if(entries.length){const list=node('div','equipment-tip-effects');list.append(node('div','equipment-tip-effects-heading','效果'));
    for(const entry of entries){const info=ctx.rules.effects[entry.effect],line=node('div','equipment-tip-effect');line.dataset.category=info?.category||'';if((full.fixed||[]).includes(entry))line.classList.add('is-fixed');if(info?.image)line.append(img(info.image));else line.append(node('span','equipment-tip-effect-symbol','◇'));line.append(node('span','',entry.text||info?.name));list.append(line);}card.append(list);
   }
-  if(!nativeTooltip&&full.kind==='talisman'&&!entries.length)card.append(node('p','equipment-tip-description','此护身符召唤的同伴随等级成长。'));
 
  if(nativeTooltip){
   const scroll=node('div','equipment-tip-scroll');scroll.dataset.kind=full.kind;scroll.dataset.equipped=String(Boolean(equipment.item)&&full.kind!=='talisman');

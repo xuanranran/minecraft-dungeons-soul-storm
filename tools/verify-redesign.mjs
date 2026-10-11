@@ -57,6 +57,11 @@ try{
   await dialog.getByRole('tab',{name:'玩法指南'}).click();assert.equal(await dialog.locator('.build-detail-guide section').count(),4);
   await dialog.getByRole('tab',{name:'装备详情'}).click();assert.equal(await dialog.locator('.equipment-card').count(),12);
   assert.equal(await dialog.evaluate(n=>n.scrollWidth>n.clientWidth),false);
+  const details=await dialog.locator('.equipment-card').evaluateAll(cards=>cards.map(card=>{
+   const header=card.querySelector('.equipment-tip-top'),description=header.querySelector('.equipment-tip-description'),image=header.querySelector('.equipment-tip-render');
+   return {overflow:header.scrollWidth>header.clientWidth,descriptionInside:Boolean(description),imageWidth:image.getBoundingClientRect().width};
+  }));assert.ok(details.every(card=>!card.overflow&&card.imageWidth===64));assert.ok(details.some(card=>card.descriptionInside));
+  if([1440,390].includes(width))await page.screenshot({path:'artifacts/redesign/compact-equipment-details-'+width+'.png'});
   await dialog.getByRole('tab',{name:'配装效果'}).click();
   await snapshot('build-detail');
   await dialog.getByRole('button',{name:'关闭窗口'}).click();

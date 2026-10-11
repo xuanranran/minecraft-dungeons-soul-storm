@@ -30,11 +30,15 @@
 .build-introduction-dialog .build-detail-guide p{font-size:13px;line-height:1.9;color:var(--muted);margin:8px 0}
 .build-introduction-dialog .build-detail-guide section+section{margin-top:24px}
 .build-introduction-dialog .build-detail-gear-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:start}
-.build-introduction-dialog .equipment-card{border:1px solid var(--line);border-radius:10px;background:var(--surface-alt);padding-bottom:14px;overflow:hidden}
+.build-introduction-dialog .equipment-card{container-type:inline-size;border:1px solid var(--line);border-radius:10px;background:var(--surface-alt);padding-bottom:14px;overflow:hidden}
 .build-introduction-dialog .equipment-tip-strip{background:transparent;margin-bottom:0;padding:12px 16px 8px;font-size:10px}
 .build-introduction-dialog .equipment-tip-kind-row{display:none}
-.build-introduction-dialog .equipment-tip-top{min-height:80px}
-.build-introduction-dialog .equipment-tip-name{font-size:16px}
+.build-introduction-dialog .equipment-tip-top{display:grid;grid-template-columns:minmax(0,1fr) 64px;gap:6px 12px;min-height:0;padding:0 16px;align-items:start}
+.build-introduction-dialog .equipment-tip-render{position:static;grid-column:2;grid-row:1/span 3;width:64px;height:64px;object-fit:contain}
+.build-introduction-dialog .equipment-tip-name{grid-column:1;grid-row:1;font-size:16px;margin:0}
+.build-introduction-dialog .equipment-tip-top>:is(.equipment-tip-weapon-stats,.equipment-tip-stats){grid-column:1;display:flex;flex-wrap:wrap;gap:4px 12px}
+.build-introduction-dialog .equipment-tip-top>.equipment-tip-description{grid-column:1;margin:0;align-self:start}
+@container(max-width:320px){.build-introduction-dialog .equipment-tip-top>.equipment-tip-description{grid-column:1/-1}}
 .build-introduction-dialog .tool-note{font-size:11px;color:var(--muted);margin:12px 0}
 @media(max-width:760px){
  .build-introduction-dialog .build-detail-overview{grid-template-columns:1fr;gap:18px}

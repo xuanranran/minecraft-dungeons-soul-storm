@@ -27,6 +27,19 @@ try{
  assert.ok(await page.evaluate(()=>document.fonts.check('12px "Dungeons Five"')));
  assert.ok(await tip.locator('.equipment-tip-effect').count()>=2);
  await page.screenshot({path:'artifacts/game-tooltip/builds-1440.png'});
+ // The header must use the space above the introduction rather than leaving
+ // a separate rarity row. Keep art, title, stats and introduction disjoint.
+ for(const name of ['红石破坏者','神龟曼陀林']){
+  await show(page.getByRole('button',{name:'查看'+name+'详情',exact:true}).first());await within();
+  const title=await tip.locator('.equipment-tip-name').boundingBox(),rarity=await tip.locator('.equipment-tip-rarity').boundingBox(),header=await tip.locator('.equipment-tip-top').boundingBox(),art=await tip.locator(':scope > .equipment-tip-render').boundingBox(),description=await tip.locator('.equipment-tip-description').boundingBox();
+  assert.ok(Math.min(title.y+title.height,rarity.y+rarity.height)>Math.max(title.y,rarity.y),'rarity shares the title row');
+  assert.ok(header.height<128,'short names and two stats do not require a tall header');
+  assert.ok(title.x+title.width<=rarity.x+1&&rarity.x+rarity.width<=art.x+1,'title, rarity and item render stay separate');
+  assert.ok(description.y>=art.y+art.height-1,'introduction clears the overhanging art');
+  const frame=await tip.boundingBox(),x=frame.x-4,y=Math.min(frame.y,art.y)-4;
+  await page.screenshot({path:'artifacts/game-tooltip/compact-'+name+'.png',clip:{x,y,width:art.x+art.width-x+4,height:frame.y+frame.height-y+4}});
+ }
+ await show(first);
  // The pointer can cross the gap to read/scroll the preview; leaving dismisses it.
  let box=await tip.boundingBox();await page.mouse.move(box.x+20,box.y+80);await page.waitForTimeout(180);assert.equal(await tip.count(),1);
  await page.mouse.move(0,0);await tip.waitFor({state:'hidden'});
