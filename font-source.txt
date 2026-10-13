@@ -1,6 +1,7 @@
 Default global font: complete native Spicewood Sixteen (Regular / SemiBold / Bold)
 Source: local 2026-10-10 game extraction, Font_Spicewood_Sixteen_*.otf
-Archive: ../minecraft-dungeons-native-assets/reextract/2026-10-10-full/organized/fonts/
+Archive: E:/Github Data/minecraft-dungeons-native-assets/reextract/2026-10-10-full/organized/fonts/
+Override the unpacked-data directory with STORM_NATIVE_ASSETS_DIR.
 Output: public/fonts/native-sixteen-{regular,semibold,bold}.woff2
 41,575 mapped characters per weight, including native Chinese glyphs.
 WOFF2 conversion preserves the complete original character map and outlines.

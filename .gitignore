@@ -5,6 +5,11 @@ __pycache__/
 node_modules/
 dist/
 artifacts/
+# Browser verification screenshots written by older standalone scripts.
+/*.png
+/*.webp
+tool-references/
+map-source/
 .env
 .env.*
 .openai/

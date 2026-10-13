@@ -1,6 +1,6 @@
 """Import the cooked inventory overview geometry and unchanged original textures.
 
-Usage: python tools/import-native-planner-ui.py <full re-extraction directory>
+Usage: python tools/import-native-planner-ui.py [full re-extraction directory]
 No screenshots are sampled. Missing runtime brush sizes and material graphs
 are explicitly documented as browser adaptations in the output manifest.
 """
@@ -9,8 +9,9 @@ import json
 from pathlib import Path
 import shutil
 import sys
+from native_assets import full_extraction_root
 
-source = Path(sys.argv[1]).resolve()
+source = Path(sys.argv[1]).resolve() if len(sys.argv)>1 else full_extraction_root()
 repo = Path(__file__).resolve().parents[1]
 spice = Path('Dungeons/Plugins/SpicewoodUI/Content/Spicewood/UI/Widget/Inventory/PlayerInventory')
 ore = Path('Dungeons/Plugins/OreUI/Content/UI')

@@ -9,11 +9,12 @@ import json
 from pathlib import Path
 import re
 import shutil
+from native_assets import native_assets_root, full_extraction_root
 
 ROOT = Path(__file__).resolve().parents[1]
-NATIVE = ROOT.parent / 'minecraft-dungeons-native-assets/reextract/2026-10-10-full'
+NATIVE = full_extraction_root()
 TABLES = NATIVE / 'tables-features/Dungeons/Content/Spicewood/Core/DataTables/UFS'
-LOC = ROOT.parent / 'minecraft-dungeons-native-assets/exports/map-localization/Dungeons/Content/Localization/All'
+LOC = native_assets_root() / 'exports/map-localization/Dungeons/Content/Localization/All'
 PUBLIC = ROOT / 'public'
 
 def read(path): return json.loads(path.read_text('utf-8'))

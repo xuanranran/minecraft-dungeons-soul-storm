@@ -8,9 +8,10 @@ import subprocess
 from collections import Counter
 from pathlib import Path
 from PIL import Image
+from native_assets import native_assets_root
 
 ROOT = Path(__file__).resolve().parents[1]
-ASSETS = ROOT.parent / 'minecraft-dungeons-native-assets'
+ASSETS = native_assets_root()
 OUT = ROOT / 'public'
 SOURCES = ROOT / 'sources/dungeons-tools'
 SOURCES.mkdir(parents=True, exist_ok=True)

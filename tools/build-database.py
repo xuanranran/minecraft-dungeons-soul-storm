@@ -4,6 +4,7 @@ import re
 from os.path import commonprefix
 from pathlib import Path
 from collections import defaultdict
+from native_assets import native_assets_root
 
 ROOT=Path(__file__).resolve().parents[1]
 SOURCE=ROOT/'sources/database'
@@ -11,7 +12,7 @@ OUT=ROOT/'public/data/database'
 (OUT/'items').mkdir(parents=True,exist_ok=True)
 def read(p): return json.loads(p.read_text(encoding='utf-8'))
 def write(p,d): p.write_text(json.dumps(d,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
-LOC=ROOT.parent/'minecraft-dungeons-native-assets/exports/map-localization/Dungeons/Content/Localization/All'
+LOC=native_assets_root()/'exports/map-localization/Dungeons/Content/Localization/All'
 en,zh=read(LOC/'en/All.json'),read(LOC/'zh-Hans/All.json')
 def norm(t): return re.sub(r'\s+',' ',str(t).replace('’',"'")).strip().casefold()
 lookup={};provenance={};dynamic=[]

@@ -67,7 +67,9 @@ GitHub Pages 通过 `.github/workflows/pages.yml` 发布 `dist/`，推送到 `ma
 
 装备效果池、连招数据、品质规则、战力曲线及公开配装配置于 2026-10-10 从 [dungeons.tools](https://www.dungeons.tools/2/) 读取，事实快照保存在 `sources/dungeons-tools/explorer/`。没有打包对方组件代码。公开配装简介以中文摘要呈现；用户指定的翻滚射击近身游侠配装包含中文玩法指南，保留原作者与版本资料。网页中的收集状态、配装保存、收藏与备份由本站执行，不需要第三方账号。
 
-`tools/build-explorer-data.py` 将事实快照与同级 `minecraft-dungeons-native-assets/exports/` 的原生数据表、中文本地化和纹理合并为 `public/data/explorer/`。`check-explorer.mjs` 检查物品资源、72 个护身符等级、32 种附魔、56 套配置的编码往返、部位兼容性、效果叠加及伤害曲线。
+`tools/build-explorer-data.py` 将事实快照与外部解包目录下 `exports/` 的原生数据表、中文本地化和纹理合并为 `public/data/explorer/`。`check-explorer.mjs` 检查物品资源、72 个护身符等级、32 种附魔、56 套配置的编码往返、部位兼容性、效果叠加及伤害曲线。
+
+解包资料存放在 `E:\Github Data\minecraft-dungeons-native-assets`，与网站仓库分开。所有原生资料导入工具通过 `tools/native_assets.py` 读取该目录；其他电脑可设置 `STORM_NATIVE_ASSETS_DIR` 环境变量。完整重解包目录为该目录下的 `reextract/2026-10-10-full/`；配装 UI 导入工具也支持显式传入这个子目录。网站构建和 `npm test` 使用已提交的数据，不需要安装游戏或访问解包目录。
 
 ## 地图资料与复现
 
@@ -79,7 +81,7 @@ GitHub Pages 通过 `.github/workflows/pages.yml` 发布 `dist/`，推送到 `ma
 
 地点坐标采集自 [dungeons.tools](https://www.dungeons.tools/2/map)，事实数据保存在 `sources/dungeons-tools/`。原生中英文 `All.locres` 通过相同 namespace/key 匹配地点和任务名；“候选位置”“其他入口”、宝箱分类等网站辅助说明使用中文界面文案。生成器分组按原生区域标签最近距离计算，七组数量与参考轮换完全一致：7、8、8、8、8、8、5。候选位置不表示当前每一个点都已生成。
 
-`tools/build-maps.py` 从同级 `minecraft-dungeons-native-assets/exports/` 的解包文件重建地图，`native-map-images.json` 记录原始资源路径和 SHA-256，`check-maps.mjs` 检查全部坐标、分类、点位、地图分块和资源校验值。`npm test` 包含地图数据检查。Leaflet 1.9.4 随站点本地分发，其许可证保存在 `public/vendor/leaflet/LICENSE`；地图底图及点位无需连接第三方服务即可使用。
+`tools/build-maps.py` 从外部解包目录的 `exports/` 重建地图，`native-map-images.json` 记录原始资源路径和 SHA-256，`check-maps.mjs` 检查全部坐标、分类、点位、地图分块和资源校验值。`npm test` 包含地图数据检查。Leaflet 1.9.4 随站点本地分发，其许可证保存在 `public/vendor/leaflet/LICENSE`；地图底图及点位无需连接第三方服务即可使用。
 
 ## 页面与按需加载
 

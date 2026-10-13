@@ -7,9 +7,10 @@ import pathlib
 import sys
 from PIL import Image, ImageChops, ImageFilter
 from fontTools.ttLib import TTFont
+from native_assets import full_extraction_root
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-NATIVE = ROOT.parent / 'minecraft-dungeons-native-assets/reextract/2026-10-10-full'
+NATIVE = full_extraction_root()
 PUBLIC = ROOT / 'public'
 OUT = PUBLIC / 'data/maps'
 def read(p): return json.loads(p.read_text(encoding='utf-8'))

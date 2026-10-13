@@ -8,9 +8,10 @@ import json
 import re
 import shutil
 from pathlib import Path
+from native_assets import native_assets_root
 
 ROOT = Path(__file__).resolve().parents[1]
-NATIVE = ROOT.parent / 'minecraft-dungeons-native-assets'
+NATIVE = native_assets_root()
 REF = ROOT / 'tool-references'
 OUT = ROOT / 'public/data/explorer'
 SOURCE = ROOT / 'sources/dungeons-tools/explorer'
